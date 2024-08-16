@@ -1,0 +1,67 @@
+# ignore any .o and .a files
+*.[oa]
+# ignore any file ending with tilde
+*~
+# ignore all files under targets dir
+targets/
+
+# ignore all files under release and debug dir
+release/
+debug/
+
+# ignore any files under build directories
+build/
+_build/
+
+# test results
+*.out
+*.vtu
+*.pvd
+*.out.*
+*.out-*
+t3d.bmf*
+perf.data*
+*.orig
+*.vtk
+*_out.*
+
+# documentation aux-files.
+*.aux
+*.log
+*.toc
+*.lof
+*.synctex.gz
+*.run.xml
+*.bcf
+*-blx.bib
+*.blg
+
+
+*.idea
+__pycache__
+*.pyc
+*.swp
+.*.kate-swp
+*.backup
+*kdev*
+makefile
+elixirtest.c
+configure
+config.log
+config.status
+src/sm/materialname.C
+src/sm/materialname.h
+tests/sm/crack0Step0.vtk
+tests/sm/crack1Step0.vtk
+tests/sm/crack2Step0.vtk
+tests/sm/t3d.bmf
+
+# lcy
+# *.yml
+# *.rst
+# *.tikz
+# *.fig
+# *.svg
+# *.png
+# *.eps
+doc/

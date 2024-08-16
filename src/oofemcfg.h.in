@@ -1,0 +1,34 @@
+/* Headers */
+
+/* Define if execinfo.h defined */
+#cmakedefine HAVE_EXECINFO_H 1
+
+/* Symbols */
+/* Define if cbrt is defined */
+#cmakedefine HAVE_CBRT 1
+
+/* Define if isnan is defined */
+#cmakedefine HAVE_ISNAN 1
+
+@OOFEM_EXPORT_HEADER@
+
+#define __OOFEM_MAJOR_VERSION "@oofem_VERSION_MAJOR@"
+#define __OOFEM_MINOR_VERSION "@oofem_VERSION_MINOR@"
+#define __OOFEM_VERSION "@oofem_VERSION_MAJOR@" "." "@oofem_VERSION_MINOR@"
+#define __OOFEM_COPYRIGHT "@oofem_COPYRIGHT@"
+#define __HOST_TYPE "@HOST_TYPE@"
+#define __HOST_NAME "@HOST_NAME@"
+#define __MODULE_LIST "@MODULE_LIST@" 
+
+extern const char* PRG_VERSION;
+extern const char* OOFEG_VERSION;
+extern const char* OOFEM_COPYRIGHT;
+extern const char* PRG_HEADER;
+extern const char* PRG_HEADER_SM;
+extern const char* HOST_TYPE;
+extern const char* HOST_NAME;
+extern const char* MODULE_LIST;
+extern const char* OOFEM_GIT_HASH;
+extern const char* OOFEM_GIT_REPOURL;
+extern const char* OOFEM_GIT_BRANCH;
+#
