@@ -132,10 +132,7 @@ option (USE_VTK "Enable VTK (for exporting binary VTU-files)" OFF)
 #option (USE_CGAL "CGAL" OFF)
 # Internal modules
 option (USE_SM "Enable structural mechanics module" ON)
-option (USE_FM "Enable fluid mechanics module" OFF)
-option (USE_TM "Enable heat/mass transfer module" ON)
 option (USE_CEMHYD "Enable CemHyd support" OFF)
-option (USE_AM "Enable additive manufacturing module" OFF)
 option (USE_T3D "Enable T3D support" OFF)
 option (USE_BOOSTPYTHON_BINDINGS "Rather obsolete, use USE_PYBIND_BINDINGS. Enable Python bidings using boost (OOFEM callable from Python)." OFF)
 option (USE_PYBIND_BINDINGS "Enable Python Pybind11 bindings (OOFEM callable from Python and vice versa)." OFF)
@@ -169,34 +166,6 @@ include_directories ("${oofem_BINARY_DIR}")
 
 # Is there really any reason not to compile all of them? Some has cross dependencies.
 list (APPEND LIBS $<TARGET_OBJECTS:core>)
-
-if (USE_FM)
-    include_directories ("${oofem_SOURCE_DIR}/src/fm")
-    add_definitions (-D__FM_MODULE)
-    list (APPEND LIBS $<TARGET_OBJECTS:fm>)
-    list (APPEND MODULE_LIST "fm")
-    if (USE_PFEM)
-        add_definitions (-D__PFEM_MODULE)
-    endif ()
-endif ()
-
-if (USE_TM)
-    include_directories ("${oofem_SOURCE_DIR}/src/tm")
-    add_definitions (-D__TM_MODULE)
-    list (APPEND LIBS $<TARGET_OBJECTS:tm>)
-    list (APPEND MODULE_LIST "tm")
-    if (USE_CEMHYD)
-        add_definitions (-D__CEMHYD_MODULE)
-        set (USE_TINYXML ON)
-    endif ()
-endif ()
-
-if (USE_AM)
-    include_directories ("${oofem_SOURCE_DIR}/src/am")
-    add_definitions (-D__AM_MODULE)
-    list (APPEND LIBS $<TARGET_OBJECTS:am>)
-    list (APPEND MODULE_LIST "am")
-endif ()
 
 if (USE_SM)
     include_directories ("${oofem_SOURCE_DIR}/src/sm")
@@ -233,14 +202,6 @@ if (USE_OPENMP)
         list (APPEND MODULE_LIST "openmp")
     endif ()
 endif ()
-
-if (USE_MPM)
-    include_directories ("${oofem_SOURCE_DIR}/src/mpm")
-    add_definitions (-D__MPM_MODULE)
-    list (APPEND LIBS $<TARGET_OBJECTS:mpm>)
-    list (APPEND MODULE_LIST "mpm")
-endif ()
-
 
 if (USE_OOFEG)
     add_definitions (-D__OOFEG)
@@ -694,18 +655,7 @@ if (USE_SM)
     add_subdirectory ("${oofem_SOURCE_DIR}/src/sm/Elements")
     add_subdirectory ("${oofem_SOURCE_DIR}/src/sm/Materials")
 endif ()
-if (USE_TM)
-    add_subdirectory ("${oofem_SOURCE_DIR}/src/tm")
-endif ()
-if (USE_AM)
-    add_subdirectory ("${oofem_SOURCE_DIR}/src/am")
-endif ()
-if (USE_FM)
-    add_subdirectory ("${oofem_SOURCE_DIR}/src/fm")
-endif ()
-if (USE_MPM)
-    add_subdirectory ("${oofem_SOURCE_DIR}/src/mpm")
-endif ()
+
 set (oofempy)
 if (USE_BOOSTPYTHON_BINDINGS)
     set (oofempy ${oofem_SOURCE_DIR}/bindings/Deprecated/python/oofemlib.cpp)
@@ -730,12 +680,7 @@ if (USE_SHARED_LIB)
 
     # This should be set automatically, but I think TARGET:objs confuses cmake:
     set_target_properties (core PROPERTIES COMPILE_DEFINITIONS "liboofem_EXPORTS")
-    if (USE_FM)
-        set_target_properties (fm PROPERTIES COMPILE_DEFINITIONS "liboofem_EXPORTS")
-        if (NOT "${LIBOOFEM_EXPORT_CFLAGS}" STREQUAL "")
-            set_target_properties (fm PROPERTIES COMPILE_FLAGS ${LIBOOFEM_EXPORT_CFLAGS})
-        endif ()
-    endif()
+
     if (USE_SM)
         set_target_properties (sm PROPERTIES COMPILE_DEFINITIONS "liboofem_EXPORTS")
         set_target_properties (sm_elements PROPERTIES COMPILE_DEFINITIONS "liboofem_EXPORTS")
@@ -746,24 +691,6 @@ if (USE_SHARED_LIB)
             set_target_properties (sm_materials PROPERTIES COMPILE_FLAGS ${LIBOOFEM_EXPORT_CFLAGS})
         endif ()
     endif()
-    if (USE_TM)
-        set_target_properties (tm PROPERTIES COMPILE_DEFINITIONS "liboofem_EXPORTS")
-        if (NOT "${LIBOOFEM_EXPORT_CFLAGS}" STREQUAL "")
-            set_target_properties (tm PROPERTIES COMPILE_FLAGS ${LIBOOFEM_EXPORT_CFLAGS})
-        endif ()
-    endif()
-    if (USE_AM)
-        set_target_properties (am PROPERTIES COMPILE_DEFINITIONS "liboofem_EXPORTS")
-        if (NOT "${LIBOOFEM_EXPORT_CFLAGS}" STREQUAL "")
-            set_target_properties (am PROPERTIES COMPILE_FLAGS ${LIBOOFEM_EXPORT_CFLAGS})
-        endif ()
-    endif()
-    if (USE_MPM)
-        set_target_properties (mpm PROPERTIES COMPILE_DEFINITIONS "liboofem_EXPORTS")
-        if (NOT "${LIBOOFEM_EXPORT_CFLAGS}" STREQUAL "")
-            set_target_properties (mpm PROPERTIES COMPILE_FLAGS ${LIBOOFEM_EXPORT_CFLAGS})
-        endif ()
-endif()
 
     generate_export_header (liboofem
         BASE_NAME OOFEM
@@ -831,13 +758,9 @@ add_custom_command(TARGET cppcheck
     "-I${oofem_BINARY_DIR}/"
     "-I${oofem_SOURCE_DIR}/src/oofemlib/"
     "-I${oofem_SOURCE_DIR}/src/sm/"
-    "-I${oofem_SOURCE_DIR}/src/fm/"
-    "-I${oofem_SOURCE_DIR}/src/tm/"
     "-DDEBUG"
     ${oofem_SOURCE_DIR}/src/oofemlib/
     ${oofem_SOURCE_DIR}/src/sm/
-    ${oofem_SOURCE_DIR}/src/fm/
-    ${oofem_SOURCE_DIR}/src/tm/
     ${oofem_SOURCE_DIR}/src/main/
     "2>"
     "cppcheck.xml"
@@ -918,38 +841,11 @@ if (USE_SM)
     endforeach (case)
 endif ()
 
-if (USE_FM)
-    file (GLOB fm_tests RELATIVE "${oofem_TEST_DIR}/fm" "${oofem_TEST_DIR}/fm/*.in")
-    foreach (case ${fm_tests})
-        add_test (NAME "test_fm_${case}" WORKING_DIRECTORY ${oofem_TEST_DIR}/fm COMMAND ${oofem_cmd} "-f" ${case})
-    endforeach (case)
-endif()
-
-if (USE_TM)
-    file (GLOB tm_tests RELATIVE "${oofem_TEST_DIR}/tm" "${oofem_TEST_DIR}/tm/*.in")
-    foreach (case ${tm_tests})
-        add_test (NAME "test_tm_${case}" WORKING_DIRECTORY ${oofem_TEST_DIR}/tm COMMAND ${oofem_cmd} "-f" ${case})
-    endforeach (case)
-endif()
-
-if (USE_AM)
-    file (GLOB tm_tests RELATIVE "${oofem_TEST_DIR}/am" "${oofem_TEST_DIR}/am/*.in")
-    foreach (case ${tm_tests})
-        add_test (NAME "test_am_${case}" WORKING_DIRECTORY ${oofem_TEST_DIR}/am COMMAND ${oofem_cmd} "-f" ${case})
-    endforeach (case)
-endif()
 
 if (USE_TM AND USE_SM)
     file (GLOB tmsm_tests RELATIVE "${oofem_TEST_DIR}/tmsm" "${oofem_TEST_DIR}/tmsm/*.in")
     foreach (case ${tmsm_tests})
         add_test (NAME "test_tmsm_${case}" WORKING_DIRECTORY ${oofem_TEST_DIR}/tmsm COMMAND ${oofem_cmd} "-f" ${case})
-    endforeach (case)
-endif()
-
-if (USE_TM AND USE_FM)
-    file (GLOB tmfm_tests RELATIVE "${oofem_TEST_DIR}/tmfm" "${oofem_TEST_DIR}/tmfm/*.in")
-    foreach (case ${tmfm_tests})
-        add_test (NAME "test_tmfm_${case}" WORKING_DIRECTORY ${oofem_TEST_DIR}/tmfm COMMAND ${oofem_cmd} "-f" ${case})
     endforeach (case)
 endif()
 
@@ -960,24 +856,10 @@ if (USE_TM AND USE_CEMHYD)
     endforeach (case)
 endif()
 
-if (USE_FM AND USE_PFEM)
-    file (GLOB fmpfem_tests RELATIVE "${oofem_TEST_DIR}/fmpfem" "${oofem_TEST_DIR}/fmpfem/*.in")
-    foreach (case ${fmpfem_tests})
-        add_test (NAME "test_fm_${case}" WORKING_DIRECTORY ${oofem_TEST_DIR}/fmpfem COMMAND ${oofem_cmd} "-f" ${case})
-    endforeach (case)
-endif()
-
 if (USE_SM AND USE_MFRONT)
     file (GLOB smmfront_tests RELATIVE "${oofem_TEST_DIR}/smmfront" "${oofem_TEST_DIR}/smmfront/*.in")
     foreach (case ${smmfront_tests})
         add_test (NAME "test_sm_${case}" WORKING_DIRECTORY ${oofem_TEST_DIR}/smmfront COMMAND ${oofem_cmd} "-f" ${case})
-    endforeach (case)
-endif()
-
-if (USE_MPM)
-    file (GLOB mpm_tests RELATIVE "${oofem_TEST_DIR}/mpm" "${oofem_TEST_DIR}/mpm/*.in")
-    foreach (case ${mpm_tests})
-        add_test (NAME "test_mpm_${case}" WORKING_DIRECTORY ${oofem_TEST_DIR}/mpm COMMAND ${oofem_cmd} "-f" ${case})
     endforeach (case)
 endif()
 
@@ -992,31 +874,10 @@ if (USE_TM AND USE_SM AND USE_DSS AND USE_IML)
     endforeach (case)
 endif()
 
-if (USE_FM)
-    file (GLOB fm_benchmark RELATIVE "${oofem_BENCHMARK_DIR}/fm" "${oofem_BENCHMARK_DIR}/fm/*.in")
-    foreach (case ${fm_benchmark})
-        add_test (NAME "benchmark_fm_${case}" WORKING_DIRECTORY ${oofem_BENCHMARK_DIR}/fm COMMAND ${oofem_cmd} "-f" ${case})
-    endforeach (case)
-endif()
-
 if (USE_SM)
     file (GLOB sm_benchmark RELATIVE "${oofem_BENCHMARK_DIR}/sm" "${oofem_BENCHMARK_DIR}/sm/*.in")
     foreach (case ${sm_benchmark})
         add_test (NAME "benchmark_sm_${case}" WORKING_DIRECTORY ${oofem_BENCHMARK_DIR}/sm COMMAND ${oofem_cmd} "-f" ${case})
-    endforeach (case)
-endif()
-
-if (USE_TM)
-    file (GLOB tm_benchmark RELATIVE "${oofem_BENCHMARK_DIR}/tm" "${oofem_BENCHMARK_DIR}/tm/*.in")
-    foreach (case ${tm_benchmark})
-        add_test (NAME "benchmark_tm_${case}" WORKING_DIRECTORY ${oofem_BENCHMARK_DIR}/tm COMMAND ${oofem_cmd} "-f" ${case})
-    endforeach (case)
-endif()
-
-if (USE_FM AND USE_SM AND USE_PFEM)
-    file (GLOB fmpfem_benchmark RELATIVE "${oofem_BENCHMARK_DIR}/fmpfem" "${oofem_BENCHMARK_DIR}/fmpfem/*.in")
-    foreach (case ${fmpfem_benchmark})
-        add_test (NAME "benchmark_fm_${case}" WORKING_DIRECTORY ${oofem_BENCHMARK_DIR}/fmpfem COMMAND ${oofem_cmd} "-f" ${case})
     endforeach (case)
 endif()
 
@@ -1088,4 +949,3 @@ set (CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
 set(CPACK_DEBIAN_PACKAGE_VERSION "${CPACK_PACKAGE_VERSION}.${CPACK_PACKAGE_VERSION_PATCH}+sid1")
 
 include (CPack)
-

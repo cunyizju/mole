@@ -20,17 +20,6 @@ set (sm_material
     ConcreteMaterials/concretefcmviscoelastic.C
     ConcreteMaterials/frcfcm.C
     ConcreteMaterials/frcfcmnl.C
-    RheoChainMaterials/rheoChM.C 
-    RheoChainMaterials/maxwellChM.C 
-    RheoChainMaterials/kelvinChM.C
-    RheoChainMaterials/kelvinChSolM.C
-    RheoChainMaterials/cebfip78.C
-    RheoChainMaterials/doublepowerlaw.C
-    RheoChainMaterials/b3mat.C
-    RheoChainMaterials/b3solidmat.C
-    RheoChainMaterials/mps.C
-    RheoChainMaterials/mpsdammat.C
-    RheoChainMaterials/eurocode2creep.C
     structuralfe2material.C
     structuralslipfe2material.C
     rcsd.C 
