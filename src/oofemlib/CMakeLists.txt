@@ -184,10 +184,10 @@ set (core_export
     vtkxmlexportmodule.C
     vtkmemoryexportmodule.C
     vtkxmlperiodicexportmodule.C
-    vtkxmllatticeexportmodule.C
+#    vtkxmllatticeexportmodule.C
     vtkpfemexportmodule.C
     vtkxfemexportmodule.C
-    homexportmodule.C
+#    homexportmodule.C
     matlabexportmodule.C
     gpexportmodule.C
     solutionstatusexportmodule.C
