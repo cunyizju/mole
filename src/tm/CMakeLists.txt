@@ -57,7 +57,6 @@ set (tm_material
     Materials/LatticeMaterials/latticetransmat.C
     Materials/nlisomoisturemat.C
     Materials/nonlinearmassmat.C
-    Materials/rvestokesflow.C
     Materials/transportmaterial.C
     Materials/twophasemat.C
     )
