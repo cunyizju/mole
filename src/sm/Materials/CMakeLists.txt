@@ -5,13 +5,6 @@ set (sm_material
     isolinearelasticmaterial.C
     anisolinearelasticmaterial.C
     ortholinearelasticmaterial.C
-    BoneMaterials/trabbonematerial.C 
-    BoneMaterials/trabbonenl3d.C 
-    BoneMaterials/trabbonenl.C 
-    BoneMaterials/trabbone3d.C 
-    BoneMaterials/trabboneembed.C 
-    BoneMaterials/trabbonenlembed.C 
-    BoneMaterials/trabbonegrad3d.C
     ConcreteMaterials/concrete2.C 
     ConcreteMaterials/concrete3.C 
     ConcreteMaterials/concretedpm.C 
