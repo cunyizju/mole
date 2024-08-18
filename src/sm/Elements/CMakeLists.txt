@@ -27,21 +27,11 @@ set (sm_element
     Bars/truss3dnl.C
     Bars/truss3dnl2.C
     Bars/qtruss1d.C 
-    Beams/libeam2d.C 
-    Beams/libeam2dnl.C
     Beams/libeam3d.C 
-    Beams/libeam3dnl.C 
-    Beams/libeam3dnl2.C 
-    Beams/libeam3d2.C
     Beams/beambaseelement.C
     Beams/beam2d.C 
     Beams/beam3d.C
     Beams/libeam3dboundary.C
-    Beams/libeam3dboundarytruss.C
-    Beams/libeam3dboundarymembrane.C
-    Beams/libeam3dboundarybeam.C
-    Beams/libeam3dboundaryplate.C
-    Beams/libeam3dboundaryvoigt.C
     Plates/cct.C
     Plates/dkt.C 
     Plates/qdkt.C
