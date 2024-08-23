@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "Solvers/deiDynamic/deidynamic.h"
+#include "deidynamic.h"
 #include "timestep.h"
 #include "dofmanager.h"
 #include "element.h"

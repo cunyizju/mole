@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "Solvers/diiDynamic/diidynamic.h"
+#include "diidynamic.h"
 #include "sm/Elements/structuralelement.h"
 #include "sm/Elements/structuralelementevaluator.h"
 #include "timestep.h"

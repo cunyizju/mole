@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "sm/Solvers/nlinearStatic/nlinearstatic.h"
+#include "nlinearstatic.h"
 #include "sm/Elements/structuralelement.h"
 #include "nummet.h"
 #include "timestep.h"

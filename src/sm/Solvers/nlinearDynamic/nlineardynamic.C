@@ -35,7 +35,7 @@
 #include <iostream>
 using namespace std;
 
-#include "Solvers/nlinearDynamic/nlineardynamic.h"
+#include "nlineardynamic.h"
 #include "sm/Elements/nlstructuralelement.h"
 #include "sm/Elements/structuralelementevaluator.h"
 #include "nummet.h"

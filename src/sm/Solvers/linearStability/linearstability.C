@@ -35,7 +35,7 @@
 // please activate or de-activate next line
 //#define LIN_STAB_COMPATIBILITY_MODE
 
-#include "Solvers/linearStability/linearstability.h"
+#include "linearstability.h"
 #include "timestep.h"
 #include "element.h"
 #include "contextioerr.h"
