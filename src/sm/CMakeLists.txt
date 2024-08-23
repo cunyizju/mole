@@ -28,8 +28,8 @@ set (sm_emodel
     EngineeringModels/linearstability.C
     Solvers/adaptLinearStatic/adaptlinearstatic.C
     Solvers/adaptNlinearStatic/adaptnlinearstatic.C
-    EngineeringModels/deidynamic.C
-    EngineeringModels/diidynamic.C
+    Solvers/deiDynamic/deidynamic.C
+    Solvers/diiDynamic/diidynamic.C
     EngineeringModels/nldeidynamic.C
     EngineeringModels/incrementallinearstatic.C
     EngineeringModels/freewarping.C 
