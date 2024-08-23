@@ -25,13 +25,13 @@ set (sm_emodel
     Solvers/nlinearStatic/nlinearstatic.C
     EngineeringModels/nlineardynamic.C
     EngineeringModels/eigenvaluedynamic.C
-    EngineeringModels/linearstability.C
+    Solvers/linearStability/linearstability.C
     Solvers/adaptLinearStatic/adaptlinearstatic.C
     Solvers/adaptNlinearStatic/adaptnlinearstatic.C
     Solvers/deiDynamic/deidynamic.C
     Solvers/diiDynamic/diidynamic.C
     EngineeringModels/nldeidynamic.C
-    EngineeringModels/incrementallinearstatic.C
+    Solvers/incLinearStatic/incrementallinearstatic.C
     EngineeringModels/freewarping.C 
     EngineeringModels/structuralmaterialevaluator.C
     EngineeringModels/qclinearstatic.C
