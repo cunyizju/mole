@@ -33,7 +33,7 @@
  */
 
 #include "sm/ErrorEstimators/huertaerrorestimator.h"
-#include "sm/EngineeringModels/adaptnlinearstatic.h"
+#include "Solvers/adaptNlinearStatic/adaptnlinearstatic.h"
 #include "sm/Solvers/adaptLinearStatic/adaptlinearstatic.h"
 #include "domain.h"
 #include "node.h"
