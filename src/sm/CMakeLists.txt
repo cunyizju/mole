@@ -22,7 +22,7 @@ set (sm_emodel
     EngineeringModels/structengngmodel.C
     EngineeringModels/staticstructural.C
     linearStaticSolver/linearstatic.C
-    EngineeringModels/nlinearstatic.C
+    nlinearStaticSolver/nlinearstatic.C
     EngineeringModels/nlineardynamic.C
     EngineeringModels/eigenvaluedynamic.C
     EngineeringModels/linearstability.C
