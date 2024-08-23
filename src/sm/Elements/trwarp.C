@@ -43,7 +43,7 @@
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "classfactory.h"
 #include "load.h"
-#include "sm/EngineeringModels/freewarping.h"
+#include "Solvers/freeWarping/freewarping.h"
 #include "engngm.h"
 #include "dof.h"
 #include "sm/CrossSections/structuralcrosssection.h"

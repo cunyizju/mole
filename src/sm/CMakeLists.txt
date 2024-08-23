@@ -21,22 +21,26 @@ set (sm_crosssection
 set (sm_emodel
     EngineeringModels/structengngmodel.C
     EngineeringModels/staticstructural.C
+
+    EngineeringModels/structuralmaterialevaluator.C
+    EngineeringModels/qclinearstatic.C
+    EngineeringModels/pdelta.C
+    )
+
+set (sm_solvers
     Solvers/linearStatic/linearstatic.C
     Solvers/nlinearStatic/nlinearstatic.C
-    EngineeringModels/nlineardynamic.C
-    EngineeringModels/eigenvaluedynamic.C
     Solvers/linearStability/linearstability.C
     Solvers/adaptLinearStatic/adaptlinearstatic.C
     Solvers/adaptNlinearStatic/adaptnlinearstatic.C
     Solvers/deiDynamic/deidynamic.C
     Solvers/diiDynamic/diidynamic.C
-    EngineeringModels/nldeidynamic.C
     Solvers/incLinearStatic/incrementallinearstatic.C
-    EngineeringModels/freewarping.C 
-    EngineeringModels/structuralmaterialevaluator.C
-    EngineeringModels/qclinearstatic.C
-    EngineeringModels/pdelta.C
-    )
+    Solvers/nlinearDynamic/nlineardynamic.C
+    Solvers/eigenValueDynamic/eigenvaluedynamic.C
+    Solvers/nlDeiDynamic/nldeidynamic.C
+    Solvers/freeWarping/freewarping.C 
+)
 
 set (sm_loads
     Loads/tf1.C
@@ -114,6 +118,7 @@ set (sm
     ${sm_crosssection}
     ${sm_loads}
     ${sm_emodel}
+    ${sm_solvers}
     ${sm_export}
     ${sm_barrier}
     ${sm_error}
