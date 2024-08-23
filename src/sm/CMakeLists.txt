@@ -26,7 +26,7 @@ set (sm_emodel
     EngineeringModels/nlineardynamic.C
     EngineeringModels/eigenvaluedynamic.C
     EngineeringModels/linearstability.C
-    EngineeringModels/adaptlinearstatic.C
+    Solvers/adaptLinearStatic/adaptlinearstatic.C
     EngineeringModels/adaptnlinearstatic.C
     EngineeringModels/deidynamic.C
     EngineeringModels/diidynamic.C
