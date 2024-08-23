@@ -35,7 +35,7 @@
 #ifndef nlinearstatic_h
 #define nlinearstatic_h
 
-#include "sm/EngineeringModels/linearstatic.h"
+#include "sm/linearStaticSolver/linearstatic.h"
 #include "sparsenonlinsystemnm.h"
 #include "function.h"
 

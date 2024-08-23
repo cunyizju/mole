@@ -35,7 +35,7 @@
 #ifndef pdelta_h
 #define pdelta_h
 
-#include "sm/EngineeringModels/linearstatic.h"
+#include "sm/linearStaticSolver/linearstatic.h"
 #include "geneigvalsolvertype.h"
 #include "sparsegeneigenvalsystemnm.h"
 #include "sparselinsystemnm.h"
