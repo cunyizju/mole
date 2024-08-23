@@ -35,7 +35,7 @@
 #ifndef adaptlinearstatic_h
 #define adaptlinearstatic_h
 
-#include "sm/linearStaticSolver/linearstatic.h"
+#include "sm/Solvers/linearStatic/linearstatic.h"
 #include "meshpackagetype.h"
 
 ///@name Input fields for AdaptiveLinearStatic

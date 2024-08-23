@@ -5,7 +5,7 @@
 #include "floatarray.h"
 
 // Optional (only need the input fields defines)
-#include "sm/linearStaticSolver/linearstatic.h"
+#include "sm/Solvers/linearStatic/linearstatic.h"
 #include "sm/CrossSections/simplecrosssection.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
 #include "sm/Elements/Bars/truss2d.h"
