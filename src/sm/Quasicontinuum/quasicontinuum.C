@@ -33,7 +33,7 @@
  */
 
 #include "sm/Quasicontinuum/quasicontinuum.h"
-#include "sm/EngineeringModels/qclinearstatic.h"
+#include "Solvers/qcLinearStatic/qclinearstatic.h"
 #include "qcnode.h"
 #include "element.h"
 #include "mathfem.h"

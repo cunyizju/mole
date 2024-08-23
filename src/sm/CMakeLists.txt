@@ -21,15 +21,14 @@ set (sm_crosssection
 set (sm_emodel
     EngineeringModels/structengngmodel.C
     EngineeringModels/staticstructural.C
-
     EngineeringModels/structuralmaterialevaluator.C
-    EngineeringModels/qclinearstatic.C
     EngineeringModels/pdelta.C
     )
 
 set (sm_solvers
     Solvers/linearStatic/linearstatic.C
     Solvers/nlinearStatic/nlinearstatic.C
+    Solvers/qcLinearStatic/qclinearstatic.C
     Solvers/linearStability/linearstability.C
     Solvers/adaptLinearStatic/adaptlinearstatic.C
     Solvers/adaptNlinearStatic/adaptnlinearstatic.C
