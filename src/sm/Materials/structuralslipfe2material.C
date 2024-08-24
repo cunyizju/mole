@@ -43,7 +43,7 @@
 #include "util.h"
 #include "contextioerr.h"
 #include "generalboundarycondition.h"
-#include "prescribeddispsliphomogenization.h"
+#include "sm/boundaryConditions/prescribeddispsliphomogenization.h"
 #include "exportmodulemanager.h"
 #include "vtkxmlexportmodule.h"
 #include "nummet.h"

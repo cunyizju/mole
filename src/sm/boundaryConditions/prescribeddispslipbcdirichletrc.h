@@ -35,7 +35,7 @@
 #ifndef prescribeddispslipbcdirichletrc_h
 #define prescribeddispslipbcdirichletrc_h
 
-#include "prescribeddispsliphomogenization.h"
+#include "boundaryConditions/prescribeddispsliphomogenization.h"
 #include "boundarycondition.h"
 #include "dof.h"
 #include "bctype.h"

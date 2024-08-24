@@ -62,10 +62,10 @@
 #ifdef __SM_MODULE
 #include "sm/Elements/nlstructuralelement.h"
 #include "sm/EngineeringModels/structengngmodel.h"
-#include "sm/prescribeddispslipbcdirichletrc.h"
-#include "sm/prescribeddispslipbcneumannrc.h"
-#include "sm/prescribeddispslipmultiple.h"
-#include "sm/transversereinfconstraint.h"
+#include "sm/boundaryConditions/prescribeddispslipbcdirichletrc.h"
+#include "sm/boundaryConditions/prescribeddispslipbcneumannrc.h"
+#include "sm/boundaryConditions/prescribeddispslipmultiple.h"
+#include "sm/boundaryConditions/transversereinfconstraint.h"
 #endif
 
 

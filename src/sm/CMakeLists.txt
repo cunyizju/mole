@@ -1,10 +1,10 @@
 set (sm_boundary_conditions
-    Deprecated/prescribedgenstrainshell7.C
-        prescribeddispsliphomogenization.C
-        prescribeddispslipbcdirichletrc.C
-        prescribeddispslipbcneumannrc.C
-        prescribeddispslipmultiple.C
-        transversereinfconstraint.C
+    boundaryConditions/prescribedgenstrainshell7.C
+    boundaryConditions/prescribeddispsliphomogenization.C
+    boundaryConditions/prescribeddispslipbcdirichletrc.C
+    boundaryConditions/prescribeddispslipbcneumannrc.C
+    boundaryConditions/prescribeddispslipmultiple.C
+    boundaryConditions/transversereinfconstraint.C
     )
 
 set (sm_crosssection
