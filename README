@@ -58,10 +58,6 @@ OOFEM_TOP_DIR
 |   |
 |   |-- sm       - sources of structural analysis module.
 |   |
-|   |-- tm       - sources of transport problem module.
-|   |
-|   |-- fm       - sources of fluid mechanics module.
-|   |
 |   |-- dss      - includes the sources for Direct Sparse Solver (DSS),
 |   |              contributed by R. Vondracek)
 |   |
@@ -132,16 +128,16 @@ due to its size. It can be accessed online from oofem home page.
 
 Quick instructions for UNIX:
 ----------------------------
-0) unpack sources 
-1) create an out-of-tree build directory
+1) unpack sources 
+2) create an out-of-tree build directory
    "mkdir -p ~/build/debug"
-2) configure the target
+3) configure the target
    "cd ~/build/debug; cmake PATH_TO_OOFEM_SOURCES"
    where PATH_TO_OOFEM_SOURCES is the path to OOFEM source directory,
    created in step 0 (~/oofem-2.2, for example). 
-3) compile OOFEM
+4) compile OOFEM
    "make"
-4) optionally, run the tests
+5) optionally, run the tests
    "ctest" 
 
 
