@@ -6,6 +6,7 @@
         "dream3d_analysis.C": "cpp",
         "dssmatrix.C": "cpp",
         "cltypes.C": "cpp",
-        "concretedpm2.C": "cpp"
+        "concretedpm2.C": "cpp",
+        "engngm.C": "cpp"
     }
 }
