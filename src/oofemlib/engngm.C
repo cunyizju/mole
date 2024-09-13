@@ -103,7 +103,7 @@ EngngModel :: EngngModel(int i, EngngModel *_master) : domainNeqs(), domainPresc
     equationNumberingCompleted = 0;
     ndomains = 0;
     nMetaSteps = 0;
-    profileOpt = false;
+    profileOpt = true;
     nonLinFormulation = UNKNOWN;
 
     outputStream          = NULL;
@@ -272,7 +272,7 @@ EngngModel :: initializeFrom(InputRecord &ir)
 
     renumberFlag = false;
     IR_GIVE_OPTIONAL_FIELD(ir, renumberFlag, _IFT_EngngModel_renumberFlag);
-    profileOpt = false;
+    profileOpt = true;
     IR_GIVE_OPTIONAL_FIELD(ir, profileOpt, _IFT_EngngModel_profileOpt);
     nMetaSteps   = 0;
     IR_GIVE_OPTIONAL_FIELD(ir, nMetaSteps, _IFT_EngngModel_nmsteps);
