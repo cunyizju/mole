@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.txt": "cmake",
+        "staticstructural.C": "cpp",
+        "nlinearstatic.C": "cpp",
+        "dream3d_analysis.C": "cpp",
+        "dssmatrix.C": "cpp",
+        "cltypes.C": "cpp",
+        "concretedpm2.C": "cpp"
+    }
+}
