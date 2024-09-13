@@ -169,6 +169,12 @@ NonLinearStatic :: updateAttributes(MetaStep *mStep)
         OOFEM_ERROR("deltaT < 0");
     }
 
+    maxIterNum = 100;
+    IR_GIVE_OPTIONAL_FIELD(ir, maxIterNum, _IFT_NonLinearStatic_maxIterNum);
+    if ( maxIterNum < 0 ) {
+        OOFEM_ERROR("maxIterNum < 0");
+    }
+
     dtFunction = 0;
     IR_GIVE_OPTIONAL_FIELD(ir, dtFunction, _IFT_NonLinearStatic_deltatfunction);
 
@@ -560,8 +566,11 @@ NonLinearStatic :: proceedStep(int di, TimeStep *tStep)
     prevStepLength =  currentStepLength;
     tStep->numberOfIterations = currentIterations;
     tStep->convergedReason = numMetStatus;
-    // OOFEM_ERROR("Maximum iterations reached");
-    // OOFEM_EXIT(1);
+
+    if (currentIterations == maxIterNum){
+        OOFEM_ERROR("Maximum iterations %d reached! \n please increase maxiter or check the model", maxIterNum);
+        OOFEM_EXIT(1);
+    }
 }
 
 

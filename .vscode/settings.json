@@ -7,6 +7,13 @@
         "dssmatrix.C": "cpp",
         "cltypes.C": "cpp",
         "concretedpm2.C": "cpp",
-        "engngm.C": "cpp"
+        "engngm.C": "cpp",
+        "linearstatic.C": "cpp",
+        "calmls.C": "cpp",
+        "nrsolver.C": "cpp",
+        "huertaerrorestimator.C": "cpp",
+        "structuralmaterial.C": "cpp",
+        "error.C": "cpp",
+        "dsssolver.C": "cpp"
     }
 }
