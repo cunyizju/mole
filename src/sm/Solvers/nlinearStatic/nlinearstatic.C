@@ -560,8 +560,12 @@ NonLinearStatic :: proceedStep(int di, TimeStep *tStep)
     prevStepLength =  currentStepLength;
     tStep->numberOfIterations = currentIterations;
     tStep->convergedReason = numMetStatus;
-    OOFEM_ERROR("Maximum iterations reached");
-    OOFEM_EXIT(1);
+    // maximum iterations reached: kill the job
+    // if (currentIterations > 10) {
+    //     OOFEM_ERROR("Maximum iterations reached");
+    //     OOFEM_EXIT(1);
+    // }
+
 }
 
 
