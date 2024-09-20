@@ -38,7 +38,7 @@
 #include "feinterpol.h"
 #include "domain.h"
 #include "material.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "integrationrule.h"
 #include "intarray.h"
 #include "floatarray.h"

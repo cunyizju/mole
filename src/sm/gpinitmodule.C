@@ -43,7 +43,7 @@
 #include "engngm.h"
 #include "classfactory.h"
 #include "gausspoint.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include <cassert>
 
 namespace oofem {

@@ -48,7 +48,7 @@
 #include "../sm/Materials/structuralmaterial.h"
 #include "contextioerr.h"
 #include "datastream.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "dof.h"
 
 #ifdef __OOFEG

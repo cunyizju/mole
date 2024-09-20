@@ -33,7 +33,7 @@
  */
 
 #include "freewarping.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "sm/Elements/trwarp.h"
 #include "nummet.h"
 #include "timestep.h"

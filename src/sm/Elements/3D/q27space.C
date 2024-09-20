@@ -41,7 +41,7 @@
 #include "intarray.h"
 #include "domain.h"
 #include "mathfem.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "classfactory.h"
 #include "fei3dhexatriquad.h"
 

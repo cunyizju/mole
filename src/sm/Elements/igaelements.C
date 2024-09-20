@@ -42,7 +42,7 @@
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "matresponsemode.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "mathfem.h"
 #include "iga/iga.h"
 #include "classfactory.h"

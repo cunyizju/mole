@@ -53,7 +53,7 @@
 #include "assemblercallback.h"
 #include "mathfem.h"
 #include "floatarrayf.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 
 namespace oofem {
 REGISTER_BoundaryCondition(PrescribedDispSlipBCDirichletRC);

@@ -35,7 +35,7 @@
 #ifndef dummycrosssection_h
 #define dummycrosssection_h
 
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "materialmode.h"
 #include "matresponsemode.h"
 #include "material.h"

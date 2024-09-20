@@ -34,7 +34,7 @@
 
 #include "sm/Elements/Bars/qtruss1d.h"
 #include "fei1dquad.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "floatmatrix.h"

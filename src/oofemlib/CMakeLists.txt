@@ -145,9 +145,9 @@ set (core_ltf
     )
 
 set (core_cs
-    crosssection.C
-    emptycs.C
-    dummycrosssection.C
+    cs/crosssection.C
+    cs/emptycs.C
+    cs/dummycrosssection.C
     )
 
 set (core_td

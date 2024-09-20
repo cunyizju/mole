@@ -41,7 +41,7 @@
 #include "engngm.h"
 #include "classfactory.h"
 #include "sm/Materials/structuralmaterial.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "floatarray.h"
 
 #include <fstream>

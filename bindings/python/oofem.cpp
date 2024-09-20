@@ -69,7 +69,7 @@ namespace py = pybind11;
 #include "Materials/structuralmaterial.h"
 #include "Materials/structuralms.h"
 
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "sparsemtrx.h"
 
 #include "field.h"

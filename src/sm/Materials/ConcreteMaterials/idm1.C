@@ -45,7 +45,7 @@
 #include "classfactory.h"
 #include "dynamicinputrecord.h"
 #include "engngm.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "oofemtxtinputrecord.h"
 
 namespace oofem {

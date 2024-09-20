@@ -34,7 +34,7 @@
 
 #include "integrationrule.h"
 #include "material.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "gausspoint.h"
 #include "datastream.h"
 #include "contextioerr.h"

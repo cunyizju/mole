@@ -40,7 +40,7 @@
 #include "floatmatrix.h"
 #include "floatarray.h"
 #include "intarray.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "classfactory.h"
 
 

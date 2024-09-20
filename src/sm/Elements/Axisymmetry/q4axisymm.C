@@ -43,7 +43,7 @@
 #include "domain.h"
 #include "engngm.h"
 #include "mathfem.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "classfactory.h"
 
 #ifdef __OOFEG

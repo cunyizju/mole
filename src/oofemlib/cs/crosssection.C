@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "dictionary.h"
 #include "dynamicinputrecord.h"
 #include "gausspoint.h"

@@ -34,7 +34,7 @@
 
 #include "sm/Elements/Interfaces/intelsurftr1.h"
 #include "node.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "floatmatrix.h"

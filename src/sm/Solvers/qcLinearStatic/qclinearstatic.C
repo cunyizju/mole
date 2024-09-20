@@ -49,7 +49,7 @@
 #include "qcnode.h"
 #include "domain.h"
 #include "dof.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 
 #include "sm/Quasicontinuum/quasicontinuum.h"
 #include "sm/Quasicontinuum/fullsolveddomain.h"

@@ -36,7 +36,7 @@
 #include "domain.h"
 #include "spatiallocalizer.h"
 #include "element.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "timestep.h"
 #include "util.h"
 #include "classfactory.h"

@@ -32,34 +32,17 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#ifndef emptycs_h
-#define emptycs_h
-
-#include "crosssection.h"
-
-#define _IFT_EmptyCS_Name "emptycs"
+#include "cs/emptycs.h"
+#include "classfactory.h"
 
 namespace oofem {
-/**
- * Empty cross section model which doesn't have any material models.
- */
-class OOFEM_EXPORT EmptyCS : public CrossSection
+REGISTER_CrossSection(EmptyCS);
+
+EmptyCS :: EmptyCS(int n, Domain *d) : CrossSection(n, d) { }
+
+Material* EmptyCS::giveMaterial(IntegrationPoint* ip) const
 {
-public:
-    /**
-     * Constructor. Creates cross section with number n belonging to domain d.
-     * @param n Cross section number.
-     * @param d Domain for cross section.
-     */
-    EmptyCS(int n, Domain * d);
+    return nullptr;
+}
 
-    Material *giveMaterial(IntegrationPoint *ip) const override;
-    int packUnknowns(DataStream &buff, TimeStep *tStep, GaussPoint *ip) override { return 1; }
-    int unpackAndUpdateUnknowns(DataStream &buff, TimeStep *tStep, GaussPoint *ip) override { return 1; }
-    int estimatePackSize(DataStream &buff, GaussPoint *ip) override { return 0; }
-
-    const char *giveClassName() const override { return "EmptyCS"; }
-    const char *giveInputRecordName() const override { return _IFT_EmptyCS_Name; }
-};
 } // end namespace oofem
-#endif // emptycs_h

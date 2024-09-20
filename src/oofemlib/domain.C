@@ -38,7 +38,7 @@
 #include "node.h"
 #include "elementside.h"
 #include "material.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "load.h"
 #include "initialcondition.h"
 #include "ltf/function.h"

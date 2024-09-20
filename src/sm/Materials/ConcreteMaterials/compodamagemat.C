@@ -40,7 +40,7 @@
 #include "mathfem.h"
 #include "classfactory.h"
 #include "contextioerr.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 
 namespace oofem {
 REGISTER_Material(CompoDamageMat);

@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "dummycrosssection.h"
+#include "cs/dummycrosssection.h"
 #include "dynamicinputrecord.h"
 #include "material.h"
 #include "gaussintegrationrule.h"

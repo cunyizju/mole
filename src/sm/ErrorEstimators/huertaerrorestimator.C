@@ -47,7 +47,7 @@
 #include "metastep.h"
 #include "integrationrule.h"
 #include "connectivitytable.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "dof.h"
 #include "util.h"
 #include "eleminterpunknownmapper.h"

@@ -47,7 +47,7 @@
 #include "unknownnumberingscheme.h"
 #include "engngm.h"
 #include "mathfem.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "Elements/structuralelement.h"
 
 

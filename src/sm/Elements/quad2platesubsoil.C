@@ -34,7 +34,7 @@
 
 #include "sm/Elements/quad2platesubsoil.h"
 #include "fei2dquadquad.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "classfactory.h"

@@ -36,7 +36,7 @@
 #define latticecrosssection_h
 
 #include "sm/Materials/LatticeMaterials/latticestructuralmaterial.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "classfactory.h"
 
 ///@name Input fields for LatticeCrossSection

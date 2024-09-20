@@ -33,7 +33,7 @@
  */
 
 #include "element.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "integrationrule.h"
 #include "errorestimator.h"
 #include "intarray.h"

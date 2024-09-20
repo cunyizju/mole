@@ -55,7 +55,7 @@
 #include "geometry.h"
 #include "classfactory.h"
 #include "spatiallocalizer.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 
 #include <memory>
 

@@ -42,7 +42,7 @@
 #include "oofemtxtdatareader.h"
 #include "dynamicinputrecord.h"
 
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "classfactory.h"
 
 #include "nonlocalbarrier.h"

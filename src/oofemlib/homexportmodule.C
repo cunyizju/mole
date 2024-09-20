@@ -39,7 +39,7 @@
 #include "engngm.h"
 #include "material.h"
 #include "classfactory.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "tm/EngineeringModels/transienttransportproblem.h"
 #include "sm/Elements/structuralelement.h"
 #include "sm/Materials/structuralmaterial.h"

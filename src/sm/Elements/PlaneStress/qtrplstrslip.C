@@ -39,7 +39,7 @@
 #include "floatmatrix.h"
 #include "floatarray.h"
 #include "intarray.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "gaussintegrationrule.h"
 #include "mathfem.h"
 #include "classfactory.h"

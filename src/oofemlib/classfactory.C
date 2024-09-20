@@ -54,7 +54,7 @@
 #include "materialmappingalgorithm.h"
 #include "ltf/function.h"
 #include "material.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "nonlocalbarrier.h"
 #include "exportmodule.h"
 #include "initmodule.h"

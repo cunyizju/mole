@@ -36,7 +36,7 @@
 #define structuralinterfacecrosssection_h
 
 #include "sm/Materials/InterfaceMaterials/structuralinterfacematerial.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "classfactory.h"
 
 ///@name Input fields for StructuralInterfaceCrossSection

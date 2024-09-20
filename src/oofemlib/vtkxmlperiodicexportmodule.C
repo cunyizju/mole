@@ -43,7 +43,7 @@
 #include "cltypes.h"
 #include "material.h"
 #include "classfactory.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "dof.h"
 
 #ifdef __SM_MODULE

@@ -39,7 +39,7 @@
 #include "gaussintegrationrule.h"
 #include "floatmatrix.h"
 #include "intarray.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"

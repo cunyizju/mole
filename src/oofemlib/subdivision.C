@@ -45,7 +45,7 @@
 #include "initialcondition.h"
 #include "classfactory.h"
 #include "outputmanager.h"
-#include "crosssection.h"
+#include "cs/crosssection.h"
 #include "ltf/function.h"
 #include "timer.h"
 #include "remeshingcrit.h"
