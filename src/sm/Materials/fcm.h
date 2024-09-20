@@ -35,7 +35,7 @@
 #ifndef fcm_h
 #define fcm_h
 
-#include "material.h"
+#include "material/material.h"
 #include "isolinearelasticmaterial.h"
 #include "structuralmaterial.h"
 #include "structuralms.h"

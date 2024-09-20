@@ -33,7 +33,7 @@
  */
 
 #include "subdivision.h"
-#include "material.h"
+#include "material/material.h"
 #include "errorestimator.h"
 #include "domain.h"
 #include "dofman/node.h"

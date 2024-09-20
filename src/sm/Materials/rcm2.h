@@ -35,7 +35,7 @@
 #ifndef rcm2_h
 #define rcm2_h
 
-#include "material.h"
+#include "material/material.h"
 #include "sm/Materials/linearelasticmaterial.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"

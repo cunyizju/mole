@@ -35,7 +35,7 @@
 #ifndef emptymaterial_h
 #define emptymaterial_h
 
-#include "material.h"
+#include "material/material.h"
 
 #define _IFT_DummyMaterial_Name "dummymat"
 

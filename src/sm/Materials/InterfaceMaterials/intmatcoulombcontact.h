@@ -35,7 +35,7 @@
 #ifndef inmatcoulombcontact_h
 #define inmatcoulombcontact_h
 
-#include "material.h"
+#include "material/material.h"
 #include "structuralinterfacematerial.h"
 #include "structuralinterfacematerialstatus.h"
 

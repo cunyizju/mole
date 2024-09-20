@@ -37,7 +37,7 @@
 #include "timestep.h"
 #include "dofman/node.h"
 #include "dofman/elementside.h"
-#include "material.h"
+#include "material/material.h"
 #include "cs/crosssection.h"
 #include "load.h"
 #include "initialcondition.h"

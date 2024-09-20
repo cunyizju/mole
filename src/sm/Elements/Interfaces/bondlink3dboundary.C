@@ -36,7 +36,7 @@
 #include "../sm/Elements/Interfaces/bondlink3dboundary.h"
 #include "../sm/Materials/structuralms.h"
 #include "dofman/node.h"
-#include "material.h"
+#include "material/material.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "floatmatrix.h"

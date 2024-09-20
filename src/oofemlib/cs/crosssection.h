@@ -38,7 +38,7 @@
 #include "femcmpnn.h"
 #include "materialmode.h"
 #include "matresponsemode.h"
-#include "material.h"
+#include "material/material.h"
 #include "internalstatetype.h"
 #include "internalstatevaluetype.h"
 #include "dictionary.h"

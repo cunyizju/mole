@@ -34,7 +34,7 @@
 
 #include "mathfem.h"
 #include "rheoChM.h"
-#include "material.h"
+#include "material/material.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
 #include "sm/Materials/LatticeMaterials/latticelinearelastic.h"
 #include "floatarray.h"

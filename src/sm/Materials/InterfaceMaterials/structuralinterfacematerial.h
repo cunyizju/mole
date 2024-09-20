@@ -35,7 +35,7 @@
 #ifndef structuralinterfacematerial_h
 #define structuralinterfacematerial_h
 
-#include "material.h"
+#include "material/material.h"
 #include "floatarray.h"
 #include "floatmatrix.h"
 #include "matconst.h"

@@ -38,7 +38,7 @@
 #include "dofman/dofmanager.h"
 #include "engngm.h"
 #include "gausspoint.h"
-#include "material.h"
+#include "material/material.h"
 #include "communicator.h"
 #include "datastream.h"
 #include "domaintransactionmanager.h"

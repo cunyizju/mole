@@ -35,7 +35,7 @@
 #ifndef structuralmaterial_h
 #define structuralmaterial_h
 
-#include "material.h"
+#include "material/material.h"
 #include "floatarray.h"
 #include "floatmatrix.h"
 #include "floatarrayf.h"

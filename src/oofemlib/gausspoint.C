@@ -34,7 +34,7 @@
 
 #include "gausspoint.h"
 #include "matstatus.h"
-#include "material.h"
+#include "material/material.h"
 
 #include <memory>
 

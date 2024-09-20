@@ -37,7 +37,7 @@
 #include "element.h"
 #include "gausspoint.h"
 #include "engngm.h"
-#include "material.h"
+#include "material/material.h"
 #include "classfactory.h"
 #include "cs/crosssection.h"
 #include "tm/EngineeringModels/transienttransportproblem.h"

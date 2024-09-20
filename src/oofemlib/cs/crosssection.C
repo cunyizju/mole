@@ -36,7 +36,7 @@
 #include "dictionary.h"
 #include "dynamicinputrecord.h"
 #include "gausspoint.h"
-#include "material.h"
+#include "material/material.h"
 #include "contextioerr.h"
 #include "datastream.h"
 #include "gaussintegrationrule.h"

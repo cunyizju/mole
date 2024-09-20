@@ -36,7 +36,7 @@
 #include "spatiallocalizer.h"
 #include "domain.h"
 #include "element.h"
-#include "material.h"
+#include "material/material.h"
 #include "integrationrule.h"
 #include "gausspoint.h"
 

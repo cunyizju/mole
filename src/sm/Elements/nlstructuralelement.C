@@ -37,7 +37,7 @@
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "feinterpol.h"
 #include "domain.h"
-#include "material.h"
+#include "material/material.h"
 #include "cs/crosssection.h"
 #include "integrationrule.h"
 #include "intarray.h"

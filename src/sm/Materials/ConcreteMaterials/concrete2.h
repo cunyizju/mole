@@ -37,7 +37,7 @@
 
 #include "femcmpnn.h"
 #include "dictionary.h"
-#include "material.h"
+#include "material/material.h"
 #include "sm/Materials/deformationtheorymaterial.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
 #include "floatarray.h"

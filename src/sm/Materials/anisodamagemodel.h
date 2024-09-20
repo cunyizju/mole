@@ -40,7 +40,7 @@
 // (can be turned off if such information is not needed)
 #define keep_track_of_dissipated_energy
 
-#include "material.h"
+#include "material/material.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "isolinearelasticmaterial.h"
 #include "sm/Materials/structuralms.h"

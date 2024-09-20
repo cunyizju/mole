@@ -56,7 +56,7 @@
 #include "mathfem.h"
 #include "cltypes.h"
 #include "element.h"
-#include "material.h"
+#include "material/material.h"
 #include "classfactory.h"
 #include "cs/crosssection.h"
 #include "dofs/dof.h"

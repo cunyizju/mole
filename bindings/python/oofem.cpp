@@ -63,7 +63,7 @@ namespace py = pybind11;
 #include "boundarycondition.h"
 #include "initialcondition.h"
 #include "ltf/function.h"
-#include "material.h"
+#include "material/material.h"
 #include "integrationpointstatus.h"
 #include "matstatus.h"
 #include "Materials/structuralmaterial.h"

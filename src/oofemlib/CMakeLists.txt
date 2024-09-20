@@ -168,8 +168,8 @@ set (core_dofman
     )
 
 set (core_material
-    material.C
-    dummymaterial.C
+    material/material.C
+    material/dummymaterial.C
     )
 
 set (core_export

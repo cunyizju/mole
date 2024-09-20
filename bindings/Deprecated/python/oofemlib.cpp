@@ -60,7 +60,7 @@ namespace bp = boost::python;
 #include "load.h"
 #include "initialcondition.h"
 #include "ltf/function.h"
-#include "material.h"
+#include "material/material.h"
 #include "cs/crosssection.h"
 #include "dofman/node.h"
 #include "connectivitytable.h"

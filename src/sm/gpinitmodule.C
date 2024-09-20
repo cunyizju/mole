@@ -37,7 +37,7 @@
 #include "gpinitmodule.h"
 #include "element.h"
 #include "integrationrule.h"
-#include "material.h"
+#include "material/material.h"
 #include "floatarray.h"
 #include "domain.h"
 #include "engngm.h"

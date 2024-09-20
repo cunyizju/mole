@@ -36,7 +36,7 @@
 #include "../sm/Elements/LatticeElements/latticelink3d.h"
 #include "../sm/Materials/LatticeMaterials/latticematstatus.h"
 #include "dofman/node.h"
-#include "material.h"
+#include "material/material.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "floatmatrix.h"

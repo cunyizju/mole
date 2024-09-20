@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "material.h"
+#include "material/material.h"
 #include "verbose.h"
 #include "gausspoint.h"
 #include "floatarray.h"

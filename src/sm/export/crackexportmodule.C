@@ -34,7 +34,7 @@
 
 #include "crackexportmodule.h"
 #include "gausspoint.h"
-#include "material.h"
+#include "material/material.h"
 #include "element.h"
 #include "integrationrule.h"
 #include "timestep.h"

@@ -33,7 +33,7 @@
  */
 
 #include "integrationrule.h"
-#include "material.h"
+#include "material/material.h"
 #include "cs/crosssection.h"
 #include "gausspoint.h"
 #include "datastream.h"

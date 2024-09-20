@@ -53,7 +53,7 @@
 #include "errorestimator.h"
 #include "materialmappingalgorithm.h"
 #include "ltf/function.h"
-#include "material.h"
+#include "material/material.h"
 #include "cs/crosssection.h"
 #include "nonlocalbarrier.h"
 #include "exportmodule.h"

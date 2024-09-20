@@ -38,7 +38,7 @@
 #include "timestep.h"
 #include "integrationrule.h"
 #include "nonlocalmaterialext.h"
-#include "material.h"
+#include "material/material.h"
 #include "spatiallocalizer.h"
 #include "domain.h"
 #include "nonlocalbarrier.h"

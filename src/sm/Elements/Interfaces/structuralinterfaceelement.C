@@ -38,7 +38,7 @@
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
 #include "feinterpol.h"
 #include "domain.h"
-#include "material.h"
+#include "material/material.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "intarray.h"

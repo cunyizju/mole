@@ -43,7 +43,7 @@
 #include "Loads/structeigenstrainload.h"
 #include "feinterpol.h"
 #include "domain.h"
-#include "material.h"
+#include "material/material.h"
 #include "nonlocalmaterialext.h"
 #include "load.h"
 #include "boundaryload.h"

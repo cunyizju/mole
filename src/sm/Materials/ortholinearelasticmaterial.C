@@ -35,7 +35,7 @@
 #include "sm/Materials/linearelasticmaterial.h"
 #include "sm/Materials/ortholinearelasticmaterial.h"
 #include "sm/Elements/structuralelement.h"
-#include "material.h"
+#include "material/material.h"
 #include "sm/Materials/structuralms.h"
 #include "floatmatrix.h"
 #include "floatarrayf.h"

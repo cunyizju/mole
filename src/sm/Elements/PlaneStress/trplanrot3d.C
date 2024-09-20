@@ -35,7 +35,7 @@
 #include "sm/Elements/PlaneStress/trplanrot3d.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "sm/Materials/structuralms.h"
-#include "material.h"
+#include "material/material.h"
 #include "dofman/node.h"
 #include "load.h"
 #include "mathfem.h"

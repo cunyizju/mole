@@ -35,7 +35,7 @@
 #include "oofeggraphiccontext.h"
 #include "engngm.h"
 #include "element.h"
-#include "material.h"
+#include "material/material.h"
 #include "range.h"
 #include "mathfem.h"
 #include "oofemtxtinputrecord.h"
