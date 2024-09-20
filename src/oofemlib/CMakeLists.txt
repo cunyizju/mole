@@ -139,9 +139,9 @@ set (core_ltf
     ltf/peakfunction.C
     ltf/piecewiselinfunction.C
     ltf/periodicpiecewiselinfunction.C
-    calculatorfunction.C
-    localgaussianrandomfunction.C
-    interpolatingfunction.C
+    ltf/calculatorfunction.C
+    ltf/localgaussianrandomfunction.C
+    ltf/interpolatingfunction.C
     )
 
 set (core_cs
