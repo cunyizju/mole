@@ -35,7 +35,7 @@
 #ifndef constantpressureload_h
 #define constantpressureload_h
 
-#include "boundaryload.h"
+#include "bc/boundaryload.h"
 
 ///@name Input fields for ConstantPressureLoad
 //@{

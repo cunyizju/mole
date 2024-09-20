@@ -35,7 +35,7 @@
 #ifndef structtemperatureload_h
 #define structtemperatureload_h
 
-#include "load.h"
+#include "bc/load.h"
 
 #define _IFT_StructuralTemperatureLoad_Name "structtemperatureload"
 

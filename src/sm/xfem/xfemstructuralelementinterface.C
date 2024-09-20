@@ -47,7 +47,7 @@
 #include "mathfem.h"
 
 #include "sm/Materials/structuralfe2material.h"
-#include "prescribedgradienthomogenization.h"
+#include "bc/prescribedgradienthomogenization.h"
 
 #include "xfem/patchintegrationrule.h"
 #include "xfem/enrichmentitems/crack.h"
@@ -59,7 +59,7 @@
 
 #include "vtkxmlexportmodule.h"
 
-#include "prescribedgradientbcweak.h"
+#include "bc/prescribedgradientbcweak.h"
 #include "mathfem.h"
 #include <cmath>
 

@@ -36,7 +36,7 @@
 
 #include "userdefdirichletbc.h"
 
-#include "boundarycondition.h"
+#include "bc/boundarycondition.h"
 #include "timestep.h"
 #include "ltf/function.h"
 #include "verbose.h"

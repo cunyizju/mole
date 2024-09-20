@@ -27,7 +27,7 @@
 #include "spatiallocalizer.h"
 #include "dynamicinputrecord.h"
 #include "bodyload.h"
-#include "boundarycondition.h"
+#include "bc/boundarycondition.h"
 //#include "stokesflow.h"
 //#include "classfactory.h"
 

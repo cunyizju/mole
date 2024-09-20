@@ -36,7 +36,7 @@
 #define prescribeddispslipbcdirichletrc_h
 
 #include "boundaryConditions/prescribeddispsliphomogenization.h"
-#include "boundarycondition.h"
+#include "bc/boundarycondition.h"
 #include "dofs/dof.h"
 #include "bctype.h"
 #include "valuemodetype.h"

@@ -52,7 +52,7 @@
 #include "dofman/node.h"
 */
 
-#include "boundarycondition.h"
+#include "bc/boundarycondition.h"
 
 #include <vector>
 #include <set>

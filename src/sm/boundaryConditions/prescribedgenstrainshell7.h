@@ -35,7 +35,7 @@
 #ifndef PrescribedGenStrainShell7_h
 #define PrescribedGenStrainShell7_h
 
-#include "boundarycondition.h"
+#include "bc/boundarycondition.h"
 #include "dofs/dof.h"
 #include "bctype.h"
 #include "valuemodetype.h"

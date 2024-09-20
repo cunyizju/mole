@@ -46,8 +46,8 @@
 #include "classfactory.h"
 #include "timestep.h"
 #include "activebc.h"
-#include "prescribedgradientbcweak.h"
-#include "prescribedgradientbcneumann.h"
+#include "bc/prescribedgradientbcweak.h"
+#include "bc/prescribedgradientbcneumann.h"
 #include "unknownnumberingscheme.h"
 #include "mathfem.h"
 

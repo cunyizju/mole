@@ -42,7 +42,7 @@
 #include "dofman/dofmanager.h"
 #include "dofs/simpleslavedof.h"
 #include "intarray.h"
-#include "generalboundarycondition.h"
+#include "bc/generalboundarycondition.h"
 
 #include <memory>
 #include <ctime>

@@ -34,7 +34,7 @@
 
 #include "tr2shell7phfi.h"
 #include "dofman/node.h"
-#include "load.h"
+#include "bc/load.h"
 #include "structuralms.h"
 #include "mathfem.h"
 #include "domain.h"
@@ -42,7 +42,7 @@
 #include "gaussintegrationrule.h"
 #include "gausspoint.h"
 #include "fei3dtrquad.h"
-#include "boundaryload.h"
+#include "bc/boundaryload.h"
 #include "vtkxmlexportmodule.h"
 #include "classfactory.h"
 #include "tr2shell7.h"

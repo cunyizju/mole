@@ -37,7 +37,7 @@
 #include "sm/Materials/structuralms.h"
 #include "material/material.h"
 #include "dofman/node.h"
-#include "load.h"
+#include "bc/load.h"
 #include "mathfem.h"
 #include "classfactory.h"
 #include "gaussintegrationrule.h"

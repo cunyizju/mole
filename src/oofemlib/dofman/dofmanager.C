@@ -36,7 +36,7 @@
 #include "dofs/masterdof.h"
 #include "dofs/simpleslavedof.h"
 #include "timestep.h"
-#include "load.h"
+#include "bc/load.h"
 #include "floatarray.h"
 #include "floatmatrix.h"
 #include "intarray.h"

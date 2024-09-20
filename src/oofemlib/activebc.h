@@ -35,7 +35,7 @@
 #ifndef activebc_h
 #define activebc_h
 
-#include "generalboundarycondition.h"
+#include "bc/generalboundarycondition.h"
 #include "intarray.h"
 #include "inputrecord.h"
 #include "chartype.h"

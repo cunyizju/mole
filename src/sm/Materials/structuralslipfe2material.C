@@ -42,7 +42,7 @@
 #include "classfactory.h"
 #include "util.h"
 #include "contextioerr.h"
-#include "generalboundarycondition.h"
+#include "bc/generalboundarycondition.h"
 #include "sm/boundaryConditions/prescribeddispsliphomogenization.h"
 #include "exportmodulemanager.h"
 #include "vtkxmlexportmodule.h"

@@ -35,7 +35,7 @@
 #ifndef structeigenstrainload_h
 #define structeigenstrainload_h
 
-#include "load.h"
+#include "bc/load.h"
 
 #define _IFT_StructuralEigenstrainLoad_Name "structeigenstrainload"
 

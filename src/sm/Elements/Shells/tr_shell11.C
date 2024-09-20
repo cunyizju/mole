@@ -40,7 +40,7 @@
 #include "classfactory.h"
 #include "dofman/node.h"
 #include "sm/Materials/structuralms.h"
-#include "load.h"
+#include "bc/load.h"
 
 namespace oofem {
 REGISTER_Element(TR_SHELL11);

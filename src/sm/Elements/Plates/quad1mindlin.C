@@ -43,7 +43,7 @@
 #include "floatmatrix.h"
 #include "floatarray.h"
 #include "intarray.h"
-#include "load.h"
+#include "bc/load.h"
 #include "mathfem.h"
 #include "fei2dquadlin.h"
 #include "classfactory.h"

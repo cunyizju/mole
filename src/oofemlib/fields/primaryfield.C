@@ -43,7 +43,7 @@
 #include "engngm.h"
 #include "unknownnumberingscheme.h"
 #include "initialcondition.h"
-#include "boundarycondition.h"
+#include "bc/boundarycondition.h"
 
 namespace oofem {
 PrimaryField :: PrimaryField(EngngModel *a, int idomain,

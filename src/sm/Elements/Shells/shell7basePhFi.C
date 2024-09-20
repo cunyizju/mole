@@ -34,7 +34,7 @@
 
 #include "Shell7BasePhFi.h"
 #include "dofman/node.h"
-#include "load.h"
+#include "bc/load.h"
 #include "structuralms.h"
 #include "mathfem.h"
 #include "domain.h"
@@ -43,9 +43,9 @@
 #include "gausspoint.h"
 #include "feinterpol3d.h"
 #include "fei3dtrquad.h"
-#include "boundaryload.h"
+#include "bc/boundaryload.h"
 #include "constantpressureload.h"
-#include "constantsurfaceload.h"
+#include "bc/constantsurfaceload.h"
 #include "vtkxmlexportmodule.h"
 #include "fracturemanager.h"
 

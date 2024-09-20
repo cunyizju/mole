@@ -40,12 +40,12 @@
 #include "intarray.h"
 #include "floatarray.h"
 #include "engngm.h"
-#include "boundaryload.h"
+#include "bc/boundaryload.h"
 #include "mathfem.h"
 #include "bctracker.h"
 
 #include "bodyload.h"
-#include "boundaryload.h"
+#include "bc/boundaryload.h"
 
 namespace oofem {
 

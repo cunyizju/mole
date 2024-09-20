@@ -36,7 +36,7 @@
 #include "dofs/dof.h"
 #include "dofs/slavedof.h"
 #include "dofs/simpleslavedof.h"
-#include "nodalload.h"
+#include "bc/nodalload.h"
 #include "timestep.h"
 
 #include "floatarray.h"

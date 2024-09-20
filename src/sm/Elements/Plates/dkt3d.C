@@ -36,7 +36,7 @@
 #include "sm/Materials/structuralms.h"
 #include "fei2dtrlin.h"
 #include "dofman/node.h"
-#include "load.h"
+#include "bc/load.h"
 #include "mathfem.h"
 #include "gaussintegrationrule.h"
 #include "gausspoint.h"

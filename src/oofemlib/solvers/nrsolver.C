@@ -39,7 +39,7 @@
 // includes for ddc - not very clean (NumMethod knows what is "node" and "dof")
 #include "dofman/node.h"
 #include "element.h"
-#include "generalboundarycondition.h"
+#include "bc/generalboundarycondition.h"
 #include "dofs/dof.h"
 #include "ltf/function.h"
 #include "solvers/linesearch.h"

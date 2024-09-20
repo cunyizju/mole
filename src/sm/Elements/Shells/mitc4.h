@@ -40,7 +40,7 @@
 #include "nodalrecovery/sprnodalrecoverymodel.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "spatiallocalizer.h"
-#include "load.h"
+#include "bc/load.h"
 #include "floatmatrixf.h"
 //#include "eleminterpmapperinterface.h"//
 

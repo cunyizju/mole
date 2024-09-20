@@ -35,7 +35,7 @@
 #ifndef PRESCRIBEDGRADIENTBCMULTIPLE_H_
 #define PRESCRIBEDGRADIENTBCMULTIPLE_H_
 
-#include "prescribedgradienthomogenization.h"
+#include "bc/prescribedgradienthomogenization.h"
 #include "activebc.h"
 
 #include <memory>

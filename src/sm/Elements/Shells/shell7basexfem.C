@@ -35,7 +35,7 @@
 #include "sm/Elements/Shells/shell7basexfem.h"
 #include "sm/Elements/Shells/shell7base.h"
 #include "Loads/constantpressureload.h"
-#include "constantsurfaceload.h"
+#include "bc/constantsurfaceload.h"
 #include "sm/Materials/InterfaceMaterials/intmatbilinczfagerstrom.h"
 #include "sm/Materials/InterfaceMaterials/intmatbilinczjansson.h"
 #include "xfem/enrichmentitems/crack.h"

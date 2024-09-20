@@ -39,9 +39,9 @@
 #include "dofman/dofmanager.h"
 #include "activebc.h"
 
-#include "nodalload.h"
+#include "bc/nodalload.h"
 #include "bodyload.h"
-#include "boundaryload.h"
+#include "bc/boundaryload.h"
 
 namespace oofem {
 

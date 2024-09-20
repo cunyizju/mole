@@ -44,7 +44,7 @@
 #include "datastream.h"
 #include "contextioerr.h"
 #include "unknownnumberingscheme.h"
-#include "boundarycondition.h"
+#include "bc/boundarycondition.h"
 #include "sm/Elements/3D/macrolspace.h"
 #include "error.h"
 

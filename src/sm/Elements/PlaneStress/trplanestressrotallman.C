@@ -42,7 +42,7 @@
 #include "floatarray.h"
 #include "intarray.h"
 #include "mathfem.h"
-#include "boundaryload.h"
+#include "bc/boundaryload.h"
 #include "classfactory.h"
 
 #ifdef __OOFEG

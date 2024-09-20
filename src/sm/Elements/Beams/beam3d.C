@@ -43,7 +43,7 @@
 #include "intarray.h"
 #include "floatarray.h"
 #include "engngm.h"
-#include "boundaryload.h"
+#include "bc/boundaryload.h"
 #include "mathfem.h"
 #include "fei3dlinelin.h"
 #include "classfactory.h"
@@ -52,7 +52,7 @@
 #include "bctracker.h"
 
 #include "bodyload.h"
-#include "boundaryload.h"
+#include "bc/boundaryload.h"
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"

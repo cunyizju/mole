@@ -35,7 +35,7 @@
 #ifndef USERDEFDIRICHLETBC_H_
 #define USERDEFDIRICHLETBC_H_
 
-#include "boundarycondition.h"
+#include "bc/boundarycondition.h"
 
 #define _IFT_UserDefDirichletBC_Name "userdefdirichletbc"
 #define _IFT_UserDefDirichletBC_filename "filename"

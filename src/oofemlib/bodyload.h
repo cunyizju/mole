@@ -35,7 +35,7 @@
 #ifndef bodyload_h
 #define bodyload_h
 
-#include "load.h"
+#include "bc/load.h"
 #include "bcgeomtype.h"
 
 namespace oofem {

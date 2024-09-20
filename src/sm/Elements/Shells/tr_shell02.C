@@ -39,7 +39,7 @@
 #include "gausspoint.h"
 #include "classfactory.h"
 #include "dofman/node.h"
-#include "load.h"
+#include "bc/load.h"
 
 #ifdef __OOFEG
  #include "dofman/node.h"

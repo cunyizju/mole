@@ -40,7 +40,7 @@
 #include "floatarray.h"
 #include "engngm.h"
 #include "set.h"
-#include "boundarycondition.h"
+#include "bc/boundarycondition.h"
 #include "initialcondition.h"
 #include "element.h"
 #include "activebc.h"

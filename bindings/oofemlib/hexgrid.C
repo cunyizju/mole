@@ -17,11 +17,11 @@
 #include "modulemanager.h"
 #include "exportmodule.h"
 #include "vtkxmlexportmodule.h"
-#include "generalboundarycondition.h"
+#include "bc/generalboundarycondition.h"
 #include "ltf/constantfunction.h"
 #include "dofman/node.h"
 #include "outputmanager.h"
-#include "boundarycondition.h"
+#include "bc/boundarycondition.h"
 #include "set.h"
 
 #include "tm/BoundaryCondition/transportgradientneumann.h"

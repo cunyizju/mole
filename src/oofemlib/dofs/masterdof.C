@@ -36,7 +36,7 @@
 #include "dofman/dofmanager.h"
 #include "domain.h"
 #include "timestep.h"
-#include "boundarycondition.h"
+#include "bc/boundarycondition.h"
 #include "initialcondition.h"
 #include "fields/primaryfield.h"
 #include "dictionary.h"

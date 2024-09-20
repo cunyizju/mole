@@ -35,7 +35,7 @@
 #include "dofs/dof.h"
 #include "dofman/dofmanager.h"
 #include "timestep.h"
-#include "boundarycondition.h"
+#include "bc/boundarycondition.h"
 #include "initialcondition.h"
 #include "datastream.h"
 #include "contextioerr.h"

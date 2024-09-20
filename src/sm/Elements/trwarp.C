@@ -42,7 +42,7 @@
 #include "mathfem.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "classfactory.h"
-#include "load.h"
+#include "bc/load.h"
 #include "Solvers/freeWarping/freewarping.h"
 #include "engngm.h"
 #include "dofs/dof.h"

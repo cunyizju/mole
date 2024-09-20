@@ -36,10 +36,10 @@
 #include "intarray.h"
 #include "element.h"
 #include "set.h"
-#include "load.h"
+#include "bc/load.h"
 #include "bodyload.h"
-#include "boundaryload.h"
-#include "nodalload.h"
+#include "bc/boundaryload.h"
+#include "bc/nodalload.h"
 #include "activebc.h"
 #include "timestep.h"
 

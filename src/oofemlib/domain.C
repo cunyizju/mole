@@ -39,7 +39,7 @@
 #include "dofman/elementside.h"
 #include "material/material.h"
 #include "cs/crosssection.h"
-#include "load.h"
+#include "bc/load.h"
 #include "initialcondition.h"
 #include "ltf/function.h"
 #include "set.h"
@@ -71,7 +71,7 @@
 #include "contact/contactmanager.h"
 #include "bctracker.h"
 
-#include "boundarycondition.h"
+#include "bc/boundarycondition.h"
 #include "activebc.h"
 #include "dofs/simpleslavedof.h"
 #include "dofs/masterdof.h"

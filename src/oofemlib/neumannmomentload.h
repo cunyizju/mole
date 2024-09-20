@@ -35,7 +35,7 @@
 #ifndef NEUMANNMOMENTLOAD_H
 #define NEUMANNMOMENTLOAD_H
 
-#include "boundaryload.h"
+#include "bc/boundaryload.h"
 #include "element.h"
 
 #define _IFT_NeumannMomentLoad_Name "momentload"

@@ -35,7 +35,7 @@
 #ifndef rotatingboundary_h
 #define rotatingboundary_h
 
-#include "boundarycondition.h"
+#include "bc/boundarycondition.h"
 #include "floatarray.h"
 #include "floatmatrix.h"
 

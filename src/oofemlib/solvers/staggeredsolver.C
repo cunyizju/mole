@@ -40,7 +40,7 @@
 #include "domain.h"
 #include "dofman/dofmanager.h"
 #include "element.h"
-#include "generalboundarycondition.h"
+#include "bc/generalboundarycondition.h"
 #include "dofs/dof.h"
 #include "mathfem.h"
 

@@ -59,8 +59,8 @@ namespace py = pybind11;
 #include "timediscretizationtype.h"
 #include "statecountertype.h"
 
-#include "generalboundarycondition.h"
-#include "boundarycondition.h"
+#include "bc/generalboundarycondition.h"
+#include "bc/boundarycondition.h"
 #include "initialcondition.h"
 #include "ltf/function.h"
 #include "material/material.h"

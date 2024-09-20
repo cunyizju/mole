@@ -41,7 +41,7 @@
 
 #include "activebc.h"
 #include "dofman/node.h"
-#include "boundaryload.h"
+#include "bc/boundaryload.h"
 
 namespace oofem
 {

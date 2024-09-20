@@ -40,7 +40,7 @@
 #include "intarray.h"
 #include "dofman/node.h"
 #include "mathfem.h"
-#include "boundaryload.h"
+#include "bc/boundaryload.h"
 #include "classfactory.h"
 
 namespace oofem {
