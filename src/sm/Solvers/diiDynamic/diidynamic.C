@@ -38,7 +38,7 @@
 #include "timestep.h"
 #include "element.h"
 #include "dofman/dofmanager.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "contextioerr.h"
 #include "datastream.h"
 #include "verbose.h"

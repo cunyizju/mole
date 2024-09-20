@@ -46,7 +46,7 @@
 #include "datastream.h"
 #include "exportmodulemanager.h"
 #include "dofman/dofmanager.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "unknownnumberingscheme.h"
 #include "outputmanager.h"
 #include "eigenvectorprimaryfield.h"

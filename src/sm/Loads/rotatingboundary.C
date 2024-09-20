@@ -34,7 +34,7 @@
 
 #include "rotatingboundary.h"
 #include "dofman/dofmanager.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "mathfem.h"
 #include "ltf/function.h"
 #include "classfactory.h"

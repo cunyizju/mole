@@ -44,7 +44,7 @@
 #include "contextioerr.h"
 #include "classfactory.h"
 #include "dofman/dofmanager.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "domain.h"
 #include "unknownnumberingscheme.h"
 

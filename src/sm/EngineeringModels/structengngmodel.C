@@ -37,7 +37,7 @@
 #include "sm/Elements/structuralelementevaluator.h"
 #include "sm/Elements/Interfaces/structuralinterfaceelement.h"
 #include "dofman/dofmanager.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "element.h"
 #include "timestep.h"
 #include "outputmanager.h"

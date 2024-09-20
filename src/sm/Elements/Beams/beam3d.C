@@ -48,7 +48,7 @@
 #include "fei3dlinelin.h"
 #include "classfactory.h"
 #include "dofman/elementinternaldofman.h"
-#include "masterdof.h"
+#include "dofs/masterdof.h"
 #include "bctracker.h"
 
 #include "bodyload.h"

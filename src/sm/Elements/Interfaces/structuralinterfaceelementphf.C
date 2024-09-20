@@ -46,7 +46,7 @@
 #include "floatarray.h"
 #include "floatmatrix.h"
 #include "mathfem.h"
-#include "dof.h"
+#include "dofs/dof.h"
 
 
 namespace oofem {

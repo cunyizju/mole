@@ -36,7 +36,7 @@
 #include "timestep.h"
 #include "dofman/dofmanager.h"
 #include "element.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "verbose.h"
 #include "outputmanager.h"
 #include "mathfem.h"

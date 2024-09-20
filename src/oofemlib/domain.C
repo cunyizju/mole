@@ -73,8 +73,8 @@
 
 #include "boundarycondition.h"
 #include "activebc.h"
-#include "simpleslavedof.h"
-#include "masterdof.h"
+#include "dofs/simpleslavedof.h"
+#include "dofs/masterdof.h"
 
 #ifdef __PARALLEL_MODE
  #include "parallel.h"

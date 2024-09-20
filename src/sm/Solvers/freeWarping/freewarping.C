@@ -38,7 +38,7 @@
 #include "nummet.h"
 #include "timestep.h"
 #include "element.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "sparsemtrx.h"
 #include "verbose.h"
 #include "sm/Elements/structuralelement.h"

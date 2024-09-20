@@ -45,7 +45,7 @@
 #include "constantsurfaceload.h"
 #include "vtkxmlexportmodule.h"
 #include "fracturemanager.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "floatarrayf.h"
 #include "floatmatrixf.h"
 #include "connectivitytable.h"

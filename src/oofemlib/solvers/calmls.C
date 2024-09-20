@@ -43,7 +43,7 @@
 #include "engngm.h"
 // includes for HPC - not very clean (NumMethod knows what is "node" and "dof")
 #include "dofman/node.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "contextioerr.h"
 #include "exportmodulemanager.h"
 #include "parallelcontext.h"

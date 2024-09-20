@@ -46,7 +46,7 @@
 #include "oofemtxtdatareader.h"
 #include "remeshingcrit.h"
 #include "mesherinterface.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "eleminterpunknownmapper.h"
 #include "errorestimator.h"
 #include "classfactory.h"

@@ -49,7 +49,7 @@
 #include "contextioerr.h"
 #include "datastream.h"
 #include "cs/crosssection.h"
-#include "dof.h"
+#include "dofs/dof.h"
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"

@@ -35,7 +35,7 @@
 #ifndef unknownnumberingscheme_h
 #define unknownnumberingscheme_h
 
-#include "dof.h"
+#include "dofs/dof.h"
 #include "intarray.h"
 
 namespace oofem {

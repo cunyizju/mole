@@ -33,7 +33,7 @@
  */
 
 #include "dofman/rigidarmnode.h"
-#include "slavedof.h"
+#include "dofs/slavedof.h"
 #include "floatarray.h"
 #include "floatmatrix.h"
 #include "intarray.h"

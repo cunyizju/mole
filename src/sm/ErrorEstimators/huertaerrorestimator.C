@@ -48,7 +48,7 @@
 #include "integrationrule.h"
 #include "connectivitytable.h"
 #include "cs/crosssection.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "util.h"
 #include "eleminterpunknownmapper.h"
 #include "verbose.h"

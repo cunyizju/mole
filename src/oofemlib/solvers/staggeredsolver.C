@@ -41,7 +41,7 @@
 #include "dofman/dofmanager.h"
 #include "element.h"
 #include "generalboundarycondition.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "mathfem.h"
 
 namespace oofem {

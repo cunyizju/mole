@@ -36,7 +36,7 @@
 #include "timestep.h"
 #include "engngm.h"
 #include "dofman/dofmanager.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "classfactory.h"
 #include "domain.h"
 

@@ -35,7 +35,7 @@
 #ifndef simpleslavedof_h
 #define simpleslavedof_h
 
-#include "dof.h"
+#include "dofs/dof.h"
 #include "error.h"
 
 namespace oofem {

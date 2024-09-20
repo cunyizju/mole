@@ -35,7 +35,7 @@
 #include "prescribeddispslipbcdirichletrc.h"
 #include "dofiditem.h"
 #include "dofman/dofmanager.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "valuemodetype.h"
 #include "floatarray.h"
 #include "floatmatrix.h"

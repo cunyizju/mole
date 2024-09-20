@@ -43,7 +43,7 @@
 #include "fracturemanager.h"
 #include "mathfem.h"
 #include "feinterpol.h"
-#include "masterdof.h"
+#include "dofs/masterdof.h"
 #include "propagationlaw.h"
 #include "dynamicinputrecord.h"
 #include "XFEMDebugTools.h"

@@ -33,7 +33,7 @@
  */
 
 #include "dofman/elementside.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "floatmatrix.h"
 #include "intarray.h"
 #include "verbose.h"

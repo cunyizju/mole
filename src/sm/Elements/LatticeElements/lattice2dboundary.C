@@ -47,7 +47,7 @@
 #include "datastream.h"
 #include "contextioerr.h"
 #include "classfactory.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "../sm/Materials/structuralmaterial.h"
 
 #ifdef __OOFEG

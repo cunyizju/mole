@@ -50,7 +50,7 @@
 #include "mathfem.h"
 #include "classfactory.h"
 #include "dofman/elementinternaldofman.h"
-#include "masterdof.h"
+#include "dofs/masterdof.h"
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"

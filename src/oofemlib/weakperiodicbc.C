@@ -42,7 +42,7 @@
 #include "inputrecord.h"
 #include "element.h"
 #include "dofman/node.h"
-#include "masterdof.h"
+#include "dofs/masterdof.h"
 #include "sparsemtrx.h"
 #include "gausspoint.h"
 #include "integrationrule.h"

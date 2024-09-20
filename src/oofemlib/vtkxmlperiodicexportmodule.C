@@ -44,7 +44,7 @@
 #include "material.h"
 #include "classfactory.h"
 #include "cs/crosssection.h"
-#include "dof.h"
+#include "dofs/dof.h"
 
 #ifdef __SM_MODULE
  #include "../sm/Elements/LatticeElements/lattice2dboundary.h"

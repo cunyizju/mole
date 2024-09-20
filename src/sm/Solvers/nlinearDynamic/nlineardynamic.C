@@ -42,7 +42,7 @@ using namespace std;
 #include "timestep.h"
 #include "metastep.h"
 #include "element.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "error.h"
 #include "verbose.h"
 #include "solvers/sparsenonlinsystemnm.h"

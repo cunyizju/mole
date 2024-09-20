@@ -35,7 +35,7 @@
 #include "transversereinfconstraint.h"
 #include "classfactory.h"
 #include "dofman/node.h"
-#include "masterdof.h"
+#include "dofs/masterdof.h"
 #include "element.h"
 #include "feinterpol.h"
 #include "gausspoint.h"

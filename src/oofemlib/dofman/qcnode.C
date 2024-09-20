@@ -37,7 +37,7 @@
 #include "dofman/qcnode.h"
 #include "Solvers/qcLinearStatic/qclinearstatic.h"
 #include "dofman/hangingnode.h"
-#include "slavedof.h"
+#include "dofs/slavedof.h"
 #include "floatarray.h"
 #include "intarray.h"
 #include "element.h"

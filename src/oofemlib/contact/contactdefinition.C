@@ -39,7 +39,7 @@
 #include "domain.h"
 #include "floatmatrix.h"
 #include "sparsemtrx.h"
-#include "masterdof.h"
+#include "dofs/masterdof.h"
 #include "classfactory.h"
 
 namespace oofem {

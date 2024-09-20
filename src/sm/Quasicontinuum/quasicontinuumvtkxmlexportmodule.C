@@ -39,7 +39,7 @@
 #include "timestep.h"
 #include "engngm.h"
 #include "dofman/node.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "materialinterface.h"
 #include "mathfem.h"
 #include "cltypes.h"

@@ -45,7 +45,7 @@
 #include "load.h"
 #include "Solvers/freeWarping/freewarping.h"
 #include "engngm.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 
 

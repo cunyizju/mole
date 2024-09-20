@@ -37,7 +37,7 @@
 
 #include "boundaryConditions/prescribeddispsliphomogenization.h"
 #include "boundarycondition.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "bctype.h"
 #include "valuemodetype.h"
 #include "floatarray.h"

@@ -33,9 +33,9 @@
  */
 
 #include "dofman/latticedirichletcouplingnode.h"
-#include "dof.h"
-#include "slavedof.h"
-#include "simpleslavedof.h"
+#include "dofs/dof.h"
+#include "dofs/slavedof.h"
+#include "dofs/simpleslavedof.h"
 #include "nodalload.h"
 #include "timestep.h"
 

@@ -36,7 +36,7 @@
 #include "timestep.h"
 #include "domain.h"
 #include "dofman/dofmanager.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "floatarray.h"
 #include "floatmatrix.h"
 #include "engngm.h"

@@ -43,7 +43,7 @@
 #include "cltypes.h"
 #include "xfemelementinterface.h"
 #include "classfactory.h"
-#include "masterdof.h"
+#include "dofs/masterdof.h"
 #include "datareader.h"
 #include "datastream.h"
 #include "contextioerr.h"

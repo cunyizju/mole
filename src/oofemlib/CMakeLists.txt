@@ -89,11 +89,11 @@ set (core_nodalrecovery
     )
 
 set (core_dofs
-    dof.C
-    masterdof.C
-    simpleslavedof.C
-    slavedof.C
-    activedof.C
+    dofs/dof.C
+    dofs/masterdof.C
+    dofs/simpleslavedof.C
+    dofs/slavedof.C
+    dofs/activedof.C
     )
 
 set (core_nm

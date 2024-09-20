@@ -35,7 +35,7 @@
 #include "mixedgradientpressureneumann.h"
 #include "dofiditem.h"
 #include "dofman/dofmanager.h"
-#include "dof.h"
+#include "dofs/dof.h"
 #include "valuemodetype.h"
 #include "floatarray.h"
 #include "floatmatrix.h"
@@ -45,7 +45,7 @@
 #include "integrationrule.h"
 #include "gaussintegrationrule.h"
 #include "gausspoint.h"
-#include "masterdof.h"
+#include "dofs/masterdof.h"
 #include "classfactory.h" // For sparse matrix creation.
 #include "sparsemtrxtype.h"
 #include "mathfem.h"
