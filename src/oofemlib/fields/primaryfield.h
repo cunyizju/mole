@@ -35,7 +35,7 @@
 #ifndef primaryfield_h
 #define primaryfield_h
 
-#include "field.h"
+#include "fields/field.h"
 #include "interface.h"
 #include "floatarray.h"
 #include "valuemodetype.h"

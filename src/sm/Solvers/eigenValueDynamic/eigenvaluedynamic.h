@@ -41,7 +41,7 @@
 #include "floatmatrix.h"
 #include "floatarray.h"
 #include "geneigvalsolvertype.h"
-#include "eigenvectorprimaryfield.h"
+#include "fields/eigenvectorprimaryfield.h"
 
 ///@name Input fields for EigenValueDynamic
 //@{

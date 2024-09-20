@@ -32,62 +32,14 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "fieldmanager.h"
+#include "fields/field.h"
+
+#include <cstdarg>
 
 namespace oofem {
-FieldManager :: ~FieldManager()
-{ }
-
-void
-FieldManager :: registerField(std :: shared_ptr< Field >eField, FieldType key)
+std :: string Field :: errorInfo(const char *func) const
 {
-  if (this->externalFields.find(key) == this->externalFields.end()) {
-    this->externalFields.insert({key, eField});
-  } else {
-    this->externalFields.at(key)=eField;
-  }
-  /// could be replaced in future by 
-  /// this->externalFields.insert_or_assign({key, eField});
-}
-
-
-
-
-bool
-FieldManager :: isFieldRegistered(FieldType key)
-{
-    return ( this->externalFields.find(key) != this->externalFields.end() );
-}
-
-std :: shared_ptr< Field >
-FieldManager :: giveField(FieldType key)
-{
-    auto i = this->externalFields.find(key);
-    if ( i == this->externalFields.end() ) {
-        std :: shared_ptr< Field >p; // std::shared_ptr<Field> p(nullptr);
-        return p;
-    }
-
-    return i->second;
-}
-
-void
-FieldManager :: unregisterField(FieldType key)
-{
-    auto i = this->externalFields.find(key);
-    if ( i == this->externalFields.end() ) {
-        return;
-    }
-
-    this->externalFields.erase(i);
-}
-
-std::vector<FieldType>
-FieldManager :: giveRegisteredKeys()
-{
-    std::vector<FieldType> ret;
-    for(const auto& keyField: this->externalFields) ret.push_back(keyField.first);
-    return ret;
+    return std :: string(this->giveClassName()) + "::" + func;
 }
 
 } // end namespace oofem

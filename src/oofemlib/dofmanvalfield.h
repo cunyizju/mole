@@ -35,7 +35,7 @@
 #ifndef dofmanvalfield_h
 #define dofmanvalfield_h
 
-#include "field.h"
+#include "fields/field.h"
 #include "elementgeometrytype.h"
 #include "error.h"
 #include "engngm.h"

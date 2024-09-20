@@ -35,7 +35,7 @@
 #ifndef unstructuredgridfield_h
 #define unstructuredgridfield_h
 
-#include "field.h"
+#include "fields/field.h"
 #include "floatarray.h"
 #include "intarray.h"
 #include "elementgeometrytype.h"

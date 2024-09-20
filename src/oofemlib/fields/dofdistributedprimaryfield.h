@@ -35,7 +35,7 @@
 #ifndef dofdistributedprimaryfield_h
 #define dofdistributedprimaryfield_h
 
-#include "primaryfield.h"
+#include "fields/primaryfield.h"
 
 namespace oofem {
 /**

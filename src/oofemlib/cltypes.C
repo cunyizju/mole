@@ -47,7 +47,7 @@
 #include "doftype.h"
 #include "dofiditem.h"
 #include "contextioerr.h"
-#include "field.h"
+#include "fields/field.h"
 #include "xfem/xfemmanager.h"
 
 #include <cstring>

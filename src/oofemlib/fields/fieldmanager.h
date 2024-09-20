@@ -32,41 +32,57 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#ifndef eigenvectorprimaryfield_h
-#define eigenvectorprimaryfield_h
+#ifndef fieldmanager_h
+#define fieldmanager_h
 
-#include "dofdistributedprimaryfield.h"
+#include "oofemcfg.h"
+#include "fields/field.h"
+
+#include <map>
+#include <vector>
+#include <memory>
 
 namespace oofem {
-/**
- * Class representing the mode shapes of eigen vectors.
- * The values are stored as VM_Total only.
- * Active vector is determined by the time step number.
- */
-class OOFEM_EXPORT EigenVectorPrimaryField : public DofDistributedPrimaryField
+
+class OOFEM_EXPORT FieldManager
 {
+protected:
+
+    /**
+     * Field container. Stores smart pointers to objects (not object themselves)
+     * to avoid copying elements and to preserve the use of polymorphic types.
+     * The use of shared_ptr is essential here, as some registered fields may be
+     * ovned (and maintained) by emodel, some may be cretead on demand and thus
+     * managed only by field manager.
+     */
+    std :: map< FieldType, std :: shared_ptr< Field > >externalFields;
+
 public:
-    /**
-     * Constructor. Creates a field of given type associated to given domain.
-     * @param a Engineering model which field belongs to.
-     * @param idomain Index of domain for field.
-     * @param ft Type of stored field.
-     * @param nHist Number of old time steps to store (minimum 1), i.e. the number of eigen vectors.
-     */
-    EigenVectorPrimaryField(EngngModel * a, int idomain, FieldType ft, int nHist);
-    virtual ~EigenVectorPrimaryField();
-
-    double giveUnknownValue(Dof *dof, ValueModeType mode, TimeStep *tStep) override;
+    FieldManager() : externalFields() { }
+    ~FieldManager();
 
     /**
-     * Stores all the eigenvectors in one call.
-     * @param eigenVectors Matrix with all eigen vectors (stored as columns)
-     * @param s Equation numbering for the rows of the vectors.
+     * Registers the given field (the receiver is not assumed to own given field).
+     * The field is registered under given key. Using this key, it can be later accessed.
      */
-    void updateAll(const FloatMatrix &eigenVectors, const UnknownNumberingScheme &s);
+    void registerField(FieldPtr eField, FieldType key);
 
-    void applyDefaultInitialCondition() override;
-    void advanceSolution(TimeStep *tStep) override;
+    /**
+     * Returns the previously registered field under given key; NULL otherwise
+     */
+    FieldPtr giveField(FieldType key);
+
+    /** Returns true if field is registered under key */
+    bool isFieldRegistered(FieldType key);
+    /**
+     * Unregisters (deletes) the field registered under given key.
+     */
+    void unregisterField(FieldType key);
+    /**
+     * Returns list of registered field keys, which can be obtained by calling giveField.
+     */
+    std::vector<FieldType> giveRegisteredKeys();
+
 };
 } // end namespace oofem
-#endif // eigenvectorprimaryfield_h
+#endif // fieldmanager_h

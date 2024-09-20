@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "eigenvectorprimaryfield.h"
+#include "fields/eigenvectorprimaryfield.h"
 #include "timestep.h"
 #include "domain.h"
 #include "dofman/dofmanager.h"

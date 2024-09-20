@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "dofdistributedprimaryfield.h"
+#include "fields/dofdistributedprimaryfield.h"
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"
 #include "domain.h"

@@ -35,7 +35,7 @@
 #ifndef pythonfield_h
 #define pythonfield_h
 
-#include "field.h"
+#include "fields/field.h"
 #include "floatarray.h"
 #include "intarray.h"
 #include "classfactory.h"

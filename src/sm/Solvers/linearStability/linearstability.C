@@ -49,7 +49,7 @@
 #include "dofs/dof.h"
 #include "unknownnumberingscheme.h"
 #include "outputmanager.h"
-#include "eigenvectorprimaryfield.h"
+#include "fields/eigenvectorprimaryfield.h"
 
 
 #ifdef __OOFEG

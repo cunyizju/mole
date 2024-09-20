@@ -35,7 +35,7 @@
 #ifndef uniformgridfield_h
 #define uniformgridfield_h
 
-#include "field.h"
+#include "fields/field.h"
 #include "floatarray.h"
 #include "intarray.h"
 

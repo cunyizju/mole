@@ -72,7 +72,7 @@ namespace py = pybind11;
 #include "cs/crosssection.h"
 #include "sparsemtrx.h"
 
-#include "field.h"
+#include "fields/field.h"
 #include "feinterpol.h"
 #include "util.h"
 #include "datareader.h"
@@ -100,7 +100,7 @@ namespace py = pybind11;
 #include "vtkmemoryexportmodule.h"
 #include "homexportmodule.h"
 
-#include "uniformgridfield.h"
+#include "fields/uniformgridfield.h"
 #include "unstructuredgridfield.h"
 #include "dofmanvalfield.h"
 #include "pythonfield.h"

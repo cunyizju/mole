@@ -41,7 +41,7 @@
 #include "timestep.h"
 #include "structengngmodel.h"
 #include "staticstructural.h"
-#include "primaryfield.h"
+#include "fields/primaryfield.h"
 #include "domain.h"
 #include "xfem/xfemmanager.h"
 #include "element.h"

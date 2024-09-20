@@ -121,14 +121,14 @@ endif ()
 
 
 set (core_fields
-    fieldmanager.C
-    field.C
-    primaryfield.C
-    intvarfield.C
-    maskedprimaryfield.C
-    dofdistributedprimaryfield.C
-    eigenvectorprimaryfield.C
-    uniformgridfield.C
+    fields/fieldmanager.C
+    fields/field.C
+    fields/primaryfield.C
+    fields/intvarfield.C
+    fields/maskedprimaryfield.C
+    fields/dofdistributedprimaryfield.C
+    fields/eigenvectorprimaryfield.C
+    fields/uniformgridfield.C
     )
 
 set (core_ltf

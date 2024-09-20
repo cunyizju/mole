@@ -46,7 +46,7 @@
 #include "floatarrayf.h"
 #include "mathfem.h"
 #include "engngm.h"
-#include "fieldmanager.h"
+#include "fields/fieldmanager.h"
 #include "dynamicinputrecord.h"
 
 namespace oofem {

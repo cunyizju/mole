@@ -35,7 +35,7 @@
 #ifndef smoothednodalintvarfield_h
 #define smoothednodalintvarfield_h
 
-#include "field.h"
+#include "fields/field.h"
 #include "nodalrecovery/zznodalrecoverymodel.h"
 
 namespace oofem {

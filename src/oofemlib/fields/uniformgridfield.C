@@ -34,7 +34,7 @@
 
 #include <cassert>
 #include <cmath>
-#include "uniformgridfield.h"
+#include "fields/uniformgridfield.h"
 #include "dofman/dofmanager.h"
 #include "error.h"
 

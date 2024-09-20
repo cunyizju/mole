@@ -43,7 +43,7 @@
 #include "contextioerr.h"
 #include "datastream.h"
 #include "classfactory.h"
-#include "fieldmanager.h"
+#include "fields/fieldmanager.h"
 #include "sm/Elements/structuralelement.h"
 #include "engngm.h"
 

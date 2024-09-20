@@ -35,7 +35,7 @@
 #include "foreigntempfieldload.h"
 #include "timestep.h"
 #include "classfactory.h"
-#include "field.h"
+#include "fields/field.h"
 
 namespace oofem {
 REGISTER_BoundaryCondition(ForeignTemperatureFieldLoad);

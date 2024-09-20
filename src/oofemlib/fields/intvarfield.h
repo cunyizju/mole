@@ -35,7 +35,7 @@
 #ifndef intvarfield_h
 #define intvarfield_h
 
-#include "field.h"
+#include "fields/field.h"
 #include "materialmappingalgorithmtype.h"
 #include "internalstatetype.h"
 #include "materialmappingalgorithm.h"

@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "primaryfield.h"
+#include "fields/primaryfield.h"
 #include "spatiallocalizer.h"
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"

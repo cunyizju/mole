@@ -38,7 +38,7 @@
 #include "timestep.h"
 #include "boundarycondition.h"
 #include "initialcondition.h"
-#include "primaryfield.h"
+#include "fields/primaryfield.h"
 #include "dictionary.h"
 #include "datastream.h"
 #include "contextioerr.h"

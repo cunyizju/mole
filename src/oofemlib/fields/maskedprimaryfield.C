@@ -32,44 +32,20 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "intvarfield.h"
-#include "classfactory.h"
-#include "dofman/dofmanager.h"
-#include "materialmappingalgorithm.h"
+#include "fields/maskedprimaryfield.h"
 
 namespace oofem {
-InternalVariableField :: InternalVariableField(InternalStateType ist, FieldType ft, MaterialMappingAlgorithmType mma_type, Domain *d) :
-    Field(ft),
-    mma(classFactory.createMaterialMappingAlgorithm(mma_type)),
-    type(ist),
-    domain(d)
-{}
-
 int
-InternalVariableField :: evaluateAt(FloatArray &answer, const FloatArray &coords, ValueModeType mode, TimeStep *tStep)
+MaskedPrimaryField :: evaluateAt(FloatArray &answer, const FloatArray &coords,
+                                 ValueModeType mode, TimeStep *tStep)
 {
-    IntArray types;
-    types.at(1) = this->type;
-    /// Use MaterialMappingAlgorithm classes to do the job
-    Set eset(0, domain);
-    eset.addAllElements();
-    this->mma->__init(domain, types, coords, eset, tStep);
-    this->mma->__mapVariable(answer, coords, this->type, tStep);
-
-    return 0; // ok
+    return this->master->__evaluateAt(answer, coords, mode, tStep, & mask);
 }
 
 int
-InternalVariableField :: evaluateAt(FloatArray &answer, DofManager *dman, ValueModeType mode, TimeStep *tStep)
+MaskedPrimaryField :: evaluateAt(FloatArray &answer, DofManager *dman,
+                                 ValueModeType mode, TimeStep *tStep)
 {
-    return this->evaluateAt(answer, dman->giveCoordinates(), mode, tStep);
+    return this->master->__evaluateAt(answer, dman, mode, tStep, & mask);
 }
-
-void
-InternalVariableField :: saveContext(DataStream &stream)
-{}
-
-void
-InternalVariableField :: restoreContext(DataStream &stream)
-{}
 } // end namespace oofem

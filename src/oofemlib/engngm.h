@@ -38,7 +38,7 @@
 #include "oofemcfg.h"
 #include "inputrecord.h"
 #include "intarray.h"
-#include "fieldmanager.h"
+#include "fields/fieldmanager.h"
 #include "metastep.h"
 #include "timer.h"
 #include "assemblercallback.h"

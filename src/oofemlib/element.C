@@ -39,7 +39,7 @@
 #include "intarray.h"
 #include "floatarray.h"
 #include "floatmatrix.h"
-#include "primaryfield.h"
+#include "fields/primaryfield.h"
 #include "verbose.h"
 #include "entityrenumberingscheme.h"
 #include "error.h"

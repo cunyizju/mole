@@ -35,7 +35,7 @@
 #ifndef maskedprimaryfield_h
 #define maskedprimaryfield_h
 
-#include "primaryfield.h"
+#include "fields/primaryfield.h"
 #include "floatarray.h"
 #include "intarray.h"
 #include "valuemodetype.h"
