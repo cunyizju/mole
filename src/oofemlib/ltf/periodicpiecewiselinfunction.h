@@ -36,7 +36,7 @@
 #define periodicpiecewiselinfunction_h
 
 #include "floatarray.h"
-#include "piecewiselinfunction.h"
+#include "ltf/piecewiselinfunction.h"
 
 ///@name Input fields for PeriodicPiecewiseLinFunction
 //@{

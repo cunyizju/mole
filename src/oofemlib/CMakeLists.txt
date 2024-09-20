@@ -135,10 +135,10 @@ set (core_ltf
     ltf/function.C
     ltf/scalarfunction.C
     ltf/constantfunction.C
-    heavisidetimefunction.C
-    peakfunction.C
-    piecewiselinfunction.C
-    periodicpiecewiselinfunction.C
+    ltf/heavisidetimefunction.C
+    ltf/peakfunction.C
+    ltf/piecewiselinfunction.C
+    ltf/periodicpiecewiselinfunction.C
     calculatorfunction.C
     localgaussianrandomfunction.C
     interpolatingfunction.C

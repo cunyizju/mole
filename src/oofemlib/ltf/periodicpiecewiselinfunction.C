@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "periodicpiecewiselinfunction.h"
+#include "ltf/periodicpiecewiselinfunction.h"
 #include "mathfem.h"
 #include "classfactory.h"
 #include "dynamicinputrecord.h"

@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "heavisidetimefunction.h"
+#include "ltf/heavisidetimefunction.h"
 #include "dynamicinputrecord.h"
 #include "classfactory.h"
 

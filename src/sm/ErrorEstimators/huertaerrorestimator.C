@@ -61,7 +61,7 @@
 #include "classfactory.h"
 #include "dynamicdatareader.h"
 #include "dynamicinputrecord.h"
-#include "heavisidetimefunction.h"
+#include "ltf/heavisidetimefunction.h"
 #include "outputmanager.h"
 #include "boundarycondition.h"
 #include "feinterpol.h"
