@@ -335,19 +335,19 @@ endif ()
 
 
 set (core_mapping
-    mmaclosestiptransfer.C
-    mmashapefunctprojection.C
-    mmaleastsquareprojection.C
-    mmacontainingelementprojection.C
-    matstatmapperint.C
+    mapping/mmaclosestiptransfer.C
+    mapping/mmashapefunctprojection.C
+    mapping/mmaleastsquareprojection.C
+    mapping/mmacontainingelementprojection.C
+    mapping/matstatmapperint.C
     )
 
 set (core_mesher
-    t3dinterface.C
-    targe2interface.C
-    freeminterface.C
-    subdivision.C
-    trianglemesherinterface.C
+    mesher/t3dinterface.C
+    mesher/targe2interface.C
+    mesher/freeminterface.C
+    mesher/subdivision.C
+    mesher/trianglemesherinterface.C
     )
 
 set (core

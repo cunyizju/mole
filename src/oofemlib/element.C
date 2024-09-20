@@ -58,7 +58,7 @@
 #include "gausspoint.h"
 #include "unknownnumberingscheme.h"
 #include "dynamicinputrecord.h"
-#include "matstatmapperint.h"
+#include "mapping/matstatmapperint.h"
 #include "cltypes.h"
 
 #ifdef __OOFEG

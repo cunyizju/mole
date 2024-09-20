@@ -53,24 +53,24 @@
 #include "sm/Materials/isolinearelasticmaterial.h"
 #include "sm/Materials/structuralms.h"
 #include "materialmapperinterface.h"
-#include "mmaclosestiptransfer.h"
+#include "mapping/mmaclosestiptransfer.h"
 
 #ifdef MDM_MAPPING_DEBUG
- #include "mmashapefunctprojection.h"
- #include "mmaleastsquareprojection.h"
+ #include "mapping/mmashapefunctprojection.h"
+ #include "mapping/mmaleastsquareprojection.h"
 
 #else
 
  #ifdef MDM_USE_MMAShapeFunctProjection
-  #include "mmashapefunctprojection.h"
+  #include "mapping/mmashapefunctprojection.h"
  #endif
  #ifdef MDM_USE_MMALeastSquareProjection
-  #include "mmaleastsquareprojection.h"
+  #include "mapping/mmaleastsquareprojection.h"
  #endif
 #endif
 
-#include "mmashapefunctprojection.h"
-#include "mmaleastsquareprojection.h"
+#include "mapping/mmashapefunctprojection.h"
+#include "mapping/mmaleastsquareprojection.h"
 
 ///@name Input fields for MDM
 //@{

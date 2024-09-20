@@ -43,7 +43,7 @@
 #include "nodalrecovery/sprnodalrecoverymodel.h"
 #include "spatiallocalizer.h"
 #include "sm/ErrorEstimators/zzerrorestimator.h"
-#include "mmashapefunctprojection.h"
+#include "mapping/mmashapefunctprojection.h"
 
 #define _IFT_LTRSpace_Name "ltrspace"
 

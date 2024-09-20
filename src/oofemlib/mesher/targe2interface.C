@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "targe2interface.h"
+#include "mesher/targe2interface.h"
 #include "errorestimator.h"
 #include "domain.h"
 #include "dofman/node.h"

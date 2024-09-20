@@ -37,7 +37,7 @@
 
 #include "matstatus.h"
 #include "floatarray.h"
-#include "matstatmapperint.h"
+#include "mapping/matstatmapperint.h"
 
 namespace oofem {
 class GaussPoint;

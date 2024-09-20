@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "subdivision.h"
+#include "mesher/subdivision.h"
 #include "material/material.h"
 #include "errorestimator.h"
 #include "domain.h"

@@ -32,12 +32,12 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "mmaclosestiptransfer.h"
+#include "mapping/mmaclosestiptransfer.h"
 #include "spatiallocalizer.h"
 #include "domain.h"
 #include "material/material.h"
 #include "gausspoint.h"
-#include "matstatmapperint.h"
+#include "mapping/matstatmapperint.h"
 #include "classfactory.h"
 #include "xfem/xfemelementinterface.h"
 

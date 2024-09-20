@@ -44,7 +44,7 @@
 #include "internalstatetype.h"
 #include "intarray.h"
 #include "materialmappingalgorithm.h"
-#include "mmashapefunctprojection.h"
+#include "mapping/mmashapefunctprojection.h"
 #include "cltypes.h"
 
 #ifdef _PYBIND_BINDINGS

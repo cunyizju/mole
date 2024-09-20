@@ -58,7 +58,7 @@
 
 #include "sm/Quasicontinuum/quasicontinuumnumberingscheme.h"
 
- #include "t3dinterface.h"
+ #include "mesher/t3dinterface.h"
 #ifdef __T3D
  #include "t3d.h"
 #endif

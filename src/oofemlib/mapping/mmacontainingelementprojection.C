@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "mmacontainingelementprojection.h"
+#include "mapping/mmacontainingelementprojection.h"
 #include "spatiallocalizer.h"
 #include "domain.h"
 #include "element.h"

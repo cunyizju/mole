@@ -57,19 +57,19 @@
 #include "materialmapperinterface.h"
 
 #ifdef IDM_USE_MMAClosestIPTransfer
- #include "mmaclosestiptransfer.h"
+ #include "mapping/mmaclosestiptransfer.h"
 #endif
 
 #ifdef IDM_USE_MMAContainingElementProjection
- #include "mmacontainingelementprojection.h"
+ #include "mapping/mmacontainingelementprojection.h"
 #endif
 
 #ifdef IDM_USE_MMAShapeFunctProjection
- #include "mmashapefunctprojection.h"
+ #include "mapping/mmashapefunctprojection.h"
 #endif
 
 #ifdef IDM_USE_MMALeastSquareProjection
- #include "mmaleastsquareprojection.h"
+ #include "mapping/mmaleastsquareprojection.h"
 #endif
 
 ///@name Input fields for IsotropicDamageMaterial1

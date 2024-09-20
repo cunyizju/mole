@@ -45,7 +45,7 @@
 #include "domain.h"
 #include "xfem/xfemmanager.h"
 #include "element.h"
-#include "matstatmapperint.h"
+#include "mapping/matstatmapperint.h"
 #include "nummet.h"
 #include "floatarray.h"
 #include "exportmodulemanager.h"

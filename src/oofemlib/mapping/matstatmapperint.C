@@ -32,11 +32,11 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "matstatmapperint.h"
+#include "mapping/matstatmapperint.h"
 
 #include "error.h"
 #include "materialmappingalgorithm.h"
-#include "mmaclosestiptransfer.h"
+#include "mapping/mmaclosestiptransfer.h"
 #include "matstatus.h"
 
 namespace oofem {

@@ -40,7 +40,7 @@
 #include "floatarray.h"
 #include "floatmatrix.h"
 #include "sm/Materials/structuralms.h"
-#include "matstatmapperint.h"
+#include "mapping/matstatmapperint.h"
 
 namespace oofem {
 class GaussPoint;

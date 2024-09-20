@@ -43,7 +43,7 @@
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "nodalrecovery/sprnodalrecoverymodel.h"
 #include "spatiallocalizer.h"
-#include "mmashapefunctprojection.h"
+#include "mapping/mmashapefunctprojection.h"
 
 #define _IFT_TrPlaneStrain_Name "trplanestrain"
 

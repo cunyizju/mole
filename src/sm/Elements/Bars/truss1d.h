@@ -42,7 +42,7 @@
 #include "nodalrecovery/zznodalrecoverymodel.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "spatiallocalizer.h"
-#include "mmashapefunctprojection.h"
+#include "mapping/mmashapefunctprojection.h"
 
 #define _IFT_Truss1d_Name "truss1d"
 

@@ -37,7 +37,7 @@
 
 #include "matstatus.h"
 #include "floatarray.h"
-#include "matstatmapperint.h"
+#include "mapping/matstatmapperint.h"
 #include "floatmatrix.h"
 #include "floatarrayf.h"
 #include "floatmatrixf.h"
