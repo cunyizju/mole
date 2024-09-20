@@ -66,7 +66,7 @@ namespace bp = boost::python;
 #include "connectivitytable.h"
 #include "spatiallocalizer.h"
 #include "errorestimator.h"
-#include "nodalrecoverymodel.h"
+#include "nodalrecovery/nodalrecoverymodel.h"
 #include "oofemtxtinputrecord.h"
 #include "oofemtxtdatareader.h"
 #include "logger.h"

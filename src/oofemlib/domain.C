@@ -51,7 +51,7 @@
 #include "connectivitytable.h"
 #include "outputmanager.h"
 #include "octreelocalizer.h"
-#include "nodalrecoverymodel.h"
+#include "nodalrecovery/nodalrecoverymodel.h"
 #include "nonlocalbarrier.h"
 #include "classfactory.h"
 #include "logger.h"

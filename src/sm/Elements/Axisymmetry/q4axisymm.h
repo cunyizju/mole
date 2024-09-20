@@ -37,7 +37,7 @@
 
 #include "sm/Elements/structuralelement.h"
 #include "sm/Elements/structural2delement.h"
-#include "zznodalrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
 
 ///@name Input fields for Q4Axisymm
 //@{

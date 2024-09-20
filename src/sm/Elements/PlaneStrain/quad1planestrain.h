@@ -38,8 +38,8 @@
 #include "sm/Elements/structural2delement.h"
 #include "sm/ErrorEstimators/directerrorindicatorrc.h"
 #include "sm/ErrorEstimators/huertaerrorestimator.h"
-#include "zznodalrecoverymodel.h"
-#include "sprnodalrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
+#include "nodalrecovery/sprnodalrecoverymodel.h"
 #include "spatiallocalizer.h"
 
 #define _IFT_Quad1PlaneStrain_Name "quad1planestrain"

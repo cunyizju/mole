@@ -44,7 +44,7 @@
 #include "mathfem.h"
 #include "fei2dlinelin.h"
 #include "classfactory.h"
-#include "nodalaveragingrecoverymodel.h"
+#include "nodalrecovery/nodalaveragingrecoverymodel.h"
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"

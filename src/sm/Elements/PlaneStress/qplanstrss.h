@@ -37,8 +37,8 @@ protected:
 #define qplanstrss_h
 
 #include "sm/Elements/structural2delement.h"
-#include "zznodalrecoverymodel.h"
-#include "nodalaveragingrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
+#include "nodalrecovery/nodalaveragingrecoverymodel.h"
 
 #define _IFT_QPlaneStress2d_Name "qplanestress2d"
 

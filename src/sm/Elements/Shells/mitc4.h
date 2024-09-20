@@ -36,9 +36,9 @@
 #define mitc4_h
 
 #include "sm/Elements/structuralelement.h"
-#include "zznodalrecoverymodel.h"
-#include "sprnodalrecoverymodel.h"
-#include "nodalaveragingrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
+#include "nodalrecovery/sprnodalrecoverymodel.h"
+#include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "spatiallocalizer.h"
 #include "load.h"
 #include "floatmatrixf.h"

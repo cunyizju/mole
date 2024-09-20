@@ -36,11 +36,11 @@
 #define Shell7BasePhFi_h
 
 #include "eleminterpmapperinterface.h"
-#include "nodalaveragingrecoverymodel.h"
+#include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "layeredcrosssection.h"
 #include "nlstructuralelement.h"
 #include "vtkxmlexportmodule.h"
-#include "zznodalrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
 #include "fei3dwedgequad.h"
 #include "fei3dtrquad.h"
 #include "fracturemanager.h"

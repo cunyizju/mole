@@ -50,8 +50,8 @@
 #include "xfem/xfemmanager.h"
 #include "xfem/enrichmentitem.h"
 
-#include "nodalaveragingrecoverymodel.h"
-#include "zznodalrecoverymodel.h"
+#include "nodalrecovery/nodalaveragingrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
 
 #ifdef __PFEM_MODULE
  #include "pfem/pfemparticle.h"

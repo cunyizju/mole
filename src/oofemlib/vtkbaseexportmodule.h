@@ -43,7 +43,7 @@
 #include "unknowntype.h"
 #include "integrationrule.h"
 #include "element.h"
-#include "nodalrecoverymodel.h"
+#include "nodalrecovery/nodalrecoverymodel.h"
 #include <iostream>
 #include <fstream>
 #include <iomanip>

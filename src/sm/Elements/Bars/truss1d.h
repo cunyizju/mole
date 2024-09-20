@@ -39,8 +39,8 @@
 #include "sm/ErrorEstimators/directerrorindicatorrc.h"
 #include "sm/ErrorEstimators/zzerrorestimator.h"
 #include "sm/ErrorEstimators/huertaerrorestimator.h"
-#include "zznodalrecoverymodel.h"
-#include "nodalaveragingrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
+#include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "spatiallocalizer.h"
 #include "mmashapefunctprojection.h"
 

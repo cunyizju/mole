@@ -37,7 +37,7 @@
 
 #include "sm/Elements/Beams/libeam3d.h"
 #include "sm/CrossSections/fiberedcs.h"
-#include "nodalaveragingrecoverymodel.h"
+#include "nodalrecovery/nodalaveragingrecoverymodel.h"
 
 ///@name Input fields for LIBeam3dBoundary
 //@{

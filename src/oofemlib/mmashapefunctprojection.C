@@ -40,7 +40,7 @@
 #include "spatiallocalizer.h"
 #include "timestep.h"
 #include "feinterpol.h"
-#include "nodalaveragingrecoverymodel.h"
+#include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "classfactory.h"
 
 #include <cstdlib>

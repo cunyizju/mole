@@ -37,8 +37,8 @@
 #include "timestep.h"
 #include "engngm.h"
 #include "dofman/node.h"
-#include "nodalaveragingrecoverymodel.h"
-#include "zznodalrecoverymodel.h"
+#include "nodalrecovery/nodalaveragingrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
 #include "classfactory.h"
 
 namespace oofem {

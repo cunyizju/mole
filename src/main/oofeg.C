@@ -44,9 +44,9 @@
 
 #include "connectivitytable.h"
 #include "mathfem.h"
-#include "zznodalrecoverymodel.h"
-#include "nodalaveragingrecoverymodel.h"
-#include "sprnodalrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
+#include "nodalrecovery/nodalaveragingrecoverymodel.h"
+#include "nodalrecovery/sprnodalrecoverymodel.h"
 #include "domain.h"
 
 #include "util.h"

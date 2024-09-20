@@ -36,8 +36,8 @@
 #define quad1mindlin_H
 
 #include "sm/Elements/structuralelement.h"
-#include "zznodalrecoverymodel.h"
-#include "sprnodalrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
+#include "nodalrecovery/sprnodalrecoverymodel.h"
 
 #define _IFT_Quad1Mindlin_Name "quad1mindlin"
 #define _IFT_Quad1Mindlin_ReducedIntegration "reducedintegration"

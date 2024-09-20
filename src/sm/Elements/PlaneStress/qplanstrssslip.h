@@ -37,7 +37,7 @@
 
 #include "sm/Elements/structural2delement.h"
 #include "sm/Elements/PlaneStress/qplanstrss.h"
-#include "nodalaveragingrecoverymodel.h"
+#include "nodalrecovery/nodalaveragingrecoverymodel.h"
 
 #define _IFT_QPlaneStress2dSlip_Name "qplanestress2dslip"
 

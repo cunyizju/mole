@@ -258,11 +258,11 @@ int main(int argc, char *argv[])
 #endif
 
 #ifdef __PETSC_MODULE
-    PetscInitialize(& modulesArgc, & modulesArgv, PETSC_NULL, PETSC_NULL);
+    PetscInitialize(& modulesArgc, & modulesArgv, PETSC_NULLPTR, PETSC_NULLPTR);
 #endif
 
 #ifdef __SLEPC_MODULE
-    SlepcInitialize(& modulesArgc, & modulesArgv, PETSC_NULL, PETSC_NULL);
+    SlepcInitialize(& modulesArgc, & modulesArgv, PETSC_NULLPTR, PETSC_NULLPTR);
 #endif
 
 #ifdef _PYTHON_EXTENSION

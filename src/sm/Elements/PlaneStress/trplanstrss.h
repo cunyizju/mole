@@ -40,9 +40,9 @@
 #include "sm/ErrorEstimators/zzerrorestimator.h"
 #include "sm/ErrorEstimators/huertaerrorestimator.h"
 #include "sm/CrossSections/layeredcrosssection.h"
-#include "zznodalrecoverymodel.h"
-#include "nodalaveragingrecoverymodel.h"
-#include "sprnodalrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
+#include "nodalrecovery/nodalaveragingrecoverymodel.h"
+#include "nodalrecovery/sprnodalrecoverymodel.h"
 #include "spatiallocalizer.h"
 #include "mmashapefunctprojection.h"
 

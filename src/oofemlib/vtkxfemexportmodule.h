@@ -37,7 +37,7 @@
 
 #include "vtkxmlexportmodule.h"
 #include "intarray.h"
-#include "nodalrecoverymodel.h"
+#include "nodalrecovery/nodalrecoverymodel.h"
 #include "interface.h"
 #include "internalstatevaluetype.h"
 #include "integrationrule.h"

@@ -36,7 +36,7 @@
 #define mmashapefunctprojection_h
 
 #include "materialmappingalgorithm.h"
-#include "nodalrecoverymodel.h"
+#include "nodalrecovery/nodalrecoverymodel.h"
 #include "interface.h"
 
 #include <vector>

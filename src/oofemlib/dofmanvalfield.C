@@ -43,7 +43,7 @@
 #include "dofman/dofmanager.h"
 #include "feinterpol.h"
 #include "problemmode.h"
-#include "nodalrecoverymodel.h"
+#include "nodalrecovery/nodalrecoverymodel.h"
 #include "vtkbaseexportmodule.h"
 #include "octreelocalizer.h"
 

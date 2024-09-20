@@ -36,8 +36,8 @@
 #define quad1mindlinshell3d_h
 
 #include "sm/Elements/structuralelement.h"
-#include "zznodalrecoverymodel.h"
-#include "sprnodalrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
+#include "nodalrecovery/sprnodalrecoverymodel.h"
 
 ///@name Input fields for Quad1MindlinShell3D element
 //@{

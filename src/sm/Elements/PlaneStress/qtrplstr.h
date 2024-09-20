@@ -38,8 +38,8 @@
 #include "sm/Elements/structural2delement.h"
 #include "sm/ErrorEstimators/directerrorindicatorrc.h"
 #include "spatiallocalizer.h"
-#include "zznodalrecoverymodel.h"
-#include "sprnodalrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
+#include "nodalrecovery/sprnodalrecoverymodel.h"
 
 #define _IFT_QTrPlaneStress2d_Name "qtrplstr"
 

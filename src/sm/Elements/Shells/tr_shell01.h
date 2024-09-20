@@ -36,7 +36,7 @@
 #define tr_shell01_h
 
 #include "sm/Elements/structuralelement.h"
-#include "zznodalrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
 #include "sm/ErrorEstimators/zzerrorestimator.h"
 #include "sm/Elements/Shells/cct3d.h"
 #include "sm/Elements/PlaneStress/trplanrot3d.h"

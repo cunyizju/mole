@@ -36,8 +36,8 @@
 #define Q9PLANSTRSS_H_
 
 #include "sm/Elements/structural2delement.h"
-#include "zznodalrecoverymodel.h"
-#include "nodalaveragingrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
+#include "nodalrecovery/nodalaveragingrecoverymodel.h"
 
 #define _IFT_Q9PlaneStress2d_Name "q9planestress2d"
 

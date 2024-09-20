@@ -37,9 +37,9 @@
 
 #include "sm/Elements/structural3delement.h"
 #include "sm/ErrorEstimators/huertaerrorestimator.h"
-#include "zznodalrecoverymodel.h"
-#include "nodalaveragingrecoverymodel.h"
-#include "sprnodalrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
+#include "nodalrecovery/nodalaveragingrecoverymodel.h"
+#include "nodalrecovery/sprnodalrecoverymodel.h"
 
 #define _IFT_Q27Space_Name "q27space"
 

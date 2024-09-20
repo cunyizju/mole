@@ -36,7 +36,7 @@
 #define smoothednodalintvarfield_h
 
 #include "field.h"
-#include "zznodalrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
 
 namespace oofem {
 class Domain;

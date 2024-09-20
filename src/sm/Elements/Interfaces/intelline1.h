@@ -37,7 +37,7 @@
 
 #include "sm/Elements/Interfaces/structuralinterfaceelement.h"
 #include "floatmatrixf.h"
-#include "nodalaveragingrecoverymodel.h"
+#include "nodalrecovery/nodalaveragingrecoverymodel.h"
 
 #define _IFT_IntElLine1_Name "intelline1"
 #define _IFT_IntElLine1_axisymmode "axisymmode"

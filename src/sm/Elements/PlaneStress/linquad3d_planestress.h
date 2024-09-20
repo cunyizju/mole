@@ -38,8 +38,8 @@
 #include "sm/Elements/PlaneStress/planstrss.h"
 #include "sm/ErrorEstimators/directerrorindicatorrc.h"
 #include "sm/ErrorEstimators/huertaerrorestimator.h"
-#include "zznodalrecoverymodel.h"
-#include "sprnodalrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
+#include "nodalrecovery/sprnodalrecoverymodel.h"
 #include "spatiallocalizer.h"
 #include "eleminterpmapperinterface.h"
 

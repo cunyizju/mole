@@ -82,10 +82,10 @@ endif ()
 set (core_oofeg oofeggraphiccontext.C)
 
 set (core_nodalrecovery
-    nodalrecoverymodel.C
-    zznodalrecoverymodel.C
-    nodalaveragingrecoverymodel.C
-    sprnodalrecoverymodel.C
+    nodalrecovery/nodalrecoverymodel.C
+    nodalrecovery/zznodalrecoverymodel.C
+    nodalrecovery/nodalaveragingrecoverymodel.C
+    nodalrecovery/sprnodalrecoverymodel.C
     )
 
 set (core_dofs

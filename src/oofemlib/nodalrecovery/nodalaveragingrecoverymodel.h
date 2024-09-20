@@ -35,7 +35,7 @@
 #ifndef nodalaveragingrecoverymodel_h
 #define nodalaveragingrecoverymodel_h
 
-#include "nodalrecoverymodel.h"
+#include "nodalrecovery/nodalrecoverymodel.h"
 #include "interface.h"
 
 #define _IFT_NodalAveragingRecoveryModel_Name "nodalaverage"

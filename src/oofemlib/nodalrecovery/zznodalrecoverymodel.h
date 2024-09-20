@@ -35,7 +35,7 @@
 #ifndef zznodalrecoverymodel_h
 #define zznodalrecoverymodel_h
 
-#include "nodalrecoverymodel.h"
+#include "nodalrecovery/nodalrecoverymodel.h"
 #include "interface.h"
 
 #define _IFT_ZZNodalRecoveryModel_Name "zz"

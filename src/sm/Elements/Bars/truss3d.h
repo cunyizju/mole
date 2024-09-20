@@ -37,8 +37,8 @@
 
 #include "sm/Elements/nlstructuralelement.h"
 #include "sm/ErrorEstimators/directerrorindicatorrc.h"
-#include "zznodalrecoverymodel.h"
-#include "nodalaveragingrecoverymodel.h"
+#include "nodalrecovery/zznodalrecoverymodel.h"
+#include "nodalrecovery/nodalaveragingrecoverymodel.h"
 
 #define _IFT_Truss3d_Name "truss3d"
 

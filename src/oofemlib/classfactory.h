@@ -41,7 +41,7 @@
 #include "doftype.h"
 #include "linsystsolvertype.h"
 //#include "patch.h" // for PatchType
-#include "nodalrecoverymodel.h" // for NodalRecoveryModelType
+#include "nodalrecovery/nodalrecoverymodel.h" // for NodalRecoveryModelType
 #include "integrationrule.h" // for IntegrationRuleType
 #include "geneigvalsolvertype.h"
 #include "materialmappingalgorithmtype.h"
