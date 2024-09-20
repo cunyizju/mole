@@ -37,7 +37,7 @@
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "fei2dquadlin.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "material.h"
 #include "cs/crosssection.h"
 #include "gausspoint.h"
@@ -56,7 +56,7 @@
 
 
 #ifdef __OOFEG
- #include "node.h"
+ #include "dofman/node.h"
  #include "oofeggraphiccontext.h"
  #include "connectivitytable.h"
 #endif

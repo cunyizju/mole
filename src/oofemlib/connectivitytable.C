@@ -35,7 +35,7 @@
 #include "connectivitytable.h"
 #include "domain.h"
 #include "element.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "intarray.h"
 
 namespace oofem {

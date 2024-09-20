@@ -36,7 +36,7 @@
 #include "../sm/CrossSections/structuralcrosssection.h"
 #include "../sm/Materials/structuralms.h"
 #include "fei3dlinelin.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "material.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"

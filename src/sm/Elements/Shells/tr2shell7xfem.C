@@ -36,7 +36,7 @@
 #include "sm/Materials/structuralms.h"
 #include "sm/xfem/enrichmentitems/crack.h"
 #include "sm/xfem/enrichmentitems/shellcrack.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "load.h"
 #include "mathfem.h"
 #include "domain.h"

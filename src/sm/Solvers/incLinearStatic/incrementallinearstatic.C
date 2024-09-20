@@ -42,14 +42,14 @@
 #include "classfactory.h"
 #include "datastream.h"
 #include "contextioerr.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "activebc.h"
 #include "unknownnumberingscheme.h"
 
 /*
 #include "set.h"
 #include "element.h"
-#include "node.h"
+#include "dofman/node.h"
 */
 
 #include "boundarycondition.h"

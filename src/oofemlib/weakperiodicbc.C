@@ -41,7 +41,7 @@
 #include "weakperiodicbc.h"
 #include "inputrecord.h"
 #include "element.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "masterdof.h"
 #include "sparsemtrx.h"
 #include "gausspoint.h"

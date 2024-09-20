@@ -34,7 +34,7 @@
 
 #include "sm/Quasicontinuum/quasicontinuum.h"
 #include "Solvers/qcLinearStatic/qclinearstatic.h"
-#include "qcnode.h"
+#include "dofman/qcnode.h"
 #include "element.h"
 #include "mathfem.h"
 

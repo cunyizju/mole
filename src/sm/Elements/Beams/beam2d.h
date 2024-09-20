@@ -37,7 +37,7 @@
 
 #include "sm/Elements/Beams/beambaseelement.h"
 #include "sm/CrossSections/layeredcrosssection.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 
 ///@name Input fields for Beam2d
 //@{

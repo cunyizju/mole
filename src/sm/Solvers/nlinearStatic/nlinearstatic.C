@@ -50,7 +50,7 @@
 #include "sparsemtrx.h"
 #include "errorestimator.h"
 #include "mathfem.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "dof.h"
 #include "unknownnumberingscheme.h"
 #include "ltf/function.h"

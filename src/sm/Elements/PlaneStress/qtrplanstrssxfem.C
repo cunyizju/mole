@@ -43,7 +43,7 @@
 #include "xfem/delaunay.h"
 #include "xfem/XFEMDebugTools.h"
 #include "feinterpol.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "cs/crosssection.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"

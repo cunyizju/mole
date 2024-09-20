@@ -35,7 +35,7 @@
 #include "eigenvectorprimaryfield.h"
 #include "timestep.h"
 #include "domain.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "dof.h"
 #include "floatarray.h"
 #include "floatmatrix.h"

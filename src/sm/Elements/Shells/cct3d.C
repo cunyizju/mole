@@ -35,7 +35,7 @@
 #include "sm/Elements/Shells/cct3d.h"
 #include "sm/Materials/structuralms.h"
 #include "fei2dtrlin.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "load.h"
 #include "mathfem.h"
 #include "gaussintegrationrule.h"

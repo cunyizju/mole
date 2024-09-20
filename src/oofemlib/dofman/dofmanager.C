@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "masterdof.h"
 #include "simpleslavedof.h"
 #include "timestep.h"

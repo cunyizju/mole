@@ -37,7 +37,7 @@
 #include "domain.h"
 #include "engngm.h"
 #include "spatiallocalizer.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "dof.h"
 #include "connectivitytable.h"
 #include "unknownnumberingscheme.h"

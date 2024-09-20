@@ -41,7 +41,7 @@
 
 #include "matlabexportmodule.h"
 #include "engngm.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "mathfem.h"
 #include "gausspoint.h"
 #include "weakperiodicbc.h"

@@ -37,7 +37,7 @@
 #include "timestep.h"
 #include "mathfem.h"
 // includes for ddc - not very clean (NumMethod knows what is "node" and "dof")
-#include "node.h"
+#include "dofman/node.h"
 #include "element.h"
 #include "generalboundarycondition.h"
 #include "dof.h"

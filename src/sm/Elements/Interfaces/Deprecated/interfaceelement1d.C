@@ -34,7 +34,7 @@
 
 #include "interfaceelement1d.h"
 #include "domain.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "gaussintegrationrule.h"
 #include "floatmatrix.h"
 #include "floatarray.h"

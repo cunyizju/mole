@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/Interfaces/intelsurfquad1.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "cs/crosssection.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"

@@ -33,7 +33,7 @@
  */
 
 #include "Shell7BasePhFi.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "load.h"
 #include "structuralms.h"
 #include "mathfem.h"

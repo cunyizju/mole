@@ -35,7 +35,7 @@
 #ifndef latticeneumanncouplingnode_h
 #define latticeneumanncouplingnode_h
 
-#include "node.h"
+#include "dofman/node.h"
 #include "domain.h"
 #include "floatarray.h"
 

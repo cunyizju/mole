@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/lumpedmasselement.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "dof.h"
 #include "floatmatrix.h"
 #include "floatarray.h"
@@ -42,7 +42,7 @@
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"
- #include "node.h"
+ #include "dofman/node.h"
 #endif
 
 namespace oofem {

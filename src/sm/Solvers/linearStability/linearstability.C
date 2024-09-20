@@ -45,7 +45,7 @@
 #include "classfactory.h"
 #include "datastream.h"
 #include "exportmodulemanager.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "dof.h"
 #include "unknownnumberingscheme.h"
 #include "outputmanager.h"

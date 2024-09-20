@@ -38,7 +38,7 @@
 #include "sm/Elements/Beams/beambaseelement.h"
 #include "sm/CrossSections/fiberedcs.h"
 #include "sm/Materials/winklermodel.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "vtkxmlexportmodule.h"
 
 ///@name Input fields for Beam3d

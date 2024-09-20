@@ -34,7 +34,7 @@
 
 #include "prescribedgenstrainshell7.h"
 #include "dofiditem.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "dof.h"
 #include "valuemodetype.h"
 #include "floatarray.h"
@@ -42,7 +42,7 @@
 #include "ltf/function.h"
 #include "engngm.h"
 #include "set.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "element.h"
 #include "classfactory.h"
 #include "dynamicinputrecord.h"

@@ -35,7 +35,7 @@
 #include "sm/Elements/Bars/truss1d.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "fei1dlin.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "material.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"

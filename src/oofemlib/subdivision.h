@@ -39,7 +39,7 @@
 #include "floatarray.h"
 #include "intarray.h"
 #include "element.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "connectivitytable.h"
 
 #include <memory>

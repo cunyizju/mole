@@ -38,7 +38,7 @@
 
 #include "dof.h"
 #include "dictionary.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 
 #include <cstdio>
 

@@ -34,7 +34,7 @@
 
 #include "domaintransactionmanager.h"
 #include "error.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "element.h"
 #include "domain.h"
 

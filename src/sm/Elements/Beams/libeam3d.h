@@ -38,7 +38,7 @@
 #include "sm/Elements/structuralelement.h"
 #include "sm/CrossSections/fiberedcs.h"
 #include "nodalaveragingrecoverymodel.h"
-#include "node.h"
+#include "dofman/node.h"
 
 ///@name Input fields for LIBeam3d
 //@{

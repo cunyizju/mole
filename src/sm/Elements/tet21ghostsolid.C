@@ -42,7 +42,7 @@
 #include "gaussintegrationrule.h"
 #include "load.h"
 #include "element.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "load.h"
 #include "bodyload.h"
 #include "boundaryload.h"

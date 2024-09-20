@@ -34,7 +34,7 @@
 
 #include "sm/Elements/Interfaces/intelline1.h"
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "lobattoir.h"

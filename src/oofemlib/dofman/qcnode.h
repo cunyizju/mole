@@ -35,7 +35,7 @@
 #ifndef qcnode_h
 #define qcnode_h
 
-#include "node.h"
+#include "dofman/node.h"
 
 ///@name Input fields for HangingNode
 //@{

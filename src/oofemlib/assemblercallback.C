@@ -36,7 +36,7 @@
 #include "floatarray.h"
 #include "floatmatrix.h"
 #include "element.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "activebc.h"
 
 #include "nodalload.h"

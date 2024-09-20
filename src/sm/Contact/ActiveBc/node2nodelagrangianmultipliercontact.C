@@ -36,7 +36,7 @@
 #include "sm/Contact/ActiveBc/node2nodelagrangianmultipliercontact.h"
 #include "set.h"
 #include "domain.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "masterdof.h"
 #include "floatmatrix.h"
 #include "unknownnumberingscheme.h"

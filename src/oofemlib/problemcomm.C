@@ -37,7 +37,7 @@
 #include "error.h"
 #include "engngm.h"
 #include "element.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 
 #ifdef __USE_MPI
  #include <mpi.h>

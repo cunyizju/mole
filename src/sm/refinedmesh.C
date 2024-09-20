@@ -35,7 +35,7 @@
 #include "refinedmesh.h"
 #include "domain.h"
 #include "element.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "refinedelement.h"
 
 namespace oofem {

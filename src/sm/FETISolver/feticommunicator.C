@@ -35,7 +35,7 @@
 #include "sm/FETISolver/feticommunicator.h"
 #include "engngm.h"
 #include "intarray.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "unknownnumberingscheme.h"
 #include "domain.h"
 

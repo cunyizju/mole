@@ -39,7 +39,7 @@
 #include "floatmatrix.h"
 #include "dictionary.h"
 #include "range.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "element.h"
 #include "ltf/scalarfunction.h"
 

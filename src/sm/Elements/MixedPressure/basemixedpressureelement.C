@@ -42,7 +42,7 @@
 #include "../sm/Materials/structuralms.h"
 
 #include "material.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "domain.h"

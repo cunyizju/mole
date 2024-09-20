@@ -51,7 +51,7 @@
 #include "timestep.h"
 #include "gausspoint.h"
 #include "engngm.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "materialinterface.h"
 #include "mathfem.h"
 #include "cltypes.h"

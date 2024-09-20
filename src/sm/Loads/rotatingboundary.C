@@ -33,7 +33,7 @@
  */
 
 #include "rotatingboundary.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "dof.h"
 #include "mathfem.h"
 #include "ltf/function.h"

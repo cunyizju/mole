@@ -40,7 +40,7 @@
 #include <memory>
 
 #include "activebc.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "boundaryload.h"
 
 namespace oofem

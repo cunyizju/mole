@@ -34,7 +34,7 @@
 
 #include "sm/Elements/Beams/beam3d.h"
 #include "sm/Materials/structuralms.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "material.h"
 #include "cs/crosssection.h"
 #include "gausspoint.h"
@@ -47,7 +47,7 @@
 #include "mathfem.h"
 #include "fei3dlinelin.h"
 #include "classfactory.h"
-#include "elementinternaldofman.h"
+#include "dofman/elementinternaldofman.h"
 #include "masterdof.h"
 #include "bctracker.h"
 

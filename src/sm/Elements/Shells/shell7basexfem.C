@@ -43,7 +43,7 @@
 #include "feinterpol3d.h"
 #include "xfem/enrichmentitem.h"
 #include "xfem/xfemmanager.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "connectivitytable.h"
 #include "mathfem.h"
 #include "gausspoint.h"

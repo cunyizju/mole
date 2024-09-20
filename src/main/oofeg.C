@@ -50,7 +50,7 @@
 #include "domain.h"
 
 #include "util.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "intarray.h"
 #include "oofemcfg.h"
 #include "errorestimator.h"

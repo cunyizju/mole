@@ -38,10 +38,10 @@
 #include "gaussintegrationrule.h"
 #include "gausspoint.h"
 #include "classfactory.h"
-#include "node.h"
+#include "dofman/node.h"
 
 #ifdef __OOFEG
- #include "node.h"
+ #include "dofman/node.h"
  #include "oofeggraphiccontext.h"
  #include "connectivitytable.h"
 #endif

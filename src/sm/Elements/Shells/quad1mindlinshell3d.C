@@ -36,7 +36,7 @@
 #include "sm/Materials/structuralms.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "sm/Loads/constantpressureload.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "material.h"
 #include "cs/crosssection.h"
 #include "gausspoint.h"

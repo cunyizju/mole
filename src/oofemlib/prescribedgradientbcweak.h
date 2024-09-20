@@ -42,7 +42,7 @@
 
 #include <unordered_map>
 #include <memory>
-#include "node.h"
+#include "dofman/node.h"
 
 #define _IFT_PrescribedGradientBCWeak_Name   "prescribedgradientbcweak"
 #define _IFT_PrescribedGradientBCWeak_TractionInterpOrder   "tractioninterporder"

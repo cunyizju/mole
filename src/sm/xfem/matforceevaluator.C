@@ -37,7 +37,7 @@
 #include "domain.h"
 #include "spatiallocalizer.h"
 #include "sm/Elements/nlstructuralelement.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "integrationrule.h"
 #include "feinterpol.h"
 #include "gausspoint.h"

@@ -36,7 +36,7 @@
 #include "element.h"
 #include "timestep.h"
 #include "engngm.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "nodalaveragingrecoverymodel.h"
 #include "zznodalrecoverymodel.h"
 #include "classfactory.h"

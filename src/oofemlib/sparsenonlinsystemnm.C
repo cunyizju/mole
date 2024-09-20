@@ -35,7 +35,7 @@
 #include "sparsenonlinsystemnm.h"
 #include "error.h"
 #include "domain.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "unknownnumberingscheme.h"
 
 namespace oofem {

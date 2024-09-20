@@ -38,7 +38,7 @@
 #include "outputexportmodule.h"
 #include "engngm.h"
 #include "domain.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "element.h"
 #include "timestep.h"
 #include "classfactory.h"

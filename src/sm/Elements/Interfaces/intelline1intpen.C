@@ -8,7 +8,7 @@
 #include "intelline1intpen.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "fei2dlinelin.h"
 #include "fei2dlinequad.h"
 #include "feinterpol.h"

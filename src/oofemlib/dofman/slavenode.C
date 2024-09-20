@@ -32,43 +32,54 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "elementinternaldofman.h"
-#include "dof.h"
+#include "dofman/slavenode.h"
+#include "slavedof.h"
+#include "floatarray.h"
 #include "intarray.h"
-#include "verbose.h"
+#include "entityrenumberingscheme.h"
+#include "classfactory.h"
 
 namespace oofem {
-ElementDofManager :: ElementDofManager(int n, Domain *aDomain, Element *elem) :
-    DofManager(n, aDomain)
+REGISTER_DofManager(SlaveNode);
+
+void SlaveNode :: initializeFrom(InputRecord &ir)
 {
-    this->element = elem;
+    Node :: initializeFrom(ir);
+
+    IR_GIVE_FIELD(ir, masterDofManagers, _IFT_SlaveNode_masterDofManagers);
+    IR_GIVE_OPTIONAL_FIELD(ir, masterWeights, _IFT_SlaveNode_weights);
+
+    if ( masterWeights.giveSize() == 0 ) {
+        masterWeights.resize( masterDofManagers.giveSize() );
+        masterWeights.add( 1 / ( double ) masterDofManagers.giveSize() );
+    } else if ( masterDofManagers.giveSize() != masterWeights.giveSize() ) {
+        throw ValueInputException(ir, _IFT_SlaveNode_weights, "master dof managers and weights size mismatch.");
+    }
 }
 
 
-ElementDofManager :: ~ElementDofManager()
-{ }
-
-
-void ElementDofManager :: initializeFrom(InputRecord &ir)
-// Gets from the source line from the data file all the data of the receiver.
+void SlaveNode :: postInitialize()
 {
-#  ifdef VERBOSE
-    // VERBOSE_PRINT1("Instanciating node ",number)
-#  endif
+    Node :: postInitialize();
 
-    DofManager :: initializeFrom(ir);
-}
-
-
-void ElementDofManager :: printYourself()
-// Prints the receiver on screen.
-{
-    printf("InternalElementDofManager %d \n", number);
+    // initialize slave dofs (inside check of consistency of receiver and master dof)
     for ( Dof *dof: *this ) {
-        dof->printYourself();
+        SlaveDof *sdof = dynamic_cast< SlaveDof * >(dof);
+        if ( sdof ) {
+            sdof->initialize(masterDofManagers, IntArray(), masterWeights);
+        }
+    }
+    // clean up
+    this->masterWeights.clear();
+}
+
+
+void SlaveNode :: updateLocalNumbering(EntityRenumberingFunctor &f)
+{
+    for ( int i = 1; i <= masterDofManagers.giveSize(); ++i ) {
+        masterDofManagers.at(i) = f(masterDofManagers.at(i), ERS_DofManager);
     }
 
-    loadArray.printYourself();
-    printf("\n");
+    DofManager :: updateLocalNumbering(f);
 }
 } // end namespace oofem

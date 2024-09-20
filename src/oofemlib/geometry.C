@@ -35,7 +35,7 @@
 #include "mathfem.h"
 #include "geometry.h"
 #include "element.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "classfactory.h"
 #include "inputrecord.h"
 #include "dynamicinputrecord.h"

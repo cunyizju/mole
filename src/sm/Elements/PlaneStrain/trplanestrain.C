@@ -34,7 +34,7 @@
 
 #include "sm/Elements/PlaneStrain/trplanestrain.h"
 #include "fei2dtrlin.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "cs/crosssection.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"

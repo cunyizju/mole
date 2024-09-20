@@ -34,7 +34,7 @@
 
 #include "sm/Elements/3D/ltrspaceboundaryvoigt.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "material.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"

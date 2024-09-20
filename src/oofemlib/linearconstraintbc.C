@@ -42,7 +42,7 @@
 #include "timestep.h"
 #include "datastream.h"
 #include "contextioerr.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "domain.h"
 
 #ifdef _OPENMP

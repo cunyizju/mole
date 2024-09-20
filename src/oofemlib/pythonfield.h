@@ -40,7 +40,7 @@
 #include "intarray.h"
 #include "classfactory.h"
 #include "dynamicinputrecord.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "error.h"
 #include <iostream>
 

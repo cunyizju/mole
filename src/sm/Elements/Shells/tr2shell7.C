@@ -34,7 +34,7 @@
 
 #include "sm/Elements/Shells/tr2shell7.h"
 #include "sm/Materials/structuralms.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "load.h"
 #include "mathfem.h"
 #include "domain.h"

@@ -38,7 +38,7 @@
  * PhD Thesis, EPFL, Lausanne, 1992.
  */
 
-#include "node.h"
+#include "dofman/node.h"
 #include "dof.h"
 #include "slavedof.h"
 #include "simpleslavedof.h"

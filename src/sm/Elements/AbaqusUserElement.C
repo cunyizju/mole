@@ -36,8 +36,8 @@
 #include "gausspoint.h"
 #include "classfactory.h"
 #include "dynamicinputrecord.h"
-#include "dofmanager.h"
-#include "node.h"
+#include "dofman/dofmanager.h"
+#include "dofman/node.h"
 
 #ifdef _WIN32 //_MSC_VER and __MINGW32__ included
  #include <Windows.h>

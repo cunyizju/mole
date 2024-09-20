@@ -41,7 +41,7 @@
 #include "domain.h"
 #include "classfactory.h"
 #include "dynamicinputrecord.h"
-#include "node.h"
+#include "dofman/node.h"
 
 namespace oofem {
 REGISTER_Element(MacroLSpace);

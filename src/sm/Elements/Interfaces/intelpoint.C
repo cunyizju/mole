@@ -35,7 +35,7 @@
 #include "sm/Elements/Interfaces/intelpoint.h"
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
 #include "domain.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "gaussintegrationrule.h"
 #include "floatmatrix.h"
 #include "floatarray.h"

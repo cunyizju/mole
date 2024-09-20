@@ -34,7 +34,7 @@
 
 #include "primaryfield.h"
 #include "spatiallocalizer.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "dof.h"
 #include "element.h"
 #include "timestep.h"

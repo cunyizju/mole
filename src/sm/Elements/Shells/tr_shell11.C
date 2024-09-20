@@ -38,7 +38,7 @@
 #include "gaussintegrationrule.h"
 #include "gausspoint.h"
 #include "classfactory.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "sm/Materials/structuralms.h"
 #include "load.h"
 

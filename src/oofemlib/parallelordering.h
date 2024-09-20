@@ -37,7 +37,7 @@
 
 #include "oofemcfg.h"
 #include "intarray.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 
 #include <map>
 

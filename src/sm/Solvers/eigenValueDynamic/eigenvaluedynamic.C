@@ -43,7 +43,7 @@
 #include "geneigvalsolvertype.h"
 #include "contextioerr.h"
 #include "classfactory.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "dof.h"
 #include "domain.h"
 #include "unknownnumberingscheme.h"

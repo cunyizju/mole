@@ -37,8 +37,8 @@
 
 #include "floatarray.h"
 #include "element.h"
-#include "node.h"
-#include "qcnode.h"
+#include "dofman/node.h"
+#include "dofman/qcnode.h"
 
 namespace oofem {
 /**

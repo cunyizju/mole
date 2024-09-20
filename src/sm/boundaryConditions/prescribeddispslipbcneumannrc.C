@@ -34,7 +34,7 @@
 
 #include "prescribeddispslipbcneumannrc.h"
 #include "classfactory.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "masterdof.h"
 #include "element.h"
 #include "feinterpol.h"

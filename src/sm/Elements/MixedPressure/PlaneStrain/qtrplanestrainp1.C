@@ -34,7 +34,7 @@
 
 #include "../sm/Elements/MixedPressure/PlaneStrain/qtrplanestrainp1.h"
 #include "fei2dtrlin.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "floatmatrix.h"

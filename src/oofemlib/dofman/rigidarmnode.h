@@ -35,7 +35,7 @@
 #ifndef rigidarmnode_h
 #define rigidarmnode_h
 
-#include "node.h"
+#include "dofman/node.h"
 
 ///@name Input fields for RigidArmNode
 //@{

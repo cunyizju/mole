@@ -36,7 +36,7 @@
 #include "sm/Elements/structuralelement.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "domain.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "element.h"
 #include "gausspoint.h"
 #include "floatarray.h"

@@ -36,7 +36,7 @@
 #include "element.h"
 #include "elementgeometrytype.h"
 #include "mathfem.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "integrationrule.h"
 #include "feinterpol.h"
 #include "gausspoint.h"

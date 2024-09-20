@@ -35,7 +35,7 @@
 #ifndef particle_h
 #define particle_h
 
-#include "node.h"
+#include "dofman/node.h"
 
 ///@name Input fields for Particle
 //@{

@@ -39,7 +39,7 @@
 #include "dofiditem.h"
 #include "tipinfo.h"
 #include "intarray.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "xfem/enrichmentfronts/enrichmentfront.h"
 #include "xfem/enrichmentfunction.h"
 #include "error.h"

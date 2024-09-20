@@ -40,7 +40,7 @@
 #include "timestep.h"
 #include "nummet.h"
 #include "element.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "domain.h"
 #include "datareader.h"
 #include "oofemtxtdatareader.h"

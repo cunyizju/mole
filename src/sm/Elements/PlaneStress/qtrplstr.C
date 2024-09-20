@@ -34,7 +34,7 @@
 
 #include "sm/Elements/PlaneStress/qtrplstr.h"
 #include "fei2dtrquad.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "gausspoint.h"
 #include "floatmatrix.h"
 #include "floatarray.h"

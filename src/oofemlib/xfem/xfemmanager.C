@@ -39,7 +39,7 @@
 #include "floatarray.h"
 #include "domain.h"
 #include "element.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "cltypes.h"
 #include "xfemelementinterface.h"
 #include "classfactory.h"

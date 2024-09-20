@@ -40,7 +40,7 @@
 #include "timestep.h"
 #include "util.h"
 #include "classfactory.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "feinterpol.h"
 #include "problemmode.h"
 #include "nodalrecoverymodel.h"

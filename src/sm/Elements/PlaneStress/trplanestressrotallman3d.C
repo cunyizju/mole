@@ -36,7 +36,7 @@
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "sm/Materials/structuralms.h"
 #include "material.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "load.h"
 #include "mathfem.h"
 #include "classfactory.h"

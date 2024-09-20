@@ -33,7 +33,7 @@
  */
 
 #include "dof.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "timestep.h"
 #include "boundarycondition.h"
 #include "initialcondition.h"

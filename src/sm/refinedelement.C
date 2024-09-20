@@ -34,7 +34,7 @@
 
 #include "refinedelement.h"
 #include "element.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "dof.h"
 #include "mathfem.h"
 

@@ -32,26 +32,24 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "elementside.h"
+#include "dofman/elementinternaldofman.h"
 #include "dof.h"
-#include "floatmatrix.h"
 #include "intarray.h"
 #include "verbose.h"
-#include "classfactory.h"
 
 namespace oofem {
-REGISTER_DofManager(ElementSide);
-
-ElementSide :: ElementSide(int n, Domain *aDomain) :
+ElementDofManager :: ElementDofManager(int n, Domain *aDomain, Element *elem) :
     DofManager(n, aDomain)
+{
+    this->element = elem;
+}
+
+
+ElementDofManager :: ~ElementDofManager()
 { }
 
 
-ElementSide :: ~ElementSide()
-{ }
-
-
-void ElementSide :: initializeFrom(InputRecord &ir)
+void ElementDofManager :: initializeFrom(InputRecord &ir)
 // Gets from the source line from the data file all the data of the receiver.
 {
 #  ifdef VERBOSE
@@ -62,41 +60,15 @@ void ElementSide :: initializeFrom(InputRecord &ir)
 }
 
 
-void ElementSide :: printYourself()
+void ElementDofManager :: printYourself()
 // Prints the receiver on screen.
 {
-    printf("Element side %d \n", number);
+    printf("InternalElementDofManager %d \n", number);
     for ( Dof *dof: *this ) {
         dof->printYourself();
     }
 
     loadArray.printYourself();
     printf("\n");
-}
-
-
-void ElementSide :: computeTransformation(FloatMatrix &answer, const IntArray *map)
-{
-    //
-
-    // computes transformation of receiver from global cs to nodal (user-defined) cs.
-    // Note: implementation rely on D_u, D_v and D_w (R_u, R_v, R_w) order in cltypes.h
-    // file. Do not change their order and do not insert any values between these values.
-    //
-    //
-
-    int size;
-
-    if ( map == NULL ) {
-        size = this->giveNumberOfDofs();
-    } else {
-        size = map->giveSize();
-    }
-
-    // response for all local dofs is computed
-
-    answer.resize(size, size);
-    answer.zero();
-    answer.beUnitMatrix();
 }
 } // end namespace oofem

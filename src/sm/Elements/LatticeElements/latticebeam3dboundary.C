@@ -36,7 +36,7 @@
 #include "../sm/Elements/LatticeElements/latticebeam3dboundary.h"
 #include "../sm/Materials/LatticeMaterials/latticematstatus.h"
 #include "../sm/Materials/LatticeMaterials/latticelinearelastic.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "material.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"

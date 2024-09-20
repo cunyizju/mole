@@ -154,17 +154,17 @@ set (core_td
     )
 
 set (core_dofman
-    dofmanager.C
-    node.C
-    slavenode.C
-    generalslavenode.C
-    hangingnode.C
-    qcnode.C
-    rigidarmnode.C
-    elementinternaldofman.C
-    elementside.C
-    latticedirichletcouplingnode.C
-    latticeneumanncouplingnode.C
+    dofman/dofmanager.C
+    dofman/node.C
+    dofman/slavenode.C
+    dofman/generalslavenode.C
+    dofman/hangingnode.C
+    dofman/qcnode.C
+    dofman/rigidarmnode.C
+    dofman/elementinternaldofman.C
+    dofman/elementside.C
+    dofman/latticedirichletcouplingnode.C
+    dofman/latticeneumanncouplingnode.C
     )
 
 set (core_material

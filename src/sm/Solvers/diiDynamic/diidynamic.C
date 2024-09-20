@@ -37,7 +37,7 @@
 #include "sm/Elements/structuralelementevaluator.h"
 #include "timestep.h"
 #include "element.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "dof.h"
 #include "contextioerr.h"
 #include "datastream.h"

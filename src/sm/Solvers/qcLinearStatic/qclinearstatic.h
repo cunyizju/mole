@@ -38,7 +38,7 @@
 #include "sm/Solvers/linearStatic/linearstatic.h"
 #include "sparselinsystemnm.h"
 #include "sparsemtrxtype.h"
-#include "node.h"
+#include "dofman/node.h"
 
 #include "sm/Quasicontinuum/fullsolveddomain.h"
 #include "sm/Quasicontinuum/quasicontinuumnumberingscheme.h"

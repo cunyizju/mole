@@ -32,7 +32,7 @@
  */
 
 #include "trwarp.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "sm/CrossSections/warpingcrosssection.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"

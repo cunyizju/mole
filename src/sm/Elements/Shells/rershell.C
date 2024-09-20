@@ -34,7 +34,7 @@
 
 #include "sm/Elements/Shells/rershell.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "material.h"
 #include "cs/crosssection.h"
 #include "gausspoint.h"

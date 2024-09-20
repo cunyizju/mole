@@ -36,7 +36,7 @@
 #include "engngm.h"
 #include "activebc.h"
 #include "element.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "sparsemtrxtype.h"
 #include "classfactory.h"
 

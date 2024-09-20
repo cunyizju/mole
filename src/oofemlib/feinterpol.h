@@ -42,7 +42,7 @@
 #include "integrationdomain.h"
 #include "elementgeometrytype.h"
 #include "materialmode.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "element.h"
 
 namespace oofem {

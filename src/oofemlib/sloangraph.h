@@ -38,7 +38,7 @@
 #include "oofemcfg.h"
 #include "sloangraphnode.h"
 #include "sloanlevelstruct.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "intarray.h"
 
 #include <list>

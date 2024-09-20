@@ -39,7 +39,7 @@
 #include "domain.h"
 #include "element.h"
 #include "dof.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "simpleslavedof.h"
 #include "intarray.h"
 #include "generalboundarycondition.h"

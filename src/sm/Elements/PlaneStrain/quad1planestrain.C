@@ -34,7 +34,7 @@
 
 #include "sm/Elements/PlaneStrain/quad1planestrain.h"
 #include "fei2dquadlin.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "cs/crosssection.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"

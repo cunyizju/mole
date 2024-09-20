@@ -19,7 +19,7 @@
 #include "vtkxmlexportmodule.h"
 #include "generalboundarycondition.h"
 #include "ltf/constantfunction.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "outputmanager.h"
 #include "boundarycondition.h"
 #include "set.h"

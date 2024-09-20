@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/3D/q27space.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "floatmatrix.h"

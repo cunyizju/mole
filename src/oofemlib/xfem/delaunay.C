@@ -36,7 +36,7 @@
 #include "floatarray.h"
 #include "intarray.h"
 #include "geometry.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "mathfem.h"
 
 #include <cstdlib>

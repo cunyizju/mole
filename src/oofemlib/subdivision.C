@@ -36,7 +36,7 @@
 #include "material.h"
 #include "errorestimator.h"
 #include "domain.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "element.h"
 #include "mathfem.h"
 #include "masterdof.h"

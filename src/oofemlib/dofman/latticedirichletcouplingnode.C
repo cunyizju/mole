@@ -32,7 +32,7 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include "latticedirichletcouplingnode.h"
+#include "dofman/latticedirichletcouplingnode.h"
 #include "dof.h"
 #include "slavedof.h"
 #include "simpleslavedof.h"

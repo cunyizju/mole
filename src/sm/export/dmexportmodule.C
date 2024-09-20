@@ -35,7 +35,7 @@
 #include "dmexportmodule.h"
 #include "timestep.h"
 #include "engngm.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "dof.h"
 #include "classfactory.h"
 #include "domain.h"

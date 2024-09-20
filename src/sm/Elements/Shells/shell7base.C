@@ -35,7 +35,7 @@
 #include "sm/Elements/Shells/shell7base.h"
 #include "sm/Materials/structuralms.h"
 #include "sm/Loads/constantpressureload.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "load.h"
 #include "mathfem.h"
 #include "domain.h"

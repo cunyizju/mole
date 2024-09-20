@@ -32,7 +32,7 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include "latticeneumanncouplingnode.h"
+#include "dofman/latticeneumanncouplingnode.h"
 #include "dof.h"
 #include "slavedof.h"
 #include "simpleslavedof.h"

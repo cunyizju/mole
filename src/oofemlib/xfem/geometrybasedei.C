@@ -38,7 +38,7 @@
 #include "spatiallocalizer.h"
 #include "classfactory.h"
 #include "element.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "mathfem.h"
 #include "feinterpol.h"
 #include "gausspoint.h"

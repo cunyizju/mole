@@ -38,7 +38,7 @@
 #include "exportmodulemanager.h"
 #include "engngm.h"
 #include "domain.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "element.h"
 #include "generalboundarycondition.h"
 #include "dof.h"

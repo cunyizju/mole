@@ -35,7 +35,7 @@
 #include "targe2interface.h"
 #include "errorestimator.h"
 #include "domain.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "element.h"
 #include "remeshingcrit.h"
 #include "classfactory.h"

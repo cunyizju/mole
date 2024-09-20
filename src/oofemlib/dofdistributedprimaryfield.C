@@ -33,7 +33,7 @@
  */
 
 #include "dofdistributedprimaryfield.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "dof.h"
 #include "domain.h"
 #include "timestep.h"

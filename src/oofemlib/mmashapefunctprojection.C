@@ -33,7 +33,7 @@
  */
 
 #include "mmashapefunctprojection.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "gausspoint.h"
 #include "element.h"
 #include "domain.h"

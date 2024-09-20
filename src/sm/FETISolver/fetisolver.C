@@ -37,7 +37,7 @@
 #include "fetisolver.h"
 #include "skyline.h"
 #include "verbose.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "engngm.h"
 #include "domain.h"
 #include "unknownnumberingscheme.h"

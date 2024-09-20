@@ -52,7 +52,7 @@ namespace py = pybind11;
 #include "engngm.h"
 #include "staggeredproblem.h"
 #include "dof.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "element.h"
 #include "Elements/structuralelement.h"
 #include "datastream.h"

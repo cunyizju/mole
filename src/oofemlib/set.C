@@ -38,7 +38,7 @@
 #include "inputrecord.h"
 #include "domain.h"
 #include "element.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "range.h"
 #include "feinterpol.h"
 #include "feinterpol2d.h"

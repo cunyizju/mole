@@ -36,7 +36,7 @@
 #include "sm/Contact/ActiveBc/node2nodepenaltycontact.h"
 #include "set.h"
 #include "domain.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "floatmatrix.h"
 #include "unknownnumberingscheme.h"
 #include "sparsemtrx.h"

@@ -36,12 +36,12 @@
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
 #include "domain.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "classfactory.h"
 #include "oofemtxtdatareader.h"
 #include "util.h"
 #include "classfactory.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "engngm.h"
 
 namespace oofem {

@@ -41,7 +41,7 @@
 #ifndef node_h
 #define node_h
 
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "floatarray.h"
 #include "floatmatrix.h"
 

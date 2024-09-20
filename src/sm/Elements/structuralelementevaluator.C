@@ -40,7 +40,7 @@
 #include "floatarray.h"
 #include "floatmatrix.h"
 #include "domain.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "matresponsemode.h"

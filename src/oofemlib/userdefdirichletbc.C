@@ -42,7 +42,7 @@
 #include "verbose.h"
 #include "dynamicinputrecord.h"
 #include "classfactory.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "dof.h"
 #include "error.h"
 

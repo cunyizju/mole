@@ -44,7 +44,7 @@
 #include "contextioerr.h"
 #include "classfactory.h"
 
-#include "node.h"
+#include "dofman/node.h"
 
 namespace oofem {
 //REGISTER_Quasicontinuum(QCFullsolveddomain);

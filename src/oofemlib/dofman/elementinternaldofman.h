@@ -35,7 +35,7 @@
 #ifndef elementdofman_h
 #define elementdofman_h
 
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 
 namespace oofem {
 class Domain;

@@ -46,7 +46,7 @@
 #include "contextioerr.h"
 #include "classfactory.h"
 
-#include "qcnode.h"
+#include "dofman/qcnode.h"
 #include "domain.h"
 #include "dof.h"
 #include "cs/crosssection.h"

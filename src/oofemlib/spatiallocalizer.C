@@ -35,7 +35,7 @@
 #include "spatiallocalizer.h"
 #include "connectivitytable.h"
 #include "element.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "mathfem.h"
 #include "error.h"
 #include "floatarray.h"

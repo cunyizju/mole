@@ -34,7 +34,7 @@
 
 #include "surfacetensionbc.h"
 #include "element.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "cs/crosssection.h"
 #include "error.h"
 #include "feinterpol.h"

@@ -35,7 +35,7 @@
 #include "nodalrecoverymodel.h"
 #include "domain.h"
 #include "element.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 
 #ifdef __PARALLEL_MODE
  #include "problemcomm.h"

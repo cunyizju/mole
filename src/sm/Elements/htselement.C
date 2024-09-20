@@ -38,7 +38,7 @@
 #include "floatmatrix.h"
 #include "floatarray.h"
 #include "intarray.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "mathfem.h"
 #include "boundaryload.h"
 #include "classfactory.h"

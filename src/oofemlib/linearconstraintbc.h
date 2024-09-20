@@ -40,7 +40,7 @@
 #include "intarray.h"
 #include "chartype.h"
 #include "valuemodetype.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "error.h"
 
 #include <memory>

@@ -36,7 +36,7 @@
 #include "timestep.h"
 #include "engngm.h"
 #include "element.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "range.h"
 
 namespace oofem {

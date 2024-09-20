@@ -39,7 +39,7 @@
 #include "../sm/CrossSections/structuralcrosssection.h"
 #include "../sm/Elements/nlstructuralelement.h"
 #include "../sm/Materials/graddamagematerialextensioninterface.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "material.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"

@@ -32,54 +32,71 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "slavenode.h"
-#include "slavedof.h"
-#include "floatarray.h"
+#include "dofman/elementside.h"
+#include "dof.h"
+#include "floatmatrix.h"
 #include "intarray.h"
-#include "entityrenumberingscheme.h"
+#include "verbose.h"
 #include "classfactory.h"
 
 namespace oofem {
-REGISTER_DofManager(SlaveNode);
+REGISTER_DofManager(ElementSide);
 
-void SlaveNode :: initializeFrom(InputRecord &ir)
+ElementSide :: ElementSide(int n, Domain *aDomain) :
+    DofManager(n, aDomain)
+{ }
+
+
+ElementSide :: ~ElementSide()
+{ }
+
+
+void ElementSide :: initializeFrom(InputRecord &ir)
+// Gets from the source line from the data file all the data of the receiver.
 {
-    Node :: initializeFrom(ir);
+#  ifdef VERBOSE
+    // VERBOSE_PRINT1("Instanciating node ",number)
+#  endif
 
-    IR_GIVE_FIELD(ir, masterDofManagers, _IFT_SlaveNode_masterDofManagers);
-    IR_GIVE_OPTIONAL_FIELD(ir, masterWeights, _IFT_SlaveNode_weights);
-
-    if ( masterWeights.giveSize() == 0 ) {
-        masterWeights.resize( masterDofManagers.giveSize() );
-        masterWeights.add( 1 / ( double ) masterDofManagers.giveSize() );
-    } else if ( masterDofManagers.giveSize() != masterWeights.giveSize() ) {
-        throw ValueInputException(ir, _IFT_SlaveNode_weights, "master dof managers and weights size mismatch.");
-    }
+    DofManager :: initializeFrom(ir);
 }
 
 
-void SlaveNode :: postInitialize()
+void ElementSide :: printYourself()
+// Prints the receiver on screen.
 {
-    Node :: postInitialize();
-
-    // initialize slave dofs (inside check of consistency of receiver and master dof)
+    printf("Element side %d \n", number);
     for ( Dof *dof: *this ) {
-        SlaveDof *sdof = dynamic_cast< SlaveDof * >(dof);
-        if ( sdof ) {
-            sdof->initialize(masterDofManagers, IntArray(), masterWeights);
-        }
+        dof->printYourself();
     }
-    // clean up
-    this->masterWeights.clear();
+
+    loadArray.printYourself();
+    printf("\n");
 }
 
 
-void SlaveNode :: updateLocalNumbering(EntityRenumberingFunctor &f)
+void ElementSide :: computeTransformation(FloatMatrix &answer, const IntArray *map)
 {
-    for ( int i = 1; i <= masterDofManagers.giveSize(); ++i ) {
-        masterDofManagers.at(i) = f(masterDofManagers.at(i), ERS_DofManager);
+    //
+
+    // computes transformation of receiver from global cs to nodal (user-defined) cs.
+    // Note: implementation rely on D_u, D_v and D_w (R_u, R_v, R_w) order in cltypes.h
+    // file. Do not change their order and do not insert any values between these values.
+    //
+    //
+
+    int size;
+
+    if ( map == NULL ) {
+        size = this->giveNumberOfDofs();
+    } else {
+        size = map->giveSize();
     }
 
-    DofManager :: updateLocalNumbering(f);
+    // response for all local dofs is computed
+
+    answer.resize(size, size);
+    answer.zero();
+    answer.beUnitMatrix();
 }
 } // end namespace oofem

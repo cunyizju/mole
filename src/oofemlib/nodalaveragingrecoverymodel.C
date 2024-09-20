@@ -35,7 +35,7 @@
 #include "nodalaveragingrecoverymodel.h"
 #include "timestep.h"
 #include "element.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "engngm.h"
 #include "classfactory.h"
 

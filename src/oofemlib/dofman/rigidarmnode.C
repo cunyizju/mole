@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "rigidarmnode.h"
+#include "dofman/rigidarmnode.h"
 #include "slavedof.h"
 #include "floatarray.h"
 #include "floatmatrix.h"

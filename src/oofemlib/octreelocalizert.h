@@ -43,8 +43,8 @@
 
 #include "spatiallocalizer.h"
 #include "octreelocalizer.h"
-#include "dofmanager.h"
-#include "node.h"
+#include "dofman/dofmanager.h"
+#include "dofman/node.h"
 #include "element.h"
 #include "mathfem.h"
 #include "timer.h"

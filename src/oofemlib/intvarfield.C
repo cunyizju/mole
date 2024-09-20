@@ -34,7 +34,7 @@
 
 #include "intvarfield.h"
 #include "classfactory.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "materialmappingalgorithm.h"
 
 namespace oofem {

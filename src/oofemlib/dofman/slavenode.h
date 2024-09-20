@@ -10,7 +10,7 @@
  *
  *             OOFEM : Object Oriented Finite Element Code
  *
- *               Copyright (C) 1993 - 2022   Borek Patzak
+ *               Copyright (C) 1993 - 2013   Borek Patzak
  *
  *
  *
@@ -32,62 +32,53 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#ifndef generalslavenode_h
-#define generalslavenode_h
+#ifndef slavenode_h
+#define slavenode_h
 
-#include "node.h"
-#include <vector>
+#include "dofman/node.h"
+
 ///@name Input fields for SlaveNode
 //@{
-#define _IFT_GeneralSlaveNode_Name "generalslavenode"
-#define _IFT_GeneralSlaveNode_masterSizes "mastersizes"
-#define _IFT_GeneralSlaveNode_masterWeights "masterweights"
-#define _IFT_GeneralSlaveNode_masterList "masterlist"
+#define _IFT_SlaveNode_Name "slavenode"
+#define _IFT_SlaveNode_masterDofManagers "masterdofman"
+#define _IFT_SlaveNode_weights "weights"
 //@}
 
 namespace oofem {
 /**
  * Class implementing slave node connected to other nodes (masters) using predetermined weights.
+ * Hanging node possess no degrees of freedom - all values are interpolated from corresponding master dofs.
+ *
+ * The contributions of hanging node are localized directly to master related equations.
  * The node can not have its own boundary or initial conditions,
  * they are determined completely from master dof conditions except for dofs of master type.
- * This approach is more general than SlaveNode because it enables individual slave node's dofs
- * to depend on different masters with different sizes
- * The GeneralSlaveNode is suitable, e.g., for setting periodic boundary conditions
- * @author Martin Horák
+ * @see{HangingNode}
  */
-class OOFEM_EXPORT GeneralSlaveNode : public Node
+class OOFEM_EXPORT SlaveNode : public Node
 {
 protected:
-
     /// Master nodes for all dofs.
-    std::vector< IntArray >dofs_masterList;
-    std::vector< IntArray >dofs_dofsList;
-    std::vector< FloatArray >dofs_weightsList;
-
-    IntArray masterSizes;
+    IntArray masterDofManagers;
+    /// Common dof weights for each master node.
+    FloatArray masterWeights;
 
 public:
     /**
-     * Constructor. Creates a general slave  node with number n, belonging to aDomain.
+     * Constructor. Creates a hanging node with number n, belonging to aDomain.
      * @param n Node number in domain aDomain.
      * @param aDomain Domain to which node belongs.
      */
-    GeneralSlaveNode(int n, Domain *aDomain) : Node(n, aDomain) {}
+    SlaveNode(int n, Domain * aDomain) : Node(n, aDomain) { }
     /// Destructor.
-    virtual ~GeneralSlaveNode(void) {}
+    virtual ~SlaveNode(void) { }
 
     void initializeFrom(InputRecord &ir) override;
-    virtual void postInitialize() override;
-    virtual bool isDofTypeCompatible(dofType type) const override {
-        return ( type == DT_master || type == DT_slave );
-    }
-    virtual void updateLocalNumbering(EntityRenumberingFunctor &f) override;
-    virtual const char *giveClassName() const override {
-        return "GeneralSlaveNode";
-    }
-    virtual const char *giveInputRecordName() const override {
-        return _IFT_GeneralSlaveNode_Name;
-    }
+    void postInitialize() override;
+    bool isDofTypeCompatible(dofType type) const override { return ( type == DT_master || type == DT_slave ); }
+    void updateLocalNumbering(EntityRenumberingFunctor &f) override;
+
+    const char *giveClassName() const override { return "SlaveNode"; }
+    const char *giveInputRecordName() const override { return _IFT_SlaveNode_Name; }
 };
 } // end namespace oofem
-#endif // generalslavenode_h
+#endif // slavenode_h

@@ -35,7 +35,7 @@
 #ifndef elementside_h
 #define elementside_h
 
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 
 #define _IFT_ElementSide_Name "elementside"
 

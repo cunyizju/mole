@@ -35,7 +35,7 @@
 #include "sm/EngineeringModels/staticstructural.h"
 #include "sm/Elements/structuralelement.h"
 #include "sm/Elements/structuralelementevaluator.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "set.h"
 #include "timestep.h"
 #include "sparsemtrx.h"

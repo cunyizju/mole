@@ -33,7 +33,7 @@
  */
 
 #include "simpleslavedof.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "domain.h"
 #include "datastream.h"
 #include "entityrenumberingscheme.h"

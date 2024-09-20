@@ -37,7 +37,7 @@
 #include "sm/Elements/LatticeElements/latticestructuralelement.h"
 #include "sm/CrossSections/latticecrosssection.h"
 #include "domain.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "material.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"

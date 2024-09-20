@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/Beams/beambaseelement.h"
-#include "node.h"
+#include "dofman/node.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "floatmatrix.h"

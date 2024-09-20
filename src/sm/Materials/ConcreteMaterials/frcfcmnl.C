@@ -38,7 +38,7 @@
 #include "classfactory.h"
 #include "contextioerr.h"
 #include "datastream.h"
-#include "node.h"
+#include "dofman/node.h"
 
 #include "nonlocalmaterialext.h"
 

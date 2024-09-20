@@ -37,7 +37,7 @@
 
 #include "floatarray.h"
 #include "element.h"
-#include "node.h"
+#include "dofman/node.h"
 
 #define _IFT_FullSolvedDomain_nodes "fsd_n"
 #define _IFT_FullSolvedDomain_elements "fsd_e"

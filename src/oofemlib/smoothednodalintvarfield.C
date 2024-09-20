@@ -37,7 +37,7 @@
 #include "classfactory.h"
 #include "element.h"
 #include "feinterpol.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "set.h"
 
 namespace oofem {

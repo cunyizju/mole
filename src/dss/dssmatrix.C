@@ -37,7 +37,7 @@
 #include "engngm.h"
 #include "domain.h"
 #include "element.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "dof.h"
 #include "sparsemtrxtype.h"
 #include "classfactory.h"

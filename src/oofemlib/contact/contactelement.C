@@ -33,7 +33,7 @@
  */
 
 #include "contact/contactelement.h"
-#include "dofmanager.h"
+#include "dofman/dofmanager.h"
 #include "floatarray.h"
 #include "floatmatrix.h"
 #include "valuemodetype.h"
