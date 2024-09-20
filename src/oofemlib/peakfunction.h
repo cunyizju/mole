@@ -35,7 +35,7 @@
 #ifndef peakfunction_h
 #define peakfunction_h
 
-#include "function.h"
+#include "ltf/function.h"
 
 ///@name Input fields for PeakFunction
 //@{

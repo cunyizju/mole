@@ -34,7 +34,7 @@
 
 #include "neumannmomentload.h"
 #include "classfactory.h"
-#include "function.h"
+#include "ltf/function.h"
 #include "inputrecord.h"
 #include "domain.h"
 #include "set.h"

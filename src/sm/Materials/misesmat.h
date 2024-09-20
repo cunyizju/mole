@@ -41,7 +41,7 @@
 #include "dictionary.h"
 #include "floatarray.h"
 #include "floatmatrix.h"
-#include "scalarfunction.h"
+#include "ltf/scalarfunction.h"
 
 ///@name Input fields for MisesMat
 //@{

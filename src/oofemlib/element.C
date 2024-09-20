@@ -52,7 +52,7 @@
 #include "feinterpol1d.h"
 #include "feinterpol2d.h"
 #include "feinterpol3d.h"
-#include "function.h"
+#include "ltf/function.h"
 #include "dofmanager.h"
 #include "node.h"
 #include "gausspoint.h"

@@ -47,7 +47,7 @@
 #include "geometry.h"
 #include "dynamicinputrecord.h"
 #include "timestep.h"
-#include "function.h"
+#include "ltf/function.h"
 #include "engngm.h"
 #include "mathfem.h"
 #include "sparselinsystemnm.h"

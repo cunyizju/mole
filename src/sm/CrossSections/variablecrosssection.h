@@ -40,7 +40,7 @@
 #include "sm/Materials/structuralmaterial.h"
 #include "floatarray.h"
 #include "floatmatrix.h"
-#include "scalarfunction.h"
+#include "ltf/scalarfunction.h"
 
 ///@name Input fields for SimpleCrossSection
 //@{

@@ -36,7 +36,7 @@
 #include "dofmanager.h"
 #include "dof.h"
 #include "mathfem.h"
-#include "function.h"
+#include "ltf/function.h"
 #include "classfactory.h"
 #include "dynamicinputrecord.h"
 

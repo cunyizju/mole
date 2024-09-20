@@ -41,7 +41,7 @@
 #include "crosssection.h"
 #include "load.h"
 #include "initialcondition.h"
-#include "function.h"
+#include "ltf/function.h"
 #include "set.h"
 #include "engngm.h"
 #include "entityrenumberingscheme.h"

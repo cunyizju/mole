@@ -59,7 +59,7 @@
 #include "xfem/enrichmentitems/crack.h"
 #include "dofmanager.h"
 #include "xfem/matforceevaluator.h"
-#include "function.h"
+#include "ltf/function.h"
 #include "sm/Elements/Interfaces/structuralinterfaceelement.h"
 #include "sm/Materials/structuralfe2material.h"
 

@@ -53,7 +53,7 @@
 #include "dofmanager.h"
 #include "dof.h"
 #include "unknownnumberingscheme.h"
-#include "function.h"
+#include "ltf/function.h"
 
 #ifdef __PARALLEL_MODE
  #include "problemcomm.h"

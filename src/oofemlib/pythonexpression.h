@@ -35,7 +35,7 @@
 #ifndef pythonexpression_h
 #define pythonexpression_h
 
-#include "function.h"
+#include "ltf/function.h"
 
 #ifndef PyObject_HEAD
 struct _object;

@@ -35,7 +35,7 @@
 #ifndef constantfunction_h
 #define constantfunction_h
 
-#include "function.h"
+#include "ltf/function.h"
 
 #define _IFT_ConstantFunction_Name "constantfunction"
 #define _IFT_ConstantFunction_f "f(t)" ///@todo Rename this to just "f"

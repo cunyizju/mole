@@ -38,7 +38,7 @@
 #include "floatmatrix.h"
 #include "sparsemtrx.h"
 #include "unknownnumberingscheme.h"
-#include "function.h"
+#include "ltf/function.h"
 #include "timestep.h"
 #include "datastream.h"
 #include "contextioerr.h"

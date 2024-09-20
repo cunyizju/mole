@@ -33,7 +33,7 @@
  */
 
 #include "constantedgeload.h"
-#include "function.h"
+#include "ltf/function.h"
 #include "floatarray.h"
 #include "timestep.h"
 #include "classfactory.h"

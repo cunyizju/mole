@@ -39,7 +39,7 @@
 #include "feinterpol.h"
 #include "gausspoint.h"
 #include "sparsemtrx.h"
-#include "function.h"
+#include "ltf/function.h"
 #include "mathfem.h"
 
 #ifdef _OPENMP

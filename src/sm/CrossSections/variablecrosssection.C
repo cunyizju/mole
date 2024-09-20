@@ -39,8 +39,8 @@
 #include "floatarray.h"
 #include "classfactory.h"
 #include "dynamicinputrecord.h"
-#include "scalarfunction.h"
-#include "function.h"
+#include "ltf/scalarfunction.h"
+#include "ltf/function.h"
 
 #include <string>
 #include <sstream>

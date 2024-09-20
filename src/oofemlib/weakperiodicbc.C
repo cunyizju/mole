@@ -51,7 +51,7 @@
 #include "fei2dtrquad.h"
 #include "classfactory.h"
 #include "set.h"
-#include "function.h"
+#include "ltf/function.h"
 
 #ifdef _OPENMP
 #include <omp.h>

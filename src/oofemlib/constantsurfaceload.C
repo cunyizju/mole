@@ -34,7 +34,7 @@
 
 #include "constantsurfaceload.h"
 #include "dynamicinputrecord.h"
-#include "function.h"
+#include "ltf/function.h"
 #include "floatarray.h"
 #include "timestep.h"
 #include "classfactory.h"

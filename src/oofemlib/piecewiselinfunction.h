@@ -36,7 +36,7 @@
 #define piecewiselinfunction_h
 
 #include "floatarray.h"
-#include "function.h"
+#include "ltf/function.h"
 
 ///@name Input fields for PiecewiseLinFunction
 //@{

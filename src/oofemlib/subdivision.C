@@ -46,7 +46,7 @@
 #include "classfactory.h"
 #include "outputmanager.h"
 #include "crosssection.h"
-#include "function.h"
+#include "ltf/function.h"
 #include "timer.h"
 #include "remeshingcrit.h"
 #include "dynamicinputrecord.h"

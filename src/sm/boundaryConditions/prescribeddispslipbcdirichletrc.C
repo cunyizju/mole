@@ -39,7 +39,7 @@
 #include "valuemodetype.h"
 #include "floatarray.h"
 #include "floatmatrix.h"
-#include "function.h"
+#include "ltf/function.h"
 #include "engngm.h"
 #include "set.h"
 #include "node.h"

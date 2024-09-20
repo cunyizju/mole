@@ -49,7 +49,7 @@
 #include "initialcondition.h"
 #include "classfactory.h"
 //#include "loadtimefunction.h"
-#include "function.h"
+#include "ltf/function.h"
 #include "outputmanager.h"
 
 #include <cmath>

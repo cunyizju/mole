@@ -37,7 +37,7 @@
 #include "sm/EngineeringModels/structengngmodel.h"
 #include "sm/Elements/3D/lspace.h"
 #include "fei3dhexalin.h"
-#include "constantfunction.h"
+#include "ltf/constantfunction.h"
 #include "domain.h"
 #include "classfactory.h"
 #include "dynamicinputrecord.h"

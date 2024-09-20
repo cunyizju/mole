@@ -42,7 +42,7 @@
 #include "floatarray.h"
 #include "floatmatrix.h"
 #include "mathfem.h"
-#include "function.h"
+#include "ltf/function.h"
 #include "timestep.h"
 #include "metastep.h"
 #include "integrationrule.h"

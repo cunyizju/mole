@@ -34,7 +34,7 @@
 
 #include "deadweight.h"
 #include "timestep.h"
-#include "function.h"
+#include "ltf/function.h"
 #include "classfactory.h"
 
 namespace oofem {

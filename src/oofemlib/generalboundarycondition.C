@@ -34,7 +34,7 @@
 
 #include "generalboundarycondition.h"
 #include "bcvaltype.h"
-#include "function.h"
+#include "ltf/function.h"
 #include "timestep.h"
 #include "datastream.h"
 #include "contextioerr.h"

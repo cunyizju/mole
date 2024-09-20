@@ -35,7 +35,7 @@
 #include "load.h"
 #include "verbose.h"
 #include "timestep.h"
-#include "function.h"
+#include "ltf/function.h"
 #include "dynamicinputrecord.h"
 #include "datastream.h"
 #include "contextioerr.h"

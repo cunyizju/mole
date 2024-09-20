@@ -53,7 +53,7 @@
 #include "spatiallocalizer.h"
 #include "feinterpol.h"
 #include "unknownnumberingscheme.h"
-#include "function.h"
+#include "ltf/function.h"
 #include "timestep.h"
 #include "mathfem.h"
 

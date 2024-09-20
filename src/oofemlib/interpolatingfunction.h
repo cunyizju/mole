@@ -35,7 +35,7 @@
 #ifndef interpolatingfunction_h
 #define interpolatingfunction_h
 
-#include "function.h"
+#include "ltf/function.h"
 
 ///@name Input fields for InterpolatingFuction
 //@{

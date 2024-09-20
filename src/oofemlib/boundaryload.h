@@ -39,7 +39,7 @@
 #include "bctype.h"
 #include "valuemodetype.h"
 #include "dictionary.h"
-#include "scalarfunction.h"
+#include "ltf/scalarfunction.h"
 
 ///@name Input fields for BoundaryLoad
 //@{

@@ -35,7 +35,7 @@
 #ifndef calculatorfunction_h
 #define calculatorfunction_h
 
-#include "function.h"
+#include "ltf/function.h"
 
 ///@name Input fields for CalculatorFunction
 //@{

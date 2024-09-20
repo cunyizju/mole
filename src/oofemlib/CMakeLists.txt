@@ -132,9 +132,9 @@ set (core_fields
     )
 
 set (core_ltf
-    function.C
-    scalarfunction.C
-    constantfunction.C
+    ltf/function.C
+    ltf/scalarfunction.C
+    ltf/constantfunction.C
     heavisidetimefunction.C
     peakfunction.C
     piecewiselinfunction.C

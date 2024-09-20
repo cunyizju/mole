@@ -37,7 +37,7 @@
 
 #include "sm/Solvers/linearStatic/linearstatic.h"
 #include "sparsenonlinsystemnm.h"
-#include "function.h"
+#include "ltf/function.h"
 
 ///@name Input fields for NonLinearStatic
 //@{
