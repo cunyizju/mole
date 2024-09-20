@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "nrsolver.h"
+#include "solvers/nrsolver.h"
 #include "verbose.h"
 #include "timestep.h"
 #include "mathfem.h"
@@ -42,7 +42,7 @@
 #include "generalboundarycondition.h"
 #include "dof.h"
 #include "ltf/function.h"
-#include "linesearch.h"
+#include "solvers/linesearch.h"
 #include "classfactory.h"
 #include "exportmodulemanager.h"
 #include "engngm.h"

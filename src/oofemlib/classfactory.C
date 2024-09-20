@@ -47,8 +47,8 @@
 
 #include "sparsemtrx.h"
 #include "sparsegeneigenvalsystemnm.h"
-#include "sparsenonlinsystemnm.h"
-#include "sparselinsystemnm.h"
+#include "solvers/sparsenonlinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
 #include "mesherinterface.h"
 #include "errorestimator.h"
 #include "materialmappingalgorithm.h"

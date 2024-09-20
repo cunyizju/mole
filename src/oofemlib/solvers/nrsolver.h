@@ -39,11 +39,11 @@
 #include <set>
 #include <vector>
 
-#include "sparselinsystemnm.h"
-#include "sparsenonlinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
+#include "solvers/sparsenonlinsystemnm.h"
 #include "sparsemtrx.h"
 #include "floatarray.h"
-#include "linesearch.h"
+#include "solvers/linesearch.h"
 #include "convergedreason.h"
 
 #include <memory>

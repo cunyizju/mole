@@ -35,7 +35,7 @@
 #ifndef ldltfact_h
 #define ldltfact_h
 
-#include "sparselinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
 #include "convergedreason.h"
 #include "sparsemtrx.h"
 #include "floatarray.h"

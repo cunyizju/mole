@@ -37,9 +37,9 @@
 
 #include "sm/EngineeringModels/structengngmodel.h"
 #include "sm/EngineeringModels/xfemsolverinterface.h"
-#include "sparsenonlinsystemnm.h"
+#include "solvers/sparsenonlinsystemnm.h"
 #include "sparsemtrxtype.h"
-#include "staggeredsolver.h"
+#include "solvers/staggeredsolver.h"
 
 #define _IFT_StaticStructural_Name "staticstructural"
 #define _IFT_StaticStructural_deltat "deltat"

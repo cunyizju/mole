@@ -35,7 +35,7 @@
 #ifndef superlusolver_h
 #define superlusolver_h
 
-#include "sparselinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
 #include "sparsemtrx.h"
 #include "convergedreason.h"
 #include "floatarray.h"

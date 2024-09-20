@@ -35,13 +35,13 @@
 #ifndef staggeredsolver_h
 #define staggeredsolver_h
 
-#include "sparselinsystemnm.h"
-#include "sparsenonlinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
+#include "solvers/sparsenonlinsystemnm.h"
 #include "convergedreason.h"
 #include "sparsemtrx.h"
 #include "floatarray.h"
-#include "linesearch.h"
-#include "nrsolver.h"
+#include "solvers/linesearch.h"
+#include "solvers/nrsolver.h"
 #include "unknownnumberingscheme.h"
 
 #include <set>

@@ -48,7 +48,7 @@
 #include "dynamicinputrecord.h"
 #include "feinterpol.h"
 #include "sparsemtrx.h"
-#include "sparselinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
 #include "sm/Elements/Shells/shell7base.h"
 
 namespace oofem {

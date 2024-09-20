@@ -42,7 +42,7 @@
 #include "feinterpol.h"
 #include "spatiallocalizer.h"
 #include "sparsemtrx.h"
-#include "sparselinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
 #include "classfactory.h"
 #include "timestep.h"
 #include "activebc.h"

@@ -36,7 +36,7 @@
 #define qclinearstatic_h
 
 #include "sm/Solvers/linearStatic/linearstatic.h"
-#include "sparselinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
 #include "sparsemtrxtype.h"
 #include "dofman/node.h"
 

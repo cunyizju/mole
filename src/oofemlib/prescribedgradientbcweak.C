@@ -50,7 +50,7 @@
 #include "ltf/function.h"
 #include "engngm.h"
 #include "mathfem.h"
-#include "sparselinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
 #include "unknownnumberingscheme.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/EngineeringModels/staticstructural.h"

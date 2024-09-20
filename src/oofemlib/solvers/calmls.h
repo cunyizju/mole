@@ -39,8 +39,8 @@
 #include <vector>
 #include <memory>
 
-#include "sparselinsystemnm.h"
-#include "sparsenonlinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
+#include "solvers/sparsenonlinsystemnm.h"
 #include "convergedreason.h"
 #include "floatarray.h"
 #include "intarray.h"

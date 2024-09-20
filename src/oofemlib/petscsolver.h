@@ -34,7 +34,7 @@
 #ifndef petscsolver_h
 #define petscsolver_h
 
-#include "sparselinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
 #include "petscsparsemtrx.h"
 #include "convergedreason.h"
 

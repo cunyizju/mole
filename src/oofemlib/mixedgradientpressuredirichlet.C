@@ -47,7 +47,7 @@
 #include "classfactory.h"
 #include "sparsemtrxtype.h"
 #include "sparsemtrx.h"
-#include "sparselinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
 #include "dynamicinputrecord.h"
 #include "domain.h"
 #include "unknownnumberingscheme.h"

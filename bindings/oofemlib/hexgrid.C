@@ -7,7 +7,7 @@
 
 // Optional (only need the input fields defines)
 #include "tm/EngineeringModels/stationarytransportproblem.h"
-#include "nrsolver.h"
+#include "solvers/nrsolver.h"
 #include "tm/simpletransportcrosssection.h"
 #include "tm/Materials/isoheatmat.h"
 #include "tm/Elements/brick1_ht.h"

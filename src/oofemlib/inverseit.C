@@ -37,7 +37,7 @@
 #include "floatarray.h"
 #include "sparsemtrx.h"
 #include "mathfem.h"
-#include "sparselinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
 #include "classfactory.h"
 
 namespace oofem {

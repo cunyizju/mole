@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "sparsenonlinsystemnm.h"
+#include "solvers/sparsenonlinsystemnm.h"
 #include "error.h"
 #include "domain.h"
 #include "dofman/node.h"

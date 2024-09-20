@@ -50,7 +50,7 @@
 #include "sparsemtrxtype.h"
 #include "mathfem.h"
 #include "sparsemtrx.h"
-#include "sparselinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
 #include "set.h"
 #include "dynamicinputrecord.h"
 #include "feinterpol.h"

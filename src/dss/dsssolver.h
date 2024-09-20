@@ -36,7 +36,7 @@
 #define dsssolver_h
 
 #include "oofemcfg.h"
-#include "sparselinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
 #include "convergedreason.h"
 #include "sparsemtrx.h"
 

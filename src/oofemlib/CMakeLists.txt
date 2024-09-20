@@ -97,13 +97,13 @@ set (core_dofs
     )
 
 set (core_nm
-    sparselinsystemnm.C
-    sparsenonlinsystemnm.C
-    nrsolver.C
-    dynamicrelaxationsolver.C
-    linesearch.C
-    calmls.C
-    staggeredsolver.C
+    solvers/sparselinsystemnm.C
+    solvers/sparsenonlinsystemnm.C
+    solvers/nrsolver.C
+    solvers/dynamicrelaxationsolver.C
+    solvers/linesearch.C
+    solvers/calmls.C
+    solvers/staggeredsolver.C
     )
 
 if (USE_PETSC)

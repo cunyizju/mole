@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "calmls.h"
+#include "solvers/calmls.h"
 #include "verbose.h"
 #include "timestep.h"
 #include "floatmatrix.h"

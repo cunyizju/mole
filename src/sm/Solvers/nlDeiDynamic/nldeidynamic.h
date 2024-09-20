@@ -38,7 +38,7 @@
 #include "sm/EngineeringModels/structengngmodel.h"
 #include "floatarray.h"
 #include "floatmatrix.h"
-#include "sparselinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
 #include "sparsemtrxtype.h"
 
 #include <memory>

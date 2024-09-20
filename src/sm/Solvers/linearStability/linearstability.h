@@ -38,7 +38,7 @@
 #include "sm/EngineeringModels/structengngmodel.h"
 #include "geneigvalsolvertype.h"
 #include "sparsegeneigenvalsystemnm.h"
-#include "sparselinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
 #include "sparsemtrx.h"
 #include "floatmatrix.h"
 #include "floatarray.h"

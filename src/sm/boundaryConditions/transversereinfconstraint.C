@@ -44,7 +44,7 @@
 #include "xfem/integrationrules/discsegintegrationrule.h"
 #include "timestep.h"
 #include "ltf/function.h"
-#include "sparselinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
 #include "unknownnumberingscheme.h"
 #include "engngm.h"
 #include "mathfem.h"

@@ -49,7 +49,7 @@
 #include "feinterpol.h"
 #include "unknownnumberingscheme.h"
 #include "sparsemtrx.h"
-#include "sparselinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
 #include "assemblercallback.h"
 #include "mathfem.h"
 #include "floatarrayf.h"

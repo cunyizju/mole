@@ -37,8 +37,8 @@
 
 #include "sm/EngineeringModels/structengngmodel.h"
 #include "sparsemtrxtype.h"
-#include "sparselinsystemnm.h"
-#include "sparsenonlinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
+#include "solvers/sparsenonlinsystemnm.h"
 #include "timediscretizationtype.h"
 
 ///@name Input fields for NonLinearDynamic

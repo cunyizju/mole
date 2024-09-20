@@ -35,7 +35,7 @@
 #ifndef imlsolver_h
 #define imlsolver_h
 
-#include "sparselinsystemnm.h"
+#include "solvers/sparselinsystemnm.h"
 #include "sparsemtrx.h"
 #include "convergedreason.h"
 #include "floatarray.h"
