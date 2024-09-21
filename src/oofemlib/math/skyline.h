@@ -35,7 +35,7 @@
 #ifndef skyline_h
 #define skyline_h
 
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 
 #define _IFT_Skyline_Name "skyline"
 

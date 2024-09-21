@@ -38,10 +38,10 @@
 #include "linsystsolvertype.h"
 #include "sm/Elements/structuralelement.h"
 #include "engng/engngm.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "fei/feinterpol.h"
 #include "spatiallocalizer.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "solvers/sparselinsystemnm.h"
 #include "classfactory.h"
 #include "timestep.h"
@@ -49,7 +49,7 @@
 #include "bc/prescribedgradientbcweak.h"
 #include "bc/prescribedgradientbcneumann.h"
 #include "unknownnumberingscheme.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 #include <fstream>
 

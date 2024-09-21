@@ -39,7 +39,7 @@
 #include "input/element.h"
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"
-#include "sparsemtrxtype.h"
+#include "math/sparsemtrxtype.h"
 #include "classfactory.h"
 #include "bc/activebc.h"
 

@@ -38,7 +38,7 @@
 #include "input/element.h"
 #include "dofs/dof.h"
 #include "verbose.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 #include "unknownnumberingscheme.h"
 

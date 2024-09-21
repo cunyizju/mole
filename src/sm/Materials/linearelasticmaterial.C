@@ -33,7 +33,7 @@
  */
 
 #include "linearelasticmaterial.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "sm/CrossSections/simplecrosssection.h"
 #include "sm/Materials/structuralms.h"
 #include "input/dynamicinputrecord.h"

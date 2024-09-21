@@ -35,7 +35,7 @@
 #define spoolessolver_h
 
 #include "solvers/sparselinsystemnm.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "convergedreason.h"
 #include "arrays/floatarray.h"
 extern "C" {

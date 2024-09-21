@@ -34,13 +34,13 @@
 
 //#define DETAILED_REPORT
 
-#include "subspaceit.h"
+#include "math/subspaceit.h"
 #include "engng/engngm.h"
 #include "input/domain.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "mathfem.h"
-#include "gjacobi.h"
+#include "math/mathfem.h"
+#include "math/gjacobi.h"
 #include "solvers/sparselinsystemnm.h"
 #include "classfactory.h"
 

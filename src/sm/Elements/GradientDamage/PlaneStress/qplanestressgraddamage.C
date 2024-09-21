@@ -34,8 +34,8 @@
 
 #include "../sm/Elements/GradientDamage/PlaneStress/qplanestressgraddamage.h"
 #include "fei/fei2dquadlin.h"
-#include "gausspoint.h"
-#include "gaussintegrationrule.h"
+#include "math/gausspoint.h"
+#include "math/gaussintegrationrule.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"

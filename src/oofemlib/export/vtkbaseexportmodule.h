@@ -41,7 +41,7 @@
 #include "internalstatevaluetype.h"
 #include "internalstatetype.h"
 #include "unknowntype.h"
-#include "integrationrule.h"
+#include "math/integrationrule.h"
 #include "input/element.h"
 #include "nodalrecovery/nodalrecoverymodel.h"
 #include <iostream>

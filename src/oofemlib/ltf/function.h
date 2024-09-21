@@ -39,7 +39,7 @@
 #include "valuemodetype.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 
 #include <map>
 #include <algorithm>

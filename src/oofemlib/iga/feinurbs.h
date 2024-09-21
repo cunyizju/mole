@@ -38,7 +38,7 @@
 #include "feibspline.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 ///@name Input fields for NURBSInterpolation
 //@{

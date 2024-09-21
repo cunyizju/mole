@@ -38,7 +38,7 @@
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"
- #include "gausspoint.h"
+ #include "math/gausspoint.h"
 #endif
 
 namespace oofem {

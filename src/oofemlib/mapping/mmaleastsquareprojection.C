@@ -33,12 +33,12 @@
  */
 
 #include "mapping/mmaleastsquareprojection.h"
-#include "mathfem.h"
-#include "gausspoint.h"
+#include "math/mathfem.h"
+#include "math/gausspoint.h"
 #include "input/element.h"
 #include "input/domain.h"
 #include "spatiallocalizer.h"
-#include "integrationrule.h"
+#include "math/integrationrule.h"
 #include "input/connectivitytable.h"
 #include "input/dynamicinputrecord.h"
 #include "classfactory.h"

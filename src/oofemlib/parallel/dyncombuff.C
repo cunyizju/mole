@@ -36,7 +36,7 @@
 #include <algorithm>
 
 #include "parallel/dyncombuff.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "error/error.h"
 
 namespace oofem {

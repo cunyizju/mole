@@ -36,13 +36,13 @@
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "fei/fei3dhexaquad.h"
 #include "dofman/node.h"
-#include "gausspoint.h"
-#include "gaussintegrationrule.h"
+#include "math/gausspoint.h"
+#include "math/gaussintegrationrule.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "input/domain.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 
 namespace oofem {

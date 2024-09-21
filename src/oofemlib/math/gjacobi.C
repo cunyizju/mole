@@ -33,8 +33,8 @@
  */
 
 
-#include "gjacobi.h"
-#include "mathfem.h"
+#include "math/gjacobi.h"
+#include "math/mathfem.h"
 #include "arrays/floatmatrix.h"
 
 namespace oofem {

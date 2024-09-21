@@ -37,7 +37,7 @@
 #include "input/element.h"
 #include "dofman/dofmanager.h"
 #include "engng/engngm.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "material/material.h"
 #include "parallel/communicator.h"
 #include "datastream.h"

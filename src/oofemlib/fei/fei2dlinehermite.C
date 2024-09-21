@@ -33,7 +33,7 @@
  */
 
 #include "fei/fei2dlinehermite.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 

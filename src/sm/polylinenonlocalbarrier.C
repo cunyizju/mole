@@ -37,7 +37,7 @@
 #include "dofman/node.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 
 namespace oofem {

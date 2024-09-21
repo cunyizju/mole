@@ -38,8 +38,8 @@
 #include "material/matstatus.h"
 #include "interface.h"
 #include "arrays/intarray.h"
-#include "grid.h"
-#include "mathfem.h"
+#include "math/grid.h"
+#include "math/mathfem.h"
 #include "input/dynamicinputrecord.h"
 
 #include <list>

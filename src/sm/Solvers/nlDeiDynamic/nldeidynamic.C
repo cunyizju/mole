@@ -39,10 +39,10 @@
 #include "dofs/dof.h"
 #include "verbose.h"
 #include "export/outputmanager.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "datastream.h"
 #include "contextioerr.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "classfactory.h"
 #include "unknownnumberingscheme.h"
 

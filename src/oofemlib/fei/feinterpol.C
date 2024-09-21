@@ -34,7 +34,7 @@
 
 #include "fei/feinterpol.h"
 #include "input/element.h"
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 
 namespace oofem {
 int FEIElementGeometryWrapper :: giveNumberOfVertices() const { return elem->giveNumberOfNodes(); }

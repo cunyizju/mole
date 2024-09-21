@@ -35,7 +35,7 @@
 #ifndef patchintegrationrule_h
 #define patchintegrationrule_h
 
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 
 namespace oofem {
 class FEI2dTrLin;

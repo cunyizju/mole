@@ -40,9 +40,9 @@
 #include "set.h"
 #include "input/element.h"
 #include "fei/feinterpol.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "timestep.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 
 namespace oofem {

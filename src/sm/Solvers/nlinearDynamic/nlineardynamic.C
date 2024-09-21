@@ -52,7 +52,7 @@ using namespace std;
 #include "classfactory.h"
 #include "timer.h"
 #include "contextioerr.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "error/errorestimator.h"
 #include "unknownnumberingscheme.h"
 #include "assemblercallback.h"

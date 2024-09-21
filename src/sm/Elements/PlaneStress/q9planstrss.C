@@ -35,12 +35,12 @@
 #include "sm/Elements/PlaneStress/q9planstrss.h"
 #include "fei/fei2dquadbiquad.h"
 #include "cs/crosssection.h"
-#include "gausspoint.h"
-#include "gaussintegrationrule.h"
+#include "math/gausspoint.h"
+#include "math/gaussintegrationrule.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 
 namespace oofem {

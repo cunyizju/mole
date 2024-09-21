@@ -35,8 +35,8 @@
 #include "dummylocalizer.h"
 #include "input/element.h"
 #include "input/domain.h"
-#include "integrationrule.h"
-#include "gausspoint.h"
+#include "math/integrationrule.h"
+#include "math/gausspoint.h"
 #include "dofman/node.h"
 
 namespace oofem {

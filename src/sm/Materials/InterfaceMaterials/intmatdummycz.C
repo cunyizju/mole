@@ -34,7 +34,7 @@
 
 #include "intmatdummycz.h"
 #include "classfactory.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 
 namespace oofem {
 REGISTER_Material(IntMatDummyCZ);

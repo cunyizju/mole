@@ -33,11 +33,11 @@
  */
 
 #include "idmgrad.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "mathfem.h"
-#include "sparsemtrx.h"
+#include "math/mathfem.h"
+#include "math/sparsemtrx.h"
 #include "Materials/isolinearelasticmaterial.h"
 #include "error/error.h"
 #include "nonlocalmaterialext.h"

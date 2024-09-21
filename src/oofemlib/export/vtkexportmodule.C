@@ -49,11 +49,11 @@
 
 #include "export/vtkexportmodule.h"
 #include "timestep.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "engng/engngm.h"
 #include "dofman/node.h"
 #include "material/materialinterface.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "cltypes.h"
 #include "input/element.h"
 #include "material/material.h"

@@ -72,7 +72,7 @@
 #ifndef compcol_h
 #define compcol_h
 
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "arrays/intarray.h"
 
 #define _IFT_CompCol_Name "csc"

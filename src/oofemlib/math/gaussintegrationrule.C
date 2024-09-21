@@ -32,11 +32,11 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "gaussintegrationrule.h"
-#include "gausspoint.h"
+#include "math/gaussintegrationrule.h"
+#include "math/gausspoint.h"
 #include "input/element.h"
 #include "arrays/floatarray.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 namespace oofem {
 // initialize class member

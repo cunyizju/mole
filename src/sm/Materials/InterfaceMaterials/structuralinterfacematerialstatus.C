@@ -38,7 +38,7 @@
 
 #include "sm/Materials/structuralmaterial.h"
 #include "structuralinterfacematerialstatus.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 
 namespace oofem {
 

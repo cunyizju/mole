@@ -34,10 +34,10 @@
 
 #include "compodamagemat.h"
 #include "sm/Elements/structuralelement.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 #include "contextioerr.h"
 #include "cs/crosssection.h"

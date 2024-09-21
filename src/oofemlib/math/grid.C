@@ -1,4 +1,4 @@
-#include "grid.h"
+#include "math/grid.h"
 #include "error/error.h"
 #include <stdlib.h>
 #include <stdio.h>

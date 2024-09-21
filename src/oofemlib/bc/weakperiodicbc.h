@@ -44,7 +44,7 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 
 ///@name Input fields for WeakPeriodicBoundaryCondition
 //@{

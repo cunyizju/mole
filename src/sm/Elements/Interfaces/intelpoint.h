@@ -36,7 +36,7 @@
 #define intelpoint_h
 
 #include "sm/Elements/Interfaces/structuralinterfaceelement.h"
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 #include "arrays/floatmatrixf.h"
 //#include "arrays/floatarrayf.h"
 

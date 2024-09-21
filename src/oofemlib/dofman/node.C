@@ -50,7 +50,7 @@
 #include "verbose.h"
 #include "datastream.h"
 #include "contextioerr.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 #include "input/dynamicinputrecord.h"
 #include "input/domain.h"

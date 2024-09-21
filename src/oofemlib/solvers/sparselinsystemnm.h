@@ -38,7 +38,7 @@
 #include "nummet.h"
 #include "convergedreason.h"
 #include "linsystsolvertype.h"
-#include "sparsemtrxtype.h"
+#include "math/sparsemtrxtype.h"
 
 namespace oofem {
 class EngngModel;

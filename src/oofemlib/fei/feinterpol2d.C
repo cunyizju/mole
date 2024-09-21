@@ -34,7 +34,7 @@
 
 #include "fei/feinterpol2d.h"
 #include "arrays/floatarray.h"
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 
 namespace oofem {
 IntArray FEInterpolation2d :: boundaryEdgeGiveNodes(int boundary) const

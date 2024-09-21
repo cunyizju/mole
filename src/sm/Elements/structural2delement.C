@@ -34,10 +34,10 @@
 
 #include "sm/Elements/structural2delement.h"
 #include "fei/feinterpol2d.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "gaussintegrationrule.h"
-#include "mathfem.h"
+#include "math/gaussintegrationrule.h"
+#include "math/mathfem.h"
 
 namespace oofem {
 Structural2DElement::Structural2DElement(int n, Domain *aDomain) :

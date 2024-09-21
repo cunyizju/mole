@@ -37,7 +37,7 @@
 
 #include "parser.h"
 #include "error/error.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 
 #include <string>
 #include <map>

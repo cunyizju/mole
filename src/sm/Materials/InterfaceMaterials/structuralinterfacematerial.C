@@ -35,7 +35,7 @@
 #include "structuralinterfacematerial.h"
 #include "structuralinterfacematerialstatus.h"
 #include "input/dynamicinputrecord.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 
 namespace oofem {
 StructuralInterfaceMaterial :: StructuralInterfaceMaterial(int n, Domain *d) : Material(n, d)

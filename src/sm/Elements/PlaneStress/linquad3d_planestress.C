@@ -36,7 +36,7 @@
 #include "classfactory.h"
 #include "sm/Materials/structuralms.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"

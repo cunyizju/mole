@@ -43,7 +43,7 @@
 #include "datastream.h"
 
 #include "input/connectivitytable.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "nodalrecovery/zznodalrecoverymodel.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "nodalrecovery/sprnodalrecoverymodel.h"

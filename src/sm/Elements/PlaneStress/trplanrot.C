@@ -37,15 +37,15 @@
 #include "sm/Materials/structuralms.h"
 #include "dofman/node.h"
 #include "material/material.h"
-#include "gausspoint.h"
-#include "gaussintegrationrule.h"
+#include "math/gausspoint.h"
+#include "math/gaussintegrationrule.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "input/domain.h"
 #include "verbose.h"
 #include "bc/load.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 
 namespace oofem {

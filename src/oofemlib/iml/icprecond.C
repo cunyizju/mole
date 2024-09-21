@@ -32,7 +32,7 @@
 
 #include "icprecond.h"
 #include "symcompcol.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 namespace oofem {
 CompCol_ICPreconditioner :: CompCol_ICPreconditioner(const SparseMtrx &A, InputRecord &attributes) :

@@ -38,7 +38,7 @@
 #include "input/element.h"
 #include "matresponsemode.h"
 #include "valuemodetype.h"
-#include "integrationdomain.h"
+#include "math/integrationdomain.h"
 #include "dofs/dofmantransftype.h"
 #include "arrays/floatarray.h"
 

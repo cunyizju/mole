@@ -34,7 +34,7 @@
 #ifndef petscsparsemtrx_h
 #define petscsparsemtrx_h
 
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 
 #include <petscksp.h>
 

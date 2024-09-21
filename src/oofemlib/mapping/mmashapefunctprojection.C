@@ -34,7 +34,7 @@
 
 #include "mapping/mmashapefunctprojection.h"
 #include "dofman/dofmanager.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "input/element.h"
 #include "input/domain.h"
 #include "spatiallocalizer.h"

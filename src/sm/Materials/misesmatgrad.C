@@ -34,10 +34,10 @@
 
 #include "misesmatgrad.h"
 #include "stressvector.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "error/error.h"
 #include "classfactory.h"
 

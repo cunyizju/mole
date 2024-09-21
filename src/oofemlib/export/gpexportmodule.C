@@ -33,10 +33,10 @@
  */
 
 #include "export/gpexportmodule.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "material/material.h"
 #include "input/element.h"
-#include "integrationrule.h"
+#include "math/integrationrule.h"
 #include "timestep.h"
 #include "engng/engngm.h"
 #include "classfactory.h"

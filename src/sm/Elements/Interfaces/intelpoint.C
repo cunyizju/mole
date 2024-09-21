@@ -36,11 +36,11 @@
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
 #include "input/domain.h"
 #include "dofman/node.h"
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 //#include "arrays/floatarrayf.h"
 

@@ -39,14 +39,14 @@
 #include "input/domain.h"
 #include "material/material.h"
 #include "cs/crosssection.h"
-#include "integrationrule.h"
+#include "math/integrationrule.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "input/dynamicinputrecord.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "engng/engngm.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 namespace oofem {
 NLStructuralElement::NLStructuralElement(int n, Domain *aDomain) :

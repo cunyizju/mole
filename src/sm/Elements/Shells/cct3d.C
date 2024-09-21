@@ -37,9 +37,9 @@
 #include "fei/fei2dtrlin.h"
 #include "dofman/node.h"
 #include "bc/load.h"
-#include "mathfem.h"
-#include "gaussintegrationrule.h"
-#include "gausspoint.h"
+#include "math/mathfem.h"
+#include "math/gaussintegrationrule.h"
+#include "math/gausspoint.h"
 #include "classfactory.h"
 
 #include <cstdlib>

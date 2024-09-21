@@ -39,13 +39,13 @@
 #include "dofman/node.h"
 #include "material/material.h"
 #include "cs/crosssection.h"
-#include "gausspoint.h"
-#include "gaussintegrationrule.h"
+#include "math/gausspoint.h"
+#include "math/gaussintegrationrule.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "bc/load.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 
 #ifdef __OOFEG

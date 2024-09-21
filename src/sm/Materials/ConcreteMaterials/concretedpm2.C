@@ -36,7 +36,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "sm/Materials/structuralms.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/intarray.h"
 #include "datastream.h"
 #include "contextioerr.h"
@@ -44,7 +44,7 @@
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 #include <limits>
 

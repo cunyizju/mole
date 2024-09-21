@@ -36,7 +36,7 @@
 #include "timestep.h"
 #include "dofs/dof.h"
 #include "input/domain.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "dictionary.h"
 #include "verbose.h"
 #include "classfactory.h"

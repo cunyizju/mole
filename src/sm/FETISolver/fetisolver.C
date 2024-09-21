@@ -33,9 +33,9 @@
  */
 
 #include "sm/FETISolver/feticommunicator.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "fetisolver.h"
-#include "skyline.h"
+#include "math/skyline.h"
 #include "verbose.h"
 #include "dofman/dofmanager.h"
 #include "engng/engngm.h"

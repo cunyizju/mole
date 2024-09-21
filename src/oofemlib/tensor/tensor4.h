@@ -34,7 +34,7 @@
 
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "index.h"
 #pragma once
 

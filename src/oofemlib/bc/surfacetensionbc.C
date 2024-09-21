@@ -42,12 +42,12 @@
 #include "fei/feinterpol3d.h"
 #include "classfactory.h"
 #include "set.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 
-#include "integrationdomain.h"
-#include "integrationrule.h"
-#include "gausspoint.h"
-#include "mathfem.h"
+#include "math/integrationdomain.h"
+#include "math/integrationrule.h"
+#include "math/gausspoint.h"
+#include "math/mathfem.h"
 
 #include <utility>
 #include <list>

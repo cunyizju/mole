@@ -38,8 +38,8 @@
 #include "dofs/masterdof.h"
 #include "input/element.h"
 #include "fei/feinterpol.h"
-#include "gausspoint.h"
-#include "sparsemtrx.h"
+#include "math/gausspoint.h"
+#include "math/sparsemtrx.h"
 #include "xfem/xfemelementinterface.h"
 #include "xfem/integrationrules/discsegintegrationrule.h"
 #include "timestep.h"
@@ -47,7 +47,7 @@
 #include "solvers/sparselinsystemnm.h"
 #include "unknownnumberingscheme.h"
 #include "engng/engngm.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 namespace oofem {
 REGISTER_BoundaryCondition(TransverseReinfConstraint);

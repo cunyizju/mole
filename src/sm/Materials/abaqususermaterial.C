@@ -33,7 +33,7 @@
  */
 
 #include "abaqususermaterial.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatarrayf.h"
 #include "arrays/floatmatrixf.h"
 #include "classfactory.h"

@@ -37,7 +37,7 @@
 
 #include "sm/EngineeringModels/structengngmodel.h"
 #include "solvers/sparselinsystemnm.h"
-#include "sparsemtrxtype.h"
+#include "math/sparsemtrxtype.h"
 
 #include <memory>
 

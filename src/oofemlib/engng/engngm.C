@@ -37,7 +37,7 @@
 // Milan ?????????????????
 
 #include "nummet.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "engng/engngm.h"
 #include "timestep.h"
 #include "metastep.h"

@@ -35,7 +35,7 @@
 #ifndef DISCSEGINTEGRATIONRULE_H_
 #define DISCSEGINTEGRATIONRULE_H_
 
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 
 #include "input/geometry.h"
 

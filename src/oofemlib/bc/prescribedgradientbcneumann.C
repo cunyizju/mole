@@ -39,8 +39,8 @@
 #include "input/element.h"
 #include "fei/feinterpol.h"
 #include "fei/feinterpol2d.h"
-#include "gausspoint.h"
-#include "sparsemtrx.h"
+#include "math/gausspoint.h"
+#include "math/sparsemtrx.h"
 #include "xfem/xfemelementinterface.h"
 #include "xfem/integrationrules/discsegintegrationrule.h"
 #include "timestep.h"
@@ -48,7 +48,7 @@
 #include "solvers/sparselinsystemnm.h"
 #include "unknownnumberingscheme.h"
 #include "engng/engngm.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 #ifdef _OPENMP
 #include <omp.h>

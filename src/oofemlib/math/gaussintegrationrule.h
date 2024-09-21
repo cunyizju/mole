@@ -35,7 +35,7 @@
 #ifndef gaussintegrationrule_h
 #define gaussintegrationrule_h
 
-#include "integrationrule.h"
+#include "math/integrationrule.h"
 
 #define _IFT_GaussIntegrationRule_Name "gauss"
 

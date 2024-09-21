@@ -42,8 +42,8 @@
 #define gausspoint_h
 
 #include "oofemcfg.h"
-#include "integrationrule.h"
-#include "integrationpointstatus.h"
+#include "math/integrationrule.h"
+#include "math/integrationpointstatus.h"
 #include "input/element.h"
 #include "arrays/floatarray.h"
 #include "material/materialmode.h"

@@ -39,7 +39,7 @@
 #include "nummet.h"
 #include "timestep.h"
 #include "input/element.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "verbose.h"
 #include "classfactory.h"
 #include "datastream.h"

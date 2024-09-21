@@ -39,7 +39,7 @@
 #include "dofman/dofmanager.h"
 #include "engng/engngm.h"
 #include "input/connectivitytable.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "timestep.h"
 
 #ifdef __PARALLEL_MODE

@@ -34,7 +34,7 @@
 
 #include "tf1.h"
 #include "timestep.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 
 namespace oofem {

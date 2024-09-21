@@ -38,7 +38,7 @@
 #include "dofman/dofmanager.h"
 #include "set.h"
 #include "timestep.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "nummet.h"
 #include "solvers/nrsolver.h"
 #include "solvers/staggeredsolver.h"

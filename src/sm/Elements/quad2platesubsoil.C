@@ -35,8 +35,8 @@
 #include "sm/Elements/quad2platesubsoil.h"
 #include "fei/fei2dquadquad.h"
 #include "cs/crosssection.h"
-#include "gausspoint.h"
-#include "gaussintegrationrule.h"
+#include "math/gausspoint.h"
+#include "math/gaussintegrationrule.h"
 #include "classfactory.h"
 
 namespace oofem {

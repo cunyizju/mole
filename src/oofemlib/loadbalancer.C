@@ -36,7 +36,7 @@
 #include "input/domain.h"
 #include "engng/engngm.h"
 #include "timer.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "timestep.h"
 #include "arrays/floatarray.h"
 #include "classfactory.h"

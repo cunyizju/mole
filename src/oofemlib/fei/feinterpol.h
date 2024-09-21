@@ -39,7 +39,7 @@
 #include "error/error.h"
 #include "input/inputrecord.h"
 #include "arrays/intarray.h"
-#include "integrationdomain.h"
+#include "math/integrationdomain.h"
 #include "input/elementgeometrytype.h"
 #include "material/materialmode.h"
 #include "dofman/node.h"

@@ -38,9 +38,9 @@
 #include "spatiallocalizer.h"
 #include "sm/Elements/nlstructuralelement.h"
 #include "dofman/dofmanager.h"
-#include "integrationrule.h"
+#include "math/integrationrule.h"
 #include "fei/feinterpol.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 
 #include <fstream>

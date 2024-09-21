@@ -39,7 +39,7 @@
 #include "xfem/xfemmanager.h"
 #include "input/domain.h"
 #include "input/connectivitytable.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 
 namespace oofem {
 REGISTER_EnrichmentFront(EnrFrontLinearBranchFuncRadius)

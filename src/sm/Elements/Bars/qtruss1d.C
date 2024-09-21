@@ -35,13 +35,13 @@
 #include "sm/Elements/Bars/qtruss1d.h"
 #include "fei/fei1dquad.h"
 #include "cs/crosssection.h"
-#include "gausspoint.h"
-#include "gaussintegrationrule.h"
+#include "math/gausspoint.h"
+#include "math/gaussintegrationrule.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 
 #ifdef __OOFEG

@@ -33,10 +33,10 @@
  */
 
 #include "microplanematerial.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatarray.h"
 #include "contextioerr.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "input/dynamicinputrecord.h"
 
 namespace oofem {

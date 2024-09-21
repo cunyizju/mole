@@ -36,7 +36,7 @@
 #include "timestep.h"
 #include "error/error.h"
 #include "input/domain.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "datastream.h"
 #include "contextioerr.h"
 

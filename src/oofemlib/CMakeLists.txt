@@ -1,9 +1,10 @@
 # Much to organize
 set (core_unsorted
     classfactory.C
-    femcmpnn.C  timestep.C metastep.C gausspoint.C
-    cltypes.C timer.C dictionary.C heap.C grid.C
-    mathfem.C util.C
+    femcmpnn.C  timestep.C metastep.C 
+    cltypes.C timer.C dictionary.C heap.C 
+     util.C
+
     assemblercallback.C
     homogenize.C
     nonlocalbarrier.C
@@ -21,12 +22,12 @@ set (core_unsorted
     
      tokenizer.C parser.C
     spatiallocalizer.C dummylocalizer.C octreelocalizer.C
-    integrationrule.C gaussintegrationrule.C lobattoir.C
+     lobattoir.C
     smoothednodalintvarfield.C
     # Deprecated?
-    rowcol.C skyline.C skylineu.C
+    
     ldltfact.C
-    inverseit.C subspaceit.C gjacobi.C
+    
     #
     symcompcol.C compcol.C
     unstructuredgridfield.C
@@ -59,6 +60,19 @@ set(contact
     contact/contactelement.C
 )
 
+set(math
+    math/mathfem.C
+    math/grid.C
+    math/gausspoint.C
+    math/rowcol.C
+    math/skyline.C
+    math/skylineu.C
+    math/integrationrule.C
+    math/gaussintegrationrule.C
+    math/inverseit.C
+    math/subspaceit.C
+    math/gjacobi.C
+)
 
 set(error
     error/error.C 
@@ -376,6 +390,7 @@ set (core
     ${initial}
     ${contact}
     ${error}
+    ${math}
     ${core_unsorted}
     ${core_nodalrecovery}
     ${core_dofs}

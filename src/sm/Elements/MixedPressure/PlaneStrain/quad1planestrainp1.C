@@ -34,8 +34,8 @@
 
 #include "Elements/MixedPressure/PlaneStrain/quad1planestrainp1.h"
 #include "dofman/node.h"
-#include "gausspoint.h"
-#include "gaussintegrationrule.h"
+#include "math/gausspoint.h"
+#include "math/gaussintegrationrule.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"

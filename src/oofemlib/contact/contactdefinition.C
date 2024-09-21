@@ -38,7 +38,7 @@
 #include "arrays/intarray.h"
 #include "input/domain.h"
 #include "arrays/floatmatrix.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "dofs/masterdof.h"
 #include "classfactory.h"
 

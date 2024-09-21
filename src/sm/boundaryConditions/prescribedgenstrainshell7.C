@@ -47,7 +47,7 @@
 #include "classfactory.h"
 #include "input/dynamicinputrecord.h"
 #include "fei/feinterpol.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "solvers/sparselinsystemnm.h"
 #include "sm/Elements/Shells/shell7base.h"
 

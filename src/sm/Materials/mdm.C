@@ -33,10 +33,10 @@
  */
 
 #include "mdm.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
 #include "mapping/mmaclosestiptransfer.h"
 #include "nonlocalmaterialext.h"

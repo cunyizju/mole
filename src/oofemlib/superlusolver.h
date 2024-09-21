@@ -36,7 +36,7 @@
 #define superlusolver_h
 
 #include "solvers/sparselinsystemnm.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "convergedreason.h"
 #include "arrays/floatarray.h"
 #include "SUPERLU_MT/include/slu_mt_ddefs.h"

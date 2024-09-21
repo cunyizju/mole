@@ -38,7 +38,7 @@
 #include "ltf/function.h"
 #include "metastep.h"
 #include "export/exportmodulemanager.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "input/oofemtxtdatareader.h"
 #include "util.h"
 #include "verbose.h"

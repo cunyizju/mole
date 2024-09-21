@@ -38,10 +38,10 @@
 #include "sm/Materials/structuralms.h"
 #include "dofman/node.h"
 #include "material/material.h"
-#include "gausspoint.h"
-#include "gaussintegrationrule.h"
+#include "math/gausspoint.h"
+#include "math/gaussintegrationrule.h"
 #include "input/domain.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "timestep.h"
 #include <cstdio>
 

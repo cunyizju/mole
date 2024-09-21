@@ -36,7 +36,7 @@
 #include "../structuralmaterial.h"
 #include "contextioerr.h"
 #include "datastream.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 
 namespace oofem {
 LatticeMaterialStatus :: LatticeMaterialStatus(GaussPoint *g) : MaterialStatus(g), RandomMaterialStatusExtensionInterface()

@@ -37,7 +37,7 @@
 #include "timestep.h"
 #include "arrays/floatmatrix.h"
 #include "datastream.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "input/element.h"
 #include "classfactory.h"
 #include "engng/engngm.h"

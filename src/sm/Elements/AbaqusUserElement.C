@@ -33,7 +33,7 @@
  */
 
 #include "AbaqusUserElement.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "classfactory.h"
 #include "input/dynamicinputrecord.h"
 #include "dofman/dofmanager.h"

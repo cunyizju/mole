@@ -36,11 +36,11 @@
 
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "datastream.h"
 #include "contextioerr.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 
 namespace oofem {

@@ -41,8 +41,8 @@
 #include "cltypes.h"
 #include "sm/Materials/structuralms.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
-#include "gausspoint.h"
-#include "mathfem.h"
+#include "math/gausspoint.h"
+#include "math/mathfem.h"
 
 #define CDPM2_TOL 1.e-6
 #define keep_track_of_dissipated_energy

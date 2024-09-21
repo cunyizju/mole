@@ -34,7 +34,7 @@
 
 #include "fei/feinterpol1d.h"
 #include "arrays/floatarray.h"
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 #include <stdexcept>
 
 namespace oofem {

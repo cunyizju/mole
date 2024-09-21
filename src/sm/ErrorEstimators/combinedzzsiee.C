@@ -36,7 +36,7 @@
 #include "input/domain.h"
 #include "input/element.h"
 #include "input/connectivitytable.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "error/errorestimatortype.h"
 #include "classfactory.h"
 

@@ -36,7 +36,7 @@
 #include "spatiallocalizer.h"
 #include "input/domain.h"
 #include "material/material.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "mapping/matstatmapperint.h"
 #include "classfactory.h"
 #include "xfem/xfemelementinterface.h"

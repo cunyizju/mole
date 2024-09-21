@@ -38,8 +38,8 @@
 #include "fei/fei3dtetquad.h"
 #include "fei/fei3dtetlin.h"
 #include "classfactory.h"
-#include "gausspoint.h"
-#include "gaussintegrationrule.h"
+#include "math/gausspoint.h"
+#include "math/gaussintegrationrule.h"
 #include "bc/load.h"
 #include "input/element.h"
 #include "dofman/dofmanager.h"
@@ -48,7 +48,7 @@
 #include "bc/boundaryload.h"
 #include "neumannmomentload.h"
 #include "dofs/dof.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 #include <iostream>
 

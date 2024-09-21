@@ -35,7 +35,7 @@
 #include "sm/CrossSections/variablecrosssection.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatarray.h"
 #include "classfactory.h"
 #include "input/dynamicinputrecord.h"

@@ -38,7 +38,7 @@
 #include "input/inputrecord.h"
 #include "arrays/intarray.h"
 #include "fei/feinterpol.h"
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 
 ///@name Input fields for IGAElement
 //@{

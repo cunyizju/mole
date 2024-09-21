@@ -32,17 +32,17 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatarray.h"
 #include "input/element.h"
 #include "timestep.h"
-#include "integrationrule.h"
+#include "math/integrationrule.h"
 #include "nonlocalmaterialext.h"
 #include "material/material.h"
 #include "spatiallocalizer.h"
 #include "input/domain.h"
 #include "nonlocalbarrier.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "input/dynamicinputrecord.h"
 
 #ifdef __PARALLEL_MODE

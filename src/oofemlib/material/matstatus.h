@@ -35,7 +35,7 @@
 #ifndef matstatus_h
 #define matstatus_h
 
-#include "integrationpointstatus.h"
+#include "math/integrationpointstatus.h"
 
 namespace oofem {
 class GaussPoint;

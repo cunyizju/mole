@@ -34,7 +34,7 @@
 
 #include "fei/feinterpol3d.h"
 #include "arrays/floatarray.h"
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 
 namespace oofem {
 double FEInterpolation3d :: giveVolume(const FEICellGeometry &cellgeo) const

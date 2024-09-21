@@ -32,10 +32,10 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "datastream.h"
 #include "contextioerr.h"
 #include "classfactory.h"

@@ -37,7 +37,7 @@
 #include "arrays/intarray.h"
 #include "input/geometry.h"
 #include "dofman/node.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 #include <cstdlib>
 #include <map>

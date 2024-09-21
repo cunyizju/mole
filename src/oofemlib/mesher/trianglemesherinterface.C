@@ -35,7 +35,7 @@
 #include "mesher/trianglemesherinterface.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 #include <set>
 #include <cstdio>

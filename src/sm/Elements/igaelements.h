@@ -44,7 +44,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "matresponsemode.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 #define _IFT_BsplinePlaneStressElement_Name "bsplineplanestresselement"
 #define _IFT_NURBSPlaneStressElement_Name "nurbsplanestresselement"

@@ -35,7 +35,7 @@
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "input/element.h"
 #include "arrays/floatarray.h"
 

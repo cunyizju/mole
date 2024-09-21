@@ -36,7 +36,7 @@
 #include "input/connectivitytable.h"
 #include "input/element.h"
 #include "dofman/node.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "error/error.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"

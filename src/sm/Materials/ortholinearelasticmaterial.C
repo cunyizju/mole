@@ -40,8 +40,8 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarrayf.h"
 #include "arrays/floatmatrixf.h"
-#include "gausspoint.h"
-#include "mathfem.h"
+#include "math/gausspoint.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 #include "input/dynamicinputrecord.h"
 

@@ -64,13 +64,13 @@ namespace py = pybind11;
 #include "initial/initialcondition.h"
 #include "ltf/function.h"
 #include "material/material.h"
-#include "integrationpointstatus.h"
+#include "math/integrationpointstatus.h"
 #include "material/matstatus.h"
 #include "Materials/structuralmaterial.h"
 #include "Materials/structuralms.h"
 
 #include "cs/crosssection.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 
 #include "fields/field.h"
 #include "fei/feinterpol.h"
@@ -88,8 +88,8 @@ namespace py = pybind11;
 #include "internalstatetype.h"
 #include "material/materialmode.h"
 
-#include "integrationrule.h"
-#include "gausspoint.h"
+#include "math/integrationrule.h"
+#include "math/gausspoint.h"
 #include "input/inputrecord.h"
 #include "input/dynamicinputrecord.h"
 

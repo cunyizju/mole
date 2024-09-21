@@ -33,8 +33,8 @@
  */
 
 #include "enrichmentfunction.h"
-#include "gausspoint.h"
-#include "mathfem.h"
+#include "math/gausspoint.h"
+#include "math/mathfem.h"
 #include "fei/feinterpol.h"
 #include "classfactory.h"
 #include "input/dynamicinputrecord.h"

@@ -34,7 +34,7 @@
 
 #include "lsmastermat.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrixf.h"
@@ -42,7 +42,7 @@
 #include "arrays/intarray.h"
 #include "stressvector.h"
 #include "strainvector.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "contextioerr.h"
 #include "datastream.h"
 #include "classfactory.h"

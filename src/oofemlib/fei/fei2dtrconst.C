@@ -33,7 +33,7 @@
  */
 
 #include "fei2dtrconst.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 

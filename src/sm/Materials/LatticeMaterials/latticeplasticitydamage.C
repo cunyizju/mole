@@ -33,13 +33,13 @@
  */
 
 #include "latticeplasticitydamage.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatmatrixf.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatarrayf.h"
 #include "engng/engngm.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include <math.h>
 #include "latticematstatus.h"
 #include "arrays/intarray.h"

@@ -36,7 +36,7 @@
 #define voidprecond_h
 
 #include "arrays/floatarray.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "precond.h"
 
 namespace oofem {

@@ -34,12 +34,12 @@
 //last edit: 07/02/2013 by Jan Novak
 
 #include "sm/Elements/htselement.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "dofman/node.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "bc/boundaryload.h"
 #include "classfactory.h"
 

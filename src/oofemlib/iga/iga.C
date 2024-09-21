@@ -35,9 +35,9 @@
 #include "input/inputrecord.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "iga.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "feitspline.h"
 
 #ifdef __OOFEG

@@ -45,7 +45,7 @@
 #include "chartype.h"
 #include "unknowntype.h"
 #include "varscaletype.h"
-#include "numericalcmpn.h"
+#include "math/numericalcmpn.h"
 #include "valuemodetype.h"
 #include "problemmode.h"
 #include "fmode.h"

@@ -34,7 +34,7 @@
 
 #include "parser.h"
 #include "error/error.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 #include <cctype>
 #include <cstdlib>

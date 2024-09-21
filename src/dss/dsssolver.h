@@ -38,7 +38,7 @@
 #include "oofemcfg.h"
 #include "solvers/sparselinsystemnm.h"
 #include "convergedreason.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 
 #define _IFT_DSSSolver_Name "dss"
 

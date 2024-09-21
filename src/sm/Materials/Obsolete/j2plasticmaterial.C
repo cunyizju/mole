@@ -34,11 +34,11 @@
 
 #include "j2plasticmaterial.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 #include "input/dynamicinputrecord.h"
 

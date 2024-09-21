@@ -33,7 +33,7 @@
  */
 
 #include "fei/fei1dlin.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrixf.h"

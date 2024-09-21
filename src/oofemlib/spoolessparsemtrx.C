@@ -34,7 +34,7 @@
 
 #include "spoolessparsemtrx.h"
 #include "engng/engngm.h"
-#include "sparsemtrxtype.h"
+#include "math/sparsemtrxtype.h"
 #include "classfactory.h"
 
 namespace oofem {

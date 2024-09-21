@@ -35,7 +35,7 @@
 #include "classfactory.h"
 #include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
 #include "sm/export/gnuplotexportmodule.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "input/geometry.h"
 
 #include "engng/engngm.h"

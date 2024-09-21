@@ -37,8 +37,8 @@
 
 #include "sm/EngineeringModels/structengngmodel.h"
 #include "solvers/sparselinsystemnm.h"
-#include "sparsemtrxtype.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrxtype.h"
+#include "math/sparsemtrx.h"
 #include "arrays/floatmatrix.h"
 #include "input/connectivitytable.h"
 

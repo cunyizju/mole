@@ -35,9 +35,9 @@
 #include "sm/ErrorEstimators/scalarerrorindicator.h"
 #include "sm/ErrorEstimators/directerrorindicatorrc.h"
 #include "input/element.h"
-#include "integrationrule.h"
-#include "gausspoint.h"
-#include "mathfem.h"
+#include "math/integrationrule.h"
+#include "math/gausspoint.h"
+#include "math/mathfem.h"
 #include "error/errorestimatortype.h"
 #include "classfactory.h"
 

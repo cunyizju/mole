@@ -37,7 +37,7 @@
 #include "xfem/enrichmentitem.h"
 #include "input/domain.h"
 #include "input/element.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 
 #include "sm/Materials/structuralms.h"
 #include "sm/Materials/structuralmaterial.h"

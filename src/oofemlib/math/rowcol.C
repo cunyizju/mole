@@ -32,10 +32,10 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "rowcol.h"
+#include "math/rowcol.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "error/error.h"
 
 #include <cstdlib>

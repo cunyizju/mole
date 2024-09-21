@@ -37,7 +37,7 @@
 
 #include "sloangraphnode.h"
 #include "sloangraph.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 namespace oofem {
 SloanGraphNode :: SloanGraphNode(SloanGraph *graph, int numOld) : neighborList()

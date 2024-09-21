@@ -33,7 +33,7 @@
  */
 
 #include "structuralfe2material.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "engng/engngm.h"
 #include "input/oofemtxtdatareader.h"
 #include "arrays/floatmatrix.h"
@@ -51,7 +51,7 @@
 #include "sm/EngineeringModels/staticstructural.h"
 #include "unknownnumberingscheme.h"
 #include "xfem/xfemstructuremanager.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 #include "input/dynamicdatareader.h"
 

@@ -34,10 +34,10 @@
 
 #include "simpleinterfacemat.h"
 #include "sm/Elements/structuralelement.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "contextioerr.h"
 #include "classfactory.h"
 #include "input/dynamicinputrecord.h"

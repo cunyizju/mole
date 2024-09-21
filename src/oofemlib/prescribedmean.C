@@ -37,10 +37,10 @@
 #include "dofs/masterdof.h"
 #include "input/domain.h"
 #include "fei/feinterpol.h"
-#include "gausspoint.h"
-#include "sparsemtrx.h"
+#include "math/gausspoint.h"
+#include "math/sparsemtrx.h"
 #include "ltf/function.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 #ifdef _OPENMP
 #include <omp.h>

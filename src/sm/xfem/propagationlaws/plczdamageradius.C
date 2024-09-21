@@ -45,7 +45,7 @@
 #include "xfem/xfemmanager.h"
 #include "classfactory.h"
 #include "input/domain.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "input/dynamicinputrecord.h"
 #include "spatiallocalizer.h"
 #include "input/connectivitytable.h"

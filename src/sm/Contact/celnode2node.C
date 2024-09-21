@@ -36,7 +36,7 @@
 #include "arrays/floatmatrix.h"
 #include "dofs/masterdof.h"
 #include "unknownnumberingscheme.h"
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 
 namespace oofem {
 

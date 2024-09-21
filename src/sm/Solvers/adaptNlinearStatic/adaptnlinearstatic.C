@@ -33,7 +33,7 @@
  */
 
 #include "adaptnlinearstatic.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "verbose.h"
 #include "timer.h"
 #include "metastep.h"

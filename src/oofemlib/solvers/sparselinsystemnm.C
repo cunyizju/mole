@@ -35,7 +35,7 @@
 #include "solvers/sparselinsystemnm.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 
 namespace oofem {
 SparseLinearSystemNM :: SparseLinearSystemNM(Domain *d, EngngModel *m) : NumericalMethod(d, m)

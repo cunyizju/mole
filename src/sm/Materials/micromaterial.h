@@ -40,7 +40,7 @@
 #include "dictionary.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "datastream.h"
 #include "contextioerr.h"
 #include "unknownnumberingscheme.h"

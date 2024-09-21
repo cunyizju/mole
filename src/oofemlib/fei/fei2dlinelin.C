@@ -33,11 +33,11 @@
  */
 
 #include "fei/fei2dlinelin.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatarrayf.h"
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 
 namespace oofem {
 

@@ -43,7 +43,7 @@
 #include "dofs/masterdof.h"
 #include "unknownnumberingscheme.h"
 #include "input/domain.h"
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 #include "error/error.h"
 
 namespace oofem {

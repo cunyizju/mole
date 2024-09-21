@@ -35,7 +35,7 @@
 #ifndef dss_h
 #define dss_h
 
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
 #include "DSSolver.h"

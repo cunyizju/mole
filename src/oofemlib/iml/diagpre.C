@@ -29,7 +29,7 @@
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 #include "diagpre.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 
 namespace oofem {
 DiagPreconditioner :: DiagPreconditioner(const SparseMtrx &C, InputRecord &attributes) : Preconditioner(C, attributes),

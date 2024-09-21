@@ -45,8 +45,8 @@
 #include "dofs/activedof.h"
 #include "dofs/masterdof.h"
 #include "classfactory.h"
-#include "sparsemtrxtype.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrxtype.h"
+#include "math/sparsemtrx.h"
 #include "solvers/sparselinsystemnm.h"
 #include "input/dynamicinputrecord.h"
 #include "input/domain.h"
@@ -55,7 +55,7 @@
 #include "unknownnumberingscheme.h"
 #include "ltf/function.h"
 #include "timestep.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 namespace oofem {
 REGISTER_BoundaryCondition(PrescribedGradientBCPeriodic);

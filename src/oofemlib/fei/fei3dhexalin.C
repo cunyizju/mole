@@ -33,10 +33,10 @@
  */
 
 #include "fei/fei3dhexalin.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 #include "arrays/floatarrayf.h"
 #include "arrays/floatmatrixf.h"
 

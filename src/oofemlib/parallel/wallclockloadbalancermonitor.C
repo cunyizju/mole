@@ -37,7 +37,7 @@
 #include "input/domain.h"
 #include "timestep.h"
 #include "input/element.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 
 #include <mpi.h>

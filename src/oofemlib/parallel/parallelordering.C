@@ -37,7 +37,7 @@
 #include "input/domain.h"
 #include "unknownnumberingscheme.h"
 #include "parallel/combuff.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 namespace oofem {
 bool

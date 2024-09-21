@@ -35,13 +35,13 @@
 #include "sm/Elements/PlaneStress/qtrplstr.h"
 #include "fei/fei2dtrquad.h"
 #include "dofman/node.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "cs/crosssection.h"
-#include "gaussintegrationrule.h"
-#include "mathfem.h"
+#include "math/gaussintegrationrule.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 
 #ifdef __OOFEG

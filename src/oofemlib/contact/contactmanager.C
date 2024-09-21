@@ -35,7 +35,7 @@
 #include "contact/contactmanager.h"
 #include "contact/contactdefinition.h"
 #include "classfactory.h"
-#include "numericalcmpn.h"
+#include "math/numericalcmpn.h"
 #include "error/error.h"
 
 namespace oofem {

@@ -32,23 +32,22 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
+#ifndef inverseit_h
+#define inverseit_h
 
-#ifndef subspaceit_h
-#define subspaceit_h
-
-#include "sparsegeneigenvalsystemnm.h"
+#include "math/sparsegeneigenvalsystemnm.h"
 #include "convergedreason.h"
-#include "sparsemtrx.h"
 #include "arrays/floatarray.h"
 
-#define _IFT_SubspaceIteration_Name "subspaceit"
+#define _IFT_InverseIteration_Name "inverseit"
 
 namespace oofem {
 class Domain;
 class EngngModel;
 
 /**
- * This class implements the class NumericalMethod instance Subspace Iteration Eigen Value Problem Solver
+ * This class implements the class NumericalMethod instance Generalized Jacobi
+ * Eigen Value Problem Solver
  *
  * DESCRIPTION :
  * Perform solution of eigen value problem in the form
@@ -62,41 +61,36 @@ class EngngModel;
  *
  * Variable description  :
  *
- *      - - - INPUT  DATA - - -
+ *       A(N,N)    = STIFFNESS MATRIX (ASSUMED POZITIVE DEFINITE)        *
+ *       B(N,N)    = MASS MATRIX (ASSUMED POZITIVE DEFINITE)             *
+ *       X(N,N)    = MATRIX STORING EIGENVECTORS ON SOLUTION EXIT        *
+ *       EIGV(N)   = VECTOR STORING EIGENVALUES ON SOLUTION EXIT         *
+ *       D(N)      = WORKING VECTOR                                      *
+ *       N         = ORDER OF WORKING AREA MATRICES A AND B              *
+ *       RTOL      = CONVERGENCE TOLERANCE (USUALLY SET TO 10.**-12)     *
+ *       NSMAX     = MAXIMUM NUMBER OF SWEEPS ALLOVED                    *
+ *                                 (USUALLY SET TO 15)                   *
  *
- *      A(NWK)  -  STIFFNESS MATRIX
- *      B(NWM)  -  MASS MARTRIX
- *      NN  -      SIZE OF PROBLEM
- *      NNM  -  NN+1
- *      NROOT  -  REQUIRED NUMBER OF
- *      RTOL  -  KRITERIUM KONVERGENCE VLASTNICH CISEL
- *      NC  -  POCET VEKTORU SIMULTANNI ITERACE, DOPORUCUJE SE VOLIT
- *      NC = MIN (2*NROOT , NROOT+8 )
- *      NITEM  -  MAXIMALNI POCET ITERACI (OBYC. 16)
+ * OUTPUT : (after call solveYourselfAt)
+ *       A(N,N)    = DIAGONALIZED STIFFNESS MATRIX                       *
+ *       B(N,N)    = DIAGONALIZED MASS MATRIX                            *
+ *       X(N,N)    = EIGENVECTORS STORED COLUMNWISE                      *
+ *       EIGV(N)   = EIGENVALUES                                         *
  *
- *      - - - PRACOVNI POLE - - -
  *
- *      TT(NN),W(NN),D(NC),RTOLV(NC),BUP(NC),BLO(NC),BUPC(NC)
- *      AR(NC,NC)  -  PRACOVNI MATICE - PROJEKCE MATICE  A
- *      BR(NC,NC)  -  PROJEKCE MATICE  B
- *
- *      - - - VYSTUPNI DATA - - -
- *
- *      EIGV(NROOT)  -  VLASTNI CISLA
- *      R(NN,NROOT)  -  VLASTNI VEKTORY
  */
-class OOFEM_EXPORT SubspaceIteration : public SparseGeneralEigenValueSystemNM
+class OOFEM_EXPORT InverseIteration : public SparseGeneralEigenValueSystemNM
 {
 private:
     /// Max number of iterations
     int nitem;
 
 public:
-    SubspaceIteration(Domain * d, EngngModel * m);
-    virtual ~SubspaceIteration() {}
+    InverseIteration(Domain * d, EngngModel * m);
+    virtual ~InverseIteration() {}
 
     ConvergedReason solve(SparseMtrx &A, SparseMtrx &B, FloatArray &x, FloatMatrix &v, double rtol, int nroot) override;
-    const char *giveClassName() const override { return "SubspaceIterationSolver"; }
+    const char *giveClassName() const override { return "InverseIteration"; }
 };
 } // end namespace oofem
-#endif // subspaceit_h
+#endif // inverseit_h

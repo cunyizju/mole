@@ -36,7 +36,7 @@
 #include "Solvers/qcLinearStatic/qclinearstatic.h"
 #include "dofman/qcnode.h"
 #include "input/element.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 #include "classfactory.h"
 #include "input/dynamicinputrecord.h"

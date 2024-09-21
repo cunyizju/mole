@@ -38,7 +38,7 @@
 #include "sm/Elements/structuralelement.h"
 #include "sm/CrossSections/layeredcrosssection.h"
 #include "sm/ErrorEstimators/zzerrorestimator.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "nodalrecovery/zznodalrecoverymodel.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "nodalrecovery/sprnodalrecoverymodel.h"

@@ -41,10 +41,10 @@
 #include "arrays/floatmatrix.h"
 #include "input/domain.h"
 #include "dofman/node.h"
-#include "gausspoint.h"
-#include "gaussintegrationrule.h"
+#include "math/gausspoint.h"
+#include "math/gaussintegrationrule.h"
 #include "matresponsemode.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "iga/iga.h"
 
 namespace oofem {

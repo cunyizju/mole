@@ -37,7 +37,7 @@
 
 #include "oofemcfg.h"
 #include "arrays/floatarray.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "input/inputrecord.h"
 
 namespace oofem {

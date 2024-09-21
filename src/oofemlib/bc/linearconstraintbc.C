@@ -36,7 +36,7 @@
 #include "classfactory.h"
 #include "dofs/masterdof.h"
 #include "arrays/floatmatrix.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "unknownnumberingscheme.h"
 #include "ltf/function.h"
 #include "timestep.h"

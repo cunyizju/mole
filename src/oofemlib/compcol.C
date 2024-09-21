@@ -72,7 +72,7 @@
 #include "engng/engngm.h"
 #include "input/domain.h"
 #include "input/element.h"
-#include "sparsemtrxtype.h"
+#include "math/sparsemtrxtype.h"
 #include "bc/activebc.h"
 #include "classfactory.h"
 

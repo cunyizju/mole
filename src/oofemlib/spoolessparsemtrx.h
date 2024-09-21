@@ -35,7 +35,7 @@
 #ifndef spoolessparsemtrx_h
 #define spoolessparsemtrx_h
 
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 
 extern "C" {
 #include <spooles/misc.h>

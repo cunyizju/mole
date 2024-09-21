@@ -36,7 +36,7 @@
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
 #include "sm/Elements/structuralelement.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatarrayf.h"
 #include "arrays/floatmatrixf.h"

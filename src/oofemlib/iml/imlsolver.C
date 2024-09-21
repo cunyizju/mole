@@ -36,7 +36,7 @@
 #include <iml/gmres.h>
 
 #include "imlsolver.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "arrays/floatarray.h"
 #include "diagpre.h"
 #include "voidprecond.h"

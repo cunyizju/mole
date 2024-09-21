@@ -45,8 +45,8 @@
 #include "dofs/simpleslavedof.h"
 #include "dofs/activedof.h"
 
-#include "sparsemtrx.h"
-#include "sparsegeneigenvalsystemnm.h"
+#include "math/sparsemtrx.h"
+#include "math/sparsegeneigenvalsystemnm.h"
 #include "solvers/sparsenonlinsystemnm.h"
 #include "solvers/sparselinsystemnm.h"
 #include "mesherinterface.h"
@@ -60,7 +60,7 @@
 #include "initial/initmodule.h"
 #include "loadbalancer.h"
 
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 #include "lobattoir.h"
 
 #include "initial/initialcondition.h"

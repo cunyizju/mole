@@ -41,7 +41,7 @@
 #include "dofman/dofmanager.h"
 #include "input/element.h"
 #include "unknownnumberingscheme.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "assemblercallback.h"
 
 namespace oofem {

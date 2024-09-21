@@ -33,8 +33,8 @@
  */
 
 #include "concrete3.h"
-#include "gausspoint.h"
-#include "mathfem.h"
+#include "math/gausspoint.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 
 namespace oofem {

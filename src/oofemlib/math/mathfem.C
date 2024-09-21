@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "arrays/floatarray.h"
 
 namespace oofem {

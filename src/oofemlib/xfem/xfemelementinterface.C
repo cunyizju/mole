@@ -36,7 +36,7 @@
 #include "enrichmentitem.h"
 #include "geometrybasedei.h"
 #include "engng/engngm.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "material/materialmode.h"
 #include "fei/fei2dquadlin.h"
 #include "patchintegrationrule.h"
@@ -45,7 +45,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "input/dynamicinputrecord.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 #include "XFEMDebugTools.h"
 #include <string>

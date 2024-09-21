@@ -2,7 +2,7 @@
 
 
 #include "oofeggraphiccontext.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "oofegutils.h"
 
 namespace oofem {

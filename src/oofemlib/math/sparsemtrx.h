@@ -40,7 +40,7 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/intarray.h"
 #include "error/error.h"
-#include "sparsemtrxtype.h"
+#include "math/sparsemtrxtype.h"
 
 #include <memory>
 

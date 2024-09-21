@@ -34,7 +34,7 @@
 
 #include "parallel/parallelcontext.h"
 #include "engng/engngm.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "unknownnumberingscheme.h"
 
 namespace oofem {

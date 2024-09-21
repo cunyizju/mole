@@ -41,7 +41,7 @@
 #include "arrays/floatarray.h"
 #include "statecountertype.h"
 #include "input/element.h"
-#include "integrationrule.h"
+#include "math/integrationrule.h"
 #include "remeshingcrit.h"
 
 ///@name Input fields for ZZErrorEstimator

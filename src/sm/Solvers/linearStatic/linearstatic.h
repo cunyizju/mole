@@ -37,7 +37,7 @@
 
 #include "sm/EngineeringModels/structengngmodel.h"
 #include "solvers/sparselinsystemnm.h"
-#include "sparsemtrxtype.h"
+#include "math/sparsemtrxtype.h"
 #include "unknownnumberingscheme.h"
 
 #define _IFT_LinearStatic_Name "linearstatic"

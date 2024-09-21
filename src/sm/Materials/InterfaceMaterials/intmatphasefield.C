@@ -35,10 +35,10 @@
 #include "sm/Materials/InterfaceMaterials/structuralinterfacematerialphf.h"
 #include "intmatphasefield.h"
 
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "datastream.h"
 #include "contextioerr.h"
 #include "classfactory.h"

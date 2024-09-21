@@ -35,7 +35,7 @@
 #include <Python.h>
 
 #include "structuralpythonmaterial.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "classfactory.h"
 #include "input/dynamicinputrecord.h"
 

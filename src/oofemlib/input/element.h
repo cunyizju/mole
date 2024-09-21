@@ -40,7 +40,7 @@
 #include "chartype.h"
 #include "input/domain.h"
 #include "arrays/floatmatrix.h"
-#include "integrationdomain.h"
+#include "math/integrationdomain.h"
 #include "material/materialmode.h"
 #include "input/elementgeometrytype.h"
 #include "valuemodetype.h"
@@ -50,7 +50,7 @@
 #include "entityrenumberingscheme.h"
 #include "matresponsemode.h"
 #include "unknowntype.h"
-#include "integrationrule.h"
+#include "math/integrationrule.h"
 #include "dofs/dofiditem.h"
 #include "arrays/floatarray.h"
 

@@ -41,8 +41,8 @@
 #include "cltypes.h"
 #include "sm/Materials/structuralms.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
-#include "gausspoint.h"
-#include "mathfem.h"
+#include "math/gausspoint.h"
+#include "math/mathfem.h"
 
 ///@name Input fields for ConcreteDPM
 //@{

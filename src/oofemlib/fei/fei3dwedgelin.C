@@ -38,7 +38,7 @@
 #include "arrays/floatarrayf.h"
 #include "arrays/floatmatrixf.h"
 #include "arrays/intarray.h"
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 
 namespace oofem {
 

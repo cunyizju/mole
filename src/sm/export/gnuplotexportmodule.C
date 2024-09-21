@@ -53,7 +53,7 @@
 #include "bc/prescribedgradient.h"
 #include "bc/prescribedgradientbcneumann.h"
 #include "bc/prescribedgradientbcweak.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "timestep.h"
 #include "fei/feinterpol.h"
 #include "xfem/enrichmentitems/crack.h"

@@ -38,10 +38,10 @@
 #include "material/material.h"
 #include "dofman/node.h"
 #include "bc/load.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
-#include "gaussintegrationrule.h"
-#include "gausspoint.h"
+#include "math/gaussintegrationrule.h"
+#include "math/gausspoint.h"
 #include "fei/fei2dtrlin.h"
 
 namespace oofem {

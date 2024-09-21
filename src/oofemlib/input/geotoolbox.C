@@ -33,7 +33,7 @@
  */
 
 #include "input/geotoolbox.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"

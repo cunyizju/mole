@@ -37,14 +37,14 @@
 #include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
 #include "sm/Elements/structuralelement.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "gaussintegrationrule.h"
-#include "gausspoint.h"
+#include "math/gaussintegrationrule.h"
+#include "math/gausspoint.h"
 #include "input/dynamicinputrecord.h"
 #include "fei/feinterpol.h"
 #include "spatiallocalizer.h"
 #include "engng/engngm.h"
 #include "sm/Elements/nlstructuralelement.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 #include "sm/Materials/structuralfe2material.h"
 #include "bc/prescribedgradienthomogenization.h"
@@ -60,7 +60,7 @@
 #include "export/vtkxmlexportmodule.h"
 
 #include "bc/prescribedgradientbcweak.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include <cmath>
 
 #include <string>

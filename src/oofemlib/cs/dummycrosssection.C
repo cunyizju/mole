@@ -35,7 +35,7 @@
 #include "cs/dummycrosssection.h"
 #include "input/dynamicinputrecord.h"
 #include "material/material.h"
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 #include "classfactory.h"
 
 

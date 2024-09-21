@@ -38,7 +38,7 @@
 #include "input/domain.h"
 #include "dofman/node.h"
 #include "input/element.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "dofs/masterdof.h"
 #include "dofs/simpleslavedof.h"
 #include "nonlocalbarrier.h"

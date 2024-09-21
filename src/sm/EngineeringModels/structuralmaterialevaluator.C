@@ -36,7 +36,7 @@
 #include "input/inputrecord.h"
 #include "timestep.h"
 #include "input/domain.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
 #include "ltf/function.h"

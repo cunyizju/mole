@@ -35,11 +35,11 @@
 #include "cs/crosssection.h"
 #include "dictionary.h"
 #include "input/dynamicinputrecord.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "material/material.h"
 #include "contextioerr.h"
 #include "datastream.h"
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 
 namespace oofem {
     

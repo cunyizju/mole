@@ -36,7 +36,7 @@
 #include "input/element.h"
 #include "dofman/node.h"
 #include "dofs/dof.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 #include <cstdarg>
 #include <cstdlib> // For abort

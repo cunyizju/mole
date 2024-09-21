@@ -37,7 +37,7 @@
 #include "sm/CrossSections/simplecrosssection.h"
 #include "sm/Materials/structuralms.h"
 #include "arrays/floatmatrix.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "classfactory.h"
 #include "input/dynamicinputrecord.h"
 #include "contextioerr.h"

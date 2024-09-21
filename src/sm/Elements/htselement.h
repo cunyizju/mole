@@ -36,7 +36,7 @@
 #define htselement_h
 
 #include "sm/Elements/structuralelement.h"
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 
 #define _IFT_HTSelement_Name "htselement"
 

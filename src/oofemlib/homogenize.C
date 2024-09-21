@@ -33,7 +33,7 @@
  */
 
 #include "homogenize.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 namespace oofem {
 Homogenize :: Homogenize()

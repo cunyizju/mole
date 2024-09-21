@@ -32,11 +32,11 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "inverseit.h"
+#include "math/inverseit.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "sparsemtrx.h"
-#include "mathfem.h"
+#include "math/sparsemtrx.h"
+#include "math/mathfem.h"
 #include "solvers/sparselinsystemnm.h"
 #include "classfactory.h"
 

@@ -34,8 +34,8 @@
 
 #include "../sm/Elements/GradientDamage/3D/qspacegraddamage.h"
 #include "fei/fei3dhexalin.h"
-#include "gausspoint.h"
-#include "gaussintegrationrule.h"
+#include "math/gausspoint.h"
+#include "math/gaussintegrationrule.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"

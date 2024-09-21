@@ -33,14 +33,14 @@
  */
 
 #include "latticedamage.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatmatrixf.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatarrayf.h"
 #include "CrossSections/latticecrosssection.h"
 #include "engng/engngm.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "Elements/LatticeElements/latticestructuralelement.h"
 #include "datastream.h"
 #include "engng/staggeredproblem.h"

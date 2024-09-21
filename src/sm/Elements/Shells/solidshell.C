@@ -36,8 +36,8 @@
 #include <Materials/structuralms.h>
 #include "classfactory.h"
 #include "fei/fei3dhexalin.h"
-#include "gausspoint.h"
-#include "gaussintegrationrule.h"
+#include "math/gausspoint.h"
+#include "math/gaussintegrationrule.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 
 namespace oofem {

@@ -39,7 +39,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "interface.h"
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 #include "input/domain.h"
 
 #include <vector>

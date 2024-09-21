@@ -34,11 +34,11 @@
 
 #include "stressvector.h"
 #include "strainvector.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "error/error.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 namespace oofem {
 StressVector :: StressVector(MaterialMode m) : StressStrainBaseVector(m)

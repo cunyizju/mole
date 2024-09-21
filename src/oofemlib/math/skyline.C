@@ -32,15 +32,15 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "skyline.h"
+#include "math/skyline.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/intarray.h"
 #include "input/domain.h"
 #include "engng/engngm.h"
 #include "input/element.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "verbose.h"
-#include "sparsemtrxtype.h"
+#include "math/sparsemtrxtype.h"
 #include "classfactory.h"
 #include "bc/activebc.h"
 #include "contact/contactmanager.h"

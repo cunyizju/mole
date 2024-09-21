@@ -36,8 +36,8 @@
 #define eigenvaluedynamic_h
 
 #include "engng/engngm.h"
-#include "sparsegeneigenvalsystemnm.h"
-#include "sparsemtrx.h"
+#include "math/sparsegeneigenvalsystemnm.h"
+#include "math/sparsemtrx.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "geneigvalsolvertype.h"

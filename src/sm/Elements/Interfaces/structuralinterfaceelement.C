@@ -39,12 +39,12 @@
 #include "fei/feinterpol.h"
 #include "input/domain.h"
 #include "material/material.h"
-#include "gausspoint.h"
-#include "gaussintegrationrule.h"
+#include "math/gausspoint.h"
+#include "math/gaussintegrationrule.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 
 

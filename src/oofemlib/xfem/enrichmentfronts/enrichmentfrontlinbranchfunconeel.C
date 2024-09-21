@@ -39,8 +39,8 @@
 #include "input/domain.h"
 #include "spatiallocalizer.h"
 #include "input/element.h"
-#include "gausspoint.h"
-#include "mathfem.h"
+#include "math/gausspoint.h"
+#include "math/mathfem.h"
 
 namespace oofem {
 REGISTER_EnrichmentFront(EnrFrontLinearBranchFuncOneEl)

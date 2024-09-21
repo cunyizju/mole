@@ -40,7 +40,7 @@
 #include "nodalrecovery/nodalrecoverymodel.h"
 #include "interface.h"
 #include "internalstatevaluetype.h"
-#include "integrationrule.h"
+#include "math/integrationrule.h"
 #include "xfem/xfemmanager.h"
 #include <iostream>
 #include <fstream>

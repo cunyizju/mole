@@ -36,7 +36,7 @@
 #include "sm/Materials/structuralmaterial.h"
 #include "contextioerr.h"
 #include "sm/Elements/nlstructuralelement.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 
 namespace oofem {
 StructuralMaterialStatus :: StructuralMaterialStatus(GaussPoint *g) :

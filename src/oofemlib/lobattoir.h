@@ -35,7 +35,7 @@
 #ifndef lobattoir_h
 #define lobattoir_h
 
-#include "integrationrule.h"
+#include "math/integrationrule.h"
 
 #define _IFT_LobattoIntegrationRule_Name "lobatto"
 

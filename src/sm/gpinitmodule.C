@@ -36,13 +36,13 @@
 
 #include "gpinitmodule.h"
 #include "input/element.h"
-#include "integrationrule.h"
+#include "math/integrationrule.h"
 #include "material/material.h"
 #include "arrays/floatarray.h"
 #include "input/domain.h"
 #include "engng/engngm.h"
 #include "classfactory.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "cs/crosssection.h"
 #include <cassert>
 

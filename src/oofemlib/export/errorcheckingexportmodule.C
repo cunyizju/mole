@@ -45,7 +45,7 @@
 #include "classfactory.h"
 #include "dofs/dof.h"
 #include "input/oofemtxtinputrecord.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #ifdef __SM_MODULE
  #include "sm/EngineeringModels/structengngmodel.h"
  #include "sm/Elements/Beams/beam2d.h"

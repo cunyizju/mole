@@ -35,7 +35,7 @@
 #include "sm/Elements/PlaneStress/qplanstrssslip.h"
 #include "fei/fei2dquadquad.h"
 #include "cs/crosssection.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"

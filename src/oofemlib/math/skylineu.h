@@ -35,8 +35,8 @@
 #ifndef skylineu_h
 #define skylineu_h
 
-#include "sparsemtrx.h"
-#include "rowcol.h"
+#include "math/sparsemtrx.h"
+#include "math/rowcol.h"
 
 #define _IFT_SkylineUnsym_Name "skylineu"
 

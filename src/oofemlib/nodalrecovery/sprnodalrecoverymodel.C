@@ -37,8 +37,8 @@
 #include "input/element.h"
 #include "dofman/node.h"
 #include "input/connectivitytable.h"
-#include "integrationrule.h"
-#include "gausspoint.h"
+#include "math/integrationrule.h"
+#include "math/gausspoint.h"
 #include "engng/engngm.h"
 #include "classfactory.h"
 

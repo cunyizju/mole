@@ -36,7 +36,7 @@
 #define nlineardynamic_h
 
 #include "sm/EngineeringModels/structengngmodel.h"
-#include "sparsemtrxtype.h"
+#include "math/sparsemtrxtype.h"
 #include "solvers/sparselinsystemnm.h"
 #include "solvers/sparsenonlinsystemnm.h"
 #include "timediscretizationtype.h"

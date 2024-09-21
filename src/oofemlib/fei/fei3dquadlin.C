@@ -34,10 +34,10 @@
 
 #include "fei/fei3dquadlin.h"
 
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "gaussintegrationrule.h"
+#include "math/gaussintegrationrule.h"
 #include <stdexcept>
 
 namespace oofem {

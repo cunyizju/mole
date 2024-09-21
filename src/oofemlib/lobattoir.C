@@ -33,9 +33,9 @@
  */
 
 #include "lobattoir.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatarray.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 namespace oofem {
 LobattoIntegrationRule :: LobattoIntegrationRule(int n, Element *e,

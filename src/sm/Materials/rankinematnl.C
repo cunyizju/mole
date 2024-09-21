@@ -34,10 +34,10 @@
 
 #include "rankinematnl.h"
 #include "sm/Elements/structuralelement.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "error/error.h"
 #include "nonlocalmaterialext.h"
 #include "contextioerr.h"

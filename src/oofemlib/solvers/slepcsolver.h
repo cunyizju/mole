@@ -35,9 +35,9 @@
 #ifndef slepcsolver_h
 #define slepcsolver_h
 
-#include "sparsegeneigenvalsystemnm.h"
+#include "math/sparsegeneigenvalsystemnm.h"
 #include "convergedreason.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "arrays/floatarray.h"
 
 #include <slepceps.h>

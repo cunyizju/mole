@@ -40,7 +40,7 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarrayf.h"
 #include "arrays/floatmatrixf.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "matconst.h"
 #include "material/matstatus.h"
 #include "../stressstrainprincmode.h"

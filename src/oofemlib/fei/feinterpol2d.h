@@ -36,7 +36,7 @@
 #define feinterpol2d_h
 
 #include "fei/feinterpol.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 namespace oofem {
 /**

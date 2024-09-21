@@ -33,11 +33,11 @@
  */
 
 #include "mplasticmaterial2.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "datastream.h"
 #include "contextioerr.h"
 

@@ -36,7 +36,7 @@
 // cmake -DUSE_MFRONT=ON -DMFrontGenericInterface_DIR=/usr/local/share/mgis/cmake/ ..
 
 #include "mfrontusermaterial.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatarrayf.h"
 #include "arrays/floatmatrixf.h"
 #include "classfactory.h"

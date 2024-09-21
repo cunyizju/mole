@@ -32,14 +32,14 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "rheoChM.h"
 #include "material/material.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
 #include "sm/Materials/LatticeMaterials/latticelinearelastic.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "engng/engngm.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "contextioerr.h"

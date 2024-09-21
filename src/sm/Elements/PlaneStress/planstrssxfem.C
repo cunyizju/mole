@@ -42,7 +42,7 @@
 #include "input/dynamicinputrecord.h"
 #include "fei/feinterpol.h"
 #include "classfactory.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"

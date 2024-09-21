@@ -43,7 +43,7 @@
 #include "internalstatevaluetype.h"
 #include "dictionary.h"
 #include "crosssectextension.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 
 ///@name Input fields for CrossSection
 //@{

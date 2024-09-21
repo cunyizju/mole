@@ -34,7 +34,7 @@
 
 #include "discsegintegrationrule.h"
 
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "fei/fei1dlin.h"
 
 namespace oofem {

@@ -37,7 +37,7 @@
 #include "input/element.h"
 #include "material/material.h"
 #include "range.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "input/oofemtxtinputrecord.h"
 // for Range class definition outputmanager.h included
 #include "export/outputmanager.h"

@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "arrays/floatarray.h"
 #include "compcol.h"
 #include "linsystsolvertype.h"

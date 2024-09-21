@@ -34,10 +34,10 @@
 
 #include "sm/Elements/structural3delement.h"
 #include "fei/feinterpol3d.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "gaussintegrationrule.h"
-#include "mathfem.h"
+#include "math/gaussintegrationrule.h"
+#include "math/mathfem.h"
 
 namespace oofem {
 Structural3DElement::Structural3DElement(int n, Domain *aDomain) :

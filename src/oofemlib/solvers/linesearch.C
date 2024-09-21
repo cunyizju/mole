@@ -36,7 +36,7 @@
 #include "timestep.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "convergedreason.h"
 #include "engng/engngm.h"
 

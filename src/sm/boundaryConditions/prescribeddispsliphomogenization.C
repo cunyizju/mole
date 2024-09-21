@@ -38,7 +38,7 @@
 #include "set.h"
 #include "fei/feinterpol.h"
 #include "input/element.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 namespace oofem {
 

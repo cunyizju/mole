@@ -43,7 +43,7 @@
 
  #include "structuralms.h"
  #include "microplanematerial.h"
- #include "gausspoint.h"
+ #include "math/gausspoint.h"
 
 ///@name Input fields for M1Material
 //@{
@@ -117,7 +117,7 @@ public:
 
  #include "structuralms.h"
  #include "structuralmaterial.h"
- #include "gausspoint.h"
+ #include "math/gausspoint.h"
 
 
 ///@name Input fields for M1Material

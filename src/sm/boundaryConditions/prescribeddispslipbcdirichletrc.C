@@ -48,10 +48,10 @@
 #include "input/dynamicinputrecord.h"
 #include "fei/feinterpol.h"
 #include "unknownnumberingscheme.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "solvers/sparselinsystemnm.h"
 #include "assemblercallback.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "arrays/floatarrayf.h"
 #include "cs/crosssection.h"
 

@@ -39,7 +39,7 @@
 #include "timestep.h"
 #include "input/element.h"
 #include "dofs/dof.h"
-#include "sparsemtrx.h"
+#include "math/sparsemtrx.h"
 #include "verbose.h"
 #include "sm/Elements/structuralelement.h"
 #include "unknownnumberingscheme.h"
@@ -48,7 +48,7 @@
 #include "contextioerr.h"
 #include "classfactory.h"
 #include "export/outputmanager.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 
 //#define THROW_CIOERR(e) throw ContextIOERR(e, __FILE__, __LINE__); // km???
 

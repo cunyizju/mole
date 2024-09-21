@@ -34,7 +34,7 @@
 
 #include "linkslip.h"
 //#include "linearelasticmaterial.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatmatrixf.h"
 #include "arrays/floatarray.h"
@@ -42,7 +42,7 @@
 #include "arrays/floatmatrixf.h"
 //#include "CrossSections/structuralcrosssection.h"
 #include "engng/engngm.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "Elements/structuralelement.h"
 #include "datastream.h"
 #include "engng/staggeredproblem.h"

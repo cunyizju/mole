@@ -36,13 +36,13 @@
 #define classfactory_h
 
 #include "oofemcfg.h"
-#include "sparsemtrxtype.h"
+#include "math/sparsemtrxtype.h"
 #include "error/errorestimatortype.h"
 #include "dofs/doftype.h"
 #include "linsystsolvertype.h"
 //#include "patch.h" // for PatchType
 #include "nodalrecovery/nodalrecoverymodel.h" // for NodalRecoveryModelType
-#include "integrationrule.h" // for IntegrationRuleType
+#include "math/integrationrule.h" // for IntegrationRuleType
 #include "geneigvalsolvertype.h"
 #include "material/materialmappingalgorithmtype.h"
 #include "meshpackagetype.h"

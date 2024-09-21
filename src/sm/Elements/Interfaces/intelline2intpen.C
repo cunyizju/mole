@@ -37,8 +37,8 @@
 #include "dofman/dofmanager.h"
 #include "fei/fei2dlinelin.h"
 #include "fei/fei2dlinequad.h"
-#include "gausspoint.h"
-#include "gaussintegrationrule.h"
+#include "math/gausspoint.h"
+#include "math/gaussintegrationrule.h"
 
 
 namespace oofem {

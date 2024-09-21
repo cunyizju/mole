@@ -32,17 +32,17 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "skylineu.h"
-#include "rowcol.h"
+#include "math/skylineu.h"
+#include "math/rowcol.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/intarray.h"
 #include "input/domain.h"
 #include "engng/engngm.h"
 #include "input/element.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "verbose.h"
 #include "error/error.h"
-#include "sparsemtrxtype.h"
+#include "math/sparsemtrxtype.h"
 #include "bc/activebc.h"
 #include "classfactory.h"
 

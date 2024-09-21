@@ -35,11 +35,11 @@
 #include "error/meshqualityerrorestimator.h"
 #include "input/element.h"
 #include "input/elementgeometrytype.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "dofman/node.h"
-#include "integrationrule.h"
+#include "math/integrationrule.h"
 #include "fei/feinterpol.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 
 namespace oofem {
 double MeshQualityErrorEstimator :: giveElementError(EE_ErrorType type, Element *elem, TimeStep *tStep)

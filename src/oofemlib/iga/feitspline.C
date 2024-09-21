@@ -35,7 +35,7 @@
 #include "feitspline.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "iga.h"
 
 namespace oofem {

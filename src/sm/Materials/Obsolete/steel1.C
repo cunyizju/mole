@@ -34,7 +34,7 @@
 
 #include "steel1.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 
 namespace oofem {

@@ -45,8 +45,8 @@
 #include "xfem/xfemmanager.h"
 #include "dofman/dofmanager.h"
 #include "input/connectivitytable.h"
-#include "mathfem.h"
-#include "gausspoint.h"
+#include "math/mathfem.h"
+#include "math/gausspoint.h"
 #include "spatiallocalizer.h"
 
 namespace oofem {

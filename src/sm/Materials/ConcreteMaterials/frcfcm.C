@@ -33,8 +33,8 @@
  */
 
 #include "frcfcm.h"
-#include "gausspoint.h"
-#include "mathfem.h"
+#include "math/gausspoint.h"
+#include "math/mathfem.h"
 #include "classfactory.h"
 #include "contextioerr.h"
 #include "datastream.h"

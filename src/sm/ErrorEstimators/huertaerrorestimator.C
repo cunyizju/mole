@@ -41,11 +41,11 @@
 #include "bc/load.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "mathfem.h"
+#include "math/mathfem.h"
 #include "ltf/function.h"
 #include "timestep.h"
 #include "metastep.h"
-#include "integrationrule.h"
+#include "math/integrationrule.h"
 #include "input/connectivitytable.h"
 #include "cs/crosssection.h"
 #include "dofs/dof.h"
@@ -65,7 +65,7 @@
 #include "export/outputmanager.h"
 #include "bc/boundarycondition.h"
 #include "fei/feinterpol.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "unknownnumberingscheme.h"
 
 #include <vector>

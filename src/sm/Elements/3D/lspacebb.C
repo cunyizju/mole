@@ -34,7 +34,7 @@
 
 #include "sm/Elements/3D/lspacebb.h"
 #include "fei/fei3dhexalin.h"
-#include "gausspoint.h"
+#include "math/gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "classfactory.h"
