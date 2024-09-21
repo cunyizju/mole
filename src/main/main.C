@@ -39,7 +39,7 @@
  #include <Python.h>
 #endif
 
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "oofemcfg.h"
 
 #include "oofemtxtdatareader.h"

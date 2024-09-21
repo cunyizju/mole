@@ -37,7 +37,7 @@
 #include "dofman/dofmanager.h"
 #include "linsystsolvertype.h"
 #include "sm/Elements/structuralelement.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "gausspoint.h"
 #include "fei/feinterpol.h"
 #include "spatiallocalizer.h"

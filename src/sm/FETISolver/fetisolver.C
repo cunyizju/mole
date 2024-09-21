@@ -38,7 +38,7 @@
 #include "skyline.h"
 #include "verbose.h"
 #include "dofman/dofmanager.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "domain.h"
 #include "unknownnumberingscheme.h"
 #include "classfactory.h"

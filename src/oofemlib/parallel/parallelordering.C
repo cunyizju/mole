@@ -33,7 +33,7 @@
  */
 
 #include "parallel//parallelordering.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "domain.h"
 #include "unknownnumberingscheme.h"
 #include "parallel//combuff.h"

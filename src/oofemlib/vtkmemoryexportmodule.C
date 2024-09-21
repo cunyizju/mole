@@ -35,7 +35,7 @@
 #include "vtkmemoryexportmodule.h"
 #include "element.h"
 #include "timestep.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "dofman/node.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "nodalrecovery/zznodalrecoverymodel.h"

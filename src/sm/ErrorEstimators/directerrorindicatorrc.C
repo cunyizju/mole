@@ -37,7 +37,7 @@
 #include "domain.h"
 #include "element.h"
 #include "dofman/dofmanager.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "connectivitytable.h"
 #include "mathfem.h"
 #include "timestep.h"

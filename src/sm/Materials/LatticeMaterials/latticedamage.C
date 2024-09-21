@@ -39,11 +39,11 @@
 #include "arrays/floatarray.h"
 #include "arrays/floatarrayf.h"
 #include "CrossSections/latticecrosssection.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "mathfem.h"
 #include "Elements/LatticeElements/latticestructuralelement.h"
 #include "datastream.h"
-#include "staggeredproblem.h"
+#include "engng//staggeredproblem.h"
 #include "contextioerr.h"
 #include "classfactory.h"
 

@@ -33,7 +33,7 @@
  */
 
 #include "spoolessparsemtrx.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "sparsemtrxtype.h"
 #include "classfactory.h"
 

@@ -53,7 +53,7 @@ namespace bp = boost::python;
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/intarray.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "unknownnumberingscheme.h"
 #include "domain.h"
 #include "sparsemtrx.h"

@@ -38,7 +38,7 @@
 #include "element.h"
 #include "integrationrule.h"
 #include "timestep.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "classfactory.h"
 
 namespace oofem {

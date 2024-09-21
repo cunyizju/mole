@@ -50,7 +50,7 @@
 #include "xfem/propagationlaw.h"
 #include "xfem/enrichmentfronts/enrichmentfrontdonothing.h"
 
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "timestep.h"
 
 #include <string>

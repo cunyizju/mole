@@ -33,7 +33,7 @@
  */
 
 #include "parallel//wallclockloadbalancermonitor.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "domain.h"
 #include "timestep.h"
 #include "element.h"

@@ -35,7 +35,7 @@
 #ifndef problemsequence_h
 #define problemsequence_h
 
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "inputrecord.h"
 
 ///@name Input fields for ProblemSequence

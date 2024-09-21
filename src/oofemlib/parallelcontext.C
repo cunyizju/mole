@@ -33,7 +33,7 @@
  */
 
 #include "parallelcontext.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "mathfem.h"
 #include "unknownnumberingscheme.h"
 

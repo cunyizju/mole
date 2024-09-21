@@ -33,7 +33,7 @@
  */
 
 #include "petscsparsemtrx.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "activebc.h"
 #include "element.h"
 #include "dofman/dofmanager.h"

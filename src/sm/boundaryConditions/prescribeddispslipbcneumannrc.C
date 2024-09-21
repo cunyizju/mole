@@ -45,7 +45,7 @@
 #include "ltf/function.h"
 #include "solvers/sparselinsystemnm.h"
 #include "unknownnumberingscheme.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "mathfem.h"
 #include "cs/crosssection.h"
 #include "Elements/structuralelement.h"

@@ -50,7 +50,7 @@
 #include "vtkexportmodule.h"
 #include "timestep.h"
 #include "gausspoint.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "dofman/node.h"
 #include "materialinterface.h"
 #include "mathfem.h"

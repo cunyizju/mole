@@ -45,7 +45,7 @@
 #include "arrays/floatmatrix.h"
 #include "dynamicinputrecord.h"
 #include "gausspoint.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "mathfem.h"
 
 namespace oofem {

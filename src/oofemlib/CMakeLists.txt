@@ -213,9 +213,9 @@ set (core_arrays
     )
 
 set (core_engng
-    engngm.C
-    staggeredproblem.C
-    dummyengngm.C
+    engng/engngm.C
+    engng/staggeredproblem.C
+    engng/dummyengngm.C
     )
 
 set (core_element

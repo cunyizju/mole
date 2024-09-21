@@ -40,7 +40,7 @@
 #include <iterator>
 
 #include "matlabexportmodule.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "dofman/node.h"
 #include "mathfem.h"
 #include "gausspoint.h"

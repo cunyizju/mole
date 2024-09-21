@@ -39,7 +39,7 @@
 #include "connectivitytable.h"
 #include "integrationrule.h"
 #include "gausspoint.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "classfactory.h"
 
 #ifdef __PARALLEL_MODE

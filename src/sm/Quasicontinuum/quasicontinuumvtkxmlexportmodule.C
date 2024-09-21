@@ -37,7 +37,7 @@
 #include "element.h"
 #include "gausspoint.h"
 #include "timestep.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "dofman/node.h"
 #include "dofs/dof.h"
 #include "materialinterface.h"

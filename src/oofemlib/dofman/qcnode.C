@@ -44,7 +44,7 @@
 #include "fei/feinterpol.h"
 #include "spatiallocalizer.h"
 #include "classfactory.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 
 #include "outputmanager.h"
 

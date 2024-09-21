@@ -34,7 +34,7 @@
 
 #include "dyncomprow.h"
 #include "arrays/floatarray.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "domain.h"
 #include "mathfem.h"
 #include "verbose.h"

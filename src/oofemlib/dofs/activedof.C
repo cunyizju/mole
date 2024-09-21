@@ -38,7 +38,7 @@
 #include "dofman/dofmanager.h"
 #include "contextioerr.h"
 #include "activebc.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 
 namespace oofem {
 ActiveDof :: ActiveDof(DofManager *aNode, DofIDItem id, int bc) : Dof(aNode, id), equationNumber(0), bc(bc), activeBC(NULL)

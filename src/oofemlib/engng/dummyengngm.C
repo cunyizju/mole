@@ -32,41 +32,47 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#ifndef dummyengngm_h
-#define dummyengngm_h
+// Milan ?????????????????
+//#include "gpinitmodule.h"
+// Milan ?????????????????
 
-#include "engngm.h"
-#include "inputrecord.h"
+#include "engng//dummyengngm.h"
+#include "timestep.h"
+#include "classfactory.h"
 
-
-
-#define _IFT_DummyEngngModel_Name "Dummy"
 
 namespace oofem {
+REGISTER_EngngModel(DummyEngngModel);
 
-
-
-/**
- * Dummy Engneering model. Does not solve any problem, but invokes the configured export modules.
- * Usefull for exporting model geometry without solving the problem.
- */
-class OOFEM_EXPORT DummyEngngModel : public EngngModel
+DummyEngngModel :: DummyEngngModel(int i, EngngModel *_master) : EngngModel (i, _master)
 {
-public:
+    ndomains = 1;
+}
 
-    /**
-     * Constructor. Creates Engng model with number i.
-     */
-    DummyEngngModel(int i, EngngModel * _master = NULL);
-    virtual ~DummyEngngModel() {}
+void
+DummyEngngModel :: initializeFrom(InputRecord &ir)
+{
+    this->numberOfSteps = 1;
+    this->nMetaSteps   = 0;
+    this->suppressOutput = true;
+    
+}
 
-    void solveYourselfAt(TimeStep *tStep) override;
-    void initializeFrom(InputRecord &ir) override;
-    TimeStep * giveNextStep() override;
-    const char *giveClassName() const override { return "DummyEngngModel"; }
- 
+TimeStep *DummyEngngModel :: giveNextStep()
+{
+    if ( !currentStep ) {
+        // first step -> generate initial step
+        //currentStep = std::make_unique<TimeStep>(*giveSolutionStepWhenIcApply());
+        currentStep = std::make_unique<TimeStep>(giveNumberOfTimeStepWhenIcApply(), this, 1, 0., 1., 0);
+    }
+    previousStep = std :: move(currentStep);
+    currentStep = std::make_unique<TimeStep>(*previousStep, 1.);
 
-};
+    return currentStep.get();
+}
 
+void DummyEngngModel :: solveYourselfAt(TimeStep *tStep)
+{
+
+}
 } // end namespace oofem
-#endif // engngm_h

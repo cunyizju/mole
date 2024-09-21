@@ -34,7 +34,7 @@
 
 #include "structuralfe2material.h"
 #include "gausspoint.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "oofemtxtdatareader.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"

@@ -40,7 +40,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "gausspoint.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "contextioerr.h"
 

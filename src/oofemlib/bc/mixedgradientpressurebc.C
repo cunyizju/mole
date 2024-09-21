@@ -34,7 +34,7 @@
 
 #include "bc/mixedgradientpressurebc.h"
 #include "arrays/floatarray.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "element.h"
 #include "fei/feinterpol.h"
 #include "set.h"

@@ -36,7 +36,7 @@
 #include <cstdio>
 
 #include "outputexportmodule.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "domain.h"
 #include "dofman/node.h"
 #include "element.h"

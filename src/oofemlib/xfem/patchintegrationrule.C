@@ -47,7 +47,7 @@
 #include "XFEMDebugTools.h"
 
 #include "timestep.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 
 namespace oofem {
 PatchIntegrationRule :: PatchIntegrationRule(int n, Element *e, const std :: vector< Triangle > &iTriangles) :

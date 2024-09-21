@@ -38,7 +38,7 @@
 #include "domain.h"
 #include "timestep.h"
 #include "arrays/floatarray.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "set.h"
 #include "bc/boundarycondition.h"
 #include "initialcondition.h"

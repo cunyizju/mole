@@ -42,7 +42,7 @@
 #include "dynamicinputrecord.h"
 #include "fei/feinterpol.h"
 #include "spatiallocalizer.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "sm/Elements/nlstructuralelement.h"
 #include "mathfem.h"
 

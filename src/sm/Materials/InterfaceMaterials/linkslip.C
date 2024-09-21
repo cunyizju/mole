@@ -41,11 +41,11 @@
 #include "arrays/floatarrayf.h"
 #include "arrays/floatmatrixf.h"
 //#include "CrossSections/structuralcrosssection.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "mathfem.h"
 #include "Elements/structuralelement.h"
 #include "datastream.h"
-#include "staggeredproblem.h"
+#include "engng//staggeredproblem.h"
 #include "contextioerr.h"
 #include "classfactory.h"
 // #ifdef __TM_MODULE

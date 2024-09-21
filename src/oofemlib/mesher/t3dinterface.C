@@ -37,7 +37,7 @@
 #include "domain.h"
 #include "dofman/node.h"
 #include "element.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "remeshingcrit.h"
 #include "oofemtxtdatareader.h"
 #include "dynamicinputrecord.h"

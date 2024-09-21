@@ -35,7 +35,7 @@
 #ifndef structuralmaterialevaluator_h
 #define structuralmaterialevaluator_h
 
-#include "engngm.h"
+#include "engng//engngm.h"
 
 #include <fstream>
 

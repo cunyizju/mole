@@ -40,7 +40,7 @@
 #include "valuemodetype.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "dofman/node.h"
 #include "dofs/activedof.h"
 #include "dofs/masterdof.h"

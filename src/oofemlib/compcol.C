@@ -69,7 +69,7 @@
 
 #include "compcol.h"
 #include "arrays/floatarray.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "domain.h"
 #include "element.h"
 #include "sparsemtrxtype.h"

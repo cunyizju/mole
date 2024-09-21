@@ -36,7 +36,7 @@
 //  Solves finite element problems.
 
 #include "oofemtxtdatareader.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "timestep.h"
 #include "error.h"
 #include "oofeggraphiccontext.h"

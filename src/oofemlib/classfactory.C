@@ -39,7 +39,7 @@
 #include <cctype>
 
 // unique_ptrs need the base 
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "dofs/masterdof.h"
 #include "dofs/slavedof.h"
 #include "dofs/simpleslavedof.h"

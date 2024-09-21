@@ -32,8 +32,8 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "staggeredproblem.h"
-#include "engngm.h"
+#include "engng//staggeredproblem.h"
+#include "engng//engngm.h"
 #include "timestep.h"
 #include "ltf/function.h"
 #include "metastep.h"

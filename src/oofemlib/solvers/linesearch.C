@@ -38,7 +38,7 @@
 #include "arrays/intarray.h"
 #include "mathfem.h"
 #include "convergedreason.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 
 namespace oofem {
 LineSearchNM :: LineSearchNM(Domain *d, EngngModel *m) :

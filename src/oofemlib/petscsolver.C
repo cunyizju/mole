@@ -36,7 +36,7 @@
 
 #include "petscsparsemtrx.h"
 #include "convergedreason.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "arrays/floatarray.h"
 #include "verbose.h"
 #include "timer.h"

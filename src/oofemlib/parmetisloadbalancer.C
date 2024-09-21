@@ -34,7 +34,7 @@
 
 #include "parmetisloadbalancer.h"
 #include "domain.h"
-#include "engngm.h"
+#include "engng//engngm.h"
 #include "element.h"
 #include "dofman/dofmanager.h"
 #include "connectivitytable.h"
