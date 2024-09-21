@@ -52,7 +52,7 @@
 #include "matconst.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
 #include "sm/Materials/structuralms.h"
-#include "materialmapperinterface.h"
+#include "material/materialmapperinterface.h"
 #include "mapping/mmaclosestiptransfer.h"
 
 #ifdef MDM_MAPPING_DEBUG

@@ -39,7 +39,7 @@
 #include "engng/engngm.h"
 #include "dofman/node.h"
 #include "dofs/dof.h"
-#include "materialinterface.h"
+#include "material/materialinterface.h"
 #include "mathfem.h"
 #include "cltypes.h"
 #include "material/material.h"

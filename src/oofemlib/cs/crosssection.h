@@ -36,7 +36,7 @@
 #define crosssection_h
 
 #include "femcmpnn.h"
-#include "materialmode.h"
+#include "material/materialmode.h"
 #include "matresponsemode.h"
 #include "material/material.h"
 #include "internalstatetype.h"

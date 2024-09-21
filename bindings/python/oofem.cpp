@@ -86,7 +86,7 @@ namespace py = pybind11;
 #include "chartype.h"
 #include "elementgeometrytype.h"
 #include "internalstatetype.h"
-#include "materialmode.h"
+#include "material/materialmode.h"
 
 #include "integrationrule.h"
 #include "gausspoint.h"

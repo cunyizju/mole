@@ -39,7 +39,7 @@
 
 #include "matconst.h"
 #include "matstatus.h"
-#include "materialmode.h"
+#include "material/materialmode.h"
 #include "timestep.h"
 #include "internalstatetype.h"
 #include "internalstatevaluetype.h"

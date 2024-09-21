@@ -54,7 +54,7 @@
 #include "sm/Materials/isodamagemodel.h"
 #include "sm/Materials/structuralms.h"
 #include "randommaterialext.h"
-#include "materialmapperinterface.h"
+#include "material/materialmapperinterface.h"
 
 #ifdef IDM_USE_MMAClosestIPTransfer
  #include "mapping/mmaclosestiptransfer.h"

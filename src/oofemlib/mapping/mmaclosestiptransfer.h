@@ -35,7 +35,7 @@
 #ifndef mmaclosestiptransfer_h
 #define mmaclosestiptransfer_h
 
-#include "materialmappingalgorithm.h"
+#include "material/materialmappingalgorithm.h"
 
 #define _IFT_MMAClosestIPTransfer_Name "closest"
 

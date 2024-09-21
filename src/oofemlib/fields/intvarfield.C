@@ -35,7 +35,7 @@
 #include "fields/intvarfield.h"
 #include "classfactory.h"
 #include "dofman/dofmanager.h"
-#include "materialmappingalgorithm.h"
+#include "material/materialmappingalgorithm.h"
 
 namespace oofem {
 InternalVariableField :: InternalVariableField(InternalStateType ist, FieldType ft, MaterialMappingAlgorithmType mma_type, Domain *d) :

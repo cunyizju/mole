@@ -36,9 +36,9 @@
 #define intvarfield_h
 
 #include "fields/field.h"
-#include "materialmappingalgorithmtype.h"
+#include "material/materialmappingalgorithmtype.h"
 #include "internalstatetype.h"
-#include "materialmappingalgorithm.h"
+#include "material/materialmappingalgorithm.h"
 
 namespace oofem {
 class Domain;

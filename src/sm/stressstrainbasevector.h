@@ -36,7 +36,7 @@
 #define stressstrainbasevector_h
 
 #include "arrays/floatarray.h"
-#include "materialmode.h"
+#include "material/materialmode.h"
 
 namespace oofem {
 typedef MaterialMode StressStrainMatMode;

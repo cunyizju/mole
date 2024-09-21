@@ -51,7 +51,7 @@
 #include "solvers/sparselinsystemnm.h"
 #include "mesherinterface.h"
 #include "errorestimator.h"
-#include "materialmappingalgorithm.h"
+#include "material/materialmappingalgorithm.h"
 #include "ltf/function.h"
 #include "material/material.h"
 #include "cs/crosssection.h"

@@ -41,7 +41,7 @@
 #include "arrays/intarray.h"
 #include "integrationdomain.h"
 #include "elementgeometrytype.h"
-#include "materialmode.h"
+#include "material/materialmode.h"
 #include "dofman/node.h"
 #include "element.h"
 

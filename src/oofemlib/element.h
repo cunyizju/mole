@@ -41,7 +41,7 @@
 #include "domain.h"
 #include "arrays/floatmatrix.h"
 #include "integrationdomain.h"
-#include "materialmode.h"
+#include "material/materialmode.h"
 #include "elementgeometrytype.h"
 #include "valuemodetype.h"
 #include "internalstatemode.h"

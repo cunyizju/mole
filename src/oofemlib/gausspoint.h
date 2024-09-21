@@ -46,7 +46,7 @@
 #include "integrationpointstatus.h"
 #include "element.h"
 #include "arrays/floatarray.h"
-#include "materialmode.h"
+#include "material/materialmode.h"
 
 namespace oofem {
 class Material;

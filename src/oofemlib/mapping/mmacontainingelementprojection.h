@@ -35,7 +35,7 @@
 #ifndef mmacontainingelementprojection_h
 #define mmacontainingelementprojection_h
 
-#include "materialmappingalgorithm.h"
+#include "material/materialmappingalgorithm.h"
 
 namespace oofem {
 class Domain;

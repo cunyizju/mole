@@ -36,7 +36,7 @@
 #define dummycrosssection_h
 
 #include "cs/crosssection.h"
-#include "materialmode.h"
+#include "material/materialmode.h"
 #include "matresponsemode.h"
 #include "material/material.h"
 #include "internalstatetype.h"

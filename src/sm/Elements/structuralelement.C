@@ -55,7 +55,7 @@
 #include "arrays/floatmatrix.h"
 #include "nonlocmatstiffinterface.h"
 #include "mathfem.h"
-#include "materialmapperinterface.h"
+#include "material/materialmapperinterface.h"
 #include "unknownnumberingscheme.h"
 #include "set.h"
 

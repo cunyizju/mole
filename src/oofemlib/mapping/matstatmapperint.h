@@ -35,7 +35,7 @@
 #ifndef MATSTATMAPPERINT_H_
 #define MATSTATMAPPERINT_H_
 
-#include "materialmappingalgorithm.h"
+#include "material/materialmappingalgorithm.h"
 
 #include <memory>
 

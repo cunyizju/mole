@@ -39,7 +39,7 @@
 #include "xfemmanager.h"
 #include "geometry.h"
 #include "matresponsemode.h"
-#include "materialmode.h"
+#include "material/materialmode.h"
 
 #define _IFT_XfemElementInterface_CohesiveZoneMaterial "czmaterial"
 #define _IFT_XfemElementInterface_NumIntPointsCZ "nipcz"

@@ -44,7 +44,7 @@
 #include "nodalrecovery/nodalrecoverymodel.h" // for NodalRecoveryModelType
 #include "integrationrule.h" // for IntegrationRuleType
 #include "geneigvalsolvertype.h"
-#include "materialmappingalgorithmtype.h"
+#include "material/materialmappingalgorithmtype.h"
 #include "meshpackagetype.h"
 #include "dofiditem.h"
 

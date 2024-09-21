@@ -45,7 +45,7 @@
 #include "error.h"
 #include "classfactory.h"
 #include "datastream.h"
-#include "materialmapperinterface.h"
+#include "material/materialmapperinterface.h"
 #include "contextioerr.h"
 #include "mathfem.h"
 #include "fei/feinterpol.h"

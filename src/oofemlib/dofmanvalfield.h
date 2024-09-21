@@ -43,7 +43,7 @@
 #include <vector>
 #include "internalstatetype.h"
 #include "arrays/intarray.h"
-#include "materialmappingalgorithm.h"
+#include "material/materialmappingalgorithm.h"
 #include "mapping/mmashapefunctprojection.h"
 #include "cltypes.h"
 

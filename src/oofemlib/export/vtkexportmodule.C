@@ -52,7 +52,7 @@
 #include "gausspoint.h"
 #include "engng/engngm.h"
 #include "dofman/node.h"
-#include "materialinterface.h"
+#include "material/materialinterface.h"
 #include "mathfem.h"
 #include "cltypes.h"
 #include "element.h"

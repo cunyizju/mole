@@ -18,7 +18,7 @@ set (core_unsorted
     # Semi sorted:
     errorestimator.C meshqualityerrorestimator.C remeshingcrit.C
     sloangraph.C sloangraphnode.C sloanlevelstruct.C
-    eleminterpunknownmapper.C primaryunknownmapper.C materialmappingalgorithm.C
+    eleminterpunknownmapper.C primaryunknownmapper.C 
     nonlocalmaterialext.C randommaterialext.C
     inputrecord.C oofemtxtinputrecord.C dynamicinputrecord.C
     dynamicdatareader.C oofemtxtdatareader.C tokenizer.C parser.C
@@ -162,6 +162,7 @@ set (core_dofman
 set (core_material
     material/material.C
     material/dummymaterial.C
+    material/materialmappingalgorithm.C
     )
 
 set (core_export

@@ -37,7 +37,7 @@
 #include "geometrybasedei.h"
 #include "engng/engngm.h"
 #include "gausspoint.h"
-#include "materialmode.h"
+#include "material/materialmode.h"
 #include "fei/fei2dquadlin.h"
 #include "patchintegrationrule.h"
 #include "delaunay.h"

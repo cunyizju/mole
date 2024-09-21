@@ -37,7 +37,7 @@
 #include "arrays/floatmatrix.h"
 #include "error.h"
 #include "datastream.h"
-#include "materialmode.h"
+#include "material/materialmode.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "datastream.h"
 

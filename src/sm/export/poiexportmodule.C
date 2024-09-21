@@ -36,7 +36,7 @@
 #include "timestep.h"
 #include "domain.h"
 #include "engng/engngm.h"
-#include "materialmappingalgorithm.h"
+#include "material/materialmappingalgorithm.h"
 #include "mapping/mmaclosestiptransfer.h"
 #include "mapping/mmaleastsquareprojection.h"
 #include "mapping/mmashapefunctprojection.h"
