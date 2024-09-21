@@ -36,7 +36,7 @@
 #define boundaryload_h
 
 #include "bc/load.h"
-#include "bctype.h"
+#include "bc/bctype.h"
 #include "valuemodetype.h"
 #include "dictionary.h"
 #include "ltf/scalarfunction.h"

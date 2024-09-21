@@ -33,7 +33,7 @@
  */
 
 #include "bc/generalboundarycondition.h"
-#include "bcvaltype.h"
+#include "bc/bcvaltype.h"
 #include "ltf/function.h"
 #include "timestep.h"
 #include "datastream.h"

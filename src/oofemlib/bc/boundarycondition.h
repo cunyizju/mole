@@ -37,7 +37,7 @@
 
 #include "bc/generalboundarycondition.h"
 #include "arrays/floatarray.h"
-#include "bctype.h"
+#include "bc/bctype.h"
 #include "valuemodetype.h"
 
 /**
