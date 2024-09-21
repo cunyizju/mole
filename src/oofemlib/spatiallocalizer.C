@@ -38,8 +38,8 @@
 #include "dofman/node.h"
 #include "mathfem.h"
 #include "error.h"
-#include "floatarray.h"
-#include "intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/intarray.h"
 #include "feinterpol.h"
 
 namespace oofem {

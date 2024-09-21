@@ -33,8 +33,8 @@
  */
 
 #include "rowcol.h"
-#include "intarray.h"
-#include "floatarray.h"
+#include "arrays/intarray.h"
+#include "arrays/floatarray.h"
 #include "mathfem.h"
 #include "error.h"
 

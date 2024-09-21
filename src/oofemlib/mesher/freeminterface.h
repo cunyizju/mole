@@ -36,7 +36,7 @@
 #define freeminterface_h
 
 #include "mesherinterface.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 
 #define _IFT_FreemInterface_Name "freem"
 

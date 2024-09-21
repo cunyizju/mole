@@ -45,7 +45,7 @@
 #include "integrationrule.h"
 #include "integrationpointstatus.h"
 #include "element.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "materialmode.h"
 
 namespace oofem {

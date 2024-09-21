@@ -36,8 +36,8 @@
 #define winklerpasternak_h
 
 #include "sm/Materials/structuralmaterial.h"
-#include "floatarray.h"
-#include "floatmatrix.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrix.h"
 #include "matconst.h"
 #include "matstatus.h"
 #include "stressstrainprincmode.h"

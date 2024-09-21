@@ -34,11 +34,11 @@
 
 #include "fei3dhexalin.h"
 #include "mathfem.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
 #include "gaussintegrationrule.h"
-#include "floatarrayf.h"
-#include "floatmatrixf.h"
+#include "arrays/floatarrayf.h"
+#include "arrays/floatmatrixf.h"
 
 namespace oofem {
 

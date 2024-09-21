@@ -35,7 +35,7 @@
 #include "linearelasticmaterial.h"
 #include "anisolinearelasticmaterial.h"
 #include "structuralms.h"
-#include "floatmatrix.h"
+#include "arrays/floatmatrix.h"
 #include "classfactory.h"
 #include "dynamicinputrecord.h"
 

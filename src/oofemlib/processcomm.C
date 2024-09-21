@@ -33,7 +33,7 @@
  */
 
 #include "processcomm.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 #include "combuff.h"
 #include "dyncombuff.h"
 

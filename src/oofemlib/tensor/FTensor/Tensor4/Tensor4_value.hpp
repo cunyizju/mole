@@ -5,7 +5,7 @@
 #include "Tensor4_contracted.hpp"
 
 #include <ostream>
-#include "floatmatrixf.h"
+#include "arrays/floatmatrixf.h"
 #ifdef FTENSOR_DEBUG
 #include <sstream>
 #include <stdexcept>

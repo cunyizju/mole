@@ -40,7 +40,7 @@
 #include "material/material.h"
 #include "sm/Materials/deformationtheorymaterial.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "sm/Materials/structuralms.h"
 
 ///@name Input fields for Concrete2

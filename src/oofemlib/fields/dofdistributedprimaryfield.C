@@ -37,7 +37,7 @@
 #include "dofs/dof.h"
 #include "domain.h"
 #include "timestep.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "engngm.h"
 #include "set.h"
 #include "bc/boundarycondition.h"

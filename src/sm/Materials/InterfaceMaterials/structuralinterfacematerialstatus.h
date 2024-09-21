@@ -36,11 +36,11 @@
 #define structuralinterfacematerialstatus_h
 
 #include "matstatus.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "mapping/matstatmapperint.h"
-#include "floatmatrix.h"
-#include "floatarrayf.h"
-#include "floatmatrixf.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarrayf.h"
+#include "arrays/floatmatrixf.h"
 
 namespace oofem {
 class GaussPoint;

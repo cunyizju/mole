@@ -37,7 +37,7 @@
 
 #include "dofman/node.h"
 #include "domain.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 
 
 ///@name Input fields for LatticeCouplingNode

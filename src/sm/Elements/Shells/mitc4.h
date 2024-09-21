@@ -41,7 +41,7 @@
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "spatiallocalizer.h"
 #include "bc/load.h"
-#include "floatmatrixf.h"
+#include "arrays/floatmatrixf.h"
 //#include "eleminterpmapperinterface.h"//
 
 #define _IFT_MITC4Shell_Name "mitc4shell"

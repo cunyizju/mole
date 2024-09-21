@@ -38,7 +38,7 @@
 #include "sloanlevelstruct.h"
 #include "sloangraphnode.h"
 #include "sloangraph.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 #include "domain.h"
 
 namespace oofem {

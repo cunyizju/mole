@@ -36,8 +36,8 @@
 #define crackexportmodule_h
 
 #include "exportmodule.h"
-#include "floatarray.h"
-#include "intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/intarray.h"
 
 ///@name Input fields for MPSMaterial
 //@{

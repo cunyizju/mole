@@ -33,11 +33,11 @@
  */
 
 #include "fei3dhexatriquad.h"
-#include "intarray.h"
-#include "floatarray.h"
-#include "floatarrayf.h"
-#include "floatmatrix.h"
-#include "floatmatrixf.h"
+#include "arrays/intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatarrayf.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatmatrixf.h"
 #include "gaussintegrationrule.h"
 
 namespace oofem {

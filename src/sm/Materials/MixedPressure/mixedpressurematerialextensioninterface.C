@@ -37,8 +37,8 @@
 #include "domain.h"
 #include "mixedpressurematerialextensioninterface.h"
 #include "gausspoint.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
 #include "../sm/Materials/structuralmaterial.h"
 
 #include <list>

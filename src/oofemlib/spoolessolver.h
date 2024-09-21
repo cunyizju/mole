@@ -37,7 +37,7 @@
 #include "solvers/sparselinsystemnm.h"
 #include "sparsemtrx.h"
 #include "convergedreason.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 extern "C" {
 #include <spooles/misc.h>
 #include <spooles/FrontMtx.h>

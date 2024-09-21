@@ -34,8 +34,8 @@
 
 #include "idmgrad.h"
 #include "gausspoint.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
 #include "mathfem.h"
 #include "sparsemtrx.h"
 #include "Materials/isolinearelasticmaterial.h"

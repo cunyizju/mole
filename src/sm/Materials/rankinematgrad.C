@@ -35,8 +35,8 @@
 #include "rankinematgrad.h"
 #include "stressvector.h"
 #include "gausspoint.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
 #include "error.h"
 #include "classfactory.h"
 

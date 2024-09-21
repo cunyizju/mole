@@ -39,7 +39,7 @@
 #include "solvers/sparselinsystemnm.h"
 #include "sparsemtrxtype.h"
 #include "sparsemtrx.h"
-#include "floatmatrix.h"
+#include "arrays/floatmatrix.h"
 #include "connectivitytable.h"
 
 #define _IFT_FreeWarping_Name "freewarping"

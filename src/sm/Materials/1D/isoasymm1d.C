@@ -34,7 +34,7 @@
 
 #include "isoasymm1d.h"
 #include "sm/Materials/structuralms.h"
-#include "floatmatrix.h"
+#include "arrays/floatmatrix.h"
 #include "gausspoint.h"
 #include "classfactory.h"
 #include "dynamicinputrecord.h"

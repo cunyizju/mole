@@ -37,7 +37,7 @@
 
 #include "sm/Materials/structuralmaterial.h"
 #include "matconst.h"
-#include "floatarrayf.h"
+#include "arrays/floatarrayf.h"
 
 ///@name Input fields for MicroplaneMaterial
 //@{

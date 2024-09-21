@@ -35,7 +35,7 @@
 #include "particle.h"
 #include "classfactory.h"
 #include "error.h"
-#include "floatmatrix.h"
+#include "arrays/floatmatrix.h"
 
 namespace oofem {
 REGISTER_DofManager(Particle);

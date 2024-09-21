@@ -34,9 +34,9 @@
 
 #include "dynamicinputrecord.h"
 #include "femcmpnn.h"
-#include "intarray.h"
-#include "floatarray.h"
-#include "floatmatrix.h"
+#include "arrays/intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrix.h"
 #include "dictionary.h"
 #include "range.h"
 #include "dofman/node.h"

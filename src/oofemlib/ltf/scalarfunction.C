@@ -33,7 +33,7 @@
  */
 
 #include "ltf/scalarfunction.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "domain.h"
 #include "ltf/function.h"
 #include "parser.h"

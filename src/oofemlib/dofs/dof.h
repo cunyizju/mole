@@ -38,8 +38,8 @@
 #include <cstdio>
 
 #include "oofemcfg.h"
-#include "floatarray.h"
-#include "intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/intarray.h"
 #include "unknowntype.h"
 #include "valuemodetype.h"
 #include "dofiditem.h"

@@ -36,7 +36,7 @@
 #define dkt3d_h
 
 #include "dkt.h"
-#include "floatmatrix.h"
+#include "arrays/floatmatrix.h"
 
 #define _IFT_DKTPlate3d_Name "dktplate3d"
 

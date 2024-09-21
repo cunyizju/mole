@@ -33,8 +33,8 @@
  */
 
 #include "dynamicinputrecord.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
 #include "mathfem.h"
 #include "tensor/tensor2.h"
 #include "tensor/tensor4.h"

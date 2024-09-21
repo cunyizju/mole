@@ -33,11 +33,11 @@
  */
 
 #include "concretedpm.h"
-#include "floatarray.h"
-#include "floatmatrix.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrix.h"
 #include "sm/Materials/structuralms.h"
 #include "gausspoint.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 #include "mathfem.h"
 #include "datastream.h"
 #include "contextioerr.h"

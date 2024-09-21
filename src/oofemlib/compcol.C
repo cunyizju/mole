@@ -68,7 +68,7 @@
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 #include "compcol.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "engngm.h"
 #include "domain.h"
 #include "element.h"

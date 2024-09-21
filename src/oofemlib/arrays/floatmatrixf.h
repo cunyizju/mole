@@ -40,8 +40,8 @@
 #include "oofemcfg.h"
 #include "contextioresulttype.h"
 #include "contextmode.h"
-#include "floatmatrix.h"
-#include "floatarrayf.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarrayf.h"
 
 #include <array>
 #include <initializer_list>

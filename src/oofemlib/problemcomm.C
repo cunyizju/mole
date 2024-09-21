@@ -33,7 +33,7 @@
  */
 
 #include "problemcomm.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 #include "error.h"
 #include "engngm.h"
 #include "element.h"

@@ -37,7 +37,7 @@
 
 #include "sparsegeneigenvalsystemnm.h"
 #include "convergedreason.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 
 #define _IFT_InverseIteration_Name "inverseit"
 

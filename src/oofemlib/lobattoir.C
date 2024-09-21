@@ -34,7 +34,7 @@
 
 #include "lobattoir.h"
 #include "gausspoint.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "mathfem.h"
 
 namespace oofem {

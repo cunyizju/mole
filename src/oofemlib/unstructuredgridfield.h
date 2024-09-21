@@ -36,8 +36,8 @@
 #define unstructuredgridfield_h
 
 #include "fields/field.h"
-#include "floatarray.h"
-#include "intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/intarray.h"
 #include "elementgeometrytype.h"
 #include "feinterpol.h"
 #include "fei2dlinelin.h"

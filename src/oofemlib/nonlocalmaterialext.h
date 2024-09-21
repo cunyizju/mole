@@ -37,7 +37,7 @@
 
 #include "matstatus.h"
 #include "interface.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 #include "grid.h"
 #include "mathfem.h"
 #include "dynamicinputrecord.h"

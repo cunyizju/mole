@@ -37,8 +37,8 @@
 
 #include "sm/Elements/Interfaces/structuralinterfaceelement.h"
 #include "fei3dquadlin.h"
-#include "floatarrayf.h"
-#include "floatmatrixf.h"
+#include "arrays/floatarrayf.h"
+#include "arrays/floatmatrixf.h"
 
 #define _IFT_IntElSurfQuad1_Name "intelsurfquad1"
 

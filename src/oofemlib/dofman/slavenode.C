@@ -34,8 +34,8 @@
 
 #include "dofman/slavenode.h"
 #include "dofs/slavedof.h"
-#include "floatarray.h"
-#include "intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/intarray.h"
 #include "entityrenumberingscheme.h"
 #include "classfactory.h"
 

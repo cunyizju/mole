@@ -33,8 +33,8 @@
  */
 
 #include "stressstrainbasevector.h"
-#include "intarray.h"
-#include "floatmatrix.h"
+#include "arrays/intarray.h"
+#include "arrays/floatmatrix.h"
 #include "error.h"
 #include "datastream.h"
 #include "materialmode.h"

@@ -40,8 +40,8 @@
 
 #include "sm/Materials/structuralmaterial.h"
 //#include "sm/Materials/linearelasticmaterial.h"
-#include "floatarray.h"
-#include "floatmatrix.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrix.h"
 
 #include "matconst.h"
 #include "sm/Elements/structuralelement.h"

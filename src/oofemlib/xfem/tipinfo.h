@@ -8,8 +8,8 @@
 #ifndef TIPINFO_H_
 #define TIPINFO_H_
 
-#include "floatarray.h"
-#include "intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/intarray.h"
 
 namespace oofem {
 /**

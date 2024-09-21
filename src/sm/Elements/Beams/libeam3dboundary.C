@@ -39,9 +39,9 @@
 #include "cs/crosssection.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
-#include "floatmatrix.h"
-#include "intarray.h"
-#include "floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/intarray.h"
+#include "arrays/floatarray.h"
 #include "mathfem.h"
 #include "classfactory.h"
 

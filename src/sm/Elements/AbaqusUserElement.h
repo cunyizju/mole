@@ -36,8 +36,8 @@
 #define abaqususerelement_h
 
 #include "structuralelement.h"
-#include "floatarray.h"
-#include "floatmatrix.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrix.h"
 #include "timestep.h"
 
 ///@name Input fields for AbaqusUserElement

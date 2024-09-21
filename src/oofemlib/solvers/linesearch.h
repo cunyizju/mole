@@ -38,7 +38,7 @@
 
 #include "nummet.h"
 #include "convergedreason.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 
 ///@name Input fields for LineSearchNM
 //@{

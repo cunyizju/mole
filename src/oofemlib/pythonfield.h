@@ -36,8 +36,8 @@
 #define pythonfield_h
 
 #include "fields/field.h"
-#include "floatarray.h"
-#include "intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/intarray.h"
 #include "classfactory.h"
 #include "dynamicinputrecord.h"
 #include "dofman/dofmanager.h"

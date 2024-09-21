@@ -34,7 +34,7 @@
 
 #include "latticeviscoelastic.h"
 #include "gausspoint.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "datastream.h"
 #include "contextioerr.h"
 #include "classfactory.h"

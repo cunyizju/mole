@@ -34,7 +34,7 @@
 
 #include "bc/pointload.h"
 #include "ltf/function.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "classfactory.h"
 #include "dynamicinputrecord.h"
 

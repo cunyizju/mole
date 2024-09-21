@@ -38,7 +38,7 @@
 #include "element.h"
 #include "integrationrule.h"
 #include "material/material.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "domain.h"
 #include "engngm.h"
 #include "classfactory.h"

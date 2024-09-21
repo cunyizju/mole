@@ -36,7 +36,7 @@
 #define exportmodule_h
 
 #include "oofemcfg.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 #include "inputrecord.h"
 #include "range.h"
 #include "set.h"

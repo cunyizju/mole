@@ -36,7 +36,7 @@
 #define linearedgeload_h
 
 #include "bc/boundaryload.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 
 ///@name Input fields for LinearEdgeLoad
 //@{

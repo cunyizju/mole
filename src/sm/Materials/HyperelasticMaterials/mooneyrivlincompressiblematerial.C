@@ -33,8 +33,8 @@
  */
 
 #include "mooneyrivlincompressiblematerial.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
 #include "classfactory.h"
 #include "mathfem.h"
 

@@ -43,8 +43,8 @@
 
 #include "nummet.h"
 #include "convergedreason.h"
-#include "floatarray.h"
-#include "intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/intarray.h"
 
 ///@name Input fields for SparseNonLinearSystemNM
 //@{

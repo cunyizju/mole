@@ -39,8 +39,8 @@
 #include "sm/Materials/structuralms.h"
 #include "linearelasticmaterial.h"
 #include "dictionary.h"
-#include "floatarray.h"
-#include "floatmatrix.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrix.h"
 
 // this turns on or off a bunch of internal variables
 // that allow tracking the distribution of dissipated energy

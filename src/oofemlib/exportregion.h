@@ -36,7 +36,7 @@
 #define exportregion_h
 
 #include "exportmodule.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 #include "internalstatevaluetype.h"
 #include "internalstatetype.h"
 #include "unknowntype.h"

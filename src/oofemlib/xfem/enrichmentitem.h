@@ -38,7 +38,7 @@
 #include "femcmpnn.h"
 #include "dofiditem.h"
 #include "tipinfo.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 #include "dofman/dofmanager.h"
 #include "xfem/enrichmentfronts/enrichmentfront.h"
 #include "xfem/enrichmentfunction.h"

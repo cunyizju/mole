@@ -36,7 +36,7 @@
 #define boudary_h
 
 #include "bc/generalboundarycondition.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "bctype.h"
 #include "valuemodetype.h"
 

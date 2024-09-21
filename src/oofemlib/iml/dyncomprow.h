@@ -41,7 +41,7 @@
 #define dyncomprow_h
 
 #include "sparsemtrx.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 
 #define _IFT_DynCompRow_Name "dcsr"
 

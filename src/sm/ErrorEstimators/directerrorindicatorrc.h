@@ -37,7 +37,7 @@
 
 #include "interface.h"
 #include "remeshingcrit.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "statecountertype.h"
 
 #include <map>

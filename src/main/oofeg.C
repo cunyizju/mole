@@ -51,7 +51,7 @@
 
 #include "util.h"
 #include "dofman/node.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 #include "oofemcfg.h"
 #include "errorestimator.h"
 #include "remeshingcrit.h"

@@ -44,8 +44,8 @@
 #include "oofemcfg.h"
 #include "datareader.h"
 #include "inputrecord.h"
-#include "intarray.h"
-#include "floatarray.h"
+#include "arrays/intarray.h"
+#include "arrays/floatarray.h"
 
 #include <unordered_map>
 #include <list>

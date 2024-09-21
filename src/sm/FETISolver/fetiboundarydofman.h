@@ -35,7 +35,7 @@
 #ifndef fetiboundarydofman_h
 #define fetiboundarydofman_h
 
-#include "intarray.h"
+#include "arrays/intarray.h"
 
 namespace oofem {
 /**

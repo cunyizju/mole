@@ -38,7 +38,7 @@
 #include "solvers/sparselinsystemnm.h"
 #include "convergedreason.h"
 #include "sparsemtrx.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 
 #define _IFT_LDLTFactorization_Name "direct"
 

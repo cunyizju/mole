@@ -34,8 +34,8 @@
 
 #include "rcm2.h"
 #include "gausspoint.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
 #include "contextioerr.h"
 #include "mathfem.h"
 

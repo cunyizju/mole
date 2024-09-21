@@ -36,8 +36,8 @@
 #define latticestructuralmaterial_h
 
 #include "../structuralmaterial.h"
-#include "floatarray.h"
-#include "floatmatrix.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrix.h"
 #include "matconst.h"
 #include "matstatus.h"
 #include "valuemodetype.h"

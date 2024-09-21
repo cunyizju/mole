@@ -34,7 +34,7 @@
 
 #include "mazarsmodelnl.h"
 #include "gausspoint.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "nonlocalmaterialext.h"
 #include "contextioerr.h"
 #include "classfactory.h"

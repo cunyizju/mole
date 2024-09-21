@@ -35,7 +35,7 @@
 #ifndef voidprecond_h
 #define voidprecond_h
 
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "sparsemtrx.h"
 #include "precond.h"
 

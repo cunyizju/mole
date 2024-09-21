@@ -36,8 +36,8 @@
 #define uniformgridfield_h
 
 #include "fields/field.h"
-#include "floatarray.h"
-#include "intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/intarray.h"
 
 namespace oofem {
 /**

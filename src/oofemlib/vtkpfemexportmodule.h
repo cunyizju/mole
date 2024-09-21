@@ -36,7 +36,7 @@
 #define vtkpfemexportmodule_h
 
 #include "vtkbaseexportmodule.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 #include "nodalrecovery/nodalrecoverymodel.h"
 #include "interface.h"
 #include "internalstatevaluetype.h"

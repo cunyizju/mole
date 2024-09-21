@@ -32,9 +32,9 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "floatmatrix.h"
-#include "floatarray.h"
-#include "intarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
+#include "arrays/intarray.h"
 #include "mathfem.h"
 #include "error.h"
 #include "datastream.h"

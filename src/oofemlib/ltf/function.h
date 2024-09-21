@@ -37,8 +37,8 @@
 
 #include "femcmpnn.h"
 #include "valuemodetype.h"
-#include "intarray.h"
-#include "floatarray.h"
+#include "arrays/intarray.h"
+#include "arrays/floatarray.h"
 #include "gausspoint.h"
 
 #include <map>

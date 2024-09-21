@@ -47,7 +47,7 @@
 #include "element.h"
 #include "mapping/matstatmapperint.h"
 #include "nummet.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "exportmodulemanager.h"
 #include "vtkxmlexportmodule.h"
 

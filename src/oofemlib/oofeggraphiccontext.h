@@ -39,13 +39,13 @@
 #pragma once
 
 #include "oofemcfg.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 #include "internalstatemode.h"
 #include "internalstatetype.h"
-#include "floatmatrix.h"
+#include "arrays/floatmatrix.h"
 #include "timer.h"
 #include "outputmanager.h"
-#include "floatarrayf.h"
+#include "arrays/floatarrayf.h"
 
 #include <iostream>
 #include <list>

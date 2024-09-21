@@ -34,7 +34,7 @@
 
 #include "dofman/elementinternaldofman.h"
 #include "dofs/dof.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 #include "verbose.h"
 
 namespace oofem {

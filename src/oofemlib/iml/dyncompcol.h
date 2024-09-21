@@ -41,7 +41,7 @@
 #define dyncompcol_h
 
 #include "sparsemtrx.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 
 #define _IFT_DynCompCol_Name "dcsc"
 

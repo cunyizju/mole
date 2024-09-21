@@ -31,8 +31,8 @@
 #ifndef icprecond_h
 #define icprecond_h
 
-#include "floatarray.h"
-#include "intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/intarray.h"
 #include "symcompcol.h"
 #include "precond.h"
 

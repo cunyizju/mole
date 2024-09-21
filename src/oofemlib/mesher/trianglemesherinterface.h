@@ -35,8 +35,8 @@
 #ifndef trianglemesherinterface_h
 #define trianglemesherinterface_h
 
-#include "floatarray.h"
-#include "intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/intarray.h"
 #include "oofemcfg.h"
 
 #include <vector>

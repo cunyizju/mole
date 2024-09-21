@@ -34,8 +34,8 @@
 
 #include "simplevitrificationmaterial.h"
 #include "gausspoint.h"
-#include "floatarrayf.h"
-#include "floatmatrixf.h"
+#include "arrays/floatarrayf.h"
+#include "arrays/floatmatrixf.h"
 #include "dynamicinputrecord.h"
 #include "classfactory.h"
 

@@ -33,7 +33,7 @@
  */
 
 #include "feinterpol1d.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "gaussintegrationrule.h"
 #include <stdexcept>
 

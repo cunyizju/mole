@@ -39,7 +39,7 @@
 #include "solvers/sparsenonlinsystemnm.h"
 #include "convergedreason.h"
 #include "sparsemtrx.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "solvers/linesearch.h"
 #include "solvers/nrsolver.h"
 

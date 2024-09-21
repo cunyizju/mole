@@ -34,10 +34,10 @@
 
 #include "fei1dhermite.h"
 #include "mathfem.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
-#include "floatmatrixf.h"
-#include "floatarrayf.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrixf.h"
+#include "arrays/floatarrayf.h"
 
 namespace oofem {
 

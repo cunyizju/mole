@@ -46,8 +46,8 @@
 #include "vtkxmlexportmodule.h"
 #include "fracturemanager.h"
 #include "dofs/dof.h"
-#include "floatarrayf.h"
-#include "floatmatrixf.h"
+#include "arrays/floatarrayf.h"
+#include "arrays/floatmatrixf.h"
 #include "connectivitytable.h"
 #include <fstream>
 

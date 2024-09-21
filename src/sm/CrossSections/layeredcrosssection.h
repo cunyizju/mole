@@ -36,8 +36,8 @@
 #define layeredcrosssection_h
 
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "floatarray.h"
-#include "floatmatrix.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrix.h"
 #include "interface.h"
 #include "gaussintegrationrule.h"
 #include "domain.h"

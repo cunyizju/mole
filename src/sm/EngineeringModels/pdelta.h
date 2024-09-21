@@ -40,8 +40,8 @@
 #include "sparsegeneigenvalsystemnm.h"
 #include "solvers/sparselinsystemnm.h"
 #include "sparsemtrx.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
 #include "nummet.h"
 
 ///@name Input fields for LinearStability

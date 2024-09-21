@@ -36,7 +36,7 @@
 #define unknownnumberingscheme_h
 
 #include "dofs/dof.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 
 namespace oofem {
 /**

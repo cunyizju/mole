@@ -33,7 +33,7 @@
  */
 
 #include "sm/Contact/celnode2node.h"
-#include "floatmatrix.h"
+#include "arrays/floatmatrix.h"
 #include "dofs/masterdof.h"
 #include "unknownnumberingscheme.h"
 #include "gaussintegrationrule.h"

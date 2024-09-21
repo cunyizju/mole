@@ -36,8 +36,8 @@
 #define feinurbs_h
 
 #include "feibspline.h"
-#include "floatarray.h"
-#include "floatmatrix.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrix.h"
 #include "mathfem.h"
 
 ///@name Input fields for NURBSInterpolation

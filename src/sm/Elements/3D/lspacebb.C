@@ -35,8 +35,8 @@
 #include "sm/Elements/3D/lspacebb.h"
 #include "fei3dhexalin.h"
 #include "gausspoint.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
 #include "classfactory.h"
 
 #ifdef __OOFEG

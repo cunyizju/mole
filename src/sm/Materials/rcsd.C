@@ -34,8 +34,8 @@
 
 #include "rcsd.h"
 #include "gausspoint.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
 #include "mathfem.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
 #include "datastream.h"

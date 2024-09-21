@@ -35,8 +35,8 @@
 #include "polylinenonlocalbarrier.h"
 #include "domain.h"
 #include "dofman/node.h"
-#include "intarray.h"
-#include "floatarray.h"
+#include "arrays/intarray.h"
+#include "arrays/floatarray.h"
 #include "mathfem.h"
 #include "classfactory.h"
 

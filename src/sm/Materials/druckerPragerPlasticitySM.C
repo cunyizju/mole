@@ -34,11 +34,11 @@
 
 #include "druckerPragerPlasticitySM.h"
 
-#include "floatarray.h"
-#include "floatmatrix.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrix.h"
 #include "sm/Materials/structuralms.h"
 #include "gausspoint.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
 #include "datastream.h"

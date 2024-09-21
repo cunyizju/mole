@@ -35,7 +35,7 @@
 
 #include "gjacobi.h"
 #include "mathfem.h"
-#include "floatmatrix.h"
+#include "arrays/floatmatrix.h"
 
 namespace oofem {
 GJacobi :: GJacobi(Domain *d, EngngModel *m) :

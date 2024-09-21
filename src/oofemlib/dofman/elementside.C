@@ -34,8 +34,8 @@
 
 #include "dofman/elementside.h"
 #include "dofs/dof.h"
-#include "floatmatrix.h"
-#include "intarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/intarray.h"
 #include "verbose.h"
 #include "classfactory.h"
 

@@ -36,8 +36,8 @@
 #define subdivision_h
 
 #include "mesherinterface.h"
-#include "floatarray.h"
-#include "intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/intarray.h"
 #include "element.h"
 #include "dofman/dofmanager.h"
 #include "connectivitytable.h"

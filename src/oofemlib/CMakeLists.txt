@@ -207,9 +207,9 @@ set (core_iga
     )
 
 set (core_arrays
-    intarray.C
-    floatarray.C
-    floatmatrix.C
+    arrays/intarray.C
+    arrays/floatarray.C
+    arrays/floatmatrix.C
     )
 
 set (core_engng

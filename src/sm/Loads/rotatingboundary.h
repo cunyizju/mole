@@ -36,8 +36,8 @@
 #define rotatingboundary_h
 
 #include "bc/boundarycondition.h"
-#include "floatarray.h"
-#include "floatmatrix.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrix.h"
 
 ///@name Input fields for RotatingBoundary
 //@{

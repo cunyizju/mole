@@ -33,8 +33,8 @@
  */
 
 #include "m4.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
 #include "mathfem.h"
 #include "classfactory.h"
 

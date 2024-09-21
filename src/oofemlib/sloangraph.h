@@ -39,7 +39,7 @@
 #include "sloangraphnode.h"
 #include "sloanlevelstruct.h"
 #include "dofman/dofmanager.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 
 #include <list>
 

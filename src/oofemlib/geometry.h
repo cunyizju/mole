@@ -37,7 +37,7 @@
 
 #include "oofemcfg.h"
 #include "error.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "inputrecord.h"
 #include "contextioresulttype.h"
 #include "contextmode.h"

@@ -36,7 +36,7 @@
 #define homexportmodule_h
 
 #include "exportmodule.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include <iostream>
 #include <fstream>
 

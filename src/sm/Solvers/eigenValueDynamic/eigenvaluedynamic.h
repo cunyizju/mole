@@ -38,8 +38,8 @@
 #include "engngm.h"
 #include "sparsegeneigenvalsystemnm.h"
 #include "sparsemtrx.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
 #include "geneigvalsolvertype.h"
 #include "fields/eigenvectorprimaryfield.h"
 

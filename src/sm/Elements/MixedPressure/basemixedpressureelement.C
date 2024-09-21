@@ -46,9 +46,9 @@
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "domain.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
-#include "intarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
+#include "arrays/intarray.h"
 #include "mathfem.h"
 #include "unknownnumberingscheme.h"
 

@@ -36,8 +36,8 @@
 
 #include "isointerfacedamage02.h"
 #include "gausspoint.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
 #include "mathfem.h"
 #include "datastream.h"
 #include "contextioerr.h"

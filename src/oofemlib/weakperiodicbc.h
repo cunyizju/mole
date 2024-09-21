@@ -41,9 +41,9 @@
 
 #include "activebc.h"
 #include "inputrecord.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
-#include "intarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
+#include "arrays/intarray.h"
 #include "gausspoint.h"
 
 ///@name Input fields for WeakPeriodicBoundaryCondition

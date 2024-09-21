@@ -36,9 +36,9 @@
 #include <cstring> // for memmove
 
 #include "combuff.h"
-#include "intarray.h"
-#include "floatarray.h"
-#include "floatmatrix.h"
+#include "arrays/intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrix.h"
 #include "error.h"
 
 namespace oofem {

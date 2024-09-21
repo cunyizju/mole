@@ -33,7 +33,7 @@
  */
 
 #include "bc/linearedgeload.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "mathfem.h"
 #include "classfactory.h"
 #include "dynamicinputrecord.h"

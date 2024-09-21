@@ -33,9 +33,9 @@
  */
 
 #include "sm/Elements/springelement.h"
-#include "floatmatrix.h"
-#include "intarray.h"
-#include "floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/intarray.h"
+#include "arrays/floatarray.h"
 #include "classfactory.h"
 
 #ifdef __OOFEG

@@ -34,7 +34,7 @@
 
 #include "concrete2.h"
 #include "domain.h"
-#include "floatmatrix.h"
+#include "arrays/floatmatrix.h"
 #include "gausspoint.h"
 #include "mathfem.h"
 #include "timestep.h"

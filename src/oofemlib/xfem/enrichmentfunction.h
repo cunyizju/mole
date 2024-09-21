@@ -35,7 +35,7 @@
 #ifndef enrichmentfunction_h
 #define enrichmentfunction_h
 
-#include "intarray.h"
+#include "arrays/intarray.h"
 #include "femcmpnn.h"
 
 #define _IFT_DiscontinuousFunction_Name "discontinuousfunction"

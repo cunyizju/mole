@@ -39,8 +39,8 @@
 #include "solvers/sparselinsystemnm.h"
 #include "convergedreason.h"
 #include "sparsemtrx.h"
-#include "floatarray.h"
-#include "floatmatrix.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrix.h"
 #include "processcomm.h"
 
 ///@name Input fields for FETISolver

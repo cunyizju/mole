@@ -35,7 +35,7 @@
 // inspired by SL++
 
 #include "dyncompcol.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "engngm.h"
 #include "domain.h"
 #include "mathfem.h"

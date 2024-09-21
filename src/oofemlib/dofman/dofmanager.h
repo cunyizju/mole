@@ -39,8 +39,8 @@
 #include <map>
 
 #include "femcmpnn.h"
-#include "intarray.h"
-#include "floatarray.h"
+#include "arrays/intarray.h"
+#include "arrays/floatarray.h"
 #include "valuemodetype.h"
 #include "doftype.h"
 #include "dofiditem.h"

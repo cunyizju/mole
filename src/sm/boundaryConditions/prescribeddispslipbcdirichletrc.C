@@ -37,8 +37,8 @@
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"
 #include "valuemodetype.h"
-#include "floatarray.h"
-#include "floatmatrix.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrix.h"
 #include "ltf/function.h"
 #include "engngm.h"
 #include "set.h"
@@ -52,7 +52,7 @@
 #include "solvers/sparselinsystemnm.h"
 #include "assemblercallback.h"
 #include "mathfem.h"
-#include "floatarrayf.h"
+#include "arrays/floatarrayf.h"
 #include "cs/crosssection.h"
 
 namespace oofem {

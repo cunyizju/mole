@@ -33,11 +33,11 @@
  */
 
 #include "fei3dwedgelin.h"
-#include "floatarray.h"
-#include "floatmatrix.h"
-#include "floatarrayf.h"
-#include "floatmatrixf.h"
-#include "intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarrayf.h"
+#include "arrays/floatmatrixf.h"
+#include "arrays/intarray.h"
 #include "gaussintegrationrule.h"
 
 namespace oofem {

@@ -37,8 +37,8 @@
 
 #include "valuemodetype.h"
 #include "interface.h"
-#include "floatarray.h"
-#include "intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/intarray.h"
 #include "error.h"
 
 namespace oofem {

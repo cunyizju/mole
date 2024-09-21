@@ -37,12 +37,12 @@
 #include "domain.h"
 #include "dofman/node.h"
 #include "gaussintegrationrule.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
-#include "intarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
+#include "arrays/intarray.h"
 #include "mathfem.h"
 #include "classfactory.h"
-//#include "floatarrayf.h"
+//#include "arrays/floatarrayf.h"
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"

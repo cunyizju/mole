@@ -36,7 +36,7 @@
 #define sloanlevelstruct_h
 
 #include "oofemcfg.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 
 namespace oofem {
 class SloanGraph;

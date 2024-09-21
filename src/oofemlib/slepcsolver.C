@@ -35,7 +35,7 @@
 #include "slepcsolver.h"
 #include "petscsparsemtrx.h"
 #include "engngm.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "verbose.h"
 #include "domain.h"
 #include "classfactory.h"

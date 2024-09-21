@@ -36,7 +36,7 @@
 #define parallelordering_h
 
 #include "oofemcfg.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 #include "dofman/dofmanager.h"
 
 #include <map>

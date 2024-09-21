@@ -34,8 +34,8 @@
 
 #include "fei3dlinelin.h"
 #include "mathfem.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
 #include "gaussintegrationrule.h"
 
 namespace oofem {

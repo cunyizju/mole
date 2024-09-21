@@ -1,7 +1,7 @@
 #ifndef grid_h
 #define grid_h
 
-#include "floatmatrix.h"
+#include "arrays/floatmatrix.h"
 #include "heap.h"
 
 namespace oofem {

@@ -34,8 +34,8 @@
 
 #include "cohint.h"
 #include "gausspoint.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
 #include "mathfem.h"
 #include "contextioerr.h"
 #include "classfactory.h"

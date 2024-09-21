@@ -35,7 +35,7 @@
 #ifndef stressstrainbasevector_h
 #define stressstrainbasevector_h
 
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "materialmode.h"
 
 namespace oofem {

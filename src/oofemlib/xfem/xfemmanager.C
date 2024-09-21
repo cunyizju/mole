@@ -34,9 +34,9 @@
 
 #include "xfemmanager.h"
 #include "inputrecord.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 #include "connectivitytable.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "domain.h"
 #include "element.h"
 #include "dofman/dofmanager.h"

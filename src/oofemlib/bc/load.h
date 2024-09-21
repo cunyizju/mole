@@ -36,8 +36,8 @@
 #define load_h
 
 #include "bc/generalboundarycondition.h"
-#include "intarray.h"
-#include "floatarray.h"
+#include "arrays/intarray.h"
+#include "arrays/floatarray.h"
 #include "valuemodetype.h"
 #include "error.h"
 

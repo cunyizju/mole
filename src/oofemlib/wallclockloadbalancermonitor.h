@@ -41,8 +41,8 @@
 #ifdef __LB_DEBUG
  #include <list>
  #include "range.h"
- #include "intarray.h"
- #include "floatarray.h"
+ #include "arrays/intarray.h"
+ #include "arrays/floatarray.h"
 #endif
 
 ///@name Input fields for WallClockLoadBalancerMonitor

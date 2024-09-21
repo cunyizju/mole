@@ -37,7 +37,7 @@
 #include "sm/Materials/structuralms.h"
 #include "gausspoint.h"
 #include "element.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 
 namespace oofem {
 FloatArray

@@ -34,7 +34,7 @@
 
 #include "bc/constantedgeload.h"
 #include "ltf/function.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "timestep.h"
 #include "classfactory.h"
 

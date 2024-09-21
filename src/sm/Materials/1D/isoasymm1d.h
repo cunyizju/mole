@@ -37,10 +37,10 @@
 
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
-#include "floatarray.h"
-#include "floatmatrix.h"
-#include "floatmatrixf.h"
-#include "floatarrayf.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatmatrixf.h"
+#include "arrays/floatarrayf.h"
 
 
 ///@name Input fields 

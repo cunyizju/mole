@@ -38,7 +38,7 @@
 #include "domain.h"
 #include "dofman/node.h"
 #include "dofs/masterdof.h"
-#include "floatmatrix.h"
+#include "arrays/floatmatrix.h"
 #include "unknownnumberingscheme.h"
 #include "sparsemtrx.h"
 #include "classfactory.h"

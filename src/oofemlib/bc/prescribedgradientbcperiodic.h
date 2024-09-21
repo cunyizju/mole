@@ -38,8 +38,8 @@
 
 #include "bc/prescribedgradienthomogenization.h"
 #include "activebc.h"
-#include "floatmatrix.h"
-#include "floatarray.h"
+#include "arrays/floatmatrix.h"
+#include "arrays/floatarray.h"
 
 #include <memory>
 #include <map>

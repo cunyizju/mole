@@ -37,7 +37,7 @@
 
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 
 ///@name Input fields for SimpleVitrificationMaterial
 //@{

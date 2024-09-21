@@ -10,8 +10,8 @@
 #include "fei3dhexalin.h"
 #include "fei3dhexaquad.h"
 
-#include "floatarrayf.h"
-#include "floatmatrixf.h"
+#include "arrays/floatarrayf.h"
+#include "arrays/floatmatrixf.h"
 #include "sm/Materials/structuralmaterial.h"
 
 using namespace oofem;

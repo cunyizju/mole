@@ -33,7 +33,7 @@
  */
 
 #include "feinterpol2d.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "gaussintegrationrule.h"
 
 namespace oofem {

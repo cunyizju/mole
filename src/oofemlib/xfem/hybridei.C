@@ -36,7 +36,7 @@
 #include "xfemmanager.h"
 #include "dofman/node.h"
 #include "domain.h"
-#include "floatmatrix.h"
+#include "arrays/floatmatrix.h"
 #include "classfactory.h"
 
 #include <string>

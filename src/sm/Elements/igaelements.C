@@ -34,8 +34,8 @@
 
 #include "sm/Elements/igaelements.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "floatarray.h"
-#include "floatmatrix.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrix.h"
 #include "domain.h"
 #include "dofman/node.h"
 #include "element.h"

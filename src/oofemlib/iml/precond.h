@@ -36,7 +36,7 @@
 #define precond_h
 
 #include "oofemcfg.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "sparsemtrx.h"
 #include "inputrecord.h"
 

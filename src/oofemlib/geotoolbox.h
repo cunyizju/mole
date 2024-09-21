@@ -39,7 +39,7 @@
 #include <cstdlib>
 
 #include "oofemcfg.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"

@@ -36,7 +36,7 @@
 #include "domain.h"
 #include "element.h"
 #include "dofman/dofmanager.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 
 namespace oofem {
 

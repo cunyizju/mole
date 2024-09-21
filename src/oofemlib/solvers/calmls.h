@@ -42,8 +42,8 @@
 #include "solvers/sparselinsystemnm.h"
 #include "solvers/sparsenonlinsystemnm.h"
 #include "convergedreason.h"
-#include "floatarray.h"
-#include "intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/intarray.h"
 #include "dofiditem.h"
 
 ///@name Input fields for CylindricalALM

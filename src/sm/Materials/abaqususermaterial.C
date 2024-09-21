@@ -34,8 +34,8 @@
 
 #include "abaqususermaterial.h"
 #include "gausspoint.h"
-#include "floatarrayf.h"
-#include "floatmatrixf.h"
+#include "arrays/floatarrayf.h"
+#include "arrays/floatmatrixf.h"
 #include "classfactory.h"
 #include "dynamicinputrecord.h"
 

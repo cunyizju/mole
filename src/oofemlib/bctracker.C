@@ -33,7 +33,7 @@
  */
 
 #include "domain.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 #include "element.h"
 #include "set.h"
 #include "bc/load.h"

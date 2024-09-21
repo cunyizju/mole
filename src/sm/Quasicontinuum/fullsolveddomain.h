@@ -35,7 +35,7 @@
 #ifndef qc_fullsolveddomain_h
 #define qc_fullsolveddomain_h
 
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "element.h"
 #include "dofman/node.h"
 

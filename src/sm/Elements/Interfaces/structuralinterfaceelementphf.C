@@ -42,9 +42,9 @@
 #include "material/material.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
-#include "intarray.h"
-#include "floatarray.h"
-#include "floatmatrix.h"
+#include "arrays/intarray.h"
+#include "arrays/floatarray.h"
+#include "arrays/floatmatrix.h"
 #include "mathfem.h"
 #include "dofs/dof.h"
 

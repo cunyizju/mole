@@ -37,7 +37,7 @@
 
 #include "imlsolver.h"
 #include "sparsemtrx.h"
-#include "floatarray.h"
+#include "arrays/floatarray.h"
 #include "diagpre.h"
 #include "voidprecond.h"
 #include "compcol.h"

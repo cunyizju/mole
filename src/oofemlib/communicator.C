@@ -33,7 +33,7 @@
  */
 
 #include "communicator.h"
-#include "intarray.h"
+#include "arrays/intarray.h"
 
 #include <cstdarg>
 
