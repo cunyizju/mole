@@ -35,8 +35,8 @@
 #ifndef quasicontinuumvtkxmlexportmodule_h
 #define quasicontinuumvtkxmlexportmodule_h
 
-#include "vtkxmlexportmodule.h"
-//#include "exportmodule.h"
+#include "export/vtkxmlexportmodule.h"
+//#include "export/exportmodule.h"
 #include "arrays/intarray.h"
 #include "nodalrecovery/nodalrecoverymodel.h"
 #include "interface.h"

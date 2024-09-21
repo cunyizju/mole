@@ -16,7 +16,7 @@
 #include "sm/Loads/structtemperatureload.h"
 #include "ltf/peakfunction.h"
 #include "dofman/node.h"
-#include "outputmanager.h"
+#include "export/outputmanager.h"
 #include "bc/boundarycondition.h"
 #include "set.h"
 

@@ -35,7 +35,7 @@
 #include "parallel//problemcomm.h"
 #include "arrays/intarray.h"
 #include "error.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "element.h"
 #include "dofman/dofmanager.h"
 

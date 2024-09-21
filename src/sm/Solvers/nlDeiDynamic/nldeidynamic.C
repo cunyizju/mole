@@ -38,7 +38,7 @@
 #include "element.h"
 #include "dofs/dof.h"
 #include "verbose.h"
-#include "outputmanager.h"
+#include "export/outputmanager.h"
 #include "mathfem.h"
 #include "datastream.h"
 #include "contextioerr.h"

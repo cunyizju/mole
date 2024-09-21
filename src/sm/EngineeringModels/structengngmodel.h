@@ -35,7 +35,7 @@
 #ifndef structengngmodel_h
 #define structengngmodel_h
 
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "statecountertype.h"
 #include "arrays/floatarray.h"
 

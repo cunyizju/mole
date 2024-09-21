@@ -38,7 +38,7 @@
 #include "xfem/xfemelementinterface.h"
 #include "xfem/enrichmentfunction.h"
 #include "xfem/enrichmentitem.h"
-#include "vtkxmlexportmodule.h"
+#include "export/vtkxmlexportmodule.h"
 #include "dynamicinputrecord.h"
 #include "fei/feinterpol.h"
 #include "classfactory.h"

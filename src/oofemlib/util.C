@@ -33,7 +33,7 @@
  */
 
 #include "util.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "classfactory.h"
 #include "inputrecord.h"
 #include "datareader.h"

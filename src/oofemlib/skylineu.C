@@ -37,7 +37,7 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/intarray.h"
 #include "domain.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "element.h"
 #include "mathfem.h"
 #include "verbose.h"

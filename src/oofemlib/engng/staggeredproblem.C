@@ -32,12 +32,12 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "engng//staggeredproblem.h"
-#include "engng//engngm.h"
+#include "engng/staggeredproblem.h"
+#include "engng/engngm.h"
 #include "timestep.h"
 #include "ltf/function.h"
 #include "metastep.h"
-#include "exportmodulemanager.h"
+#include "export/exportmodulemanager.h"
 #include "mathfem.h"
 #include "oofemtxtdatareader.h"
 #include "util.h"

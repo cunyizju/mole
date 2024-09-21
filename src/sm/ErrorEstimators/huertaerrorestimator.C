@@ -62,7 +62,7 @@
 #include "dynamicdatareader.h"
 #include "dynamicinputrecord.h"
 #include "ltf/heavisidetimefunction.h"
-#include "outputmanager.h"
+#include "export/outputmanager.h"
 #include "bc/boundarycondition.h"
 #include "fei/feinterpol.h"
 #include "gausspoint.h"

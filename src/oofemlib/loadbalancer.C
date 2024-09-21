@@ -34,7 +34,7 @@
 
 #include "loadbalancer.h"
 #include "domain.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "timer.h"
 #include "mathfem.h"
 #include "timestep.h"

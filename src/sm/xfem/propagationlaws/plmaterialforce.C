@@ -21,7 +21,7 @@
 #include "xfem/xfemmanager.h"
 #include "xfem/matforceevaluator.h"
 
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 
 namespace oofem {
 REGISTER_PropagationLaw(PLMaterialForce)

@@ -39,7 +39,7 @@
 #include "dofs/dof.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "set.h"
 #include "bc/boundarycondition.h"
 #include "initialcondition.h"

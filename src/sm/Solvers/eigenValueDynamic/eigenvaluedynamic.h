@@ -35,7 +35,7 @@
 #ifndef eigenvaluedynamic_h
 #define eigenvaluedynamic_h
 
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "sparsegeneigenvalsystemnm.h"
 #include "sparsemtrx.h"
 #include "arrays/floatmatrix.h"

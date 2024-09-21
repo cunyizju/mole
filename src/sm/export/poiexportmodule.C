@@ -35,7 +35,7 @@
 #include "poiexportmodule.h"
 #include "timestep.h"
 #include "domain.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "materialmappingalgorithm.h"
 #include "mapping/mmaclosestiptransfer.h"
 #include "mapping/mmaleastsquareprojection.h"

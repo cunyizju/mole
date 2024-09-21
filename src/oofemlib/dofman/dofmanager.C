@@ -48,7 +48,7 @@
 #include "domain.h"
 #include "unknownnumberingscheme.h"
 #include "entityrenumberingscheme.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 
 namespace oofem {
 DofManager :: DofManager(int n, Domain *aDomain) :

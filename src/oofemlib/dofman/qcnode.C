@@ -44,9 +44,9 @@
 #include "fei/feinterpol.h"
 #include "spatiallocalizer.h"
 #include "classfactory.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 
-#include "outputmanager.h"
+#include "export/outputmanager.h"
 
 namespace oofem {
 REGISTER_DofManager(qcNode);

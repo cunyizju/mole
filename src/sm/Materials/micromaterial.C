@@ -42,7 +42,7 @@
 #include "util.h"
 #include "classfactory.h"
 #include "dofman/node.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 
 namespace oofem {
 //valgrind --leak-check=full --show-reachable=no -v --log-file=valgr.txt ./oofem -f Macrolspace_1.in

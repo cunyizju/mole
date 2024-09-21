@@ -45,7 +45,7 @@
 #include "verbose.h"
 #include "datastream.h"
 #include "contextioerr.h"
-#include "engng//staggeredproblem.h"
+#include "engng/staggeredproblem.h"
 
 #ifdef __SM_MODULE
  #include "../sm/Elements/LatticeElements/latticestructuralelement.h"

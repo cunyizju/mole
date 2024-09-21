@@ -37,7 +37,7 @@
 #include "domain.h"
 #include "dofman/node.h"
 #include "element.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "remeshingcrit.h"
 #include "oofemtxtdatareader.h"
 #include "dynamicinputrecord.h"
@@ -50,7 +50,7 @@
 #include "classfactory.h"
 //#include "loadtimefunction.h"
 #include "ltf/function.h"
-#include "outputmanager.h"
+#include "export/outputmanager.h"
 
 #include <cmath>
 

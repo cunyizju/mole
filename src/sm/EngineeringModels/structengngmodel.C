@@ -40,7 +40,7 @@
 #include "dofs/dof.h"
 #include "element.h"
 #include "timestep.h"
-#include "outputmanager.h"
+#include "export/outputmanager.h"
 #include "activebc.h"
 #include "assemblercallback.h"
 #include "unknownnumberingscheme.h"

@@ -38,7 +38,7 @@
 #include "arrays/floatmatrixf.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatarrayf.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "mathfem.h"
 #include <math.h>
 #include "latticematstatus.h"

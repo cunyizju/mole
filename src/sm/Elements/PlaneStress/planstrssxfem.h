@@ -37,7 +37,7 @@
 
 #include "sm/Elements/PlaneStress/planstrss.h"
 #include "sm/xfem/xfemstructuralelementinterface.h"
-#include "vtkxmlexportmodule.h"
+#include "export/vtkxmlexportmodule.h"
 
 #define _IFT_PlaneStress2dXfem_Name "planestress2dxfem"
 

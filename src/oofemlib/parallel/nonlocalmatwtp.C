@@ -36,7 +36,7 @@
 #include "nonlocalmaterialext.h"
 #include "element.h"
 #include "dofman/dofmanager.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "gausspoint.h"
 #include "material/material.h"
 #include "parallel//communicator.h"

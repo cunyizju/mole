@@ -44,7 +44,7 @@
 #include "stressvector.h"
 #include "classfactory.h"
 #include "dynamicinputrecord.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "cs/crosssection.h"
 #include "oofemtxtinputrecord.h"
 

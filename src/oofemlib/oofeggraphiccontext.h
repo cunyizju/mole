@@ -44,7 +44,7 @@
 #include "internalstatetype.h"
 #include "arrays/floatmatrix.h"
 #include "timer.h"
-#include "outputmanager.h"
+#include "export/outputmanager.h"
 #include "arrays/floatarrayf.h"
 
 #include <iostream>

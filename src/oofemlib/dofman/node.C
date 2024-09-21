@@ -54,7 +54,7 @@
 #include "classfactory.h"
 #include "dynamicinputrecord.h"
 #include "domain.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"

@@ -42,7 +42,7 @@
 #include "mathfem.h"
 #include "fei/feinterpol.h"
 #include "error.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "classfactory.h"
 
 #include <sstream>

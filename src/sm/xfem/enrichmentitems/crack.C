@@ -38,7 +38,7 @@
 #include "gausspoint.h"
 #include "geometry.h"
 
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "sm/Materials/structuralfe2material.h"
 
 namespace oofem {

@@ -40,7 +40,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "ltf/function.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "set.h"
 #include "dofman/node.h"
 #include "element.h"

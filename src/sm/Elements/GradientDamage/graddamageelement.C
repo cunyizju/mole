@@ -50,7 +50,7 @@
 #include "cltypes.h"
 #include "mathfem.h"
 #include "nonlocalbarrier.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "unknownnumberingscheme.h"
 
 #include <cstdio>

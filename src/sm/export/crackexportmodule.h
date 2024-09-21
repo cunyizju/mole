@@ -35,7 +35,7 @@
 #ifndef crackexportmodule_h
 #define crackexportmodule_h
 
-#include "exportmodule.h"
+#include "export/exportmodule.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 

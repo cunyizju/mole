@@ -42,7 +42,7 @@
 #include "dynamicinputrecord.h"
 #include "fei/feinterpol.h"
 #include "spatiallocalizer.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "sm/Elements/nlstructuralelement.h"
 #include "mathfem.h"
 
@@ -57,7 +57,7 @@
 #include "xfem/enrichmentfronts/enrichmentfrontintersection.h"
 #include "xfem/xfemstructuremanager.h"
 
-#include "vtkxmlexportmodule.h"
+#include "export/vtkxmlexportmodule.h"
 
 #include "bc/prescribedgradientbcweak.h"
 #include "mathfem.h"

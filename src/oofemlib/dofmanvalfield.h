@@ -38,7 +38,7 @@
 #include "fields/field.h"
 #include "elementgeometrytype.h"
 #include "error.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "domain.h"
 #include <vector>
 #include "internalstatetype.h"

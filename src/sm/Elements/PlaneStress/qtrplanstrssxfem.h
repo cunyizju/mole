@@ -37,7 +37,7 @@
 
 #include "sm/Elements/PlaneStress/qtrplstr.h"
 #include "sm/xfem/xfemstructuralelementinterface.h"
-#include "vtkxmlexportmodule.h"
+#include "export/vtkxmlexportmodule.h"
 
 #include "domain.h"
 

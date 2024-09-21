@@ -43,7 +43,7 @@
 #include "classfactory.h"
 #include "valuemodetype.h"
 #include "sm/EngineeringModels/structengngmodel.h"
-#include "outputmanager.h"
+#include "export/outputmanager.h"
 #include "dofman/dofmanager.h"
 #include "bc/boundarycondition.h"
 #include "xfem/enrichmentitem.h"

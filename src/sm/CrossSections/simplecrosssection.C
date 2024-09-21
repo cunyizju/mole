@@ -44,7 +44,7 @@
 #include "dynamicinputrecord.h"
 #include "datastream.h"
 #include "contextioerr.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 
 namespace oofem {
 REGISTER_CrossSection(SimpleCrossSection);

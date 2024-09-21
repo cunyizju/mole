@@ -42,7 +42,7 @@
 #include "solvers/sparsenonlinsystemnm.h"
 #include "solvers/nrsolver.h"
 #include "solvers/calmls.h"
-#include "outputmanager.h"
+#include "export/outputmanager.h"
 #include "datastream.h"
 #include "classfactory.h"
 #include "timer.h"

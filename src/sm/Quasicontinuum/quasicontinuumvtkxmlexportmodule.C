@@ -33,11 +33,11 @@
  */
 
 #include "quasicontinuumvtkxmlexportmodule.h"
-#include "vtkxmlexportmodule.h"
+#include "export/vtkxmlexportmodule.h"
 #include "element.h"
 #include "gausspoint.h"
 #include "timestep.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "dofman/node.h"
 #include "dofs/dof.h"
 #include "materialinterface.h"

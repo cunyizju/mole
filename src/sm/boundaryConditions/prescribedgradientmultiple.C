@@ -47,7 +47,7 @@
 #include "ltf/function.h"
 #include "solvers/sparselinsystemnm.h"
 #include "unknownnumberingscheme.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "mathfem.h"
 #include "dynamicinputrecord.h"
 

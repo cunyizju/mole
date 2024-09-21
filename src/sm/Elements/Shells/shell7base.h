@@ -39,7 +39,7 @@
 #include "sm/Elements/nlstructuralelement.h"
 #include "eleminterpmapperinterface.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
-#include "vtkxmlexportmodule.h"
+#include "export/vtkxmlexportmodule.h"
 #include "nodalrecovery/zznodalrecoverymodel.h"
 #include "fei/fei3dwedgequad.h"
 #include "fei/fei3dtrquad.h"

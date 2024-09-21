@@ -10,7 +10,7 @@ namespace py = pybind11;
 #include "classfactory.h"
 #include "logger.h"
 #include "domain.h"
-#include "outputmanager.h"
+#include "export/outputmanager.h"
 #include "modulemanager.h"
 #include "set.h"
 

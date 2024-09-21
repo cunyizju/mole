@@ -45,7 +45,7 @@
 #include "classfactory.h"
 #include "fields/fieldmanager.h"
 #include "sm/Elements/structuralelement.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 
 namespace oofem {
 REGISTER_Material(MisesMat);

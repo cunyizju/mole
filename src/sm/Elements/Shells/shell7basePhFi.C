@@ -46,7 +46,7 @@
 #include "bc/boundaryload.h"
 #include "constantpressureload.h"
 #include "bc/constantsurfaceload.h"
-#include "vtkxmlexportmodule.h"
+#include "export/vtkxmlexportmodule.h"
 #include "fracturemanager.h"
 
 #include "dofs/masterdof.h"

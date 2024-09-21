@@ -44,11 +44,11 @@
 #include "arrays/floatarray.h"
 #include "classfactory.h"
 #include "datastream.h"
-#include "exportmodulemanager.h"
+#include "export/exportmodulemanager.h"
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"
 #include "unknownnumberingscheme.h"
-#include "outputmanager.h"
+#include "export/outputmanager.h"
 #include "fields/eigenvectorprimaryfield.h"
 
 

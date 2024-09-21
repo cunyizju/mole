@@ -52,7 +52,7 @@
 #include "gausspoint.h"
 #include "enrichmentfronts/enrichmentfront.h"
 #include "enrichmentfronts/enrichmentfrontdonothing.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 
 #include <algorithm>
 #include <limits>

@@ -44,7 +44,7 @@
 #include "arrays/floatmatrixf.h"
 #include "arrays/floatarrayf.h"
 #include "mathfem.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "fields/fieldmanager.h"
 #include "dynamicinputrecord.h"
 

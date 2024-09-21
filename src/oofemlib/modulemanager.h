@@ -37,7 +37,7 @@
 
 #include "datareader.h"
 #include "error.h"
-#include "exportmodule.h"
+#include "export/exportmodule.h"
 
 
 #include <memory>

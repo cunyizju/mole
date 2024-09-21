@@ -36,7 +36,7 @@
 #include "xfemmanager.h"
 #include "domain.h"
 #include "classfactory.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "timestep.h"
 #include "xfem/propagationlaw.h"
 

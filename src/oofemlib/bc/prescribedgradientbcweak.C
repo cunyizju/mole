@@ -48,7 +48,7 @@
 #include "dynamicinputrecord.h"
 #include "timestep.h"
 #include "ltf/function.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "mathfem.h"
 #include "solvers/sparselinsystemnm.h"
 #include "unknownnumberingscheme.h"

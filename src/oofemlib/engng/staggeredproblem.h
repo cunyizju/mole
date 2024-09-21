@@ -35,7 +35,7 @@
 #ifndef staggeredproblem_h
 #define staggeredproblem_h
 
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "inputrecord.h"
 #include "arrays/floatarray.h"
 

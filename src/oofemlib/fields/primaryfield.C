@@ -40,7 +40,7 @@
 #include "timestep.h"
 #include "datastream.h"
 #include "contextioerr.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "unknownnumberingscheme.h"
 #include "initialcondition.h"
 #include "bc/boundarycondition.h"

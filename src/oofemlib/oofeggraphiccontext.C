@@ -33,14 +33,14 @@
  */
 
 #include "oofeggraphiccontext.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "element.h"
 #include "material/material.h"
 #include "range.h"
 #include "mathfem.h"
 #include "oofemtxtinputrecord.h"
 // for Range class definition outputmanager.h included
-#include "outputmanager.h"
+#include "export/outputmanager.h"
 
 namespace oofem {
 EngngModel *oofegGraphicContext :: emodel = NULL;

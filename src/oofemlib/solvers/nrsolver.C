@@ -44,8 +44,8 @@
 #include "ltf/function.h"
 #include "solvers/linesearch.h"
 #include "classfactory.h"
-#include "exportmodulemanager.h"
-#include "engng//engngm.h"
+#include "export/exportmodulemanager.h"
+#include "engng/engngm.h"
 #include "parallelcontext.h"
 #include "unknownnumberingscheme.h"
 

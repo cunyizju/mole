@@ -43,7 +43,7 @@
 #include "gausspoint.h"
 #include "fei/fei3dtrquad.h"
 #include "bc/boundaryload.h"
-#include "vtkxmlexportmodule.h"
+#include "export/vtkxmlexportmodule.h"
 #include "classfactory.h"
 #include "tr2shell7.h"
 

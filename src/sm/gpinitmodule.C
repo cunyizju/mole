@@ -40,7 +40,7 @@
 #include "material/material.h"
 #include "arrays/floatarray.h"
 #include "domain.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "classfactory.h"
 #include "gausspoint.h"
 #include "cs/crosssection.h"

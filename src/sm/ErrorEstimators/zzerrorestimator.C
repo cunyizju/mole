@@ -50,7 +50,7 @@
 #include "connectivitytable.h"
 #include "errorestimatortype.h"
 #include "classfactory.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "parallelcontext.h"
 
 #include <vector>

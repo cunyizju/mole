@@ -35,7 +35,7 @@
 #ifndef dummyengngm_h
 #define dummyengngm_h
 
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "inputrecord.h"
 
 

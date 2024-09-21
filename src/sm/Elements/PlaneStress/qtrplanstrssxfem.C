@@ -36,7 +36,7 @@
 
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "vtkxmlexportmodule.h"
+#include "export/vtkxmlexportmodule.h"
 #include "xfem/xfemelementinterface.h"
 #include "xfem/enrichmentfunction.h"
 #include "xfem/enrichmentitem.h"

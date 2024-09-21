@@ -33,7 +33,7 @@
  */
 
 #include "sm/FETISolver/feticommunicator.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "arrays/intarray.h"
 #include "dofman/dofmanager.h"
 #include "unknownnumberingscheme.h"

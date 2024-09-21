@@ -35,7 +35,7 @@
 //#define DETAILED_REPORT
 
 #include "subspaceit.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "domain.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"

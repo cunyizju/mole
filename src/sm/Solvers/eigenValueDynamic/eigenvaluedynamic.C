@@ -36,7 +36,7 @@
 #include "timestep.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "exportmodulemanager.h"
+#include "export/exportmodulemanager.h"
 #include "verbose.h"
 #include "classfactory.h"
 #include "datastream.h"

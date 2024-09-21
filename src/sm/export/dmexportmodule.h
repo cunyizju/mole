@@ -35,7 +35,7 @@
 #ifndef dmexportmodule_h
 #define dmexportmodule_h
 
-#include "exportmodule.h"
+#include "export/exportmodule.h"
 
 ///@name Input fields for DofManExportModule
 //@{

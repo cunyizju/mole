@@ -39,7 +39,7 @@
 #include <cctype>
 
 // unique_ptrs need the base 
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "dofs/masterdof.h"
 #include "dofs/slavedof.h"
 #include "dofs/simpleslavedof.h"
@@ -56,7 +56,7 @@
 #include "material/material.h"
 #include "cs/crosssection.h"
 #include "nonlocalbarrier.h"
-#include "exportmodule.h"
+#include "export/exportmodule.h"
 #include "initmodule.h"
 #include "loadbalancer.h"
 

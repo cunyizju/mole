@@ -35,7 +35,7 @@
 #ifndef poiexportmodule_h
 #define poiexportmodule_h
 
-#include "exportmodule.h"
+#include "export/exportmodule.h"
 #include "arrays/intarray.h"
 #include "internalstatetype.h"
 #include "unknowntype.h"

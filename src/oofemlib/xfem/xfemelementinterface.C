@@ -35,7 +35,7 @@
 #include "xfemelementinterface.h"
 #include "enrichmentitem.h"
 #include "geometrybasedei.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "gausspoint.h"
 #include "materialmode.h"
 #include "fei/fei2dquadlin.h"

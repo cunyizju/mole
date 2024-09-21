@@ -44,13 +44,13 @@
 #include "nonlocalbarrier.h"
 #include "initialcondition.h"
 #include "classfactory.h"
-#include "outputmanager.h"
+#include "export/outputmanager.h"
 #include "cs/crosssection.h"
 #include "ltf/function.h"
 #include "timer.h"
 #include "remeshingcrit.h"
 #include "dynamicinputrecord.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 
 #include <queue>
 #include <set>

@@ -48,8 +48,8 @@
 #include "mapping/matstatmapperint.h"
 #include "nummet.h"
 #include "arrays/floatarray.h"
-#include "exportmodulemanager.h"
-#include "vtkxmlexportmodule.h"
+#include "export/exportmodulemanager.h"
+#include "export/vtkxmlexportmodule.h"
 
 namespace oofem {
 

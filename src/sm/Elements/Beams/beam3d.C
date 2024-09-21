@@ -42,7 +42,7 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
-#include "engng//engngm.h"
+#include "engng/engngm.h"
 #include "bc/boundaryload.h"
 #include "mathfem.h"
 #include "fei/fei3dlinelin.h"

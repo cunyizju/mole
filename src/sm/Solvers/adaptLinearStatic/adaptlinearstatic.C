@@ -39,7 +39,7 @@
 #include "domain.h"
 #include "classfactory.h"
 #include "contextioerr.h"
-#include "outputmanager.h"
+#include "export/outputmanager.h"
 
 namespace oofem {
 REGISTER_EngngModel(AdaptiveLinearStatic);

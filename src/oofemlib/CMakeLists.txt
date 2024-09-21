@@ -173,25 +173,25 @@ set (core_material
     )
 
 set (core_export
-    outputmanager.C
-    exportmodule.C
-    exportmodulemanager.C
-    exportregion.C
-    outputexportmodule.C
-    errorcheckingexportmodule.C
-    vtkexportmodule.C
-    vtkbaseexportmodule.C
-    vtkxmlexportmodule.C
-    vtkmemoryexportmodule.C
-    vtkxmlperiodicexportmodule.C
-#    vtkxmllatticeexportmodule.C
-    vtkpfemexportmodule.C
-    vtkxfemexportmodule.C
-#    homexportmodule.C
-    matlabexportmodule.C
-    gpexportmodule.C
-    solutionstatusexportmodule.C
-    vtkhdf5exportmodule.C
+    export/outputmanager.C
+    export/exportmodule.C
+    export/exportmodulemanager.C
+    export/exportregion.C
+    export/outputexportmodule.C
+    export/errorcheckingexportmodule.C
+    export/vtkexportmodule.C
+    export/vtkbaseexportmodule.C
+    export/vtkxmlexportmodule.C
+    export/vtkmemoryexportmodule.C
+    export/vtkxmlperiodicexportmodule.C
+#    export/vtkxmllatticeexportmodule.C
+    export/vtkpfemexportmodule.C
+    export/vtkxfemexportmodule.C
+#    export/homexportmodule.C
+    export/matlabexportmodule.C
+    export/gpexportmodule.C
+    export/solutionstatusexportmodule.C
+    export/vtkhdf5exportmodule.C
     )
 
 set (core_monitors
