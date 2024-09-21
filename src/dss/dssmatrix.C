@@ -41,7 +41,7 @@
 #include "dofs/dof.h"
 #include "sparsemtrxtype.h"
 #include "classfactory.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 
 #include <set>
 

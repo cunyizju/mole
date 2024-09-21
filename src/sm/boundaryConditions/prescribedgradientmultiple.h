@@ -36,7 +36,7 @@
 #define PRESCRIBEDGRADIENTBCMULTIPLE_H_
 
 #include "bc/prescribedgradienthomogenization.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 
 #include <memory>
 

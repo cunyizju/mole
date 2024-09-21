@@ -41,7 +41,7 @@
 #include "element.h"
 #include "timestep.h"
 #include "export/outputmanager.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "assemblercallback.h"
 #include "unknownnumberingscheme.h"
 

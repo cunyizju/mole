@@ -35,7 +35,7 @@
 #ifndef linearconstraintbc_h
 #define linearconstraintbc_h
 
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "chartype.h"

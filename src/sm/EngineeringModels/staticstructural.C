@@ -49,7 +49,7 @@
 #include "error.h"
 #include "bc/generalboundarycondition.h"
 #include "bc/boundarycondition.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "datastream.h"
 #include "contextioerr.h"
 #include "classfactory.h"

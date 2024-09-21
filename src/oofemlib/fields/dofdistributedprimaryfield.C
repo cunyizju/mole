@@ -43,7 +43,7 @@
 #include "bc/boundarycondition.h"
 #include "initial/initialcondition.h"
 #include "element.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 
 
 namespace oofem {

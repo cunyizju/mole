@@ -37,7 +37,7 @@
 #define prescribedgradientperiodic_h_
 
 #include "bc/prescribedgradienthomogenization.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 

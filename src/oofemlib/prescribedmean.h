@@ -39,7 +39,7 @@
 #include <algorithm>
 #include <memory>
 
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "dofman/node.h"
 #include "bc/boundaryload.h"
 

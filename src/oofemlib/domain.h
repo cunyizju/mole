@@ -40,7 +40,7 @@
 #include "statecountertype.h"
 #include "arrays/intarray.h"
 #include "error.h"
-#include "bctracker.h"
+#include "bc/bctracker.h"
 #ifdef __PARALLEL_MODE
  #include "entityrenumberingscheme.h"
 #endif

@@ -73,7 +73,7 @@
 #include "domain.h"
 #include "element.h"
 #include "sparsemtrxtype.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "classfactory.h"
 
 #include <set>

@@ -44,7 +44,7 @@
 #include "dofman/node.h"
 #include "mathfem.h"
 #include "gausspoint.h"
-#include "weakperiodicbc.h"
+#include "bc/weakperiodicbc.h"
 #include "solutionbasedshapefunction.h"
 #include "timestep.h"
 #include "classfactory.h"

@@ -43,7 +43,7 @@
 #include "verbose.h"
 #include "error.h"
 #include "sparsemtrxtype.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "classfactory.h"
 
 #ifdef TIME_REPORT

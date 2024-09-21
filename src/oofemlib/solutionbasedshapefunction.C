@@ -7,7 +7,7 @@
 
 #include "solutionbasedshapefunction.h"
 #include "oofemtxtdatareader.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "dofs/activedof.h"
 #include "inputrecord.h"
 #include "element.h"

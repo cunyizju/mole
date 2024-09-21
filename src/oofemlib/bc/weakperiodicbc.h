@@ -39,7 +39,7 @@
 #include <iostream>
 #include <memory>
 
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "inputrecord.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"

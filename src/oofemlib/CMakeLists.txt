@@ -10,13 +10,11 @@ set (core_unsorted
     geotoolbox.C geometry.C
     datastream.C
     set.C
-    weakperiodicbc.C
     solutionbasedshapefunction.C
     fracturemanager.C
     neumannmomentload.C
     parallelcontext.C
     prescribedmean.C
-    bctracker.C
     # Semi sorted:
     errorestimator.C meshqualityerrorestimator.C remeshingcrit.C
     sloangraph.C sloangraphnode.C sloanlevelstruct.C
@@ -315,6 +313,8 @@ set (core_bc
     bc/reinforcement.C
     bc/surfacetensionbc.C
     bc/linearconstraintbc.C
+    bc/weakperiodicbc.C
+    bc/bctracker.C
     )
 
 if (USE_PYTHON_EXTENSION)

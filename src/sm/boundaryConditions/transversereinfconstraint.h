@@ -35,7 +35,7 @@
 #ifndef TRANSVERSEREINFCONSTRAINT_H_
 #define TRANSVERSEREINFCONSTRAINT_H_
 
-#include "activebc.h"
+#include "bc/activebc.h"
 
 #include <memory>
 

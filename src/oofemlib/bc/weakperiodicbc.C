@@ -37,8 +37,8 @@
 #include <algorithm>
 #include <memory>
 
-#include "activebc.h"
-#include "weakperiodicbc.h"
+#include "bc/activebc.h"
+#include "bc/weakperiodicbc.h"
 #include "inputrecord.h"
 #include "element.h"
 #include "dofman/node.h"

@@ -35,7 +35,7 @@
 #ifndef SOLUTIONBASEDSHAPEFUNCTION_H_
 #define SOLUTIONBASEDSHAPEFUNCTION_H_
 
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "dofiditem.h"
 #include "arrays/floatarray.h"
 

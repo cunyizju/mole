@@ -36,7 +36,7 @@
 #define PRESCRIBEDDISPSLIPBCMULTIPLE_H_
 
 #include "prescribeddispsliphomogenization.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 
 #include <memory>
 

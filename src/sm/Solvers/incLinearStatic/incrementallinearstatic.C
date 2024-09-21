@@ -43,7 +43,7 @@
 #include "datastream.h"
 #include "contextioerr.h"
 #include "dofman/dofmanager.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "unknownnumberingscheme.h"
 
 /*

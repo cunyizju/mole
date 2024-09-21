@@ -37,7 +37,7 @@
 #include "arrays/floatmatrix.h"
 #include "element.h"
 #include "dofman/dofmanager.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 
 #include "bc/nodalload.h"
 #include "bodyload.h"

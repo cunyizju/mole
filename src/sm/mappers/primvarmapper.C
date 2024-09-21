@@ -45,7 +45,7 @@
 #include "solvers/sparselinsystemnm.h"
 #include "classfactory.h"
 #include "timestep.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "bc/prescribedgradientbcweak.h"
 #include "bc/prescribedgradientbcneumann.h"
 #include "unknownnumberingscheme.h"

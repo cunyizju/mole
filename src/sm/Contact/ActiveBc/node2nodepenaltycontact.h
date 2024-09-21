@@ -36,7 +36,7 @@
 #define node2nodecontact_h
 
 
-#include "activebc.h"
+#include "bc/activebc.h"
 
 
 ///@name Input fields for _IFT_ContactElement

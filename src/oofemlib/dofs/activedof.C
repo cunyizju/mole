@@ -33,11 +33,11 @@
  */
 
 #include "dofs/activedof.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "domain.h"
 #include "dofman/dofmanager.h"
 #include "contextioerr.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "engng/engngm.h"
 
 namespace oofem {

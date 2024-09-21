@@ -42,7 +42,7 @@
 #include "engng/engngm.h"
 #include "bc/boundaryload.h"
 #include "mathfem.h"
-#include "bctracker.h"
+#include "bc/bctracker.h"
 
 #include "bodyload.h"
 #include "bc/boundaryload.h"

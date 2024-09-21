@@ -40,7 +40,7 @@
 #include "bodyload.h"
 #include "bc/boundaryload.h"
 #include "bc/nodalload.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "timestep.h"
 
 namespace oofem {

@@ -35,7 +35,7 @@
 #ifndef surfacetensionbc_h
 #define surfacetensionbc_h
 
-#include "activebc.h"
+#include "bc/activebc.h"
 
 #include <utility>
 #include <list>

@@ -42,7 +42,7 @@
 #include "verbose.h"
 #include "sparsemtrxtype.h"
 #include "classfactory.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "contact/contactmanager.h"
 #include "contact/contactdefinition.h"
 #include "contact/contactelement.h"

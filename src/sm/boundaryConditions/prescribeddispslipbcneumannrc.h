@@ -36,7 +36,7 @@
 #define PRESCRIBEDDISPSLIPBCNEUMANN_H_
 
 #include "prescribeddispsliphomogenization.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "dynamicinputrecord.h"
 
 #include <memory>

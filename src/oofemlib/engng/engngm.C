@@ -51,7 +51,7 @@
 #include "timer.h"
 #include "dofman/dofmanager.h"
 #include "dofman/node.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "timestep.h"
 #include "verbose.h"
 #include "datastream.h"

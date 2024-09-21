@@ -69,10 +69,10 @@
 #include "xfem/enrichmentfunction.h"
 #include "xfem/propagationlaw.h"
 #include "contact/contactmanager.h"
-#include "bctracker.h"
+#include "bc/bctracker.h"
 
 #include "bc/boundarycondition.h"
-#include "activebc.h"
+#include "bc/activebc.h"
 #include "dofs/simpleslavedof.h"
 #include "dofs/masterdof.h"
 
