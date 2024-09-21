@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/3D/lspace.h"
-#include "fei3dhexalin.h"
+#include "fei/fei3dhexalin.h"
 #include "dofman/node.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"

@@ -46,7 +46,7 @@
 #include "nodalrecovery/sprnodalrecoverymodel.h"
 #include "timestep.h"
 #include "integrationrule.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "connectivitytable.h"
 #include "errorestimatortype.h"
 #include "classfactory.h"

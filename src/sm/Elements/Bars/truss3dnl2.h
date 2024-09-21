@@ -36,7 +36,7 @@
 #define truss3dnl2_h
 
 #include "../sm/Elements/Bars/truss3d.h"
-#include "fei3dlinelin.h"
+#include "fei/fei3dlinelin.h"
 
 #define _IFT_Truss3dnl2_Name "truss3dnl2"
 

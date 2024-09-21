@@ -33,7 +33,7 @@
  */
 
 #include "../sm/Elements/GradientDamage/PlaneStrain/qtrplanestraingraddamage.h"
-#include "fei2dtrlin.h"
+#include "fei/fei2dtrlin.h"
 #include "dofman/node.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"

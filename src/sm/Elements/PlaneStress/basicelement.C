@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/PlaneStress/basicelement.h"
-#include "fei2dtrlin.h"
+#include "fei/fei2dtrlin.h"
 #include "classfactory.h"
 
 namespace oofem {

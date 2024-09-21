@@ -33,7 +33,7 @@
  */
 
 #include "../sm/Elements/GradientDamage/PlaneStrain/qplanestraingraddamage.h"
-#include "fei2dquadlin.h"
+#include "fei/fei2dquadlin.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "arrays/floatmatrix.h"

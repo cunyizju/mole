@@ -35,8 +35,8 @@
 #include "intelline2intpen.h"
 
 #include "dofman/dofmanager.h"
-#include "fei2dlinelin.h"
-#include "fei2dlinequad.h"
+#include "fei/fei2dlinelin.h"
+#include "fei/fei2dlinequad.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 

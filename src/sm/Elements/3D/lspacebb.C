@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/3D/lspacebb.h"
-#include "fei3dhexalin.h"
+#include "fei/fei3dhexalin.h"
 #include "gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"

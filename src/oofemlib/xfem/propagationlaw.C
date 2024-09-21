@@ -43,7 +43,7 @@
 #include "arrays/floatmatrix.h"
 #include "gausspoint.h"
 #include "enrichmentitem.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "xfemmanager.h"
 
 #include "XFEMDebugTools.h"

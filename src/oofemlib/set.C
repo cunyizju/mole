@@ -40,9 +40,9 @@
 #include "element.h"
 #include "dofman/node.h"
 #include "range.h"
-#include "feinterpol.h"
-#include "feinterpol2d.h"
-#include "feinterpol3d.h"
+#include "fei/feinterpol.h"
+#include "fei/feinterpol2d.h"
+#include "fei/feinterpol3d.h"
 #include "contextioerr.h"
 #include "dynamicinputrecord.h"
 #include <list>

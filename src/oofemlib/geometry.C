@@ -40,7 +40,7 @@
 #include "inputrecord.h"
 #include "dynamicinputrecord.h"
 #include "xfem/xfemtolerances.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "xfem/tipinfo.h"
 
 

@@ -36,7 +36,7 @@
 #define intelsurftr1_h
 
 #include "sm/Elements/Interfaces/structuralinterfaceelement.h"
-#include "fei3dtrlin.h"
+#include "fei/fei3dtrlin.h"
 #include "arrays/floatarrayf.h"
 #include "arrays/floatmatrixf.h"
 

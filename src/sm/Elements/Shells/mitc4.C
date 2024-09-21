@@ -36,7 +36,7 @@
 #include "sm/Materials/structuralms.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "fei2dquadlin.h"
+#include "fei/fei2dquadlin.h"
 #include "dofman/node.h"
 #include "material/material.h"
 #include "cs/crosssection.h"

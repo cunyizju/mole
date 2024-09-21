@@ -46,7 +46,7 @@
 #include "element.h"
 #include "classfactory.h"
 #include "dynamicinputrecord.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "unknownnumberingscheme.h"
 #include "sparsemtrx.h"
 #include "solvers/sparselinsystemnm.h"

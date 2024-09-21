@@ -41,8 +41,8 @@
 #include "nlstructuralelement.h"
 #include "vtkxmlexportmodule.h"
 #include "nodalrecovery/zznodalrecoverymodel.h"
-#include "fei3dwedgequad.h"
-#include "fei3dtrquad.h"
+#include "fei/fei3dwedgequad.h"
+#include "fei/fei3dtrquad.h"
 #include "fracturemanager.h"
 #include "cltypes.h"
 #include <vector>

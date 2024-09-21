@@ -36,7 +36,7 @@
 #include "sm/Materials/micromaterial.h"
 #include "sm/EngineeringModels/structengngmodel.h"
 #include "sm/Elements/3D/lspace.h"
-#include "fei3dhexalin.h"
+#include "fei/fei3dhexalin.h"
 #include "ltf/constantfunction.h"
 #include "domain.h"
 #include "classfactory.h"

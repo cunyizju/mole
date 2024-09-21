@@ -41,7 +41,7 @@
 #include "util.h"
 #include "classfactory.h"
 #include "dofman/dofmanager.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "problemmode.h"
 #include "nodalrecovery/nodalrecoverymodel.h"
 #include "vtkbaseexportmodule.h"

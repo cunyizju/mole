@@ -42,8 +42,8 @@
 #include "contextioerr.h"
 #include "datastream.h"
 #include "gausspoint.h"
-#include "fei2dtrlin.h"
-#include "fei3dtrquad.h"
+#include "fei/fei2dtrlin.h"
+#include "fei/fei3dtrquad.h"
 #include "XFEMDebugTools.h"
 
 #include "timestep.h"

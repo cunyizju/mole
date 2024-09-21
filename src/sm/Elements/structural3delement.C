@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/structural3delement.h"
-#include "feinterpol3d.h"
+#include "fei/feinterpol3d.h"
 #include "gausspoint.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "gaussintegrationrule.h"

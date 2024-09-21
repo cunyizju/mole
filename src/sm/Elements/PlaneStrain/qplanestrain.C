@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/PlaneStrain/qplanestrain.h"
-#include "fei2dquadquad.h"
+#include "fei/fei2dquadquad.h"
 #include "classfactory.h"
 
 #ifdef __OOFEG

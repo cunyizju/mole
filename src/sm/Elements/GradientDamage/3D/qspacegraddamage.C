@@ -33,7 +33,7 @@
  */
 
 #include "../sm/Elements/GradientDamage/3D/qspacegraddamage.h"
-#include "fei3dhexalin.h"
+#include "fei/fei3dhexalin.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "arrays/floatmatrix.h"

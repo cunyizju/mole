@@ -45,7 +45,7 @@
 #include "arrays/intarray.h"
 #include "bc/load.h"
 #include "mathfem.h"
-#include "fei2dquadlin.h"
+#include "fei/fei2dquadlin.h"
 #include "classfactory.h"
 
 namespace oofem {

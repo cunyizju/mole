@@ -35,7 +35,7 @@
 #include "discsegintegrationrule.h"
 
 #include "gausspoint.h"
-#include "fei1dlin.h"
+#include "fei/fei1dlin.h"
 
 namespace oofem {
 DiscontinuousSegmentIntegrationRule :: DiscontinuousSegmentIntegrationRule(int n, Element *e, const std :: vector< Line > &iSegments) :

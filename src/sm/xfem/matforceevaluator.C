@@ -39,7 +39,7 @@
 #include "sm/Elements/nlstructuralelement.h"
 #include "dofman/dofmanager.h"
 #include "integrationrule.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "gausspoint.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 

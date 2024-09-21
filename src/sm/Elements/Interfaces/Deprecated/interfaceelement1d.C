@@ -40,7 +40,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "mathfem.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
 #include "classfactory.h"
 #include "arrays/floatmatrixf.h"

@@ -43,7 +43,7 @@
 #include "sm/Elements/Shells/cct3d.h"
 #include "sm/Elements/PlaneStress/trplanrot3d.h"
 #include "spatiallocalizer.h"
-#include "fei2dtrlin.h"
+#include "fei/fei2dtrlin.h"
 #include <memory>
 
 #define _IFT_TR_SHELL11_Name "tr_shell11"

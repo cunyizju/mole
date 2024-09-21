@@ -33,7 +33,7 @@
  */
 
 #include "../sm/Elements/GradientDamage/Bars/truss1dgraddamage.h"
-#include "fei1dlin.h"
+#include "fei/fei1dlin.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "arrays/floatmatrix.h"

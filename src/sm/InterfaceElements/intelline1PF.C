@@ -43,7 +43,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "mathfem.h"
-#include "fei2dlinelin.h"
+#include "fei/fei2dlinelin.h"
 #include "classfactory.h"
 
 

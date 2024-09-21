@@ -35,7 +35,7 @@
 #ifndef feibspline_h
 #define feibspline_h
 
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "arrays/floatarray.h"
 #include <array>
 

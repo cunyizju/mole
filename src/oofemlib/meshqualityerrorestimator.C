@@ -38,7 +38,7 @@
 #include "mathfem.h"
 #include "dofman/node.h"
 #include "integrationrule.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "gausspoint.h"
 
 namespace oofem {

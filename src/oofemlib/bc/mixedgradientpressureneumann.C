@@ -53,7 +53,7 @@
 #include "solvers/sparselinsystemnm.h"
 #include "set.h"
 #include "dynamicinputrecord.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "unknownnumberingscheme.h"
 
 #ifdef _OPENMP

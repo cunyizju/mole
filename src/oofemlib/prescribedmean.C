@@ -36,7 +36,7 @@
 #include "classfactory.h"
 #include "dofs/masterdof.h"
 #include "domain.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "gausspoint.h"
 #include "sparsemtrx.h"
 #include "ltf/function.h"

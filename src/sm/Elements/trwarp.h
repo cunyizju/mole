@@ -38,7 +38,7 @@
 #include "structuralelement.h"
 #include "spatiallocalizer.h"
 #include "nodalrecovery/zznodalrecoverymodel.h"
-#include "fei2dtrlin.h"
+#include "fei/fei2dtrlin.h"
 
 #define _IFT_Tr_Warp_Name "trwarp"
 

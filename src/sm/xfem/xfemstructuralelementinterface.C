@@ -40,7 +40,7 @@
 #include "gaussintegrationrule.h"
 #include "gausspoint.h"
 #include "dynamicinputrecord.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "spatiallocalizer.h"
 #include "engngm.h"
 #include "sm/Elements/nlstructuralelement.h"

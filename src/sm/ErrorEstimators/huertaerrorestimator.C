@@ -64,7 +64,7 @@
 #include "ltf/heavisidetimefunction.h"
 #include "outputmanager.h"
 #include "bc/boundarycondition.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "gausspoint.h"
 #include "unknownnumberingscheme.h"
 

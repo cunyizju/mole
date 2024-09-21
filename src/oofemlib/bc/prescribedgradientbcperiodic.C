@@ -51,7 +51,7 @@
 #include "dynamicinputrecord.h"
 #include "domain.h"
 #include "spatiallocalizer.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "unknownnumberingscheme.h"
 #include "ltf/function.h"
 #include "timestep.h"

@@ -43,7 +43,7 @@
 #include "arrays/intarray.h"
 #include "mathfem.h"
 #include "classfactory.h"
-#include "fei2dlinelin.h"
+#include "fei/fei2dlinelin.h"
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"

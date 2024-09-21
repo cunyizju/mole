@@ -41,7 +41,7 @@
 #include "Loads/structtemperatureload.h"
 #include "sm/Materials/structuralnonlocalmaterialext.h"
 #include "Loads/structeigenstrainload.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "domain.h"
 #include "material/material.h"
 #include "nonlocalmaterialext.h"

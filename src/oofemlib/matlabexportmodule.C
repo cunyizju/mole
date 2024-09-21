@@ -51,7 +51,7 @@
 #include "set.h"
 #include "unknownnumberingscheme.h"
 #include "prescribedmean.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
     
 #ifdef __FM_MODULE
 #include "fm/tr21stokes.h"

@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/PlaneStress/qplanstrss.h"
-#include "fei2dquadquad.h"
+#include "fei/fei2dquadquad.h"
 #include "cs/crosssection.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"

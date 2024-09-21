@@ -37,7 +37,7 @@
 #include "dofman/node.h"
 #include "dofs/masterdof.h"
 #include "element.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "gausspoint.h"
 #include "sparsemtrx.h"
 #include "xfem/xfemelementinterface.h"

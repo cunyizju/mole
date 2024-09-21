@@ -35,7 +35,7 @@
 #include "enrichmentfunction.h"
 #include "gausspoint.h"
 #include "mathfem.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "classfactory.h"
 #include "dynamicinputrecord.h"
 

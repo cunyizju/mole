@@ -42,7 +42,7 @@
 #include "classfactory.h"
 #include "fracturemanager.h"
 #include "mathfem.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "dofs/masterdof.h"
 #include "propagationlaw.h"
 #include "dynamicinputrecord.h"

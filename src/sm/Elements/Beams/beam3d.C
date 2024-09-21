@@ -45,7 +45,7 @@
 #include "engngm.h"
 #include "bc/boundaryload.h"
 #include "mathfem.h"
-#include "fei3dlinelin.h"
+#include "fei/fei3dlinelin.h"
 #include "classfactory.h"
 #include "dofman/elementinternaldofman.h"
 #include "dofs/masterdof.h"

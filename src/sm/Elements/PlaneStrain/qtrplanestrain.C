@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/PlaneStrain/qtrplanestrain.h"
-#include "fei2dtrquad.h"
+#include "fei/fei2dtrquad.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"

@@ -36,7 +36,7 @@
 #include "arrays/floatarray.h"
 #include "engngm.h"
 #include "element.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "set.h"
 
 namespace oofem {

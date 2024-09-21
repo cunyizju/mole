@@ -36,7 +36,7 @@
 
 #include "xfemmanager.h"
 #include "element.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "gausspoint.h"
 
 #include "classfactory.h"

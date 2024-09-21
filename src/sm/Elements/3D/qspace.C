@@ -34,7 +34,7 @@
 
 #include "sm/Elements/3D/qspace.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "fei3dhexaquad.h"
+#include "fei/fei3dhexaquad.h"
 #include "dofman/node.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"

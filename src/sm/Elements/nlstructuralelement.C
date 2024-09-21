@@ -35,7 +35,7 @@
 #include "sm/Elements/nlstructuralelement.h"
 #include "sm/Materials/structuralms.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "domain.h"
 #include "material/material.h"
 #include "cs/crosssection.h"

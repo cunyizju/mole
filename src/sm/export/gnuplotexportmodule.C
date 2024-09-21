@@ -55,7 +55,7 @@
 #include "bc/prescribedgradientbcweak.h"
 #include "gausspoint.h"
 #include "timestep.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "xfem/enrichmentitems/crack.h"
 #include "dofman/dofmanager.h"
 #include "xfem/matforceevaluator.h"

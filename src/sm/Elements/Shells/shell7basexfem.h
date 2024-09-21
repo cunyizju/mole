@@ -38,7 +38,7 @@
 #include "sm/Elements/Shells/shell7base.h"
 #include "sm/xfem/enrichmentitems/delamination.h"
 #include "xfem/xfemelementinterface.h"
-#include "fei3dtrquad.h"
+#include "fei/fei3dtrquad.h"
 
 ///@name Input fields for el
 //@{

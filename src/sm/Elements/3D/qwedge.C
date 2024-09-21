@@ -35,7 +35,7 @@
 #include "sm/Elements/3D/qwedge.h"
 #include "sm/Materials/structuralms.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "fei3dwedgequad.h"
+#include "fei/fei3dwedgequad.h"
 #include "dofman/node.h"
 #include "material/material.h"
 #include "gausspoint.h"

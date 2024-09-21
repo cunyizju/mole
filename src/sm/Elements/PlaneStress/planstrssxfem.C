@@ -40,7 +40,7 @@
 #include "xfem/enrichmentitem.h"
 #include "vtkxmlexportmodule.h"
 #include "dynamicinputrecord.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "classfactory.h"
 #include "mathfem.h"
 

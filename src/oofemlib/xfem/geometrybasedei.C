@@ -40,7 +40,7 @@
 #include "element.h"
 #include "dofman/node.h"
 #include "mathfem.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "gausspoint.h"
 #include "dynamicinputrecord.h"
 #include "dynamicdatareader.h"

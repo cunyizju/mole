@@ -42,7 +42,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "mathfem.h"
-#include "fei3dtetlin.h"
+#include "fei/fei3dtetlin.h"
 #include "classfactory.h"
 
 #ifdef __OOFEG

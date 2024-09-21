@@ -33,7 +33,7 @@
  */
 
 #include "Elements/GradientDamage/PlaneStress/qtrplstrgraddamage.h"
-#include "fei2dtrlin.h"
+#include "fei/fei2dtrlin.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "arrays/floatmatrix.h"

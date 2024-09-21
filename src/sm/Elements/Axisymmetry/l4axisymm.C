@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/Axisymmetry/l4axisymm.h"
-#include "fei2dquadlin.h"
+#include "fei/fei2dquadlin.h"
 #include "dofman/node.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"

@@ -42,7 +42,7 @@
 #include "arrays/floatarrayf.h"
 #include "arrays/intarray.h"
 #include "mathfem.h"
-#include "fei2dlinelin.h"
+#include "fei/fei2dlinelin.h"
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
 #include "classfactory.h"
 

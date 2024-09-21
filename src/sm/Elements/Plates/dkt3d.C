@@ -34,7 +34,7 @@
 
 #include "sm/Elements/Plates/dkt3d.h"
 #include "sm/Materials/structuralms.h"
-#include "fei2dtrlin.h"
+#include "fei/fei2dtrlin.h"
 #include "dofman/node.h"
 #include "bc/load.h"
 #include "mathfem.h"

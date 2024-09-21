@@ -39,7 +39,7 @@
 #include "sm/Elements/structuralelement.h"
 #include "engngm.h"
 #include "gausspoint.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "spatiallocalizer.h"
 #include "sparsemtrx.h"
 #include "solvers/sparselinsystemnm.h"

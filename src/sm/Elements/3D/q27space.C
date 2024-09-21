@@ -43,7 +43,7 @@
 #include "mathfem.h"
 #include "cs/crosssection.h"
 #include "classfactory.h"
-#include "fei3dhexatriquad.h"
+#include "fei/fei3dhexatriquad.h"
 
 namespace oofem {
 REGISTER_Element(Q27Space);

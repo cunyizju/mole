@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/Shells/tr_shell01.h"
-#include "fei2dtrlin.h"
+#include "fei/fei2dtrlin.h"
 #include "contextioerr.h"
 #include "gaussintegrationrule.h"
 #include "gausspoint.h"

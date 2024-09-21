@@ -39,7 +39,7 @@
 #include "domain.h"
 #include "spatiallocalizer.h"
 #include "timestep.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "classfactory.h"
 

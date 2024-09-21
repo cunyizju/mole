@@ -63,7 +63,7 @@
 #include "outputmanager.h"
 #include "exportmodulemanager.h"
 #include "initmodulemanager.h"
-#include "feinterpol3d.h"
+#include "fei/feinterpol3d.h"
 #include "classfactory.h"
 #include "xfem/xfemmanager.h"
 #include "parallelcontext.h"

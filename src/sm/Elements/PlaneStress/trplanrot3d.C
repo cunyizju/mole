@@ -42,7 +42,7 @@
 #include "classfactory.h"
 #include "gaussintegrationrule.h"
 #include "gausspoint.h"
-#include "fei2dtrlin.h"
+#include "fei/fei2dtrlin.h"
 
 namespace oofem {
 REGISTER_Element(TrPlaneStrRot3d);

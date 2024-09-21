@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/Bars/qtruss1d.h"
-#include "fei1dquad.h"
+#include "fei/fei1dquad.h"
 #include "cs/crosssection.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"

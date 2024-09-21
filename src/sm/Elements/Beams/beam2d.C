@@ -34,8 +34,8 @@
 
 #include "sm/Elements/Beams/beam2d.h"
 #include "sm/Materials/structuralms.h"
-#include "fei2dlinelin.h"
-#include "fei2dlinehermite.h"
+#include "fei/fei2dlinelin.h"
+#include "fei/fei2dlinehermite.h"
 #include "dofman/node.h"
 #include "material/material.h"
 #include "cs/crosssection.h"

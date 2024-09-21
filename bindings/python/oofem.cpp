@@ -73,7 +73,7 @@ namespace py = pybind11;
 #include "sparsemtrx.h"
 
 #include "fields/field.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "util.h"
 #include "datareader.h"
 #include "oofemtxtdatareader.h"

@@ -41,7 +41,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "element.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "spatiallocalizer.h"
 #include "classfactory.h"
 #include "engngm.h"

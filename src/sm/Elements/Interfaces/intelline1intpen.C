@@ -9,9 +9,9 @@
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "dofman/dofmanager.h"
-#include "fei2dlinelin.h"
-#include "fei2dlinequad.h"
-#include "feinterpol.h"
+#include "fei/fei2dlinelin.h"
+#include "fei/fei2dlinequad.h"
+#include "fei/feinterpol.h"
 #include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
 
 namespace oofem {

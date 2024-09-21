@@ -35,7 +35,7 @@
 #include "sm/Elements/linedistributedspring.h"
 #include "sm/Materials/structuralms.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "fei3dlinelin.h"
+#include "fei/fei3dlinelin.h"
 #include "dofman/node.h"
 #include "material/material.h"
 #include "cs/crosssection.h"

@@ -36,7 +36,7 @@
 #include "sm/Materials/InterfaceMaterials/structuralinterfacematerial.h"
 #include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "domain.h"
 #include "material/material.h"
 #include "gausspoint.h"

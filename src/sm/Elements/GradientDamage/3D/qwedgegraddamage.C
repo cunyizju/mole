@@ -35,7 +35,7 @@
 #include "../sm/Elements/GradientDamage/3D/qwedgegraddamage.h"
 #include "../sm/Materials/structuralms.h"
 #include "../sm/CrossSections/structuralcrosssection.h"
-#include "fei3dwedgelin.h"
+#include "fei/fei3dwedgelin.h"
 #include "dofman/node.h"
 #include "material/material.h"
 #include "gausspoint.h"

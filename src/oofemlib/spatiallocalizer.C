@@ -40,7 +40,7 @@
 #include "error.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 
 namespace oofem {
 

@@ -1,14 +1,14 @@
 #include <benchmark/benchmark.h>
 
-#include "fei2dtrlin.h"
-#include "fei2dtrquad.h"
+#include "fei/fei2dtrlin.h"
+#include "fei/fei2dtrquad.h"
 
-#include "fei2dquadlin.h"
-#include "fei2dquadquad.h"
-#include "fei2dquadbiquad.h"
+#include "fei/fei2dquadlin.h"
+#include "fei/fei2dquadquad.h"
+#include "fei/fei2dquadbiquad.h"
 
-#include "fei3dhexalin.h"
-#include "fei3dhexaquad.h"
+#include "fei/fei3dhexalin.h"
+#include "fei/fei3dhexaquad.h"
 
 #include "arrays/floatarrayf.h"
 #include "arrays/floatmatrixf.h"

@@ -36,7 +36,7 @@
 #include "domain.h"
 #include "dynamicinputrecord.h"
 #include "set.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "element.h"
 #include "mathfem.h"
 

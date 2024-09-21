@@ -33,8 +33,8 @@
  */
 
 #include "../sm/Elements/GradientDamage/Bars/qtruss1dgraddamage.h"
-#include "fei1dlin.h"
-#include "fei1dquad.h"
+#include "fei/fei1dlin.h"
+#include "fei/fei1dquad.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "arrays/floatmatrix.h"

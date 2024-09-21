@@ -40,7 +40,7 @@
 #include "sm/Materials/InterfaceMaterials/intmatbilinczjansson.h"
 #include "xfem/enrichmentitems/crack.h"
 #include "xfem/enrichmentitems/shellcrack.h"
-#include "feinterpol3d.h"
+#include "fei/feinterpol3d.h"
 #include "xfem/enrichmentitem.h"
 #include "xfem/xfemmanager.h"
 #include "dofman/dofmanager.h"

@@ -46,7 +46,7 @@
 #include "domain.h"
 #include "cltypes.h"
 #include "mathfem.h"
-#include "fei3dtetquad.h"
+#include "fei/fei3dtetquad.h"
 #include "classfactory.h"
 
 #include <cstdio>

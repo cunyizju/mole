@@ -39,8 +39,8 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "fei2dlinequad.h"
-#include "fei2dlinelin.h"
+#include "fei/fei2dlinequad.h"
+#include "fei/fei2dlinelin.h"
 #include "classfactory.h"
 
 #ifdef __OOFEG

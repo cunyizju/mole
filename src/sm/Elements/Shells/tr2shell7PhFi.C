@@ -41,7 +41,7 @@
 #include "equationid.h"
 #include "gaussintegrationrule.h"
 #include "gausspoint.h"
-#include "fei3dtrquad.h"
+#include "fei/fei3dtrquad.h"
 #include "bc/boundaryload.h"
 #include "vtkxmlexportmodule.h"
 #include "classfactory.h"

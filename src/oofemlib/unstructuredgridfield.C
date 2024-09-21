@@ -33,7 +33,7 @@
  */
 
 #include "unstructuredgridfield.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 namespace oofem {
 FEI2dLineLin UnstructuredGridField::Cell::i1(1, 2);
 FEI2dLineQuad UnstructuredGridField::Cell::i2(1, 2);

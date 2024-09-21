@@ -42,7 +42,7 @@
 #include "xfem/enrichmentitem.h"
 #include "xfem/delaunay.h"
 #include "xfem/XFEMDebugTools.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "dofman/node.h"
 #include "cs/crosssection.h"
 #include "gausspoint.h"

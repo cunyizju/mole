@@ -17,7 +17,7 @@
 #include "gausspoint.h"
 #include "sm/Materials/structuralms.h"
 #include "xfem/enrichmentitem.h"
-#include "feinterpol.h"
+#include "fei/feinterpol.h"
 #include "xfem/xfemmanager.h"
 #include "xfem/matforceevaluator.h"
 
