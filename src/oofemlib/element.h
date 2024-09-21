@@ -51,7 +51,7 @@
 #include "matresponsemode.h"
 #include "unknowntype.h"
 #include "integrationrule.h"
-#include "dofiditem.h"
+#include "dofs/dofiditem.h"
 #include "arrays/floatarray.h"
 
 #include <cstdio>

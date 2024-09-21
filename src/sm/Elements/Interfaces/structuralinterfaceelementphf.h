@@ -43,7 +43,7 @@
 #include "matresponsemode.h"
 #include "valuemodetype.h"
 #include "integrationdomain.h"
-#include "dofmantransftype.h"
+#include "dofs/dofmantransftype.h"
 
 namespace oofem {
 class TimeStep;

@@ -35,7 +35,7 @@
 #ifndef structuralms_h
 #define structuralms_h
 
-#include "matstatus.h"
+#include "material/matstatus.h"
 #include "arrays/floatarray.h"
 #include "mapping/matstatmapperint.h"
 

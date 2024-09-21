@@ -65,7 +65,7 @@ namespace py = pybind11;
 #include "ltf/function.h"
 #include "material/material.h"
 #include "integrationpointstatus.h"
-#include "matstatus.h"
+#include "material/matstatus.h"
 #include "Materials/structuralmaterial.h"
 #include "Materials/structuralms.h"
 
@@ -78,7 +78,7 @@ namespace py = pybind11;
 #include "datareader.h"
 #include "oofemtxtdatareader.h"
 #include "valuemodetype.h"
-#include "dofiditem.h"
+#include "dofs/dofiditem.h"
 #include "timer.h"
 
 #include "classfactory.h"
@@ -102,7 +102,7 @@ namespace py = pybind11;
 
 #include "fields/uniformgridfield.h"
 #include "unstructuredgridfield.h"
-#include "dofmanvalfield.h"
+#include "dofs/dofmanvalfield.h"
 #include "pythonfield.h"
 #include <iostream>
 #include "oofemutil.h"

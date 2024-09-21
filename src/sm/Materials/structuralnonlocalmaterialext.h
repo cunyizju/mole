@@ -36,7 +36,7 @@
 #define structuralnonlocalmaterialext_h
 
 #include "nonlocalmaterialext.h"
-#include "matstatus.h"
+#include "material/matstatus.h"
 
 namespace oofem {
 /**

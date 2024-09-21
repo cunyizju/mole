@@ -39,7 +39,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "matconst.h"
-#include "matstatus.h"
+#include "material/matstatus.h"
 #include "stressstrainprincmode.h"
 
 ///@name Input fields for WinklerPasternakMaterial

@@ -37,7 +37,7 @@
 #include "error.h"
 #include "material/materialmappingalgorithm.h"
 #include "mapping/mmaclosestiptransfer.h"
-#include "matstatus.h"
+#include "material/matstatus.h"
 
 namespace oofem {
 MaterialStatusMapperInterface :: MaterialStatusMapperInterface() :

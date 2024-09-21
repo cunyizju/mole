@@ -33,7 +33,7 @@
  */
 
 #include "bc/prescribedgradientbcperiodic.h"
-#include "dofiditem.h"
+#include "dofs/dofiditem.h"
 #include "dofman/node.h"
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"

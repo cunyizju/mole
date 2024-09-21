@@ -37,7 +37,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "valuemodetype.h"
-#include "dofiditem.h"
+#include "dofs/dofiditem.h"
 #include "timestep.h"
 #include "dofs/dof.h"
 #include "dofs/masterdof.h"

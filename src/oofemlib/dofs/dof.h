@@ -42,8 +42,8 @@
 #include "arrays/intarray.h"
 #include "unknowntype.h"
 #include "valuemodetype.h"
-#include "dofiditem.h"
-#include "doftype.h"
+#include "dofs/dofiditem.h"
+#include "dofs/doftype.h"
 #include "contextioresulttype.h"
 
 namespace oofem {

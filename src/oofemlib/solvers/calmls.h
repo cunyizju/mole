@@ -44,7 +44,7 @@
 #include "convergedreason.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "dofiditem.h"
+#include "dofs/dofiditem.h"
 
 ///@name Input fields for CylindricalALM
 //@{

@@ -39,7 +39,7 @@
 #include "matresponsemode.h"
 #include "valuemodetype.h"
 #include "integrationdomain.h"
-#include "dofmantransftype.h"
+#include "dofs/dofmantransftype.h"
 #include "arrays/floatarray.h"
 
 #include <memory>

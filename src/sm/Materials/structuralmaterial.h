@@ -42,7 +42,7 @@
 #include "arrays/floatmatrixf.h"
 #include "mathfem.h"
 #include "matconst.h"
-#include "matstatus.h"
+#include "material/matstatus.h"
 #include "../stressstrainprincmode.h"
 #include "valuemodetype.h"
 #include <vector>

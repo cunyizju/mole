@@ -35,7 +35,7 @@
 #ifndef randommaterialext_h
 #define randommaterialext_h
 
-#include "matstatus.h"
+#include "material/matstatus.h"
 #include "dictionary.h"
 #include "interface.h"
 #include "arrays/intarray.h"

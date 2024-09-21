@@ -35,7 +35,7 @@
 #ifndef structuralinterfacematerialstatus_h
 #define structuralinterfacematerialstatus_h
 
-#include "matstatus.h"
+#include "material/matstatus.h"
 #include "arrays/floatarray.h"
 #include "mapping/matstatmapperint.h"
 #include "arrays/floatmatrix.h"

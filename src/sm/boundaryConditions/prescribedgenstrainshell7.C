@@ -33,7 +33,7 @@
  */
 
 #include "prescribedgenstrainshell7.h"
-#include "dofiditem.h"
+#include "dofs/dofiditem.h"
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"
 #include "valuemodetype.h"

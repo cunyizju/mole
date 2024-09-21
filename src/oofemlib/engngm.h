@@ -49,7 +49,7 @@
 #include "valuemodetype.h"
 #include "problemmode.h"
 #include "fmode.h"
-#include "dofiditem.h"
+#include "dofs/dofiditem.h"
 #include "contextoutputmode.h"
 #include "contextfilemode.h"
 #include "contextioresulttype.h"

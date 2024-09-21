@@ -38,7 +38,7 @@
 #include "femcmpnn.h"
 
 #include "matconst.h"
-#include "matstatus.h"
+#include "material/matstatus.h"
 #include "material/materialmode.h"
 #include "timestep.h"
 #include "internalstatetype.h"
