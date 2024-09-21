@@ -36,7 +36,7 @@
 #include "dofman/dofmanager.h"
 #include "timestep.h"
 #include "bc/boundarycondition.h"
-#include "initialcondition.h"
+#include "initial/initialcondition.h"
 #include "datastream.h"
 #include "contextioerr.h"
 #include "unknownnumberingscheme.h"

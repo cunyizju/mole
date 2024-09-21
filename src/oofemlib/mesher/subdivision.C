@@ -42,7 +42,7 @@
 #include "dofs/masterdof.h"
 #include "dofs/simpleslavedof.h"
 #include "nonlocalbarrier.h"
-#include "initialcondition.h"
+#include "initial/initialcondition.h"
 #include "classfactory.h"
 #include "export/outputmanager.h"
 #include "cs/crosssection.h"

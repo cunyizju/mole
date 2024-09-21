@@ -4,7 +4,6 @@ set (core_unsorted
     femcmpnn.C domain.C timestep.C metastep.C gausspoint.C
     cltypes.C timer.C dictionary.C heap.C grid.C
     connectivitytable.C error.C mathfem.C logger.C util.C
-    initmodulemanager.C initmodule.C initialcondition.C
     assemblercallback.C
     homogenize.C
     nonlocalbarrier.C
@@ -42,6 +41,11 @@ set (core_unsorted
     loadbalancer.C
     )
 
+set(initial
+    initial/initmodulemanager.C
+    initial/initmodule.C
+    initial/initialcondition.C
+)
 #oofegutils
 
 if (USE_SPOOLES)
@@ -338,6 +342,7 @@ set (core_mesher
     )
 
 set (core
+    ${initial}
     ${core_unsorted}
     ${core_nodalrecovery}
     ${core_dofs}

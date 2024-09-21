@@ -62,7 +62,7 @@
 #include "contextioerr.h"
 #include "export/outputmanager.h"
 #include "export/exportmodulemanager.h"
-#include "initmodulemanager.h"
+#include "initial/initmodulemanager.h"
 #include "fei/feinterpol3d.h"
 #include "classfactory.h"
 #include "xfem/xfemmanager.h"

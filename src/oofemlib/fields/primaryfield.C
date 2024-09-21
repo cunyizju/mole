@@ -42,7 +42,7 @@
 #include "contextioerr.h"
 #include "engng/engngm.h"
 #include "unknownnumberingscheme.h"
-#include "initialcondition.h"
+#include "initial/initialcondition.h"
 #include "bc/boundarycondition.h"
 
 namespace oofem {

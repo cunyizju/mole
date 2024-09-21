@@ -57,13 +57,13 @@
 #include "cs/crosssection.h"
 #include "nonlocalbarrier.h"
 #include "export/exportmodule.h"
-#include "initmodule.h"
+#include "initial/initmodule.h"
 #include "loadbalancer.h"
 
 #include "gaussintegrationrule.h"
 #include "lobattoir.h"
 
-#include "initialcondition.h"
+#include "initial/initialcondition.h"
 
 // Experimental stuff
 #include "xfem/nucleationcriterion.h"

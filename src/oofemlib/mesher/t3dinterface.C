@@ -46,7 +46,7 @@
 #include "classfactory.h"
 
 #include "nonlocalbarrier.h"
-#include "initialcondition.h"
+#include "initial/initialcondition.h"
 #include "classfactory.h"
 //#include "loadtimefunction.h"
 #include "ltf/function.h"

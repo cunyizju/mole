@@ -32,37 +32,28 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#ifndef initmodulemanager_h
-#define initmodulemanager_h
-
-#include "modulemanager.h"
-#include "initmodule.h"
-#include "datareader.h"
+#include "initial/initmodule.h"
+#include "error.h"
 
 namespace oofem {
-class EngngModel;
-
-/**
- * Class representing and implementing InitModuleManager. It is attribute of EngngModel.
- * It manages the init modules, which perform module - specific init oprations.
- */
-class OOFEM_EXPORT InitModuleManager : public ModuleManager< InitModule >
+InitModule :: InitModule(int n, EngngModel *e)
 {
-public:
-    InitModuleManager(EngngModel * emodel);
-    virtual ~InitModuleManager();
+    emodel = e;
+    number = n;
+}
 
-    std::unique_ptr<InitModule> CreateModule(const char *name, int n, EngngModel *emodel) override;
 
-    /**
-     * Performs the initialization of individual modules.
-     * Loops over all modules and calls corresponding doInit module service.
-     */
-    void doInit();
+InitModule :: ~InitModule()
+{ }
 
-    void initializeFrom(InputRecord &ir) override;
 
-    const char *giveClassName() const override { return "InitModuleManager"; }
-};
+void
+InitModule :: initializeFrom(InputRecord &ir)
+{
+    std :: string initFileName;
+    IR_GIVE_FIELD(ir, initFileName, _IFT_InitModule_initfilename);
+    if ( ( initStream = fopen(initFileName.c_str(), "r") ) == NULL ) {
+        OOFEM_ERROR("failed to open file %s", initFileName.c_str());
+    }
+}
 } // end namespace oofem
-#endif // initmodulemanager_h
