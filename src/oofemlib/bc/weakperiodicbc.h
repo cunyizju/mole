@@ -40,7 +40,7 @@
 #include <memory>
 
 #include "bc/activebc.h"
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"

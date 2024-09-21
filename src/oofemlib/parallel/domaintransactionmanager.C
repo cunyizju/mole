@@ -35,8 +35,8 @@
 #include "parallel/domaintransactionmanager.h"
 #include "error/error.h"
 #include "dofman/dofmanager.h"
-#include "element.h"
-#include "domain.h"
+#include "input/element.h"
+#include "input/domain.h"
 
 namespace oofem {
 DomainTransactionManager :: DomainTransactionManager(Domain *d)

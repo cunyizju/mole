@@ -36,7 +36,7 @@
 #include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
 #include "sm/Materials/InterfaceMaterials/structuralinterfacematerial.h"
 #include "gausspoint.h"
-#include "element.h"
+#include "input/element.h"
 #include "arrays/floatarray.h"
 
 namespace oofem {

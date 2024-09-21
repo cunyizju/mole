@@ -33,7 +33,7 @@
  */
 
 #include "dofs/slavedof.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "dofman/dofmanager.h"
 #include "error/error.h"
 #include "datastream.h"

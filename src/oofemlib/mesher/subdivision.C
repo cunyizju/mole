@@ -35,9 +35,9 @@
 #include "mesher/subdivision.h"
 #include "material/material.h"
 #include "error/errorestimator.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "dofman/node.h"
-#include "element.h"
+#include "input/element.h"
 #include "mathfem.h"
 #include "dofs/masterdof.h"
 #include "dofs/simpleslavedof.h"
@@ -49,7 +49,7 @@
 #include "ltf/function.h"
 #include "timer.h"
 #include "remeshingcrit.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "engng/engngm.h"
 
 #include <queue>

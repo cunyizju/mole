@@ -37,7 +37,7 @@
 
 #include "unknownnumberingscheme.h"
 #include "dofs/dof.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "dofman/dofmanager.h"
 
 namespace oofem {

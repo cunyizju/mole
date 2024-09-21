@@ -40,7 +40,7 @@
 #include "integrationdomain.h"
 #include "contextioresulttype.h"
 #include "contextmode.h"
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 
 #include <cstdio>
 

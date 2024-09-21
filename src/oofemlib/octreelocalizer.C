@@ -33,13 +33,13 @@
  */
 
 #include "octreelocalizer.h"
-#include "element.h"
-#include "domain.h"
+#include "input/element.h"
+#include "input/domain.h"
 #include "integrationrule.h"
 #include "gausspoint.h"
 #include "dofman/dofmanager.h"
 #include "dofman/node.h"
-#include "connectivitytable.h"
+#include "input/connectivitytable.h"
 #include "mathfem.h"
 #include "timer.h"
 #include "error/error.h"

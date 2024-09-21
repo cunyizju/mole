@@ -40,7 +40,7 @@
 #include "timestep.h"
 #include "ltf/function.h"
 #include "verbose.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "classfactory.h"
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"

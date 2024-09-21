@@ -41,7 +41,7 @@
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
 #include "bc/load.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofman/dofmanager.h"
 #include "bc/load.h"
 #include "bodyload.h"

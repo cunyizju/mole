@@ -55,7 +55,7 @@
 #include "material/materialinterface.h"
 #include "mathfem.h"
 #include "cltypes.h"
-#include "element.h"
+#include "input/element.h"
 #include "material/material.h"
 #include "classfactory.h"
 #include "cs/crosssection.h"

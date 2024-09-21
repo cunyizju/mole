@@ -38,8 +38,8 @@
 #include "chartype.h"
 #include "valuemodetype.h"
 #include "oofemcfg.h"
-#include "datareader.h"
-#include "inputrecord.h"
+#include "input/datareader.h"
+#include "input/inputrecord.h"
 
 #include <vector>
 #include <memory>

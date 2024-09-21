@@ -33,9 +33,9 @@
  */
 
 #include "structuralmaterialevaluator.h"
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 #include "timestep.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "gausspoint.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"

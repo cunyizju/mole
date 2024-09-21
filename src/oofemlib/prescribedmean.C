@@ -35,7 +35,7 @@
 #include "prescribedmean.h"
 #include "classfactory.h"
 #include "dofs/masterdof.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "fei/feinterpol.h"
 #include "gausspoint.h"
 #include "sparsemtrx.h"

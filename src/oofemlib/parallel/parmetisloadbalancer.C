@@ -33,11 +33,11 @@
  */
 
 #include "parallel/parmetisloadbalancer.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "engng/engngm.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofman/dofmanager.h"
-#include "connectivitytable.h"
+#include "input/connectivitytable.h"
 #include "error/error.h"
 #include "parallel/parallel.h"
 #include "parallel/processcomm.h"

@@ -35,7 +35,7 @@
 #ifndef prescribedgradienthomogenization_h
 #define prescribedgradienthomogenization_h
 
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 

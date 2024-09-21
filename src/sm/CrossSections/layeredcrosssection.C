@@ -46,7 +46,7 @@
 #include "mathfem.h"
 #include "classfactory.h"
 #include "lobattoir.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "cltypes.h"
 #include "simplecrosssection.h"
 

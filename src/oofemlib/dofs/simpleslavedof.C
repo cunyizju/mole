@@ -34,7 +34,7 @@
 
 #include "dofs/simpleslavedof.h"
 #include "dofman/dofmanager.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "datastream.h"
 #include "entityrenumberingscheme.h"
 #include "contextioerr.h"

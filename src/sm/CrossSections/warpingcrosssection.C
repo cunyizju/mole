@@ -34,7 +34,7 @@
 
 #include "warpingcrosssection.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 
 namespace oofem {
 REGISTER_CrossSection(WarpingCrossSection);

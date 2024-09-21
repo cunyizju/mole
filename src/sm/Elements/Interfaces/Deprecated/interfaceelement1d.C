@@ -33,7 +33,7 @@
  */
 
 #include "interfaceelement1d.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "dofman/node.h"
 #include "gaussintegrationrule.h"
 #include "arrays/floatmatrix.h"

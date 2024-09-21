@@ -35,8 +35,8 @@
 #include "ltf/periodicpiecewiselinfunction.h"
 #include "mathfem.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
-#include "domain.h"
+#include "input/dynamicinputrecord.h"
+#include "input/domain.h"
 
 namespace oofem {
 REGISTER_Function(PeriodicPiecewiseLinFunction);

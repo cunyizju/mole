@@ -34,7 +34,7 @@
 
 #include "ltf/scalarfunction.h"
 #include "arrays/floatarray.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "ltf/function.h"
 #include "parser.h"
 #include "error/error.h"

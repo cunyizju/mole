@@ -33,14 +33,14 @@
  */
 
 #include "loadbalancer.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "engng/engngm.h"
 #include "timer.h"
 #include "mathfem.h"
 #include "timestep.h"
 #include "arrays/floatarray.h"
 #include "classfactory.h"
-#include "element.h"
+#include "input/element.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 

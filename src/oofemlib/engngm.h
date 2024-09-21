@@ -36,7 +36,7 @@
 #define engngm_h
 
 #include "oofemcfg.h"
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 #include "arrays/intarray.h"
 #include "fields/fieldmanager.h"
 #include "metastep.h"

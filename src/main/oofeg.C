@@ -35,19 +35,19 @@
 //  MAIN
 //  Solves finite element problems.
 
-#include "oofemtxtdatareader.h"
+#include "input/oofemtxtdatareader.h"
 #include "engng/engngm.h"
 #include "timestep.h"
 #include "error/error.h"
 #include "oofeggraphiccontext.h"
 #include "datastream.h"
 
-#include "connectivitytable.h"
+#include "input/connectivitytable.h"
 #include "mathfem.h"
 #include "nodalrecovery/zznodalrecoverymodel.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "nodalrecovery/sprnodalrecoverymodel.h"
-#include "domain.h"
+#include "input/domain.h"
 
 #include "util.h"
 #include "dofman/node.h"

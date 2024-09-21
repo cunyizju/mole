@@ -39,7 +39,7 @@
 #include "arrays/floatmatrix.h"
 #include "gausspoint.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "contextioerr.h"
 
 namespace oofem {

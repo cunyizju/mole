@@ -35,11 +35,11 @@
 // Initialization module reading data related to Gauss points from a specified file
 
 #include "gpinitmodule.h"
-#include "element.h"
+#include "input/element.h"
 #include "integrationrule.h"
 #include "material/material.h"
 #include "arrays/floatarray.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "engng/engngm.h"
 #include "classfactory.h"
 #include "gausspoint.h"

@@ -34,7 +34,7 @@
 
 #include "parallel/nonlocalmatwtp.h"
 #include "nonlocalmaterialext.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofman/dofmanager.h"
 #include "engng/engngm.h"
 #include "gausspoint.h"

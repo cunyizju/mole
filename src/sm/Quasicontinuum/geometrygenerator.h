@@ -36,7 +36,7 @@
 #define geometrygenerator_h
 
 #include "arrays/floatarray.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofman/node.h"
 
 #define _IFT_GeometryGenerator_numOfParticles "gg_nop"

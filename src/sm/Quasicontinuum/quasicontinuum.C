@@ -35,11 +35,11 @@
 #include "sm/Quasicontinuum/quasicontinuum.h"
 #include "Solvers/qcLinearStatic/qclinearstatic.h"
 #include "dofman/qcnode.h"
-#include "element.h"
+#include "input/element.h"
 #include "mathfem.h"
 
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "sm/CrossSections/simplecrosssection.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
 #include "sm/Materials/anisolinearelasticmaterial.h"

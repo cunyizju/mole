@@ -35,8 +35,8 @@
 #ifndef oofemtxtdatareader_h
 #define oofemtxtdatareader_h
 
-#include "datareader.h"
-#include "oofemtxtinputrecord.h"
+#include "input/datareader.h"
+#include "input/oofemtxtinputrecord.h"
 
 #include <fstream>
 

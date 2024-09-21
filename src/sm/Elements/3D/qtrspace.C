@@ -43,7 +43,7 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "cltypes.h"
 #include "mathfem.h"
 #include "fei/fei3dtetquad.h"

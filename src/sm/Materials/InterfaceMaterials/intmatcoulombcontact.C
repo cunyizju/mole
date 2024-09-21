@@ -39,7 +39,7 @@
 #include "mathfem.h"
 #include "contextioerr.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 
 namespace oofem {
 REGISTER_Material(IntMatCoulombContact);

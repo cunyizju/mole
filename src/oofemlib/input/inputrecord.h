@@ -41,7 +41,7 @@
 #include <memory>
 #include <exception>
 
-#include "logger.h" // for missing __func__ in MSC
+#include "input/logger.h" // for missing __func__ in MSC
 #include "oofemcfg.h"
 
 namespace oofem {

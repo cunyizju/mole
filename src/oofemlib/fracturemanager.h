@@ -35,8 +35,8 @@
 #ifndef fracturemanager_h
 #define fracturemanager_h
 
-#include "datareader.h"
-#include "inputrecord.h"
+#include "input/datareader.h"
+#include "input/inputrecord.h"
 #include "contextioresulttype.h"
 #include "contextmode.h"
 #include "timestep.h"

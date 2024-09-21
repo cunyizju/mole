@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "femcmpnn.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
@@ -40,7 +40,7 @@
 #include "dictionary.h"
 #include "range.h"
 #include "dofman/node.h"
-#include "element.h"
+#include "input/element.h"
 #include "ltf/scalarfunction.h"
 
 #include <sstream>

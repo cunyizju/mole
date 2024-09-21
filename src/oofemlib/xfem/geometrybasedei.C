@@ -37,14 +37,14 @@
 
 #include "spatiallocalizer.h"
 #include "classfactory.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofman/node.h"
 #include "mathfem.h"
 #include "fei/feinterpol.h"
 #include "gausspoint.h"
-#include "dynamicinputrecord.h"
-#include "dynamicdatareader.h"
-#include "geometry.h"
+#include "input/dynamicinputrecord.h"
+#include "input/dynamicdatareader.h"
+#include "input/geometry.h"
 
 #include "xfem/enrichmentfunction.h"
 #include "xfem/propagationlaw.h"

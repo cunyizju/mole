@@ -42,7 +42,7 @@
 #include "sm/Materials/structuralnonlocalmaterialext.h"
 #include "Loads/structeigenstrainload.h"
 #include "fei/feinterpol.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "material/material.h"
 #include "nonlocalmaterialext.h"
 #include "bc/load.h"
@@ -61,7 +61,7 @@
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"
- #include "connectivitytable.h"
+ #include "input/connectivitytable.h"
 #endif
 
 

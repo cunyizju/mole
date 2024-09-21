@@ -33,7 +33,7 @@
  */
 
 #include "bc/surfacetensionbc.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofman/node.h"
 #include "cs/crosssection.h"
 #include "error/error.h"

@@ -33,7 +33,7 @@
  */
 
 #include "polylinenonlocalbarrier.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "dofman/node.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"

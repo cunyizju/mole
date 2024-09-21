@@ -37,7 +37,7 @@
 #include "arrays/floatarray.h"
 #include "contextioerr.h"
 #include "mathfem.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 
 namespace oofem {
 

@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "mathfem.h"

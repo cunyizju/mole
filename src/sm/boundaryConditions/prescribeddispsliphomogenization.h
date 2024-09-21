@@ -35,7 +35,7 @@
 #ifndef prescribeddispsliphomogenization_h
 #define prescribeddispsliphomogenization_h
 
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 

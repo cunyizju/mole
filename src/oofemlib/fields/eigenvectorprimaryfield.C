@@ -34,7 +34,7 @@
 
 #include "fields/eigenvectorprimaryfield.h"
 #include "timestep.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"
 #include "arrays/floatarray.h"
@@ -43,7 +43,7 @@
 #include "set.h"
 #include "bc/boundarycondition.h"
 #include "initial/initialcondition.h"
-#include "element.h"
+#include "input/element.h"
 #include "bc/activebc.h"
 
 

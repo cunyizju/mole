@@ -39,7 +39,7 @@
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "gaussintegrationrule.h"
 #include "gausspoint.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "fei/feinterpol.h"
 #include "spatiallocalizer.h"
 #include "engng/engngm.h"

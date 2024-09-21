@@ -36,7 +36,7 @@
 #include "spatiallocalizer.h"
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"
-#include "element.h"
+#include "input/element.h"
 #include "timestep.h"
 #include "datastream.h"
 #include "contextioerr.h"

@@ -33,7 +33,7 @@
  */
 
 #include "refinedelement.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofman/node.h"
 #include "dofs/dof.h"
 #include "mathfem.h"

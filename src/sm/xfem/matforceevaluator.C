@@ -34,7 +34,7 @@
 
 #include "matforceevaluator.h"
 #include "xfem/tipinfo.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "spatiallocalizer.h"
 #include "sm/Elements/nlstructuralelement.h"
 #include "dofman/dofmanager.h"

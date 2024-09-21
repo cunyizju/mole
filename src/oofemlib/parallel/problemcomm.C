@@ -36,7 +36,7 @@
 #include "arrays/intarray.h"
 #include "error/error.h"
 #include "engng/engngm.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofman/dofmanager.h"
 
 #ifdef __USE_MPI

@@ -34,14 +34,14 @@
 
 #include "xfemstructuremanager.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
-#include "dynamicdatareader.h"
-#include "datareader.h"
+#include "input/dynamicinputrecord.h"
+#include "input/dynamicdatareader.h"
+#include "input/datareader.h"
 #include "mathfem.h"
 
 #include "sm/xfem/enrichmentitems/crack.h"
 #include "xfem/enrichmentfronts/enrichmentfrontintersection.h"
-#include "geometry.h"
+#include "input/geometry.h"
 
 #include "matforceevaluator.h"
 

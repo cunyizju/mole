@@ -33,8 +33,8 @@
  */
 
 #include "spatiallocalizer.h"
-#include "connectivitytable.h"
-#include "element.h"
+#include "input/connectivitytable.h"
+#include "input/element.h"
 #include "dofman/node.h"
 #include "mathfem.h"
 #include "error/error.h"

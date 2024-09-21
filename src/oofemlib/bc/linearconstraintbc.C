@@ -43,7 +43,7 @@
 #include "datastream.h"
 #include "contextioerr.h"
 #include "dofman/node.h"
-#include "domain.h"
+#include "input/domain.h"
 
 #ifdef _OPENMP
 #include <omp.h>

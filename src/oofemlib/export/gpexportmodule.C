@@ -35,7 +35,7 @@
 #include "export/gpexportmodule.h"
 #include "gausspoint.h"
 #include "material/material.h"
-#include "element.h"
+#include "input/element.h"
 #include "integrationrule.h"
 #include "timestep.h"
 #include "engng/engngm.h"

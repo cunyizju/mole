@@ -34,7 +34,7 @@
 
 #include "sm/Materials/LatticeMaterials/latticestructuralmaterial.h"
 #include "sm/Materials/LatticeMaterials/latticematstatus.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "verbose.h"
 #include "sm/Materials/structuralms.h"
 #include "sm/Elements/structuralelement.h"
@@ -47,7 +47,7 @@
 #include "mathfem.h"
 #include "engng/engngm.h"
 #include "fields/fieldmanager.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 
 namespace oofem {
 LatticeStructuralMaterial :: LatticeStructuralMaterial(int n, Domain *d) : StructuralMaterial(n, d) { }

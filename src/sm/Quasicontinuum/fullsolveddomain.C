@@ -36,7 +36,7 @@
 
 #include "nummet.h"
 #include "timestep.h"
-#include "element.h"
+#include "input/element.h"
 #include "sparsemtrx.h"
 #include "verbose.h"
 #include "classfactory.h"

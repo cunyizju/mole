@@ -34,7 +34,7 @@
 
 #include "gaussintegrationrule.h"
 #include "gausspoint.h"
-#include "element.h"
+#include "input/element.h"
 #include "arrays/floatarray.h"
 #include "mathfem.h"
 

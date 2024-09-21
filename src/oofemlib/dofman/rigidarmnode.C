@@ -38,7 +38,7 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/intarray.h"
 #include "classfactory.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "entityrenumberingscheme.h"
 
 namespace oofem {

@@ -36,7 +36,7 @@
 #define latticedirichletcouplingnode_h
 
 #include "dofman/node.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "arrays/floatarray.h"
 
 

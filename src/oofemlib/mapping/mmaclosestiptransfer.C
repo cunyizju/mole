@@ -34,7 +34,7 @@
 
 #include "mapping/mmaclosestiptransfer.h"
 #include "spatiallocalizer.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "material/material.h"
 #include "gausspoint.h"
 #include "mapping/matstatmapperint.h"

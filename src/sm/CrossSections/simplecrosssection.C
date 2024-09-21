@@ -41,7 +41,7 @@
 #include "arrays/floatarrayf.h"
 #include "arrays/floatmatrixf.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "datastream.h"
 #include "contextioerr.h"
 #include "engng/engngm.h"

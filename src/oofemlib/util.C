@@ -35,8 +35,8 @@
 #include "util.h"
 #include "engng/engngm.h"
 #include "classfactory.h"
-#include "inputrecord.h"
-#include "datareader.h"
+#include "input/inputrecord.h"
+#include "input/datareader.h"
 #include "error/error.h"
 
 #include <cstring>

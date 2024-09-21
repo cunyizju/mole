@@ -33,7 +33,7 @@
  */
 
 #include "export/vtkmemoryexportmodule.h"
-#include "element.h"
+#include "input/element.h"
 #include "timestep.h"
 #include "engng/engngm.h"
 #include "dofman/node.h"

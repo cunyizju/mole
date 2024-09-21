@@ -48,8 +48,8 @@
 #include "sparsemtrxtype.h"
 #include "sparsemtrx.h"
 #include "solvers/sparselinsystemnm.h"
-#include "dynamicinputrecord.h"
-#include "domain.h"
+#include "input/dynamicinputrecord.h"
+#include "input/domain.h"
 #include "unknownnumberingscheme.h"
 #include "assemblercallback.h"
 

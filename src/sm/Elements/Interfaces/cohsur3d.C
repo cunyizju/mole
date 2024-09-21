@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/Interfaces/cohsur3d.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofs/dof.h"
 #include "dofman/node.h"
 #include "particle.h"
@@ -49,7 +49,7 @@
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"
- #include "connectivitytable.h"
+ #include "input/connectivitytable.h"
  #include "oofegutils.h"
 #endif
 

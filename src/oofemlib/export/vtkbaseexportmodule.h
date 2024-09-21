@@ -42,7 +42,7 @@
 #include "internalstatetype.h"
 #include "unknowntype.h"
 #include "integrationrule.h"
-#include "element.h"
+#include "input/element.h"
 #include "nodalrecovery/nodalrecoverymodel.h"
 #include <iostream>
 #include <fstream>

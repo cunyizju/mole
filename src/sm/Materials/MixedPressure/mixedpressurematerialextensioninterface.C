@@ -34,7 +34,7 @@
 
 
 
-#include "domain.h"
+#include "input/domain.h"
 #include "mixedpressurematerialextensioninterface.h"
 #include "gausspoint.h"
 #include "arrays/floatmatrix.h"

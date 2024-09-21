@@ -37,7 +37,7 @@
 #include "gausspoint.h"
 #include "arrays/floatarray.h"
 #include "mathfem.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "contextioerr.h"
 #include "datastream.h"
 

@@ -36,7 +36,7 @@
 #include "classfactory.h"
 #include "dofman/node.h"
 #include "dofs/masterdof.h"
-#include "element.h"
+#include "input/element.h"
 #include "fei/feinterpol.h"
 #include "fei/feinterpol2d.h"
 #include "gausspoint.h"
@@ -49,7 +49,7 @@
 #include "unknownnumberingscheme.h"
 #include "engng/engngm.h"
 #include "mathfem.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 
 
 namespace oofem {

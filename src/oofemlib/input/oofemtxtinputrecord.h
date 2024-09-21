@@ -35,7 +35,7 @@
 #ifndef oofemtxtinputrecord_h
 #define oofemtxtinputrecord_h
 
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 #include "tokenizer.h"
 
 #include <string>

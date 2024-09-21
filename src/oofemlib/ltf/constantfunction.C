@@ -33,7 +33,7 @@
  */
 
 #include "ltf/constantfunction.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "classfactory.h"
 #include "datastream.h"
 #include "contextioerr.h"

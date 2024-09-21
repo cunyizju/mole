@@ -33,7 +33,7 @@
  */
 
 #include "xfem/directei.h"
-#include "geometry.h"
+#include "input/geometry.h"
 
 namespace oofem {
 DirectEI :: DirectEI(int n, XfemManager *xm, Domain *aDomain) :

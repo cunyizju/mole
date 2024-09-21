@@ -33,12 +33,12 @@
  */
 
 #include "mathfem.h"
-#include "geometry.h"
-#include "element.h"
+#include "input/geometry.h"
+#include "input/element.h"
 #include "dofman/dofmanager.h"
 #include "classfactory.h"
-#include "inputrecord.h"
-#include "dynamicinputrecord.h"
+#include "input/inputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "xfem/xfemtolerances.h"
 #include "fei/feinterpol.h"
 #include "xfem/tipinfo.h"

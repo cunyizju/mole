@@ -37,7 +37,7 @@
 
 #include "modulemanager.h"
 #include "initial/initmodule.h"
-#include "datareader.h"
+#include "input/datareader.h"
 
 namespace oofem {
 class EngngModel;

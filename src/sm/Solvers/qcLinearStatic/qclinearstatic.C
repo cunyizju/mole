@@ -38,7 +38,7 @@
 #include "sm/Elements/structuralelementevaluator.h"
 #include "nummet.h"
 #include "timestep.h"
-#include "element.h"
+#include "input/element.h"
 #include "sparsemtrx.h"
 #include "verbose.h"
 #include "classfactory.h"
@@ -47,7 +47,7 @@
 #include "classfactory.h"
 
 #include "dofman/qcnode.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "dofs/dof.h"
 #include "cs/crosssection.h"
 

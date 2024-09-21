@@ -39,7 +39,7 @@
 #include "verbose.h"
 #include "dofman/dofmanager.h"
 #include "engng/engngm.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "unknownnumberingscheme.h"
 #include "classfactory.h"
 

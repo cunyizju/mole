@@ -37,7 +37,7 @@
 #define ENRICHMENTFRONT_H_
 #include "oofemcfg.h"
 #include <vector>
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 #include "xfem/tipinfo.h"
 
 #include <unordered_map>

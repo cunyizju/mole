@@ -37,7 +37,7 @@
 #include "sm/Elements/structuralelementevaluator.h"
 #include "nummet.h"
 #include "timestep.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofs/dof.h"
 #include "sparsemtrx.h"
 #include "verbose.h"

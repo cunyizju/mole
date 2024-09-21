@@ -32,10 +32,10 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "domain.h"
+#include "input/domain.h"
 #include "nonlocalbarrier.h"
 #include "graddamagematerialextensioninterface.h"
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 #include "arrays/floatmatrix.h"
 
 #include <list>

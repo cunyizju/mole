@@ -41,7 +41,7 @@ using namespace std;
 #include "nummet.h"
 #include "timestep.h"
 #include "metastep.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofs/dof.h"
 #include "error/error.h"
 #include "verbose.h"

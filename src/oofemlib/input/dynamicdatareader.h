@@ -35,7 +35,7 @@
 #ifndef dynamicdatareader_h
 #define dynamicdatareader_h
 
-#include "datareader.h"
+#include "input/datareader.h"
 #include <vector>
 #include <memory>
 

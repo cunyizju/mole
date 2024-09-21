@@ -34,9 +34,9 @@
 
 #include "nodalrecovery/sprnodalrecoverymodel.h"
 #include "timestep.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofman/node.h"
-#include "connectivitytable.h"
+#include "input/connectivitytable.h"
 #include "integrationrule.h"
 #include "gausspoint.h"
 #include "engng/engngm.h"

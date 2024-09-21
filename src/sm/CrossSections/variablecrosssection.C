@@ -38,7 +38,7 @@
 #include "gausspoint.h"
 #include "arrays/floatarray.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "ltf/scalarfunction.h"
 #include "ltf/function.h"
 

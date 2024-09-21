@@ -33,9 +33,9 @@
  */
 
 #include "dofs/dofmanvalfield.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "spatiallocalizer.h"
-#include "element.h"
+#include "input/element.h"
 #include "cs/crosssection.h"
 #include "timestep.h"
 #include "util.h"

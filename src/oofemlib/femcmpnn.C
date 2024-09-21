@@ -41,7 +41,7 @@
 #include "femcmpnn.h"
 #include "datastream.h"
 #include "contextioerr.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 
 #include <cstdarg>
 

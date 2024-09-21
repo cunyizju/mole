@@ -43,10 +43,10 @@
 #include "strainvector.h"
 #include "stressvector.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "engng/engngm.h"
 #include "cs/crosssection.h"
-#include "oofemtxtinputrecord.h"
+#include "input/oofemtxtinputrecord.h"
 
 namespace oofem {
 REGISTER_Material(IsotropicDamageMaterial1);

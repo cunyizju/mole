@@ -36,7 +36,7 @@
 #include "gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "classfactory.h"
 #include "sm/Elements/structuralelement.h"
 #include "mathfem.h"

@@ -33,7 +33,7 @@
  */
 
 #include "dictionary.h"
-#include "logger.h"
+#include "input/logger.h"
 #include "datastream.h"
 #include "contextioerr.h"
 #include "contextmode.h"

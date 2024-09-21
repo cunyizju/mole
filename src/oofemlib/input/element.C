@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "element.h"
+#include "input/element.h"
 #include "cs/crosssection.h"
 #include "integrationrule.h"
 #include "error/errorestimator.h"
@@ -57,7 +57,7 @@
 #include "dofman/node.h"
 #include "gausspoint.h"
 #include "unknownnumberingscheme.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "mapping/matstatmapperint.h"
 #include "cltypes.h"
 

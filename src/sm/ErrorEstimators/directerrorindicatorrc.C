@@ -34,11 +34,11 @@
 
 #include "sm/ErrorEstimators/directerrorindicatorrc.h"
 #include "error/errorestimator.h"
-#include "domain.h"
-#include "element.h"
+#include "input/domain.h"
+#include "input/element.h"
 #include "dofman/dofmanager.h"
 #include "engng/engngm.h"
-#include "connectivitytable.h"
+#include "input/connectivitytable.h"
 #include "mathfem.h"
 #include "timestep.h"
 

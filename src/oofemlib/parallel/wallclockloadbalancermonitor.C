@@ -34,9 +34,9 @@
 
 #include "parallel/wallclockloadbalancermonitor.h"
 #include "engng/engngm.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "timestep.h"
-#include "element.h"
+#include "input/element.h"
 #include "mathfem.h"
 #include "classfactory.h"
 

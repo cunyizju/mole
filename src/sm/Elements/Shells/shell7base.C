@@ -38,7 +38,7 @@
 #include "dofman/node.h"
 #include "bc/load.h"
 #include "mathfem.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "gaussintegrationrule.h"
 #include "gausspoint.h"
 #include "bc/boundaryload.h"
@@ -48,7 +48,7 @@
 #include "dofs/dof.h"
 #include "arrays/floatarrayf.h"
 #include "arrays/floatmatrixf.h"
-#include "connectivitytable.h"
+#include "input/connectivitytable.h"
 #include <fstream>
 
 namespace oofem {

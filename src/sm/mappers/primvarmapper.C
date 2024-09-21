@@ -33,7 +33,7 @@
  */
 
 #include "primvarmapper.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "dofman/dofmanager.h"
 #include "linsystsolvertype.h"
 #include "sm/Elements/structuralelement.h"

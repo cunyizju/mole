@@ -39,7 +39,7 @@
 #ifndef error_h
 #define error_h
 
-#include "logger.h"
+#include "input/logger.h"
 
 #include <string>
 #include <cstdio>

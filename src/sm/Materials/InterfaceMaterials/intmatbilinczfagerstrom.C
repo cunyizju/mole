@@ -41,7 +41,7 @@
 #include "contextioerr.h"
 #include "classfactory.h"
 #include "intmatbilinczfagerstrom.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 
 
 namespace oofem {

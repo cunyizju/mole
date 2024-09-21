@@ -38,7 +38,7 @@
 #include "mathfem.h"
 #include "datastream.h"
 #include "contextioerr.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "gausspoint.h"
 
 namespace oofem {

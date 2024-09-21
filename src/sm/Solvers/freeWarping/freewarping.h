@@ -40,7 +40,7 @@
 #include "sparsemtrxtype.h"
 #include "sparsemtrx.h"
 #include "arrays/floatmatrix.h"
-#include "connectivitytable.h"
+#include "input/connectivitytable.h"
 
 #define _IFT_FreeWarping_Name "freewarping"
 

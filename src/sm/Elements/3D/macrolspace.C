@@ -38,9 +38,9 @@
 #include "sm/Elements/3D/lspace.h"
 #include "fei/fei3dhexalin.h"
 #include "ltf/constantfunction.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "dofman/node.h"
 
 namespace oofem {

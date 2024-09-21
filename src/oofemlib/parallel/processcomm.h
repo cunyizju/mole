@@ -43,7 +43,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "error/error.h"
-#include "logger.h"
+#include "input/logger.h"
 
 #include <string>
 #include <memory>

@@ -34,8 +34,8 @@
 
 #include "mapping/mmacontainingelementprojection.h"
 #include "spatiallocalizer.h"
-#include "domain.h"
-#include "element.h"
+#include "input/domain.h"
+#include "input/element.h"
 #include "material/material.h"
 #include "integrationrule.h"
 #include "gausspoint.h"

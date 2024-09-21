@@ -32,8 +32,8 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "dynamicdatareader.h"
-#include "inputrecord.h"
+#include "input/dynamicdatareader.h"
+#include "input/inputrecord.h"
 #include "error/error.h"
 
 #include <memory>

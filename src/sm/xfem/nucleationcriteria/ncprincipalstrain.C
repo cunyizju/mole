@@ -36,8 +36,8 @@
 
 #include "error/error.h"
 #include "xfem/enrichmentitem.h"
-#include "domain.h"
-#include "element.h"
+#include "input/domain.h"
+#include "input/element.h"
 #include "gausspoint.h"
 
 #include "sm/Materials/structuralms.h"
@@ -50,9 +50,9 @@
 #include "xfem/enrichmentfronts/enrichmentfrontcohesivebranchfunconeel.h"
 #include "xfem/propagationlaws/plhoopstresscirc.h"
 #include "xfem/propagationlaws/plprincipalstrain.h"
-#include "dynamicdatareader.h"
-#include "dynamicinputrecord.h"
-#include "geometry.h"
+#include "input/dynamicdatareader.h"
+#include "input/dynamicinputrecord.h"
+#include "input/geometry.h"
 #include "classfactory.h"
 #include "spatiallocalizer.h"
 #include "cs/crosssection.h"

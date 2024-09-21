@@ -40,7 +40,7 @@
 #include "material/material.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "mathfem.h"
 #include "timestep.h"
 #include <cstdio>

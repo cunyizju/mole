@@ -36,9 +36,9 @@
 #include "ltf/function.h"
 #include "arrays/floatarray.h"
 #include "timestep.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "valuemodetype.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "datastream.h"
 #include "contextioerr.h"
 

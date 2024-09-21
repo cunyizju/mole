@@ -35,10 +35,10 @@
 #include "structuralslipfe2material.h"
 #include "gausspoint.h"
 #include "engng/engngm.h"
-#include "oofemtxtdatareader.h"
+#include "input/oofemtxtdatareader.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "classfactory.h"
 #include "util.h"
 #include "contextioerr.h"
@@ -53,7 +53,7 @@
 #include "xfem/xfemstructuremanager.h"
 #include "mathfem.h"
 
-#include "dynamicdatareader.h"
+#include "input/dynamicdatareader.h"
 
 #include <sstream>
 

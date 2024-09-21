@@ -40,7 +40,7 @@
 #include "dofs/slavedof.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "element.h"
+#include "input/element.h"
 #include "fei/feinterpol.h"
 #include "spatiallocalizer.h"
 #include "classfactory.h"

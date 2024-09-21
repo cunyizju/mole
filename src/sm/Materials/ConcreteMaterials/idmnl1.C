@@ -45,13 +45,13 @@
 #include "stressvector.h"
 #include "strainvector.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "datastream.h"
 #include "unknownnumberingscheme.h"
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"
- #include "connectivitytable.h"
+ #include "input/connectivitytable.h"
 #endif
 
 namespace oofem {

@@ -37,7 +37,7 @@
 #include "engng/engngm.h"
 #include "arrays/floatarray.h"
 #include "verbose.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "classfactory.h"
 
 #define TIME_REPORT

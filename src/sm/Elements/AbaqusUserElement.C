@@ -35,7 +35,7 @@
 #include "AbaqusUserElement.h"
 #include "gausspoint.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "dofman/dofmanager.h"
 #include "dofman/node.h"
 

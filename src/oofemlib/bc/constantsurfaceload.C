@@ -33,7 +33,7 @@
  */
 
 #include "bc/constantsurfaceload.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "ltf/function.h"
 #include "arrays/floatarray.h"
 #include "timestep.h"

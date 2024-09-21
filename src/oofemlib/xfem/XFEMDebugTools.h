@@ -9,7 +9,7 @@
 #define XFEMDEBUGTOOLS_H_
 
 #include "oofemcfg.h"
-#include "geometry.h"
+#include "input/geometry.h"
 
 #include <fstream>
 

@@ -36,7 +36,7 @@
 #define NEUMANNMOMENTLOAD_H
 
 #include "bc/boundaryload.h"
-#include "element.h"
+#include "input/element.h"
 
 #define _IFT_NeumannMomentLoad_Name "momentload"
 #define _IFT_NeumannMomentLoad_Gradient "gradient"

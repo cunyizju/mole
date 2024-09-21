@@ -33,8 +33,8 @@
  */
 
 #include "dummylocalizer.h"
-#include "element.h"
-#include "domain.h"
+#include "input/element.h"
+#include "input/domain.h"
 #include "integrationrule.h"
 #include "gausspoint.h"
 #include "dofman/node.h"

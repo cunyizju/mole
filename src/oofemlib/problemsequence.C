@@ -33,12 +33,12 @@
  */
 
 #include "problemsequence.h"
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 #include "classfactory.h"
 #include "util.h"
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 #include "datastream.h"
-#include "oofemtxtdatareader.h"
+#include "input/oofemtxtdatareader.h"
 
 #include <memory>
 

@@ -35,7 +35,7 @@
 #include "xfem/hybridei.h"
 #include "xfemmanager.h"
 #include "dofman/node.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "arrays/floatmatrix.h"
 #include "classfactory.h"
 

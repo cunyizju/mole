@@ -39,7 +39,7 @@
 #include "sloangraphnode.h"
 #include "sloangraph.h"
 #include "arrays/intarray.h"
-#include "domain.h"
+#include "input/domain.h"
 
 namespace oofem {
 #define LEVEL_LIST_GROW_CHUNK 50

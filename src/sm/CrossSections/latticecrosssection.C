@@ -36,7 +36,7 @@
 #include "sm/Materials/LatticeMaterials/latticematstatus.h"
 #include "sm/Materials/LatticeMaterials/latticestructuralmaterial.h"
 #include "gausspoint.h"
-#include "element.h"
+#include "input/element.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatarrayf.h"
 #include "arrays/floatmatrixf.h"

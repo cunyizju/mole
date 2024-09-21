@@ -52,13 +52,13 @@
 #include "bc/boundaryload.h"
 #include "mathfem.h"
 #include "classfactory.h"
-#include "connectivitytable.h"
+#include "input/connectivitytable.h"
 
 
 #ifdef __OOFEG
  #include "dofman/node.h"
  #include "oofeggraphiccontext.h"
- #include "connectivitytable.h"
+ #include "input/connectivitytable.h"
 #endif
 
 

@@ -35,7 +35,7 @@
 #include "assemblercallback.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofman/dofmanager.h"
 #include "bc/activebc.h"
 

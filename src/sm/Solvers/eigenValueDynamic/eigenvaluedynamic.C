@@ -45,7 +45,7 @@
 #include "classfactory.h"
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "unknownnumberingscheme.h"
 
 #ifdef __OOFEG

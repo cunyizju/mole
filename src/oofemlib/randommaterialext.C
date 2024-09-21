@@ -33,12 +33,12 @@
  */
 
 #include "gausspoint.h"
-#include "inputrecord.h"
-#include "domain.h"
+#include "input/inputrecord.h"
+#include "input/domain.h"
 #include "material/material.h"
 #include "ltf/function.h"
 #include "randommaterialext.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 
 namespace oofem {
 bool

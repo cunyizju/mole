@@ -35,16 +35,16 @@
 #include "set.h"
 #include "error/error.h"
 #include "arrays/intarray.h"
-#include "inputrecord.h"
-#include "domain.h"
-#include "element.h"
+#include "input/inputrecord.h"
+#include "input/domain.h"
+#include "input/element.h"
 #include "dofman/node.h"
 #include "range.h"
 #include "fei/feinterpol.h"
 #include "fei/feinterpol2d.h"
 #include "fei/feinterpol3d.h"
 #include "contextioerr.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include <list>
 
 namespace oofem {

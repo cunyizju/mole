@@ -40,7 +40,7 @@
 #include "internalstatevaluetype.h"
 #include "internalstatetype.h"
 #include "unknowntype.h"
-#include "element.h"
+#include "input/element.h"
 
 
 #ifdef _PYBIND_BINDINGS

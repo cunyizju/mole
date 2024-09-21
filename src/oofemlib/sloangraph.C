@@ -36,8 +36,8 @@
 /* Author: Milan Jirasek */
 
 #include "sloangraph.h"
-#include "domain.h"
-#include "element.h"
+#include "input/domain.h"
+#include "input/element.h"
 #include "dofs/dof.h"
 #include "dofman/dofmanager.h"
 #include "dofs/simpleslavedof.h"

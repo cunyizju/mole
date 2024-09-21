@@ -35,7 +35,7 @@
 #include "ltf/piecewiselinfunction.h"
 #include "mathfem.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 
 #include <fstream>
 #include <sstream>

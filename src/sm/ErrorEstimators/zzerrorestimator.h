@@ -40,7 +40,7 @@
 #include "internalstatetype.h"
 #include "arrays/floatarray.h"
 #include "statecountertype.h"
-#include "element.h"
+#include "input/element.h"
 #include "integrationrule.h"
 #include "remeshingcrit.h"
 

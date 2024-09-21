@@ -33,7 +33,7 @@
  */
 
 #include "basehyperelasticmaterial.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 
 namespace oofem {
 Tensor2_3d

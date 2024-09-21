@@ -1,13 +1,12 @@
 # Much to organize
 set (core_unsorted
     classfactory.C
-    femcmpnn.C domain.C timestep.C metastep.C gausspoint.C
+    femcmpnn.C  timestep.C metastep.C gausspoint.C
     cltypes.C timer.C dictionary.C heap.C grid.C
-    connectivitytable.C mathfem.C logger.C util.C
+    mathfem.C util.C
     assemblercallback.C
     homogenize.C
     nonlocalbarrier.C
-    geotoolbox.C geometry.C
     datastream.C
     set.C
     solutionbasedshapefunction.C
@@ -19,8 +18,8 @@ set (core_unsorted
     sloangraph.C sloangraphnode.C sloanlevelstruct.C
     eleminterpunknownmapper.C primaryunknownmapper.C 
     nonlocalmaterialext.C randommaterialext.C
-    inputrecord.C oofemtxtinputrecord.C dynamicinputrecord.C
-    dynamicdatareader.C oofemtxtdatareader.C tokenizer.C parser.C
+    
+     tokenizer.C parser.C
     spatiallocalizer.C dummylocalizer.C octreelocalizer.C
     integrationrule.C gaussintegrationrule.C lobattoir.C
     smoothednodalintvarfield.C
@@ -41,6 +40,19 @@ set(initial
     initial/initialcondition.C
 )
 
+set(input
+    input/inputrecord.C 
+    input/oofemtxtinputrecord.C
+    input/dynamicinputrecord.C
+    input/domain.C
+    input/element.C
+    input/geotoolbox.C
+    input/geometry.C
+    input/connectivitytable.C
+    input/dynamicdatareader.C
+    input/oofemtxtdatareader.C
+    input/logger.C
+)
 set(contact
     contact/contactmanager.C
     contact/contactdefinition.C
@@ -228,10 +240,6 @@ set (core_engng
     engng/dummyengngm.C
     )
 
-set (core_element
-    element.C
-    )
-
 set (core_fei
     fei/feinterpol.C
     fei/feinterpol1d.C
@@ -364,6 +372,7 @@ set (core_mesher
     )
 
 set (core
+    ${input}
     ${initial}
     ${contact}
     ${error}
@@ -381,7 +390,6 @@ set (core
     ${core_cs}
     ${core_arrays}
     ${core_engng}
-    ${core_element}
     ${core_fei}
     ${core_xfem}
     ${core_bc}

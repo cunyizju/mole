@@ -52,8 +52,8 @@
 #include "contextioerr.h"
 #include "mathfem.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
-#include "domain.h"
+#include "input/dynamicinputrecord.h"
+#include "input/domain.h"
 #include "engng/engngm.h"
 
 #ifdef __OOFEG

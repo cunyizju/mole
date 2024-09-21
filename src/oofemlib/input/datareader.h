@@ -36,7 +36,7 @@
 #define datareader_h
 
 #include "oofemcfg.h"
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 
 namespace oofem {
 /**

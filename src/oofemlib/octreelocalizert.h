@@ -45,7 +45,7 @@
 #include "octreelocalizer.h"
 #include "dofman/dofmanager.h"
 #include "dofman/node.h"
-#include "element.h"
+#include "input/element.h"
 #include "mathfem.h"
 #include "timer.h"
 

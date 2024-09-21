@@ -35,7 +35,7 @@
 #include "solvers/petscsparsemtrx.h"
 #include "engng/engngm.h"
 #include "bc/activebc.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofman/dofmanager.h"
 #include "sparsemtrxtype.h"
 #include "classfactory.h"

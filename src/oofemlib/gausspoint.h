@@ -44,7 +44,7 @@
 #include "oofemcfg.h"
 #include "integrationrule.h"
 #include "integrationpointstatus.h"
-#include "element.h"
+#include "input/element.h"
 #include "arrays/floatarray.h"
 #include "material/materialmode.h"
 

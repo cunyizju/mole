@@ -33,7 +33,7 @@
  */
 
 #include "fei/feinterpol.h"
-#include "element.h"
+#include "input/element.h"
 #include "gaussintegrationrule.h"
 
 namespace oofem {

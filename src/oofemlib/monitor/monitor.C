@@ -34,7 +34,7 @@
 
 #include "monitor/monitor.h"
 #include "classfactory.h"
-#include "logger.h"
+#include "input/logger.h"
 
 namespace oofem {
 

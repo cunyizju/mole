@@ -39,11 +39,11 @@
 #include "metastep.h"
 #include "export/exportmodulemanager.h"
 #include "mathfem.h"
-#include "oofemtxtdatareader.h"
+#include "input/oofemtxtdatareader.h"
 #include "util.h"
 #include "verbose.h"
 #include "classfactory.h"
-#include "domain.h"
+#include "input/domain.h"
 
 #include <stdlib.h>
 

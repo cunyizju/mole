@@ -34,7 +34,7 @@
 
 #include "dofs/activedof.h"
 #include "bc/activebc.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "dofman/dofmanager.h"
 #include "contextioerr.h"
 #include "bc/activebc.h"

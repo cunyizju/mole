@@ -39,7 +39,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "dofman/dofmanager.h"
 #include "error/error.h"
 #include <iostream>

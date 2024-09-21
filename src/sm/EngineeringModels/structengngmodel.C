@@ -38,7 +38,7 @@
 #include "sm/Elements/Interfaces/structuralinterfaceelement.h"
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"
-#include "element.h"
+#include "input/element.h"
 #include "timestep.h"
 #include "export/outputmanager.h"
 #include "bc/activebc.h"

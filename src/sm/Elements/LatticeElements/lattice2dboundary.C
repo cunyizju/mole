@@ -35,7 +35,7 @@
 #include "../sm/Elements/LatticeElements/lattice2dboundary.h"
 #include "../sm/Elements/LatticeElements/lattice2d.h"
 #include "../sm/Materials/LatticeMaterials/latticematstatus.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "dofman/node.h"
 #include "material/material.h"
 #include "gausspoint.h"

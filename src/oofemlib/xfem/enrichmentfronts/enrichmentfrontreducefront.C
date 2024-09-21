@@ -33,13 +33,13 @@
  */
 
 #include "enrichmentfrontreducefront.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "classfactory.h"
 #include "xfem/xfemmanager.h"
-#include "domain.h"
-#include "connectivitytable.h"
+#include "input/domain.h"
+#include "input/connectivitytable.h"
 #include "spatiallocalizer.h"
-#include "element.h"
+#include "input/element.h"
 
 namespace oofem {
 REGISTER_EnrichmentFront(EnrFrontReduceFront)

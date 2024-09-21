@@ -33,13 +33,13 @@
  */
 
 #include "eleminterpunknownmapper.h"
-#include "element.h"
-#include "domain.h"
+#include "input/element.h"
+#include "input/domain.h"
 #include "engng/engngm.h"
 #include "spatiallocalizer.h"
 #include "dofman/node.h"
 #include "dofs/dof.h"
-#include "connectivitytable.h"
+#include "input/connectivitytable.h"
 #include "unknownnumberingscheme.h"
 
 namespace oofem {

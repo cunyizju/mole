@@ -36,7 +36,7 @@
 #include "arrays/floatarray.h"
 #include "mathfem.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 
 namespace oofem {
 REGISTER_BoundaryCondition(LinearEdgeLoad);

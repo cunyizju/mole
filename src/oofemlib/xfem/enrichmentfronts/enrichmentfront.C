@@ -34,10 +34,10 @@
 
 #include "enrichmentfront.h"
 #include "xfem/tipinfo.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "xfem/xfemmanager.h"
 #include "spatiallocalizer.h"
-#include "element.h"
+#include "input/element.h"
 
 namespace oofem {
 void EnrichmentFront :: MarkTipElementNodesAsFront(std :: unordered_map< int, NodeEnrichmentType > &ioNodeEnrMarkerMap, XfemManager &ixFemMan,  const std :: unordered_map< int, double > &iLevelSetNormalDirMap, const std :: unordered_map< int, double > &iLevelSetTangDirMap, const TipInfo &iTipInfo)

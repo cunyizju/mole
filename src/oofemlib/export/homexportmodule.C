@@ -34,7 +34,7 @@
 
 #include "export/homexportmodule.h"
 #include "timestep.h"
-#include "element.h"
+#include "input/element.h"
 #include "gausspoint.h"
 #include "engng/engngm.h"
 #include "material/material.h"

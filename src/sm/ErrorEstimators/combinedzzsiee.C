@@ -33,9 +33,9 @@
  */
 
 #include "sm/ErrorEstimators/combinedzzsiee.h"
-#include "domain.h"
-#include "element.h"
-#include "connectivitytable.h"
+#include "input/domain.h"
+#include "input/element.h"
+#include "input/connectivitytable.h"
 #include "mathfem.h"
 #include "error/errorestimatortype.h"
 #include "classfactory.h"

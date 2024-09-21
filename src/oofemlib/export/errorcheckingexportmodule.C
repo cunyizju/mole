@@ -38,13 +38,13 @@
 
 #include "export/errorcheckingexportmodule.h"
 #include "engng/engngm.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "dofman/node.h"
-#include "element.h"
+#include "input/element.h"
 #include "timestep.h"
 #include "classfactory.h"
 #include "dofs/dof.h"
-#include "oofemtxtinputrecord.h"
+#include "input/oofemtxtinputrecord.h"
 #include "mathfem.h"
 #ifdef __SM_MODULE
  #include "sm/EngineeringModels/structengngmodel.h"

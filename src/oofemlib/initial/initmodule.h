@@ -36,7 +36,7 @@
 #define initmodule_h
 
 #include "oofemcfg.h"
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 
 #include <cstdio>
 

@@ -34,13 +34,13 @@
 
 #include "mesher/t3dinterface.h"
 #include "error/errorestimator.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "dofman/node.h"
-#include "element.h"
+#include "input/element.h"
 #include "engng/engngm.h"
 #include "remeshingcrit.h"
-#include "oofemtxtdatareader.h"
-#include "dynamicinputrecord.h"
+#include "input/oofemtxtdatareader.h"
+#include "input/dynamicinputrecord.h"
 
 #include "cs/crosssection.h"
 #include "classfactory.h"

@@ -42,7 +42,7 @@
 #include "nonlocalmaterialext.h"
 #include "contextioerr.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "datastream.h"
 
 namespace oofem {

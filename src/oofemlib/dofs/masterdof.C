@@ -34,7 +34,7 @@
 
 #include "dofs/masterdof.h"
 #include "dofman/dofmanager.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "timestep.h"
 #include "bc/boundarycondition.h"
 #include "initial/initialcondition.h"

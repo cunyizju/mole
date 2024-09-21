@@ -36,7 +36,7 @@
 #include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
 #include "sm/export/gnuplotexportmodule.h"
 #include "gausspoint.h"
-#include "geometry.h"
+#include "input/geometry.h"
 
 #include "engng/engngm.h"
 #include "sm/Materials/structuralfe2material.h"

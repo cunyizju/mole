@@ -35,7 +35,7 @@
 #include "export/exportmodule.h"
 #include "timestep.h"
 #include "engng/engngm.h"
-#include "domain.h"
+#include "input/domain.h"
 
 #include <cstdarg>
 

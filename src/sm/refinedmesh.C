@@ -33,8 +33,8 @@
  */
 
 #include "refinedmesh.h"
-#include "domain.h"
-#include "element.h"
+#include "input/domain.h"
+#include "input/element.h"
 #include "dofman/node.h"
 #include "refinedelement.h"
 

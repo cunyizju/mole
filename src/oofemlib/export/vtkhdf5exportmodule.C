@@ -33,7 +33,7 @@
  */
 
 #include "export/vtkhdf5exportmodule.h"
-#include "element.h"
+#include "input/element.h"
 #include "gausspoint.h"
 #include "timestep.h"
 #include "engng/engngm.h"

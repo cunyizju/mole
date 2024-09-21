@@ -44,11 +44,11 @@
 #include "xfem/enrichmentfronts/enrichmentfront.h"
 #include "xfem/xfemmanager.h"
 #include "classfactory.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "mathfem.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "spatiallocalizer.h"
-#include "connectivitytable.h"
+#include "input/connectivitytable.h"
 
 namespace oofem {
 REGISTER_PropagationLaw(PLCZdamageRadius)

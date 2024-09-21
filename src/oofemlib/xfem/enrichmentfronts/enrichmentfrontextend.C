@@ -33,12 +33,12 @@
  */
 
 #include "enrichmentfrontextend.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "classfactory.h"
 #include "xfem/xfemmanager.h"
-#include "domain.h"
-#include "connectivitytable.h"
-#include "element.h"
+#include "input/domain.h"
+#include "input/connectivitytable.h"
+#include "input/element.h"
 
 namespace oofem {
 REGISTER_EnrichmentFront(EnrFrontExtend)

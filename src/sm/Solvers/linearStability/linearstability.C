@@ -37,7 +37,7 @@
 
 #include "linearstability.h"
 #include "timestep.h"
-#include "element.h"
+#include "input/element.h"
 #include "contextioerr.h"
 #include "arrays/floatmatrix.h"
 #include "verbose.h"

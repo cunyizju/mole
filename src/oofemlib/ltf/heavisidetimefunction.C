@@ -33,7 +33,7 @@
  */
 
 #include "ltf/heavisidetimefunction.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "classfactory.h"
 
 namespace oofem {

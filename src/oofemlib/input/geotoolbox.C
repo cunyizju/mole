@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "geotoolbox.h"
+#include "input/geotoolbox.h"
 #include "mathfem.h"
 
 #ifdef __OOFEG

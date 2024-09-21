@@ -37,7 +37,7 @@
 
 #include "bc/generalboundarycondition.h"
 #include "arrays/intarray.h"
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 #include "chartype.h"
 #include "valuemodetype.h"
 #include "error/error.h"

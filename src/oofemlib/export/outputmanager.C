@@ -35,7 +35,7 @@
 #include "export/outputmanager.h"
 #include "timestep.h"
 #include "engng/engngm.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofman/dofmanager.h"
 #include "range.h"
 

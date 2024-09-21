@@ -36,7 +36,7 @@
 #define domain_h
 
 #include "oofemcfg.h"
-#include "domaintype.h"
+#include "input/domaintype.h"
 #include "statecountertype.h"
 #include "arrays/intarray.h"
 #include "error/error.h"

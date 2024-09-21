@@ -39,8 +39,8 @@
 
 #include "bc/activebc.h"
 #include "bc/weakperiodicbc.h"
-#include "inputrecord.h"
-#include "element.h"
+#include "input/inputrecord.h"
+#include "input/element.h"
 #include "dofman/node.h"
 #include "dofs/masterdof.h"
 #include "sparsemtrx.h"

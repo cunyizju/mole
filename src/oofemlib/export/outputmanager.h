@@ -38,7 +38,7 @@
 #include "oofemcfg.h"
 #include "arrays/intarray.h"
 #include "range.h"
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 
 #include <list>
 

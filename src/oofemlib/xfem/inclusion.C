@@ -35,7 +35,7 @@
 #include "xfem/inclusion.h"
 
 #include "xfemmanager.h"
-#include "element.h"
+#include "input/element.h"
 #include "fei/feinterpol.h"
 #include "gausspoint.h"
 

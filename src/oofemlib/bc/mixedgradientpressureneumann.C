@@ -41,7 +41,7 @@
 #include "arrays/floatmatrix.h"
 #include "engng/engngm.h"
 #include "dofman/node.h"
-#include "element.h"
+#include "input/element.h"
 #include "integrationrule.h"
 #include "gaussintegrationrule.h"
 #include "gausspoint.h"
@@ -52,7 +52,7 @@
 #include "sparsemtrx.h"
 #include "solvers/sparselinsystemnm.h"
 #include "set.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "fei/feinterpol.h"
 #include "unknownnumberingscheme.h"
 

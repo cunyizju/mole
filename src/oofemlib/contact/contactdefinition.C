@@ -36,7 +36,7 @@
 #include "contact/contactdefinition.h"
 #include "contact/contactelement.h"
 #include "arrays/intarray.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "arrays/floatmatrix.h"
 #include "sparsemtrx.h"
 #include "dofs/masterdof.h"

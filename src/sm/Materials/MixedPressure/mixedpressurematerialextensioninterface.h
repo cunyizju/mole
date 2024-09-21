@@ -37,7 +37,7 @@
 
 #include "interface.h"
 #include "matresponsemode.h"
-#include "domain.h"
+#include "input/domain.h"
 
 ///@name micromorphicmaterialextensioninterface
 //@{

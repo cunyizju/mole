@@ -39,7 +39,7 @@
 
 #include "oofemcfg.h"
 #include <vector>
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 #include "xfem/enrichmentfronts/enrichmentfront.h"
 #include "xfem/tipinfo.h"
 

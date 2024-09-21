@@ -40,7 +40,7 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "engng/engngm.h"
 #include "mathfem.h"
 #include "cs/crosssection.h"
@@ -48,7 +48,7 @@
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"
- #include "connectivitytable.h"
+ #include "input/connectivitytable.h"
 #endif
 
 

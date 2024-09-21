@@ -25,7 +25,7 @@
 #include "arrays/intarray.h"
 #include "mathfem.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"

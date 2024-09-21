@@ -32,7 +32,7 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include "domain.h"
+#include "input/domain.h"
 #include "lattice3d.h"
 #include "../sm/Materials/LatticeMaterials/latticematstatus.h"
 #include "dofman/node.h"

@@ -6,10 +6,10 @@ namespace py = pybind11;
 // for alternative tokens like 'or' 
 #include <ciso646>
 
-#include "oofemtxtdatareader.h"
+#include "input/oofemtxtdatareader.h"
 #include "classfactory.h"
-#include "logger.h"
-#include "domain.h"
+#include "input/logger.h"
+#include "input/domain.h"
 #include "export/outputmanager.h"
 #include "modulemanager.h"
 #include "set.h"

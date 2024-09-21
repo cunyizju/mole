@@ -1,6 +1,6 @@
 #include "util.h"
-#include "dynamicinputrecord.h"
-#include "dynamicdatareader.h"
+#include "input/dynamicinputrecord.h"
+#include "input/dynamicdatareader.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
 #include "timer.h"

@@ -43,7 +43,7 @@
 #include "gausspoint.h"
 #include "mathfem.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 
 namespace oofem {
 #define ZERO_LENGTH 1.e-6

@@ -35,7 +35,7 @@
 #include "incrementallinearstatic.h"
 #include "timestep.h"
 #include "dofs/dof.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "sparsemtrx.h"
 #include "dictionary.h"
 #include "verbose.h"
@@ -48,7 +48,7 @@
 
 /*
 #include "set.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofman/node.h"
 */
 

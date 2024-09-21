@@ -74,7 +74,7 @@
 #include "xfem/enrichmentfunction.h"
 #include "xfem/enrichmentitem.h"
 #include "topologydescription.h"
-#include "geometry.h"
+#include "input/geometry.h"
 #include "fracturemanager.h"
 #include "contact/contactmanager.h"
 #include "contact/contactdefinition.h"

@@ -35,7 +35,7 @@
 #ifndef structuralelement_h
 #define structuralelement_h
 
-#include "element.h"
+#include "input/element.h"
 #include "matresponsemode.h"
 #include "valuemodetype.h"
 #include "integrationdomain.h"

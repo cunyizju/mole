@@ -37,7 +37,7 @@
 
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "sm/Materials/structuralmaterial.h"
-#include "element.h"
+#include "input/element.h"
 #include "dictionary.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"

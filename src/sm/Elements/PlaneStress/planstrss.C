@@ -42,7 +42,7 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "mathfem.h"
 #include "strainvector.h"
 #include "classfactory.h"
@@ -50,7 +50,7 @@
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"
  #include "oofegutils.h"
- #include "connectivitytable.h"
+ #include "input/connectivitytable.h"
  #include "sm/Materials/rcm2.h"
 #endif
 

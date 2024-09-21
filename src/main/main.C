@@ -42,11 +42,11 @@
 #include "engng/engngm.h"
 #include "oofemcfg.h"
 
-#include "oofemtxtdatareader.h"
+#include "input/oofemtxtdatareader.h"
 #include "datastream.h"
 #include "util.h"
 #include "error/error.h"
-#include "logger.h"
+#include "input/logger.h"
 #include "contextioerr.h"
 #include "oofem_terminate.h"
 
@@ -400,8 +400,8 @@ void oofem_finalize_modules()
 //#include "loadbalancer.h"
 //#include "xfem/iga.h"
 #include "arrays/floatmatrix.h"
-#include "domain.h"
-#include "element.h"
+#include "input/domain.h"
+#include "input/element.h"
 void oofem_debug(EngngModel &emodel)
 {
     FloatMatrix k;

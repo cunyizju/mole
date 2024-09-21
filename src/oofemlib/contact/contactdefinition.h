@@ -36,8 +36,8 @@
 #define contactdefinition_h
 
 #include "oofemcfg.h"
-#include "datareader.h"
-#include "inputrecord.h"
+#include "input/datareader.h"
+#include "input/inputrecord.h"
 #include "contact/contactmanager.h"
 
 ///@name Input fields for _IFT_ContactDefinition

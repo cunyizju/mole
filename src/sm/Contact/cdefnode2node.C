@@ -34,7 +34,7 @@
 
 #include "sm/Contact/cdefnode2node.h"
 #include "sm/Contact/celnode2node.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "classfactory.h"
 
 namespace oofem {

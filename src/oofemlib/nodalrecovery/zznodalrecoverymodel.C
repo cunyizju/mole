@@ -34,7 +34,7 @@
 
 #include "nodalrecovery/zznodalrecoverymodel.h"
 #include "timestep.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofman/dofmanager.h"
 #include "gausspoint.h"
 #include "integrationrule.h"

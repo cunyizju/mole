@@ -33,7 +33,7 @@
  */
 
 #include "concrete2.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "arrays/floatmatrix.h"
 #include "gausspoint.h"
 #include "mathfem.h"

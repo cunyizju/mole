@@ -40,7 +40,7 @@
 #include "arrays/intarray.h"
 #include "mathfem.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 
 namespace oofem {
 REGISTER_Material(J2plasticMaterial);

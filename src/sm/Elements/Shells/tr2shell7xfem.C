@@ -39,7 +39,7 @@
 #include "dofman/node.h"
 #include "bc/load.h"
 #include "mathfem.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "gaussintegrationrule.h"
 #include "gausspoint.h"
 #include "fei/fei3dtrquad.h"

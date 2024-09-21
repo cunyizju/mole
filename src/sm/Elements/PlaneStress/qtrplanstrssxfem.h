@@ -39,7 +39,7 @@
 #include "sm/xfem/xfemstructuralelementinterface.h"
 #include "export/vtkxmlexportmodule.h"
 
-#include "domain.h"
+#include "input/domain.h"
 
 #define _IFT_QTrPlaneStress2dXFEM_Name "qtrplanestress2dxfem"
 #define _IFT_QTrPlaneStress2dXFEM_RegCoeff "reg_coeff"

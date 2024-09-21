@@ -33,11 +33,11 @@
  */
 
 #include "prescribeddispsliphomogenization.h"
-#include "domain.h"
-#include "dynamicinputrecord.h"
+#include "input/domain.h"
+#include "input/dynamicinputrecord.h"
 #include "set.h"
 #include "fei/feinterpol.h"
-#include "element.h"
+#include "input/element.h"
 #include "mathfem.h"
 
 namespace oofem {

@@ -36,7 +36,7 @@
 #define loadbalancer_h
 
 #include "oofemcfg.h"
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 #include "arrays/floatarray.h"
 
 #include <vector>

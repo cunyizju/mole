@@ -36,7 +36,7 @@
 #include "engng/engngm.h"
 #include "timestep.h"
 #include "classfactory.h"
-#include "oofemtxtinputrecord.h"
+#include "input/oofemtxtinputrecord.h"
 
 #include <sstream>      // std::istringstream
 #include <string>       // std::string

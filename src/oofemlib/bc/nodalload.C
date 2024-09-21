@@ -35,7 +35,7 @@
 #include "bc/nodalload.h"
 #include "classfactory.h"
 #include "datastream.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "contextioerr.h"
 
 namespace oofem {

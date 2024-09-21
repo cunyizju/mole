@@ -36,10 +36,10 @@
 #define dofmanvalfield_h
 
 #include "fields/field.h"
-#include "elementgeometrytype.h"
+#include "input/elementgeometrytype.h"
 #include "error/error.h"
 #include "engng/engngm.h"
-#include "domain.h"
+#include "input/domain.h"
 #include <vector>
 #include "internalstatetype.h"
 #include "arrays/intarray.h"

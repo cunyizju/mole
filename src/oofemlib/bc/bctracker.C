@@ -32,9 +32,9 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "domain.h"
+#include "input/domain.h"
 #include "arrays/intarray.h"
-#include "element.h"
+#include "input/element.h"
 #include "set.h"
 #include "bc/load.h"
 #include "bodyload.h"

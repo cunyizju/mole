@@ -44,7 +44,7 @@
 #include "xfemmanager.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "mathfem.h"
 
 #include "XFEMDebugTools.h"

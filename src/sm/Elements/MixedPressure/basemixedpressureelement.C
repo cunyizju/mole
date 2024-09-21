@@ -45,7 +45,7 @@
 #include "dofman/node.h"
 #include "gausspoint.h"
 #include "gaussintegrationrule.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"

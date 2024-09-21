@@ -37,7 +37,7 @@
 #include "mathfem.h"
 #include "fei/feinterpol.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 
 namespace oofem {
 REGISTER_EnrichmentFunction(DiscontinuousFunction)

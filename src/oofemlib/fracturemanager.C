@@ -33,17 +33,17 @@
  */
 
 #include "fracturemanager.h"
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "cltypes.h"
-#include "datareader.h"
+#include "input/datareader.h"
 #include "datastream.h"
 #include "contextioerr.h"
 #include "xfem/xfemmanager.h"
 #include "classfactory.h"
-#include "element.h"
+#include "input/element.h"
 
 
 namespace oofem {

@@ -41,7 +41,7 @@
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"
- #include "connectivitytable.h"
+ #include "input/connectivitytable.h"
  #include "oofegutils.h"
  #include "sm/Materials/rcm2.h"
 #endif

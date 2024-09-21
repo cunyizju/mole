@@ -38,9 +38,9 @@
 #include "mesherinterface.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofman/dofmanager.h"
-#include "connectivitytable.h"
+#include "input/connectivitytable.h"
 
 #include <memory>
 #include <vector>

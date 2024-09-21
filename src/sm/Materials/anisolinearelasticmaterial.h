@@ -40,7 +40,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "matconst.h"
-#include "element.h"
+#include "input/element.h"
 
 ///@name Input fields for AnisotropicLinearElasticMaterial
 //@{

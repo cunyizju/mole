@@ -36,7 +36,7 @@
 #define structuralinterfaceelement_h
 
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
-#include "element.h"
+#include "input/element.h"
 #include "arrays/floatmatrix.h"
 #include "ltf/function.h"
 #include "matresponsemode.h"

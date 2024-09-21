@@ -36,7 +36,7 @@
 #include "classfactory.h"
 #include "dofman/node.h"
 #include "dofs/masterdof.h"
-#include "element.h"
+#include "input/element.h"
 #include "fei/feinterpol.h"
 #include "gausspoint.h"
 #include "sparsemtrx.h"

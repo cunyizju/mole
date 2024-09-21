@@ -32,7 +32,7 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include "domain.h"
+#include "input/domain.h"
 #include "../sm/Elements/Interfaces/bondlink3d.h"
 #include "../sm/Materials/structuralms.h"
 #include "../sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"

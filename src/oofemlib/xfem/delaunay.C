@@ -35,7 +35,7 @@
 #include "delaunay.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "geometry.h"
+#include "input/geometry.h"
 #include "dofman/node.h"
 #include "mathfem.h"
 

@@ -34,9 +34,9 @@
 
 #include "mesher/targe2interface.h"
 #include "error/errorestimator.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "dofman/node.h"
-#include "element.h"
+#include "input/element.h"
 #include "remeshingcrit.h"
 #include "classfactory.h"
 

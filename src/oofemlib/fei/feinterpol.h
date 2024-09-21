@@ -37,13 +37,13 @@
 
 #include "oofemcfg.h"
 #include "error/error.h"
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 #include "arrays/intarray.h"
 #include "integrationdomain.h"
-#include "elementgeometrytype.h"
+#include "input/elementgeometrytype.h"
 #include "material/materialmode.h"
 #include "dofman/node.h"
-#include "element.h"
+#include "input/element.h"
 
 namespace oofem {
 class Element;

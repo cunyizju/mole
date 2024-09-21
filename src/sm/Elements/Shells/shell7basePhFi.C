@@ -37,7 +37,7 @@
 #include "bc/load.h"
 #include "structuralms.h"
 #include "mathfem.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "equationid.h"
 #include "gaussintegrationrule.h"
 #include "gausspoint.h"

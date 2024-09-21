@@ -37,7 +37,7 @@
 
 #include "gaussintegrationrule.h"
 
-#include "geometry.h"
+#include "input/geometry.h"
 
 namespace oofem {
 /**

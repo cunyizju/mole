@@ -33,8 +33,8 @@
  */
 
 #include "nodalrecovery/nodalrecoverymodel.h"
-#include "domain.h"
-#include "element.h"
+#include "input/domain.h"
+#include "input/element.h"
 #include "dofman/dofmanager.h"
 
 #ifdef __PARALLEL_MODE

@@ -34,7 +34,7 @@
 
 #include "cs/crosssection.h"
 #include "dictionary.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "gausspoint.h"
 #include "material/material.h"
 #include "contextioerr.h"

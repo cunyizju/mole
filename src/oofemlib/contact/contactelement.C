@@ -42,7 +42,7 @@
 #include "dofs/dof.h"
 #include "dofs/masterdof.h"
 #include "unknownnumberingscheme.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "gaussintegrationrule.h"
 #include "error/error.h"
 

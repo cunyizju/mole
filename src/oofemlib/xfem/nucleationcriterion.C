@@ -35,8 +35,8 @@
 #include "nucleationcriterion.h"
 #include "error/error.h"
 #include "enrichmentitem.h"
-#include "dynamicinputrecord.h"
-#include "dynamicdatareader.h"
+#include "input/dynamicinputrecord.h"
+#include "input/dynamicdatareader.h"
 #include "xfem/enrichmentfunction.h"
 #include "classfactory.h"
 

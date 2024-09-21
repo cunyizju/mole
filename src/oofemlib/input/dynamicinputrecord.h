@@ -35,7 +35,7 @@
 #ifndef dynamicinputrecord_h
 #define dynamicinputrecord_h
 
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 
 #include <map>
 #include <set>

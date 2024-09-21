@@ -32,9 +32,9 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "connectivitytable.h"
-#include "domain.h"
-#include "element.h"
+#include "input/connectivitytable.h"
+#include "input/domain.h"
+#include "input/element.h"
 #include "dofman/dofmanager.h"
 #include "arrays/intarray.h"
 

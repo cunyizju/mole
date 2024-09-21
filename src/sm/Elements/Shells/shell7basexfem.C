@@ -44,7 +44,7 @@
 #include "xfem/enrichmentitem.h"
 #include "xfem/xfemmanager.h"
 #include "dofman/dofmanager.h"
-#include "connectivitytable.h"
+#include "input/connectivitytable.h"
 #include "mathfem.h"
 #include "gausspoint.h"
 #include "spatiallocalizer.h"

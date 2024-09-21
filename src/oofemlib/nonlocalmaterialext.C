@@ -34,16 +34,16 @@
 
 #include "gausspoint.h"
 #include "arrays/floatarray.h"
-#include "element.h"
+#include "input/element.h"
 #include "timestep.h"
 #include "integrationrule.h"
 #include "nonlocalmaterialext.h"
 #include "material/material.h"
 #include "spatiallocalizer.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "nonlocalbarrier.h"
 #include "mathfem.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 
 #ifdef __PARALLEL_MODE
  #include "parallel/parallel.h"

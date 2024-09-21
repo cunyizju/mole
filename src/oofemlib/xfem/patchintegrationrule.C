@@ -37,7 +37,7 @@
 //#include "patch.h"
 #include "integrationrule.h"
 #include "gaussintegrationrule.h"
-#include "geometry.h"
+#include "input/geometry.h"
 #include "classfactory.h"
 #include "contextioerr.h"
 #include "datastream.h"

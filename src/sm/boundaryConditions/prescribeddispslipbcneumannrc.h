@@ -37,7 +37,7 @@
 
 #include "prescribeddispsliphomogenization.h"
 #include "bc/activebc.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 
 #include <memory>
 

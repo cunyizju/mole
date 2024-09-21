@@ -38,8 +38,8 @@
 #include "timestep.h"
 #include "datastream.h"
 #include "contextioerr.h"
-#include "dynamicinputrecord.h"
-#include "domain.h"
+#include "input/dynamicinputrecord.h"
+#include "input/domain.h"
 
 namespace oofem {
 GeneralBoundaryCondition :: GeneralBoundaryCondition(int n, Domain *d) : FEMComponent(n, d)

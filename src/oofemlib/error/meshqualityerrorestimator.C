@@ -33,8 +33,8 @@
  */
 
 #include "error/meshqualityerrorestimator.h"
-#include "element.h"
-#include "elementgeometrytype.h"
+#include "input/element.h"
+#include "input/elementgeometrytype.h"
 #include "mathfem.h"
 #include "dofman/node.h"
 #include "integrationrule.h"

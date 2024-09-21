@@ -37,7 +37,7 @@
 #include "xfem/tipinfo.h"
 #include "classfactory.h"
 #include "mathfem.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 #include "spatiallocalizer.h"
 #include "arrays/floatmatrix.h"
 #include "gausspoint.h"

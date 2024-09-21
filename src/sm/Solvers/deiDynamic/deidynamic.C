@@ -35,7 +35,7 @@
 #include "deidynamic.h"
 #include "timestep.h"
 #include "dofman/dofmanager.h"
-#include "element.h"
+#include "input/element.h"
 #include "dofs/dof.h"
 #include "verbose.h"
 #include "mathfem.h"

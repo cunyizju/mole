@@ -34,10 +34,10 @@
 
 #include "mesher/freeminterface.h"
 #include "error/errorestimator.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "dofman/node.h"
-#include "element.h"
-#include "connectivitytable.h"
+#include "input/element.h"
+#include "input/connectivitytable.h"
 #include "mathfem.h"
 #include "remeshingcrit.h"
 #include "classfactory.h"

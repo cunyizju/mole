@@ -40,7 +40,7 @@
 #include "arrays/floatarrayf.h"
 #include "arrays/floatmatrixf.h"
 #include "classfactory.h"
-#include "dynamicinputrecord.h"
+#include "input/dynamicinputrecord.h"
 
 #ifdef _WIN32 //_MSC_VER and __MINGW32__ included
  #include <Windows.h>

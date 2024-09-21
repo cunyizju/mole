@@ -35,14 +35,14 @@
 #include "fields/dofdistributedprimaryfield.h"
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"
-#include "domain.h"
+#include "input/domain.h"
 #include "timestep.h"
 #include "arrays/floatarray.h"
 #include "engng/engngm.h"
 #include "set.h"
 #include "bc/boundarycondition.h"
 #include "initial/initialcondition.h"
-#include "element.h"
+#include "input/element.h"
 #include "bc/activebc.h"
 
 

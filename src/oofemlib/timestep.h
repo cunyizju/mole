@@ -45,7 +45,7 @@
 #include "contextmode.h"
 #include "statecountertype.h"
 #include "timediscretizationtype.h"
-#include "inputrecord.h"
+#include "input/inputrecord.h"
 #include "convergedreason.h"
 
 namespace oofem {

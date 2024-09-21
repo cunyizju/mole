@@ -38,7 +38,7 @@
 #include "fields/field.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "elementgeometrytype.h"
+#include "input/elementgeometrytype.h"
 #include "fei/feinterpol.h"
 #include "fei/fei2dlinelin.h"
 #include "fei/fei2dlinequad.h"

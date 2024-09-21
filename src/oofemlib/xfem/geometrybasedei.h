@@ -38,7 +38,7 @@
 #define _IFT_GeometryBasedEI_Name "geometrybasedei"
 
 #include "enrichmentitem.h"
-#include "geometry.h"
+#include "input/geometry.h"
 
 #include <memory>
 

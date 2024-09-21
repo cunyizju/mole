@@ -37,7 +37,7 @@
 
 #include "interface.h"
 #include "xfemmanager.h"
-#include "geometry.h"
+#include "input/geometry.h"
 #include "matresponsemode.h"
 #include "material/materialmode.h"
 
