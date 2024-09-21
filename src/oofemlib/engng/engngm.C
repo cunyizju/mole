@@ -84,7 +84,7 @@
     #include <omp.h>
 #endif
 #ifdef __OOFEG
- #include "oofeggraphiccontext.h"
+ #include "oofeg/oofeggraphiccontext.h"
 #endif
 
 namespace oofem {

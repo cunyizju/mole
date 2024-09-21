@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "oofeggraphiccontext.h"
+#include "oofeg/oofeggraphiccontext.h"
 #include "engng/engngm.h"
 #include "input/element.h"
 #include "material/material.h"

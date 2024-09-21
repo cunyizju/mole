@@ -57,7 +57,7 @@
 #include "engng/engngm.h"
 
 #ifdef __OOFEG
- #include "oofeggraphiccontext.h"
+ #include "oofeg/oofeggraphiccontext.h"
  #include "xfem/enrichmentitem.h"
  #include "xfem/xfemmanager.h"
 #endif

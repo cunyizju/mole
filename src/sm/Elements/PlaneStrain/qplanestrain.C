@@ -37,7 +37,7 @@
 #include "classfactory.h"
 
 #ifdef __OOFEG
- #include "oofeggraphiccontext.h"
+ #include "oofeg/oofeggraphiccontext.h"
  #include "math/gausspoint.h"
 #endif
 

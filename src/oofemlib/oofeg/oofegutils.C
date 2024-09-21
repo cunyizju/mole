@@ -1,9 +1,9 @@
 #ifdef __OOFEG
 
 
-#include "oofeggraphiccontext.h"
+#include "oofeg/oofeggraphiccontext.h"
 #include "math/mathfem.h"
-#include "oofegutils.h"
+#include "oofeg/oofegutils.h"
 
 namespace oofem {
 void

@@ -53,7 +53,7 @@
 #include "latticebeam3d.h"
 
 #ifdef __OOFEG
- #include "oofeggraphiccontext.h"
+ #include "oofeg/oofeggraphiccontext.h"
  #include "dofs/dof.h"
 
 #endif

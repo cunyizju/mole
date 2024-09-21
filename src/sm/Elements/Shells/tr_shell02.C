@@ -43,7 +43,7 @@
 
 #ifdef __OOFEG
  #include "dofman/node.h"
- #include "oofeggraphiccontext.h"
+ #include "oofeg/oofeggraphiccontext.h"
  #include "input/connectivitytable.h"
 #endif
 

@@ -52,7 +52,7 @@
 #include "classfactory.h"
 
 #ifdef __OOFEG
- #include "oofeggraphiccontext.h"
+ #include "oofeg/oofeggraphiccontext.h"
  #include "sm/Materials/structuralmaterial.h"
 #endif
 

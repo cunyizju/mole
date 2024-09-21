@@ -2,7 +2,7 @@
 #define oofegutils_h
 
 #ifdef __OOFEG
- #include "oofeggraphiccontext.h"
+ #include "oofeg/oofeggraphiccontext.h"
 
 namespace oofem {
 void oofeg_drawIsoLinesOnTriangle(WCRec coords [ 3 ], double s [ 3 ]);

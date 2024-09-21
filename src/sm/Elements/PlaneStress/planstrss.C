@@ -48,8 +48,8 @@
 #include "classfactory.h"
 
 #ifdef __OOFEG
- #include "oofeggraphiccontext.h"
- #include "oofegutils.h"
+ #include "oofeg/oofeggraphiccontext.h"
+ #include "oofeg/oofegutils.h"
  #include "input/connectivitytable.h"
  #include "sm/Materials/rcm2.h"
 #endif

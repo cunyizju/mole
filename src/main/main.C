@@ -67,7 +67,7 @@
 #endif
 
 #ifdef __OOFEG
- #include "oofeggraphiccontext.h"
+ #include "oofeg/oofeggraphiccontext.h"
 #endif
 
 #include <cstdlib>

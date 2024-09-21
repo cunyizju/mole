@@ -56,7 +56,7 @@
 #include <set>
 
 #ifdef __OOFEG
- #include "oofeggraphiccontext.h"
+ #include "oofeg/oofeggraphiccontext.h"
 #endif
 
 #ifdef __PARALLEL_MODE

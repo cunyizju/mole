@@ -40,9 +40,9 @@
 #include "classfactory.h"
 
 #ifdef __OOFEG
- #include "oofeggraphiccontext.h"
+ #include "oofeg/oofeggraphiccontext.h"
  #include "input/connectivitytable.h"
- #include "oofegutils.h"
+ #include "oofeg/oofegutils.h"
  #include "sm/Materials/rcm2.h"
 #endif
 

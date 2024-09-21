@@ -72,7 +72,7 @@ set(error
     error/errorestimator.C
     error/meshqualityerrorestimator.C
 )
-#oofegutils
+
 
 set(utility
     utility/timer.C
@@ -105,7 +105,8 @@ if (USE_SUPERLU_MT)
 endif ()
 
 
-set (core_oofeg oofeggraphiccontext.C)
+set (core_oofeg 
+    oofeg/oofeggraphiccontext.C)
 
 set (core_nodalrecovery
     nodalrecovery/nodalrecoverymodel.C

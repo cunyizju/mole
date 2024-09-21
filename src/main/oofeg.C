@@ -39,7 +39,7 @@
 #include "engng/engngm.h"
 #include "timestep.h"
 #include "error/error.h"
-#include "oofeggraphiccontext.h"
+#include "oofeg/oofeggraphiccontext.h"
 #include "datastream.h"
 
 #include "input/connectivitytable.h"
