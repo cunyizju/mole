@@ -36,7 +36,7 @@
 #define dyncombuff_h
 
 #include "parallel.h"
-#include "combuff.h"
+#include "parallel//combuff.h"
 #include <list>
 
 namespace oofem {

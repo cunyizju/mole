@@ -78,10 +78,10 @@
 
 #ifdef __PARALLEL_MODE
  #include "parallel.h"
- #include "processcomm.h"
+ #include "parallel//processcomm.h"
  #include "datastream.h"
- #include "communicator.h"
- #include "domaintransactionmanager.h"
+ #include "parallel//communicator.h"
+ #include "parallel//domaintransactionmanager.h"
 #endif
 
 #include <cstdarg>

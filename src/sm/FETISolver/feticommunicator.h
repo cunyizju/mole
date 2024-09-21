@@ -36,7 +36,7 @@
 #define feticommunicator_h
 
 #include "sm/FETISolver/fetiboundarydofman.h"
-#include "communicator.h"
+#include "parallel//communicator.h"
 #include "error.h"
 
 #include <vector>

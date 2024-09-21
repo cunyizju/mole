@@ -56,8 +56,8 @@
 #include "ltf/function.h"
 
 #ifdef __PARALLEL_MODE
- #include "problemcomm.h"
- #include "communicator.h"
+ #include "parallel//problemcomm.h"
+ #include "parallel//communicator.h"
  #include "loadbalancer.h"
 #endif
 

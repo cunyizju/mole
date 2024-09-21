@@ -40,9 +40,9 @@
 #include "classfactory.h"
 
 #ifdef __PARALLEL_MODE
- #include "problemcomm.h"
- #include "processcomm.h"
- #include "communicator.h"
+ #include "parallel//problemcomm.h"
+ #include "parallel//processcomm.h"
+ #include "parallel//communicator.h"
 #endif
 
 namespace oofem {

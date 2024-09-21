@@ -41,7 +41,7 @@
 #include "sparsemtrx.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "processcomm.h"
+#include "parallel//processcomm.h"
 
 ///@name Input fields for FETISolver
 //@{

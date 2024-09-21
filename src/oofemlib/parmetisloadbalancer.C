@@ -40,8 +40,8 @@
 #include "connectivitytable.h"
 #include "error.h"
 #include "parallel.h"
-#include "processcomm.h"
-#include "communicator.h"
+#include "parallel//processcomm.h"
+#include "parallel//communicator.h"
 #include "classfactory.h"
 
 #include <set>

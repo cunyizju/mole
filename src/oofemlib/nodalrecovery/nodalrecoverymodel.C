@@ -38,7 +38,7 @@
 #include "dofman/dofmanager.h"
 
 #ifdef __PARALLEL_MODE
- #include "problemcomm.h"
+ #include "parallel//problemcomm.h"
 #endif
 
 

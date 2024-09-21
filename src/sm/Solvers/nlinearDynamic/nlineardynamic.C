@@ -59,8 +59,8 @@ using namespace std;
 
 #ifdef __PARALLEL_MODE
  #include "loadbalancer.h"
- #include "problemcomm.h"
- #include "processcomm.h"
+ #include "parallel//problemcomm.h"
+ #include "parallel//processcomm.h"
 #endif
 
 namespace oofem {

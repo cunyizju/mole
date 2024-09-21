@@ -32,16 +32,16 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "nonlocalmatwtp.h"
+#include "parallel//nonlocalmatwtp.h"
 #include "nonlocalmaterialext.h"
 #include "element.h"
 #include "dofman/dofmanager.h"
 #include "engngm.h"
 #include "gausspoint.h"
 #include "material/material.h"
-#include "communicator.h"
+#include "parallel//communicator.h"
 #include "datastream.h"
-#include "domaintransactionmanager.h"
+#include "parallel//domaintransactionmanager.h"
 #include "classfactory.h"
 
 #include <set>

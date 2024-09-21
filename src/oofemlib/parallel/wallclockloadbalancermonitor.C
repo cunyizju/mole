@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "wallclockloadbalancermonitor.h"
+#include "parallel//wallclockloadbalancermonitor.h"
 #include "engngm.h"
 #include "domain.h"
 #include "timestep.h"

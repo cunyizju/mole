@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "communicator.h"
+#include "parallel//communicator.h"
 #include "arrays/intarray.h"
 
 #include <cstdarg>

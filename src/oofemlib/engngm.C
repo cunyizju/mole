@@ -72,8 +72,8 @@
 
 
 #ifdef __PARALLEL_MODE
- #include "problemcomm.h"
- #include "processcomm.h"
+ #include "parallel//problemcomm.h"
+ #include "parallel//processcomm.h"
  #include "loadbalancer.h"
 #endif
 

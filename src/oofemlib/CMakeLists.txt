@@ -281,15 +281,15 @@ set (core_xfem
     )
 
 set (core_parallel
-    communicator.C
-    processcomm.C
-    problemcomm.C
-    combuff.C
-    domaintransactionmanager.C
-    parallelordering.C
-    dyncombuff.C
-    wallclockloadbalancermonitor.C
-    nonlocalmatwtp.C
+    parallel/communicator.C
+    parallel/processcomm.C
+    parallel/problemcomm.C
+    parallel/combuff.C
+    parallel/domaintransactionmanager.C
+    parallel/parallelordering.C
+    parallel/dyncombuff.C
+    parallel/wallclockloadbalancermonitor.C
+    parallel/nonlocalmatwtp.C
     )
 
 if (USE_PARMETIS)

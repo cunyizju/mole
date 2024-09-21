@@ -35,7 +35,7 @@
 #include <cstdlib>
 #include <cstring> // for memmove
 
-#include "combuff.h"
+#include "parallel//combuff.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"

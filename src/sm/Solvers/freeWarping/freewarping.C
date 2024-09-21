@@ -53,8 +53,8 @@
 //#define THROW_CIOERR(e) throw ContextIOERR(e, __FILE__, __LINE__); // km???
 
 #ifdef __PARALLEL_MODE
- #include "problemcomm.h"
- #include "communicator.h"
+ #include "parallel//problemcomm.h"
+ #include "parallel//communicator.h"
 #endif
 
 #include <typeinfo>

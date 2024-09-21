@@ -32,11 +32,11 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "parallelordering.h"
+#include "parallel//parallelordering.h"
 #include "engngm.h"
 #include "domain.h"
 #include "unknownnumberingscheme.h"
-#include "combuff.h"
+#include "parallel//combuff.h"
 #include "mathfem.h"
 
 namespace oofem {

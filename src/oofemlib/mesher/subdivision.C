@@ -61,10 +61,10 @@
 
 #ifdef __PARALLEL_MODE
  #include "parallel.h"
- #include "problemcomm.h"
- #include "communicator.h"
+ #include "parallel//problemcomm.h"
+ #include "parallel//communicator.h"
  #include "datastream.h"
- #include "domaintransactionmanager.h"
+ #include "parallel//domaintransactionmanager.h"
 #endif
 
 namespace oofem {
