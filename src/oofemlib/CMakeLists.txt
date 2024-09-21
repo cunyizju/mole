@@ -15,9 +15,6 @@ set (core_unsorted
     fracturemanager.C
     neumannmomentload.C
     parallelcontext.C
-    contact/contactmanager.C
-    contact/contactdefinition.C
-    contact/contactelement.C
     prescribedmean.C
     bctracker.C
     # Semi sorted:
@@ -45,6 +42,12 @@ set(initial
     initial/initmodulemanager.C
     initial/initmodule.C
     initial/initialcondition.C
+)
+
+set(contact
+    contact/contactmanager.C
+    contact/contactdefinition.C
+    contact/contactelement.C
 )
 #oofegutils
 
@@ -343,6 +346,7 @@ set (core_mesher
 
 set (core
     ${initial}
+    ${contact}
     ${core_unsorted}
     ${core_nodalrecovery}
     ${core_dofs}
