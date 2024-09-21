@@ -57,7 +57,7 @@
 #include "parallelcontext.h"
 #include "exportmodulemanager.h"
 #include "initmodulemanager.h"
-#include "monitormanager.h"
+#include "monitor/monitormanager.h"
 
 #ifdef __PARALLEL_MODE
  #include "parallel.h"

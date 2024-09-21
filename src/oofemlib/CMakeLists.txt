@@ -195,8 +195,8 @@ set (core_export
     )
 
 set (core_monitors
-    monitormanager.C
-    monitor.C
+    monitor/monitormanager.C
+    monitor/monitor.C
     )
 
 set (core_iga

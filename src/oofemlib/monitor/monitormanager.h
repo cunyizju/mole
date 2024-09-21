@@ -36,7 +36,7 @@
 #define monitormanager_h
 
 #include "modulemanager.h"
-#include "monitor.h"
+#include "monitor/monitor.h"
 
 namespace oofem {
 class EngngModel;
