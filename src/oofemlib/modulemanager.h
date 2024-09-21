@@ -36,7 +36,7 @@
 #define modulemanager_h
 
 #include "datareader.h"
-#include "error.h"
+#include "error/error.h"
 #include "export/exportmodule.h"
 
 

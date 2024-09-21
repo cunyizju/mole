@@ -41,7 +41,7 @@
 #include "chartype.h"
 #include "valuemodetype.h"
 #include "dofman/dofmanager.h"
-#include "error.h"
+#include "error/error.h"
 
 #include <memory>
 

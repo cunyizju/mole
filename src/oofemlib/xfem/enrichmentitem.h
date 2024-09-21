@@ -42,7 +42,7 @@
 #include "dofman/dofmanager.h"
 #include "xfem/enrichmentfronts/enrichmentfront.h"
 #include "xfem/enrichmentfunction.h"
-#include "error.h"
+#include "error/error.h"
 
 #include <vector>
 #include <unordered_map>

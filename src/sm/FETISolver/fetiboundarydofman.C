@@ -33,7 +33,7 @@
  */
 
 #include "sm/FETISolver/fetiboundarydofman.h"
-#include "error.h"
+#include "error/error.h"
 
 using namespace std;
 

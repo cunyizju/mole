@@ -41,7 +41,7 @@
 #include "fei/feinterpol.h"
 #include "mathfem.h"
 #include "fei/feinterpol.h"
-#include "error.h"
+#include "error/error.h"
 #include "engng/engngm.h"
 #include "classfactory.h"
 

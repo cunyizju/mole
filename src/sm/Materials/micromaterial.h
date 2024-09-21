@@ -46,7 +46,7 @@
 #include "unknownnumberingscheme.h"
 #include "bc/boundarycondition.h"
 #include "sm/Elements/3D/macrolspace.h"
-#include "error.h"
+#include "error/error.h"
 
 ///@name Input fields for MicroMaterial
 //@{

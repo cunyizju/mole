@@ -37,7 +37,7 @@
 #include "classfactory.h"
 #include "inputrecord.h"
 #include "datareader.h"
-#include "error.h"
+#include "error/error.h"
 
 #include <cstring>
 #if defined ( __GNUC__ ) && defined ( HAVE_EXECINFO_H )

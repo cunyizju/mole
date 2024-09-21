@@ -33,7 +33,7 @@
  */
 
 #include "oofemtxtdatareader.h"
-#include "error.h"
+#include "error/error.h"
 
 #include <string>
 

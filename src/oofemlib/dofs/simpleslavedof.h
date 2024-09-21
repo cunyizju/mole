@@ -36,7 +36,7 @@
 #define simpleslavedof_h
 
 #include "dofs/dof.h"
-#include "error.h"
+#include "error/error.h"
 
 namespace oofem {
 class Domain;

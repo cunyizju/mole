@@ -45,7 +45,7 @@
 #include "oofemtxtdatareader.h"
 #include "datastream.h"
 #include "util.h"
-#include "error.h"
+#include "error/error.h"
 #include "logger.h"
 #include "contextioerr.h"
 #include "oofem_terminate.h"

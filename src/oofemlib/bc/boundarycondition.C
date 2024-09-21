@@ -40,7 +40,7 @@
 #include "dofs/dof.h"
 #include "classfactory.h"
 #include "contextioerr.h"
-#include "error.h"
+#include "error/error.h"
 
 namespace oofem {
 REGISTER_BoundaryCondition(BoundaryCondition);

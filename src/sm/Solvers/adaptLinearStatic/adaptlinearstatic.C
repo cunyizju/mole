@@ -35,7 +35,7 @@
 #include "adaptlinearstatic.h"
 #include "remeshingcrit.h"
 #include "mesherinterface.h"
-#include "errorestimator.h"
+#include "error/errorestimator.h"
 #include "domain.h"
 #include "classfactory.h"
 #include "contextioerr.h"

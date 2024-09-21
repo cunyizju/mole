@@ -38,7 +38,7 @@
 #include "oofemcfg.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "error.h"
+#include "error/error.h"
 
 namespace oofem {
 /**

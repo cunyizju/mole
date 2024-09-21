@@ -38,7 +38,7 @@
 #include "oofemtxtdatareader.h"
 #include "engng/engngm.h"
 #include "timestep.h"
-#include "error.h"
+#include "error/error.h"
 #include "oofeggraphiccontext.h"
 #include "datastream.h"
 
@@ -53,7 +53,7 @@
 #include "dofman/node.h"
 #include "arrays/intarray.h"
 #include "oofemcfg.h"
-#include "errorestimator.h"
+#include "error/errorestimator.h"
 #include "remeshingcrit.h"
 #include "drawmode.h"
 #include "contextioerr.h"

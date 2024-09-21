@@ -33,7 +33,7 @@
  */
 
 #include "sm/ErrorEstimators/directerrorindicatorrc.h"
-#include "errorestimator.h"
+#include "error/errorestimator.h"
 #include "domain.h"
 #include "element.h"
 #include "dofman/dofmanager.h"

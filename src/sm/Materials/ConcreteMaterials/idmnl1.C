@@ -39,7 +39,7 @@
 #include "mathfem.h"
 #include "sm/Elements/structuralelement.h"
 #include "sparsemtrx.h"
-#include "error.h"
+#include "error/error.h"
 #include "nonlocalmaterialext.h"
 #include "contextioerr.h"
 #include "stressvector.h"

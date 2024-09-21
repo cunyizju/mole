@@ -36,7 +36,7 @@
 #include <cmath>
 #include "fields/uniformgridfield.h"
 #include "dofman/dofmanager.h"
-#include "error.h"
+#include "error/error.h"
 
 #include <iostream>
 

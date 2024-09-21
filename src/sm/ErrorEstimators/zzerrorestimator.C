@@ -48,7 +48,7 @@
 #include "integrationrule.h"
 #include "fei/feinterpol.h"
 #include "connectivitytable.h"
-#include "errorestimatortype.h"
+#include "error/errorestimatortype.h"
 #include "classfactory.h"
 #include "engng/engngm.h"
 #include "parallelcontext.h"

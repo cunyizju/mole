@@ -39,7 +39,7 @@
 #include "parallel//processcomm.h"
 #include "commbufftype.h"
 #include "communicatormode.h"
-#include "error.h"
+#include "error/error.h"
 
 namespace oofem {
 class EngngModel;

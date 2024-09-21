@@ -36,7 +36,7 @@
 #define feinterpol_h
 
 #include "oofemcfg.h"
-#include "error.h"
+#include "error/error.h"
 #include "inputrecord.h"
 #include "arrays/intarray.h"
 #include "integrationdomain.h"

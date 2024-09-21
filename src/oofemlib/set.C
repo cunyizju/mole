@@ -33,7 +33,7 @@
  */
 
 #include "set.h"
-#include "error.h"
+#include "error/error.h"
 #include "arrays/intarray.h"
 #include "inputrecord.h"
 #include "domain.h"

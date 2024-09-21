@@ -36,7 +36,7 @@
 #define element_h
 
 #include "femcmpnn.h"
-#include "error.h"
+#include "error/error.h"
 #include "chartype.h"
 #include "domain.h"
 #include "arrays/floatmatrix.h"

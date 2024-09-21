@@ -35,7 +35,7 @@
 #ifndef zzerrorestimator_h
 #define zzerrorestimator_h
 
-#include "errorestimator.h"
+#include "error/errorestimator.h"
 #include "interface.h"
 #include "internalstatetype.h"
 #include "arrays/floatarray.h"

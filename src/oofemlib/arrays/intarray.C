@@ -33,7 +33,7 @@
  */
 
 #include "arrays/intarray.h"
-#include "error.h"
+#include "error/error.h"
 #include "datastream.h"
 
 #include <cstdarg>

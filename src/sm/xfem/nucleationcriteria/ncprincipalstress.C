@@ -33,7 +33,7 @@
  */
 
 #include "ncprincipalstress.h"
-#include "error.h"
+#include "error/error.h"
 #include "xfem/enrichmentitem.h"
 #include "domain.h"
 #include "element.h"

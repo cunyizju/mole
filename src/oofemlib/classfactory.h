@@ -37,7 +37,7 @@
 
 #include "oofemcfg.h"
 #include "sparsemtrxtype.h"
-#include "errorestimatortype.h"
+#include "error/errorestimatortype.h"
 #include "dofs/doftype.h"
 #include "linsystsolvertype.h"
 //#include "patch.h" // for PatchType

@@ -36,7 +36,7 @@
 #include "parser.h"
 #include "dynamicinputrecord.h"
 #include "classfactory.h"
-#include "error.h"
+#include "error/error.h"
 
 #include <sstream>
 

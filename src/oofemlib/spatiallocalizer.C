@@ -37,7 +37,7 @@
 #include "element.h"
 #include "dofman/node.h"
 #include "mathfem.h"
-#include "error.h"
+#include "error/error.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "fei/feinterpol.h"

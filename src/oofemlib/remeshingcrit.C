@@ -33,7 +33,7 @@
  */
 
 #include "remeshingcrit.h"
-#include "errorestimator.h"
+#include "error/errorestimator.h"
 
 #ifdef __PARALLEL_MODE
  #include "parallel//problemcomm.h"

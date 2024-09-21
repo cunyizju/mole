@@ -3,7 +3,7 @@ set (core_unsorted
     classfactory.C
     femcmpnn.C domain.C timestep.C metastep.C gausspoint.C
     cltypes.C timer.C dictionary.C heap.C grid.C
-    connectivitytable.C error.C mathfem.C logger.C util.C
+    connectivitytable.C mathfem.C logger.C util.C
     assemblercallback.C
     homogenize.C
     nonlocalbarrier.C
@@ -16,7 +16,7 @@ set (core_unsorted
     parallelcontext.C
     prescribedmean.C
     # Semi sorted:
-    errorestimator.C meshqualityerrorestimator.C remeshingcrit.C
+    remeshingcrit.C
     sloangraph.C sloangraphnode.C sloanlevelstruct.C
     eleminterpunknownmapper.C primaryunknownmapper.C 
     nonlocalmaterialext.C randommaterialext.C
@@ -46,6 +46,13 @@ set(contact
     contact/contactmanager.C
     contact/contactdefinition.C
     contact/contactelement.C
+)
+
+
+set(error
+    error/error.C 
+    error/errorestimator.C
+    error/meshqualityerrorestimator.C
 )
 #oofegutils
 
@@ -349,6 +356,7 @@ set (core_mesher
 set (core
     ${initial}
     ${contact}
+    ${error}
     ${core_unsorted}
     ${core_nodalrecovery}
     ${core_dofs}

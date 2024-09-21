@@ -39,7 +39,7 @@
 #include "mathfem.h"
 #include "sparsemtrx.h"
 #include "Materials/isolinearelasticmaterial.h"
-#include "error.h"
+#include "error/error.h"
 #include "nonlocalmaterialext.h"
 #include "datastream.h"
 #include "contextioerr.h"

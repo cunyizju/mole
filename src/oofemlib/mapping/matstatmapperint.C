@@ -34,7 +34,7 @@
 
 #include "mapping/matstatmapperint.h"
 
-#include "error.h"
+#include "error/error.h"
 #include "material/materialmappingalgorithm.h"
 #include "mapping/mmaclosestiptransfer.h"
 #include "material/matstatus.h"

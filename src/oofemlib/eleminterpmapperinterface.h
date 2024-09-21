@@ -39,7 +39,7 @@
 #include "interface.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "error.h"
+#include "error/error.h"
 
 namespace oofem {
 class TimeStep;

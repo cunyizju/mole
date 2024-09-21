@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "errorestimator.h"
+#include "error/errorestimator.h"
 #include "remeshingcrit.h"
 #include "inputrecord.h"
 

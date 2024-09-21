@@ -33,7 +33,7 @@
  */
 
 #include "mesher/freeminterface.h"
-#include "errorestimator.h"
+#include "error/errorestimator.h"
 #include "domain.h"
 #include "dofman/node.h"
 #include "element.h"

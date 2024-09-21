@@ -42,7 +42,7 @@
 #include "connectivitytable.h"
 #include "mathfem.h"
 #include "timer.h"
-#include "error.h"
+#include "error/error.h"
 #include "xfem/xfemelementinterface.h"
 
 #include <iostream>

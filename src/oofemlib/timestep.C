@@ -42,7 +42,7 @@
 #include "engng/engngm.h"
 #include "datastream.h"
 #include "contextioerr.h"
-#include "error.h"
+#include "error/error.h"
 #include "convergedreason.h"
 
 namespace oofem {

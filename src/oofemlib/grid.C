@@ -1,5 +1,5 @@
 #include "grid.h"
-#include "error.h"
+#include "error/error.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>

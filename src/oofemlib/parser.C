@@ -33,7 +33,7 @@
  */
 
 #include "parser.h"
-#include "error.h"
+#include "error/error.h"
 #include "mathfem.h"
 
 #include <cctype>

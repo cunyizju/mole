@@ -42,7 +42,7 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "error.h"
+#include "error/error.h"
 #include "logger.h"
 
 #include <string>

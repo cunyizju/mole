@@ -34,7 +34,7 @@
 
 #include "ltf/function.h"
 #include "timestep.h"
-#include "error.h"
+#include "error/error.h"
 #include "domain.h"
 #include "gausspoint.h"
 #include "datastream.h"

@@ -57,7 +57,7 @@
 #include "timer.h"
 #include "solvers/calmls.h"
 #include "solvers/nrsolver.h"
-#include "errorestimatortype.h"
+#include "error/errorestimatortype.h"
 #include "classfactory.h"
 #include "dynamicdatareader.h"
 #include "dynamicinputrecord.h"

@@ -44,7 +44,7 @@
 #include "unknownnumberingscheme.h"
 #include "domain.h"
 #include "gaussintegrationrule.h"
-#include "error.h"
+#include "error/error.h"
 
 namespace oofem {
 

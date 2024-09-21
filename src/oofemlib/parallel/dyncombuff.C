@@ -37,7 +37,7 @@
 
 #include "parallel//dyncombuff.h"
 #include "mathfem.h"
-#include "error.h"
+#include "error/error.h"
 
 namespace oofem {
 CommunicationPacket :: CommunicationPacket(MPI_Comm comm, int size, int num) : MPIBuffer(max(size, __CommunicationPacket_DEFAULT_SIZE), false)

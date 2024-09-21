@@ -35,8 +35,8 @@
 #ifndef meshqualityerrorestimator_h
 #define meshqualityerrorestimator_h
 
-#include "errorestimator.h"
-#include "errorestimatortype.h"
+#include "error/errorestimator.h"
+#include "error/errorestimatortype.h"
 
 #define _IFT_MeshQualityErrorEstimator_Name "meshquality"
 

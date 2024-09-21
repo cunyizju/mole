@@ -33,7 +33,7 @@
  */
 
 #include "parallel//domaintransactionmanager.h"
-#include "error.h"
+#include "error/error.h"
 #include "dofman/dofmanager.h"
 #include "element.h"
 #include "domain.h"

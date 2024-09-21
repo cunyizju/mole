@@ -36,7 +36,7 @@
 #include "element.h"
 #include "dofman/node.h"
 #include "cs/crosssection.h"
-#include "error.h"
+#include "error/error.h"
 #include "fei/feinterpol.h"
 #include "fei/feinterpol2d.h"
 #include "fei/feinterpol3d.h"

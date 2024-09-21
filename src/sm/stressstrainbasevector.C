@@ -35,7 +35,7 @@
 #include "stressstrainbasevector.h"
 #include "arrays/intarray.h"
 #include "arrays/floatmatrix.h"
-#include "error.h"
+#include "error/error.h"
 #include "datastream.h"
 #include "material/materialmode.h"
 #include "sm/Materials/structuralmaterial.h"

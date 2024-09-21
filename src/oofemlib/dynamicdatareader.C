@@ -34,7 +34,7 @@
 
 #include "dynamicdatareader.h"
 #include "inputrecord.h"
-#include "error.h"
+#include "error/error.h"
 
 #include <memory>
 #include <fstream>

@@ -33,7 +33,7 @@
  */
 
 #include "dssmatrix.h"
-#include "error.h"
+#include "error/error.h"
 #include "engng/engngm.h"
 #include "domain.h"
 #include "element.h"

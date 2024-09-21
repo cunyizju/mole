@@ -41,7 +41,7 @@
 #include "element.h"
 #include "mathfem.h"
 #include "verbose.h"
-#include "error.h"
+#include "error/error.h"
 #include "sparsemtrxtype.h"
 #include "bc/activebc.h"
 #include "classfactory.h"

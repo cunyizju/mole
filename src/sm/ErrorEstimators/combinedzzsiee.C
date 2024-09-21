@@ -37,7 +37,7 @@
 #include "element.h"
 #include "connectivitytable.h"
 #include "mathfem.h"
-#include "errorestimatortype.h"
+#include "error/errorestimatortype.h"
 #include "classfactory.h"
 
 namespace oofem {

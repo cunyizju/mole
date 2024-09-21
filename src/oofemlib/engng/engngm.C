@@ -58,7 +58,7 @@
 #include "oofemtxtdatareader.h"
 #include "sloangraph.h"
 #include "logger.h"
-#include "errorestimator.h"
+#include "error/errorestimator.h"
 #include "contextioerr.h"
 #include "export/outputmanager.h"
 #include "export/exportmodulemanager.h"

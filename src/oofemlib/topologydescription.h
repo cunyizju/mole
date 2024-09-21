@@ -36,7 +36,7 @@
 #ifndef topologydescription_h
 #define topologydescription_h
 
-#include "error.h"
+#include "error/error.h"
 #include "oofemcfg.h"
 
 namespace oofem {

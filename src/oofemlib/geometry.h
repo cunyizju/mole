@@ -36,7 +36,7 @@
 #define geometry_h
 
 #include "oofemcfg.h"
-#include "error.h"
+#include "error/error.h"
 #include "arrays/floatarray.h"
 #include "inputrecord.h"
 #include "contextioresulttype.h"

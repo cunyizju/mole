@@ -33,7 +33,7 @@
  */
 
 #include "logger.h"
-#include "error.h"
+#include "error/error.h"
 #include "util.h"
 
 #include <cstdarg>

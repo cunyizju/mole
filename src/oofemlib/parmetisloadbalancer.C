@@ -38,7 +38,7 @@
 #include "element.h"
 #include "dofman/dofmanager.h"
 #include "connectivitytable.h"
-#include "error.h"
+#include "error/error.h"
 #include "parallel.h"
 #include "parallel//processcomm.h"
 #include "parallel//communicator.h"

@@ -46,7 +46,7 @@
 #include "fields/primaryfield.h"
 #include "fields/dofdistributedprimaryfield.h"
 #include "verbose.h"
-#include "error.h"
+#include "error/error.h"
 #include "bc/generalboundarycondition.h"
 #include "bc/boundarycondition.h"
 #include "bc/activebc.h"

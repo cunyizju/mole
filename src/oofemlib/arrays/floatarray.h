@@ -38,7 +38,7 @@
 #include "oofemcfg.h"
 #include "contextioresulttype.h"
 #include "contextmode.h"
-#include "error.h"
+#include "error/error.h"
 
 #include <initializer_list>
 #include <vector>

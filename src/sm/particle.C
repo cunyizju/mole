@@ -34,7 +34,7 @@
 
 #include "particle.h"
 #include "classfactory.h"
-#include "error.h"
+#include "error/error.h"
 #include "arrays/floatmatrix.h"
 
 namespace oofem {

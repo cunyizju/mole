@@ -39,7 +39,7 @@
 #ifndef mathfem_h
 #define mathfem_h
 
-#include "error.h"
+#include "error/error.h"
 #include "oofemcfg.h"
 
 #include <cmath>

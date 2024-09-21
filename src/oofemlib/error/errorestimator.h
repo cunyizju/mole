@@ -42,7 +42,7 @@
 
 #include "femcmpnn.h"
 #include "interface.h"
-#include "errorestimatortype.h"
+#include "error/errorestimatortype.h"
 #include "arrays/intarray.h"
 #include "internalstatetype.h"
 #include "remeshingcrit.h"

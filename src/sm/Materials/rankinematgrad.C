@@ -37,7 +37,7 @@
 #include "gausspoint.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "error.h"
+#include "error/error.h"
 #include "classfactory.h"
 
 namespace oofem {

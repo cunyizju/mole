@@ -41,7 +41,7 @@
 #include "classfactory.h"
 #include "dynamicinputrecord.h"
 #include "dofman/dofmanager.h"
-#include "error.h"
+#include "error/error.h"
 #include <iostream>
 
 

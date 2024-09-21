@@ -43,7 +43,7 @@ using namespace std;
 #include "metastep.h"
 #include "element.h"
 #include "dofs/dof.h"
-#include "error.h"
+#include "error/error.h"
 #include "verbose.h"
 #include "solvers/sparsenonlinsystemnm.h"
 #include "solvers/nrsolver.h"
@@ -53,7 +53,7 @@ using namespace std;
 #include "timer.h"
 #include "contextioerr.h"
 #include "sparsemtrx.h"
-#include "errorestimator.h"
+#include "error/errorestimator.h"
 #include "unknownnumberingscheme.h"
 #include "assemblercallback.h"
 

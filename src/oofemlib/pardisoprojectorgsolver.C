@@ -40,7 +40,7 @@
 #include "arrays/floatarray.h"
 #include "verbose.h"
 #include "timer.h"
-#include "error.h"
+#include "error/error.h"
 #include "classfactory.h"
 
 

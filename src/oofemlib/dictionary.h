@@ -37,7 +37,7 @@
 
 #include "oofemcfg.h"
 #include "pair.h"
-#include "error.h"
+#include "error/error.h"
 #include "contextioresulttype.h"
 #include "contextmode.h"
 

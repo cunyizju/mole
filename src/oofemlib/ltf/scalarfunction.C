@@ -37,7 +37,7 @@
 #include "domain.h"
 #include "ltf/function.h"
 #include "parser.h"
-#include "error.h"
+#include "error/error.h"
 #include "gausspoint.h"
 
 #include <map>

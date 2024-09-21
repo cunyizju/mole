@@ -50,7 +50,7 @@
 #include "solvers/sparsenonlinsystemnm.h"
 #include "solvers/sparselinsystemnm.h"
 #include "mesherinterface.h"
-#include "errorestimator.h"
+#include "error/errorestimator.h"
 #include "material/materialmappingalgorithm.h"
 #include "ltf/function.h"
 #include "material/material.h"

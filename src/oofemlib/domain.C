@@ -57,7 +57,7 @@
 #include "logger.h"
 #include "xfem/xfemmanager.h"
 #include "topologydescription.h"
-#include "errorestimator.h"
+#include "error/errorestimator.h"
 #include "range.h"
 #include "fracturemanager.h"
 #include "datareader.h"

@@ -33,7 +33,7 @@
  */
 
 #include "solvers/sparsenonlinsystemnm.h"
-#include "error.h"
+#include "error/error.h"
 #include "domain.h"
 #include "dofman/node.h"
 #include "unknownnumberingscheme.h"

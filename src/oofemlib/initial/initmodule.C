@@ -33,7 +33,7 @@
  */
 
 #include "initial/initmodule.h"
-#include "error.h"
+#include "error/error.h"
 
 namespace oofem {
 InitModule :: InitModule(int n, EngngModel *e)

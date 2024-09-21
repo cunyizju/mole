@@ -36,7 +36,7 @@
 #include "arrays/intarray.h"
 #include "arrays/floatmatrix.h"
 #include "mathfem.h"
-#include "error.h"
+#include "error/error.h"
 #include "datastream.h"
 #include "mathfem.h"
 

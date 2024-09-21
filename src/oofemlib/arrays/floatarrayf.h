@@ -39,7 +39,7 @@
 #include "contextioresulttype.h"
 #include "contextmode.h"
 #include "datastream.h"
-#include "error.h"
+#include "error/error.h"
 #include "arrays/floatarray.h"
 
 #include <array>

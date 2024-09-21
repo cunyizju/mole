@@ -36,7 +36,7 @@
 #define problemcomm_h
 
 #include "parallel//communicator.h"
-#include "error.h"
+#include "error/error.h"
 
 namespace oofem {
 class EngngModel;

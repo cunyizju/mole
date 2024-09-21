@@ -36,7 +36,7 @@
 #define scalarfunction_h
 
 #include "parser.h"
-#include "error.h"
+#include "error/error.h"
 #include "gausspoint.h"
 
 #include <string>

@@ -48,7 +48,7 @@
 #include "mesherinterface.h"
 #include "dofs/dof.h"
 #include "eleminterpunknownmapper.h"
-#include "errorestimator.h"
+#include "error/errorestimator.h"
 #include "classfactory.h"
 #include "datastream.h"
 #include "contextioerr.h"

@@ -38,7 +38,7 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "sparsemtrx.h"
-#include "error.h"
+#include "error/error.h"
 #include "nonlocalmaterialext.h"
 #include "contextioerr.h"
 #include "classfactory.h"

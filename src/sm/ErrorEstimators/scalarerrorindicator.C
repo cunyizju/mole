@@ -38,7 +38,7 @@
 #include "integrationrule.h"
 #include "gausspoint.h"
 #include "mathfem.h"
-#include "errorestimatortype.h"
+#include "error/errorestimatortype.h"
 #include "classfactory.h"
 
 namespace oofem {

@@ -39,7 +39,7 @@
 #include <unordered_map>
 
 #include "oofemcfg.h"
-#include "error.h"
+#include "error/error.h"
 
 namespace oofem {
 /**

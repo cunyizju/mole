@@ -33,7 +33,7 @@
  */
 
 #include "nucleationcriterion.h"
-#include "error.h"
+#include "error/error.h"
 #include "enrichmentitem.h"
 #include "dynamicinputrecord.h"
 #include "dynamicdatareader.h"

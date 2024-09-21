@@ -40,7 +40,7 @@
 #include "inputrecord.h"
 #include "chartype.h"
 #include "valuemodetype.h"
-#include "error.h"
+#include "error/error.h"
 
 #include <vector>
 

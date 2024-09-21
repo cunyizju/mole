@@ -38,7 +38,7 @@
 #include "oofemcfg.h"
 #include "interface.h"
 #include "logger.h"
-#include "error.h"
+#include "error/error.h"
 #include "set.h"
 
 #include <set>
