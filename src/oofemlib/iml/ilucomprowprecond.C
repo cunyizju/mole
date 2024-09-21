@@ -34,7 +34,7 @@
 
 #include "dyncomprow.h"
 #include "ilucomprowprecond.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 
 namespace oofem {
 CompRow_ILUPreconditioner ::

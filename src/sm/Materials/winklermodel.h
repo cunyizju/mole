@@ -40,7 +40,7 @@
 #include "arrays/floatmatrix.h"
 #include "matconst.h"
 #include "material/matstatus.h"
-#include "interface.h"
+#include "utility/interface.h"
 #include "../stressstrainprincmode.h"
 
 ///@name Input fields for WinklerMaterial

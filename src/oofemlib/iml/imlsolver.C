@@ -43,13 +43,13 @@
 #include "compcol.h"
 #include "iluprecond.h"
 #include "icprecond.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "ilucomprowprecond.h"
 #include "linsystsolvertype.h"
 #include "classfactory.h"
 
 #ifdef TIME_REPORT
- #include "timer.h"
+ #include "utility/timer.h"
 #endif
 
 namespace oofem {

@@ -34,7 +34,7 @@
 #ifndef seek_h
 #define seek_h
 
-#include "tokenizer.h"
+#include "utility/tokenizer.h"
 
 #define SEEK_TOL  1.e-4
 

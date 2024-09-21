@@ -48,7 +48,7 @@
 #include "solutionbasedshapefunction.h"
 #include "timestep.h"
 #include "classfactory.h"
-#include "set.h"
+#include "utility/set.h"
 #include "unknownnumberingscheme.h"
 #include "prescribedmean.h"
 #include "fei/feinterpol.h"

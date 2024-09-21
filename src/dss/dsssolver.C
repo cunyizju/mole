@@ -35,7 +35,7 @@
 #include "dsssolver.h"
 #include "classfactory.h"
 #include "dssmatrix.h"
-#include "timer.h"
+#include "utility/timer.h"
 
 namespace oofem {
 

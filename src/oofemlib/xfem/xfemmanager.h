@@ -41,7 +41,7 @@
 #include "contextioresulttype.h"
 #include "contextmode.h"
 #include "enrichmentitem.h"
-#include "enumitem.h"
+#include "utility/enumitem.h"
 #include "internalstatevaluetype.h"
 
 #include <unordered_map>

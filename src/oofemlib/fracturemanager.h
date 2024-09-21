@@ -40,8 +40,8 @@
 #include "contextioresulttype.h"
 #include "contextmode.h"
 #include "timestep.h"
-#include "interface.h"
-#include "enumitem.h"
+#include "utility/interface.h"
+#include "utility/enumitem.h"
 #include "arrays/floatarray.h"
 
 namespace oofem {

@@ -1,4 +1,4 @@
-#include "util.h"
+#include "utility/util.h"
 #include "input/dynamicinputrecord.h"
 #include "input/dynamicdatareader.h"
 #include "arrays/intarray.h"
@@ -18,7 +18,7 @@
 #include "dofman/node.h"
 #include "export/outputmanager.h"
 #include "bc/boundarycondition.h"
-#include "set.h"
+#include "utility/set.h"
 
 using namespace oofem;
 

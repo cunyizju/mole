@@ -36,7 +36,7 @@
 #define oofemtxtinputrecord_h
 
 #include "input/inputrecord.h"
-#include "tokenizer.h"
+#include "utility/tokenizer.h"
 
 #include <string>
 #include <vector>

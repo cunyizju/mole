@@ -35,7 +35,7 @@
 #ifndef xfemelementinterface_h
 #define xfemelementinterface_h
 
-#include "interface.h"
+#include "utility/interface.h"
 #include "xfemmanager.h"
 #include "input/geometry.h"
 #include "matresponsemode.h"

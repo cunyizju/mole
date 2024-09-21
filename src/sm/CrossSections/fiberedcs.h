@@ -38,10 +38,10 @@
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "input/element.h"
-#include "dictionary.h"
+#include "utility/dictionary.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "interface.h"
+#include "utility/interface.h"
 
 ///@name Input fields for FiberedCrossSection
 //@{

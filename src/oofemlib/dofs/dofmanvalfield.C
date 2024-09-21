@@ -38,7 +38,7 @@
 #include "input/element.h"
 #include "cs/crosssection.h"
 #include "timestep.h"
-#include "util.h"
+#include "utility/util.h"
 #include "classfactory.h"
 #include "dofman/dofmanager.h"
 #include "fei/feinterpol.h"

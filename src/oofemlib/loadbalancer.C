@@ -35,7 +35,7 @@
 #include "loadbalancer.h"
 #include "input/domain.h"
 #include "engng/engngm.h"
-#include "timer.h"
+#include "utility/timer.h"
 #include "math/mathfem.h"
 #include "timestep.h"
 #include "arrays/floatarray.h"

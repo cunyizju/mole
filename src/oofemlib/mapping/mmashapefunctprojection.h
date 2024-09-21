@@ -37,7 +37,7 @@
 
 #include "material/materialmappingalgorithm.h"
 #include "nodalrecovery/nodalrecoverymodel.h"
-#include "interface.h"
+#include "utility/interface.h"
 
 #include <vector>
 #include <memory>

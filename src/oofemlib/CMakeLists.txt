@@ -2,14 +2,11 @@
 set (core_unsorted
     classfactory.C
     femcmpnn.C  timestep.C metastep.C 
-    cltypes.C timer.C dictionary.C heap.C 
-     util.C
-
+    cltypes.C 
     assemblercallback.C
     homogenize.C
     nonlocalbarrier.C
     datastream.C
-    set.C
     solutionbasedshapefunction.C
     fracturemanager.C
     neumannmomentload.C
@@ -19,15 +16,11 @@ set (core_unsorted
     sloangraph.C sloangraphnode.C sloanlevelstruct.C
     eleminterpunknownmapper.C primaryunknownmapper.C 
     nonlocalmaterialext.C randommaterialext.C
-    
-     tokenizer.C parser.C
     spatiallocalizer.C dummylocalizer.C octreelocalizer.C
      lobattoir.C
     smoothednodalintvarfield.C
     # Deprecated?
-    
     ldltfact.C
-    
     #
     symcompcol.C compcol.C
     unstructuredgridfield.C
@@ -80,6 +73,16 @@ set(error
     error/meshqualityerrorestimator.C
 )
 #oofegutils
+
+set(utility
+    utility/timer.C
+    utility/dictionary.C
+    utility/heap.C
+    utility/util.C
+    utility/set.C
+    utility/tokenizer.C
+    utility/parser.C
+)
 
 if (USE_SPOOLES)
     list (APPEND core_unsorted spoolessparsemtrx.C spoolessolver.C)
@@ -360,11 +363,11 @@ set (core_bc
 
 if (USE_PYTHON_EXTENSION)
     list (APPEND core_bc userdefdirichletbc.C)
-    list (APPEND core_unsorted pythonexpression.C)
+    list (APPEND core_unsorted utility/pythonexpression.C)
 endif ()
 
 if (USE_PYBIND_BINDINGS)
-    list (APPEND core_unsorted pythonfield.C)
+    list (APPEND core_unsorted utility/pythonfield.C)
 endif ()
 
 
@@ -391,6 +394,7 @@ set (core
     ${contact}
     ${error}
     ${math}
+    ${utility}
     ${core_unsorted}
     ${core_nodalrecovery}
     ${core_dofs}

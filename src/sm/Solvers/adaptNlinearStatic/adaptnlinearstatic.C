@@ -34,8 +34,8 @@
 
 #include "adaptnlinearstatic.h"
 #include "math/mathfem.h"
-#include "verbose.h"
-#include "timer.h"
+#include "utility/verbose.h"
+#include "utility/timer.h"
 #include "metastep.h"
 #include "timestep.h"
 #include "nummet.h"

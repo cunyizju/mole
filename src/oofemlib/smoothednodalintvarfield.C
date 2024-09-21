@@ -38,7 +38,7 @@
 #include "input/element.h"
 #include "fei/feinterpol.h"
 #include "dofman/dofmanager.h"
-#include "set.h"
+#include "utility/set.h"
 
 namespace oofem {
 SmoothedNodalInternalVariableField :: SmoothedNodalInternalVariableField(InternalStateType ist, FieldType ft, NodalRecoveryModel :: NodalRecoveryModelType st, Domain *d) : Field(ft)

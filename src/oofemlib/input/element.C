@@ -40,7 +40,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "fields/primaryfield.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "entityrenumberingscheme.h"
 #include "error/error.h"
 #include "classfactory.h"

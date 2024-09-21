@@ -37,8 +37,8 @@
 #include "dofs/dof.h"
 #include "input/domain.h"
 #include "math/sparsemtrx.h"
-#include "dictionary.h"
-#include "verbose.h"
+#include "utility/dictionary.h"
+#include "utility/verbose.h"
 #include "classfactory.h"
 #include "datastream.h"
 #include "contextioerr.h"
@@ -47,7 +47,7 @@
 #include "unknownnumberingscheme.h"
 
 /*
-#include "set.h"
+#include "utility/set.h"
 #include "input/element.h"
 #include "dofman/node.h"
 */

@@ -35,7 +35,7 @@
 #ifndef internalstatetype_h
 #define internalstatetype_h
 
-#include "enumitem.h"
+#include "utility/enumitem.h"
 
 namespace oofem {
 //

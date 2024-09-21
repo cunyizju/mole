@@ -35,7 +35,7 @@
 #ifndef integrationpointstatus_h
 #define integrationpointstatus_h
 
-#include "interface.h"
+#include "utility/interface.h"
 #include "interfacetype.h"
 #include "contextioresulttype.h"
 #include "contextmode.h"

@@ -35,7 +35,7 @@
 #ifndef mixedpressurematerialextensioninterface_h
 #define mixedpressurematerialextensioninterface_h
 
-#include "interface.h"
+#include "utility/interface.h"
 #include "matresponsemode.h"
 #include "input/domain.h"
 

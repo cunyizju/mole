@@ -43,7 +43,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "input/domain.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "bc/load.h"
 #include "math/mathfem.h"
 #include "classfactory.h"

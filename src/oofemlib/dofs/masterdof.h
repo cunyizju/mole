@@ -37,7 +37,7 @@
 #define masterdof_h
 
 #include "dofs/dof.h"
-#include "dictionary.h"
+#include "utility/dictionary.h"
 #include "dofman/dofmanager.h"
 
 #include <cstdio>

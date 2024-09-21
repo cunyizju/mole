@@ -12,7 +12,7 @@ namespace py = pybind11;
 #include "input/domain.h"
 #include "export/outputmanager.h"
 #include "modulemanager.h"
-#include "set.h"
+#include "utility/set.h"
 
 
 #ifdef _MSC_VER 

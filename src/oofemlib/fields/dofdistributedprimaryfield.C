@@ -39,7 +39,7 @@
 #include "timestep.h"
 #include "arrays/floatarray.h"
 #include "engng/engngm.h"
-#include "set.h"
+#include "utility/set.h"
 #include "bc/boundarycondition.h"
 #include "initial/initialcondition.h"
 #include "input/element.h"

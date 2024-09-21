@@ -37,7 +37,7 @@
 #include "engng/engngm.h"
 #include "input/element.h"
 #include "fei/feinterpol.h"
-#include "set.h"
+#include "utility/set.h"
 
 namespace oofem {
 double MixedGradientPressureBC :: domainSize()

@@ -40,7 +40,7 @@
 #include "input/element.h"
 #include "contextioerr.h"
 #include "arrays/floatmatrix.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "arrays/floatarray.h"
 #include "classfactory.h"
 #include "datastream.h"

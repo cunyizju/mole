@@ -36,7 +36,7 @@
 #define nonlocalmaterialext_h
 
 #include "material/matstatus.h"
-#include "interface.h"
+#include "utility/interface.h"
 #include "arrays/intarray.h"
 #include "math/grid.h"
 #include "math/mathfem.h"

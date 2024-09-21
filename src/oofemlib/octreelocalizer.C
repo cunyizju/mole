@@ -41,7 +41,7 @@
 #include "dofman/node.h"
 #include "input/connectivitytable.h"
 #include "math/mathfem.h"
-#include "timer.h"
+#include "utility/timer.h"
 #include "error/error.h"
 #include "xfem/xfemelementinterface.h"
 

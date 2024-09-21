@@ -41,7 +41,7 @@
 #define errorestimator_h
 
 #include "femcmpnn.h"
-#include "interface.h"
+#include "utility/interface.h"
 #include "error/errorestimatortype.h"
 #include "arrays/intarray.h"
 #include "internalstatetype.h"

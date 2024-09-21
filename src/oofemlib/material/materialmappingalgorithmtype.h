@@ -35,7 +35,7 @@
 #ifndef materialmappingalgorithmtype_h
 #define materialmappingalgorithmtype_h
 
-#include "enumitem.h"
+#include "utility/enumitem.h"
 
 namespace oofem {
 #define MaterialMappingAlgorithmType_DEF \

@@ -40,7 +40,7 @@
 #include "arrays/intarray.h"
 #include "fields/fieldmanager.h"
 #include "metastep.h"
-#include "timer.h"
+#include "utility/timer.h"
 #include "assemblercallback.h"
 #include "chartype.h"
 #include "unknowntype.h"

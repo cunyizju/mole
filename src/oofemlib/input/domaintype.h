@@ -35,7 +35,7 @@
 #ifndef domaintype_h
 #define domaintype_h
 
-#include "enumitem.h"
+#include "utility/enumitem.h"
 
 namespace oofem {
 #define domainType_DEF \

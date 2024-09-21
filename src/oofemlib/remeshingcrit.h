@@ -36,7 +36,7 @@
 #define remeshingcrit_h
 
 #include "femcmpnn.h"
-#include "interface.h"
+#include "utility/interface.h"
 
 namespace oofem {
 class Domain;

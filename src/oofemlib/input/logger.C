@@ -34,7 +34,7 @@
 
 #include "input/logger.h"
 #include "error/error.h"
-#include "util.h"
+#include "utility/util.h"
 
 #include <cstdarg>
 #ifdef __PARALLEL_MODE

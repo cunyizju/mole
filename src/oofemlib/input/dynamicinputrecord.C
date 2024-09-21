@@ -37,7 +37,7 @@
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "dictionary.h"
+#include "utility/dictionary.h"
 #include "range.h"
 #include "dofman/node.h"
 #include "input/element.h"

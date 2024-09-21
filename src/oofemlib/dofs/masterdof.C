@@ -39,7 +39,7 @@
 #include "bc/boundarycondition.h"
 #include "initial/initialcondition.h"
 #include "fields/primaryfield.h"
-#include "dictionary.h"
+#include "utility/dictionary.h"
 #include "datastream.h"
 #include "contextioerr.h"
 #include "engng/engngm.h"

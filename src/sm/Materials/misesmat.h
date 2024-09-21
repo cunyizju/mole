@@ -38,7 +38,7 @@
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
-#include "dictionary.h"
+#include "utility/dictionary.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "ltf/scalarfunction.h"

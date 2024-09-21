@@ -32,10 +32,10 @@
 
 #include "dyncompcol.h"
 #include "iluprecond.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 
 #ifdef TIME_REPORT
- #include "timer.h"
+ #include "utility/timer.h"
 #endif
 
 namespace oofem {

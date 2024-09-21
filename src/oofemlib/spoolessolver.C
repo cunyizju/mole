@@ -35,8 +35,8 @@
 #include "spoolessolver.h"
 #include "spoolessparsemtrx.h"
 #include "arrays/floatarray.h"
-#include "verbose.h"
-#include "timer.h"
+#include "utility/verbose.h"
+#include "utility/timer.h"
 #include "classfactory.h"
 
 namespace oofem {

@@ -33,7 +33,7 @@
  */
 
 #include "solvers/calmls.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "timestep.h"
 #include "arrays/floatmatrix.h"
 #include "datastream.h"

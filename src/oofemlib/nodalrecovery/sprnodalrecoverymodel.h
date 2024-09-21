@@ -36,7 +36,7 @@
 #define sprnodalrecoverymodel_h
 
 #include "nodalrecovery/nodalrecoverymodel.h"
-#include "interface.h"
+#include "utility/interface.h"
 
 #define _IFT_SPRNodalRecoveryModel_Name "spr"
 

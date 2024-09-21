@@ -39,7 +39,7 @@
 #include "math/gausspoint.h"
 #include "material/material.h"
 #include "arrays/floatarray.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "contextioerr.h"
 #include "classfactory.h"
 

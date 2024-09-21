@@ -55,7 +55,7 @@
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/EngineeringModels/staticstructural.h"
 
-#include "timer.h"
+#include "utility/timer.h"
 
 #include "xfem/XFEMDebugTools.h"
 

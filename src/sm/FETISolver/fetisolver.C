@@ -36,7 +36,7 @@
 #include "math/mathfem.h"
 #include "fetisolver.h"
 #include "math/skyline.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "dofman/dofmanager.h"
 #include "engng/engngm.h"
 #include "input/domain.h"

@@ -1,9 +1,9 @@
-#include "util.h"
+#include "utility/util.h"
 #include "input/dynamicinputrecord.h"
 #include "input/dynamicdatareader.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
-#include "timer.h"
+#include "utility/timer.h"
 
 // Optional (only need the input fields defines)
 #include "tm/EngineeringModels/stationarytransportproblem.h"
@@ -22,7 +22,7 @@
 #include "dofman/node.h"
 #include "export/outputmanager.h"
 #include "bc/boundarycondition.h"
-#include "set.h"
+#include "utility/set.h"
 
 #include "tm/BoundaryCondition/transportgradientneumann.h"
 #include "tm/BoundaryCondition/transportgradientdirichlet.h"

@@ -35,7 +35,7 @@
 #include "dofman/elementinternaldofman.h"
 #include "dofs/dof.h"
 #include "arrays/intarray.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 
 namespace oofem {
 ElementDofManager :: ElementDofManager(int n, Domain *aDomain, Element *elem) :

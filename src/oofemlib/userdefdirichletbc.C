@@ -39,7 +39,7 @@
 #include "bc/boundarycondition.h"
 #include "timestep.h"
 #include "ltf/function.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "input/dynamicinputrecord.h"
 #include "classfactory.h"
 #include "dofman/dofmanager.h"

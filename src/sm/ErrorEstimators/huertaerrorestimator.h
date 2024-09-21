@@ -38,7 +38,7 @@
 #include "sm/refinedelement.h"
 #include "sm/refinedmesh.h"
 #include "error/errorestimator.h"
-#include "interface.h"
+#include "utility/interface.h"
 #include "arrays/floatarray.h"
 #include "statecountertype.h"
 #include "remeshingcrit.h"

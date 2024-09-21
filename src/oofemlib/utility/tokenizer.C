@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "tokenizer.h"
+#include "utility/tokenizer.h"
 #include "error/error.h"
 
 #include <cctype>

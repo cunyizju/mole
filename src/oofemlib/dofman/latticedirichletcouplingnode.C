@@ -42,7 +42,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/intarray.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "datastream.h"
 #include "contextioerr.h"
 #include "engng/staggeredproblem.h"

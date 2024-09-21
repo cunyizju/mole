@@ -35,7 +35,7 @@
 #ifndef meshpackagetype_h
 #define meshpackagetype_h
 
-#include "enumitem.h"
+#include "utility/enumitem.h"
 
 namespace oofem {
 #define MeshPackageType_DEF \

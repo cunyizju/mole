@@ -40,14 +40,14 @@
 #include "engng/engngm.h"
 #include "input/element.h"
 #include "math/mathfem.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "error/error.h"
 #include "math/sparsemtrxtype.h"
 #include "bc/activebc.h"
 #include "classfactory.h"
 
 #ifdef TIME_REPORT
- #include "timer.h"
+ #include "utility/timer.h"
 #endif
 
 namespace oofem {

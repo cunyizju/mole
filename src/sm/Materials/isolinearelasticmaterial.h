@@ -36,7 +36,7 @@
 #define isolinearelasticmaterial_h
 
 #include "linearelasticmaterial.h"
-#include "dictionary.h"
+#include "utility/dictionary.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatmatrixf.h"

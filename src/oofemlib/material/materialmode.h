@@ -35,7 +35,7 @@
 #ifndef materialmode_h
 #define materialmode_h
 
-#include "enumitem.h"
+#include "utility/enumitem.h"
 
 namespace oofem {
 #define MaterialMode_DEF \

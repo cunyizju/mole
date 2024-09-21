@@ -36,7 +36,7 @@
 #include <pybind11/embed.h>
 
 #include "fields/field.h"
-#include "pythonfield.h"
+#include "utility/pythonfield.h"
 #include "arrays/floatarray.h"
 #include "timestep.h"
 

@@ -57,7 +57,7 @@
 #include "math/mathfem.h"
 #include "material/materialmapperinterface.h"
 #include "unknownnumberingscheme.h"
-#include "set.h"
+#include "utility/set.h"
 
 #ifdef __OOFEG
  #include "oofeggraphiccontext.h"

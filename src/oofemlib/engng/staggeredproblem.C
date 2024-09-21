@@ -40,8 +40,8 @@
 #include "export/exportmodulemanager.h"
 #include "math/mathfem.h"
 #include "input/oofemtxtdatareader.h"
-#include "util.h"
-#include "verbose.h"
+#include "utility/util.h"
+#include "utility/verbose.h"
 #include "classfactory.h"
 #include "input/domain.h"
 

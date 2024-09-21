@@ -34,7 +34,7 @@
 
 #include "sm/Materials/structuralmaterial.h"
 #include "input/domain.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "sm/Materials/structuralms.h"
 #include "sm/Elements/structuralelement.h"
 #include "sm/Elements/nlstructuralelement.h"

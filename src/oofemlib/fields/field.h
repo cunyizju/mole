@@ -39,7 +39,7 @@
 #include "valuemodetype.h"
 #include "contextioresulttype.h"
 #include "contextmode.h"
-#include "enumitem.h"
+#include "utility/enumitem.h"
 #include <string>
 #include <memory>
 

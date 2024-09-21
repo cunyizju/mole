@@ -35,7 +35,7 @@
 #ifndef doftype_h
 #define doftype_h
 
-#include "enumitem.h"
+#include "utility/enumitem.h"
 
 namespace oofem {
 #define dofType_DEF \

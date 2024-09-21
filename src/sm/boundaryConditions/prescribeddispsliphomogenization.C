@@ -35,7 +35,7 @@
 #include "prescribeddispsliphomogenization.h"
 #include "input/domain.h"
 #include "input/dynamicinputrecord.h"
-#include "set.h"
+#include "utility/set.h"
 #include "fei/feinterpol.h"
 #include "input/element.h"
 #include "math/mathfem.h"

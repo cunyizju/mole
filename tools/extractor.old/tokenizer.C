@@ -32,7 +32,7 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include "tokenizer.h"
+#include "utility/tokenizer.h"
 
 Tokenizer :: Tokenizer(FILE *inFile, char separator)
 {

@@ -37,7 +37,7 @@
 #include "dofman/dofmanager.h"
 #include "input/element.h"
 #include "dofs/dof.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "export/outputmanager.h"
 #include "math/mathfem.h"
 #include "datastream.h"

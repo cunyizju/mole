@@ -33,7 +33,7 @@
  */
 
 #include "cs/crosssection.h"
-#include "dictionary.h"
+#include "utility/dictionary.h"
 #include "input/dynamicinputrecord.h"
 #include "math/gausspoint.h"
 #include "material/material.h"

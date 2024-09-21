@@ -41,7 +41,7 @@
 #include "arrays/floatmatrix.h"
 #include "ltf/function.h"
 #include "engng/engngm.h"
-#include "set.h"
+#include "utility/set.h"
 #include "dofman/node.h"
 #include "input/element.h"
 #include "classfactory.h"

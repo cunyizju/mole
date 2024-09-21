@@ -35,7 +35,7 @@
 #ifndef dofiditemh
 #define dofiditemh
 
-#include "enumitem.h"
+#include "utility/enumitem.h"
 
 #include <string>
 

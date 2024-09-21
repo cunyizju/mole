@@ -35,7 +35,7 @@
 #ifndef matesponsemode_h
 #define matesponsemode_h
 
-#include "enumitem.h"
+#include "utility/enumitem.h"
 
 namespace oofem {
 #define MatResponseMode_DEF \

@@ -38,10 +38,10 @@
 #include "oofemcfg.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
-#include "interface.h"
+#include "utility/interface.h"
 #include "internalstatetype.h"
 #include "statecountertype.h"
-#include "set.h"
+#include "utility/set.h"
 
 #include <map>
 #include <vector>

@@ -40,7 +40,7 @@
 #include "input/element.h"
 #include "dofs/dof.h"
 #include "math/sparsemtrx.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "sm/Elements/structuralelement.h"
 #include "unknownnumberingscheme.h"
 #include "sm/Elements/structuralelementevaluator.h"

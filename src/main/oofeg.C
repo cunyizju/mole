@@ -49,7 +49,7 @@
 #include "nodalrecovery/sprnodalrecoverymodel.h"
 #include "input/domain.h"
 
-#include "util.h"
+#include "utility/util.h"
 #include "dofman/node.h"
 #include "arrays/intarray.h"
 #include "oofemcfg.h"

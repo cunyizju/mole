@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "parser.h"
+#include "utility/parser.h"
 #include "error/error.h"
 #include "math/mathfem.h"
 

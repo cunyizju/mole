@@ -33,7 +33,7 @@
  */
 
 #include "material/material.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "math/gausspoint.h"
 #include "arrays/floatarray.h"
 #include "math/mathfem.h"

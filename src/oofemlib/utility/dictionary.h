@@ -36,7 +36,7 @@
 #define dictionr_h
 
 #include "oofemcfg.h"
-#include "pair.h"
+#include "utility/pair.h"
 #include "error/error.h"
 #include "contextioresulttype.h"
 #include "contextmode.h"

@@ -2,7 +2,7 @@
 #define grid_h
 
 #include "arrays/floatmatrix.h"
-#include "heap.h"
+#include "utility/heap.h"
 
 namespace oofem {
 /**

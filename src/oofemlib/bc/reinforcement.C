@@ -33,7 +33,7 @@
  */
 
 #include "bc/reinforcement.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "classfactory.h"
 
 namespace oofem {

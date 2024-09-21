@@ -36,7 +36,7 @@
 #define primaryunknownmapper_h
 
 #include "oofemcfg.h"
-#include "interface.h"
+#include "utility/interface.h"
 #include "valuemodetype.h"
 
 #include <string>

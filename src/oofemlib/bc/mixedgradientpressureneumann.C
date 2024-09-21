@@ -51,7 +51,7 @@
 #include "math/mathfem.h"
 #include "math/sparsemtrx.h"
 #include "solvers/sparselinsystemnm.h"
-#include "set.h"
+#include "utility/set.h"
 #include "input/dynamicinputrecord.h"
 #include "fei/feinterpol.h"
 #include "unknownnumberingscheme.h"

@@ -41,7 +41,7 @@
 #include "material/material.h"
 #include "internalstatetype.h"
 #include "internalstatevaluetype.h"
-#include "dictionary.h"
+#include "utility/dictionary.h"
 #include "crosssectextension.h"
 #include "math/gausspoint.h"
 

@@ -35,7 +35,7 @@
 #ifndef materialmapperinterface_h
 #define materialmapperinterface_h
 
-#include "interface.h"
+#include "utility/interface.h"
 
 namespace oofem {
 class Domain;

@@ -35,7 +35,7 @@
 #include "input/domain.h"
 #include "arrays/intarray.h"
 #include "input/element.h"
-#include "set.h"
+#include "utility/set.h"
 #include "bc/load.h"
 #include "bodyload.h"
 #include "bc/boundaryload.h"

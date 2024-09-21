@@ -40,7 +40,7 @@
 #include "arrays/floatarray.h"
 #include "input/dynamicinputrecord.h"
 #include "classfactory.h"
-#include "util.h"
+#include "utility/util.h"
 #include "contextioerr.h"
 #include "bc/generalboundarycondition.h"
 #include "bc/prescribedgradienthomogenization.h"

@@ -35,7 +35,7 @@
 #ifndef directerrorindicatorrc_h
 #define directerrorindicatorrc_h
 
-#include "interface.h"
+#include "utility/interface.h"
 #include "remeshingcrit.h"
 #include "arrays/floatarray.h"
 #include "statecountertype.h"

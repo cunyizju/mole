@@ -42,11 +42,11 @@
 #include "superlusolver.h"
 #include <stdlib.h>
 #include <math.h>
-#include "verbose.h"
+#include "utility/verbose.h"
 //#include "globals.h"
 
 #ifdef TIME_REPORT
- #include "timer.h"
+ #include "utility/timer.h"
 #endif
 
 namespace oofem {

@@ -43,7 +43,7 @@
 #include "internalstatemode.h"
 #include "internalstatetype.h"
 #include "arrays/floatmatrix.h"
-#include "timer.h"
+#include "utility/timer.h"
 #include "export/outputmanager.h"
 #include "arrays/floatarrayf.h"
 

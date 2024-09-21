@@ -70,7 +70,7 @@ namespace bp = boost::python;
 #include "input/oofemtxtinputrecord.h"
 #include "input/oofemtxtdatareader.h"
 #include "input/logger.h"
-#include "util.h"
+#include "utility/util.h"
 #include "problemmode.h"
 #include "dofman/dofmanager.h"
 #include "input/elementgeometrytype.h"

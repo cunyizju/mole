@@ -39,7 +39,7 @@
 #include "engng/engngm.h"
 #include "input/element.h"
 #include "math/mathfem.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "math/sparsemtrxtype.h"
 #include "classfactory.h"
 #include "bc/activebc.h"
@@ -54,7 +54,7 @@
 #include <utility>
 
 #ifdef TIME_REPORT
- #include "timer.h"
+ #include "utility/timer.h"
 #endif
 
 namespace oofem {

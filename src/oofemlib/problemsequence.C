@@ -35,7 +35,7 @@
 #include "problemsequence.h"
 #include "input/inputrecord.h"
 #include "classfactory.h"
-#include "util.h"
+#include "utility/util.h"
 #include "input/inputrecord.h"
 #include "datastream.h"
 #include "input/oofemtxtdatareader.h"

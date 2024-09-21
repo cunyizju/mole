@@ -37,7 +37,7 @@
 
 #include "structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
-#include "dictionary.h"
+#include "utility/dictionary.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "math/sparsemtrx.h"

@@ -40,7 +40,7 @@
 #include "timestep.h"
 #include "input/element.h"
 #include "math/sparsemtrx.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "classfactory.h"
 #include "datastream.h"
 #include "contextioerr.h"

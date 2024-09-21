@@ -41,7 +41,7 @@
 #include "fei/feinterpol2d.h"
 #include "fei/feinterpol3d.h"
 #include "classfactory.h"
-#include "set.h"
+#include "utility/set.h"
 #include "math/sparsemtrx.h"
 
 #include "math/integrationdomain.h"

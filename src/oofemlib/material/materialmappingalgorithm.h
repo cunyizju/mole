@@ -36,11 +36,11 @@
 #define materialmappingalgorithm_h
 
 #include "oofemcfg.h"
-#include "interface.h"
+#include "utility/interface.h"
 #include "arrays/intarray.h"
 #include "input/inputrecord.h"
 #include "internalstatetype.h"
-#include "set.h"
+#include "utility/set.h"
 
 namespace oofem {
 class Domain;

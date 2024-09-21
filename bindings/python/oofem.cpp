@@ -74,12 +74,12 @@ namespace py = pybind11;
 
 #include "fields/field.h"
 #include "fei/feinterpol.h"
-#include "util.h"
+#include "utility/util.h"
 #include "input/datareader.h"
 #include "input/oofemtxtdatareader.h"
 #include "valuemodetype.h"
 #include "dofs/dofiditem.h"
-#include "timer.h"
+#include "utility/timer.h"
 
 #include "classfactory.h"
 
@@ -103,7 +103,7 @@ namespace py = pybind11;
 #include "fields/uniformgridfield.h"
 #include "unstructuredgridfield.h"
 #include "dofs/dofmanvalfield.h"
-#include "pythonfield.h"
+#include "utility/pythonfield.h"
 #include <iostream>
 #include "oofemutil.h"
 #ifdef _OPENMP

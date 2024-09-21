@@ -39,7 +39,7 @@
 #include "arrays/intarray.h"
 #include "input/inputrecord.h"
 #include "range.h"
-#include "set.h"
+#include "utility/set.h"
 
 #include <list>
 

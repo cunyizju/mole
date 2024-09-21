@@ -37,7 +37,7 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "export/exportmodulemanager.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "classfactory.h"
 #include "datastream.h"
 #include "geneigvalsolvertype.h"

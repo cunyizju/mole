@@ -35,7 +35,7 @@
 #include "sm/Materials/LatticeMaterials/latticestructuralmaterial.h"
 #include "sm/Materials/LatticeMaterials/latticematstatus.h"
 #include "input/domain.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "sm/Materials/structuralms.h"
 #include "sm/Elements/structuralelement.h"
 #include "sm/Elements/nlstructuralelement.h"

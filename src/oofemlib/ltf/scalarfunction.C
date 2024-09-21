@@ -36,7 +36,7 @@
 #include "arrays/floatarray.h"
 #include "input/domain.h"
 #include "ltf/function.h"
-#include "parser.h"
+#include "utility/parser.h"
 #include "error/error.h"
 #include "math/gausspoint.h"
 

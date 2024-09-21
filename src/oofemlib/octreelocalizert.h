@@ -47,7 +47,7 @@
 #include "dofman/node.h"
 #include "input/element.h"
 #include "math/mathfem.h"
-#include "timer.h"
+#include "utility/timer.h"
 
 #include <set>
 #include <list>

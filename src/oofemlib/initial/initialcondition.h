@@ -36,7 +36,7 @@
 #define initial_h
 
 #include "bc/generalboundarycondition.h"
-#include "dictionary.h"
+#include "utility/dictionary.h"
 #include "bc/bcvaltype.h"
 #include "valuemodetype.h"
 

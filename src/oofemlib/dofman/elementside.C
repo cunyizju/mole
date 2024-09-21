@@ -36,7 +36,7 @@
 #include "dofs/dof.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/intarray.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "classfactory.h"
 
 namespace oofem {

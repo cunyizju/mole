@@ -37,7 +37,7 @@
 #include "ltf/function.h"
 #include "input/inputrecord.h"
 #include "input/domain.h"
-#include "set.h"
+#include "utility/set.h"
 #include "input/element.h"
 #include "fei/feinterpol.h"
 #include "math/gausspoint.h"

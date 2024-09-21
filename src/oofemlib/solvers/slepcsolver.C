@@ -36,14 +36,14 @@
 #include "solvers/petscsparsemtrx.h"
 #include "engng/engngm.h"
 #include "arrays/floatarray.h"
-#include "verbose.h"
+#include "utility/verbose.h"
 #include "input/domain.h"
 #include "classfactory.h"
 
 #define TIME_REPORT
 
 #ifdef TIME_REPORT
- #include "timer.h"
+ #include "utility/timer.h"
 #endif
 
 namespace oofem {

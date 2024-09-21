@@ -35,7 +35,7 @@
 #ifndef nonlocmatstiffinterface_h
 #define nonlocmatstiffinterface_h
 
-#include "interface.h"
+#include "utility/interface.h"
 #include "nonlocalmaterialext.h"
 
 namespace oofem {

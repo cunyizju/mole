@@ -36,7 +36,7 @@
 #define concrete2_h
 
 #include "femcmpnn.h"
-#include "dictionary.h"
+#include "utility/dictionary.h"
 #include "material/material.h"
 #include "sm/Materials/deformationtheorymaterial.h"
 #include "sm/Materials/isolinearelasticmaterial.h"

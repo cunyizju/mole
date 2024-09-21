@@ -36,10 +36,10 @@
 #define spatiallocalizer_h
 
 #include "oofemcfg.h"
-#include "interface.h"
+#include "utility/interface.h"
 #include "input/logger.h"
 #include "error/error.h"
-#include "set.h"
+#include "utility/set.h"
 
 #include <set>
 #include <list>

@@ -36,7 +36,7 @@
 #define primaryfield_h
 
 #include "fields/field.h"
-#include "interface.h"
+#include "utility/interface.h"
 #include "arrays/floatarray.h"
 #include "valuemodetype.h"
 #include "contextioresulttype.h"
