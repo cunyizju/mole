@@ -37,7 +37,7 @@
 
 #include "oofemcfg.h"
 #include "datastream.h"
-#include "parallel.h"
+#include "parallel/parallel.h"
 
 namespace oofem {
 

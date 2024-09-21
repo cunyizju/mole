@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "pardisoprojectorgsolver.h"
+#include "solvers/pardisoprojectorgsolver.h"
 
 #include "compcol.h"
 #include "symcompcol.h"

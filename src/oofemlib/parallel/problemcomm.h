@@ -35,7 +35,7 @@
 #ifndef problemcomm_h
 #define problemcomm_h
 
-#include "parallel//communicator.h"
+#include "parallel/communicator.h"
 #include "error/error.h"
 
 namespace oofem {

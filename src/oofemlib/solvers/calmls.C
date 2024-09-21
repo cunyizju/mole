@@ -46,7 +46,7 @@
 #include "dofs/dof.h"
 #include "contextioerr.h"
 #include "export/exportmodulemanager.h"
-#include "parallelcontext.h"
+#include "parallel/parallelcontext.h"
 #include "unknownnumberingscheme.h"
 
 namespace oofem {

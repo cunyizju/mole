@@ -66,14 +66,14 @@
 #include "fei/feinterpol3d.h"
 #include "classfactory.h"
 #include "xfem/xfemmanager.h"
-#include "parallelcontext.h"
+#include "parallel/parallelcontext.h"
 #include "unknownnumberingscheme.h"
 #include "contact/contactmanager.h"
 
 
 #ifdef __PARALLEL_MODE
- #include "parallel//problemcomm.h"
- #include "parallel//processcomm.h"
+ #include "parallel/problemcomm.h"
+ #include "parallel/processcomm.h"
  #include "loadbalancer.h"
 #endif
 

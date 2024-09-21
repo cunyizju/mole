@@ -51,7 +51,7 @@
 #include "error/errorestimatortype.h"
 #include "classfactory.h"
 #include "engng/engngm.h"
-#include "parallelcontext.h"
+#include "parallel/parallelcontext.h"
 
 #include <vector>
 

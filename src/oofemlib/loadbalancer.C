@@ -45,11 +45,11 @@
 #include "arrays/intarray.h"
 
 #ifdef __PARALLEL_MODE
-#include "parallel//processcomm.h"
+#include "parallel/processcomm.h"
 #include "datastream.h"
-#include "parallel//communicator.h"
-#include "parallel//domaintransactionmanager.h"
-#include "parallel//nonlocalmatwtp.h"
+#include "parallel/communicator.h"
+#include "parallel/domaintransactionmanager.h"
+#include "parallel/nonlocalmatwtp.h"
 #endif
 
 namespace oofem {

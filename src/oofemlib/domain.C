@@ -77,11 +77,11 @@
 #include "dofs/masterdof.h"
 
 #ifdef __PARALLEL_MODE
- #include "parallel.h"
- #include "parallel//processcomm.h"
+ #include "parallel/parallel.h"
+ #include "parallel/processcomm.h"
  #include "datastream.h"
- #include "parallel//communicator.h"
- #include "parallel//domaintransactionmanager.h"
+ #include "parallel/communicator.h"
+ #include "parallel/domaintransactionmanager.h"
 #endif
 
 #include <cstdarg>

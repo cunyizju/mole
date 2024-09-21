@@ -13,7 +13,6 @@ set (core_unsorted
     solutionbasedshapefunction.C
     fracturemanager.C
     neumannmomentload.C
-    parallelcontext.C
     prescribedmean.C
     # Semi sorted:
     remeshingcrit.C
@@ -63,15 +62,14 @@ endif ()
 if (USE_IML)
     list (APPEND core_unsorted
         iml/dyncomprow.C iml/dyncompcol.C
-        iml/precond.C iml/voidprecond.C iml/icprecond.C iml/iluprecond.C iml/ilucomprowprecond.C iml/diagpre.C
+        iml/precond.C iml/voidprecond.C iml/icprecond.C
+        iml/iluprecond.C
+        iml/ilucomprowprecond.C
+        iml/diagpre.C
         iml/imlsolver.C
         )
 endif ()
 
-
-if (USE_SLEPC)
-    list (APPEND core_unsorted slepcsolver.C)
-endif ()
 
 if (USE_SUPERLU_MT)
   list (APPEND core_unsorted superlusolver.C)
@@ -104,21 +102,32 @@ set (core_nm
     solvers/linesearch.C
     solvers/calmls.C
     solvers/staggeredsolver.C
+    parallel/parallelcontext.C
     )
 
+######## External solvers #########
 if (USE_PETSC)
-    list (APPEND core_nm petscsolver.C petscsparsemtrx.C)
+    list (APPEND core_nm 
+    solvers/petscsolver.C 
+    solvers/petscsparsemtrx.C)
 endif ()
 
 if (USE_INTEL_MKL_PARDISO OR USE_ONEAPI)
     message (STATUS "    MKL Solver is enabled for compilation")
-    list (APPEND core_nm mklpardisosolver.C)
+
+    list (APPEND core_nm 
+    solvers/mklpardisosolver.C)
 endif ()
 
 if (USE_PARDISO_ORG)
-  list (APPEND core_nm pardisoprojectorgsolver.C)
+  list (APPEND core_nm 
+  solvers/pardisoprojectorgsolver.C)
 endif ()
 
+if (USE_SLEPC)
+    list (APPEND core_nm 
+    solvers/slepcsolver.C)
+endif ()
 
 set (core_fields
     fields/fieldmanager.C
@@ -294,7 +303,8 @@ set (core_parallel
     )
 
 if (USE_PARMETIS)
-    list (APPEND core_parallel parmetisloadbalancer.C)
+    list (APPEND core_parallel
+    parallel/parmetisloadbalancer.C)
 endif ()
 
 set (core_bc

@@ -46,12 +46,12 @@
 #include "classfactory.h"
 #include "export/exportmodulemanager.h"
 #include "engng/engngm.h"
-#include "parallelcontext.h"
+#include "parallel/parallelcontext.h"
 #include "unknownnumberingscheme.h"
 
 #ifdef __PETSC_MODULE
- #include "petscsolver.h"
- #include "petscsparsemtrx.h"
+ #include "solvers/petscsolver.h"
+ #include "solvers/petscsparsemtrx.h"
 #endif
 
 #include <cstdio>

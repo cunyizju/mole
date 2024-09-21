@@ -32,10 +32,10 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "parallel//processcomm.h"
+#include "parallel/processcomm.h"
 #include "arrays/intarray.h"
-#include "parallel//combuff.h"
-#include "parallel//dyncombuff.h"
+#include "parallel/combuff.h"
+#include "parallel/dyncombuff.h"
 
 #ifdef __USE_MPI
  #include <mpi.h>

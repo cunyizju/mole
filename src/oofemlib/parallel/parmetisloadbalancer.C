@@ -32,16 +32,16 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "parmetisloadbalancer.h"
+#include "parallel/parmetisloadbalancer.h"
 #include "domain.h"
 #include "engng/engngm.h"
 #include "element.h"
 #include "dofman/dofmanager.h"
 #include "connectivitytable.h"
 #include "error/error.h"
-#include "parallel.h"
-#include "parallel//processcomm.h"
-#include "parallel//communicator.h"
+#include "parallel/parallel.h"
+#include "parallel/processcomm.h"
+#include "parallel/communicator.h"
 #include "classfactory.h"
 
 #include <set>

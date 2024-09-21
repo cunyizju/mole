@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "parallel//domaintransactionmanager.h"
+#include "parallel/domaintransactionmanager.h"
 #include "error/error.h"
 #include "dofman/dofmanager.h"
 #include "element.h"

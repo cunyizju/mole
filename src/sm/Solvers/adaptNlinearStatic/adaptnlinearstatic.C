@@ -56,7 +56,7 @@
 #include "unknownnumberingscheme.h"
 
 #ifdef __PARALLEL_MODE
- #include "parallelcontext.h"
+ #include "parallel/parallelcontext.h"
  #include "loadbalancer.h"
 #endif
 

@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "parallel//problemcomm.h"
+#include "parallel/problemcomm.h"
 #include "arrays/intarray.h"
 #include "error/error.h"
 #include "engng/engngm.h"

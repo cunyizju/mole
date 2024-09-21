@@ -36,7 +36,7 @@
 #define processcomm_h
 
 #include "oofemcfg.h"
-#include "parallel//combuff.h"
+#include "parallel/combuff.h"
 #include "commbufftype.h"
 #include "communicatormode.h"
 #include "arrays/floatmatrix.h"

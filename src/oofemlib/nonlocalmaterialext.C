@@ -46,7 +46,7 @@
 #include "dynamicinputrecord.h"
 
 #ifdef __PARALLEL_MODE
- #include "parallel.h"
+ #include "parallel/parallel.h"
 #endif
 #ifdef _OPENMP
 #include <omp.h>

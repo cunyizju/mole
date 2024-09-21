@@ -43,8 +43,8 @@
 #include "classfactory.h"
 
 #ifdef __PARALLEL_MODE
- #include "parallel//processcomm.h"
- #include "parallel//problemcomm.h"
+ #include "parallel/processcomm.h"
+ #include "parallel/problemcomm.h"
 #endif
 
 #include <cstdlib>

@@ -51,7 +51,7 @@
 #include "oofem_terminate.h"
 
 #ifdef __PARALLEL_MODE
- #include "parallel//dyncombuff.h"
+ #include "parallel/dyncombuff.h"
 #endif
 
 #ifdef __PETSC_MODULE

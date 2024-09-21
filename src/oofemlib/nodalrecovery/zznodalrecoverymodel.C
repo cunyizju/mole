@@ -49,8 +49,8 @@
 #include <set>
 
 #ifdef __PARALLEL_MODE
- #include "parallel//problemcomm.h"
- #include "parallel//communicator.h"
+ #include "parallel/problemcomm.h"
+ #include "parallel/communicator.h"
 #endif
 
 #define ZZNRM_ZERO_VALUE 1.e-12

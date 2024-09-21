@@ -47,8 +47,8 @@
 #include "unknownnumberingscheme.h"
 
 #ifdef __PARALLEL_MODE
- #include "parallel//problemcomm.h"
- #include "parallel//processcomm.h"
+ #include "parallel/problemcomm.h"
+ #include "parallel/processcomm.h"
 #endif
 
 namespace oofem {

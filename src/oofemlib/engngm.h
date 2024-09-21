@@ -54,13 +54,13 @@
 #include "contextfilemode.h"
 #include "contextioresulttype.h"
 #include "metastep.h"
-#include "parallelcontext.h"
+#include "parallel/parallelcontext.h"
 #include "export/exportmodulemanager.h"
 #include "initial/initmodulemanager.h"
 #include "monitor/monitormanager.h"
 
 #ifdef __PARALLEL_MODE
- #include "parallel.h"
+ #include "parallel/parallel.h"
 #endif
 
 #include <string>

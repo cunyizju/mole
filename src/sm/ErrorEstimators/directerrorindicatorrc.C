@@ -43,7 +43,7 @@
 #include "timestep.h"
 
 #ifdef __PARALLEL_MODE
- #include "parallel//problemcomm.h"
+ #include "parallel/problemcomm.h"
 #endif
 
 namespace oofem {

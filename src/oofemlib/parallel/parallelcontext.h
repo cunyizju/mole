@@ -37,7 +37,7 @@
 
 #include "oofemcfg.h"
 #ifdef __PARALLEL_MODE
- #include "parallel//parallelordering.h"
+ #include "parallel/parallelordering.h"
 #endif
 
 namespace oofem {
