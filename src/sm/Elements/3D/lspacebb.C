@@ -35,8 +35,8 @@
 #include "sm/Elements/3D/lspacebb.h"
 #include "fei/fei3dhexalin.h"
 #include "math/gausspoint.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/floatarray.h"
+#include "math/floatmatrix.h"
+#include "math/floatarray.h"
 #include "classfactory.h"
 
 namespace oofem {

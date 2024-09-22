@@ -34,7 +34,7 @@
 
 #include "solvers/spoolessolver.h"
 #include "spoolessparsemtrx.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "utility/verbose.h"
 #include "utility/timer.h"
 #include "classfactory.h"

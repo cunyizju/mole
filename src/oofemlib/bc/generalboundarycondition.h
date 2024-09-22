@@ -36,7 +36,7 @@
 #define generalbc_h
 
 #include "input/femcmpnn.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "bc/bcvaltype.h"
 #include "bc/bcgeomtype.h"
 #include "bc/bctype.h"

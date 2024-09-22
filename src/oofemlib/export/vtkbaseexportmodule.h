@@ -37,7 +37,7 @@
 
 #include "export/exportmodule.h"
 #include "export/exportregion.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "input/internalstatevaluetype.h"
 #include "input/internalstatetype.h"
 #include "dofs/unknowntype.h"

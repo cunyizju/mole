@@ -34,8 +34,8 @@
 
 #include "solvers/linesearch.h"
 #include "solvers/timestep.h"
-#include "arrays/floatarray.h"
-#include "arrays/intarray.h"
+#include "math/floatarray.h"
+#include "math/intarray.h"
 #include "math/mathfem.h"
 #include "solvers/convergedreason.h"
 #include "engng/engngm.h"

@@ -38,7 +38,7 @@
 #include "math/sparsegeneigenvalsystemnm.h"
 #include "solvers/convergedreason.h"
 #include "math/sparsemtrx.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 
 #include <slepceps.h>
 

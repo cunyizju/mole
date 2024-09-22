@@ -68,7 +68,7 @@
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 #include "input/compcol.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "engng/engngm.h"
 #include "input/domain.h"
 #include "input/element.h"

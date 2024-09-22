@@ -36,8 +36,8 @@
 #define homogenize_h
 
 #include "oofemcfg.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "error/error.h"
 
 namespace oofem {

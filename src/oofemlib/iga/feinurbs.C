@@ -33,8 +33,8 @@
  */
 
 #include "feinurbs.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "iga.h"
 
 namespace oofem {

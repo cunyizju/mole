@@ -36,7 +36,7 @@
 #define gjacobi_h
 
 #include "input/nummet.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "solvers/convergedreason.h"
 
 namespace oofem {

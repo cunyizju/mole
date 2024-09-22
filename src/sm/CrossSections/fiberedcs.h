@@ -39,8 +39,8 @@
 #include "sm/Materials/structuralmaterial.h"
 #include "input/element.h"
 #include "utility/dictionary.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "utility/interface.h"
 
 ///@name Input fields for FiberedCrossSection

@@ -3,7 +3,7 @@
 /* A general version, not for pointers. */
 
 #include <ostream>
-#include "arrays/floatarrayf.h"
+#include "math/floatarrayf.h"
 
 
 #ifdef FTENSOR_DEBUG

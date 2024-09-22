@@ -33,7 +33,7 @@
  */
 
 #include "ltf/interpolatingfunction.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "classfactory.h"
 #include "error/error.h"
 

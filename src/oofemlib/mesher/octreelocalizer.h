@@ -37,8 +37,8 @@
 
 #include "oofemcfg.h"
 #include "mesher/spatiallocalizer.h"
-#include "arrays/floatarray.h"
-#include "arrays/intarray.h"
+#include "math/floatarray.h"
+#include "math/intarray.h"
 
 #include <set>
 #include <list>

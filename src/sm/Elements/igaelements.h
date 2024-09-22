@@ -41,8 +41,8 @@
 #include "iga/feitspline.h"
 #include "sm/Elements/PlaneStress/planestresselementevaluator.h"
 #include "sm/Elements/3D/space3delementevaluator.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "material/matresponsemode.h"
 #include "math/mathfem.h"
 

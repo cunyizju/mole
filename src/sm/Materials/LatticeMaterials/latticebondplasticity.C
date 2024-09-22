@@ -34,13 +34,13 @@
 
 #include "latticebondplasticity.h"
 #include "math/gausspoint.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/floatarray.h"
+#include "math/floatmatrix.h"
+#include "math/floatarray.h"
 #include "engng/engngm.h"
 #include "math/mathfem.h"
 #include <math.h>
 #include "latticematstatus.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "Elements/LatticeElements/latticestructuralelement.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"

@@ -1,30 +1,13 @@
-# Much to organize
+
 set (core_unsorted
     classfactory.C
-    
-
-    
-    
-    # Semi sorted:
-    
-
-     
-
-
-    # Deprecated?
-
-    #
-
-
-    # 
-
     )
 
-set(initial
-    initial/initmodulemanager.C
-    initial/initmodule.C
-    initial/initialcondition.C
-)
+set (core_engng
+    engng/engngm.C
+    engng/staggeredproblem.C
+    engng/dummyengngm.C
+    )
 
 set(input
     input/inputrecord.C 
@@ -50,13 +33,172 @@ set(input
     input/eleminterpunknownmapper.C
     input/primaryunknownmapper.C 
 )
+
+set (core_dofs
+    dofs/dof.C
+    dofs/masterdof.C
+    dofs/simpleslavedof.C
+    dofs/slavedof.C
+    dofs/activedof.C
+    dofs/dofmanvalfield.C
+    )
+
+set (core_nm
+    solvers/sparselinsystemnm.C
+    solvers/sparsenonlinsystemnm.C
+    solvers/nrsolver.C
+    solvers/dynamicrelaxationsolver.C
+    solvers/linesearch.C
+    solvers/calmls.C
+    solvers/staggeredsolver.C
+    parallel/parallelcontext.C
+    solvers/timestep.C
+    solvers/metastep.C 
+    )
+
+set (core_dofman
+    dofman/dofmanager.C
+    dofman/node.C
+    dofman/slavenode.C
+    dofman/generalslavenode.C
+    dofman/hangingnode.C
+    dofman/qcnode.C
+    dofman/rigidarmnode.C
+    dofman/elementinternaldofman.C
+    dofman/elementside.C
+    dofman/latticedirichletcouplingnode.C
+    dofman/latticeneumanncouplingnode.C
+    )
+
+set (core_material
+    material/material.C
+    material/dummymaterial.C
+    material/materialmappingalgorithm.C
+    material/fracturemanager.C
+    material/homogenize.C
+    material/randommaterialext.C
+    )
+
+set(initial
+    initial/initmodulemanager.C
+    initial/initmodule.C
+    initial/initialcondition.C
+)
+
+set (core_fields
+    fields/fieldmanager.C
+    fields/field.C
+    fields/primaryfield.C
+    fields/intvarfield.C
+    fields/maskedprimaryfield.C
+    fields/dofdistributedprimaryfield.C
+    fields/eigenvectorprimaryfield.C
+    fields/uniformgridfield.C
+    )
+
+set (core_ltf
+    ltf/function.C
+    ltf/scalarfunction.C
+    ltf/constantfunction.C
+    ltf/heavisidetimefunction.C
+    ltf/peakfunction.C
+    ltf/piecewiselinfunction.C
+    ltf/periodicpiecewiselinfunction.C
+    ltf/calculatorfunction.C
+    ltf/localgaussianrandomfunction.C
+    ltf/interpolatingfunction.C
+    )
+
+set (core_cs
+    cs/crosssection.C
+    cs/emptycs.C
+    cs/dummycrosssection.C
+    )
+
+set (core_export
+    export/outputmanager.C
+    export/exportmodule.C
+    export/exportmodulemanager.C
+    export/exportregion.C
+    export/outputexportmodule.C
+    export/datastream.C
+    export/errorcheckingexportmodule.C
+    export/vtkexportmodule.C
+    export/vtkbaseexportmodule.C
+    export/vtkxmlexportmodule.C
+    export/vtkmemoryexportmodule.C
+    export/vtkxmlperiodicexportmodule.C
+#    export/vtkxmllatticeexportmodule.C
+    export/vtkpfemexportmodule.C
+    export/vtkxfemexportmodule.C
+#    export/homexportmodule.C
+    export/matlabexportmodule.C
+    export/gpexportmodule.C
+    export/solutionstatusexportmodule.C
+    export/vtkhdf5exportmodule.C
+    )
+
+set (core_monitors
+    monitor/monitormanager.C
+    monitor/monitor.C
+    )
+
+set (core_iga
+    iga/iga.C
+    iga/feibspline.C
+    iga/feinurbs.C
+    iga/feitspline.C
+    )
+
+set (core_fei
+    fei/feinterpol.C
+    fei/feinterpol1d.C
+    fei/feinterpol2d.C
+    fei/feinterpol3d.C
+    fei/fei1dlin.C
+    fei/fei1dquad.C
+    fei/fei1dhermite.C
+    fei/fei2dtrlin.C
+    fei/fei2dtrquad.C
+    fei/fei2dlinehermite.C
+    fei/fei2dlinelin.C
+    fei/fei2dlinequad.C
+    fei/fei2dquadconst.C
+    fei/fei2dquadlin.C
+    fei/fei2dquadquad.C
+    fei/fei2dquadbiquad.C
+    fei/fei3dlinelin.C
+    fei/fei3dtrlin.C
+    fei/fei3dquadlin.C
+    fei/fei3dtrquad.C
+    fei/fei3dtetlin.C
+    fei/fei3dtetquad.C
+    fei/fei3dhexalin.C
+    fei/fei3dhexaquad.C
+    fei/fei3dhexatriquad.C
+    fei/fei3dwedgelin.C 
+    fei/fei3dwedgequad.C
+    fei/fei3dhexaconst.C
+    )
+
 set(contact
     contact/contactmanager.C
     contact/contactdefinition.C
     contact/contactelement.C
 )
 
+set (core_mapping
+    mapping/mmaclosestiptransfer.C
+    mapping/mmashapefunctprojection.C
+    mapping/mmaleastsquareprojection.C
+    mapping/mmacontainingelementprojection.C
+    mapping/matstatmapperint.C
+    )
+
 set(math
+    math/intarray.C
+    math/floatarray.C
+    math/floatmatrix.C
     math/mathfem.C
     math/grid.C
     math/gausspoint.C
@@ -79,7 +221,6 @@ set(error
     error/errorestimator.C
     error/meshqualityerrorestimator.C
 )
-
 
 set(utility
     utility/timer.C
@@ -125,27 +266,6 @@ set (core_nodalrecovery
     nodalrecovery/sprnodalrecoverymodel.C
     )
 
-set (core_dofs
-    dofs/dof.C
-    dofs/masterdof.C
-    dofs/simpleslavedof.C
-    dofs/slavedof.C
-    dofs/activedof.C
-    dofs/dofmanvalfield.C
-    )
-
-set (core_nm
-    solvers/sparselinsystemnm.C
-    solvers/sparsenonlinsystemnm.C
-    solvers/nrsolver.C
-    solvers/dynamicrelaxationsolver.C
-    solvers/linesearch.C
-    solvers/calmls.C
-    solvers/staggeredsolver.C
-    parallel/parallelcontext.C
-    solvers/timestep.C
-    solvers/metastep.C 
-    )
 
 ######## External solvers #########
 if (USE_PETSC)
@@ -170,140 +290,6 @@ if (USE_SLEPC)
     list (APPEND core_nm 
     solvers/slepcsolver.C)
 endif ()
-
-set (core_fields
-    fields/fieldmanager.C
-    fields/field.C
-    fields/primaryfield.C
-    fields/intvarfield.C
-    fields/maskedprimaryfield.C
-    fields/dofdistributedprimaryfield.C
-    fields/eigenvectorprimaryfield.C
-    fields/uniformgridfield.C
-    )
-
-set (core_ltf
-    ltf/function.C
-    ltf/scalarfunction.C
-    ltf/constantfunction.C
-    ltf/heavisidetimefunction.C
-    ltf/peakfunction.C
-    ltf/piecewiselinfunction.C
-    ltf/periodicpiecewiselinfunction.C
-    ltf/calculatorfunction.C
-    ltf/localgaussianrandomfunction.C
-    ltf/interpolatingfunction.C
-    )
-
-set (core_cs
-    cs/crosssection.C
-    cs/emptycs.C
-    cs/dummycrosssection.C
-    )
-
-set (core_td
-    )
-
-set (core_dofman
-    dofman/dofmanager.C
-    dofman/node.C
-    dofman/slavenode.C
-    dofman/generalslavenode.C
-    dofman/hangingnode.C
-    dofman/qcnode.C
-    dofman/rigidarmnode.C
-    dofman/elementinternaldofman.C
-    dofman/elementside.C
-    dofman/latticedirichletcouplingnode.C
-    dofman/latticeneumanncouplingnode.C
-    )
-
-set (core_material
-    material/material.C
-    material/dummymaterial.C
-    material/materialmappingalgorithm.C
-    material/fracturemanager.C
-    material/homogenize.C
-    material/randommaterialext.C
-    )
-
-set (core_export
-    export/outputmanager.C
-    export/exportmodule.C
-    export/exportmodulemanager.C
-    export/exportregion.C
-    export/outputexportmodule.C
-    export/datastream.C
-    export/errorcheckingexportmodule.C
-    export/vtkexportmodule.C
-    export/vtkbaseexportmodule.C
-    export/vtkxmlexportmodule.C
-    export/vtkmemoryexportmodule.C
-    export/vtkxmlperiodicexportmodule.C
-#    export/vtkxmllatticeexportmodule.C
-    export/vtkpfemexportmodule.C
-    export/vtkxfemexportmodule.C
-#    export/homexportmodule.C
-    export/matlabexportmodule.C
-    export/gpexportmodule.C
-    export/solutionstatusexportmodule.C
-    export/vtkhdf5exportmodule.C
-    )
-
-set (core_monitors
-    monitor/monitormanager.C
-    monitor/monitor.C
-    )
-
-set (core_iga
-    iga/iga.C
-    iga/feibspline.C
-    iga/feinurbs.C
-    iga/feitspline.C
-    )
-
-set (core_arrays
-    arrays/intarray.C
-    arrays/floatarray.C
-    arrays/floatmatrix.C
-    )
-
-set (core_engng
-    engng/engngm.C
-    engng/staggeredproblem.C
-    engng/dummyengngm.C
-    )
-
-set (core_fei
-    fei/feinterpol.C
-    fei/feinterpol1d.C
-    fei/feinterpol2d.C
-    fei/feinterpol3d.C
-    fei/fei1dlin.C
-    fei/fei1dquad.C
-    fei/fei1dhermite.C
-    fei/fei2dtrlin.C
-    fei/fei2dtrquad.C
-    fei/fei2dlinehermite.C
-    fei/fei2dlinelin.C
-    fei/fei2dlinequad.C
-    fei/fei2dquadconst.C
-    fei/fei2dquadlin.C
-    fei/fei2dquadquad.C
-    fei/fei2dquadbiquad.C
-    fei/fei3dlinelin.C
-    fei/fei3dtrlin.C
-    fei/fei3dquadlin.C
-    fei/fei3dtrquad.C
-    fei/fei3dtetlin.C
-    fei/fei3dtetquad.C
-    fei/fei3dhexalin.C
-    fei/fei3dhexaquad.C
-    fei/fei3dhexatriquad.C
-    fei/fei3dwedgelin.C 
-    fei/fei3dwedgequad.C
-    fei/fei3dhexaconst.C
-    )
 
 set (core_xfem
     xfem/delaunay.C
@@ -390,15 +376,6 @@ if (USE_PYBIND_BINDINGS)
 endif ()
 
 
-
-set (core_mapping
-    mapping/mmaclosestiptransfer.C
-    mapping/mmashapefunctprojection.C
-    mapping/mmaleastsquareprojection.C
-    mapping/mmacontainingelementprojection.C
-    mapping/matstatmapperint.C
-    )
-
 set (core_mesher
     mesher/t3dinterface.C
     mesher/targe2interface.C
@@ -424,7 +401,6 @@ set (core
     ${core_nodalrecovery}
     ${core_dofs}
     ${core_nm}
-    ${core_td}
     ${core_fields}
     ${core_dofman}
     ${core_material}
@@ -432,7 +408,6 @@ set (core
     ${core_monitors}
     ${core_ltf}
     ${core_cs}
-    ${core_arrays}
     ${core_engng}
     ${core_fei}
     ${core_xfem}

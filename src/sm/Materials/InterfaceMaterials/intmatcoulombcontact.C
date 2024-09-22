@@ -34,8 +34,8 @@
 
 #include "intmatcoulombcontact.h"
 #include "math/gausspoint.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/floatarray.h"
+#include "math/floatmatrix.h"
+#include "math/floatarray.h"
 #include "math/mathfem.h"
 #include "utility/contextioerr.h"
 #include "classfactory.h"

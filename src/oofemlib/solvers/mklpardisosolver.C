@@ -37,7 +37,7 @@
 #include "input/compcol.h"
 #include "math/symcompcol.h"
 #include "engng/engngm.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "utility/verbose.h"
 #include "utility/timer.h"
 #include "error/error.h"

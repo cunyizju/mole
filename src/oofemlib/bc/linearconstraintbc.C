@@ -35,7 +35,7 @@
 #include "bc/linearconstraintbc.h"
 #include "classfactory.h"
 #include "dofs/masterdof.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatmatrix.h"
 #include "math/sparsemtrx.h"
 #include "input/unknownnumberingscheme.h"
 #include "ltf/function.h"

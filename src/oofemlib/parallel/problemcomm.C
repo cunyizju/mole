@@ -33,7 +33,7 @@
  */
 
 #include "parallel/problemcomm.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "error/error.h"
 #include "engng/engngm.h"
 #include "input/element.h"

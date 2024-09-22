@@ -40,11 +40,11 @@ namespace py = pybind11;
 #include <string>
 
 #include "oofemcfg.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/floatarrayf.h"
-#include "arrays/floatmatrixf.h"
-#include "arrays/intarray.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
+#include "math/floatarrayf.h"
+#include "math/floatmatrixf.h"
+#include "math/intarray.h"
 
 #include "input/femcmpnn.h"
 #include "solvers/timestep.h"

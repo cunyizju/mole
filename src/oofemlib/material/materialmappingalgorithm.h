@@ -37,7 +37,7 @@
 
 #include "oofemcfg.h"
 #include "utility/interface.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "input/inputrecord.h"
 #include "input/internalstatetype.h"
 #include "utility/set.h"

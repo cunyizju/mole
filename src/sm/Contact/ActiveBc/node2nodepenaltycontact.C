@@ -37,7 +37,7 @@
 #include "utility/set.h"
 #include "input/domain.h"
 #include "dofman/node.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatmatrix.h"
 #include "input/unknownnumberingscheme.h"
 #include "math/sparsemtrx.h"
 #include "classfactory.h"

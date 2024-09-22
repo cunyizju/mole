@@ -36,7 +36,7 @@
 #define set_h
 
 #include "input/femcmpnn.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 
 #include <list>
 

@@ -34,8 +34,8 @@
 
 #include "tutorialmaterial.h"
 #include "math/gausspoint.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/floatarray.h"
+#include "math/floatmatrix.h"
+#include "math/floatarray.h"
 #include "input/dynamicinputrecord.h"
 #include "classfactory.h"
 #include "sm/Elements/structuralelement.h"

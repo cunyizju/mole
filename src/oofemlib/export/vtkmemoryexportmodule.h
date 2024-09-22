@@ -36,7 +36,7 @@
 #define vtkmemoryexportmodule_h
 
 #include "export/vtkbaseexportmodule.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "nodalrecovery/nodalrecoverymodel.h"
 #include "input/internalstatevaluetype.h"
 #include <iostream>

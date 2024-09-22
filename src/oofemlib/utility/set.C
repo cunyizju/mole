@@ -34,7 +34,7 @@
 
 #include "utility/set.h"
 #include "error/error.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "input/inputrecord.h"
 #include "input/domain.h"
 #include "input/element.h"

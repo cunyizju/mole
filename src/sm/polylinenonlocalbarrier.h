@@ -36,7 +36,7 @@
 #define polylinenonlocalbarrier_h
 
 #include "nonlocal/nonlocalbarrier.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 
 ///@name Input fields for PolylineNonlocalBarrier
 //@{

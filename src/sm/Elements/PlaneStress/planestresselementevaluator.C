@@ -34,8 +34,8 @@
 
 #include "sm/Elements/PlaneStress/planestresselementevaluator.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "input/domain.h"
 #include "dofman/node.h"
 #include "input/element.h"

@@ -37,7 +37,7 @@
 
 #include "oofemcfg.h"
 #include "input/inputrecord.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "fields/fieldmanager.h"
 #include "solvers/metastep.h"
 #include "utility/timer.h"

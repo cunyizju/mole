@@ -50,9 +50,9 @@ namespace bp = boost::python;
 * O O F E M L I B   M O D U L E
 *
 *****************************************************/
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/intarray.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
+#include "math/intarray.h"
 #include "engng/engngm.h"
 #include "input/unknownnumberingscheme.h"
 #include "input/domain.h"

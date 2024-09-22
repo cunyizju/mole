@@ -37,8 +37,8 @@
 #include "dofman/node.h"
 #include "math/gausspoint.h"
 #include "math/gaussintegrationrule.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/intarray.h"
+#include "math/floatmatrix.h"
+#include "math/intarray.h"
 #include "cs/crosssection.h"
 
 

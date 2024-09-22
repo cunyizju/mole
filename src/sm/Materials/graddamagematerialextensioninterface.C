@@ -36,7 +36,7 @@
 #include "nonlocal/nonlocalbarrier.h"
 #include "graddamagematerialextensioninterface.h"
 #include "input/inputrecord.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatmatrix.h"
 
 #include <list>
 

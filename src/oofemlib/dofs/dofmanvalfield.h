@@ -42,7 +42,7 @@
 #include "input/domain.h"
 #include <vector>
 #include "input/internalstatetype.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "material/materialmappingalgorithm.h"
 #include "mapping/mmashapefunctprojection.h"
 #include "input/cltypes.h"

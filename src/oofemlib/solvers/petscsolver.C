@@ -37,7 +37,7 @@
 #include "solvers/petscsparsemtrx.h"
 #include "solvers/convergedreason.h"
 #include "engng/engngm.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "utility/verbose.h"
 #include "utility/timer.h"
 #include "error/error.h"

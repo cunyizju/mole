@@ -35,7 +35,7 @@
 #ifndef heavisidetimefunction_h
 #define heavisidetimefunction_h
 
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "ltf/function.h"
 
 ///@name Input fields for HeavisideTimeFunction

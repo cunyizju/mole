@@ -36,7 +36,7 @@
 #define activebc_h
 
 #include "bc/generalboundarycondition.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "input/inputrecord.h"
 #include "input/chartype.h"
 #include "input/valuemodetype.h"

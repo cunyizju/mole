@@ -1,8 +1,8 @@
 #include "utility/util.h"
 #include "input/dynamicinputrecord.h"
 #include "input/dynamicdatareader.h"
-#include "arrays/intarray.h"
-#include "arrays/floatarray.h"
+#include "math/intarray.h"
+#include "math/floatarray.h"
 #include "utility/timer.h"
 
 // Optional (only need the input fields defines)

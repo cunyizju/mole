@@ -35,8 +35,8 @@
 #include "stressvector.h"
 #include "strainvector.h"
 #include "math/mathfem.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "error/error.h"
 #include "math/mathfem.h"
 

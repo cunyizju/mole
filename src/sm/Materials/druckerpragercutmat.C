@@ -34,8 +34,8 @@
 
 #include "druckerpragercutmat.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/floatarray.h"
+#include "math/floatmatrix.h"
+#include "math/floatarray.h"
 #include "math/gausspoint.h"
 #include "math/mathfem.h"
 #include "utility/contextioerr.h"

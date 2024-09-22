@@ -37,9 +37,9 @@
 #include "sm/Materials/LatticeMaterials/latticestructuralmaterial.h"
 #include "math/gausspoint.h"
 #include "input/element.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatarrayf.h"
-#include "arrays/floatmatrixf.h"
+#include "math/floatarray.h"
+#include "math/floatarrayf.h"
+#include "math/floatmatrixf.h"
 
 namespace oofem {
 REGISTER_CrossSection(LatticeCrossSection);

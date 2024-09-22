@@ -37,8 +37,8 @@
 
 #include "linearelasticmaterial.h"
 #include "utility/dictionary.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "material/matconst.h"
 #include "input/element.h"
 

@@ -37,7 +37,7 @@
 #include "sm/Materials/InterfaceMaterials/structuralinterfacematerial.h"
 #include "math/gausspoint.h"
 #include "input/element.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 
 namespace oofem {
 REGISTER_CrossSection(StructuralInterfaceCrossSection);

@@ -34,8 +34,8 @@
 
 #include "sm/Elements/3D/space3delementevaluator.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "input/domain.h"
 #include "dofman/node.h"
 #include "input/element.h"

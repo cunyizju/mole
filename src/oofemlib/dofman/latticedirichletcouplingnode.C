@@ -39,9 +39,9 @@
 #include "bc/nodalload.h"
 #include "solvers/timestep.h"
 
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/intarray.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
+#include "math/intarray.h"
 #include "utility/verbose.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"

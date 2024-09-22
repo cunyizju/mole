@@ -35,7 +35,7 @@
 #include "solvers/calmls.h"
 #include "utility/verbose.h"
 #include "solvers/timestep.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatmatrix.h"
 #include "export/datastream.h"
 #include "math/mathfem.h"
 #include "input/element.h"

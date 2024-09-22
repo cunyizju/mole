@@ -35,9 +35,9 @@
 
 #include "sm/Elements/htselement.h"
 #include "math/gausspoint.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/floatarray.h"
-#include "arrays/intarray.h"
+#include "math/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/intarray.h"
 #include "dofman/node.h"
 #include "math/mathfem.h"
 #include "bc/boundaryload.h"

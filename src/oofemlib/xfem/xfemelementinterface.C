@@ -42,8 +42,8 @@
 #include "patchintegrationrule.h"
 #include "delaunay.h"
 #include "xfemmanager.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "input/dynamicinputrecord.h"
 #include "math/mathfem.h"
 

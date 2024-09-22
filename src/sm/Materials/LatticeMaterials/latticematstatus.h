@@ -38,7 +38,7 @@
 
 #include "../structuralms.h"
 #include "material/randommaterialext.h"
-#include "arrays/floatarrayf.h"
+#include "math/floatarrayf.h"
 
 namespace oofem {
 class GaussPoint;

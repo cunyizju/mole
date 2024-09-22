@@ -44,8 +44,8 @@
 
 #include "sm/Elements/structuralelement.h"
 
-#include "arrays/floatmatrix.h"
-#include "arrays/floatarray.h"
+#include "math/floatmatrix.h"
+#include "math/floatarray.h"
 
 #include "input/dynamicinputrecord.h"
 #include "input/unknownnumberingscheme.h"

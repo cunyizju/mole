@@ -37,8 +37,8 @@
 #include "sm/CrossSections/simplecrosssection.h"
 #include "sm/Materials/structuralms.h"
 #include "input/dynamicinputrecord.h"
-#include "arrays/floatarrayf.h"
-#include "arrays/floatmatrixf.h"
+#include "math/floatarrayf.h"
+#include "math/floatmatrixf.h"
 
 namespace oofem {
 void

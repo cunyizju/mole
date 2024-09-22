@@ -34,7 +34,7 @@
 
 #include "bc/boundaryload.h"
 #include "ltf/function.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "solvers/timestep.h"
 #include "input/dynamicinputrecord.h"
 #include "input/valuemodetype.h"

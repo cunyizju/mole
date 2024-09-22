@@ -35,7 +35,7 @@
 #ifndef geometrygenerator_h
 #define geometrygenerator_h
 
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "input/element.h"
 #include "dofman/node.h"
 

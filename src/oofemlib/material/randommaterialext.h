@@ -38,7 +38,7 @@
 #include "material/matstatus.h"
 #include "utility/dictionary.h"
 #include "utility/interface.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 
 ///@name Input fields for RandomMaterialExt
 //@{

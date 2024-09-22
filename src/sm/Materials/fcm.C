@@ -34,8 +34,8 @@
 
 #include "fcm.h"
 #include "math/gausspoint.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/floatarray.h"
+#include "math/floatmatrix.h"
+#include "math/floatarray.h"
 #include "utility/contextioerr.h"
 #include "math/mathfem.h"
 #include "stressvector.h"

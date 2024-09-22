@@ -36,8 +36,8 @@
 #define linearconstraintbc_h
 
 #include "bc/activebc.h"
-#include "arrays/floatarray.h"
-#include "arrays/intarray.h"
+#include "math/floatarray.h"
+#include "math/intarray.h"
 #include "input/chartype.h"
 #include "input/valuemodetype.h"
 #include "dofman/dofmanager.h"

@@ -36,8 +36,8 @@
 #define winklermodel_h
 
 #include "sm/Materials/structuralmaterial.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "material/matconst.h"
 #include "material/matstatus.h"
 #include "utility/interface.h"

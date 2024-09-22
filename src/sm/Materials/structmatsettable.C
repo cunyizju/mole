@@ -34,8 +34,8 @@
 
 #include "structmatsettable.h"
 
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "math/gausspoint.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "export/datastream.h"

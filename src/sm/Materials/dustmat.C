@@ -34,11 +34,11 @@
 
 #include "dustmat.h"
 
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "sm/Materials/structuralms.h"
 #include "math/gausspoint.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
 #include "export/datastream.h"

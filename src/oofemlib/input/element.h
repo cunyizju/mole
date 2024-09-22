@@ -39,7 +39,7 @@
 #include "error/error.h"
 #include "input/chartype.h"
 #include "input/domain.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatmatrix.h"
 #include "math/integrationdomain.h"
 #include "material/materialmode.h"
 #include "input/elementgeometrytype.h"
@@ -52,7 +52,7 @@
 #include "dofs/unknowntype.h"
 #include "math/integrationrule.h"
 #include "dofs/dofiditem.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 
 #include <cstdio>
 #include <vector>

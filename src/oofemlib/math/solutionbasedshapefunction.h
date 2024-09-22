@@ -37,7 +37,7 @@
 
 #include "bc/activebc.h"
 #include "dofs/dofiditem.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 
 #define _IFT_SolutionbasedShapeFunction_Name "solutionbasedshapefunction"
 #define _IFT_SolutionbasedShapeFunction_ShapeFunctionFile "shapefunctionfile"

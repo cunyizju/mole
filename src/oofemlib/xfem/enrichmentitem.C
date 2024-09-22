@@ -33,7 +33,7 @@
  */
 
 #include "xfemmanager.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatmatrix.h"
 #include "enrichmentitem.h"
 #include "input/element.h"
 #include "enrichmentfunction.h"

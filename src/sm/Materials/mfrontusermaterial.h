@@ -39,9 +39,9 @@
 
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatarrayf.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatarrayf.h"
+#include "math/floatmatrix.h"
 
 #include "MGIS/Behaviour/State.hxx"
 #include "MGIS/Behaviour/Behaviour.hxx"

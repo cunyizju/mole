@@ -35,7 +35,7 @@
 #define structuralinterfacematerialphf_h
 
 #include "sm/Materials/InterfaceMaterials/structuralinterfacematerial.h"
-#include "arrays/floatmatrixf.h"
+#include "math/floatmatrixf.h"
 
 namespace oofem {
 class GaussPoint;

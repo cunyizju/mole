@@ -37,8 +37,8 @@
 
 #include "sm/Elements/Interfaces/structuralinterfaceelement.h"
 #include "fei/fei3dtrlin.h"
-#include "arrays/floatarrayf.h"
-#include "arrays/floatmatrixf.h"
+#include "math/floatarrayf.h"
+#include "math/floatmatrixf.h"
 
 #define _IFT_IntElSurfTr1_Name "intelsurftr1"
 

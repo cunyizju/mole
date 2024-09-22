@@ -38,7 +38,7 @@
 #include "oofemcfg.h"
 #include "error/error.h"
 #include "input/inputrecord.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "math/integrationdomain.h"
 #include "input/elementgeometrytype.h"
 #include "material/materialmode.h"

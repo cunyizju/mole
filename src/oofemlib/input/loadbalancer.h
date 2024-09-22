@@ -37,7 +37,7 @@
 
 #include "oofemcfg.h"
 #include "input/inputrecord.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 
 #include <vector>
 #include <memory>

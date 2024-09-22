@@ -35,7 +35,7 @@
 #ifndef refinedelement_h
 #define refinedelement_h
 
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "input/valuemodetype.h"
 
 #include <vector>

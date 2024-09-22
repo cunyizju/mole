@@ -37,8 +37,8 @@
 
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/linearelasticmaterial.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "sm/Materials/structuralms.h"
 
 namespace oofem {

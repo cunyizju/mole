@@ -34,8 +34,8 @@
 
 #include "material/fracturemanager.h"
 #include "input/inputrecord.h"
-#include "arrays/intarray.h"
-#include "arrays/floatarray.h"
+#include "math/intarray.h"
+#include "math/floatarray.h"
 #include "input/domain.h"
 #include "input/cltypes.h"
 #include "input/datareader.h"

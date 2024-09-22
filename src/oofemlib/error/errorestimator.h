@@ -43,7 +43,7 @@
 #include "input/femcmpnn.h"
 #include "utility/interface.h"
 #include "error/errorestimatortype.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "input/internalstatetype.h"
 #include "mesher/remeshingcrit.h"
 

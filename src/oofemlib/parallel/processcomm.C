@@ -33,7 +33,7 @@
  */
 
 #include "parallel/processcomm.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "parallel/combuff.h"
 #include "parallel/dyncombuff.h"
 

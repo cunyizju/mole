@@ -36,7 +36,7 @@
 #define vtkxfemexportmodule_h
 
 #include "export/vtkxmlexportmodule.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "nodalrecovery/nodalrecoverymodel.h"
 #include "utility/interface.h"
 #include "input/internalstatevaluetype.h"

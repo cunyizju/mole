@@ -37,7 +37,7 @@
 
 #include "utility/interface.h"
 #include "material/matresponsemode.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 
 ///@name graddpdmaterialextensioninterface
 //@{

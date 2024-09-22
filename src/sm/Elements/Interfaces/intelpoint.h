@@ -37,8 +37,8 @@
 
 #include "sm/Elements/Interfaces/structuralinterfaceelement.h"
 #include "math/gaussintegrationrule.h"
-#include "arrays/floatmatrixf.h"
-//#include "arrays/floatarrayf.h"
+#include "math/floatmatrixf.h"
+//#include "math/floatarrayf.h"
 
 ///@name Input fields for Material
 //@{

@@ -33,8 +33,8 @@
  */
 
 #include "hyperelasticmaterial1d.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/floatarray.h"
+#include "math/floatmatrix.h"
+#include "math/floatarray.h"
 #include "classfactory.h"
 #include "math/mathfem.h"
 

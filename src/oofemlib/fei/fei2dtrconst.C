@@ -34,8 +34,8 @@
 
 #include "fei2dtrconst.h"
 #include "math/mathfem.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/floatarray.h"
+#include "math/floatmatrix.h"
+#include "math/floatarray.h"
 
 namespace oofem {
 void

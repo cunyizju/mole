@@ -39,7 +39,7 @@
 #include "sm/refinedmesh.h"
 #include "error/errorestimator.h"
 #include "utility/interface.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "utility/statecountertype.h"
 #include "mesher/remeshingcrit.h"
 

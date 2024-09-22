@@ -35,8 +35,8 @@
 #include "fei/fei3dquadlin.h"
 
 #include "math/mathfem.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/floatarray.h"
+#include "math/floatmatrix.h"
+#include "math/floatarray.h"
 #include "math/gaussintegrationrule.h"
 #include <stdexcept>
 

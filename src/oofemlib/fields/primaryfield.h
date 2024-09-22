@@ -37,7 +37,7 @@
 
 #include "fields/field.h"
 #include "utility/interface.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "input/valuemodetype.h"
 #include "utility/contextioresulttype.h"
 #include "utility/contextmode.h"

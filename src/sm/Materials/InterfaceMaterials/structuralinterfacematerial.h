@@ -36,11 +36,11 @@
 #define structuralinterfacematerial_h
 
 #include "material/material.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "material/matconst.h"
 #include "material/matstatus.h"
-#include "arrays/floatarrayf.h"
+#include "math/floatarrayf.h"
 
 ///@name Input fields for StructuralInterfaceMaterial
 //@{

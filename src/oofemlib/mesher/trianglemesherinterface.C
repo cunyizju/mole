@@ -33,8 +33,8 @@
  */
 
 #include "mesher/trianglemesherinterface.h"
-#include "arrays/floatarray.h"
-#include "arrays/intarray.h"
+#include "math/floatarray.h"
+#include "math/intarray.h"
 #include "math/mathfem.h"
 
 #include <set>

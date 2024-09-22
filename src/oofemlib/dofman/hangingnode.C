@@ -34,8 +34,8 @@
 
 #include "dofman/hangingnode.h"
 #include "dofs/slavedof.h"
-#include "arrays/floatarray.h"
-#include "arrays/intarray.h"
+#include "math/floatarray.h"
+#include "math/intarray.h"
 #include "input/element.h"
 #include "fei/feinterpol.h"
 #include "mesher/spatiallocalizer.h"

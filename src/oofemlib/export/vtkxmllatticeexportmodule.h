@@ -36,7 +36,7 @@
 #define vtkxmllatticeexportmodule_h
 
 #include "export/vtkxmlexportmodule.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatmatrix.h"
 
 
 ///@name Input fields for VTK XML Lattice export module

@@ -36,9 +36,9 @@
 #define symmetrybarrier_h
 
 #include "nonlocal/nonlocalbarrier.h"
-#include "arrays/intarray.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/intarray.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 
 ///@name Input fields for SymmetryBarrier
 //@{

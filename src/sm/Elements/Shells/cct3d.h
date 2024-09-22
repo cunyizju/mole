@@ -36,7 +36,7 @@
 #define cct3d_h
 
 #include "sm/Elements/Plates/cct.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatmatrix.h"
 
 #define _IFT_CCTPlate3d_Name "cctplate3d"
 

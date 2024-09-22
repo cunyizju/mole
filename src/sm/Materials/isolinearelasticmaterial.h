@@ -37,10 +37,10 @@
 
 #include "linearelasticmaterial.h"
 #include "utility/dictionary.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/floatmatrixf.h"
-#include "arrays/floatarrayf.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
+#include "math/floatmatrixf.h"
+#include "math/floatarrayf.h"
 
 #include "qcmaterialextensioninterface.h"
 

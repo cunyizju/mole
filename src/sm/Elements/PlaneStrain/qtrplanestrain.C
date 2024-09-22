@@ -34,9 +34,9 @@
 
 #include "sm/Elements/PlaneStrain/qtrplanestrain.h"
 #include "fei/fei2dtrquad.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/floatarray.h"
-#include "arrays/intarray.h"
+#include "math/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/intarray.h"
 #include "classfactory.h"
 
 

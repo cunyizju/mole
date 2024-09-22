@@ -36,8 +36,8 @@
 #define maskedprimaryfield_h
 
 #include "fields/primaryfield.h"
-#include "arrays/floatarray.h"
-#include "arrays/intarray.h"
+#include "math/floatarray.h"
+#include "math/intarray.h"
 #include "input/valuemodetype.h"
 #include "utility/contextioresulttype.h"
 #include "utility/contextmode.h"

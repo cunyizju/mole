@@ -40,7 +40,7 @@
 #include "utility/contextmode.h"
 #include "export/datastream.h"
 #include "error/error.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 
 #include <array>
 #include <initializer_list>

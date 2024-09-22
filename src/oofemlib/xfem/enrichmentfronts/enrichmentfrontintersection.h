@@ -33,7 +33,7 @@
  */
 
 #include "xfem/enrichmentfronts/enrichmentfront.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 
 #ifndef ENRICHMENTFRONTINTERSECTION_H_
  #define ENRICHMENTFRONTINTERSECTION_H_

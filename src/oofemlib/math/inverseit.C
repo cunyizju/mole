@@ -33,8 +33,8 @@
  */
 
 #include "math/inverseit.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/floatarray.h"
+#include "math/floatmatrix.h"
+#include "math/floatarray.h"
 #include "math/sparsemtrx.h"
 #include "math/mathfem.h"
 #include "solvers/sparselinsystemnm.h"

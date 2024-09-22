@@ -40,7 +40,7 @@
 #include "math/mathfem.h"
 #include "input/dynamicinputrecord.h"
 #include "mesher/spatiallocalizer.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatmatrix.h"
 #include "math/gausspoint.h"
 #include "sm/Materials/structuralms.h"
 #include "xfem/enrichmentitem.h"

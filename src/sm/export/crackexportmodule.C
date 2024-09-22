@@ -42,7 +42,7 @@
 #include "classfactory.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "cs/crosssection.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 
 #include <fstream>
 #include <sstream>

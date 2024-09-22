@@ -42,7 +42,7 @@
 #include "solvers/timestep.h"
 #include "utility/interface.h"
 #include "utility/enumitem.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 
 namespace oofem {
 class Domain;

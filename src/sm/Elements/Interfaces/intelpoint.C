@@ -37,12 +37,12 @@
 #include "input/domain.h"
 #include "dofman/node.h"
 #include "math/gaussintegrationrule.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/floatarray.h"
-#include "arrays/intarray.h"
+#include "math/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/intarray.h"
 #include "math/mathfem.h"
 #include "classfactory.h"
-//#include "arrays/floatarrayf.h"
+//#include "math/floatarrayf.h"
 
 namespace oofem {
 REGISTER_Element(IntElPoint);

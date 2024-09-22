@@ -36,7 +36,7 @@
 #define PLCZDAMAGERADIUS_H_
 
 #include "xfem/propagationlaw.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 
 #define _IFT_PLCZdamageRadius_Name "propagationlawczdamageradius"
 #define _IFT_PLCZdamageRadius_IncRadius "incrementradius"           ///< Increment radius (from element nodes) per time step

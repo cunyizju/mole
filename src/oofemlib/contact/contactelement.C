@@ -34,8 +34,8 @@
 
 #include "contact/contactelement.h"
 #include "dofman/dofmanager.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "input/valuemodetype.h"
 #include "dofs/dofiditem.h"
 #include "solvers/timestep.h"

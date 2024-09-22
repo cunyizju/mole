@@ -35,8 +35,8 @@
 #ifndef dustmat_h
 #define dustmat_h
 
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "sm/Materials/structuralms.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/isolinearelasticmaterial.h"

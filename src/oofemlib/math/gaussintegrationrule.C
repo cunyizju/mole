@@ -35,7 +35,7 @@
 #include "math/gaussintegrationrule.h"
 #include "math/gausspoint.h"
 #include "input/element.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "math/mathfem.h"
 
 namespace oofem {

@@ -35,7 +35,7 @@
 #ifndef quasicontinuum_h
 #define quasicontinuum_h
 
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "input/element.h"
 #include "dofman/node.h"
 #include "dofman/qcnode.h"

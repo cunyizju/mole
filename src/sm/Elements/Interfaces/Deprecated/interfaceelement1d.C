@@ -36,14 +36,14 @@
 #include "input/domain.h"
 #include "dofman/node.h"
 #include "math/gaussintegrationrule.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/floatarray.h"
-#include "arrays/intarray.h"
+#include "math/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/intarray.h"
 #include "math/mathfem.h"
 #include "fei/feinterpol.h"
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
 #include "classfactory.h"
-#include "arrays/floatmatrixf.h"
+#include "math/floatmatrixf.h"
 
 namespace oofem {
 REGISTER_Element(InterfaceElem1d);

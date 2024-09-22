@@ -36,7 +36,7 @@
 #define TET21GHOSTSOLID_H
 
 #include "sm/Elements/nlstructuralelement.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatmatrix.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "mesher/spatiallocalizer.h"
 #include "input/eleminterpmapperinterface.h"

@@ -38,11 +38,11 @@
 #include "utility/timer.h"
 #include "math/mathfem.h"
 #include "solvers/timestep.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "classfactory.h"
 #include "input/element.h"
-#include "arrays/floatarray.h"
-#include "arrays/intarray.h"
+#include "math/floatarray.h"
+#include "math/intarray.h"
 
 #ifdef __PARALLEL_MODE
 #include "parallel/processcomm.h"

@@ -33,7 +33,7 @@
  */
 
 #include "math/sparsemtrx.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "input/compcol.h"
 #include "solvers/linsystsolvertype.h"
 #include "classfactory.h"

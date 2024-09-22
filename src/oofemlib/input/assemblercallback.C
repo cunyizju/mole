@@ -33,8 +33,8 @@
  */
 
 #include "input/assemblercallback.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "input/element.h"
 #include "dofman/dofmanager.h"
 #include "bc/activebc.h"

@@ -33,7 +33,7 @@
  */
 
 #include "parallel/communicator.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 
 #include <cstdarg>
 

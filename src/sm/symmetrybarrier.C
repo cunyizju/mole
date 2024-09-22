@@ -33,8 +33,8 @@
  */
 
 #include "symmetrybarrier.h"
-#include "arrays/intarray.h"
-#include "arrays/floatarray.h"
+#include "math/intarray.h"
+#include "math/floatarray.h"
 #include "math/mathfem.h"
 #include "classfactory.h"
 

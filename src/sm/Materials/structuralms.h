@@ -36,7 +36,7 @@
 #define structuralms_h
 
 #include "material/matstatus.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "mapping/matstatmapperint.h"
 
 namespace oofem {

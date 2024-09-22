@@ -31,7 +31,7 @@
 #ifndef diagpre_h
 #define diagpre_h
 
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "math/sparsemtrx.h"
 #include "precond.h"
 

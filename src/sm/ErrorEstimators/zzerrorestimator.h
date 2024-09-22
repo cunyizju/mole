@@ -38,7 +38,7 @@
 #include "error/errorestimator.h"
 #include "utility/interface.h"
 #include "input/internalstatetype.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "utility/statecountertype.h"
 #include "input/element.h"
 #include "math/integrationrule.h"

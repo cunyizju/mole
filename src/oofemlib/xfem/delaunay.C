@@ -33,8 +33,8 @@
  */
 
 #include "delaunay.h"
-#include "arrays/floatarray.h"
-#include "arrays/intarray.h"
+#include "math/floatarray.h"
+#include "math/intarray.h"
 #include "input/geometry.h"
 #include "dofman/node.h"
 #include "math/mathfem.h"

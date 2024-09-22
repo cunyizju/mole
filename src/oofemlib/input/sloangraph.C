@@ -41,7 +41,7 @@
 #include "dofs/dof.h"
 #include "dofman/dofmanager.h"
 #include "dofs/simpleslavedof.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "bc/generalboundarycondition.h"
 
 #include <memory>

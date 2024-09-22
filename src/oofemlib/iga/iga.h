@@ -36,7 +36,7 @@
 #define iga_h
 
 #include "input/inputrecord.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "fei/feinterpol.h"
 #include "math/gaussintegrationrule.h"
 

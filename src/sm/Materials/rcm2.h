@@ -39,7 +39,7 @@
 #include "sm/Materials/linearelasticmaterial.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 
 ///@name Input fields for RCM2Material
 //@{

@@ -35,7 +35,7 @@
 #include "material/material.h"
 #include "utility/verbose.h"
 #include "math/gausspoint.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "math/mathfem.h"
 #include "input/dynamicinputrecord.h"
 #include "utility/contextioerr.h"

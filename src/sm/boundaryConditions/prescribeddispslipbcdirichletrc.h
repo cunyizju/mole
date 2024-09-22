@@ -40,8 +40,8 @@
 #include "dofs/dof.h"
 #include "bc/bctype.h"
 #include "input/valuemodetype.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 
 ///@name Input fields for PrescribedDispSlipBCDirichletRC
 //@{

@@ -36,8 +36,8 @@
 #define linearelasticmaterial_h
 
 #include "sm/Materials/structuralmaterial.h"
-#include "arrays/floatmatrixf.h"
-#include "arrays/floatarrayf.h"
+#include "math/floatmatrixf.h"
+#include "math/floatarrayf.h"
 
 ///@name Input fields for LinearElasticMaterial
 //@{

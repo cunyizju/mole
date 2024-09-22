@@ -36,10 +36,10 @@
 #define structuralmaterial_h
 
 #include "material/material.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/floatarrayf.h"
-#include "arrays/floatmatrixf.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
+#include "math/floatarrayf.h"
+#include "math/floatmatrixf.h"
 #include "math/mathfem.h"
 #include "material/matconst.h"
 #include "material/matstatus.h"

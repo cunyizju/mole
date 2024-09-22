@@ -36,8 +36,8 @@
 #define nodalrecoverymodel_h
 
 #include "oofemcfg.h"
-#include "arrays/intarray.h"
-#include "arrays/floatarray.h"
+#include "math/intarray.h"
+#include "math/floatarray.h"
 #include "utility/interface.h"
 #include "input/internalstatetype.h"
 #include "utility/statecountertype.h"

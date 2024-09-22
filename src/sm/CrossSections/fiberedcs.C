@@ -38,7 +38,7 @@
 #include "sm/Materials/structuralms.h"
 #include "math/gausspoint.h"
 #include "material/material.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "utility/verbose.h"
 #include "utility/contextioerr.h"
 #include "classfactory.h"

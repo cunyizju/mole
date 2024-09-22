@@ -36,7 +36,7 @@
 #define GNUPLOTEXPORTMODULE_H_
 
 #include "export/exportmodule.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 
 #include <unordered_map>
 #include <memory>

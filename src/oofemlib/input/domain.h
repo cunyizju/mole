@@ -38,7 +38,7 @@
 #include "oofemcfg.h"
 #include "input/domaintype.h"
 #include "utility/statecountertype.h"
-#include "arrays/intarray.h"
+#include "math/intarray.h"
 #include "error/error.h"
 #include "bc/bctracker.h"
 #ifdef __PARALLEL_MODE

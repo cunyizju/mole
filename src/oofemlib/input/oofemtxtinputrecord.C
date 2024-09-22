@@ -33,9 +33,9 @@
  */
 
 #include "input/oofemtxtinputrecord.h"
-#include "arrays/intarray.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/intarray.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "utility/dictionary.h"
 #include "utility/range.h"
 #include "ltf/scalarfunction.h"

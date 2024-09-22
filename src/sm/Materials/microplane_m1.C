@@ -33,8 +33,8 @@
  */
 
 #include "microplane_m1.h"
-#include "arrays/floatarray.h"
-#include "arrays/floatmatrix.h"
+#include "math/floatarray.h"
+#include "math/floatmatrix.h"
 #include "math/mathfem.h"
 #include "classfactory.h"
 

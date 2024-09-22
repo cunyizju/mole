@@ -35,7 +35,7 @@
 #include "solvers/slepcsolver.h"
 #include "solvers/petscsparsemtrx.h"
 #include "engng/engngm.h"
-#include "arrays/floatarray.h"
+#include "math/floatarray.h"
 #include "utility/verbose.h"
 #include "input/domain.h"
 #include "classfactory.h"

@@ -34,8 +34,8 @@
 
 #include "math/skylineu.h"
 #include "math/rowcol.h"
-#include "arrays/floatmatrix.h"
-#include "arrays/intarray.h"
+#include "math/floatmatrix.h"
+#include "math/intarray.h"
 #include "input/domain.h"
 #include "engng/engngm.h"
 #include "input/element.h"
