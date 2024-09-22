@@ -37,8 +37,8 @@
 
 #include "rankinemat.h"
 #include "structuralnonlocalmaterialext.h"
-#include "nonlocmatstiffinterface.h"
-#include "nonlocalmaterialext.h"
+#include "nonlocal/nonlocmatstiffinterface.h"
+#include "nonlocal/nonlocalmaterialext.h"
 #include "cltypes.h"
 
 #define _IFT_RankineMatNl_Name "rankmatnl"

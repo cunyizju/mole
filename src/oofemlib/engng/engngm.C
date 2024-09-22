@@ -44,7 +44,7 @@
 #include "input/element.h"
 #include "utility/set.h"
 #include "bc/load.h"
-#include "bodyload.h"
+#include "bc/bodyload.h"
 #include "bc/boundaryload.h"
 #include "bc/nodalload.h"
 #include "oofemcfg.h"

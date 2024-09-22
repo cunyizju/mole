@@ -45,7 +45,7 @@
 #include "cs/crosssection.h"
 #include "classfactory.h"
 
-#include "nonlocalbarrier.h"
+#include "nonlocal/nonlocalbarrier.h"
 #include "initial/initialcondition.h"
 #include "classfactory.h"
 //#include "loadtimefunction.h"

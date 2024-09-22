@@ -43,7 +43,7 @@
 #include "dofman/node.h"
 #include "math/gausspoint.h"
 #include "math/gaussintegrationrule.h"
-#include "matresponsemode.h"
+#include "material/matresponsemode.h"
 #include "math/mathfem.h"
 #include "iga/iga.h"
 

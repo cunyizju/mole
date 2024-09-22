@@ -44,7 +44,7 @@
 #include "input/element.h"
 #include "dofman/dofmanager.h"
 #include "bc/load.h"
-#include "bodyload.h"
+#include "bc/bodyload.h"
 #include "bc/boundaryload.h"
 #include "neumannmomentload.h"
 #include "dofs/dof.h"

@@ -34,7 +34,7 @@
 
 #include "delamination.h"
 #include "classfactory.h"
-#include "fracturemanager.h"
+#include "material/fracturemanager.h"
 #include "input/element.h"
 #include "dofs/dof.h"
 #include "sm/CrossSections/layeredcrosssection.h"

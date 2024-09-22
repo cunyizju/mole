@@ -40,7 +40,7 @@
 #include "sm/Elements/structuralelement.h"
 #include "math/sparsemtrx.h"
 #include "error/error.h"
-#include "nonlocalmaterialext.h"
+#include "nonlocal/nonlocalmaterialext.h"
 #include "contextioerr.h"
 #include "stressvector.h"
 #include "strainvector.h"

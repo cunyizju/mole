@@ -47,7 +47,7 @@
 #include "constantpressureload.h"
 #include "bc/constantsurfaceload.h"
 #include "export/vtkxmlexportmodule.h"
-#include "fracturemanager.h"
+#include "material/fracturemanager.h"
 
 #include "dofs/masterdof.h"
 

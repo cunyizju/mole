@@ -49,7 +49,7 @@
 
 #include "microplanematerial.h"
 #include "structuralnonlocalmaterialext.h"
-#include "matconst.h"
+#include "material/matconst.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
 #include "sm/Materials/structuralms.h"
 #include "material/materialmapperinterface.h"

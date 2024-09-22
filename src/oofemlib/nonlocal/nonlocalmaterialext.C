@@ -37,11 +37,11 @@
 #include "input/element.h"
 #include "timestep.h"
 #include "math/integrationrule.h"
-#include "nonlocalmaterialext.h"
+#include "nonlocal/nonlocalmaterialext.h"
 #include "material/material.h"
 #include "spatiallocalizer.h"
 #include "input/domain.h"
-#include "nonlocalbarrier.h"
+#include "nonlocal/nonlocalbarrier.h"
 #include "math/mathfem.h"
 #include "input/dynamicinputrecord.h"
 

@@ -43,7 +43,7 @@
 #include "sm/Elements/3D/space3delementevaluator.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "matresponsemode.h"
+#include "material/matresponsemode.h"
 #include "math/mathfem.h"
 
 #define _IFT_BsplinePlaneStressElement_Name "bsplineplanestresselement"

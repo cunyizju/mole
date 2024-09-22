@@ -49,7 +49,7 @@
 #include "input/domain.h"
 #include "cltypes.h"
 #include "math/mathfem.h"
-#include "nonlocalbarrier.h"
+#include "nonlocal/nonlocalbarrier.h"
 #include "engng/engngm.h"
 
 #include <cstdio>

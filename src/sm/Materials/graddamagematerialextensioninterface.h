@@ -36,7 +36,7 @@
 #define gradientdamagematerialextensioninterface_h
 
 #include "utility/interface.h"
-#include "matresponsemode.h"
+#include "material/matresponsemode.h"
 #include "arrays/floatarray.h"
 
 ///@name graddpdmaterialextensioninterface

@@ -39,7 +39,7 @@
 #include "input/elementgeometrytype.h"
 #include "unknowntype.h"
 #include "material/materialmode.h"
-#include "matresponsemode.h"
+#include "material/matresponsemode.h"
 #include "valuemodetype.h"
 #include "material/materialmappingalgorithmtype.h"
 #include "meshpackagetype.h"

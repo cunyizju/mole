@@ -44,7 +44,7 @@
 #include "math/mathfem.h"
 #include "bc/bctracker.h"
 
-#include "bodyload.h"
+#include "bc/bodyload.h"
 #include "bc/boundaryload.h"
 
 namespace oofem {

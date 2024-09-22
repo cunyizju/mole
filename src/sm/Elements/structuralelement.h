@@ -36,7 +36,7 @@
 #define structuralelement_h
 
 #include "input/element.h"
-#include "matresponsemode.h"
+#include "material/matresponsemode.h"
 #include "valuemodetype.h"
 #include "math/integrationdomain.h"
 #include "dofs/dofmantransftype.h"

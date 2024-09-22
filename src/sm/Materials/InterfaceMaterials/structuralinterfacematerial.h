@@ -38,7 +38,7 @@
 #include "material/material.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "matconst.h"
+#include "material/matconst.h"
 #include "material/matstatus.h"
 #include "arrays/floatarrayf.h"
 

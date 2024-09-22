@@ -35,7 +35,7 @@
 #ifndef pointload_h
 #define pointload_h
 
-#include "bodyload.h"
+#include "bc/bodyload.h"
 
 ///@name Input fields for PointLoad
 //@{

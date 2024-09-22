@@ -87,7 +87,7 @@ namespace bp = boost::python;
 #include "math/integrationrule.h"
 #include "math/gausspoint.h"
 #include "internalstatetype.h"
-#include "matresponsemode.h"
+#include "material/matresponsemode.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "material/matstatus.h"
 #include "sm/Materials/structuralms.h"

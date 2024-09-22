@@ -36,7 +36,7 @@
 #define mixedpressurematerialextensioninterface_h
 
 #include "utility/interface.h"
-#include "matresponsemode.h"
+#include "material/matresponsemode.h"
 #include "input/domain.h"
 
 ///@name micromorphicmaterialextensioninterface

@@ -40,7 +40,7 @@
 #include "input/element.h"
 #include "arrays/floatmatrix.h"
 #include "ltf/function.h"
-#include "matresponsemode.h"
+#include "material/matresponsemode.h"
 #include "valuemodetype.h"
 #include "math/integrationdomain.h"
 #include "dofs/dofmantransftype.h"

@@ -37,13 +37,13 @@
 
 #include "femcmpnn.h"
 
-#include "matconst.h"
+#include "material/matconst.h"
 #include "material/matstatus.h"
 #include "material/materialmode.h"
 #include "timestep.h"
 #include "internalstatetype.h"
 #include "internalstatevaluetype.h"
-#include "matresponsemode.h"
+#include "material/matresponsemode.h"
 #include "utility/dictionary.h"
 #include "chartype.h"
 

@@ -36,7 +36,7 @@
 #define nonlocmatstiffinterface_h
 
 #include "utility/interface.h"
-#include "nonlocalmaterialext.h"
+#include "nonlocal/nonlocalmaterialext.h"
 
 namespace oofem {
 class SparseMtrx;

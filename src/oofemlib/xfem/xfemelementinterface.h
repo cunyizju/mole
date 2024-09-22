@@ -38,7 +38,7 @@
 #include "utility/interface.h"
 #include "xfemmanager.h"
 #include "input/geometry.h"
-#include "matresponsemode.h"
+#include "material/matresponsemode.h"
 #include "material/materialmode.h"
 
 #define _IFT_XfemElementInterface_CohesiveZoneMaterial "czmaterial"

@@ -48,7 +48,7 @@
 #include "internalstatetype.h"
 #include "input/elementextension.h"
 #include "entityrenumberingscheme.h"
-#include "matresponsemode.h"
+#include "material/matresponsemode.h"
 #include "unknowntype.h"
 #include "math/integrationrule.h"
 #include "dofs/dofiditem.h"

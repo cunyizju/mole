@@ -36,7 +36,7 @@
 
 #include "sm/Materials/misesmat.h"
 #include "sm/Materials/structuralnonlocalmaterialext.h"
-#include "nonlocmatstiffinterface.h"
+#include "nonlocal/nonlocmatstiffinterface.h"
 #include "cltypes.h"
 
 ///@name Input fields for MisesMatNl

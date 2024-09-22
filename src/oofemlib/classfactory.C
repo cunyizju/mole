@@ -55,7 +55,7 @@
 #include "ltf/function.h"
 #include "material/material.h"
 #include "cs/crosssection.h"
-#include "nonlocalbarrier.h"
+#include "nonlocal/nonlocalbarrier.h"
 #include "export/exportmodule.h"
 #include "initial/initmodule.h"
 #include "loadbalancer.h"
@@ -75,7 +75,7 @@
 #include "xfem/enrichmentitem.h"
 #include "topologydescription.h"
 #include "input/geometry.h"
-#include "fracturemanager.h"
+#include "material/fracturemanager.h"
 #include "contact/contactmanager.h"
 #include "contact/contactdefinition.h"
 

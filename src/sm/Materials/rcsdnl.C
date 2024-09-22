@@ -37,7 +37,7 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "math/mathfem.h"
-#include "nonlocalmaterialext.h"
+#include "nonlocal/nonlocalmaterialext.h"
 #include "contextioerr.h"
 #include "classfactory.h"
 #include "datastream.h"

@@ -37,7 +37,7 @@
 
 #include "oofem_export.h"
 #include "valuemodetype.h" ///@todo We shouldn't have this for assembling vectors or matrices(!) / Mikael
-#include "matresponsemode.h"
+#include "material/matresponsemode.h"
 #include "chartype.h"
 
 namespace oofem {

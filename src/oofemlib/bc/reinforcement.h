@@ -35,8 +35,8 @@
 #ifndef reinforcement_h
 #define reinforcement_h
 
-#include "bodyload.h"
-#include "bcgeomtype.h"
+#include "bc/bodyload.h"
+#include "bc/bcgeomtype.h"
 #include "valuemodetype.h"
 
 ///@name Input fields for Reinforcement

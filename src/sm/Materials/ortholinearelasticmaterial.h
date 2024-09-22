@@ -39,7 +39,7 @@
 #include "utility/dictionary.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "matconst.h"
+#include "material/matconst.h"
 #include "input/element.h"
 
 #include <memory>

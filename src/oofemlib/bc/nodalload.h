@@ -36,7 +36,7 @@
 #define nodalload_h
 
 #include "bc/load.h"
-#include "bcgeomtype.h"
+#include "bc/bcgeomtype.h"
 #include "valuemodetype.h"
 
 namespace oofem {

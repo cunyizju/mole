@@ -38,7 +38,7 @@
 #include "../structuralmaterial.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
-#include "matconst.h"
+#include "material/matconst.h"
 #include "material/matstatus.h"
 #include "valuemodetype.h"
 #include <vector>

@@ -38,7 +38,7 @@
 #include "femcmpnn.h"
 #include "arrays/intarray.h"
 #include "bc/bcvaltype.h"
-#include "bcgeomtype.h"
+#include "bc/bcgeomtype.h"
 #include "bc/bctype.h"
 
 ///@name Input fields for a general boundary condition

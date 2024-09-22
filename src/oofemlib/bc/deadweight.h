@@ -35,8 +35,8 @@
 #ifndef deadweight_h
 #define deadweight_h
 
-#include "bodyload.h"
-#include "bcgeomtype.h"
+#include "bc/bodyload.h"
+#include "bc/bcgeomtype.h"
 #include "valuemodetype.h"
 
 #define _IFT_DeadWeight_Name "deadweight"

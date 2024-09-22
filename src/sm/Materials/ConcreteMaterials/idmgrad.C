@@ -40,7 +40,7 @@
 #include "math/sparsemtrx.h"
 #include "Materials/isolinearelasticmaterial.h"
 #include "error/error.h"
-#include "nonlocalmaterialext.h"
+#include "nonlocal/nonlocalmaterialext.h"
 #include "datastream.h"
 #include "contextioerr.h"
 #include "stressvector.h"

@@ -40,7 +40,7 @@
 #include "datastream.h"
 #include "dofman/node.h"
 
-#include "nonlocalmaterialext.h"
+#include "nonlocal/nonlocalmaterialext.h"
 
 #include "sm/Elements/structuralelement.h"
 

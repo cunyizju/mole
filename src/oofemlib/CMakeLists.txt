@@ -4,18 +4,15 @@ set (core_unsorted
     femcmpnn.C  timestep.C metastep.C 
     cltypes.C 
     assemblercallback.C
-    homogenize.C
-    nonlocalbarrier.C
     datastream.C
     solutionbasedshapefunction.C
-    fracturemanager.C
     neumannmomentload.C
     prescribedmean.C
     # Semi sorted:
     remeshingcrit.C
     sloangraph.C sloangraphnode.C sloanlevelstruct.C
     eleminterpunknownmapper.C primaryunknownmapper.C 
-    nonlocalmaterialext.C randommaterialext.C
+     randommaterialext.C
     spatiallocalizer.C dummylocalizer.C octreelocalizer.C
      lobattoir.C
     smoothednodalintvarfield.C
@@ -104,6 +101,10 @@ if (USE_SUPERLU_MT)
   list (APPEND core_unsorted superlusolver.C)
 endif ()
 
+set(nonlocal
+    nonlocal/nonlocalbarrier.C
+    nonlocal/nonlocalmaterialext.C
+)
 
 set (core_oofeg 
     oofeg/oofeggraphiccontext.C)
@@ -210,6 +211,8 @@ set (core_material
     material/material.C
     material/dummymaterial.C
     material/materialmappingalgorithm.C
+    material/fracturemanager.C
+    material/homogenize.C
     )
 
 set (core_export
@@ -396,6 +399,7 @@ set (core
     ${error}
     ${math}
     ${utility}
+    ${nonlocal}
     ${core_unsorted}
     ${core_nodalrecovery}
     ${core_dofs}

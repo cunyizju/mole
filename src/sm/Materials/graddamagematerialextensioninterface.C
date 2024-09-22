@@ -33,7 +33,7 @@
  */
 
 #include "input/domain.h"
-#include "nonlocalbarrier.h"
+#include "nonlocal/nonlocalbarrier.h"
 #include "graddamagematerialextensioninterface.h"
 #include "input/inputrecord.h"
 #include "arrays/floatmatrix.h"

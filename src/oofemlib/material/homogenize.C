@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "homogenize.h"
+#include "material/homogenize.h"
 #include "math/mathfem.h"
 
 namespace oofem {

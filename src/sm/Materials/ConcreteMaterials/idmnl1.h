@@ -37,7 +37,7 @@
 
 #include "sm/Materials/ConcreteMaterials/idm1.h"
 #include "sm/Materials/structuralnonlocalmaterialext.h"
-#include "nonlocmatstiffinterface.h"
+#include "nonlocal/nonlocmatstiffinterface.h"
 
 ///@name Input fields for IDNLMaterial
 //@{

@@ -26,7 +26,7 @@
 #include "engng/engngm.h"
 #include "spatiallocalizer.h"
 #include "input/dynamicinputrecord.h"
-#include "bodyload.h"
+#include "bc/bodyload.h"
 #include "bc/boundarycondition.h"
 //#include "stokesflow.h"
 //#include "classfactory.h"

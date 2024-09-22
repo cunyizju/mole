@@ -35,7 +35,7 @@
 #ifndef polylinenonlocalbarrier_h
 #define polylinenonlocalbarrier_h
 
-#include "nonlocalbarrier.h"
+#include "nonlocal/nonlocalbarrier.h"
 #include "arrays/intarray.h"
 
 ///@name Input fields for PolylineNonlocalBarrier

@@ -37,7 +37,7 @@
 
 #include "cs/crosssection.h"
 #include "material/materialmode.h"
-#include "matresponsemode.h"
+#include "material/matresponsemode.h"
 #include "material/material.h"
 #include "internalstatetype.h"
 #include "internalstatevaluetype.h"

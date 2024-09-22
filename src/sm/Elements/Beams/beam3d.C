@@ -51,7 +51,7 @@
 #include "dofs/masterdof.h"
 #include "bc/bctracker.h"
 
-#include "bodyload.h"
+#include "bc/bodyload.h"
 #include "bc/boundaryload.h"
 
 #ifdef __OOFEG

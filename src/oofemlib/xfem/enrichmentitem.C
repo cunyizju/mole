@@ -40,7 +40,7 @@
 #include "cltypes.h"
 #include "input/connectivitytable.h"
 #include "classfactory.h"
-#include "fracturemanager.h"
+#include "material/fracturemanager.h"
 #include "math/mathfem.h"
 #include "fei/feinterpol.h"
 #include "dofs/masterdof.h"

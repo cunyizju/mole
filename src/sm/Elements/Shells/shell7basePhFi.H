@@ -43,7 +43,7 @@
 #include "nodalrecovery/zznodalrecoverymodel.h"
 #include "fei/fei3dwedgequad.h"
 #include "fei/fei3dtrquad.h"
-#include "fracturemanager.h"
+#include "material/fracturemanager.h"
 #include "cltypes.h"
 #include <vector>
 #include "phasefieldelement.h"
