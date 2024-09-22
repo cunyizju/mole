@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "unstructuredgridfield.h"
+#include "mesher/unstructuredgridfield.h"
 #include "fei/feinterpol.h"
 namespace oofem {
 FEI2dLineLin UnstructuredGridField::Cell::i1(1, 2);

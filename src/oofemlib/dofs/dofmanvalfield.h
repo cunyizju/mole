@@ -45,7 +45,7 @@
 #include "arrays/intarray.h"
 #include "material/materialmappingalgorithm.h"
 #include "mapping/mmashapefunctprojection.h"
-#include "cltypes.h"
+#include "input/cltypes.h"
 
 #ifdef _PYBIND_BINDINGS
     #include <pybind11/pybind11.h>

@@ -38,7 +38,7 @@
 #include "structuralnonlocalmaterialext.h"
 #include "nonlocal/nonlocmatstiffinterface.h"
 #include "graddamagematerialextensioninterface.h"
-#include "cltypes.h"
+#include "input/cltypes.h"
 
 ///@name Input fields for RankineMatGrad
 //@{

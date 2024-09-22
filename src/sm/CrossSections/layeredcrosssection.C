@@ -47,7 +47,7 @@
 #include "classfactory.h"
 #include "math/lobattoir.h"
 #include "input/dynamicinputrecord.h"
-#include "cltypes.h"
+#include "input/cltypes.h"
 #include "simplecrosssection.h"
 
 namespace oofem {

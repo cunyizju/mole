@@ -38,7 +38,7 @@
 #include "input/internalstatetype.h"
 #include "input/internalstatevaluetype.h"
 #include "valuemodetype.h"
-#include "unknowntype.h"
+#include "dofs/unknowntype.h"
 
 namespace oofem {
 /// @return Character corresponding to given ValueModeType.

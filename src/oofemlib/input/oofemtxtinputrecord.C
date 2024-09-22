@@ -37,7 +37,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "utility/dictionary.h"
-#include "range.h"
+#include "utility/range.h"
 #include "ltf/scalarfunction.h"
 
 #include <cstdlib>

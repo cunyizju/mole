@@ -31,7 +31,7 @@
 // adapted & optimized by Borek Patzak
 
 #include "icprecond.h"
-#include "symcompcol.h"
+#include "math/symcompcol.h"
 #include "math/mathfem.h"
 
 namespace oofem {

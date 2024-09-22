@@ -40,7 +40,7 @@
 #include "oofemcfg.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "unknowntype.h"
+#include "dofs/unknowntype.h"
 #include "valuemodetype.h"
 #include "dofs/dofiditem.h"
 #include "dofs/doftype.h"

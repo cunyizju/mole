@@ -40,7 +40,7 @@
 #include "arrays/intarray.h"
 #include "input/internalstatevaluetype.h"
 #include "input/internalstatetype.h"
-#include "unknowntype.h"
+#include "dofs/unknowntype.h"
 #include "math/integrationrule.h"
 #include "input/element.h"
 #include "nodalrecovery/nodalrecoverymodel.h"

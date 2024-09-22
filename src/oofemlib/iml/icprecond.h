@@ -33,7 +33,7 @@
 
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "symcompcol.h"
+#include "math/symcompcol.h"
 #include "precond.h"
 
 namespace oofem {

@@ -101,7 +101,7 @@ namespace py = pybind11;
 #include "export/homexportmodule.h"
 
 #include "fields/uniformgridfield.h"
-#include "unstructuredgridfield.h"
+#include "mesher/unstructuredgridfield.h"
 #include "dofs/dofmanvalfield.h"
 #include "utility/pythonfield.h"
 #include <iostream>

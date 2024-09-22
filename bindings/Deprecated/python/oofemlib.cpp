@@ -76,7 +76,7 @@ namespace bp = boost::python;
 #include "input/elementgeometrytype.h"
 #include "fields/field.h"
 #include "fields/uniformgridfield.h"
-#include "unstructuredgridfield.h"
+#include "mesher/unstructuredgridfield.h"
 #include "export/datastream.h"
 #include "dofs/dofmanvalfield.h"
 #include "dofs/dofmantransftype.h"

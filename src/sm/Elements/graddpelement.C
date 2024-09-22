@@ -47,7 +47,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "input/domain.h"
-#include "cltypes.h"
+#include "input/cltypes.h"
 #include "math/mathfem.h"
 #include "nonlocal/nonlocalbarrier.h"
 #include "engng/engngm.h"

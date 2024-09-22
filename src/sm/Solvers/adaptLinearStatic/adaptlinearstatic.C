@@ -34,7 +34,7 @@
 
 #include "adaptlinearstatic.h"
 #include "mesher/remeshingcrit.h"
-#include "mesherinterface.h"
+#include "mesher/mesherinterface.h"
 #include "error/errorestimator.h"
 #include "input/domain.h"
 #include "classfactory.h"

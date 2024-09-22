@@ -49,7 +49,7 @@
 #include "input/elementextension.h"
 #include "entityrenumberingscheme.h"
 #include "material/matresponsemode.h"
-#include "unknowntype.h"
+#include "dofs/unknowntype.h"
 #include "math/integrationrule.h"
 #include "dofs/dofiditem.h"
 #include "arrays/floatarray.h"

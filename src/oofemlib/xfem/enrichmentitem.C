@@ -37,7 +37,7 @@
 #include "enrichmentitem.h"
 #include "input/element.h"
 #include "enrichmentfunction.h"
-#include "cltypes.h"
+#include "input/cltypes.h"
 #include "input/connectivitytable.h"
 #include "classfactory.h"
 #include "material/fracturemanager.h"

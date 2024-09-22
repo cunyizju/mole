@@ -46,7 +46,7 @@
 #include "bc/prescribedgradienthomogenization.h"
 #include "export/exportmodulemanager.h"
 #include "export/vtkxmlexportmodule.h"
-#include "nummet.h"
+#include "input/nummet.h"
 #include "sm/EngineeringModels/xfemsolverinterface.h"
 #include "sm/EngineeringModels/staticstructural.h"
 #include "unknownnumberingscheme.h"

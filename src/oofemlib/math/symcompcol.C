@@ -63,7 +63,7 @@
 /*                                                                           */
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-#include "symcompcol.h"
+#include "math/symcompcol.h"
 #include "arrays/floatarray.h"
 #include "engng/engngm.h"
 #include "input/domain.h"

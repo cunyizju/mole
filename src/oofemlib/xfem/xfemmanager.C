@@ -40,7 +40,7 @@
 #include "input/domain.h"
 #include "input/element.h"
 #include "dofman/dofmanager.h"
-#include "cltypes.h"
+#include "input/cltypes.h"
 #include "xfemelementinterface.h"
 #include "classfactory.h"
 #include "dofs/masterdof.h"

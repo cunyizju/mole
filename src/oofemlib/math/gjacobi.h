@@ -35,7 +35,7 @@
 #ifndef gjacobi_h
 #define gjacobi_h
 
-#include "nummet.h"
+#include "input/nummet.h"
 #include "arrays/floatarray.h"
 #include "solvers/convergedreason.h"
 

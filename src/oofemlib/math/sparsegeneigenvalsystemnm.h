@@ -35,7 +35,7 @@
 #ifndef sparsegeneigenvalsystemnm_h
 #define sparsegeneigenvalsystemnm_h
 
-#include "nummet.h"
+#include "input/nummet.h"
 #include "solvers/convergedreason.h"
 
 namespace oofem {

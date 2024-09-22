@@ -35,7 +35,7 @@
 #ifndef t3dinterface_h
 #define t3dinterface_h
 
-#include "mesherinterface.h"
+#include "mesher/mesherinterface.h"
 #include "input/element.h"
 
 #define _IFT_T3DInterface_Name "t3d"

@@ -35,7 +35,7 @@
 #ifndef targe2interface_h
 #define targe2interface_h
 
-#include "mesherinterface.h"
+#include "mesher/mesherinterface.h"
 
 #define _IFT_Targe2Interface_Name "targe2"
 

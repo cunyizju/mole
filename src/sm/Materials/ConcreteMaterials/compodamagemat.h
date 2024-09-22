@@ -41,7 +41,7 @@
 #include "sm/Materials/structuralms.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
-#include "cltypes.h"
+#include "input/cltypes.h"
 
 ///@name Input fields for CompoDamageMat
 //@{

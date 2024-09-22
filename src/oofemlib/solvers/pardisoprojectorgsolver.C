@@ -35,7 +35,7 @@
 #include "solvers/pardisoprojectorgsolver.h"
 
 #include "input/compcol.h"
-#include "symcompcol.h"
+#include "math/symcompcol.h"
 #include "engng/engngm.h"
 #include "arrays/floatarray.h"
 #include "utility/verbose.h"

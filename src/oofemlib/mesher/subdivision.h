@@ -35,7 +35,7 @@
 #ifndef subdivision_h
 #define subdivision_h
 
-#include "mesherinterface.h"
+#include "mesher/mesherinterface.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "input/element.h"

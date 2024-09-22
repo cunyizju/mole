@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "ldltfact.h"
+#include "math/ldltfact.h"
 #include "classfactory.h"
 
 namespace oofem {

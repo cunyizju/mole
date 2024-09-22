@@ -36,7 +36,7 @@
 #include "engng/engngm.h"
 #include "input/element.h"
 #include "material/material.h"
-#include "range.h"
+#include "utility/range.h"
 #include "math/mathfem.h"
 #include "input/oofemtxtinputrecord.h"
 // for Range class definition outputmanager.h included

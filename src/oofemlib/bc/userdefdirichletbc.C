@@ -34,7 +34,7 @@
 
 #include <Python.h>
 
-#include "userdefdirichletbc.h"
+#include "bc/userdefdirichletbc.h"
 
 #include "bc/boundarycondition.h"
 #include "solvers/timestep.h"

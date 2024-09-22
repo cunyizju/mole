@@ -37,7 +37,7 @@
 #include "engng/engngm.h"
 #include "input/element.h"
 #include "dofman/dofmanager.h"
-#include "range.h"
+#include "utility/range.h"
 
 namespace oofem {
 OutputManager :: OutputManager(Domain *d) : dofman_out(), dofman_except(), element_out(), element_except()

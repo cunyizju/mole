@@ -34,7 +34,7 @@
 
 #include "initial/initialcondition.h"
 #include "input/inputrecord.h"
-#include "cltypes.h"
+#include "input/cltypes.h"
 
 namespace oofem {
 double InitialCondition :: give(ValueModeType type)

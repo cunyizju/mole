@@ -45,7 +45,7 @@
 #include "math/integrationrule.h" // for IntegrationRuleType
 #include "solvers/geneigvalsolvertype.h"
 #include "material/materialmappingalgorithmtype.h"
-#include "meshpackagetype.h"
+#include "mesher/meshpackagetype.h"
 #include "dofs/dofiditem.h"
 
 #include <map>

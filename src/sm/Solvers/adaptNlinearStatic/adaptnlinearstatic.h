@@ -38,7 +38,7 @@
 #include "sm/Solvers/nlinearStatic/nlinearstatic.h"
 #include "math/sparsemtrx.h"
 #include "error/errorestimator.h"
-#include "meshpackagetype.h"
+#include "mesher/meshpackagetype.h"
 
 ///@name Input fields for AdaptiveNonLinearStatic
 //@{

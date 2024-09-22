@@ -42,7 +42,7 @@
 #include "math/sparsemtrx.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "nummet.h"
+#include "input/nummet.h"
 
 ///@name Input fields for LinearStability
 //@{

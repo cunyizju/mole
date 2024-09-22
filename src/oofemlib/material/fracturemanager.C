@@ -37,7 +37,7 @@
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
 #include "input/domain.h"
-#include "cltypes.h"
+#include "input/cltypes.h"
 #include "input/datareader.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"

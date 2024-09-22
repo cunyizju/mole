@@ -2,7 +2,7 @@
 set (core_unsorted
     classfactory.C
     
-    cltypes.C 
+
     solutionbasedshapefunction.C
     
     # Semi sorted:
@@ -12,10 +12,10 @@ set (core_unsorted
 
     smoothednodalintvarfield.C
     # Deprecated?
-    ldltfact.C
+
     #
-    symcompcol.C 
-    unstructuredgridfield.C
+
+
     # 
 
     )
@@ -42,6 +42,7 @@ set(input
     input/compcol.C
     input/femcmpnn.C  
     input/loadbalancer.C
+    input/cltypes.C 
 )
 set(contact
     contact/contactmanager.C
@@ -62,6 +63,8 @@ set(math
     math/subspaceit.C
     math/gjacobi.C
     math/lobattoir.C
+    math/symcompcol.C
+    math/ldltfact.C
 )
 
 set(error
@@ -374,7 +377,7 @@ set (core_bc
     )
 
 if (USE_PYTHON_EXTENSION)
-    list (APPEND core_bc userdefdirichletbc.C)
+    list (APPEND core_bc bc/userdefdirichletbc.C)
     list (APPEND core_unsorted utility/pythonexpression.C)
 endif ()
 
@@ -402,6 +405,7 @@ set (core_mesher
     mesher/dummylocalizer.C
     mesher/octreelocalizer.C
     mesher/remeshingcrit.C
+    mesher/unstructuredgridfield.C
     )
 
 set (core

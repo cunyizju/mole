@@ -34,7 +34,7 @@
 
 #include "nlinearstatic.h"
 #include "sm/Elements/structuralelement.h"
-#include "nummet.h"
+#include "input/nummet.h"
 #include "solvers/timestep.h"
 #include "solvers/metastep.h"
 #include "error/error.h"

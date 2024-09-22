@@ -39,7 +39,7 @@
 #include "utility/set.h"
 #include "solvers/timestep.h"
 #include "math/sparsemtrx.h"
-#include "nummet.h"
+#include "input/nummet.h"
 #include "solvers/nrsolver.h"
 #include "solvers/staggeredsolver.h"
 #include "solvers/dynamicrelaxationsolver.h"

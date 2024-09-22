@@ -40,7 +40,7 @@
 #include "dofman/node.h"
 #include "material/materialinterface.h"
 #include "math/mathfem.h"
-#include "cltypes.h"
+#include "input/cltypes.h"
 #include "material/material.h"
 #include "classfactory.h"
 #include "cs/crosssection.h"

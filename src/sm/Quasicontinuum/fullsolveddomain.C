@@ -34,7 +34,7 @@
 
 #include "sm/Quasicontinuum/fullsolveddomain.h"
 
-#include "nummet.h"
+#include "input/nummet.h"
 #include "solvers/timestep.h"
 #include "input/element.h"
 #include "math/sparsemtrx.h"

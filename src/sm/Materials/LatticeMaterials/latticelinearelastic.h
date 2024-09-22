@@ -36,7 +36,7 @@
 #define latticelinearelastic_h
 
 #include "latticestructuralmaterial.h"
-#include "cltypes.h"
+#include "input/cltypes.h"
 #include "material/randommaterialext.h"
 #include "strainvector.h"
 #include "stressvector.h"

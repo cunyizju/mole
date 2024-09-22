@@ -46,7 +46,7 @@
 #include "xfem/xfemmanager.h"
 #include "input/element.h"
 #include "mapping/matstatmapperint.h"
-#include "nummet.h"
+#include "input/nummet.h"
 #include "arrays/floatarray.h"
 #include "export/exportmodulemanager.h"
 #include "export/vtkxmlexportmodule.h"

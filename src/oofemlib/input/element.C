@@ -59,7 +59,7 @@
 #include "unknownnumberingscheme.h"
 #include "input/dynamicinputrecord.h"
 #include "mapping/matstatmapperint.h"
-#include "cltypes.h"
+#include "input/cltypes.h"
 
 #ifdef __OOFEG
  #include "oofeg/oofeggraphiccontext.h"

@@ -36,7 +36,7 @@
 #ifndef linesearch_h
 #define linesearch_h
 
-#include "nummet.h"
+#include "input/nummet.h"
 #include "solvers/convergedreason.h"
 #include "arrays/floatarray.h"
 

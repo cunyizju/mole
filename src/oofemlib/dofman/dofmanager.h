@@ -45,7 +45,7 @@
 #include "dofs/doftype.h"
 #include "dofs/dofiditem.h"
 #include "utility/contextioresulttype.h"
-#include "unknowntype.h"
+#include "dofs/unknowntype.h"
 #include "input/chartype.h"
 
 ///@name Input fields for DofManager
