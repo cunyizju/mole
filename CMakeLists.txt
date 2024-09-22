@@ -200,36 +200,6 @@ if (USE_OPENMP)
     endif ()
 endif ()
 
-if (USE_OOFEG)
-    add_definitions (-D__OOFEG)
-
-    # Necessary X11 stuff;
-    if (X11_DIR)
-        set (CMAKE_LIBRARY_DIR ${X11_DIR})
-        find_package (X11 REQUIRED PATHS ${X11_DIR})
-        find_library (XAW_LIB Xaw PATHS ${X11_DIR})
-    else ()
-        find_package (X11 REQUIRED)
-        find_library (XAW_LIB Xaw)
-    endif ()
-
-    # Krysls libraries:
-    find_library (ELIXIR_LIB elixir PATH "${ELIXIR_DIR}/src")
-    find_library (ESI_LIB esi PATH "${ELIXIR_DIR}/src")
-    if (${ELIXIR_LIB} STREQUAL "ELIXIR_LIB-NOTFOUND")
-        message (FATAL_ERROR "Elixir library not found (required for OOFEG)")
-    endif ()
-    find_library (CKIT_LIB ckit PATH "${CKIT_DIR}/src")
-    if (${CKIT_LIB} STREQUAL "CKIT_LIB-NOTFOUND")
-        message (FATAL_ERROR "Ckit library not found (required for OOFEG)")
-    endif ()
-    include_directories ("${ELIXIR_DIR}/include")
-    include_directories ("${CKIT_DIR}/include")
-
-    list (APPEND EXT_LIBS ${ESI_LIB} ${ELIXIR_LIB} ${CKIT_LIB} ${X11_LIBRARIES} ${X11_Xmu_LIB} ${X11_Xt_LIB} ${XAW_LIB})
-    list (APPEND MODULE_LIST "oofeg")
-endif ()
-
 #######################################################################
 ######################## External libraries ###########################
 #######################################################################
@@ -713,20 +683,6 @@ if (USE_MFRONT)
     find_package (MFrontGenericInterface REQUIRED)
     target_link_libraries(oofem mgis::MFrontGenericInterface)
 endif ()
-
-if (USE_OOFEG)
-    #  OOFEG target:
-    if (USE_SHARED_LIB)
-        add_executable (oofeg ${oofem_SOURCE_DIR}/src/oofemcfg.C ${oofem_SOURCE_DIR}/src/main/oofeg.C)
-        target_link_libraries (oofeg liboofem)
-    else ()
-        add_executable (oofeg ${oofem_SOURCE_DIR}/src/oofemcfg.C ${oofem_SOURCE_DIR}/src/main/oofeg.C ${LIBS})
-        target_link_libraries (oofeg ${EXT_LIBS})
-    endif ()
-    install(TARGETS oofeg DESTINATION bin)
-    add_dependencies(oofeg version)
-endif ()
-
 
 add_executable(liboofem_benchmark ${oofem_SOURCE_DIR}/src/oofemcfg.C ${oofem_SOURCE_DIR}/src/main/benchmark.C)
 add_dependencies(liboofem_benchmark version)
