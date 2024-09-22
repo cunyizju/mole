@@ -1015,60 +1015,6 @@ public:
 
     //@}
 
-
-#ifdef __OOFEG
-    //
-    // Graphics output
-    //
-    virtual void drawYourself(oofegGraphicContext &gc, TimeStep *tStep);
-    virtual void drawAnnotation(oofegGraphicContext &gc, TimeStep *tStep);
-    virtual void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) { }
-    virtual void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType) { }
-    virtual void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) { }
-    virtual void drawSpecial(oofegGraphicContext &gc, TimeStep *tStep) { }
-    // added in order to hide IP element details from oofeg
-    // to determine the max and min local values, when recovery does not takes place
-    virtual void giveLocalIntVarMaxMin(oofegGraphicContext &gc, TimeStep *tStep, double &emin, double &emax) { emin = emax = 0.0; }
-
-    /**
-     * Returns internal state variable (like stress,strain) at node of element in Reduced form,
-     * the way how is obtained is dependent on InternalValueType.
-     * The value may be local, or smoothed using some recovery technique.
-     * Returns zero if element is unable to respond to request.
-     * @param answer Contains result, zero sized if not supported.
-     * @param type Determines the internal variable requested (physical meaning).
-     * @param mode Determines the mode of variable (recovered, local, ...).
-     * @param node Node number, for which variable is required.
-     * @param tStep Time step.
-     * @return Nonzero if o.k, zero otherwise.
-     */
-    virtual int giveInternalStateAtNode(FloatArray &answer, InternalStateType type, InternalStateMode mode,
-                                        int node, TimeStep *tStep);
-    /**
-     * Returns internal state variable (like stress,strain) at side of element in Reduced form
-     * If side is possessing DOFs, otherwise recover techniques will not work
-     * due to absence of side-shape functions.
-     * @param answer Contains result, zero sized if not supported.
-     * @param type Determines the internal variable requested (physical meaning).
-     * @param mode Determines the mode of variable (recovered, local, ...).
-     * @param side Side number, for which variable is required.
-     * @param tStep Time step.
-     * @return Nonzero if o.k, zero otherwise.
-     */
-    virtual int giveInternalStateAtSide(FloatArray &answer, InternalStateType type, InternalStateMode mode,
-                                        int side, TimeStep *tStep)
-    {
-        answer.clear();
-        return 0;
-    }
-
-    /// Shows sparse structure
-    virtual void showSparseMtrxStructure(CharType mtrx, oofegGraphicContext &gc, TimeStep *tStep) { }
-    /// Shows extended sparse structure (for example, due to nonlocal interactions for tangent stiffness)
-    virtual void showExtendedSparseMtrxStructure(CharType mtrx, oofegGraphicContext &gc, TimeStep *tStep) { }
-
-#endif
-
     /**
      * @return Receivers globally unique number (label).
      */

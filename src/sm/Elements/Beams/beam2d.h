@@ -139,11 +139,6 @@ public:
     const char *giveInputRecordName() const override { return _IFT_Beam2d_Name; }
     void initializeFrom(InputRecord &ir) override;
 
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext & gc, TimeStep * tStep, UnknownType) override;
-#endif
-
     void computeStrainVectorInLayer(FloatArray &answer, const FloatArray &masterGpStrain,
                                     GaussPoint *masterGp, GaussPoint *slaveGp, TimeStep *tStep) override;
 

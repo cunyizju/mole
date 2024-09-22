@@ -123,12 +123,4 @@ void ProblemSequence :: restoreContext(DataStream &stream, ContextMode mode)
     }
 }
 
-
-#ifdef __OOFEG
-void ProblemSequence :: drawYourself(oofegGraphicContext &gc) {}
-void ProblemSequence :: drawElements(oofegGraphicContext &gc) {}
-void ProblemSequence :: drawNodes(oofegGraphicContext &gc) {}
-
-#endif
-
 }

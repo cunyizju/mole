@@ -70,7 +70,6 @@ namespace oofem {
 
 class Element;
 class DynamicInputRecord;
-class oofegGraphicContext;
 class TipInfo;
 
 /**
@@ -160,10 +159,6 @@ public:
      * @exception ContextIOERR exception if error encountered.
      */
     virtual void restoreContext(DataStream &stream, ContextMode mode) { }
-
-#ifdef __OOFEG
-    virtual void draw(oofegGraphicContext &gc) { }
-#endif
 
 
     /**

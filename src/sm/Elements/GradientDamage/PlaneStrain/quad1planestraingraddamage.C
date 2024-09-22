@@ -44,12 +44,6 @@
 #include "math/mathfem.h"
 #include "classfactory.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
- #include "oofeg/oofegutils.h"
- #include "Materials/rcm2.h"
-#endif
-
 namespace oofem {
 REGISTER_Element(Quad1PlaneStrainGradDamage);
   IntArray Quad1PlaneStrainGradDamage :: locationArray_u = {1, 2, 4, 5, 7, 8, 10, 11};

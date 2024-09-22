@@ -95,7 +95,6 @@ class TopologyDescription;
 class DataReader;
 class Set;
 class FractureManager;
-class oofegGraphicContext;
 class ProcessCommunicator;
 class ContactManager;
 /**

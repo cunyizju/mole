@@ -822,36 +822,6 @@ NonLinearStatic :: assemble(SparseMtrx &answer, TimeStep *tStep, const MatrixAss
 }
 
 
-#ifdef __OOFEG
-void
-NonLinearStatic :: showSparseMtrxStructure(int type, oofegGraphicContext &gc, TimeStep *tStep)
-{
-    Domain *domain = this->giveDomain(1);
-    CharType ctype;
-
-    if ( type != 1 ) {
-        return;
-    }
-
-    if ( stiffMode == nls_tangentStiffness ) {
-        ctype = TangentStiffnessMatrix;
-    } else if ( stiffMode == nls_secantStiffness ) {
-        ctype = SecantStiffnessMatrix;
-    } else {
-        ctype = SecantStiffnessMatrix;
-    }
-
-    for ( auto &elem : domain->giveElements() ) {
-        elem->showSparseMtrxStructure(ctype, gc, tStep);
-    }
-
-    for ( auto &elem : domain->giveElements() ) {
-        elem->showExtendedSparseMtrxStructure(ctype, gc, tStep);
-    }
-}
-#endif
-
-
 void
 NonLinearStatic :: computeExternalLoadReactionContribution(FloatArray &reactions, TimeStep *tStep, int di)
 {

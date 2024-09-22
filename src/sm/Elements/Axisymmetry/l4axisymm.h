@@ -76,11 +76,7 @@ public:
     SPRPatchType SPRNodalRecoveryMI_givePatchType() override;
 
 
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType type) override;
-    void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
+
 
 protected:
     void computeBmatrixAt(GaussPoint *gp, FloatMatrix &answer, int lowerIndx = 1, int upperIndx = ALL_STRAINS) override;

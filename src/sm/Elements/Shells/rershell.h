@@ -99,13 +99,6 @@ public:
     void NodalAveragingRecoveryMI_computeNodalValue(FloatArray &answer, int node,
                                                     InternalStateType type, TimeStep *tStep) override;
 
-    // io routines
-#ifdef __OOFEG
-    //void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep);
-    //void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep);
-    //void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
-
     // definition & identification
     const char *giveInputRecordName() const override { return _IFT_RerShell_Name; }
     const char *giveClassName() const override { return "RerShell"; }

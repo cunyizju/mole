@@ -300,27 +300,6 @@ public:
     void giveInputRecord(DynamicInputRecord &input) override;
     const char *giveClassName() const override { return "StructuralElement"; }
 
-#ifdef __OOFEG
-    /**
-     * Returns internal state variable (like stress,strain) at node of element in Reduced form,
-     * the way how is obtained is dependent on InternalValueType.
-     * The value may be local, or smoothed using some recovery technique /
-     * returns zero if element is unable to respond to request.
-     * @param answer Contains result, zero sized if not supported.
-     * @param type Determines the internal variable requested (physical meaning).
-     * @param mode Determines the mode of variable (recovered, local, ...).
-     * @param node Node number, for which variable is required.
-     * @param tStep Time step.
-     * @return Nonzero if o.k, zero otherwise.
-     */
-    int giveInternalStateAtNode(FloatArray &answer, InternalStateType type, InternalStateMode mode,
-                                int node, TimeStep *tStep) override;
-    /// Shows sparse structure
-    void showSparseMtrxStructure(CharType mtrx, oofegGraphicContext &gc, TimeStep *tStep) override;
-    /// Shows extended sparse structure (for example, due to nonlocal interactions for tangent stiffness)
-    void showExtendedSparseMtrxStructure(CharType mtrx, oofegGraphicContext &gc, TimeStep *tStep) override;
-
-#endif
 
     // Interface for body loads applied by Sets:
     void computeLoadVector(FloatArray &answer, BodyLoad *load, CharType type, ValueModeType mode, TimeStep *tStep) override;

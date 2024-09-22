@@ -49,10 +49,7 @@
 #include "export/datastream.h"
 #include "input/unknownnumberingscheme.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
- #include "input/connectivitytable.h"
-#endif
+
 
 namespace oofem {
 REGISTER_Material(IDNLMaterial);
@@ -472,95 +469,6 @@ IDNLMaterial :: giveIPValue(FloatArray &answer, GaussPoint *gp, InternalStateTyp
 
     return 1; // to make the compiler happy
 }
-
-
-#ifdef __OOFEG
-void
-IDNLMaterial :: NonlocalMaterialStiffnessInterface_showSparseMtrxStructure(GaussPoint *gp, oofegGraphicContext &gc, TimeStep *tStep)
-{
-    IntArray loc, rloc;
-    FloatArray strain;
-    double f, equivStrain;
-    IDNLMaterialStatus *status = static_cast< IDNLMaterialStatus * >( this->giveStatus(gp) );
-    IDNLMaterial *rmat;
-
-    const double e0 = this->give(e0_ID, gp);
-    //const double ef = this->give(ef_ID, gp);
-
-    strain = status->giveTempStrainVector();
-    // compute equivalent strain
-    equivStrain = this->computeEquivalentStrain(strain, gp, tStep);
-    f = equivStrain - status->giveTempKappa();
-
-    if ( ( equivStrain <= e0 ) || ( f < 0.0 ) ) {
-        return;
-    }
-
-    EASValsSetLineWidth(OOFEG_SPARSE_PROFILE_WIDTH);
-    EASValsSetColor( gc.getExtendedSparseProfileColor() );
-    EASValsSetLayer(OOFEG_SPARSE_PROFILE_LAYER);
-    EASValsSetFillStyle(FILL_SOLID);
-
-    WCRec p [ 4 ];
-    GraphicObj *go;
-
-    gp->giveElement()->giveLocationArray( loc, EModelDefaultEquationNumbering() );
-
-    int n, m;
-    auto list = status->giveIntegrationDomainList();
-    for ( auto &lir : *list ) {
-        rmat = dynamic_cast< IDNLMaterial * >( lir.nearGp->giveMaterial() );
-        if ( rmat ) {
-            lir.nearGp->giveElement()->giveLocationArray( rloc, EModelDefaultEquationNumbering() );
-        } else {
-            continue;
-        }
-
-        n = loc.giveSize();
-        m = rloc.giveSize();
-        for ( int i = 1; i <= n; i++ ) {
-            if ( loc.at(i) == 0 ) {
-                continue;
-            }
-
-            for ( int j = 1; j <= m; j++ ) {
-                if ( rloc.at(j) == 0 ) {
-                    continue;
-                }
-
-                if ( gc.getSparseProfileMode() == 0 ) {
-                    p [ 0 ].x = ( FPNum ) loc.at(i) - 0.5;
-                    p [ 0 ].y = ( FPNum ) rloc.at(j) - 0.5;
-                    p [ 0 ].z = 0.;
-                    p [ 1 ].x = ( FPNum ) loc.at(i) + 0.5;
-                    p [ 1 ].y = ( FPNum ) rloc.at(j) - 0.5;
-                    p [ 1 ].z = 0.;
-                    p [ 2 ].x = ( FPNum ) loc.at(i) + 0.5;
-                    p [ 2 ].y = ( FPNum ) rloc.at(j) + 0.5;
-                    p [ 2 ].z = 0.;
-                    p [ 3 ].x = ( FPNum ) loc.at(i) - 0.5;
-                    p [ 3 ].y = ( FPNum ) rloc.at(j) + 0.5;
-                    p [ 3 ].z = 0.;
-                    go =  CreateQuad3D(p);
-                    EGWithMaskChangeAttributes(WIDTH_MASK | FILL_MASK | COLOR_MASK | LAYER_MASK, go);
-                    EMAddGraphicsToModel(ESIModel(), go);
-                } else {
-                    p [ 0 ].x = ( FPNum ) loc.at(i);
-                    p [ 0 ].y = ( FPNum ) rloc.at(j);
-                    p [ 0 ].z = 0.;
-
-                    EASValsSetMType(SQUARE_MARKER);
-                    go = CreateMarker3D(p);
-                    EGWithMaskChangeAttributes(COLOR_MASK | LAYER_MASK | VECMTYPE_MASK, go);
-                    EMAddGraphicsToModel(ESIModel(), go);
-                }
-            }
-        }
-    }
-}
-#endif
-
-
 
 
 int

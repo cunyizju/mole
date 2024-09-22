@@ -116,12 +116,6 @@ public:
 
     void restoreContext(DataStream &stream, ContextMode mode) override;
 
-#ifdef __OOFEG
-    void drawYourself(oofegGraphicContext &context, TimeStep *tStep) override;
-    void drawRawGeometry(oofegGraphicContext &, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &, TimeStep *tStep, UnknownType) override;
-#endif
-
 
 protected:
     void computeBmatrixAt(GaussPoint *, FloatMatrix &, int = 1, int = ALL_STRAINS) override;

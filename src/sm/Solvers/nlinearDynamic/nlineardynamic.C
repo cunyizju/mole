@@ -822,30 +822,6 @@ NonLinearDynamic :: assemble(SparseMtrx &answer, TimeStep *tStep, const MatrixAs
 #endif
 }
 
-#ifdef __OOFEG
-void
-NonLinearDynamic :: showSparseMtrxStructure(int type, oofegGraphicContext &gc, TimeStep *tStep)
-{
-    Domain *domain = this->giveDomain(1);
-    CharType ctype;
-
-    if ( type != 1 ) {
-        return;
-    }
-
-    ctype = TangentStiffnessMatrix;
-
-    for ( auto &elem : domain->giveElements() ) {
-        elem->showSparseMtrxStructure(ctype, gc, tStep);
-    }
-
-    for ( auto &elem : domain->giveElements() ) {
-        elem->showExtendedSparseMtrxStructure(ctype, gc, tStep);
-    }
-}
-#endif
-
-
 void
 NonLinearDynamic :: timesMtrx(FloatArray &vec, FloatArray &answer, CharType type, Domain *domain, TimeStep *tStep)
 {

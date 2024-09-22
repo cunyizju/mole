@@ -44,9 +44,7 @@
 #include "classfactory.h"
 #include "math/mathfem.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
-#endif
+
 
 namespace oofem {
 REGISTER_Element(PlaneStress2dXfem)
@@ -222,78 +220,6 @@ PlaneStress2dXfem :: giveGeometryType() const
         return EGT_quad_1;
     }
 }
-
-
-
-#ifdef __OOFEG
-void PlaneStress2dXfem :: drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep)
-{
-    if ( !gc.testElementGraphicActivity(this) ) {
-        return;
-    }
-#if 0
-    XfemManager *xf = this->giveDomain()->giveXfemManager();
-    if ( !xf->isElementEnriched(this) ) {
-        PlaneStress2d :: drawRawGeometry(gc);
-    } else {
-        if ( integrationRulesArray.size() > 1 ) {
-            // TODO: Implement visualization
-            for ( auto &iRule: integrationRulesArray ) {
-                PatchIntegrationRule *piRule = dynamic_cast< PatchIntegrationRule * >( ir );
-                if ( piRule ) {
-                    piRule->givePatch()->draw(context);
-                }
-            }
-        } else {
-            PlaneStress2d :: drawRawGeometry(gc);
-        }
-    }
-#endif
-}
-
-void PlaneStress2dXfem :: drawScalar(oofegGraphicContext &gc, TimeStep *tStep)
-{
-    if ( !gc.testElementGraphicActivity(this) ) {
-        return;
-    }
-#if 0
-    XfemManager *xf = this->giveDomain()->giveXfemManager();
-    if ( !xf->isElementEnriched(this) ) {
-        PlaneStress2d :: drawScalar(context);
-    } else {
-        if ( gc.giveIntVarMode() == ISM_local ) {
-            int indx;
-            double val;
-            FloatArray s(3), v;
-
-            indx = gc.giveIntVarIndx();
-
-            for ( auto &ir: integrationRulesArray ) {
-                PatchIntegrationRule *iRule = dynamic_cast< PatchIntegrationRule * >(ir);
-
- #if 0
-                val = iRule->giveMaterial();
- #else
-                val = 0.0;
-                for ( GaussPoint *gp: *iRule ) {
-                    giveIPValue(v, gp, gc.giveIntVarType(), tStep);
-                    val += v.at(indx);
-                }
-
-                val /= iRule->giveNumberOfIntegrationPoints();
- #endif
-                s.at(1) = s.at(2) = s.at(3) = val;
-                // TODO: Implement visualization
-                //                iRule->givePatch()->drawWD(context, s);
-            }
-        } else {
-            PlaneStress2d :: drawScalar(context);
-        }
-    }
-#endif
-}
-#endif
-
 
 void
 PlaneStress2dXfem :: initializeFrom(InputRecord &ir)

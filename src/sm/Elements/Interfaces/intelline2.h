@@ -66,11 +66,7 @@ public:
     const char *giveInputRecordName() const override { return _IFT_IntElLine2_Name; }
     const char *giveClassName() const override { return "IntElLine2"; }
 
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType) override;
-    void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
+
 
 protected:
     void computeNmatrixAt(GaussPoint *gp, FloatMatrix &answer) override;

@@ -177,10 +177,6 @@ public:
     int giveUnknownDictHashIndx(ValueModeType mode, TimeStep *tStep) override { return ( int ) mode; }
     int giveCurrentNumberOfIterations() override { return currentIterations; }
 
-#ifdef __OOFEG
-    void showSparseMtrxStructure(int type, oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
-
     int estimateMaxPackSize(IntArray &commMap, DataStream &buff, int packUnpackType) override;
 #ifdef __PARALLEL_MODE
     LoadBalancer *giveLoadBalancer() override;

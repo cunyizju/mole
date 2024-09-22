@@ -46,10 +46,6 @@
 //@}
 
 namespace oofem {
-#ifdef __OOFEG
-class StructuralElementEvaluator;
-void drawIGAPatchDeformedGeometry(Element *elem, StructuralElementEvaluator *se, oofegGraphicContext &gc, TimeStep *tStep, UnknownType);
-#endif
 
 /**
  * Geometry wrapper for IGA elements.
@@ -98,10 +94,6 @@ public:
 
 #ifdef __PARALLEL_MODE
     elementParallelMode giveKnotSpanParallelMode(int) const override;
-#endif
-
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
 #endif
 
 protected:

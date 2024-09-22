@@ -42,9 +42,7 @@
 #include "cs/crosssection.h"
 #include "classfactory.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
-#endif
+
 
 namespace oofem {
 REGISTER_Element(QTrPlaneStressGradDamage);

@@ -45,9 +45,7 @@
 #include "Materials/structuralslipfe2material.h"
 #include "CrossSections/structuralcrosssection.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
-#endif
+
 
 namespace oofem {
 REGISTER_Element(QPlaneStress2dSlip);

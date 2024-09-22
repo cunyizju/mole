@@ -81,14 +81,6 @@ public:
     const char *giveInputRecordName() const override { return _IFT_BsplinePlaneStressElement_Name; }
     const char *giveClassName() const override { return "BsplinePlaneStressElement"; }
 
-#ifdef __OOFEG
-    // Graphics output
-    void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType ut) override {
-        drawIGAPatchDeformedGeometry(this, this, gc, tStep, ut);
-    }
-#endif
-
 protected:
     int giveNsd() override { return 2; }
 };
@@ -122,16 +114,6 @@ public:
     // definition & identification
     const char *giveInputRecordName() const override { return _IFT_NURBSPlaneStressElement_Name; }
     const char *giveClassName() const override { return "NURBSPlaneStressElement"; }
-#ifdef __OOFEG
-    //
-    // Graphics output
-    //
-    void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType ut) override {
-        drawIGAPatchDeformedGeometry(this, this, gc, tStep, ut);
-    }
-
-#endif
 
 protected:
     int giveNsd() override { return 2; }
@@ -169,10 +151,6 @@ public:
     // definition & identification
     const char *giveInputRecordName() const override { return _IFT_TSplinePlaneStressElement_Name; }
     const char *giveClassName() const override { return "TSplinePlaneStressElement"; }
-#ifdef __OOFEG
-    // Graphics output
-    void  drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
 
 protected:
     int giveNsd() override { return 2; }
@@ -208,13 +186,6 @@ public:
     // definition & identification
     const char *giveInputRecordName() const override { return _IFT_NURBSSpace3dElement_Name; }
     const char *giveClassName() const override { return "NURBSSpace3dElement"; }
-#ifdef __OOFEG
-    // Graphics output
-    void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType ut) override {
-        drawIGAPatchDeformedGeometry(this, this, gc, tStep, ut);
-    }
-#endif
 
 protected:
     int giveNsd() override { return 3; }

@@ -118,9 +118,6 @@ set(nonlocal
     nonlocal/nonlocalmaterialext.C
 )
 
-set (core_oofeg 
-    oofeg/oofeggraphiccontext.C)
-
 set (core_nodalrecovery
     nodalrecovery/nodalrecoverymodel.C
     nodalrecovery/zznodalrecoverymodel.C
@@ -449,9 +446,6 @@ if (USE_PARALLEL)
     list (APPEND core ${core_parallel})
 endif ()
 
-if (USE_OOFEG)
-    list (APPEND core ${core_oofeg})
-endif ()
 
 
 add_library (core

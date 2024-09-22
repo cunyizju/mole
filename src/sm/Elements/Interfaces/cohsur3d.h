@@ -85,11 +85,7 @@ public:
     // input and output
     void initializeFrom(InputRecord &ir) override;
 
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType) override;
-    void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
+
 
 protected:
     void computeGaussPoints() override;

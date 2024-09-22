@@ -45,11 +45,6 @@
 #include "bc/boundaryload.h"
 #include "classfactory.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
- #include "oofeg/oofegutils.h"
-#endif
-
 namespace oofem {
 REGISTER_Element(TrPlanestressRotAllman);
 

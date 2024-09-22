@@ -204,13 +204,6 @@ public:
     /// Returns list of model number that this model is coupled with. Used for staggered approach.
     void giveCoupledModels(IntArray &answer) { answer = coupledModels; }
 
-#ifdef __OOFEG
-    void drawYourself(oofegGraphicContext &gc) override;
-    void drawElements(oofegGraphicContext &gc) override;
-    void drawNodes(oofegGraphicContext &gc) override;
-    void showSparseMtrxStructure(int type, oofegGraphicContext &gc, TimeStep *tStep) override { }
-#endif
-
     int checkProblemConsistency() override;
 
     EngngModel *giveSlaveProblem(int i) override;

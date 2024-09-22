@@ -66,11 +66,7 @@ public:
 
     Interface *giveInterface(InterfaceType it) override;
 
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType) override;
-    void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
+
 
 };
 } // end namespace oofem

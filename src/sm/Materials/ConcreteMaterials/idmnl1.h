@@ -152,10 +152,6 @@ public:
 
     int giveIPValue(FloatArray &answer, GaussPoint *gp, InternalStateType type, TimeStep *tStep) override;
 
-#ifdef __OOFEG
-    /// Plots the sparse structure of stiffness contribution.
-    void NonlocalMaterialStiffnessInterface_showSparseMtrxStructure(GaussPoint *gp, oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
 
     double computeDamageParam(double kappa, const FloatArray &strain, GaussPoint *gp) const override;
 

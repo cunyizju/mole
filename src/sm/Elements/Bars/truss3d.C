@@ -45,9 +45,7 @@
 #include "math/mathfem.h"
 #include "classfactory.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
-#endif
+
 
 namespace oofem {
 REGISTER_Element(Truss3d);
@@ -314,57 +312,4 @@ Truss3d::computeLoadLEToLRotationMatrix(FloatMatrix &answer, int iEdge, GaussPoi
 
     return 1;
 }
-
-
-#ifdef __OOFEG
-void Truss3d::drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep)
-{
-    GraphicObj *go;
-    //  if (!go) { // create new one
-    WCRec p[ 2 ];  /* point */
-    if ( !gc.testElementGraphicActivity(this) ) {
-        return;
-    }
-
-    EASValsSetLineWidth(OOFEG_RAW_GEOMETRY_WIDTH);
-    EASValsSetColor(gc.getElementColor() );
-    EASValsSetLayer(OOFEG_RAW_GEOMETRY_LAYER);
-    p [ 0 ].x = ( FPNum ) this->giveNode(1)->giveCoordinate(1);
-    p [ 0 ].y = ( FPNum ) this->giveNode(1)->giveCoordinate(2);
-    p [ 0 ].z = ( FPNum ) this->giveNode(1)->giveCoordinate(3);
-    p [ 1 ].x = ( FPNum ) this->giveNode(2)->giveCoordinate(1);
-    p [ 1 ].y = ( FPNum ) this->giveNode(2)->giveCoordinate(2);
-    p [ 1 ].z = ( FPNum ) this->giveNode(2)->giveCoordinate(3);
-    go = CreateLine3D(p);
-    EGWithMaskChangeAttributes(WIDTH_MASK | COLOR_MASK | LAYER_MASK, go);
-    EGAttachObject(go, ( EObjectP ) this);
-    EMAddGraphicsToModel(ESIModel(), go);
-}
-
-
-void Truss3d::drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType type)
-{
-    GraphicObj *go;
-    double defScale = gc.getDefScale();
-    //  if (!go) { // create new one
-    WCRec p[ 2 ];  /* point */
-    if ( !gc.testElementGraphicActivity(this) ) {
-        return;
-    }
-
-    EASValsSetLineWidth(OOFEG_DEFORMED_GEOMETRY_WIDTH);
-    EASValsSetColor(gc.getDeformedElementColor() );
-    EASValsSetLayer(OOFEG_DEFORMED_GEOMETRY_LAYER);
-    p [ 0 ].x = ( FPNum ) this->giveNode(1)->giveUpdatedCoordinate(1, tStep, defScale);
-    p [ 0 ].y = ( FPNum ) this->giveNode(1)->giveUpdatedCoordinate(2, tStep, defScale);
-    p [ 0 ].z = ( FPNum ) this->giveNode(1)->giveUpdatedCoordinate(3, tStep, defScale);
-
-    p [ 1 ].x = ( FPNum ) this->giveNode(2)->giveUpdatedCoordinate(1, tStep, defScale);
-    p [ 1 ].y = ( FPNum ) this->giveNode(2)->giveUpdatedCoordinate(2, tStep, defScale);
-    p [ 1 ].z = ( FPNum ) this->giveNode(2)->giveUpdatedCoordinate(3, tStep, defScale);
-    go = CreateLine3D(p);
-    EGWithMaskChangeAttributes(WIDTH_MASK | COLOR_MASK | LAYER_MASK, go);
-    EMAddGraphicsToModel(ESIModel(), go);
-}
-#endif
 } // end namespace oofem

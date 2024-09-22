@@ -95,11 +95,6 @@ public:
     const char *giveInputRecordName() const override { return _IFT_LIBeam3d_Name; }
     const char *giveClassName() const override { return "LIBeam3d"; }
 
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType) override;
-#endif
-
     integrationDomain giveIntegrationDomain() const override { return _Line; }
     MaterialMode giveMaterialMode() override { return _3dBeam; }
 

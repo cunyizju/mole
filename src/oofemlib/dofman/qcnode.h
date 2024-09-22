@@ -70,10 +70,6 @@ protected:
     int masterRegion;
     /// Type of qcNode (0 deactive, 1 master, 2 hanging)
     int qcNodeTypeLabel;
-#ifdef __OOFEG
-    /// Flag whether node is fully initialized already.
-    bool initialized;
-#endif
 
 public:
     /**

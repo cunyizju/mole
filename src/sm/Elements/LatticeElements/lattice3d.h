@@ -127,12 +127,7 @@ public:
 
     void restoreContext(DataStream &stream, ContextMode mode) override;
 
-#ifdef __OOFEG
-    void drawYourself(oofegGraphicContext &context, TimeStep *tStep) override;
-    void drawRawGeometry(oofegGraphicContext &, TimeStep *tStep) override;
-    void drawRawCrossSections(oofegGraphicContext &, TimeStep *tStep);
-    void drawDeformedGeometry(oofegGraphicContext &, TimeStep *tStep, UnknownType) override;
-#endif
+
 
 
 protected:

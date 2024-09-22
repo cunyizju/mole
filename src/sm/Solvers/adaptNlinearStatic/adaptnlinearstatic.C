@@ -60,9 +60,7 @@
  #include "input/loadbalancer.h"
 #endif
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
-#endif
+
 
 #include <cstdlib>
 
@@ -114,10 +112,6 @@ AdaptiveNonLinearStatic :: solveYourselfAt(TimeStep *tStep)
 {
     proceedStep(1, tStep);
     this->updateYourself(tStep);
-
-#ifdef __OOFEG
-    ESIEventLoop( YES, const_cast< char * >("AdaptiveNonLinearStatic: Solution finished; Press Ctrl-p to continue") );
-#endif
 
     //this->terminate( this->giveCurrentStep() );
 
@@ -638,10 +632,6 @@ AdaptiveNonLinearStatic :: adaptiveRemap(Domain *dNew)
      * }
      **#endif
      *************/
-
-#ifdef __OOFEG
-    ESIEventLoop( YES, const_cast< char * >("AdaptiveRemap: Press Ctrl-p to continue") );
-#endif
 
     //
     // bring mapped configuration into equilibrium

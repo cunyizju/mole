@@ -87,12 +87,6 @@ public:
 
     FEInterpolation *giveInterpolation() const override { return & this->interp; }
     Element_Geometry_Type giveGeometryType() const override { return EGT_triangle_1; }
-#ifdef __OOFEG
-    // Graphics output
-    //void drawYourself(oofegGraphicContext&) override;
-    //void drawRawGeometry(oofegGraphicContext&) override {}
-    //void drawDeformedGeometry(oofegGraphicContext&, UnknownType) override {}
-#endif
 
 protected:
     void computeGaussPoints() override;

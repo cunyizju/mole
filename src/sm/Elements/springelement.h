@@ -103,11 +103,6 @@ public:
     void printOutputAt(FILE *file, TimeStep *tStep) override;
     bool isCast(TimeStep *tStep) override { return true; }
 
-#ifdef __OOFEG
-    //void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep);
-    //void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType);
-    //void drawScalar(oofegGraphicContext &gc, TimeStep *tStep);
-#endif
 
     // definition & identification
     const char *giveInputRecordName() const override { return _IFT_SpringElement_Name; }

@@ -120,10 +120,7 @@ public:
     //void givePlaneStrainStiffMtrx(FloatMatrix& answer, MatResponseMode,GaussPoint * gp,TimeStep * tStep) override;
     //void give3dMaterialStiffnessMatrix(FloatMatrix& answer,  MatResponseMode,GaussPoint* gp, TimeStep* tStep) override;
 
-#ifdef __OOFEG
-    // Plots the sparse structure of stiffness contribution.
-    //void NonlocalMaterialStiffnessInterface_showSparseMtrxStructure(GaussPoint *gp, oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
+
 
     void NonlocalMaterialStiffnessInterface_addIPContribution(SparseMtrx &dest, const UnknownNumberingScheme &s,
                                                               GaussPoint *gp, TimeStep *tStep) override;

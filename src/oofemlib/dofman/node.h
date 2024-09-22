@@ -172,9 +172,7 @@ public:
     void saveContext(DataStream &stream, ContextMode mode) override;
     void restoreContext(DataStream &stream, ContextMode mode) override;
 
-#ifdef __OOFEG
-    void drawYourself(oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
+
 };
 } // end namespace oofem
 #endif // node_h

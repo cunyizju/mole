@@ -52,9 +52,7 @@
 #include "fields/eigenvectorprimaryfield.h"
 
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
-#endif
+
 
 namespace oofem {
 REGISTER_EngngModel(LinearStability);

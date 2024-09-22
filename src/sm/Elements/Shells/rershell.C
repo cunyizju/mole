@@ -47,10 +47,7 @@
 #include "math/mathfem.h"
 #include "classfactory.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
- #include "input/connectivitytable.h"
-#endif
+
 
 #include <cstdlib>
 
@@ -698,113 +695,4 @@ RerShell :: giveIPValue(FloatArray &answer, GaussPoint *gp, InternalStateType ty
     }
 }
 
-
-#ifdef __OOFEG
-/*
- * void
- * CCTPlate :: drawRawGeometry ()
- * {
- * WCRec p[3];
- * GraphicObj *go;
- *
- * EASValsSetLineWidth(RAW_GEOMETRY_WIDTH);
- * EASValsSetColor(elementColor);
- * EASValsSetLayer(RAW_GEOMETRY_LAYER);
- * p[0].x = (FPNum) this->giveNode(1)->giveCoordinate(1);
- * p[0].y = (FPNum) this->giveNode(1)->giveCoordinate(2);
- * p[0].z = (FPNum) this->giveNode(1)->giveCoordinate(3);
- * p[1].x = (FPNum) this->giveNode(2)->giveCoordinate(1);
- * p[1].y = (FPNum) this->giveNode(2)->giveCoordinate(2);
- * p[1].z = (FPNum) this->giveNode(2)->giveCoordinate(3);
- * p[2].x = (FPNum) this->giveNode(3)->giveCoordinate(1);
- * p[2].y = (FPNum) this->giveNode(3)->giveCoordinate(2);
- * p[2].z = (FPNum) this->giveNode(3)->giveCoordinate(3);
- *
- * go =  CreateTriangle3D(p);
- * EGWithMaskChangeAttributes(WIDTH_MASK | COLOR_MASK | LAYER_MASK, go);
- * EGAttachObject(go, (EObjectP) this);
- * EMAddGraphicsToModel(ESIModel(), go);
- * }
- *
- * void
- * CCTPlate :: drawDeformedGeometry (UnknownType defMode)
- * {
- * WCRec p[3];
- * GraphicObj *go;
- *
- * EASValsSetLineWidth(DEFORMED_GEOMETRY_WIDTH);
- * EASValsSetColor(deformedElementColor);
- * EASValsSetLayer(DEFORMED_GEOMETRY_LAYER);
- * p[0].x = (FPNum) this->giveNode(1)->giveUpdatedCoordinate(1,tStep,defScale);
- * p[0].y = (FPNum) this->giveNode(1)->giveUpdatedCoordinate(2,tStep,defScale);
- * p[0].z = (FPNum) this->giveNode(1)->giveUpdatedCoordinate(3,tStep,defScale);
- * p[1].x = (FPNum) this->giveNode(2)->giveUpdatedCoordinate(1,tStep,defScale);
- * p[1].y = (FPNum) this->giveNode(2)->giveUpdatedCoordinate(2,tStep,defScale);
- * p[1].z = (FPNum) this->giveNode(2)->giveUpdatedCoordinate(3,tStep,defScale);
- * p[2].x = (FPNum) this->giveNode(3)->giveUpdatedCoordinate(1,tStep,defScale);
- * p[2].y = (FPNum) this->giveNode(3)->giveUpdatedCoordinate(2,tStep,defScale);
- * p[2].z = (FPNum) this->giveNode(3)->giveUpdatedCoordinate(3,tStep,defScale);
- *
- * go =  CreateTriangle3D(p);
- * EGWithMaskChangeAttributes(WIDTH_MASK | COLOR_MASK | LAYER_MASK, go);
- * EMAddGraphicsToModel(ESIModel(), go);
- * }
- *
- */
-
-
-//void
-//RerShell :: drawScalar(oofegGraphicContext &gc, TimeStep *tStep)
-//{}
-
-
-
-/*
- * int
- * RerShell :: giveInternalStateAtNode (FloatArray& answer, InternalValueRequest& r, int node, TimeStep* tStep)
- *
- * //
- * // see eleemnt.h for description
- * //
- * {
- * opravit;
- *
- * DrawMode mode = gc.getDrawMode();
- *
- * if (!gc.testElementGraphicActivity(this)) return 0;
- *
- * const FloatArray* nodval;
- * int result = this->giveDomain()->giveSmoother()->giveNodalVector(nodval, this->giveNode(inode)->giveNumber(),
- *                       this->giveDomain()->giveSmoother()->giveElementRegion(this));
- * if (result) {
- * if (mode == sxForce ) {
- ***val =  nodval->at(1);
- * return 1;
- * } else if (mode == syForce) {
- ***val =  nodval->at(2);
- * return 1;
- * } else if (mode == sxyForce) {
- ***val =  nodval->at(3);
- * return 1;
- * } else if (mode == mxForce ) {
- ***val =  nodval->at(4);
- * return 1;
- * } else if (mode == myForce) {
- ***val =  nodval->at(5);
- * return 1;
- * } else if (mode == mxyForce) {
- ***val =  nodval->at(6);
- * return 1;
- * } else if (mode == szxForce ) {
- ***val =  nodval->at(7);
- * return 1;
- * } else if (mode == syzForce) {
- ***val =  nodval->at(8);
- * return 1;
- * } else return 0;
- * }
- * return 0;
- * }
- */
-#endif
 } // end namespace oofem

@@ -46,11 +46,6 @@
 #include "classfactory.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
- #include <Emarkwd3d.h>
-#endif
-
 namespace oofem {
 REGISTER_Element(IntElLine1);
 
@@ -246,115 +241,5 @@ void IntElLine1::NodalAveragingRecoveryMI_computeNodalValue( FloatArray &answer,
     answer.at(2)= N.at(1)*gpValsA.at(2) + N.at(2)*gpValsB.at(2);
     answer.at(3)= N.at(1)*gpValsA.at(3) + N.at(2)*gpValsB.at(3);
 }
-
-
-#ifdef __OOFEG
-void IntElLine1 :: drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep)
-{
-    GraphicObj *go;
-    //  if (!go) { // create new one
-    WCRec p [ 2 ]; /* poin */
-    if ( !gc.testElementGraphicActivity(this) ) {
-        return;
-    }
-
-    EASValsSetLineWidth(OOFEG_RAW_GEOMETRY_WIDTH);
-    EASValsSetColor( gc.getElementColor() );
-    EASValsSetLayer(OOFEG_RAW_GEOMETRY_LAYER);
-    p [ 0 ].x = ( FPNum ) this->giveNode(1)->giveCoordinate(1);
-    p [ 0 ].y = ( FPNum ) this->giveNode(1)->giveCoordinate(2);
-    p [ 0 ].z = 0.0;
-    p [ 1 ].x = ( FPNum ) this->giveNode(2)->giveCoordinate(1);
-    p [ 1 ].y = ( FPNum ) this->giveNode(2)->giveCoordinate(2);
-    p [ 1 ].z = 0.0;
-    go = CreateLine3D(p);
-    EGWithMaskChangeAttributes(WIDTH_MASK | COLOR_MASK | LAYER_MASK, go);
-    EGAttachObject(go, ( EObjectP ) this);
-    EMAddGraphicsToModel(ESIModel(), go);
-}
-
-
-void IntElLine1 :: drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType type)
-{
-    GraphicObj *go;
-    //  if (!go) { // create new one
-    WCRec p [ 2 ]; /* poin */
-    if ( !gc.testElementGraphicActivity(this) ) {
-        return;
-    }
-
-    double defScale = gc.getDefScale();
-
-    EASValsSetLineWidth(OOFEG_DEFORMED_GEOMETRY_WIDTH);
-    EASValsSetColor( gc.getDeformedElementColor() );
-    EASValsSetLayer(OOFEG_DEFORMED_GEOMETRY_LAYER + 1);
-    p [ 0 ].x = ( FPNum ) this->giveNode(1)->giveUpdatedCoordinate(1, tStep, defScale);
-    p [ 0 ].y = ( FPNum ) this->giveNode(1)->giveUpdatedCoordinate(2, tStep, defScale);
-    p [ 0 ].z = 0.0;
-    p [ 1 ].x = ( FPNum ) this->giveNode(2)->giveUpdatedCoordinate(1, tStep, defScale);
-    p [ 1 ].y = ( FPNum ) this->giveNode(2)->giveUpdatedCoordinate(2, tStep, defScale);
-    p [ 1 ].z = 0.0;
-    go = CreateLine3D(p);
-    EGWithMaskChangeAttributes(WIDTH_MASK | COLOR_MASK | LAYER_MASK, go);
-    EMAddGraphicsToModel(ESIModel(), go);
-
-    p [ 0 ].x = ( FPNum ) this->giveNode(3)->giveUpdatedCoordinate(1, tStep, defScale);
-    p [ 0 ].y = ( FPNum ) this->giveNode(3)->giveUpdatedCoordinate(2, tStep, defScale);
-    p [ 0 ].z = 0.0;
-    p [ 1 ].x = ( FPNum ) this->giveNode(4)->giveUpdatedCoordinate(1, tStep, defScale);
-    p [ 1 ].y = ( FPNum ) this->giveNode(4)->giveUpdatedCoordinate(2, tStep, defScale);
-    p [ 1 ].z = 0.0;
-    go = CreateLine3D(p);
-    EGWithMaskChangeAttributes(WIDTH_MASK | COLOR_MASK | LAYER_MASK, go);
-    EMAddGraphicsToModel(ESIModel(), go);
-}
-
-
-void IntElLine1 :: drawScalar(oofegGraphicContext &gc, TimeStep *tStep)
-{
-    int indx, result = 0;
-    IntegrationRule *iRule = this->giveDefaultIntegrationRulePtr();
-    FloatArray gcoord(3), v1;
-    WCRec p [ 1 ];
-    GraphicObj *go;
-    double val [ 1 ];
-
-    if ( !gc.testElementGraphicActivity(this) ) {
-        return;
-    }
-
-    if ( gc.giveIntVarMode() == ISM_recovered ) {
-        return;
-    }
-
-    for ( GaussPoint *gp: *iRule ) {
-        result = 0;
-        result += giveIPValue(v1, gp, gc.giveIntVarType(), tStep);
-        if ( result != 1 ) {
-            continue;
-        }
-
-        indx = gc.giveIntVarIndx();
-
-        result += this->computeGlobalCoordinates( gcoord, gp->giveNaturalCoordinates() );
-
-        p [ 0 ].x = ( FPNum ) gcoord.at(1);
-        p [ 0 ].y = ( FPNum ) gcoord.at(2);
-        p [ 0 ].z = 0.;
-
-        val [ 0 ] = v1.at(indx);
-        gc.updateFringeTableMinMax(val, 1);
-        //if (val[0] > 0.) {
-
-        EASValsSetLayer(OOFEG_VARPLOT_PATTERN_LAYER);
-        EASValsSetMType(FILLED_CIRCLE_MARKER);
-        go = CreateMarkerWD3D(p, val [ 0 ]);
-        EGWithMaskChangeAttributes(LAYER_MASK | FILL_MASK | MTYPE_MASK, go);
-        EMAddGraphicsToModel(ESIModel(), go);
-        //}
-    }
-}
-
-#endif
 
 } // end namespace oofem

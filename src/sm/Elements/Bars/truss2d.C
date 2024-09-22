@@ -45,9 +45,7 @@
 #include "classfactory.h"
 #include "fei/fei2dlinelin.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
-#endif
+
 
 namespace oofem {
 REGISTER_Element(Truss2d);
@@ -394,81 +392,4 @@ FEInterpolation *Truss2d::giveInterpolation() const
     return & interp [ cs_mode ];
 }
 
-
-#ifdef __OOFEG
-void Truss2d::drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep)
-{
-    int c1, c2;
-    resolveCoordIndices(c1, c2);
-
-    GraphicObj *go;
-    //  if (!go) { // create new one
-    WCRec p[ 2 ];  /* point */
-    if ( !gc.testElementGraphicActivity(this) ) {
-        return;
-    }
-
-    EASValsSetLineWidth(OOFEG_RAW_GEOMETRY_WIDTH);
-    EASValsSetColor(gc.getElementColor() );
-    EASValsSetLayer(OOFEG_RAW_GEOMETRY_LAYER);
-    if ( cs_mode == 0 ) {
-        p [ 0 ].x = ( FPNum ) this->giveNode(1)->giveCoordinate(c1);
-        p [ 0 ].y = 0.;
-        p [ 0 ].z = ( FPNum ) this->giveNode(1)->giveCoordinate(c2);
-        p [ 1 ].x = ( FPNum ) this->giveNode(2)->giveCoordinate(c1);
-        p [ 1 ].y = 0.;
-        p [ 1 ].z = ( FPNum ) this->giveNode(2)->giveCoordinate(c2);
-    } else if ( cs_mode == 1 ) {
-        p [ 0 ].x = ( FPNum ) this->giveNode(1)->giveCoordinate(c1);
-        p [ 0 ].y = ( FPNum ) this->giveNode(1)->giveCoordinate(c2);
-        p [ 0 ].z = 0.;
-        p [ 1 ].x = ( FPNum ) this->giveNode(2)->giveCoordinate(c1);
-        p [ 1 ].y = ( FPNum ) this->giveNode(2)->giveCoordinate(c2);
-        p [ 1 ].z = 0.;
-    } else if ( cs_mode == 2 ) {
-        p [ 0 ].x = 0.;
-        p [ 0 ].y = ( FPNum ) this->giveNode(1)->giveCoordinate(c1);
-        p [ 0 ].z = ( FPNum ) this->giveNode(1)->giveCoordinate(c2);
-        p [ 1 ].x = 0.;
-        p [ 1 ].y = ( FPNum ) this->giveNode(2)->giveCoordinate(c1);
-        p [ 1 ].z = ( FPNum ) this->giveNode(2)->giveCoordinate(c2);
-    }
-
-    go = CreateLine3D(p);
-    EGWithMaskChangeAttributes(WIDTH_MASK | COLOR_MASK | LAYER_MASK, go);
-    EGAttachObject(go, ( EObjectP ) this);
-    EMAddGraphicsToModel(ESIModel(), go);
-}
-
-
-void Truss2d::drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType type)
-{
-    int c1, c2;
-    resolveCoordIndices(c1, c2);
-
-    GraphicObj *go;
-    double defScale = gc.getDefScale();
-    //  if (!go) { // create new one
-    WCRec p[ 2 ];  /* point */
-    if ( !gc.testElementGraphicActivity(this) ) {
-        return;
-    }
-
-    EASValsSetLineWidth(OOFEG_DEFORMED_GEOMETRY_WIDTH);
-    EASValsSetColor(gc.getDeformedElementColor() );
-    EASValsSetLayer(OOFEG_DEFORMED_GEOMETRY_LAYER);
-
-    p [ 0 ].x = ( FPNum ) this->giveNode(1)->giveUpdatedCoordinate(1, tStep, defScale);
-    p [ 0 ].y = ( FPNum ) this->giveNode(1)->giveUpdatedCoordinate(2, tStep, defScale);
-    p [ 0 ].z = ( FPNum ) this->giveNode(1)->giveUpdatedCoordinate(3, tStep, defScale);
-
-    p [ 1 ].x = ( FPNum ) this->giveNode(2)->giveUpdatedCoordinate(1, tStep, defScale);
-    p [ 1 ].y = ( FPNum ) this->giveNode(2)->giveUpdatedCoordinate(2, tStep, defScale);
-    p [ 1 ].z = ( FPNum ) this->giveNode(2)->giveUpdatedCoordinate(3, tStep, defScale);
-
-    go = CreateLine3D(p);
-    EGWithMaskChangeAttributes(WIDTH_MASK | COLOR_MASK | LAYER_MASK, go);
-    EMAddGraphicsToModel(ESIModel(), go);
-}
-#endif
 } // end namespace oofem

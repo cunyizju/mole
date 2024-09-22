@@ -81,11 +81,7 @@ public:
     void updateYourself(TimeStep *tStep) override { }
     int checkConsistency() override;
 
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType) override;
-    void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
+
 
     // definition & identification
     const char *giveInputRecordName() const override { return _IFT_LumpedMassElement_Name; }

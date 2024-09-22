@@ -83,9 +83,7 @@
 #ifdef _OPENMP
     #include <omp.h>
 #endif
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
-#endif
+
 
 namespace oofem {
 EngngModel :: EngngModel(int i, EngngModel *_master) : domainNeqs(), domainPrescribedNeqs(),
@@ -198,10 +196,10 @@ int EngngModel :: instanciateYourself(DataReader &dr, InputRecord &ir, const cha
     this->coreOutputFileName = std :: string(dataOutputFileName);
     this->dataOutputFileName = std :: string(dataOutputFileName);
 
-    if ( this->giveProblemMode() == _postProcessor ) {
-        // modify output file name to prevent output to be lost
-        this->dataOutputFileName.append(".oofeg");
-    }
+    // if ( this->giveProblemMode() == _postProcessor ) {
+    //     // modify output file name to prevent output to be lost
+    //     this->dataOutputFileName.append(".oofeg");
+    // }
 
 
     this->Instanciate_init(); // Must be done after initializeFrom
@@ -2023,41 +2021,6 @@ EngngModel :: initParallel()
     OOFEM_LOG_RELEVANT("[%d/%d] Running on %s\n", rank, numProcs, processor_name);
  #endif
 }
-
-
-#ifdef __OOFEG
-void EngngModel :: drawYourself(oofegGraphicContext &gc)
-{
-    OGC_PlotModeType plotMode = gc.giveIntVarPlotMode();
-
-    if ( ( plotMode == OGC_nodeAnnotation ) || ( plotMode == OGC_nodeGeometry ) || ( plotMode == OGC_essentialBC ) ||
-        ( plotMode == OGC_naturalBC ) || ( plotMode == OGC_nodeScalarPlot ) || ( plotMode == OGC_nodeVectorPlot ) ) {
-        this->drawNodes(gc);
-    } else {
-        this->drawElements(gc);
-    }
-}
-
-void EngngModel :: drawElements(oofegGraphicContext &gc)
-{
-    Domain *d = this->giveDomain( gc.getActiveDomain() );
-    TimeStep *tStep = this->giveCurrentStep();
-    for ( auto &elem : d->giveElements() ) {
-        elem->drawYourself(gc, tStep);
-    }
-}
-
-void EngngModel :: drawNodes(oofegGraphicContext &gc)
-{
-    Domain *d = this->giveDomain( gc.getActiveDomain() );
-    TimeStep *tStep = this->giveCurrentStep();
-    for ( auto &dman : d->giveDofManagers() ) {
-        dman->drawYourself(gc, tStep);
-    }
-}
-
-#endif
-
 
 void
 EngngModel :: initializeCommMaps(bool forceInit)

@@ -90,13 +90,6 @@ public:
     const char *giveClassName() const override { return "ProblemSequence"; }
     const char *giveInputRecordName() const { return _IFT_ProblemSequence_Name; }
 
-#ifdef __OOFEG
-    void drawYourself(oofegGraphicContext &gc) override;
-    void drawElements(oofegGraphicContext &gc) override;
-    void drawNodes(oofegGraphicContext &gc) override;
-    void showSparseMtrxStructure(int type, oofegGraphicContext &gc, TimeStep *tStep) override { }
-#endif
-
     EngngModel *giveSlaveProblem(int i) override { return NULL; }
     int giveNumberOfSlaveProblems() override { return 0; }
 

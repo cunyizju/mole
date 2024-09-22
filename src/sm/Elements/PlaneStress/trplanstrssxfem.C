@@ -27,12 +27,6 @@
 #include "classfactory.h"
 #include "input/dynamicinputrecord.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
- #include "oofeg/oofegutils.h"
- #include "xfem/patchintegrationrule.h"
-#endif
-
 
 
 #include <string>
@@ -226,75 +220,6 @@ TrPlaneStress2dXFEM :: giveGeometryType() const
     }
 }
 
-#ifdef __OOFEG
-// TODO: FIX OOFEG implementation
-void TrPlaneStress2dXFEM :: drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep)
-{
-    if ( !gc.testElementGraphicActivity(this) ) {
-        return;
-    }
-
-    XfemManager *xf = this->giveDomain()->giveXfemManager();
-    if ( !xf->isElementEnriched(this) ) {
-        TrPlaneStress2d :: drawRawGeometry(gc, tStep);
-    } else {
-        if ( integrationRulesArray.size() > 1 ) {
-#if 0
-            for ( auto &ir: integrationRulesArray ) {
-                // TODO: Implement visualization.
-                PatchIntegrationRule *iRule = dynamic_cast< PatchIntegrationRule * >( ir );
-                if ( iRule ) {
-                    iRule->givePatch()->draw(gc);
-                }
-            }
-#endif
-        } else {
-            TrPlaneStress2d :: drawRawGeometry(gc, tStep);
-        }
-    }
-}
-
-void TrPlaneStress2dXFEM :: drawScalar(oofegGraphicContext &gc, TimeStep *tStep)
-{
-    if ( !gc.testElementGraphicActivity(this) ) {
-        return;
-    }
-
-    XfemManager *xf = this->giveDomain()->giveXfemManager();
-    if ( !xf->isElementEnriched(this) ) {
-        TrPlaneStress2d :: drawScalar(gc, tStep);
-    } else {
-        if ( gc.giveIntVarMode() == ISM_local ) {
-            int indx;
-            double val;
-            FloatArray s(3), v;
-
-            indx = gc.giveIntVarIndx();
-
-            for ( auto &ir: integrationRulesArray ) {
-                PatchIntegrationRule *iRule = dynamic_cast< PatchIntegrationRule * >(ir.get());
-
- #if 0
-                val = iRule->giveMaterial();
- #else
-                val = 0.0;
-                for ( GaussPoint *gp: *iRule ) {
-                    giveIPValue(v, gp, gc.giveIntVarType(), tStep);
-                    val += v.at(indx);
-                }
-
-                val /= iRule->giveNumberOfIntegrationPoints();
- #endif
-                s.at(1) = s.at(2) = s.at(3) = val;
-                // TODO: Implement visualization.
-                //                iRule->givePatch()->drawWD(gc, s);
-            }
-        } else {
-            TrPlaneStress2d :: drawScalar(gc, tStep);
-        }
-    }
-}
-#endif
 
 void
 TrPlaneStress2dXFEM :: initializeFrom(InputRecord &ir)

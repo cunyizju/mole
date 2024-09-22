@@ -47,9 +47,7 @@
 
 #include <stdlib.h>
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
-#endif
+
 
 namespace oofem {
 REGISTER_EngngModel(StaggeredProblem);
@@ -624,29 +622,4 @@ StaggeredProblem :: setRenumberFlag()
     }
 }
 
-#ifdef __OOFEG
-void StaggeredProblem :: drawYourself(oofegGraphicContext &gc)
-{
-    int ap = gc.getActiveProblemIndx();
-    if ( ( ap > 0 ) && ( ap <= giveNumberOfSlaveProblems() ) ) {
-        this->giveSlaveProblem(ap)->drawYourself(gc);
-    }
-}
-
-void StaggeredProblem :: drawElements(oofegGraphicContext &gc)
-{
-    int ap = gc.getActiveProblemIndx();
-    if ( ( ap > 0 ) && ( ap <= giveNumberOfSlaveProblems() ) ) {
-        this->giveSlaveProblem(ap)->drawElements(gc);
-    }
-}
-
-void StaggeredProblem :: drawNodes(oofegGraphicContext &gc)
-{
-    int ap = gc.getActiveProblemIndx();
-    if ( ( ap > 0 ) && ( ap <= giveNumberOfSlaveProblems() ) ) {
-        this->giveSlaveProblem(ap)->drawNodes(gc);
-    }
-}
-#endif
 } // end namespace oofem

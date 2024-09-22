@@ -86,11 +86,6 @@ public:
 
     void NodalAveragingRecoveryMI_computeNodalValue(FloatArray &answer, int node, InternalStateType type, TimeStep *tStep) override;
 
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType) override;
-#endif
-
     // definition & identification
     const char *giveInputRecordName() const override { return _IFT_Truss3d_Name; }
     const char *giveClassName() const override { return "Truss3d"; }

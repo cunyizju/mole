@@ -79,12 +79,7 @@ public:
     double giveParentElSize() const override { return 0.5; }
     Interface *giveInterface(InterfaceType) override;
 
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType) override;
-    void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawSpecial(oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
+
 
     // definition & identification
     const char *giveInputRecordName() const override { return _IFT_TrPlaneStress2d_Name; }

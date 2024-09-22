@@ -50,9 +50,7 @@
 #include "../sm/Materials/structuralmaterial.h"
 #include "sm/CrossSections/latticecrosssection.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
-#endif
+
 
 namespace oofem {
 REGISTER_Element(LatticeLink3d);
@@ -480,86 +478,4 @@ LatticeLink3d :: computeStressVector(FloatArray &answer, const FloatArray &strai
     answer = static_cast< LatticeCrossSection * >( this->giveCrossSection() )->giveLatticeStress3d(strain, gp, tStep);
 }
 
-
-
-#ifdef __OOFEG
-
-void
-LatticeLink3d :: drawYourself(oofegGraphicContext &gc, TimeStep *tStep)
-{
-    OGC_PlotModeType mode = gc.giveIntVarPlotMode();
-
-    if ( mode == OGC_rawGeometry ) {
-        this->drawRawGeometry(gc, tStep);
-    } else if ( mode == OGC_deformedGeometry ) {
-        this->drawDeformedGeometry(gc, tStep, DisplacementVector);
-    } else if ( mode == OGC_eigenVectorGeometry ) {
-        this->drawDeformedGeometry(gc, tStep, EigenVector);
-    } else if ( mode == OGC_scalarPlot ) {
-        this->drawScalar(gc, tStep);
-    } else if ( mode == OGC_elemSpecial ) {
-        this->drawSpecial(gc, tStep);
-    } else {
-        OOFEM_ERROR("unsupported mode");
-    }
-}
-
-
-
-void LatticeLink3d :: drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep)
-{
-    GraphicObj *go;
-
-    WCRec p [ 2 ]; /* points */
-    if ( !gc.testElementGraphicActivity(this) ) {
-        return;
-    }
-
-    EASValsSetLineWidth(OOFEG_RAW_GEOMETRY_WIDTH);
-    EASValsSetColor(gc.getElementColor() );
-    EASValsSetLayer(OOFEG_RAW_GEOMETRY_LAYER);
-
-    p [ 0 ].x = ( FPNum ) this->giveNode(1)->giveCoordinate(1);
-    p [ 0 ].y = ( FPNum ) this->giveNode(1)->giveCoordinate(2);
-    p [ 0 ].z = ( FPNum ) this->giveNode(1)->giveCoordinate(3);
-    p [ 1 ].x = ( FPNum ) this->giveNode(2)->giveCoordinate(1);
-    p [ 1 ].y = ( FPNum ) this->giveNode(2)->giveCoordinate(2);
-    p [ 1 ].z = ( FPNum ) this->giveNode(2)->giveCoordinate(3);
-
-    go = CreateLine3D(p);
-    EGWithMaskChangeAttributes(WIDTH_MASK | COLOR_MASK | LAYER_MASK, go);
-    EGAttachObject(go, ( EObjectP ) this);
-    EMAddGraphicsToModel(ESIModel(), go);
-}
-
-void LatticeLink3d :: drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType type)
-{
-    GraphicObj *go;
-
-    if ( !gc.testElementGraphicActivity(this) ) {
-        return;
-    }
-
-    double defScale = gc.getDefScale();
-
-    WCRec p [ 2 ]; /* points */
-
-    EASValsSetLineWidth(OOFEG_DEFORMED_GEOMETRY_WIDTH);
-    EASValsSetColor(gc.getDeformedElementColor() );
-    EASValsSetLayer(OOFEG_DEFORMED_GEOMETRY_LAYER);
-
-    p [ 0 ].x = ( FPNum ) this->giveNode(1)->giveUpdatedCoordinate(1, tStep, defScale);
-    p [ 0 ].y = ( FPNum ) this->giveNode(1)->giveUpdatedCoordinate(2, tStep, defScale);
-    p [ 0 ].z = ( FPNum ) this->giveNode(1)->giveUpdatedCoordinate(3, tStep, defScale);
-
-    p [ 1 ].x = ( FPNum ) this->giveNode(2)->giveUpdatedCoordinate(1, tStep, defScale);
-    p [ 1 ].y = ( FPNum ) this->giveNode(2)->giveUpdatedCoordinate(2, tStep, defScale);
-    p [ 1 ].z = ( FPNum ) this->giveNode(2)->giveUpdatedCoordinate(3, tStep, defScale);
-
-    go = CreateLine3D(p);
-    EGWithMaskChangeAttributes(WIDTH_MASK | COLOR_MASK | LAYER_MASK, go);
-    EMAddGraphicsToModel(ESIModel(), go);
-}
-
-#endif
 } // end namespace oofem

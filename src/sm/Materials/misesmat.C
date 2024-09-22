@@ -640,8 +640,7 @@ MisesMat::give1dStressStiffMtrx(MatResponseMode mode,
     };
 }
 
-#ifdef __OOFEG
-#endif
+
 
 int
 MisesMat::giveIPValue(FloatArray &answer, GaussPoint *gp, InternalStateType type, TimeStep *tStep)

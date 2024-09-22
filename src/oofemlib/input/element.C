@@ -61,9 +61,7 @@
 #include "mapping/matstatmapperint.h"
 #include "input/cltypes.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
-#endif
+
 
 #include <cstdio>
 
@@ -1589,98 +1587,4 @@ Element :: predictRelativeComputationalCost()
     return ( this->giveRelativeSelfComputationalCost() * wgt );
 }
 
-
-#ifdef __OOFEG
-void
-Element :: drawYourself(oofegGraphicContext &gc, TimeStep *tStep)
-{
-    OGC_PlotModeType mode = gc.giveIntVarPlotMode();
-
-    if ( mode == OGC_rawGeometry ) {
-        this->drawRawGeometry(gc, tStep);
-    } else if ( mode == OGC_elementAnnotation ) {
-        this->drawAnnotation(gc, tStep);
-    } else if ( mode == OGC_deformedGeometry ) {
-        this->drawDeformedGeometry(gc, tStep, DisplacementVector);
-    } else if ( mode == OGC_eigenVectorGeometry ) {
-        this->drawDeformedGeometry(gc, tStep, EigenVector);
-    } else if ( mode == OGC_scalarPlot ) {
-        this->drawScalar(gc, tStep);
-    } else if ( mode == OGC_elemSpecial ) {
-        this->drawSpecial(gc, tStep);
-    } else {
-        OOFEM_ERROR("unsupported mode");
-    }
-}
-
-
-void
-Element :: drawAnnotation(oofegGraphicContext &gc, TimeStep *tStep)
-{
-    int count = 0;
-    Node *node;
-    WCRec p [ 1 ]; /* point */
-    GraphicObj *go;
-    char num [ 30 ];
-
-    p [ 0 ].x = p [ 0 ].y = p [ 0 ].z = 0.0;
-    // compute element center
-    for ( int i = 1; i <= numberOfDofMans; i++ ) {
-        if ( ( node = this->giveNode(i) ) ) {
-            p [ 0 ].x += node->giveCoordinate(1);
-            p [ 0 ].y += node->giveCoordinate(2);
-            p [ 0 ].z += node->giveCoordinate(3);
-            count++;
-        }
-    }
-
-    p [ 0 ].x /= count;
-    p [ 0 ].y /= count;
-    p [ 0 ].z /= count;
-
-    EASValsSetLayer(OOFEG_ELEMENT_ANNOTATION_LAYER);
-    EASValsSetColor( gc.getElementColor() );
-    sprintf( num, "%d(%d)", this->giveNumber(), this->giveGlobalNumber() );
-
-    go = CreateAnnText3D(p, num);
-    EGWithMaskChangeAttributes(COLOR_MASK | LAYER_MASK, go);
-    EMAddGraphicsToModel(ESIModel(), go);
-}
-
-
-int
-Element :: giveInternalStateAtNode(FloatArray &answer, InternalStateType type, InternalStateMode mode,
-                                   int node, TimeStep *tStep)
-{
-    if ( type == IST_RelMeshDensity ) {
-        ErrorEstimator *ee = this->giveDomain()->giveErrorEstimator();
-        if ( ee ) {
-            answer.resize(1);
-            answer.at(1) = this->giveDomain()->giveErrorEstimator()->giveRemeshingCrit()->
-            giveRequiredDofManDensity(this->giveNode(node)->giveNumber(), tStep, 1);
-            return 1;
-        } else {
-            answer.clear();
-            return 0;
-        }
-    } else {
-        if ( mode == ISM_recovered ) {
-            const FloatArray *nodval;
-            NodalRecoveryModel *smoother = this->giveDomain()->giveSmoother();
-            int result = smoother->giveNodalVector( nodval, this->giveNode(node)->giveNumber() );
-            if ( nodval ) {
-                answer = * nodval;
-            } else {
-                answer.clear();
-            }
-
-            return result;
-        } else {
-            return 0;
-        }
-    }
-}
-
-
-#endif
 } // end namespace oofem

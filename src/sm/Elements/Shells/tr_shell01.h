@@ -100,11 +100,7 @@ public:
     void postInitialize() override;
     void updateLocalNumbering(EntityRenumberingFunctor &f) override;
     void setCrossSection(int csIndx) override;
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType type) override;
-    void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
+
     // the membrane and plate irules are same (chacked in initializeFrom)
     int giveDefaultIntegrationRule() const override { return plate->giveDefaultIntegrationRule(); }
     IntegrationRule *giveDefaultIntegrationRulePtr() override { return plate->giveDefaultIntegrationRulePtr(); }

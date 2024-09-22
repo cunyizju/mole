@@ -48,9 +48,7 @@
 #include "input/domain.h"
 #include "input/unknownnumberingscheme.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
-#endif
+
 
 namespace oofem {
 REGISTER_EngngModel(EigenValueDynamic);

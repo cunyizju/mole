@@ -85,13 +85,6 @@ public:
 
     Element_Geometry_Type giveGeometryType() const override;
 
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    //void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType);
-    void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-    //void drawSpecial(oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
-
     void initializeFrom(InputRecord &ir) override;
     MaterialMode giveMaterialMode() override;
     void giveInputRecord(DynamicInputRecord &input) override;

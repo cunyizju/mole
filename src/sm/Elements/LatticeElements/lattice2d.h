@@ -105,15 +105,6 @@ public:
     void initializeFrom(InputRecord &ir) override;
     Element_Geometry_Type giveGeometryType() const override { return EGT_line_1; }
 
-#ifdef __OOFEG
-    void drawYourself(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext & gc, TimeStep *tStep, UnknownType) override;
-    void drawSpecial(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawRawCrossSections(oofegGraphicContext &gc, TimeStep *tStep);
-    void giveCrossSectionCoordinates(FloatArray &coords) override;
-#endif
-
 protected:
     void saveContext(DataStream &stream, ContextMode mode) override;
     void restoreContext(DataStream &stream, ContextMode mode) override;

@@ -82,11 +82,7 @@ public:
 
     void giveVTKCoordinates(int nodeNumber, FloatArray &coords);
 
-#ifdef __OOFEG
-    virtual void drawYourself(oofegGraphicContext &context, TimeStep *tStep) override;
-    virtual void drawRawGeometry(oofegGraphicContext &, TimeStep *tStep) override;
-    virtual void drawDeformedGeometry(oofegGraphicContext &, TimeStep *tStep, UnknownType) override;
-#endif
+
 
 protected:
     void computeBmatrixAt(GaussPoint *, FloatMatrix &, int = 1, int = ALL_STRAINS) override {};

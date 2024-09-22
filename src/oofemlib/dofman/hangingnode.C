@@ -46,9 +46,6 @@ REGISTER_DofManager(HangingNode);
 
 HangingNode :: HangingNode(int n, Domain *aDomain) : Node(n, aDomain)
 {
-#ifdef __OOFEG
-    initialized = false;
-#endif
 }
 
 void HangingNode :: initializeFrom(InputRecord &ir)
@@ -98,13 +95,6 @@ void HangingNode :: postInitialize()
     Element *e;
     FEInterpolation *fei;
     FloatArray lcoords, masterContribution;
-
-#ifdef __OOFEG
-    if ( initialized ) {
-        return;
-    }
-    initialized = true;
-#endif
 
     // First check element and interpolation
     if ( masterElement == -1 ) { // Then we find it by taking the closest (probably containing element)

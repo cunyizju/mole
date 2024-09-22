@@ -84,13 +84,6 @@ public:
 
     void restoreContext(DataStream &stream, ContextMode mode) override;
 
-#ifdef __OOFEG
-    void drawYourself(oofegGraphicContext &context, TimeStep *tStep) override;
-    void drawRawGeometry(oofegGraphicContext &, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &, TimeStep *tStep, UnknownType) override;
-#endif
-
-
 protected:
     bool computeGtoLRotationMatrix(FloatMatrix &) override;
     void computeStiffnessMatrix(FloatMatrix &answer, MatResponseMode rMode, TimeStep *tStep) override;

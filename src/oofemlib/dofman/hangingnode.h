@@ -68,10 +68,6 @@ protected:
     int masterElement;
     /// Region of the master element (used for automatic detection).
     int masterRegion;
-#ifdef __OOFEG
-    /// Flag whether node is fully initialized already.
-    bool initialized;
-#endif
 
 public:
     /**

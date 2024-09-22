@@ -21,7 +21,6 @@
 #define __MODULE_LIST "@MODULE_LIST@" 
 
 extern const char* PRG_VERSION;
-extern const char* OOFEG_VERSION;
 extern const char* OOFEM_COPYRIGHT;
 extern const char* PRG_HEADER;
 extern const char* PRG_HEADER_SM;

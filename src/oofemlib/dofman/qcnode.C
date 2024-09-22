@@ -53,9 +53,7 @@ REGISTER_DofManager(qcNode);
 
 qcNode :: qcNode(int n, Domain *aDomain) : Node(n, aDomain)
 {
-#ifdef __OOFEG
-    initialized = false;
-#endif
+
 }
 
 void qcNode :: initializeFrom(InputRecord &ir)
@@ -134,13 +132,6 @@ void qcNode :: postInitializeAsHangingNode()
     Element *e;
     FEInterpolation *fei;
     FloatArray lcoords, masterContribution;
-
-#ifdef __OOFEG
-    if ( initialized ) {
-        return;
-    }
-    initialized = true;
-#endif
 
     // First check element and interpolation
     if ( masterElement == -1 ) { // Then we find it by taking the closest (probably containing element)

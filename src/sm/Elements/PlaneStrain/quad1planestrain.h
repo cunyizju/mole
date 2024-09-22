@@ -83,12 +83,7 @@ public:
                                                           HuertaErrorEstimator :: AnalysisMode aMode) override;
     void HuertaErrorEstimatorI_computeNmatrixAt(GaussPoint *gp, FloatMatrix &answer) override;
 
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType) override;
-    void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawSpecial(oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
+
 
     // definition & identification
     const char *giveInputRecordName() const override { return _IFT_Quad1PlaneStrain_Name; }

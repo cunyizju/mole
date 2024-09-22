@@ -41,9 +41,7 @@
 #include "oofemcfg.h"
 #include "arrays/floatarray.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
-#endif
+
 
 namespace oofem {
 
@@ -98,9 +96,7 @@ public:
     int testPoint(double x, double y) const;
     double pointDistance(double x, double y) const;
     void clear() { vertices.clear(); }
-#ifdef __OOFEG
-    GraphicObj *draw(oofegGraphicContext &, bool filled, int layer = OOFEG_DEBUG_LAYER);
-#endif
+
 public:
     class PolygonEdgeIterator
     {

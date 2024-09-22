@@ -67,12 +67,7 @@ public:
 
     int testElementExtension(ElementExtension ext) override { return ( ( ext == Element_EdgeLoadSupport ) ? 0 : 0 ); }
 
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType) override;
-    void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawSpecial(oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
+
 
     // definition & identification
     const char *giveInputRecordName() const override { return _IFT_QTrPlaneStrain_Name; }

@@ -72,11 +72,6 @@ public:
     void initializeFrom(InputRecord &ir) override;
 
     void computeBmatrixAt(GaussPoint *gp, FloatMatrix &answer, int lowerIndx = 1, int upperIndx = ALL_STRAINS) override;
-
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType type) override;
-#endif
 };
 } // end namespace oofem
 #endif // q4axisymm_h

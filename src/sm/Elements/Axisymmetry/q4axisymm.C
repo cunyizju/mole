@@ -46,10 +46,7 @@
 #include "cs/crosssection.h"
 #include "classfactory.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
- #include "input/connectivitytable.h"
-#endif
+
 
 namespace oofem {
 REGISTER_Element(Q4Axisymm);
@@ -141,76 +138,4 @@ Q4Axisymm :: giveInterface(InterfaceType interface)
     return NULL;
 }
 
-
-#ifdef __OOFEG
-
-void Q4Axisymm :: drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep)
-{
-    WCRec p [ 4 ];
-    GraphicObj *go;
-
-    if ( !gc.testElementGraphicActivity(this) ) {
-        return;
-    }
-
-    EASValsSetLineWidth(OOFEG_RAW_GEOMETRY_WIDTH);
-    EASValsSetColor( gc.getElementColor() );
-    EASValsSetEdgeColor( gc.getElementEdgeColor() );
-    EASValsSetEdgeFlag(true);
-
-    EASValsSetLayer(OOFEG_RAW_GEOMETRY_LAYER);
-    p [ 0 ].x = ( FPNum ) this->giveNode(1)->giveCoordinate(1);
-    p [ 0 ].y = ( FPNum ) this->giveNode(1)->giveCoordinate(2);
-    p [ 0 ].z = 0.;
-    p [ 1 ].x = ( FPNum ) this->giveNode(2)->giveCoordinate(1);
-    p [ 1 ].y = ( FPNum ) this->giveNode(2)->giveCoordinate(2);
-    p [ 1 ].z = 0.;
-    p [ 2 ].x = ( FPNum ) this->giveNode(3)->giveCoordinate(1);
-    p [ 2 ].y = ( FPNum ) this->giveNode(3)->giveCoordinate(2);
-    p [ 2 ].z = 0.;
-    p [ 3 ].x = ( FPNum ) this->giveNode(4)->giveCoordinate(1);
-    p [ 3 ].y = ( FPNum ) this->giveNode(4)->giveCoordinate(2);
-    p [ 3 ].z = 0.;
-
-    go =  CreateQuad3D(p);
-    EGWithMaskChangeAttributes(WIDTH_MASK | COLOR_MASK | EDGE_COLOR_MASK | EDGE_FLAG_MASK | LAYER_MASK, go);
-    EGAttachObject(go, ( EObjectP ) this);
-    EMAddGraphicsToModel(ESIModel(), go);
-}
-
-
-void Q4Axisymm :: drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType type)
-{
-    WCRec p [ 4 ];
-    GraphicObj *go;
-    double defScale = gc.getDefScale();
-
-    if ( !gc.testElementGraphicActivity(this) ) {
-        return;
-    }
-
-    EASValsSetLineWidth(OOFEG_DEFORMED_GEOMETRY_WIDTH);
-    EASValsSetColor( gc.getDeformedElementColor() );
-    EASValsSetEdgeColor( gc.getElementEdgeColor() );
-    EASValsSetEdgeFlag(true);
-    EASValsSetLayer(OOFEG_DEFORMED_GEOMETRY_LAYER);
-    p [ 0 ].x = ( FPNum ) this->giveNode(1)->giveUpdatedCoordinate(1, tStep, defScale);
-    p [ 0 ].y = ( FPNum ) this->giveNode(1)->giveUpdatedCoordinate(2, tStep, defScale);
-    p [ 0 ].z = 0.;
-    p [ 1 ].x = ( FPNum ) this->giveNode(2)->giveUpdatedCoordinate(1, tStep, defScale);
-    p [ 1 ].y = ( FPNum ) this->giveNode(2)->giveUpdatedCoordinate(2, tStep, defScale);
-    p [ 1 ].z = 0.;
-    p [ 2 ].x = ( FPNum ) this->giveNode(3)->giveUpdatedCoordinate(1, tStep, defScale);
-    p [ 2 ].y = ( FPNum ) this->giveNode(3)->giveUpdatedCoordinate(2, tStep, defScale);
-    p [ 2 ].z = 0.;
-    p [ 3 ].x = ( FPNum ) this->giveNode(4)->giveUpdatedCoordinate(1, tStep, defScale);
-    p [ 3 ].y = ( FPNum ) this->giveNode(4)->giveUpdatedCoordinate(2, tStep, defScale);
-    p [ 3 ].z = 0.;
-
-    go =  CreateQuad3D(p);
-    EGWithMaskChangeAttributes(WIDTH_MASK | COLOR_MASK | EDGE_COLOR_MASK | EDGE_FLAG_MASK | LAYER_MASK, go);
-    EMAddGraphicsToModel(ESIModel(), go);
-}
-
-#endif
 } // end namespace oofem

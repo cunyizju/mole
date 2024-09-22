@@ -41,9 +41,7 @@
 #include "arrays/intarray.h"
 #include "cs/crosssection.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
-#endif
+
 
 namespace oofem {
 

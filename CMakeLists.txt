@@ -81,7 +81,6 @@ set (CMAKE_CXX_FLAGS_PROFILING "${CMAKE_CXX_FLAGS_PROFILING} -O2 -pg")
 ######################## Custom paths #################################
 #######################################################################
 set (SLEPC_DIR CACHE PATH "Manual SLEPc directory")
-set (X11_DIR CACHE PATH "Manual X11 directory (OOFEG)")
 set (TINYXML2_DIR CACHE PATH "Manual TinyXML-2 directory (CEMHYD only)")
 #set (PETSC_DIR CACHE PATH "Manual PETSc directory")
 set (PETSC_ARCH CACHE STRING "Manual PETSc arch name (e.g. linux-gnu-cxx-opt)")
@@ -90,8 +89,6 @@ set (VTK_DIR CACHE PATH "Manual VTK directory (For binary VTU export)")
 set (LAPACK_DIR CACHE PATH "Manual LAPACK directory")
 set (SUPERLU_MT_DIR CACHE PATH "Manual SuperLU_MT directory")
 set (SPOOLES_DIR CACHE PATH "Manual SPOOLES directory")
-set (ELIXIR_DIR CACHE PATH "Manual Elixir directory (OOFEG only)")
-set (CKIT_DIR CACHE PATH "Manual CKit directory (OOFEG only)")
 set (METIS_DIR CACHE PATH "Manual Metis directory (Load balancing)")
 set (PARMETIS_DIR CACHE PATH "Manual ParMetis directory (Load balancing)")
 #intel mkl pardiso
@@ -106,7 +103,6 @@ set (PYBIND_DIR CACHE PATH "Manual pybind11 directory")
 #######################################################################
 ######################## Options ######################################
 #######################################################################
-option (USE_OOFEG "Enable OOFEG" OFF)
 option (USE_SHARED_LIB "Build shared library" ON)
 option (USE_MFRONT "Build shared library" OFF)
 

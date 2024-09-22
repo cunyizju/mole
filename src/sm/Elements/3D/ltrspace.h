@@ -77,12 +77,7 @@ public:
     const char *giveInputRecordName() const override { return _IFT_LTRSpace_Name; }
     const char *giveClassName() const override { return "LTRSpace"; }
 
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType) override;
-    void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawSpecial(oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
+
 
     double giveRelativeSelfComputationalCost() override { return 2.15; }
 

@@ -55,9 +55,7 @@
 #include <stdlib.h>
 #include "classfactory.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
-#endif
+
 
 namespace oofem {
 REGISTER_DofManager(LatticeNeumannCouplingNode);

@@ -266,8 +266,7 @@ IsotropicDamageMaterial :: give1dStressStiffMtrx(MatResponseMode mode, GaussPoin
     //TODO - correction for tangent mode
 }
 
-#ifdef __OOFEG
-#endif
+
 
 
 int

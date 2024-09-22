@@ -64,12 +64,7 @@ public:
     FEInterpolation *giveInterpolation() const override;
     double giveParentElSize() const override { return 0.5; }
 
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType) override;
-    void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawSpecial(oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
+
 
     // definition & identification
     const char *giveInputRecordName() const override { return _IFT_QTrPlaneStress2d_Name; }

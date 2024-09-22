@@ -55,9 +55,7 @@
 #include <queue>
 #include <set>
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
-#endif
+
 
 #ifdef __PARALLEL_MODE
  #include "parallel/parallel.h"
@@ -87,14 +85,6 @@ REGISTER_Mesher(Subdivision, MPT_SUBDIVISION);
 // order as parallel nodes
 
 //#define QUICK_HACK
-
-#ifdef __OOFEG
- #define DRAW_IRREGULAR_NODES
- #define DRAW_REMOTE_ELEMENTS
-  //#define DRAW_MESH_BEFORE_BISECTION
- #define DRAW_MESH_AFTER_BISECTION
-  //#define DRAW_MESH_AFTER_EACH_BISECTION_LEVEL
-#endif
 
 
 
@@ -682,12 +672,6 @@ Subdivision :: RS_Triangle :: bisect(std :: queue< int > &subdivqueue, std :: li
         // add irregular to receiver
         this->irregular_nodes.at(leIndex) = iNum;
 
-#ifdef __OOFEG
- #ifdef DRAW_IRREGULAR_NODES
-        irregular->drawGeometry();
- #endif
-#endif
-
 #ifdef __PARALLEL_MODE
 #ifdef __VERBOSE_PARALLEL
         OOFEM_LOG_INFO("[%d] RS_Triangle::bisecting %d nodes %d %d %d, leIndex %d, new irregular %d\n", mesh->giveSubdivision()->giveRank(), this->number, nodes.at(1), nodes.at(2), nodes.at(3), leIndex, iNum);
@@ -947,12 +931,6 @@ Subdivision :: RS_Tetra :: bisect(std :: queue< int > &subdivqueue, std :: list<
             mesh->addNode(irregular);
             // add irregular to receiver
             this->irregular_nodes.at(eIndex) = iNum;
-
-#ifdef __OOFEG
- #ifdef DRAW_IRREGULAR_NODES
-            irregular->drawGeometry();
- #endif
-#endif
 
 #ifdef DEBUG_INFO
  #ifdef __PARALLEL_MODE
@@ -3254,134 +3232,6 @@ Subdivision :: RS_Tetra :: importConnectivity(ConnectivityTable *ct)
      */
 }
 
-
-#ifdef __OOFEG
-void
-Subdivision :: RS_Node :: drawGeometry()
-//
-// draws graphics representation of receiver
-//
-{
-    GraphicObj *go;
-    EPixel color;
-    BOOLEAN suc;
-    const char *colors[] = {
-        "orange", "black"
-    };
-
-    WCRec p [ 1 ]; /* point */
-    p [ 0 ].x = ( FPNum ) this->giveCoordinate(1);
-    p [ 0 ].y = ( FPNum ) this->giveCoordinate(2);
-    p [ 0 ].z = ( FPNum ) this->giveCoordinate(3);
-
-    EASValsSetMType(FILLED_CIRCLE_MARKER);
-    color = ColorGetPixelFromString(const_cast< char * >(colors [ 0 ]), & suc);
-    EASValsSetColor(color);
-    //EASValsSetColor( gc.getNodeColor() );
-    EASValsSetLayer(OOFEG_RAW_GEOMETRY_LAYER);
-    EASValsSetMSize(8);
-    go = CreateMarker3D(p);
-    EGWithMaskChangeAttributes(COLOR_MASK | LAYER_MASK | MTYPE_MASK | MSIZE_MASK, go);
-    EMAddGraphicsToModel(ESIModel(), go);
-
-    char num [ 6 ];
-    color = ColorGetPixelFromString(const_cast< char * >(colors [ 1 ]), & suc);
-    EASValsSetColor(color);
-    //EASValsSetColor( gc.getNodeColor() );
-    EASValsSetLayer(OOFEG_RAW_GEOMETRY_LAYER);
-    p [ 0 ].x = ( FPNum ) this->giveCoordinate(1);
-    p [ 0 ].y = ( FPNum ) this->giveCoordinate(2);
-    p [ 0 ].z = ( FPNum ) this->giveCoordinate(3);
-    sprintf(num, "%d", this->number);
-    go = CreateAnnText3D(p, num);
-    EGWithMaskChangeAttributes(COLOR_MASK | LAYER_MASK, go);
-    EMAddGraphicsToModel(ESIModel(), go);
-}
-
-
-void
-Subdivision :: RS_Triangle :: drawGeometry()
-{
-    WCRec p [ 3 ];
-    GraphicObj *go;
-    EPixel color;
-    BOOLEAN suc;
-    const char *colors[] = {
-        "DodgerBlue", "black"
-    };
-
-    EASValsSetLineWidth(OOFEG_RAW_GEOMETRY_WIDTH);
-    color = ColorGetPixelFromString(const_cast< char * >(colors [ 0 ]), & suc);
-    EASValsSetColor(color);
-    color = ColorGetPixelFromString(const_cast< char * >(colors [ 1 ]), & suc);
-    EASValsSetEdgeColor(color);
-    //EASValsSetColor( gc.getElementColor() );
-    //EASValsSetEdgeColor( gc.getElementEdgeColor() );
-    EASValsSetEdgeFlag(true);
-    EASValsSetLayer(OOFEG_RAW_GEOMETRY_LAYER);
-    //    EASValsSetShrink(0.8);
-    p [ 0 ].x = ( FPNum ) mesh->giveNode( nodes.at(1) )->giveCoordinate(1);
-    p [ 0 ].y = ( FPNum ) mesh->giveNode( nodes.at(1) )->giveCoordinate(2);
-    p [ 0 ].z = 0.;
-    p [ 1 ].x = ( FPNum ) mesh->giveNode( nodes.at(2) )->giveCoordinate(1);
-    p [ 1 ].y = ( FPNum ) mesh->giveNode( nodes.at(2) )->giveCoordinate(2);
-    p [ 1 ].z = 0.;
-    p [ 2 ].x = ( FPNum ) mesh->giveNode( nodes.at(3) )->giveCoordinate(1);
-    p [ 2 ].y = ( FPNum ) mesh->giveNode( nodes.at(3) )->giveCoordinate(2);
-    p [ 2 ].z = 0.;
-
-    go =  CreateTriangle3D(p);
-    //EGWithMaskChangeAttributes(WIDTH_MASK | COLOR_MASK | SHRINK_MASK | EDGE_COLOR_MASK | EDGE_FLAG_MASK | LAYER_MASK, go);
-    EGWithMaskChangeAttributes(WIDTH_MASK | COLOR_MASK | EDGE_COLOR_MASK | EDGE_FLAG_MASK | LAYER_MASK, go);
-    EGAttachObject(go, ( EObjectP ) this);
-    EMAddGraphicsToModel(ESIModel(), go);
-}
-
-
-void
-Subdivision :: RS_Tetra :: drawGeometry()
-{
-    WCRec p [ 4 ];
-    GraphicObj *go;
-    EPixel color;
-    BOOLEAN suc;
-    const char *colors[] = {
-        "DodgerBlue", "black"
-    };
-
-    EASValsSetLineWidth(OOFEG_RAW_GEOMETRY_WIDTH);
-    color = ColorGetPixelFromString(const_cast< char * >(colors [ 0 ]), & suc);
-    EASValsSetColor(color);
-    color = ColorGetPixelFromString(const_cast< char * >(colors [ 1 ]), & suc);
-    EASValsSetEdgeColor(color);
-    //EASValsSetColor( gc.getElementColor() );
-    //EASValsSetEdgeColor( gc.getElementEdgeColor() );
-    EASValsSetEdgeFlag(true);
-    EASValsSetLayer(OOFEG_RAW_GEOMETRY_LAYER);
-    EASValsSetFillStyle(FILL_SOLID);
-    //EASValsSetShrink(0.8);
-    p [ 0 ].x = ( FPNum ) mesh->giveNode( nodes.at(1) )->giveCoordinate(1);
-    p [ 0 ].y = ( FPNum ) mesh->giveNode( nodes.at(1) )->giveCoordinate(2);
-    p [ 0 ].z = ( FPNum ) mesh->giveNode( nodes.at(1) )->giveCoordinate(3);
-    p [ 1 ].x = ( FPNum ) mesh->giveNode( nodes.at(2) )->giveCoordinate(1);
-    p [ 1 ].y = ( FPNum ) mesh->giveNode( nodes.at(2) )->giveCoordinate(2);
-    p [ 1 ].z = ( FPNum ) mesh->giveNode( nodes.at(2) )->giveCoordinate(3);
-    p [ 2 ].x = ( FPNum ) mesh->giveNode( nodes.at(3) )->giveCoordinate(1);
-    p [ 2 ].y = ( FPNum ) mesh->giveNode( nodes.at(3) )->giveCoordinate(2);
-    p [ 2 ].z = ( FPNum ) mesh->giveNode( nodes.at(3) )->giveCoordinate(3);
-    p [ 3 ].x = ( FPNum ) mesh->giveNode( nodes.at(4) )->giveCoordinate(1);
-    p [ 3 ].y = ( FPNum ) mesh->giveNode( nodes.at(4) )->giveCoordinate(2);
-    p [ 3 ].z = ( FPNum ) mesh->giveNode( nodes.at(4) )->giveCoordinate(3);
-
-    go =  CreateTetra(p);
-    //EGWithMaskChangeAttributes(WIDTH_MASK | COLOR_MASK | SHRINK_MASK | EDGE_COLOR_MASK | EDGE_FLAG_MASK | LAYER_MASK | FILL_MASK, go);
-    EGWithMaskChangeAttributes(WIDTH_MASK | COLOR_MASK | EDGE_COLOR_MASK | EDGE_FLAG_MASK | LAYER_MASK | FILL_MASK, go);
-    EGAttachObject(go, ( EObjectP ) this);
-    EMAddGraphicsToModel(ESIModel(), go);
-}
-#endif
-
-
 MesherInterface :: returnCode
 Subdivision :: createMesh(TimeStep *tStep, int domainNumber, int domainSerNum, Domain **dNew)
 {
@@ -3492,23 +3342,6 @@ Subdivision :: createMesh(TimeStep *tStep, int domainNumber, int domainSerNum, D
     this->exchangeSharedEdges();
 #endif
 
-#ifdef __OOFEG
- #ifdef DRAW_MESH_BEFORE_BISECTION
-    nelems = mesh->giveNumberOfElements();
-    for ( int i = 1; i <= nelems; i++ ) {
-  #ifdef __PARALLEL_MODE
-        if ( this->mesh->giveElement(i)->giveParallelMode() != Element_local ) {
-            continue;
-        }
-
-  #endif
-        mesh->giveElement(i)->drawGeometry();
-    }
-
-    ESIEventLoop(YES, "Before bisection; Press Ctrl-p to continue");
- #endif
-#endif
-
     // bisect mesh
     this->bisectMesh();
     // smooth mesh
@@ -3519,27 +3352,6 @@ Subdivision :: createMesh(TimeStep *tStep, int domainNumber, int domainSerNum, D
             this->smoothMesh();
         }
     }
-
-#ifdef __OOFEG
- #ifdef DRAW_MESH_AFTER_BISECTION
-    nelems = mesh->giveNumberOfElements();
-    for ( int i = 1; i <= nelems; i++ ) {
-        if ( !mesh->giveElement(i)->isTerminal() ) {
-            continue;
-        }
-
-  #ifdef __PARALLEL_MODE
-        if ( this->mesh->giveElement(i)->giveParallelMode() != Element_local ) {
-            continue;
-        }
-
-  #endif
-        mesh->giveElement(i)->drawGeometry();
-    }
-
-    ESIEventLoop(YES, (char*) "After bisection; Press Ctrl-p to continue");
- #endif
-#endif
 
     Dof *dof;
     DofManager *parentNodePtr;
@@ -4291,19 +4103,6 @@ Subdivision :: bisectMesh()
  #endif
 #endif
 
-#ifdef __OOFEG
- #ifdef DRAW_MESH_AFTER_EACH_BISECTION_LEVEL
-        for ( ie = 1; ie <= nelems; ie++ ) {
-            if ( !mesh->giveElement(ie)->isTerminal() ) {
-                continue;
-            }
-
-            mesh->giveElement(ie)->drawGeometry();
-        }
-
-        ESIEventLoop( YES, const_cast< char * >("Subdivision Bisection; Press Ctrl-p to continue") );
- #endif
-#endif
     } // end bisection loop
 #ifdef __PARALLEL_MODE
     if (partitionsIrregulars) {
@@ -4992,11 +4791,6 @@ Subdivision :: unpackSharedIrregulars(Subdivision *s, ProcessCommunicator &pc)
                 irregular->setEdgeNodes(iNode, jNode);
                 mesh->addNode(irregular);
 
- #ifdef __OOFEG
-  #ifdef DRAW_IRREGULAR_NODES
-                irregular->drawGeometry();
-  #endif
- #endif
 
                 // partitions are inherited from shared edge
                 edge = mesh->giveEdge( elem->giveSharedEdge(eIndex) );
@@ -5336,32 +5130,13 @@ Subdivision :: packRemoteElements(RS_packRemoteElemsStruct *s, ProcessCommunicat
     EngngModel *emodel = d->giveEngngModel();
     // comMap refers to original (parent) elements
     const IntArray &comMap = emodel->giveProblemCommunicator(EngngModel :: PC_nonlocal)->giveProcessCommunicator(rproc)->giveToSendMap();
- #ifdef __OOFEG
-  #ifdef DRAW_REMOTE_ELEMENTS
-    oofegGraphicContext gc;
-    EPixel geocolor = gc.getElementColor();
-    gc.setElementColor( gc.getActiveCrackColor() );
-  #endif
- #endif
+
     for ( int i = 1; i <= d->giveNumberOfElements(); i++ ) {
         // remote parent skipped - parentElemMap has zero value for them
         if ( comMap.contains( s->parentElemMap->at(i) ) ) {
             remoteElements.insert(i);
- #ifdef __OOFEG
-  #ifdef DRAW_REMOTE_ELEMENTS
-            TimeStep *tStep = emodel->giveCurrentStep();
-            d->giveElement(i)->drawRawGeometry(gc, tStep);
-  #endif
- #endif
         }
     }
-
- #ifdef __OOFEG
-  #ifdef DRAW_REMOTE_ELEMENTS
-    ESIEventLoop(YES, "Remote element packing ; Press Ctrl-p to continue");
-    gc.setElementColor(geocolor);
-  #endif
- #endif
 
     // now the list of elements to became remote on given remote partition is in remoteElements set
 

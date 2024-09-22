@@ -97,14 +97,6 @@ public:
     const char *giveClassName() const override { return "LSpace"; }
     void initializeFrom(InputRecord &ir) override;
 
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType type) override;
-    void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawSpecial(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawTriad(FloatArray &, int isurf);
-#endif
-
 protected:
     int giveNumberOfIPForMassMtrxIntegration() override { return 8; }
     void computeBmatrixAt(GaussPoint *gp, FloatMatrix &answer, int li, int ui) override;

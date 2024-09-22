@@ -38,12 +38,7 @@
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "math/gausspoint.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
- #include "oofeg/oofegutils.h"
- #include "input/connectivitytable.h"
- #include "sm/Materials/rcm2.h"
-#endif
+
 
 namespace oofem {
 REGISTER_Element(LinQuad3DPlaneStress);

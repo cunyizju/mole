@@ -55,14 +55,6 @@
 #include "input/domain.h"
 #include "input/dynamicinputrecord.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
- #include "oofeg/oofegutils.h"
- #include "xfem/patchintegrationrule.h"
-#endif
-
-
-
 #include <string>
 #include <sstream>
 

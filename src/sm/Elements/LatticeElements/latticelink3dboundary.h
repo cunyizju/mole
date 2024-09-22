@@ -83,12 +83,6 @@ public:
     const IntArray giveLocation() override { return location; };
     void recalculateCoordinates(int nodeNumber, FloatArray &coords) override;
 
-#ifdef __OOFEG
-    void drawYourself(oofegGraphicContext &context, TimeStep *tStep) override;
-    void drawRawGeometry(oofegGraphicContext &, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &, TimeStep *tStep, UnknownType) override;
-#endif
-
 protected:
     bool computeGtoLRotationMatrix(FloatMatrix &) override;
     void computeStiffnessMatrix(FloatMatrix &answer, MatResponseMode rMode, TimeStep *tStep) override;

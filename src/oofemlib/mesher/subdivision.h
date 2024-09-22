@@ -134,9 +134,7 @@ public:
         void setPartitions(IntArray _p) { partitions = std :: move(_p); }
         int importConnectivity(ConnectivityTable *ct);
 #endif
-#ifdef __OOFEG
-        void  drawGeometry();
-#endif
+
     };
 
     class RS_IrregularNode : public RS_Node
@@ -234,9 +232,6 @@ public:
         /// Sets the longest edge index
         void setLeIndex(int _n) { this->leIndex = _n; }
 
-#ifdef __OOFEG
-        virtual void  drawGeometry() { }
-#endif
         int giveGlobalNumber() { return globalNumber; }
         void setGlobalNumber(int gn) { this->globalNumber = gn; }
 
@@ -265,9 +260,7 @@ public:
         void giveSideNodes(int iside, IntArray &snodes) override;
         int giveEdgeIndex(int iNode, int jNode) override;
         void importConnectivity(ConnectivityTable *ct) override;
-#ifdef __OOFEG
-        void drawGeometry() override;
-#endif
+
 #ifdef __PARALLEL_MODE
         void numberSharedEdges(int iNode, IntArray &connNodes);
         void makeSharedEdges() {
@@ -292,9 +285,7 @@ public:
         void giveSideNodes(int iside, IntArray &snodes) override;
         int giveEdgeIndex(int iNode, int jNode) override;
         void importConnectivity(ConnectivityTable *ct) override;
-#ifdef __OOFEG
-        void drawGeometry() override;
-#endif
+
 #ifdef __PARALLEL_MODE
         void numberSharedEdges(int iNode, IntArray &connNodes);
         void makeSharedEdges() {

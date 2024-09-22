@@ -314,19 +314,5 @@ StructuralEngngModel :: updateInternalState(TimeStep *tStep)
 
 
 
-#ifdef __OOFEG
-void
-StructuralEngngModel :: showSparseMtrxStructure(int type, oofegGraphicContext &gc, TimeStep *tStep)
-{
-    Domain *domain = this->giveDomain(1);
 
-    if ( type != 1 ) {
-        return;
-    }
-
-    for ( auto &elem : domain->giveElements() ) {
-        elem->showSparseMtrxStructure(TangentStiffnessMatrix, gc, tStep);
-    }
-}
-#endif
 } // end namespace oofem

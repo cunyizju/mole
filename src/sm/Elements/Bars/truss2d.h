@@ -92,11 +92,6 @@ public:
 
     int testElementExtension(ElementExtension ext) override { return ( ( ext == Element_EdgeLoadSupport ) ? 1 : 0 ); }
 
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType) override;
-#endif
-
     // definition & identification
     const char *giveInputRecordName() const override { return _IFT_Truss2d_Name; }
     const char *giveClassName() const override { return "Truss2d"; }

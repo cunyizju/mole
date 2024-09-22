@@ -35,9 +35,7 @@
 #include "input/geotoolbox.h"
 #include "math/mathfem.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
-#endif
+
 
 namespace oofem {
 //#define GRAPH_DEBUG_PRINT
@@ -144,81 +142,6 @@ Polygon :: pointDistance(double xp, double yp) const
         return dist;
     }
 }
-
-
-
-#ifdef __OOFEG
-GraphicObj *
-Polygon :: draw(oofegGraphicContext &gc, bool filled, int layer)
-{
-    GraphicObj *go;
-    LIST ggroup = make_list();
-
-    EASValsSetLayer(layer);
-    //EASValsSetColor(gc.getElementColor());
-
-    if ( filled ) {
-        int count = 0;
-        double xc = 0.0, yc = 0.0;
-        Vertex p;
-        WCRec r [ 3 ];
-        Polygon :: PolygonVertexIterator it(this);
-
-        while ( it.giveNext(p) ) {
-            xc += p.coords(0);
-            yc += p.coords(1);
-            count++;
-        }
-
-        xc /= count;
-        yc /= count;
-
-        EASValsSetFillStyle(FILL_SOLID);
-        r [ 0 ].x = xc;
-        r [ 0 ].y = yc;
-        r [ 0 ].z = 0.0;
-        Polygon :: PolygonEdgeIterator it2(this);
-        Vertex p1, p2;
-        while ( it2.giveNext(p1, p2) ) {
-            r [ 1 ].x = p1.coords(0);
-            r [ 1 ].y = p1.coords(1);
-            r [ 1 ].z = 0.0;
-            r [ 2 ].x = p2.coords(0);
-            r [ 2 ].y = p2.coords(1);
-            r [ 2 ].z = 0.0;
-            go =  CreateTriangle3D(r);
-            add_to_tail(ggroup, go);
-            //EMAddGraphicsToModel(ESIModel(), go);
-            EGWithMaskChangeAttributes(COLOR_MASK | FILL_MASK | LAYER_MASK, go);
-        }
-    } else {
-        WCRec p [ 2 ];
-        Polygon :: PolygonEdgeIterator it(this);
-        Vertex p1, p2;
-        EASValsSetFillStyle(FILL_HOLLOW);
-        while ( it.giveNext(p1, p2) ) {
-            p [ 0 ].x = p1.coords(0);
-            p [ 0 ].y = p1.coords(1);
-            p [ 0 ].z = 0.0;
-            p [ 1 ].x = p2.coords(0);
-            p [ 1 ].y = p2.coords(1);
-            p [ 1 ].z = 0.0;
-
-            go = CreateLine3D(p);
-            add_to_tail(ggroup, go);
-            //EMAddGraphicsToModel(ESIModel(), go);
-            EGWithMaskChangeAttributes(COLOR_MASK | FILL_MASK | LAYER_MASK, go);
-        }
-    }
-
-    go = CreateGgroup(ggroup);
-    EMAddGraphicsToModel(ESIModel(), go);
-    //EGWithMaskChangeAttributes(FILL_MASK | LAYER_MASK, go);
-    return go;
-}
-#endif
-
-
 
 
 Graph :: ~Graph()

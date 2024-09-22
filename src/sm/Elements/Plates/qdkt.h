@@ -142,11 +142,7 @@ public:
     void computeStrainVectorInLayer(FloatArray &answer, const FloatArray &masterGpStrain,
                                     GaussPoint *masterGp, GaussPoint *slaveGp, TimeStep *tStep) override;
 
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType type) override;
-    void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
+
 };
 } // end namespace oofem
 #endif // qdkt_h

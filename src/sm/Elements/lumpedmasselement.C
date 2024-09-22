@@ -40,10 +40,6 @@
 #include "arrays/intarray.h"
 #include "classfactory.h"
 
-#ifdef __OOFEG
- #include "oofeg/oofeggraphiccontext.h"
- #include "dofman/node.h"
-#endif
 
 namespace oofem {
 REGISTER_Element(LumpedMassElement);
@@ -100,54 +96,4 @@ LumpedMassElement :: giveDofManDofIDMask(int inode, IntArray &answer) const
     answer = dofs;
 }
 
-#ifdef __OOFEG
-void LumpedMassElement :: drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep)
-{
-    GraphicObj *go;
-    WCRec p [ 1 ]; /* point */
-    if ( !gc.testElementGraphicActivity(this) ) {
-        return;
-    }
-
-    EASValsSetColor( gc.getElementColor() );
-    EASValsSetLayer(OOFEG_RAW_GEOMETRY_LAYER);
-    EASValsSetMType(SQUARE_MARKER);
-    EASValsSetMSize(8);
-    p [ 0 ].x = ( FPNum ) this->giveNode(1)->giveCoordinate(1);
-    p [ 0 ].y = ( FPNum ) this->giveNode(1)->giveCoordinate(2);
-    p [ 0 ].z = ( FPNum ) this->giveNode(1)->giveCoordinate(3);
-    go = CreateMarker3D(p);
-    EGWithMaskChangeAttributes(COLOR_MASK | LAYER_MASK | MTYPE_MASK | MSIZE_MASK, go);
-    EGAttachObject(go, ( EObjectP ) this);
-    EMAddGraphicsToModel(ESIModel(), go);
-}
-
-
-void LumpedMassElement :: drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType type)
-{
-    GraphicObj *go;
-    double defScale = gc.getDefScale();
-    WCRec p [ 1 ]; /* point */
-    if ( !gc.testElementGraphicActivity(this) ) {
-        return;
-    }
-
-    EASValsSetColor( gc.getDeformedElementColor() );
-    EASValsSetLayer(OOFEG_DEFORMED_GEOMETRY_LAYER);
-    EASValsSetMType(SQUARE_MARKER);
-    EASValsSetMSize(8);
-    p [ 0 ].x = ( FPNum ) this->giveNode(1)->giveUpdatedCoordinate(1, tStep, defScale);
-    p [ 0 ].y = ( FPNum ) this->giveNode(1)->giveUpdatedCoordinate(2, tStep, defScale);
-    p [ 0 ].z = ( FPNum ) this->giveNode(1)->giveUpdatedCoordinate(3, tStep, defScale);
-    go = CreateMarker3D(p);
-    EGWithMaskChangeAttributes(COLOR_MASK | LAYER_MASK | MTYPE_MASK | MSIZE_MASK, go);
-    EGAttachObject(go, ( EObjectP ) this);
-    EMAddGraphicsToModel(ESIModel(), go);
-}
-
-
-void LumpedMassElement :: drawScalar(oofegGraphicContext &gc, TimeStep *tStep)
-{ }
-
-#endif
 } // end namespace oofem

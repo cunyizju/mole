@@ -106,7 +106,6 @@ class FloatMatrix;
 class FloatArray;
 class LoadBalancer;
 class LoadBalancerMonitor;
-class oofegGraphicContext;
 class ProblemCommunicator;
 class ProcessCommunicatorBuff;
 class CommunicatorBuff;
@@ -1144,17 +1143,6 @@ public:
     EngngModel *giveEngngModel() { return this; }
     virtual bool isElementActivated( int elemNum ) { return true; }
     virtual bool isElementActivated( Element *e ) { return true; }
-
-
-#ifdef __OOFEG
-    virtual void drawYourself(oofegGraphicContext &gc);
-    virtual void drawElements(oofegGraphicContext &gc);
-    virtual void drawNodes(oofegGraphicContext &gc);
-    /**
-     * Shows the sparse structure of required matrix, type == 1 stiffness.
-     */
-    virtual void showSparseMtrxStructure(int type, oofegGraphicContext &gc, TimeStep *tStep) { }
-#endif
 
 #ifdef _PYBIND_BINDINGS
     void setNumberOfDomains(const int& i) {this->ndomains=i;}

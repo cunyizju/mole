@@ -165,13 +165,6 @@ public:
     void buildReactionTable(IntArray &restrDofMans, IntArray &restrDofs, IntArray &eqn, TimeStep *tStep, int di);
 
     void updateInternalRHS(FloatArray &answer, TimeStep *tStep, Domain *d, FloatArray *eNorm) override;
-
-#ifdef __OOFEG
-    /**
-     * Shows the sparse structure of required matrix, type == 1 stiffness.
-     */
-    void showSparseMtrxStructure(int type, oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
 };
 } // end namespace oofem
 #endif // structengngmodel_h

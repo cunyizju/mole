@@ -163,11 +163,7 @@ public:
     // postproccess the shear forces on the element
     void computeShearForces(FloatArray &answer, GaussPoint *gp, TimeStep *tStep);
 
-#ifdef __OOFEG
-    void drawRawGeometry(oofegGraphicContext &gc, TimeStep *tStep) override;
-    void drawDeformedGeometry(oofegGraphicContext &gc, TimeStep *tStep, UnknownType type) override;
-    void drawScalar(oofegGraphicContext &gc, TimeStep *tStep) override;
-#endif
+
 };
 } // end namespace oofem
 #endif // dkt_h

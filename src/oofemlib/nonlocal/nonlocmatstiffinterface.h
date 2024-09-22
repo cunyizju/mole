@@ -42,7 +42,6 @@ namespace oofem {
 class SparseMtrx;
 class GaussPoint;
 class TimeStep;
-class oofegGraphicContext;
 class UnknownNumberingScheme;
 
 /**
@@ -65,13 +64,6 @@ public:
      * receiver's associated integration point.
      */
     virtual std :: vector< localIntegrationRecord > *NonlocalMaterialStiffnessInterface_giveIntegrationDomainList(GaussPoint *gp) = 0;
-
-#ifdef __OOFEG
-    /**
-     * Plots the sparse structure of stiffness contribution.
-     */
-    virtual void NonlocalMaterialStiffnessInterface_showSparseMtrxStructure(GaussPoint *gp, oofegGraphicContext &gc, TimeStep *) { }
-#endif
 };
 } // end namespace oofem
 #endif // nonlocmatstiffinterface_h

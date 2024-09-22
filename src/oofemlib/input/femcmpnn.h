@@ -55,7 +55,6 @@ class Interface;
 class TimeStep;
 class InputRecord;
 class DynamicInputRecord;
-class oofegGraphicContext;
 class EntityRenumberingFunctor;
 class FloatArray;
 class IntArray;

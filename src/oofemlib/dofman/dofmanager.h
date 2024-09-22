@@ -506,9 +506,6 @@ public:
      */
     bool hasDofID(DofIDItem id) const;
 
-#ifdef __OOFEG
-    virtual void drawYourself(oofegGraphicContext &gc, TimeStep *tStep) { }
-#endif
 
     /// @return Receivers globally unique number.
     int giveGlobalNumber() const { return globalNumber; }
