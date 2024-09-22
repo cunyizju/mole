@@ -38,7 +38,7 @@
 #include "input/dynamicinputrecord.h"
 #include "input/dynamicdatareader.h"
 #include "xfem/enrichmentfunction.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include <memory>
 

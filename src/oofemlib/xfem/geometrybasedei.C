@@ -36,7 +36,7 @@
 #include "xfemmanager.h"
 
 #include "mesher/spatiallocalizer.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/element.h"
 #include "dofman/node.h"
 #include "math/mathfem.h"

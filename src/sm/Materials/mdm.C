@@ -41,7 +41,7 @@
 #include "mapping/mmaclosestiptransfer.h"
 #include "nonlocal/nonlocalmaterialext.h"
 #include "utility/contextioerr.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 #include "export/datastream.h"
 

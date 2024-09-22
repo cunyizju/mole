@@ -40,7 +40,7 @@
 #include "sm/Materials/isolinearelasticmaterial.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include <cstring>
 

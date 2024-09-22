@@ -34,7 +34,7 @@
 
 #include "sm/Elements/Shells/solidshell.h"
 #include <Materials/structuralms.h>
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "fei/fei3dhexalin.h"
 #include "math/gausspoint.h"
 #include "math/gaussintegrationrule.h"

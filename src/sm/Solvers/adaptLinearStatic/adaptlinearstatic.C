@@ -37,7 +37,7 @@
 #include "mesher/mesherinterface.h"
 #include "error/errorestimator.h"
 #include "input/domain.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "utility/contextioerr.h"
 #include "export/outputmanager.h"
 

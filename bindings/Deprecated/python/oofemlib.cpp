@@ -93,7 +93,7 @@ namespace bp = boost::python;
 #include "sm/Materials/structuralms.h"
 #include "export/exportmodulemanager.h"
 #include "export/outputmanager.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include "sm/Materials/structmatsettable.h"
 

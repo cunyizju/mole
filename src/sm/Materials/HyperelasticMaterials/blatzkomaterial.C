@@ -33,7 +33,7 @@
  */
 
 #include "blatzkomaterial.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 
 namespace oofem {

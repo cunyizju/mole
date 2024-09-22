@@ -47,7 +47,7 @@
 #include "../sm/Elements/LatticeElements/latticestructuralelement.h"
 #include "utility/contextioerr.h"
 #include "export/datastream.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "sm/CrossSections/latticecrosssection.h"
 
 

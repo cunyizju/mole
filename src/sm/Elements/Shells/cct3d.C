@@ -40,7 +40,7 @@
 #include "math/mathfem.h"
 #include "math/gaussintegrationrule.h"
 #include "math/gausspoint.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include <cstdlib>
 

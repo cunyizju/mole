@@ -34,7 +34,7 @@
 
 #include "ltf/localgaussianrandomfunction.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include <ctime>
 

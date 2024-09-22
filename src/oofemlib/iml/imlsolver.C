@@ -46,7 +46,7 @@
 #include "utility/verbose.h"
 #include "ilucomprowprecond.h"
 #include "solvers/linsystsolvertype.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #ifdef TIME_REPORT
  #include "utility/timer.h"

@@ -39,7 +39,7 @@
 #include "math/integrationrule.h"
 #include "solvers/timestep.h"
 #include "engng/engngm.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_ExportModule(GPExportModule)

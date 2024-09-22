@@ -33,7 +33,7 @@
  */
 
 #include "math/ldltfact.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_SparseLinSolver(LDLTFactorization, ST_Direct)

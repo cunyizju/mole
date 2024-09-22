@@ -40,7 +40,7 @@
 #include "math/floatarray.h"
 #include "math/floatarrayf.h"
 #include "math/floatmatrixf.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"

@@ -51,7 +51,7 @@
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 #include "input/domain.h"
 #include "engng/engngm.h"

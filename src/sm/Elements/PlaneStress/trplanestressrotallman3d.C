@@ -39,7 +39,7 @@
 #include "dofman/node.h"
 #include "bc/load.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "math/gaussintegrationrule.h"
 #include "math/gausspoint.h"
 #include "fei/fei2dtrlin.h"

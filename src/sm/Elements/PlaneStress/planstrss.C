@@ -45,7 +45,7 @@
 #include "input/domain.h"
 #include "math/mathfem.h"
 #include "strainvector.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 
 

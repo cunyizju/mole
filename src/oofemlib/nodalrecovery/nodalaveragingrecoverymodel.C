@@ -37,7 +37,7 @@
 #include "input/element.h"
 #include "dofman/dofmanager.h"
 #include "engng/engngm.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #ifdef __PARALLEL_MODE
  #include "parallel/problemcomm.h"

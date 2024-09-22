@@ -45,7 +45,7 @@
 #include "cs/crosssection.h"
 #include "math/mathfem.h"
 #include "iga/iga.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Element(BsplinePlaneStressElement);

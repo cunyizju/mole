@@ -34,7 +34,7 @@
 
 #include "sm/Elements/PlaneStress/basicelement.h"
 #include "fei/fei2dtrlin.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Element(BasicElement);

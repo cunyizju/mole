@@ -38,7 +38,7 @@
 #include "fields/field.h"
 #include "math/floatarray.h"
 #include "math/intarray.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 #include "dofman/dofmanager.h"
 #include "error/error.h"

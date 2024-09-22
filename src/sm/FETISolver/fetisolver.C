@@ -41,7 +41,7 @@
 #include "engng/engngm.h"
 #include "input/domain.h"
 #include "input/unknownnumberingscheme.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_SparseLinSolver(FETISolver, ST_Feti);

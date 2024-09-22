@@ -34,7 +34,7 @@
 
 #include "foreigntempfieldload.h"
 #include "solvers/timestep.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "fields/field.h"
 
 namespace oofem {

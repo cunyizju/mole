@@ -39,7 +39,7 @@
 #include "cs/crosssection.h"
 #include "solvers/timestep.h"
 #include "utility/util.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "dofman/dofmanager.h"
 #include "fei/feinterpol.h"
 #include "input/problemmode.h"

@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/PlaneStress/planstrssphf.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Element(PlaneStressPhF2d);

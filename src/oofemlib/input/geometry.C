@@ -36,7 +36,7 @@
 #include "input/geometry.h"
 #include "input/element.h"
 #include "dofman/dofmanager.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/inputrecord.h"
 #include "input/dynamicinputrecord.h"
 #include "xfem/xfemtolerances.h"

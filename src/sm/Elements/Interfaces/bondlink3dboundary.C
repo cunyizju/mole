@@ -46,7 +46,7 @@
 #include "../sm/Elements/structuralelement.h"
 #include "utility/contextioerr.h"
 #include "export/datastream.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "../sm/Materials/structuralmaterial.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 

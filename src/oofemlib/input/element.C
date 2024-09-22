@@ -43,7 +43,7 @@
 #include "utility/verbose.h"
 #include "input/entityrenumberingscheme.h"
 #include "error/error.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "export/datastream.h"
 #include "material/materialmapperinterface.h"
 #include "utility/contextioerr.h"

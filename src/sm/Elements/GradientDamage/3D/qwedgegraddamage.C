@@ -46,7 +46,7 @@
 #include "input/domain.h"
 #include "input/cltypes.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include <cstdio>
 

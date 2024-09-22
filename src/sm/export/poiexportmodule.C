@@ -43,7 +43,7 @@
 #include "mesher/spatiallocalizer.h"
 #include "input/internalstatevaluetype.h"
 #include "input/element.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include <string>
 #include <fstream>

@@ -39,7 +39,7 @@
 #include "math/gausspoint.h"
 #include "math/floatarrayf.h"
 #include "math/floatmatrixf.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 
 #ifdef _WIN32 //_MSC_VER and __MINGW32__ included

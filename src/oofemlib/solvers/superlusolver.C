@@ -36,7 +36,7 @@
 #include "math/floatarray.h"
 #include "input/compcol.h"
 #include "solvers/linsystsolvertype.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include "SUPERLU_MT/include/slu_mt_ddefs.h"
 #include "solvers/superlusolver.h"

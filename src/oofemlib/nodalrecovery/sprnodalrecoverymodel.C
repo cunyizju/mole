@@ -40,7 +40,7 @@
 #include "math/integrationrule.h"
 #include "math/gausspoint.h"
 #include "engng/engngm.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #ifdef __PARALLEL_MODE
  #include "parallel/processcomm.h"

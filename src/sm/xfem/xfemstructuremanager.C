@@ -33,7 +33,7 @@
  */
 
 #include "xfemstructuremanager.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 #include "input/dynamicdatareader.h"
 #include "input/datareader.h"

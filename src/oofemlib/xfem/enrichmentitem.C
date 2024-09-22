@@ -39,7 +39,7 @@
 #include "enrichmentfunction.h"
 #include "input/cltypes.h"
 #include "input/connectivitytable.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "material/fracturemanager.h"
 #include "math/mathfem.h"
 #include "fei/feinterpol.h"

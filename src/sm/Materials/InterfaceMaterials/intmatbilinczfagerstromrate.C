@@ -39,7 +39,7 @@
 #include "math/mathfem.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "sm/Elements/Shells/shell7base.h"
 #include "intmatbilinczfagerstromrate.h"
 //#include "vld.h"

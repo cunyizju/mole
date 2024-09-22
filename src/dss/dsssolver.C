@@ -33,7 +33,7 @@
  */
 
 #include "dsssolver.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "dssmatrix.h"
 #include "utility/timer.h"
 

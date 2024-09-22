@@ -34,7 +34,7 @@
 
 #include "usrdeftempfield.h"
 #include "solvers/timestep.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include <sstream>
 

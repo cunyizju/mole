@@ -81,7 +81,7 @@ namespace py = pybind11;
 #include "dofs/dofiditem.h"
 #include "utility/timer.h"
 
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include "input/chartype.h"
 #include "input/elementgeometrytype.h"
@@ -93,7 +93,7 @@ namespace py = pybind11;
 #include "input/inputrecord.h"
 #include "input/dynamicinputrecord.h"
 
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "export/exportregion.h"
 #include "input/unknownnumberingscheme.h"
 #include "export/vtkxmlexportmodule.h"

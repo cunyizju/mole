@@ -41,7 +41,7 @@
 #include "dofman/node.h"
 #include "math/mathfem.h"
 #include "bc/boundaryload.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Element(HTSelement);

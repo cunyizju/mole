@@ -42,7 +42,7 @@
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
 #include "xfem/xfemmanager.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/element.h"
 
 

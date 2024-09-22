@@ -34,7 +34,7 @@
 
 #include "ltf/peakfunction.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Function(PeakFunction);

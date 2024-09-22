@@ -40,7 +40,7 @@
 #include "math/floatarray.h"
 #include "math/intarray.h"
 #include "cs/crosssection.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Element(QSpaceGradDamage);

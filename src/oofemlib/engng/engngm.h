@@ -56,7 +56,8 @@
 #include "solvers/metastep.h"
 #include "parallel/parallelcontext.h"
 #include "export/exportmodulemanager.h"
-#include "initial/initmodulemanager.h"
+#include "input/initmodulemanager.h"
+
 #include "monitor/monitormanager.h"
 
 #ifdef __PARALLEL_MODE

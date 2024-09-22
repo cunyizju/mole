@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 #include "crack.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
 #include "sm/export/gnuplotexportmodule.h"
 #include "math/gausspoint.h"

@@ -33,7 +33,7 @@
  */
 
 #include "bc/prescribedmean.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "dofs/masterdof.h"
 #include "input/domain.h"
 #include "fei/feinterpol.h"

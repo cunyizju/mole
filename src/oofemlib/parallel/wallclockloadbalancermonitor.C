@@ -38,7 +38,7 @@
 #include "solvers/timestep.h"
 #include "input/element.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include <mpi.h>
 

@@ -38,7 +38,7 @@
 #include "math/floatarray.h"
 #include "utility/verbose.h"
 #include "input/domain.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #define TIME_REPORT
 

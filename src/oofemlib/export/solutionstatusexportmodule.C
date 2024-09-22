@@ -35,7 +35,7 @@
 #include "export/solutionstatusexportmodule.h"
 #include "engng/engngm.h"
 #include "solvers/timestep.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/oofemtxtinputrecord.h"
 
 #include <sstream>      // std::istringstream

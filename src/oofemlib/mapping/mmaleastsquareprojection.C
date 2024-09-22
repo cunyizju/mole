@@ -41,7 +41,7 @@
 #include "math/integrationrule.h"
 #include "input/connectivitytable.h"
 #include "input/dynamicinputrecord.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_MaterialMappingAlgorithm(MMALeastSquareProjection, MMA_LeastSquareProjection);

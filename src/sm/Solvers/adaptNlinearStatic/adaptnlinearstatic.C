@@ -49,7 +49,7 @@
 #include "dofs/dof.h"
 #include "input/eleminterpunknownmapper.h"
 #include "error/errorestimator.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
 #include "error/oofem_terminate.h"

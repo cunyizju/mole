@@ -40,7 +40,7 @@
 #include "math/floatmatrix.h"
 #include "input/unknownnumberingscheme.h"
 #include "math/sparsemtrx.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #ifdef _OPENMP
 #include <omp.h>

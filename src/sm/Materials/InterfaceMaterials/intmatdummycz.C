@@ -33,7 +33,7 @@
  */
 
 #include "intmatdummycz.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "math/gausspoint.h"
 
 namespace oofem {

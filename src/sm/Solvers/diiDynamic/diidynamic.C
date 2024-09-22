@@ -43,7 +43,7 @@
 #include "export/datastream.h"
 #include "utility/verbose.h"
 #include "input/unknownnumberingscheme.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_EngngModel(DIIDynamic);

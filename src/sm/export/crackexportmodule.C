@@ -39,7 +39,7 @@
 #include "math/integrationrule.h"
 #include "solvers/timestep.h"
 #include "engng/engngm.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "cs/crosssection.h"
 #include "math/floatarray.h"

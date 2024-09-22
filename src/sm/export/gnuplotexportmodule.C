@@ -40,7 +40,7 @@
  */
 
 #include "gnuplotexportmodule.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/valuemodetype.h"
 #include "sm/EngineeringModels/structengngmodel.h"
 #include "export/outputmanager.h"

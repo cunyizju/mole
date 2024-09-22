@@ -42,7 +42,7 @@
 #include "math/floatmatrixf.h"
 #include "math/gausspoint.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 
 namespace oofem {

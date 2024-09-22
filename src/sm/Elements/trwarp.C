@@ -41,7 +41,7 @@
 #include "math/intarray.h"
 #include "math/mathfem.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "bc/load.h"
 #include "Solvers/freeWarping/freewarping.h"
 #include "engng/engngm.h"

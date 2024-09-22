@@ -34,7 +34,7 @@
 
 #include "ltf/heavisidetimefunction.h"
 #include "input/dynamicinputrecord.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Function(HeavisideTimeFunction);

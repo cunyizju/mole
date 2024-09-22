@@ -36,7 +36,7 @@
 #include "sm/Materials/isolinearelasticmaterial.h"
 #include "math/floatmatrix.h"
 #include "math/floatarray.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Material(RankinePlasticMaterial);

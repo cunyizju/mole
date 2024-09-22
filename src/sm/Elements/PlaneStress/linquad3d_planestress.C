@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/PlaneStress/linquad3d_planestress.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "sm/Materials/structuralms.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "math/gausspoint.h"

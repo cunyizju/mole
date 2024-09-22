@@ -35,7 +35,7 @@
 #include "sm/Contact/cdefnode2node.h"
 #include "sm/Contact/celnode2node.h"
 #include "input/domain.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_ContactDefinition(ContactDefinitionNode2Node)

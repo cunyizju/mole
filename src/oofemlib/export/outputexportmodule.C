@@ -41,7 +41,7 @@
 #include "dofman/node.h"
 #include "input/element.h"
 #include "solvers/timestep.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_ExportModule(OutputExportModule)

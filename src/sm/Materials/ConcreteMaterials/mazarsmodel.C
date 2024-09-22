@@ -40,7 +40,7 @@
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 #define _MAZARS_MODEL_ITER_TOL 1.e-15

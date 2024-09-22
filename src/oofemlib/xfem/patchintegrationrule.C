@@ -38,7 +38,7 @@
 #include "math/integrationrule.h"
 #include "math/gaussintegrationrule.h"
 #include "input/geometry.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "utility/contextioerr.h"
 #include "export/datastream.h"
 #include "math/gausspoint.h"

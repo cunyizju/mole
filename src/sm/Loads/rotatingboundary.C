@@ -37,7 +37,7 @@
 #include "dofs/dof.h"
 #include "math/mathfem.h"
 #include "ltf/function.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 
 namespace oofem {

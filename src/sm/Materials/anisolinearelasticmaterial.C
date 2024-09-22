@@ -36,7 +36,7 @@
 #include "anisolinearelasticmaterial.h"
 #include "structuralms.h"
 #include "math/floatmatrix.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 
 namespace oofem {

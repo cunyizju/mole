@@ -35,7 +35,7 @@
 #include "ltf/calculatorfunction.h"
 #include "utility/parser.h"
 #include "input/dynamicinputrecord.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "error/error.h"
 
 #include <sstream>

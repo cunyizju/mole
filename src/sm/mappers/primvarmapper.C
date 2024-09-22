@@ -43,7 +43,7 @@
 #include "mesher/spatiallocalizer.h"
 #include "math/sparsemtrx.h"
 #include "solvers/sparselinsystemnm.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "solvers/timestep.h"
 #include "bc/activebc.h"
 #include "bc/prescribedgradientbcweak.h"

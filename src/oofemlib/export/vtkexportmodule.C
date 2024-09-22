@@ -57,7 +57,7 @@
 #include "input/cltypes.h"
 #include "input/element.h"
 #include "material/material.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "cs/crosssection.h"
 #include "dofs/dof.h"
 

@@ -37,7 +37,7 @@
 #include "engng/engngm.h"
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/domain.h"
 
 #include "sm/EngineeringModels/structengngmodel.h" // JB

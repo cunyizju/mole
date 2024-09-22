@@ -44,7 +44,7 @@
 #include "math/gausspoint.h"
 #include "fei/fei3dtrquad.h"
 #include "bc/boundaryload.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "xfem/patchintegrationrule.h"
 #include "xfem/XFEMDebugTools.h"
 #include <string>

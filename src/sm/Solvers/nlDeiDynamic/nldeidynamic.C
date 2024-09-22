@@ -43,7 +43,7 @@
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
 #include "math/sparsemtrx.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/unknownnumberingscheme.h"
 
 #ifdef __PARALLEL_MODE

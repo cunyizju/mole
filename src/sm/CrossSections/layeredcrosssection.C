@@ -44,7 +44,7 @@
 #include "utility/contextioerr.h"
 #include "math/gaussintegrationrule.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "math/lobattoir.h"
 #include "input/dynamicinputrecord.h"
 #include "input/cltypes.h"

@@ -44,7 +44,7 @@
 #include "dofman/node.h"
 #include "dofs/activedof.h"
 #include "dofs/masterdof.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "math/sparsemtrxtype.h"
 #include "math/sparsemtrx.h"
 #include "solvers/sparselinsystemnm.h"

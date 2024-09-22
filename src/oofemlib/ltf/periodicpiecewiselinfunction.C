@@ -34,7 +34,7 @@
 
 #include "ltf/periodicpiecewiselinfunction.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 #include "input/domain.h"
 

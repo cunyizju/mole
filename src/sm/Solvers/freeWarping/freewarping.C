@@ -46,7 +46,7 @@
 #include "sm/Elements/structuralelementevaluator.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "export/outputmanager.h"
 #include "math/mathfem.h"
 

@@ -37,7 +37,7 @@
 #include "utility/contextioerr.h"
 #include "math/gaussintegrationrule.h"
 #include "math/gausspoint.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "dofman/node.h"
 #include "sm/Materials/structuralms.h"
 #include "bc/load.h"

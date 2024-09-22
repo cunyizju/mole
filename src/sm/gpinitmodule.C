@@ -41,7 +41,7 @@
 #include "math/floatarray.h"
 #include "input/domain.h"
 #include "engng/engngm.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "math/gausspoint.h"
 #include "cs/crosssection.h"
 #include <cassert>

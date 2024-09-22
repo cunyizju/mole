@@ -43,7 +43,7 @@
 #include "dofs/simpleslavedof.h"
 #include "nonlocal/nonlocalbarrier.h"
 #include "initial/initialcondition.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "export/outputmanager.h"
 #include "cs/crosssection.h"
 #include "ltf/function.h"

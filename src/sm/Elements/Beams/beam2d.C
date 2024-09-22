@@ -48,7 +48,7 @@
 #include "bc/bodyload.h"
 #include "bc/boundaryload.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "dofman/elementinternaldofman.h"
 #include "dofs/masterdof.h"
 

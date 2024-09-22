@@ -39,7 +39,7 @@
 #include "math/gausspoint.h"
 #include "math/mathfem.h"
 #include "error/errorestimatortype.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_ErrorEstimator(ScalarErrorIndicator, EET_SEI);

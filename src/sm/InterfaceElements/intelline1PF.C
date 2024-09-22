@@ -44,7 +44,7 @@
 #include "math/intarray.h"
 #include "math/mathfem.h"
 #include "fei/fei2dlinelin.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 
 namespace oofem {

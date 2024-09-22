@@ -44,7 +44,7 @@
 #include "error/error.h"
 #include "math/sparsemtrxtype.h"
 #include "bc/activebc.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #ifdef TIME_REPORT
  #include "utility/timer.h"

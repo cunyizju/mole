@@ -42,7 +42,7 @@
 #include "math/floatmatrix.h"
 #include "utility/verbose.h"
 #include "math/floatarray.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "export/datastream.h"
 #include "export/exportmodulemanager.h"
 #include "dofman/dofmanager.h"

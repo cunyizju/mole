@@ -19,7 +19,7 @@
 #include "math/mathfem.h"
 #include "fei/fei2dtrlin.h"
 #include "fei/fei2dtrquad.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "utility/set.h"
 #include "utility/util.h"
 #include "input/inputrecord.h"
@@ -29,7 +29,7 @@
 #include "bc/bodyload.h"
 #include "bc/boundarycondition.h"
 //#include "stokesflow.h"
-//#include "classfactory.h"
+//#include "engng/classfactory.h"
 
 #include <vector>
 

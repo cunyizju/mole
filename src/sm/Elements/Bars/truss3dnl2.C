@@ -44,7 +44,7 @@
 #include "math/floatarray.h"
 #include "math/intarray.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 
 namespace oofem {

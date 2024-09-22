@@ -35,7 +35,7 @@
 #include "export/exportmodulemanager.h"
 #include "input/modulemanager.h"
 #include "export/exportmodule.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 ExportModuleManager :: ExportModuleManager(EngngModel *emodel) : ModuleManager< ExportModule >(emodel)

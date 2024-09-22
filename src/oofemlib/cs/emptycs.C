@@ -33,7 +33,7 @@
  */
 
 #include "cs/emptycs.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_CrossSection(EmptyCS);

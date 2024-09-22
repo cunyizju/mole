@@ -36,7 +36,7 @@
 #include "input/dynamicinputrecord.h"
 #include "material/material.h"
 #include "math/gaussintegrationrule.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 
 namespace oofem {

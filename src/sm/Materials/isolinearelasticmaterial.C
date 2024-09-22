@@ -38,7 +38,7 @@
 #include "sm/Materials/structuralms.h"
 #include "math/floatmatrix.h"
 #include "math/gausspoint.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 #include "utility/contextioerr.h"
 

@@ -42,7 +42,7 @@
 #include "math/mathfem.h"
 #include "fei/feinterpol.h"
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "math/floatmatrixf.h"
 
 namespace oofem {

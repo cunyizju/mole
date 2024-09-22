@@ -40,7 +40,7 @@
 #include "input/connectivitytable.h"
 #include "math/mathfem.h"
 #include "mesher/remeshingcrit.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include <list>
 

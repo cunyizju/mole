@@ -47,7 +47,7 @@
 #include "bc/weakperiodicbc.h"
 #include "math/solutionbasedshapefunction.h"
 #include "solvers/timestep.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "utility/set.h"
 #include "input/unknownnumberingscheme.h"
 #include "bc/prescribedmean.h"

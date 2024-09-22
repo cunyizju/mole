@@ -33,7 +33,7 @@
  */
 
 #include "bc/nodalload.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "export/datastream.h"
 #include "input/dynamicinputrecord.h"
 #include "utility/contextioerr.h"

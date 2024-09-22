@@ -44,7 +44,7 @@
 #include "math/mathfem.h"
 #include "fei/fei2dlinelin.h"
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Element(InterfaceElem2dLin);

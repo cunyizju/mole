@@ -33,7 +33,7 @@
  */
 
 #include "particle.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "error/error.h"
 #include "math/floatmatrix.h"
 

@@ -37,7 +37,7 @@
 #include "ltf/function.h"
 #include "math/floatarray.h"
 #include "solvers/timestep.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_BoundaryCondition(ConstantPressureLoad);

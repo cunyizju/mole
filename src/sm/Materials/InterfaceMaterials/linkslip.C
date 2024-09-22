@@ -47,7 +47,7 @@
 #include "export/datastream.h"
 #include "engng/staggeredproblem.h"
 #include "utility/contextioerr.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 // #ifdef __TM_MODULE
 //  #include "latticetransportelement.h"
 //  #include "latticetransmat.h"

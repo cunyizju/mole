@@ -35,7 +35,7 @@
 #include "concrete3.h"
 #include "math/gausspoint.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Material(Concrete3);

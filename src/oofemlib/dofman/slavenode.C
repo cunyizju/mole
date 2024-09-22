@@ -37,7 +37,7 @@
 #include "math/floatarray.h"
 #include "math/intarray.h"
 #include "input/entityrenumberingscheme.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_DofManager(SlaveNode);

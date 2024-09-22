@@ -38,7 +38,7 @@
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "utility/contextioerr.h"
 #include "cs/crosssection.h"
 

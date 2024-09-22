@@ -40,7 +40,7 @@
 #include "math/floatmatrix.h"
 #include "math/sparsemtrx.h"
 #include "dofs/masterdof.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_ContactDefinition(ContactDefinition)

@@ -49,7 +49,7 @@
 #include "fei/feinterpol.h"
 #include "input/connectivitytable.h"
 #include "error/errorestimatortype.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "engng/engngm.h"
 #include "parallel/parallelcontext.h"
 

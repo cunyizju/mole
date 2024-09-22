@@ -43,7 +43,7 @@
 #include "fei/feinterpol.h"
 #include "error/error.h"
 #include "engng/engngm.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include <sstream>
 #include <set>

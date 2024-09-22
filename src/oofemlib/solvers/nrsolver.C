@@ -43,7 +43,7 @@
 #include "dofs/dof.h"
 #include "ltf/function.h"
 #include "solvers/linesearch.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "export/exportmodulemanager.h"
 #include "engng/engngm.h"
 #include "parallel/parallelcontext.h"

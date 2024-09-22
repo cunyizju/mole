@@ -44,7 +44,7 @@
 #include "math/mathfem.h"
 #include "fei/fei2dlinequad.h"
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Element(InterfaceElem2dQuad);

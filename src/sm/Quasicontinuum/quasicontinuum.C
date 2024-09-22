@@ -38,7 +38,7 @@
 #include "input/element.h"
 #include "math/mathfem.h"
 
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 #include "sm/CrossSections/simplecrosssection.h"
 #include "sm/Materials/isolinearelasticmaterial.h"

@@ -42,7 +42,7 @@
 #include "parallel/parallel.h"
 #include "parallel/processcomm.h"
 #include "parallel/communicator.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include <set>
 #include <stdlib.h>

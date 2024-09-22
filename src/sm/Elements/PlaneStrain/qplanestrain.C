@@ -34,7 +34,7 @@
 
 #include "sm/Elements/PlaneStrain/qplanestrain.h"
 #include "fei/fei2dquadquad.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Element(QPlaneStrain);

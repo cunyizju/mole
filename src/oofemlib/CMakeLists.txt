@@ -1,15 +1,12 @@
-
-set (core_unsorted
-    classfactory.C
-    )
-
-set (core_engng
+set (engng
+    engng/classfactory.C
     engng/engngm.C
     engng/staggeredproblem.C
     engng/dummyengngm.C
     )
 
 set(input
+    input/initmodulemanager.C
     input/inputrecord.C 
     input/oofemtxtinputrecord.C
     input/dynamicinputrecord.C
@@ -34,29 +31,13 @@ set(input
     input/primaryunknownmapper.C 
 )
 
-set (core_dofs
+set (dofman
     dofs/dof.C
     dofs/masterdof.C
     dofs/simpleslavedof.C
     dofs/slavedof.C
     dofs/activedof.C
     dofs/dofmanvalfield.C
-    )
-
-set (core_nm
-    solvers/sparselinsystemnm.C
-    solvers/sparsenonlinsystemnm.C
-    solvers/nrsolver.C
-    solvers/dynamicrelaxationsolver.C
-    solvers/linesearch.C
-    solvers/calmls.C
-    solvers/staggeredsolver.C
-    parallel/parallelcontext.C
-    solvers/timestep.C
-    solvers/metastep.C 
-    )
-
-set (core_dofman
     dofman/dofmanager.C
     dofman/node.C
     dofman/slavenode.C
@@ -70,22 +51,65 @@ set (core_dofman
     dofman/latticeneumanncouplingnode.C
     )
 
-set (core_material
+set (solvers
+    solvers/sparselinsystemnm.C
+    solvers/sparsenonlinsystemnm.C
+    solvers/nrsolver.C
+    solvers/dynamicrelaxationsolver.C
+    solvers/linesearch.C
+    solvers/calmls.C
+    solvers/staggeredsolver.C
+    parallel/parallelcontext.C
+    solvers/timestep.C
+    solvers/metastep.C 
+    )
+
+set (material
     material/material.C
     material/dummymaterial.C
     material/materialmappingalgorithm.C
     material/fracturemanager.C
     material/homogenize.C
     material/randommaterialext.C
+    nonlocal/nonlocalbarrier.C
+    nonlocal/nonlocalmaterialext.C
     )
 
-set(initial
-    initial/initmodulemanager.C
+
+set (bc
+    bc/generalboundarycondition.C
+    bc/boundarycondition.C
+    bc/prescribedgradienthomogenization.C
+    bc/prescribedgradient.C
+    bc/prescribedgradientbcneumann.C
+    bc/prescribedgradientbcweak.C
+    bc/prescribedgradientbcweakperiodic.C
+    bc/prescribedgradientbcweakdirichlet.C
+    bc/prescribedgradientbcperiodic.C
+    bc/mixedgradientpressurebc.C
+    bc/mixedgradientpressuredirichlet.C
+    bc/mixedgradientpressureneumann.C
+    bc/mixedgradientpressureweakperiodic.C
+    bc/load.C
+    bc/boundaryload.C
+    bc/pointload.C
+    bc/linearedgeload.C
+    bc/constantedgeload.C
+    bc/constantsurfaceload.C
+    bc/nodalload.C
+    bc/deadweight.C
+    bc/reinforcement.C
+    bc/surfacetensionbc.C
+    bc/linearconstraintbc.C
+    bc/weakperiodicbc.C
+    bc/bctracker.C
+    bc/neumannmomentload.C
+    bc/prescribedmean.C
     initial/initmodule.C
     initial/initialcondition.C
-)
+    )
 
-set (core_fields
+set (fields
     fields/fieldmanager.C
     fields/field.C
     fields/primaryfield.C
@@ -109,13 +133,13 @@ set (core_ltf
     ltf/interpolatingfunction.C
     )
 
-set (core_cs
+set (crosssection
     cs/crosssection.C
     cs/emptycs.C
     cs/dummycrosssection.C
     )
 
-set (core_export
+set (export
     export/outputmanager.C
     export/exportmodule.C
     export/exportmodulemanager.C
@@ -138,19 +162,12 @@ set (core_export
     export/vtkhdf5exportmodule.C
     )
 
-set (core_monitors
+set (monitors
     monitor/monitormanager.C
     monitor/monitor.C
     )
 
-set (core_iga
-    iga/iga.C
-    iga/feibspline.C
-    iga/feinurbs.C
-    iga/feitspline.C
-    )
-
-set (core_fei
+set (fei
     fei/feinterpol.C
     fei/feinterpol1d.C
     fei/feinterpol2d.C
@@ -187,7 +204,7 @@ set(contact
     contact/contactelement.C
 )
 
-set (core_mapping
+set (mapping
     mapping/mmaclosestiptransfer.C
     mapping/mmashapefunctprojection.C
     mapping/mmaleastsquareprojection.C
@@ -232,66 +249,7 @@ set(utility
     utility/parser.C
 )
 
-if (USE_SPOOLES)
-    list (APPEND core_nm 
-    solvers/spoolessparsemtrx.C
-    solvers/spoolessolver.C)
-endif ()
-
-if (USE_IML)
-    list (APPEND core_unsorted
-        iml/dyncomprow.C iml/dyncompcol.C
-        iml/precond.C iml/voidprecond.C iml/icprecond.C
-        iml/iluprecond.C
-        iml/ilucomprowprecond.C
-        iml/diagpre.C
-        iml/imlsolver.C
-        )
-endif ()
-
-
-if (USE_SUPERLU_MT)
-  list (APPEND core_nm solvers/superlusolver.C)
-endif ()
-
-set(nonlocal
-    nonlocal/nonlocalbarrier.C
-    nonlocal/nonlocalmaterialext.C
-)
-
-set (core_nodalrecovery
-    nodalrecovery/nodalrecoverymodel.C
-    nodalrecovery/zznodalrecoverymodel.C
-    nodalrecovery/nodalaveragingrecoverymodel.C
-    nodalrecovery/sprnodalrecoverymodel.C
-    )
-
-
-######## External solvers #########
-if (USE_PETSC)
-    list (APPEND core_nm 
-    solvers/petscsolver.C 
-    solvers/petscsparsemtrx.C)
-endif ()
-
-if (USE_INTEL_MKL_PARDISO OR USE_ONEAPI)
-    message (STATUS "    MKL Solver is enabled for compilation")
-
-    list (APPEND core_nm 
-    solvers/mklpardisosolver.C)
-endif ()
-
-if (USE_PARDISO_ORG)
-  list (APPEND core_nm 
-  solvers/pardisoprojectorgsolver.C)
-endif ()
-
-if (USE_SLEPC)
-    list (APPEND core_nm 
-    solvers/slepcsolver.C)
-endif ()
-
-set (core_xfem
+set (xfem
     xfem/delaunay.C
     xfem/xfemelementinterface.C
     xfem/enrichmentfunction.C
@@ -318,6 +276,65 @@ set (core_xfem
     xfem/nucleationcriterion.C
     )
 
+set (iga
+    iga/iga.C
+    iga/feibspline.C
+    iga/feinurbs.C
+    iga/feitspline.C
+    )
+
+set (nodalrecovery
+    nodalrecovery/nodalrecoverymodel.C
+    nodalrecovery/zznodalrecoverymodel.C
+    nodalrecovery/nodalaveragingrecoverymodel.C
+    nodalrecovery/sprnodalrecoverymodel.C
+    )
+
+######## External solvers #########
+if (USE_PETSC)
+    list (APPEND solvers 
+    solvers/petscsolver.C 
+    solvers/petscsparsemtrx.C)
+endif ()
+
+if (USE_INTEL_MKL_PARDISO OR USE_ONEAPI)
+    message (STATUS "    MKL Solver is enabled for compilation")
+
+    list (APPEND solvers 
+    solvers/mklpardisosolver.C)
+endif ()
+
+if (USE_PARDISO_ORG)
+  list (APPEND solvers 
+  solvers/pardisoprojectorgsolver.C)
+endif ()
+
+if (USE_SLEPC)
+    list (APPEND solvers 
+    solvers/slepcsolver.C)
+endif ()
+
+if (USE_SPOOLES)
+    list (APPEND solvers 
+    solvers/spoolessparsemtrx.C
+    solvers/spoolessolver.C)
+endif ()
+
+if (USE_IML)
+    list (APPEND solvers
+        iml/dyncomprow.C iml/dyncompcol.C
+        iml/precond.C iml/voidprecond.C iml/icprecond.C
+        iml/iluprecond.C
+        iml/ilucomprowprecond.C
+        iml/diagpre.C
+        iml/imlsolver.C
+        )
+endif ()
+
+if (USE_SUPERLU_MT)
+  list (APPEND solvers solvers/superlusolver.C)
+endif ()
+
 set (core_parallel
     parallel/communicator.C
     parallel/processcomm.C
@@ -335,48 +352,16 @@ if (USE_PARMETIS)
     parallel/parmetisloadbalancer.C)
 endif ()
 
-set (core_bc
-    bc/generalboundarycondition.C
-    bc/boundarycondition.C
-    bc/prescribedgradienthomogenization.C
-    bc/prescribedgradient.C
-    bc/prescribedgradientbcneumann.C
-    bc/prescribedgradientbcweak.C
-    bc/prescribedgradientbcweakperiodic.C
-    bc/prescribedgradientbcweakdirichlet.C
-    bc/prescribedgradientbcperiodic.C
-    bc/mixedgradientpressurebc.C
-    bc/mixedgradientpressuredirichlet.C
-    bc/mixedgradientpressureneumann.C
-    bc/mixedgradientpressureweakperiodic.C
-    bc/load.C
-    bc/boundaryload.C
-    bc/pointload.C
-    bc/linearedgeload.C
-    bc/constantedgeload.C
-    bc/constantsurfaceload.C
-    bc/nodalload.C
-    bc/deadweight.C
-    bc/reinforcement.C
-    bc/surfacetensionbc.C
-    bc/linearconstraintbc.C
-    bc/weakperiodicbc.C
-    bc/bctracker.C
-    bc/neumannmomentload.C
-    bc/prescribedmean.C
-    )
-
 if (USE_PYTHON_EXTENSION)
-    list (APPEND core_bc bc/userdefdirichletbc.C)
-    list (APPEND core_unsorted utility/pythonexpression.C)
+    list (APPEND bc bc/userdefdirichletbc.C)
+    list (APPEND engng utility/pythonexpression.C)
 endif ()
 
 if (USE_PYBIND_BINDINGS)
-    list (APPEND core_unsorted utility/pythonfield.C)
+    list (APPEND engng utility/pythonfield.C)
 endif ()
 
-
-set (core_mesher
+set (mesh
     mesher/t3dinterface.C
     mesher/targe2interface.C
     mesher/freeminterface.C
@@ -390,38 +375,32 @@ set (core_mesher
     )
 
 set (core
+    ${engng}
+    ${solvers}
+    ${dofman}
     ${input}
-    ${initial}
-    ${contact}
+    ${crosssection}
+    ${bc}
+    ${mesh}
+    ${mapping}
+    ${material}
+    ${fei}
+    ${xfem}
     ${error}
     ${math}
     ${utility}
-    ${nonlocal}
-    ${core_unsorted}
-    ${core_nodalrecovery}
-    ${core_dofs}
-    ${core_nm}
-    ${core_fields}
-    ${core_dofman}
-    ${core_material}
-    ${core_export}
-    ${core_monitors}
     ${core_ltf}
-    ${core_cs}
-    ${core_engng}
-    ${core_fei}
-    ${core_xfem}
-    ${core_bc}
-    ${core_iga}
-    ${core_mesher}
-    ${core_mapping}
+    ${nodalrecovery}
+    ${fields}
+    ${export}
+    ${monitors}
+    ${contact}
+    ${iga}
     )
 
 if (USE_PARALLEL)
     list (APPEND core ${core_parallel})
 endif ()
-
-
 
 add_library (core
     ${LIB_TYPE}

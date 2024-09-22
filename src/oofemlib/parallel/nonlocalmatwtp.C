@@ -42,7 +42,7 @@
 #include "parallel/communicator.h"
 #include "export/datastream.h"
 #include "parallel/domaintransactionmanager.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include <set>
 

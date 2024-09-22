@@ -35,7 +35,7 @@
 #include "bc/pointload.h"
 #include "ltf/function.h"
 #include "math/floatarray.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 
 namespace oofem {

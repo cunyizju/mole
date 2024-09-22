@@ -37,7 +37,7 @@
 #include "cs/crosssection.h"
 #include "math/gausspoint.h"
 #include "math/gaussintegrationrule.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Element(Quad2PlateSubSoil);

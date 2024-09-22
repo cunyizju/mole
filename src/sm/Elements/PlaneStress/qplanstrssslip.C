@@ -39,7 +39,7 @@
 #include "math/floatmatrix.h"
 #include "math/floatarray.h"
 #include "math/intarray.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "Materials/structuralmaterial.h"
 #include "Materials/structuralms.h"
 #include "Materials/structuralslipfe2material.h"

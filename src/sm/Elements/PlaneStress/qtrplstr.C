@@ -42,7 +42,7 @@
 #include "cs/crosssection.h"
 #include "math/gaussintegrationrule.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 
 

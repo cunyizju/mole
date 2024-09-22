@@ -41,7 +41,7 @@
 #include "solvers/timestep.h"
 #include "fei/feinterpol.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include <cstdlib>
 

@@ -37,10 +37,10 @@
 #include "sm/Materials/structuralms.h"
 #include "input/domain.h"
 #include "dofman/dofmanager.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/oofemtxtdatareader.h"
 #include "utility/util.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "dofman/node.h"
 #include "engng/engngm.h"
 

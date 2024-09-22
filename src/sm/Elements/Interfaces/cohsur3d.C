@@ -45,7 +45,7 @@
 #include "math/floatarrayf.h"
 #include "math/mathfem.h"
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Element(CohesiveSurface3d);

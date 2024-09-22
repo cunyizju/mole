@@ -43,7 +43,7 @@
 #include "xfem/tipinfo.h"
 #include "xfem/enrichmentfronts/enrichmentfront.h"
 #include "xfem/xfemmanager.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/domain.h"
 #include "math/mathfem.h"
 #include "input/dynamicinputrecord.h"

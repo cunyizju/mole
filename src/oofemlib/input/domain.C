@@ -53,7 +53,7 @@
 #include "mesher/octreelocalizer.h"
 #include "nodalrecovery/nodalrecoverymodel.h"
 #include "nonlocal/nonlocalbarrier.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/logger.h"
 #include "xfem/xfemmanager.h"
 #include "input/topologydescription.h"
@@ -62,7 +62,8 @@
 #include "material/fracturemanager.h"
 #include "input/datareader.h"
 #include "input/oofemtxtdatareader.h"
-#include "initial/initmodulemanager.h"
+#include "input/initmodulemanager.h"
+
 #include "export/exportmodulemanager.h"
 #include "xfem/enrichmentitem.h"
 #include "xfem/nucleationcriterion.h"

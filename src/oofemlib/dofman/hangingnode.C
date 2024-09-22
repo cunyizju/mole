@@ -39,7 +39,7 @@
 #include "input/element.h"
 #include "fei/feinterpol.h"
 #include "mesher/spatiallocalizer.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_DofManager(HangingNode);

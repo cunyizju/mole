@@ -42,7 +42,7 @@
 #include "dofman/dofmanager.h"
 #include "input/cltypes.h"
 #include "xfemelementinterface.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "dofs/masterdof.h"
 #include "input/datareader.h"
 #include "export/datastream.h"

@@ -40,7 +40,7 @@
 #include "math/floatarray.h"
 #include "math/floatmatrix.h"
 #include "math/intarray.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
 #include "math/mathfem.h"

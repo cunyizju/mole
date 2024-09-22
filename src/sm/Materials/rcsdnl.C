@@ -39,7 +39,7 @@
 #include "math/mathfem.h"
 #include "nonlocal/nonlocalmaterialext.h"
 #include "utility/contextioerr.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "export/datastream.h"
 
 namespace oofem {

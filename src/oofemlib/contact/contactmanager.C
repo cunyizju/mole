@@ -34,7 +34,7 @@
 
 #include "contact/contactmanager.h"
 #include "contact/contactdefinition.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "math/numericalcmpn.h"
 #include "error/error.h"
 

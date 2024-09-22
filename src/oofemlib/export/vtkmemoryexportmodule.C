@@ -39,7 +39,7 @@
 #include "dofman/node.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "nodalrecovery/zznodalrecoverymodel.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_ExportModule(VTKMemoryExportModule)

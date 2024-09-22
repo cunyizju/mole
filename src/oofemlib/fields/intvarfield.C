@@ -33,7 +33,7 @@
  */
 
 #include "fields/intvarfield.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "dofman/dofmanager.h"
 #include "material/materialmappingalgorithm.h"
 

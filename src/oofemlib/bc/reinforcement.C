@@ -34,7 +34,7 @@
 
 #include "bc/reinforcement.h"
 #include "utility/verbose.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_BoundaryCondition(Reinforcement);

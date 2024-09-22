@@ -36,7 +36,7 @@
 
 #include "propagationlaw.h"
 #include "tipinfo.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "math/mathfem.h"
 #include "input/dynamicinputrecord.h"
 #include "mesher/spatiallocalizer.h"

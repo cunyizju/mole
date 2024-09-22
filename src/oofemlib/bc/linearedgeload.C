@@ -35,7 +35,7 @@
 #include "bc/linearedgeload.h"
 #include "math/floatarray.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 
 namespace oofem {

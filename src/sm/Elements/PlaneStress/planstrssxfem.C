@@ -41,7 +41,7 @@
 #include "export/vtkxmlexportmodule.h"
 #include "input/dynamicinputrecord.h"
 #include "fei/feinterpol.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "math/mathfem.h"
 
 

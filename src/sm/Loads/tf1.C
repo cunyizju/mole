@@ -35,7 +35,7 @@
 #include "tf1.h"
 #include "solvers/timestep.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_BoundaryCondition(TF1);

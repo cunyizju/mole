@@ -77,7 +77,7 @@
 #include <fstream>
 #include <iterator>
 
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 using namespace oofem;
 

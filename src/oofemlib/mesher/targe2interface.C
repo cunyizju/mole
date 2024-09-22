@@ -38,7 +38,7 @@
 #include "dofman/node.h"
 #include "input/element.h"
 #include "mesher/remeshingcrit.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Mesher(Targe2Interface, MPT_TARGE2);

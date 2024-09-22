@@ -39,7 +39,7 @@
 #include "math/floatmatrix.h"
 #include "math/floatarray.h"
 #include "input/dynamicinputrecord.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "utility/util.h"
 #include "utility/contextioerr.h"
 #include "bc/generalboundarycondition.h"

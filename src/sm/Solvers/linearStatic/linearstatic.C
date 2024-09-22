@@ -41,10 +41,10 @@
 #include "dofs/dof.h"
 #include "math/sparsemtrx.h"
 #include "utility/verbose.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/unknownnumberingscheme.h"
 
 #ifdef __PARALLEL_MODE

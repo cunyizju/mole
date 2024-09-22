@@ -45,7 +45,7 @@
 #include "math/intarray.h"
 #include "math/mathfem.h"
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Element(InterfaceElement3dTrLin);

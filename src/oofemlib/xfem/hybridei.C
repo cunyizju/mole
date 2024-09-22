@@ -37,7 +37,7 @@
 #include "dofman/node.h"
 #include "input/domain.h"
 #include "math/floatmatrix.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include <string>
 

@@ -34,7 +34,7 @@
 
 #include "solvers/dynamicrelaxationsolver.h"
 #include "solvers/timestep.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "export/exportmodulemanager.h"
 #include "engng/engngm.h"
 #include "input/domain.h"

@@ -42,7 +42,7 @@
 #include "math/mathfem.h"
 #include "math/gjacobi.h"
 #include "solvers/sparselinsystemnm.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_GeneralizedEigenValueSolver(SubspaceIteration, GES_SubspaceIt);

@@ -39,7 +39,7 @@
 #include "export/datastream.h"
 #include "math/mathfem.h"
 #include "input/element.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "engng/engngm.h"
 // includes for HPC - not very clean (NumMethod knows what is "node" and "dof")
 #include "dofman/node.h"

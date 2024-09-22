@@ -42,7 +42,7 @@
 #include "math/intarray.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 
 

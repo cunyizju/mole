@@ -32,9 +32,9 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "initial/initmodulemanager.h"
+#include "input/initmodulemanager.h"
 #include "input/modulemanager.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 InitModuleManager :: InitModuleManager(EngngModel *emodel) : ModuleManager< InitModule >(emodel)

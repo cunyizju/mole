@@ -7,7 +7,7 @@ namespace py = pybind11;
 #include <ciso646>
 
 #include "input/oofemtxtdatareader.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/logger.h"
 #include "input/domain.h"
 #include "export/outputmanager.h"

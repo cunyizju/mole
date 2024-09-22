@@ -35,7 +35,7 @@
 #include "frcfcmnl.h"
 #include "math/gausspoint.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "utility/contextioerr.h"
 #include "export/datastream.h"
 #include "dofman/node.h"

@@ -46,7 +46,7 @@
 #include "math/intarray.h"
 #include "bc/load.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Element(Quad1PlateSubSoil);

@@ -44,7 +44,7 @@
 #include "utility/set.h"
 #include "dofman/node.h"
 #include "input/element.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 #include "fei/feinterpol.h"
 #include "math/sparsemtrx.h"

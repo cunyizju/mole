@@ -33,7 +33,7 @@
  */
 
 #include "warpingcrosssection.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 
 namespace oofem {

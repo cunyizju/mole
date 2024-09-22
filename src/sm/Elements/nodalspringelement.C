@@ -36,7 +36,7 @@
 #include "math/floatmatrix.h"
 #include "math/intarray.h"
 #include "math/floatarray.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 
 

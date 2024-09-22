@@ -39,7 +39,7 @@
 #include "dofs/dof.h"
 #include "utility/verbose.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/unknownnumberingscheme.h"
 
 namespace oofem {

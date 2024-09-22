@@ -45,7 +45,7 @@
 #include "utility/contextioerr.h"
 #include "input/dynamicinputrecord.h"
 #include "math/gausspoint.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Material(AnisotropicDamageMaterial);

@@ -37,7 +37,7 @@
 #include "math/floatarray.h"
 #include "utility/verbose.h"
 #include "utility/timer.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_SparseLinSolver(SpoolesSolver, ST_Spooles);

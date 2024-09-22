@@ -43,7 +43,7 @@
 #include "fei/fei3dtrquad.h"
 #include "bc/boundaryload.h"
 #include "export/vtkxmlexportmodule.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Element(Tr2Shell7);

@@ -41,10 +41,10 @@
 #include "input/element.h"
 #include "math/sparsemtrx.h"
 #include "utility/verbose.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include "dofman/qcnode.h"
 #include "input/domain.h"

@@ -33,7 +33,7 @@
  */
 
 #include "structeigenstrainload.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_BoundaryCondition(StructuralEigenstrainLoad);

@@ -37,7 +37,7 @@
 #include "math/floatmatrix.h"
 #include "math/floatarray.h"
 #include "input/dynamicinputrecord.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "sm/Elements/structuralelement.h"
 #include "math/mathfem.h"
 

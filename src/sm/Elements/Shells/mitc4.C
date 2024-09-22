@@ -51,7 +51,7 @@
 #include "bc/load.h"
 #include "bc/boundaryload.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/connectivitytable.h"
 
 

@@ -40,7 +40,7 @@
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
 #include "ltf/function.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include <fstream>
 

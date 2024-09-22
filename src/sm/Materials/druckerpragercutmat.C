@@ -40,7 +40,7 @@
 #include "math/mathfem.h"
 #include "utility/contextioerr.h"
 #include "export/datastream.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Material(DruckerPragerCutMat);

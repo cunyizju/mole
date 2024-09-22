@@ -44,7 +44,7 @@
 #include "utility/contextioerr.h"
 #include "stressvector.h"
 #include "strainvector.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 #include "export/datastream.h"
 #include "input/unknownnumberingscheme.h"

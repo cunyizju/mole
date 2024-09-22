@@ -43,7 +43,7 @@
 #include "utility/contextioerr.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Material(ConcreteDPM);

@@ -34,7 +34,7 @@
 
 #include "input/problemsequence.h"
 #include "input/inputrecord.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "utility/util.h"
 #include "input/inputrecord.h"
 #include "export/datastream.h"

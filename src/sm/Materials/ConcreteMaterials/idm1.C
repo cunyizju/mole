@@ -42,7 +42,7 @@
 #include "math/mathfem.h"
 #include "strainvector.h"
 #include "stressvector.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 #include "engng/engngm.h"
 #include "cs/crosssection.h"

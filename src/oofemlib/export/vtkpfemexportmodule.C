@@ -43,7 +43,7 @@
 #include "math/mathfem.h"
 #include "input/cltypes.h"
 #include "material/material.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "cs/crosssection.h"
 #include "input/unknownnumberingscheme.h"
 

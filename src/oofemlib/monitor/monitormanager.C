@@ -35,7 +35,7 @@
 #include "monitor/monitormanager.h"
 #include "input/modulemanager.h"
 #include "monitor/monitor.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 MonitorManager :: MonitorManager(EngngModel *emodel) : ModuleManager< Monitor >(emodel)

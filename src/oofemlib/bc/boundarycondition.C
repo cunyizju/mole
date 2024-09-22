@@ -38,7 +38,7 @@
 #include "utility/verbose.h"
 #include "input/dynamicinputrecord.h"
 #include "dofs/dof.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "utility/contextioerr.h"
 #include "error/error.h"
 

@@ -46,7 +46,7 @@
 #include "bc/load.h"
 #include "math/mathfem.h"
 #include "fei/fei2dquadlin.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Element(Quad1Mindlin);

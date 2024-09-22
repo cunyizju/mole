@@ -39,7 +39,7 @@
 #include "math/mathfem.h"
 #include "solvers/timestep.h"
 #include "math/floatarray.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/element.h"
 #include "math/floatarray.h"
 #include "math/intarray.h"

@@ -42,7 +42,7 @@
 #include "input/oofemtxtdatareader.h"
 #include "utility/util.h"
 #include "utility/verbose.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/domain.h"
 
 #include <stdlib.h>

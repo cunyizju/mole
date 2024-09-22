@@ -70,7 +70,7 @@
 #include "input/element.h"
 #include "math/sparsemtrxtype.h"
 #include "bc/activebc.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include <set>
 

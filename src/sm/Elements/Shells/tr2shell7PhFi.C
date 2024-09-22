@@ -44,7 +44,7 @@
 #include "fei/fei3dtrquad.h"
 #include "bc/boundaryload.h"
 #include "export/vtkxmlexportmodule.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "tr2shell7.h"
 
 namespace oofem {

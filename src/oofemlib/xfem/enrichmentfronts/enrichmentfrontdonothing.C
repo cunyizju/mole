@@ -34,7 +34,7 @@
 
 #include "enrichmentfrontdonothing.h"
 #include "input/dynamicinputrecord.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_EnrichmentFront(EnrFrontDoNothing)

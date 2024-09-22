@@ -41,7 +41,7 @@
 #include "math/mathfem.h"
 #include "utility/verbose.h"
 #include "math/sparsemtrxtype.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "bc/activebc.h"
 #include "contact/contactmanager.h"
 #include "contact/contactdefinition.h"

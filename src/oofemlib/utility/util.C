@@ -34,7 +34,7 @@
 
 #include "utility/util.h"
 #include "engng/engngm.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/inputrecord.h"
 #include "input/datareader.h"
 #include "error/error.h"

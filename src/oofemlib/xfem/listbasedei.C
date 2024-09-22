@@ -35,7 +35,7 @@
 #include "xfem/listbasedei.h"
 #include "xfemmanager.h"
 #include "input/domain.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "engng/engngm.h"
 #include "solvers/timestep.h"
 #include "xfem/propagationlaw.h"

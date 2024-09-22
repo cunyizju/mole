@@ -40,7 +40,7 @@
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"
 #include "math/sparsemtrxtype.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "bc/activebc.h"
 
 #include <set>

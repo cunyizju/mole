@@ -34,7 +34,7 @@
 
 #include "enrichmentfrontintersection.h"
 #include "input/dynamicinputrecord.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "xfem/xfemmanager.h"
 #include "input/domain.h"
 #include "input/connectivitytable.h"

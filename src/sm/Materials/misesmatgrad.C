@@ -39,7 +39,7 @@
 #include "math/floatarray.h"
 #include "math/mathfem.h"
 #include "error/error.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 
 namespace oofem {

@@ -34,7 +34,7 @@
 
 #include "ltf/constantfunction.h"
 #include "input/dynamicinputrecord.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
 

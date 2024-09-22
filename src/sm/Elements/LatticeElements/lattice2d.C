@@ -49,7 +49,7 @@
 #include "math/mathfem.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_Element(Lattice2d);

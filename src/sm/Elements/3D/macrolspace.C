@@ -39,7 +39,7 @@
 #include "fei/fei3dhexalin.h"
 #include "ltf/constantfunction.h"
 #include "input/domain.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 #include "dofman/node.h"
 

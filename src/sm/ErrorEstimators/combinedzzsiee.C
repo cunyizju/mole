@@ -38,7 +38,7 @@
 #include "input/connectivitytable.h"
 #include "math/mathfem.h"
 #include "error/errorestimatortype.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 #define CZZSI_ZERO_INDICATOR_TOL 1.e-3

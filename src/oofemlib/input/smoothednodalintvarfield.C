@@ -34,7 +34,7 @@
 
 #include "input/smoothednodalintvarfield.h"
 #include "mesher/spatiallocalizer.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "input/element.h"
 #include "fei/feinterpol.h"
 #include "dofman/dofmanager.h"

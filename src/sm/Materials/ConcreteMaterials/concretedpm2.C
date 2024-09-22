@@ -45,7 +45,7 @@
 #include "sm/Materials/isolinearelasticmaterial.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "math/mathfem.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include <limits>
 
 namespace oofem {

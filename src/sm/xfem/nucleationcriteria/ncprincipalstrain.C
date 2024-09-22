@@ -53,7 +53,7 @@
 #include "input/dynamicdatareader.h"
 #include "input/dynamicinputrecord.h"
 #include "input/geometry.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "mesher/spatiallocalizer.h"
 #include "cs/crosssection.h"
 

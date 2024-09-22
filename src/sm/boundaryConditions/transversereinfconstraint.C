@@ -33,7 +33,7 @@
  */
 
 #include "transversereinfconstraint.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "dofman/node.h"
 #include "dofs/masterdof.h"
 #include "input/element.h"

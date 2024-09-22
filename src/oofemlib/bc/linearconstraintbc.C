@@ -33,7 +33,7 @@
  */
 
 #include "bc/linearconstraintbc.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "dofs/masterdof.h"
 #include "math/floatmatrix.h"
 #include "math/sparsemtrx.h"

@@ -46,7 +46,7 @@
 #include "bc/boundaryload.h"
 #include "math/mathfem.h"
 #include "fei/fei3dlinelin.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "dofman/elementinternaldofman.h"
 #include "dofs/masterdof.h"
 #include "bc/bctracker.h"

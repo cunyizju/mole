@@ -41,7 +41,7 @@
 #include "utility/verbose.h"
 #include "utility/timer.h"
 #include "error/error.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "solvers/convergedreason.h"
 
 #include <mkl.h>

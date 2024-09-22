@@ -37,7 +37,7 @@
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "fei/fei3dtetquad.h"
 #include "fei/fei3dtetlin.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "math/gausspoint.h"
 #include "math/gaussintegrationrule.h"
 #include "bc/load.h"

@@ -43,11 +43,11 @@
 #include "input/dynamicinputrecord.h"
 
 #include "cs/crosssection.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include "nonlocal/nonlocalbarrier.h"
 #include "initial/initialcondition.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 //#include "loadtimefunction.h"
 #include "ltf/function.h"
 #include "export/outputmanager.h"

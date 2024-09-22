@@ -40,7 +40,7 @@
 #include "fei/feinterpol.h"
 #include "fei/feinterpol2d.h"
 #include "fei/feinterpol3d.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "utility/set.h"
 #include "math/sparsemtrx.h"
 

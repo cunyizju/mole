@@ -49,7 +49,7 @@ using namespace std;
 #include "solvers/nrsolver.h"
 #include "export/outputmanager.h"
 #include "export/datastream.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "utility/timer.h"
 #include "utility/contextioerr.h"
 #include "math/sparsemtrx.h"

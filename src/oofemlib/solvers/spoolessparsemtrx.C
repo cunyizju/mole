@@ -35,7 +35,7 @@
 #include "spoolessparsemtrx.h"
 #include "engng/engngm.h"
 #include "math/sparsemtrxtype.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
 REGISTER_SparseMtrx(SpoolesSparseMtrx, SMT_SpoolesMtrx);

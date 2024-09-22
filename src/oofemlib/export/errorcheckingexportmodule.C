@@ -42,7 +42,7 @@
 #include "dofman/node.h"
 #include "input/element.h"
 #include "solvers/timestep.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 #include "dofs/dof.h"
 #include "input/oofemtxtinputrecord.h"
 #include "math/mathfem.h"

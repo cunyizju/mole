@@ -47,7 +47,7 @@
 #include "input/cltypes.h"
 #include "math/mathfem.h"
 #include "fei/fei3dtetquad.h"
-#include "classfactory.h"
+#include "engng/classfactory.h"
 
 #include <cstdio>
 
