@@ -37,7 +37,7 @@
 #include "dofs/masterdof.h"
 #include "arrays/floatmatrix.h"
 #include "math/sparsemtrx.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "ltf/function.h"
 #include "solvers/timestep.h"
 #include "export/datastream.h"

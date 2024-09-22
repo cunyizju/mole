@@ -51,7 +51,7 @@
 #include "math/mathfem.h"
 #include "nonlocal/nonlocalbarrier.h"
 #include "engng/engngm.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 #include <cstdio>
 

@@ -47,7 +47,7 @@
 #include "export/exportmodulemanager.h"
 #include "engng/engngm.h"
 #include "parallel/parallelcontext.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 #ifdef __PETSC_MODULE
  #include "solvers/petscsolver.h"

@@ -52,7 +52,7 @@
 #include "math/mathfem.h"
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "ltf/function.h"
 
 #ifdef __PARALLEL_MODE

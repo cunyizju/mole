@@ -36,8 +36,8 @@
 #define sloangraph_h
 
 #include "oofemcfg.h"
-#include "sloangraphnode.h"
-#include "sloanlevelstruct.h"
+#include "input/sloangraphnode.h"
+#include "input/sloanlevelstruct.h"
 #include "dofman/dofmanager.h"
 #include "arrays/intarray.h"
 

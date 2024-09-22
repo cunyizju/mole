@@ -37,7 +37,7 @@
 
 #include "bc/bodyload.h"
 #include "bc/bcgeomtype.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 
 ///@name Input fields for Reinforcement
 //@{

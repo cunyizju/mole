@@ -37,7 +37,7 @@
 
 #include "input/internalstatetype.h"
 #include "input/internalstatevaluetype.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "dofs/unknowntype.h"
 
 namespace oofem {

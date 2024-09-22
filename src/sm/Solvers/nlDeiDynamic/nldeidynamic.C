@@ -44,7 +44,7 @@
 #include "utility/contextioerr.h"
 #include "math/sparsemtrx.h"
 #include "classfactory.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 #ifdef __PARALLEL_MODE
  #include "parallel/problemcomm.h"

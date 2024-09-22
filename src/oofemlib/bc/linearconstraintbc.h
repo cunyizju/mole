@@ -39,7 +39,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "input/chartype.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "dofman/dofmanager.h"
 #include "error/error.h"
 

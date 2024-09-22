@@ -40,7 +40,7 @@
 #include <fstream>
 
 #include "export/exportmodule.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "input/internalstatetype.h"
 
 ///@name Input fields for ErrorCheckingExportModule

@@ -41,7 +41,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "dofs/unknowntype.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "dofs/dofiditem.h"
 #include "dofs/doftype.h"
 #include "utility/contextioresulttype.h"

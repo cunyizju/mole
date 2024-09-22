@@ -35,7 +35,7 @@
 /* Modified and optimized by: Borek Patzak */
 /* Author: Milan Jirasek */
 
-#include "sloangraph.h"
+#include "input/sloangraph.h"
 #include "input/domain.h"
 #include "input/element.h"
 #include "dofs/dof.h"

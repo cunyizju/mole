@@ -42,7 +42,7 @@
 #include "error/error.h"
 #include "bc/bctracker.h"
 #ifdef __PARALLEL_MODE
- #include "entityrenumberingscheme.h"
+ #include "input/entityrenumberingscheme.h"
 #endif
 
 #include <memory>

@@ -46,7 +46,7 @@
 #include "material/material.h"
 #include "classfactory.h"
 #include "cs/crosssection.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 
 namespace oofem {

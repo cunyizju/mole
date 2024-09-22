@@ -38,7 +38,7 @@
 #include "fields/field.h"
 #include "utility/interface.h"
 #include "arrays/floatarray.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "utility/contextioresulttype.h"
 #include "utility/contextmode.h"
 #include "solvers/timestep.h"

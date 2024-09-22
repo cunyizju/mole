@@ -41,7 +41,7 @@
 #include "input/femcmpnn.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "dofs/doftype.h"
 #include "dofs/dofiditem.h"
 #include "utility/contextioresulttype.h"

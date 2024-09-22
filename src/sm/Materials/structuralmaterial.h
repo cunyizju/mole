@@ -44,7 +44,7 @@
 #include "material/matconst.h"
 #include "material/matstatus.h"
 #include "../stressstrainprincmode.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include <vector>
 
 ///@name Input fields for StructuralMaterial

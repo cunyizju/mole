@@ -54,7 +54,7 @@ using namespace std;
 #include "utility/contextioerr.h"
 #include "math/sparsemtrx.h"
 #include "error/errorestimator.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "input/assemblercallback.h"
 
 #ifdef __PARALLEL_MODE

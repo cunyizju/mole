@@ -42,7 +42,7 @@
 #include "math/sparsemtrx.h"
 #include "utility/verbose.h"
 #include "sm/Elements/structuralelement.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "sm/Elements/structuralelementevaluator.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"

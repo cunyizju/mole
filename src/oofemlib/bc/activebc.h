@@ -39,7 +39,7 @@
 #include "arrays/intarray.h"
 #include "input/inputrecord.h"
 #include "input/chartype.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "error/error.h"
 
 #include <vector>

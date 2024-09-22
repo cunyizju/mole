@@ -47,7 +47,7 @@
 #include "export/exportmodulemanager.h"
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "export/outputmanager.h"
 #include "fields/eigenvectorprimaryfield.h"
 

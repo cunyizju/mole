@@ -36,7 +36,7 @@
 #define refinedelement_h
 
 #include "arrays/intarray.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 
 #include <vector>
 

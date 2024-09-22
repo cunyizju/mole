@@ -37,7 +37,7 @@
 
 #include "oofemcfg.h"
 #include "utility/interface.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 
 #include <string>
 

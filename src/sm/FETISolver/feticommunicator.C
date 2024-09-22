@@ -36,7 +36,7 @@
 #include "engng/engngm.h"
 #include "arrays/intarray.h"
 #include "dofman/dofmanager.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "input/domain.h"
 
 #ifdef __USE_MPI

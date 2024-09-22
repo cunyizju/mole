@@ -46,7 +46,7 @@
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"
 #include "input/domain.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 #ifdef __OOFEG
  #include "oofeg/oofeggraphiccontext.h"

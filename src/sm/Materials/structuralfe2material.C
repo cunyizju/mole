@@ -49,7 +49,7 @@
 #include "input/nummet.h"
 #include "sm/EngineeringModels/xfemsolverinterface.h"
 #include "sm/EngineeringModels/staticstructural.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "xfem/xfemstructuremanager.h"
 #include "math/mathfem.h"
 

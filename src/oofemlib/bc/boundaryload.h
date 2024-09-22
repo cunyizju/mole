@@ -37,7 +37,7 @@
 
 #include "bc/load.h"
 #include "bc/bctype.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "utility/dictionary.h"
 #include "ltf/scalarfunction.h"
 

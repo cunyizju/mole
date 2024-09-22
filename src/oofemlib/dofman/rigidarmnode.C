@@ -39,7 +39,7 @@
 #include "arrays/intarray.h"
 #include "classfactory.h"
 #include "input/domain.h"
-#include "entityrenumberingscheme.h"
+#include "input/entityrenumberingscheme.h"
 
 namespace oofem {
 REGISTER_DofManager(RigidArmNode);

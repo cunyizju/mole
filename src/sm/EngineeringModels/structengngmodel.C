@@ -43,7 +43,7 @@
 #include "export/outputmanager.h"
 #include "bc/activebc.h"
 #include "input/assemblercallback.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/CrossSections/structuralcrosssection.h"

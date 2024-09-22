@@ -47,13 +47,13 @@
 #include "mesher/remeshingcrit.h"
 #include "mesher/mesherinterface.h"
 #include "dofs/dof.h"
-#include "eleminterpunknownmapper.h"
+#include "input/eleminterpunknownmapper.h"
 #include "error/errorestimator.h"
 #include "classfactory.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
 #include "error/oofem_terminate.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 #ifdef __PARALLEL_MODE
  #include "parallel/parallelcontext.h"

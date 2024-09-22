@@ -38,7 +38,7 @@
 #include "bc/generalboundarycondition.h"
 #include "arrays/floatarray.h"
 #include "bc/bctype.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 
 /**
  * @name Dirichlet boundary condition.

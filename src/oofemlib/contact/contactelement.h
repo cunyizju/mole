@@ -36,7 +36,7 @@
 #define contactelement_h
 
 #include "input/chartype.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 
 
 

@@ -36,7 +36,7 @@
 #include "dofs/dofiditem.h"
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "ltf/function.h"

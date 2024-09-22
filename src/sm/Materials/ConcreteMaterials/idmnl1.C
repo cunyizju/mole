@@ -47,7 +47,7 @@
 #include "classfactory.h"
 #include "input/dynamicinputrecord.h"
 #include "export/datastream.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 #ifdef __OOFEG
  #include "oofeg/oofeggraphiccontext.h"

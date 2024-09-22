@@ -40,7 +40,7 @@
 #include "input/domain.h"
 #include "dofman/dofmanager.h"
 #include "input/element.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "math/mathfem.h"
 #include "input/assemblercallback.h"
 

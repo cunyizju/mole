@@ -46,7 +46,7 @@
 #include "solvers/timestep.h"
 #include "ltf/function.h"
 #include "solvers/sparselinsystemnm.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "engng/engngm.h"
 #include "math/mathfem.h"
 

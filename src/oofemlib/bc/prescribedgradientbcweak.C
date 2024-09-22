@@ -51,7 +51,7 @@
 #include "engng/engngm.h"
 #include "math/mathfem.h"
 #include "solvers/sparselinsystemnm.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/EngineeringModels/staticstructural.h"
 

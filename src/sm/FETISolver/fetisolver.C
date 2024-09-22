@@ -40,7 +40,7 @@
 #include "dofman/dofmanager.h"
 #include "engng/engngm.h"
 #include "input/domain.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "classfactory.h"
 
 namespace oofem {

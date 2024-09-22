@@ -50,7 +50,7 @@
 #include "cs/crosssection.h"
 #include "dofs/dof.h"
 #include "utility/util.h"
-#include "eleminterpunknownmapper.h"
+#include "input/eleminterpunknownmapper.h"
 #include "utility/verbose.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
@@ -66,7 +66,7 @@
 #include "bc/boundarycondition.h"
 #include "fei/feinterpol.h"
 #include "math/gausspoint.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 #include <vector>
 #include <string>

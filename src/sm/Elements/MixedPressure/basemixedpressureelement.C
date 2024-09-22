@@ -50,7 +50,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "math/mathfem.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 
 #include <cstdio>

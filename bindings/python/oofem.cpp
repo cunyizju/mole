@@ -77,7 +77,7 @@ namespace py = pybind11;
 #include "utility/util.h"
 #include "input/datareader.h"
 #include "input/oofemtxtdatareader.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "dofs/dofiditem.h"
 #include "utility/timer.h"
 
@@ -95,7 +95,7 @@ namespace py = pybind11;
 
 #include "classfactory.h"
 #include "export/exportregion.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "export/vtkxmlexportmodule.h"
 #include "export/vtkmemoryexportmodule.h"
 #include "export/homexportmodule.h"

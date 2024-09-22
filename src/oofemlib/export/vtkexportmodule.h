@@ -40,7 +40,7 @@
 #include "nodalrecovery/nodalrecoverymodel.h"
 #include "input/internalstatevaluetype.h"
 #include "dofs/unknowntype.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 
 ///@name Input fields for VTK export module
 //@{

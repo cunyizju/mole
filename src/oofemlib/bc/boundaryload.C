@@ -37,7 +37,7 @@
 #include "arrays/floatarray.h"
 #include "solvers/timestep.h"
 #include "input/dynamicinputrecord.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "input/domain.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"

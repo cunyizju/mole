@@ -38,7 +38,7 @@
 #include "bc/generalboundarycondition.h"
 #include "utility/dictionary.h"
 #include "bc/bcvaltype.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 
 ///@name Input fields for initial condition
 //@{

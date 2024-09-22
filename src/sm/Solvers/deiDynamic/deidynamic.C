@@ -40,7 +40,7 @@
 #include "utility/verbose.h"
 #include "math/mathfem.h"
 #include "classfactory.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 namespace oofem {
 #define ZERO_MASS  1.E-10   // unit dependent !!!!

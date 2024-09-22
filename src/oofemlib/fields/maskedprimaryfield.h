@@ -38,7 +38,7 @@
 #include "fields/primaryfield.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "utility/contextioresulttype.h"
 #include "utility/contextmode.h"
 

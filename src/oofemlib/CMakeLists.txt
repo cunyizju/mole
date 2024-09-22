@@ -3,14 +3,14 @@ set (core_unsorted
     classfactory.C
     
 
-    solutionbasedshapefunction.C
+    
     
     # Semi sorted:
-    sloangraph.C sloangraphnode.C sloanlevelstruct.C
-    eleminterpunknownmapper.C primaryunknownmapper.C 
+    
+
      
 
-    smoothednodalintvarfield.C
+
     # Deprecated?
 
     #
@@ -43,6 +43,12 @@ set(input
     input/femcmpnn.C  
     input/loadbalancer.C
     input/cltypes.C 
+    input/smoothednodalintvarfield.C
+    input/sloangraph.C 
+    input/sloangraphnode.C 
+    input/sloanlevelstruct.C
+    input/eleminterpunknownmapper.C
+    input/primaryunknownmapper.C 
 )
 set(contact
     contact/contactmanager.C
@@ -65,6 +71,7 @@ set(math
     math/lobattoir.C
     math/symcompcol.C
     math/ldltfact.C
+    math/solutionbasedshapefunction.C
 )
 
 set(error

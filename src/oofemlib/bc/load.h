@@ -38,7 +38,7 @@
 #include "bc/generalboundarycondition.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "error/error.h"
 
 ///@name Input fields for Load

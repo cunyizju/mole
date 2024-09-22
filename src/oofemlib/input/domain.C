@@ -44,7 +44,7 @@
 #include "ltf/function.h"
 #include "utility/set.h"
 #include "engng/engngm.h"
-#include "entityrenumberingscheme.h"
+#include "input/entityrenumberingscheme.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
 #include "utility/verbose.h"

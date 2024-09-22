@@ -36,7 +36,7 @@
 #define assemblercallback_h
 
 #include "oofem_export.h"
-#include "valuemodetype.h" ///@todo We shouldn't have this for assembling vectors or matrices(!) / Mikael
+#include "input/valuemodetype.h" ///@todo We shouldn't have this for assembling vectors or matrices(!) / Mikael
 #include "material/matresponsemode.h"
 #include "input/chartype.h"
 

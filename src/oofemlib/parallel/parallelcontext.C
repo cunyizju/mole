@@ -35,7 +35,7 @@
 #include "parallel/parallelcontext.h"
 #include "engng/engngm.h"
 #include "math/mathfem.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 namespace oofem {
 //#define ParallelContext_debug_print

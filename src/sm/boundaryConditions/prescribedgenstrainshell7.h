@@ -38,7 +38,7 @@
 #include "bc/boundarycondition.h"
 #include "dofs/dof.h"
 #include "bc/bctype.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatmatrixf.h"

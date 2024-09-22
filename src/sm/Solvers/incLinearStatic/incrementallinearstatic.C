@@ -44,7 +44,7 @@
 #include "utility/contextioerr.h"
 #include "dofman/dofmanager.h"
 #include "bc/activebc.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 /*
 #include "utility/set.h"

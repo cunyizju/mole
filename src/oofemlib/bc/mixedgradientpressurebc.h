@@ -36,7 +36,7 @@
 #define mixedgradientpressurebc_h
 
 #include "bc/activebc.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 
 ///@name Input fields for MixedGradientPressure
 //@{

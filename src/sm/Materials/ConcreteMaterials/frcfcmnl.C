@@ -48,7 +48,7 @@
 #include "arrays/floatarray.h"
 
 #include "input/dynamicinputrecord.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "stressvector.h"
 #include "strainvector.h"
 

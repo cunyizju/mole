@@ -47,7 +47,7 @@
 #include "utility/contextioerr.h"
 #include "export/exportmodulemanager.h"
 #include "parallel/parallelcontext.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 namespace oofem {
 #define CALM_RESET_STEP_REDUCE 0.25

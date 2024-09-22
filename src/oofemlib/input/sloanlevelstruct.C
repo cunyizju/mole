@@ -35,9 +35,9 @@
 /* Modified and optimized by: Borek Patzak */
 /* Author: Milan Jirasek */
 
-#include "sloanlevelstruct.h"
-#include "sloangraphnode.h"
-#include "sloangraph.h"
+#include "input/sloanlevelstruct.h"
+#include "input/sloangraphnode.h"
+#include "input/sloangraph.h"
 #include "arrays/intarray.h"
 #include "input/domain.h"
 

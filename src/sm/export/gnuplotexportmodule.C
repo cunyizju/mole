@@ -41,7 +41,7 @@
 
 #include "gnuplotexportmodule.h"
 #include "classfactory.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "sm/EngineeringModels/structengngmodel.h"
 #include "export/outputmanager.h"
 #include "dofman/dofmanager.h"

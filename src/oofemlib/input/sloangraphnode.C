@@ -35,8 +35,8 @@
 /* Modified and optimized by: Borek Patzak */
 /* Author: Milan Jirasek */
 
-#include "sloangraphnode.h"
-#include "sloangraph.h"
+#include "input/sloangraphnode.h"
+#include "input/sloangraph.h"
 #include "math/mathfem.h"
 
 namespace oofem {

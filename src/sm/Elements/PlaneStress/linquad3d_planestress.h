@@ -41,7 +41,7 @@
 #include "nodalrecovery/zznodalrecoverymodel.h"
 #include "nodalrecovery/sprnodalrecoverymodel.h"
 #include "mesher/spatiallocalizer.h"
-#include "eleminterpmapperinterface.h"
+#include "input/eleminterpmapperinterface.h"
 
 #define _IFT_LinQuad3DPlaneStress_Name "linquad3dplanestress"
 

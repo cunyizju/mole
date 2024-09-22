@@ -37,7 +37,7 @@
 #include "dofs/dofiditem.h"
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"
 #include "engng/engngm.h"
@@ -50,7 +50,7 @@
 #include "solvers/sparselinsystemnm.h"
 #include "input/dynamicinputrecord.h"
 #include "input/domain.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "input/assemblercallback.h"
 
 #ifdef _OPENMP

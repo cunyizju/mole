@@ -39,7 +39,7 @@
 #include "arrays/floatmatrix.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "mesher/spatiallocalizer.h"
-#include "eleminterpmapperinterface.h"
+#include "input/eleminterpmapperinterface.h"
 
 #define _IFT_tet21ghostsolid_Name "tet21ghostsolid"
 

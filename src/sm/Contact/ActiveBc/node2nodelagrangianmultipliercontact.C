@@ -39,7 +39,7 @@
 #include "dofman/node.h"
 #include "dofs/masterdof.h"
 #include "arrays/floatmatrix.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "math/sparsemtrx.h"
 #include "classfactory.h"
 

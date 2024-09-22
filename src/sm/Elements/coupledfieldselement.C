@@ -48,7 +48,7 @@
 #include "input/domain.h"
 #include "input/cltypes.h"
 #include "math/mathfem.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include <cstdio>
 
 namespace oofem {

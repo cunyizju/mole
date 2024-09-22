@@ -36,7 +36,7 @@
 #define field_h
 
 #include "oofemcfg.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "utility/contextioresulttype.h"
 #include "utility/contextmode.h"
 #include "utility/enumitem.h"

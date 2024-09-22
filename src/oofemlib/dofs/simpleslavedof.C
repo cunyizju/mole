@@ -36,7 +36,7 @@
 #include "dofman/dofmanager.h"
 #include "input/domain.h"
 #include "export/datastream.h"
-#include "entityrenumberingscheme.h"
+#include "input/entityrenumberingscheme.h"
 #include "utility/contextioerr.h"
 
 namespace oofem {

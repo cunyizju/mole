@@ -39,7 +39,7 @@
 #include "initial/initialcondition.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 #include <cstring>
 #include <cstdlib>

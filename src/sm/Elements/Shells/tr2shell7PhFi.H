@@ -35,7 +35,7 @@
 #ifndef Tr2Shell7PhFi_h
 #define Tr2Shell7PhFi_h
 
-#include "eleminterpmapperinterface.h"
+#include "input/eleminterpmapperinterface.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "layeredcrosssection.h"
 #include "nlstructuralelement.h"

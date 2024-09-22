@@ -45,7 +45,7 @@
 #include "material/material.h"
 #include "classfactory.h"
 #include "cs/crosssection.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 #ifdef __PFEM_MODULE
  #include "pfem/pfemparticle.h"

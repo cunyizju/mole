@@ -56,7 +56,7 @@
 #include "utility/verbose.h"
 #include "export/datastream.h"
 #include "input/oofemtxtdatareader.h"
-#include "sloangraph.h"
+#include "input/sloangraph.h"
 #include "input/logger.h"
 #include "error/errorestimator.h"
 #include "utility/contextioerr.h"
@@ -67,7 +67,7 @@
 #include "classfactory.h"
 #include "xfem/xfemmanager.h"
 #include "parallel/parallelcontext.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "contact/contactmanager.h"
 
 

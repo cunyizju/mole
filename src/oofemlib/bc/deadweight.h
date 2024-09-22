@@ -37,7 +37,7 @@
 
 #include "bc/bodyload.h"
 #include "bc/bcgeomtype.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 
 #define _IFT_DeadWeight_Name "deadweight"
 

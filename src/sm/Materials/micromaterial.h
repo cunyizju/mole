@@ -43,7 +43,7 @@
 #include "math/sparsemtrx.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "bc/boundarycondition.h"
 #include "sm/Elements/3D/macrolspace.h"
 #include "error/error.h"

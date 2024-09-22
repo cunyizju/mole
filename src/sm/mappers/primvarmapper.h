@@ -35,7 +35,7 @@
 #ifndef PRIMVARMAPPER_H_
 #define PRIMVARMAPPER_H_
 
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 
 namespace oofem {
 class FloatArray;

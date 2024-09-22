@@ -40,7 +40,7 @@
 #include "dofs/unknowntype.h"
 #include "material/materialmode.h"
 #include "material/matresponsemode.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "material/materialmappingalgorithmtype.h"
 #include "mesher/meshpackagetype.h"
 #include "input/domaintype.h"

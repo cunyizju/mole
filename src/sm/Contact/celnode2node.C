@@ -35,7 +35,7 @@
 #include "sm/Contact/celnode2node.h"
 #include "arrays/floatmatrix.h"
 #include "dofs/masterdof.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "math/gaussintegrationrule.h"
 
 namespace oofem {

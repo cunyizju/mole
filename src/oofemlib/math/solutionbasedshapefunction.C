@@ -5,7 +5,7 @@
  *      Author: carl
  */
 
-#include "solutionbasedshapefunction.h"
+#include "math/solutionbasedshapefunction.h"
 #include "input/oofemtxtdatareader.h"
 #include "bc/activebc.h"
 #include "dofs/activedof.h"

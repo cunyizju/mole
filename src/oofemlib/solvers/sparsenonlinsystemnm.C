@@ -36,7 +36,7 @@
 #include "error/error.h"
 #include "input/domain.h"
 #include "dofman/node.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 namespace oofem {
 

@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "eleminterpunknownmapper.h"
+#include "input/eleminterpunknownmapper.h"
 #include "input/element.h"
 #include "input/domain.h"
 #include "engng/engngm.h"
@@ -40,7 +40,7 @@
 #include "dofman/node.h"
 #include "dofs/dof.h"
 #include "input/connectivitytable.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 namespace oofem {
 EIPrimaryUnknownMapper :: EIPrimaryUnknownMapper() : PrimaryUnknownMapper()

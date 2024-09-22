@@ -42,7 +42,7 @@
 #include "arrays/floatarray.h"
 #include "solvers/linesearch.h"
 #include "solvers/nrsolver.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 #include <set>
 #include <vector>

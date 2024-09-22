@@ -56,7 +56,7 @@
 #include "nonlocal/nonlocmatstiffinterface.h"
 #include "math/mathfem.h"
 #include "material/materialmapperinterface.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "utility/set.h"
 
 #ifdef __OOFEG

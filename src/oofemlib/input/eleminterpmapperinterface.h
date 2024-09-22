@@ -35,7 +35,7 @@
 #ifndef eleminterpmapperinterface_h
 #define eleminterpmapperinterface_h
 
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "utility/interface.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"

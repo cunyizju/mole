@@ -48,7 +48,7 @@
 #include "bc/activebc.h"
 #include "bc/prescribedgradientbcweak.h"
 #include "bc/prescribedgradientbcneumann.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "math/mathfem.h"
 
 #include <fstream>

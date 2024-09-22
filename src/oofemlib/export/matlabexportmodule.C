@@ -45,11 +45,11 @@
 #include "math/mathfem.h"
 #include "math/gausspoint.h"
 #include "bc/weakperiodicbc.h"
-#include "solutionbasedshapefunction.h"
+#include "math/solutionbasedshapefunction.h"
 #include "solvers/timestep.h"
 #include "classfactory.h"
 #include "utility/set.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 #include "bc/prescribedmean.h"
 #include "fei/feinterpol.h"
     

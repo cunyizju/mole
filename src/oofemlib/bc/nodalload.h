@@ -37,7 +37,7 @@
 
 #include "bc/load.h"
 #include "bc/bcgeomtype.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 
 namespace oofem {
 ///@name Input fields for nodal loads

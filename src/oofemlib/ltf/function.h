@@ -36,7 +36,7 @@
 #define function_h
 
 #include "input/femcmpnn.h"
-#include "valuemodetype.h"
+#include "input/valuemodetype.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
 #include "math/gausspoint.h"

@@ -54,7 +54,7 @@
 #include "sm/Quasicontinuum/quasicontinuum.h"
 #include "sm/Quasicontinuum/fullsolveddomain.h"
 #include "sm/Quasicontinuum/geometrygenerator.h"
-#include "unknownnumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
 
 #include "sm/Quasicontinuum/quasicontinuumnumberingscheme.h"
 

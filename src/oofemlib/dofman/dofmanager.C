@@ -46,8 +46,8 @@
 #include "math/mathfem.h"
 #include "input/dynamicinputrecord.h"
 #include "input/domain.h"
-#include "unknownnumberingscheme.h"
-#include "entityrenumberingscheme.h"
+#include "input/unknownnumberingscheme.h"
+#include "input/entityrenumberingscheme.h"
 #include "engng/engngm.h"
 
 namespace oofem {
