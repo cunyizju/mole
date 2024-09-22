@@ -843,18 +843,6 @@ VTKXMLLatticeExportModule::writeCellVarsCross(ExportRegion &vtkPiece)
         }
         this->fileStreamCross << "</DataArray>\n";
 
-#ifdef _PYBIND_BINDINGS
-#if 0
-        if ( pythonExport ) {
-            py::list vals;
-            for ( int ielem = 1; ielem <= numCells; ielem++ ) {
-                valueArray = vtkPiece.giveCellVar(i, ielem);
-                vals.append(valueArray);
-            }
-            this->Py_CellVars [ name ] = vals;
-        }
-#endif
-#endif
     }//end of for
 }
 } // end namespace oofem

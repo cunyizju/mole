@@ -357,10 +357,6 @@ if (USE_PYTHON_EXTENSION)
     list (APPEND engng utility/pythonexpression.C)
 endif ()
 
-if (USE_PYBIND_BINDINGS)
-    list (APPEND engng utility/pythonfield.C)
-endif ()
-
 set (mesh
     mesher/t3dinterface.C
     mesher/targe2interface.C

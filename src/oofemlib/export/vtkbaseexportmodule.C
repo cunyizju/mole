@@ -328,41 +328,6 @@ VTKBaseExportModule::setupVTKPiece(ExportRegion &vtkPiece, TimeStep *tStep, Set 
             offset += numElNodes;
             vtkPiece.setOffset(cellNum, offset);
         }
-
-
-        
-/*        
-#ifdef _PYBIND_BINDINGS    
-        if ( pythonExport ) {
-        //Export nodes
-            py::list vals;
-            for ( int inode = 1; inode <= numNodes; inode++ ) {
-                py::list node;
-                const int numberG = d->giveNode(mapL2G.at(inode))->giveGlobalNumber();
-                const int number = d->giveNode(mapL2G.at(inode))->giveNumber();
-                const auto &coords = d->giveNode(mapL2G.at(inode))->giveCoordinates();
-                node.append(inode);
-                node.append(number);
-                node.append(numberG);
-                node.append(coords);
-                vals.append(node);
-            }
-            std::string s = std::to_string(region.giveNumber());
-            this->Py_Nodes[s.c_str()] = vals;//keys as region number (VTKPiece)
-       
-       //Export elements
-            py::list elemVals;
-            for ( int ei = 1; ei <= vtkPiece.giveNumberOfCells(); ei++ ) {
-                py::list element;
-                IntArray &conn = vtkPiece.giveCellConnectivity(ei);
-                element.append(ei);
-                element.append(conn);
-                elemVals.append(element);
-            }
-            this->Py_Elements[s.c_str()] = elemVals;//keys as region number (VTKPiece)
-        }
-#endif    
-*/
         
     } // end of default piece for simple geometry elements
 }

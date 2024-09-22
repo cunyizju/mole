@@ -42,14 +42,6 @@
 #include "dofs/unknowntype.h"
 #include "input/element.h"
 
-
-#ifdef _PYBIND_BINDINGS
- #include <pybind11/pybind11.h>
- #include <pybind11/stl.h>   //Conversion for lists
- #include "pybind11/numpy.h"
-namespace py = pybind11;
-#endif
-
 #include <string>
 #include <list>
 
@@ -111,16 +103,6 @@ public:
     IntArray& getMapL2G () {return this->mapL2G;}
     //void setRegionCells(IntArray& cells) {this->regionElInd = cells;}
     IntArray& getRegionCells () {return this->regionElInd;}
-
-#ifdef _PYBIND_BINDINGS
-    py::array_t<double> getVertices () ;
-    py::array_t<int> getCellConnectivity ();
-    py::array_t<int> getCellTypes ();
-    py::array_t<double> getPrimaryVertexValues (UnknownType u);
-    py::array_t<double> getInternalVertexValues(InternalStateType u);
-    py::array_t<double> getCellValues(InternalStateType u);
-
-#endif
 
 private:
     int numCells;

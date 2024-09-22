@@ -1145,11 +1145,6 @@ public:
     virtual bool isElementActivated( int elemNum ) { return true; }
     virtual bool isElementActivated( Element *e ) { return true; }
 
-#ifdef _PYBIND_BINDINGS
-    void setNumberOfDomains(const int& i) {this->ndomains=i;}
-    const int& getNumberOfDomains() const {return this->ndomains;}
-#endif
-
     /// Returns string for prepending output (used by error reporting macros).
     std :: string errorInfo(const char *func) const;
 };

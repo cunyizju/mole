@@ -46,13 +46,6 @@
 #include "material/materialmappingalgorithm.h"
 #include "mapping/mmashapefunctprojection.h"
 #include "input/cltypes.h"
-
-#ifdef _PYBIND_BINDINGS
-    #include <pybind11/pybind11.h>
-    #include <pybind11/stl.h>//Conversion for lists
-    namespace py = pybind11;
-#endif
-
     
 namespace oofem {
 class Domain;
