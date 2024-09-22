@@ -37,7 +37,7 @@
 #include "arrays/intarray.h"
 #include "math/mathfem.h"
 #include "error/error.h"
-#include "datastream.h"
+#include "export/datastream.h"
 
 #include <cstdio>
 #include <cstdlib>

@@ -34,7 +34,7 @@
 
 #include "sm/Materials/structuralms.h"
 #include "sm/Materials/structuralmaterial.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "sm/Elements/nlstructuralelement.h"
 #include "math/gausspoint.h"
 

@@ -36,8 +36,8 @@
 #include "bc/bcvaltype.h"
 #include "ltf/function.h"
 #include "timestep.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 #include "input/dynamicinputrecord.h"
 #include "input/domain.h"
 

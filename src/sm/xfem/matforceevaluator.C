@@ -35,7 +35,7 @@
 #include "matforceevaluator.h"
 #include "xfem/tipinfo.h"
 #include "input/domain.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "sm/Elements/nlstructuralelement.h"
 #include "dofman/dofmanager.h"
 #include "math/integrationrule.h"

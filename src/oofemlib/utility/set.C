@@ -43,7 +43,7 @@
 #include "fei/feinterpol.h"
 #include "fei/feinterpol2d.h"
 #include "fei/feinterpol3d.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "input/dynamicinputrecord.h"
 #include <list>
 

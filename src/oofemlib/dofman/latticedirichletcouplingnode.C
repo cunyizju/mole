@@ -43,8 +43,8 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/intarray.h"
 #include "utility/verbose.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 #include "engng/staggeredproblem.h"
 
 #ifdef __SM_MODULE

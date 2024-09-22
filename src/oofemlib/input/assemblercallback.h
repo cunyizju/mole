@@ -38,7 +38,7 @@
 #include "oofem_export.h"
 #include "valuemodetype.h" ///@todo We shouldn't have this for assembling vectors or matrices(!) / Mikael
 #include "material/matresponsemode.h"
-#include "chartype.h"
+#include "input/chartype.h"
 
 namespace oofem {
 class IntArray;

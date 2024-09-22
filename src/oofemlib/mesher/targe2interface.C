@@ -37,7 +37,7 @@
 #include "input/domain.h"
 #include "dofman/node.h"
 #include "input/element.h"
-#include "remeshingcrit.h"
+#include "mesher/remeshingcrit.h"
 #include "classfactory.h"
 
 namespace oofem {

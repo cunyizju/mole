@@ -45,7 +45,7 @@
 #include "xfem/xfemmanager.h"
 #include "xfem/enrichmentfronts/enrichmentfrontdonothing.h"
 #include "sm/Elements/Shells/shell7basexfem.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 
 namespace oofem {
 REGISTER_EnrichmentItem(Delamination)

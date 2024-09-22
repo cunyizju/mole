@@ -50,10 +50,10 @@
 #include "bc/generalboundarycondition.h"
 #include "bc/boundarycondition.h"
 #include "bc/activebc.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 #include "classfactory.h"
-#include "assemblercallback.h"
+#include "input/assemblercallback.h"
 
 #ifdef __PARALLEL_MODE
  #include "parallel/problemcomm.h"

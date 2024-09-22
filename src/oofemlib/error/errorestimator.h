@@ -45,7 +45,7 @@
 #include "error/errorestimatortype.h"
 #include "arrays/intarray.h"
 #include "internalstatetype.h"
-#include "remeshingcrit.h"
+#include "mesher/remeshingcrit.h"
 
 #include <memory>
 

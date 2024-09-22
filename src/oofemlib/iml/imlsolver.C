@@ -40,7 +40,7 @@
 #include "arrays/floatarray.h"
 #include "diagpre.h"
 #include "voidprecond.h"
-#include "compcol.h"
+#include "input/compcol.h"
 #include "iluprecond.h"
 #include "icprecond.h"
 #include "utility/verbose.h"

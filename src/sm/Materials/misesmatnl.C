@@ -40,10 +40,10 @@
 #include "math/mathfem.h"
 #include "math/sparsemtrx.h"
 #include "nonlocal/nonlocalmaterialext.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "classfactory.h"
 #include "input/dynamicinputrecord.h"
-#include "datastream.h"
+#include "export/datastream.h"
 
 namespace oofem {
 REGISTER_Material(MisesMatNl);

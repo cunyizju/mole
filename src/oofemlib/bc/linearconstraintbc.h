@@ -38,7 +38,7 @@
 #include "bc/activebc.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "chartype.h"
+#include "input/chartype.h"
 #include "valuemodetype.h"
 #include "dofman/dofmanager.h"
 #include "error/error.h"

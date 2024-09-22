@@ -43,7 +43,7 @@
 #include "math/sparsemtrx.h"
 #include "xfem/xfemelementinterface.h"
 #include "xfem/integrationrules/discsegintegrationrule.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "input/geometry.h"
 #include "input/dynamicinputrecord.h"
 #include "timestep.h"

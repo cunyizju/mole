@@ -37,8 +37,8 @@
 
 #include "oofemcfg.h"
 #include "parallel/processcomm.h"
-#include "commbufftype.h"
-#include "communicatormode.h"
+#include "utility/commbufftype.h"
+#include "utility/communicatormode.h"
 #include "error/error.h"
 
 namespace oofem {

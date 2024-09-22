@@ -37,7 +37,7 @@
 #include "classfactory.h"
 #include "utility/util.h"
 #include "input/inputrecord.h"
-#include "datastream.h"
+#include "export/datastream.h"
 #include "input/oofemtxtdatareader.h"
 
 #include <memory>

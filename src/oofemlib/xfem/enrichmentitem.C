@@ -48,7 +48,7 @@
 #include "input/dynamicinputrecord.h"
 #include "XFEMDebugTools.h"
 #include "xfemtolerances.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "math/gausspoint.h"
 #include "enrichmentfronts/enrichmentfront.h"
 #include "enrichmentfronts/enrichmentfrontdonothing.h"

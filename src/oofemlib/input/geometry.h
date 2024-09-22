@@ -39,8 +39,8 @@
 #include "error/error.h"
 #include "arrays/floatarray.h"
 #include "input/inputrecord.h"
-#include "contextioresulttype.h"
-#include "contextmode.h"
+#include "utility/contextioresulttype.h"
+#include "utility/contextmode.h"
 
 #include <list>
 #ifdef __BOOST_MODULE

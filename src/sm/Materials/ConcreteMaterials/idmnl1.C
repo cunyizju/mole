@@ -41,12 +41,12 @@
 #include "math/sparsemtrx.h"
 #include "error/error.h"
 #include "nonlocal/nonlocalmaterialext.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "stressvector.h"
 #include "strainvector.h"
 #include "classfactory.h"
 #include "input/dynamicinputrecord.h"
-#include "datastream.h"
+#include "export/datastream.h"
 #include "unknownnumberingscheme.h"
 
 #ifdef __OOFEG

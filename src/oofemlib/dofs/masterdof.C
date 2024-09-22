@@ -40,8 +40,8 @@
 #include "initial/initialcondition.h"
 #include "fields/primaryfield.h"
 #include "utility/dictionary.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 #include "engng/engngm.h"
 
 namespace oofem {

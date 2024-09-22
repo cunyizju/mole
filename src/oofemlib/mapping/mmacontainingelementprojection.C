@@ -33,7 +33,7 @@
  */
 
 #include "mapping/mmacontainingelementprojection.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "input/domain.h"
 #include "input/element.h"
 #include "material/material.h"

@@ -37,8 +37,8 @@
 #include "input/dynamicinputrecord.h"
 #include "math/gausspoint.h"
 #include "material/material.h"
-#include "contextioerr.h"
-#include "datastream.h"
+#include "utility/contextioerr.h"
+#include "export/datastream.h"
 #include "math/gaussintegrationrule.h"
 
 namespace oofem {

@@ -37,8 +37,8 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 
 namespace oofem {
 #define YIELD_TOL 1.e-4

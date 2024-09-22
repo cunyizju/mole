@@ -33,7 +33,7 @@
  */
 
 #include "error/errorestimator.h"
-#include "remeshingcrit.h"
+#include "mesher/remeshingcrit.h"
 #include "input/inputrecord.h"
 
 namespace oofem {

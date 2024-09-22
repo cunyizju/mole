@@ -38,8 +38,8 @@
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "math/mathfem.h"
-#include "contextioerr.h"
-#include "datastream.h"
+#include "utility/contextioerr.h"
+#include "export/datastream.h"
 #include "classfactory.h"
 
 namespace oofem {

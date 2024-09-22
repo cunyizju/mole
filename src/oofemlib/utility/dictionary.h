@@ -38,8 +38,8 @@
 #include "oofemcfg.h"
 #include "utility/pair.h"
 #include "error/error.h"
-#include "contextioresulttype.h"
-#include "contextmode.h"
+#include "utility/contextioresulttype.h"
+#include "utility/contextmode.h"
 
 #include <string>
 #include <iosfwd>

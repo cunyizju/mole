@@ -44,9 +44,9 @@
 #include "engng/engngm.h"
 #include "math/mathfem.h"
 #include "Elements/structuralelement.h"
-#include "datastream.h"
+#include "export/datastream.h"
 #include "engng/staggeredproblem.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "classfactory.h"
 // #ifdef __TM_MODULE
 //  #include "latticetransportelement.h"

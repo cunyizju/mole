@@ -51,7 +51,7 @@
 #include "input/dynamicinputrecord.h"
 #include "input/domain.h"
 #include "unknownnumberingscheme.h"
-#include "assemblercallback.h"
+#include "input/assemblercallback.h"
 
 #ifdef _OPENMP
 #include <omp.h>

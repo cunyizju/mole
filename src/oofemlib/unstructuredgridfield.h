@@ -48,7 +48,7 @@
 #include "fei/fei2dquadquad.h"
 #include "fei/fei3dtetlin.h"
 #include "fei/fei3dhexalin.h"
-#include "octreelocalizert.h"
+#include "mesher/octreelocalizert.h"
 #include "error/error.h"
 
 namespace oofem {

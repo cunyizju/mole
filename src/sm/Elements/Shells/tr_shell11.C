@@ -34,7 +34,7 @@
 
 #include "sm/Elements/Shells/tr_shell11.h"
 #include "fei/fei2dtrlin.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "math/gaussintegrationrule.h"
 #include "math/gausspoint.h"
 #include "classfactory.h"

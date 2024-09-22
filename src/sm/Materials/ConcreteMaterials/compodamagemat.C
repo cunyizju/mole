@@ -39,7 +39,7 @@
 #include "sm/Materials/structuralms.h"
 #include "math/mathfem.h"
 #include "classfactory.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "cs/crosssection.h"
 
 namespace oofem {

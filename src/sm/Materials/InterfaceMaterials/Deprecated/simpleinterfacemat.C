@@ -38,7 +38,7 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "math/mathfem.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "classfactory.h"
 #include "input/dynamicinputrecord.h"
 

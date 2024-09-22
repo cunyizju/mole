@@ -50,7 +50,7 @@
 #include "solvers/sparselinsystemnm.h"
 #include "input/dynamicinputrecord.h"
 #include "input/domain.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "fei/feinterpol.h"
 #include "unknownnumberingscheme.h"
 #include "ltf/function.h"

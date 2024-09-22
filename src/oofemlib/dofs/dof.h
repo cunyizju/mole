@@ -44,7 +44,7 @@
 #include "valuemodetype.h"
 #include "dofs/dofiditem.h"
 #include "dofs/doftype.h"
-#include "contextioresulttype.h"
+#include "utility/contextioresulttype.h"
 
 namespace oofem {
 class DataStream;

@@ -39,8 +39,8 @@
 #include "input/dynamicinputrecord.h"
 #include "valuemodetype.h"
 #include "input/domain.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 
 namespace oofem {
 

@@ -38,8 +38,8 @@
 #include "arrays/floatmatrix.h"
 #include "math/gausspoint.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 #include "math/mathfem.h"
 #include "classfactory.h"
 

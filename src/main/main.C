@@ -43,12 +43,12 @@
 #include "oofemcfg.h"
 
 #include "input/oofemtxtdatareader.h"
-#include "datastream.h"
+#include "export/datastream.h"
 #include "utility/util.h"
 #include "error/error.h"
 #include "input/logger.h"
-#include "contextioerr.h"
-#include "oofem_terminate.h"
+#include "utility/contextioerr.h"
+#include "error/oofem_terminate.h"
 
 #ifdef __PARALLEL_MODE
  #include "parallel/dyncombuff.h"

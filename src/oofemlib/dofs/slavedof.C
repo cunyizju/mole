@@ -36,9 +36,9 @@
 #include "input/domain.h"
 #include "dofman/dofmanager.h"
 #include "error/error.h"
-#include "datastream.h"
+#include "export/datastream.h"
 #include "entityrenumberingscheme.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 
 namespace oofem {
 SlaveDof :: SlaveDof(DofManager *aNode, DofIDItem id) : Dof(aNode, id), masterContribution()

@@ -40,7 +40,7 @@
 #include "engng/engngm.h"
 #include "math/gausspoint.h"
 #include "fei/feinterpol.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "math/sparsemtrx.h"
 #include "solvers/sparselinsystemnm.h"
 #include "classfactory.h"

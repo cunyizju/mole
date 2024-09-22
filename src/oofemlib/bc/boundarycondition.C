@@ -39,7 +39,7 @@
 #include "input/dynamicinputrecord.h"
 #include "dofs/dof.h"
 #include "classfactory.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "error/error.h"
 
 namespace oofem {

@@ -36,7 +36,7 @@
 #define structengngmodel_h
 
 #include "engng/engngm.h"
-#include "statecountertype.h"
+#include "utility/statecountertype.h"
 #include "arrays/floatarray.h"
 
 namespace oofem {

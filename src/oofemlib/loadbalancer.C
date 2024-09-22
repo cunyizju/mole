@@ -46,7 +46,7 @@
 
 #ifdef __PARALLEL_MODE
 #include "parallel/processcomm.h"
-#include "datastream.h"
+#include "export/datastream.h"
 #include "parallel/communicator.h"
 #include "parallel/domaintransactionmanager.h"
 #include "parallel/nonlocalmatwtp.h"

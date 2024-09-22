@@ -40,8 +40,8 @@
 
 #include "timestep.h"
 #include "engng/engngm.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 #include "error/error.h"
 #include "convergedreason.h"
 

@@ -36,7 +36,7 @@
 #include "input/element.h"
 #include "input/domain.h"
 #include "engng/engngm.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "dofman/node.h"
 #include "dofs/dof.h"
 #include "input/connectivitytable.h"

@@ -37,8 +37,8 @@
 #include "error/error.h"
 #include "input/domain.h"
 #include "math/gausspoint.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 
 namespace oofem {
 Function :: Function(int n, Domain *d) :

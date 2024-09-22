@@ -41,7 +41,7 @@
 #include "nodalrecovery/zznodalrecoverymodel.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "nodalrecovery/sprnodalrecoverymodel.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "sm/ErrorEstimators/zzerrorestimator.h"
 #include "mapping/mmashapefunctprojection.h"
 

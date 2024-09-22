@@ -40,7 +40,7 @@
 #include "material/material.h"
 #include "arrays/floatarray.h"
 #include "utility/verbose.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "classfactory.h"
 
 namespace oofem {

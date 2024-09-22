@@ -42,7 +42,7 @@
 #include "arrays/intarray.h"
 #include "input/element.h"
 #include "fei/feinterpol.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "classfactory.h"
 #include "engng/engngm.h"
 

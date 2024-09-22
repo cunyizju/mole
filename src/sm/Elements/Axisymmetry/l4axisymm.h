@@ -38,7 +38,7 @@
 #include "sm/Elements/structural2delement.h"
 #include "nodalrecovery/zznodalrecoverymodel.h"
 #include "nodalrecovery/sprnodalrecoverymodel.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 
 #define _IFT_L4Axisymm_Name "l4axisymm"
 

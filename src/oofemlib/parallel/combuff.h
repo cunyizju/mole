@@ -36,7 +36,7 @@
 #define combuff_h
 
 #include "oofemcfg.h"
-#include "datastream.h"
+#include "export/datastream.h"
 #include "parallel/parallel.h"
 
 namespace oofem {

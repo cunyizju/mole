@@ -54,7 +54,7 @@
 #include "input/dynamicinputrecord.h"
 #include "input/geometry.h"
 #include "classfactory.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "cs/crosssection.h"
 
 #include <memory>

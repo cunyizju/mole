@@ -42,9 +42,9 @@
 #include "engng/engngm.h"
 #include "math/mathfem.h"
 #include "Elements/LatticeElements/latticestructuralelement.h"
-#include "datastream.h"
+#include "export/datastream.h"
 #include "engng/staggeredproblem.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "classfactory.h"
 
 namespace oofem {

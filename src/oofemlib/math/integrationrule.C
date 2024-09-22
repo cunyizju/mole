@@ -36,8 +36,8 @@
 #include "material/material.h"
 #include "cs/crosssection.h"
 #include "math/gausspoint.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 
 namespace oofem {
 

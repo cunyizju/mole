@@ -38,8 +38,8 @@
 #include "arrays/floatarray.h"
 #include "math/mathfem.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 #include "classfactory.h"
 
 

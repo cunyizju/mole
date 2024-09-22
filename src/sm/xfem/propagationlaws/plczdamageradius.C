@@ -47,7 +47,7 @@
 #include "input/domain.h"
 #include "math/mathfem.h"
 #include "input/dynamicinputrecord.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "input/connectivitytable.h"
 
 namespace oofem {

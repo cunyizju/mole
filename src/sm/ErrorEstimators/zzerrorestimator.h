@@ -39,10 +39,10 @@
 #include "utility/interface.h"
 #include "internalstatetype.h"
 #include "arrays/floatarray.h"
-#include "statecountertype.h"
+#include "utility/statecountertype.h"
 #include "input/element.h"
 #include "math/integrationrule.h"
-#include "remeshingcrit.h"
+#include "mesher/remeshingcrit.h"
 
 ///@name Input fields for ZZErrorEstimator
 //@{

@@ -35,8 +35,8 @@
 #include "latticeviscoelastic.h"
 #include "math/gausspoint.h"
 #include "arrays/floatarray.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 #include "classfactory.h"
 
 namespace oofem {

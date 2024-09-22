@@ -41,7 +41,7 @@
 #include "input/dynamicinputrecord.h"
 #include "classfactory.h"
 #include "utility/util.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "bc/generalboundarycondition.h"
 #include "bc/prescribedgradienthomogenization.h"
 #include "export/exportmodulemanager.h"

@@ -35,7 +35,7 @@
 #ifndef dummylocalizer_h
 #define dummylocalizer_h
 
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 
 #include <vector>
 

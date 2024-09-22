@@ -36,8 +36,8 @@
 #define flotmtrx_h
 
 #include "oofemcfg.h"
-#include "contextioresulttype.h"
-#include "contextmode.h"
+#include "utility/contextioresulttype.h"
+#include "utility/contextmode.h"
 
 #include <vector>
 #include <iosfwd>

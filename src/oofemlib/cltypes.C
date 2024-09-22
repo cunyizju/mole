@@ -33,7 +33,7 @@
  */
 
 #include "error/error.h"
-#include "chartype.h"
+#include "input/chartype.h"
 #include "internalstatetype.h"
 #include "internalstatevaluetype.h"
 #include "input/elementgeometrytype.h"
@@ -46,7 +46,7 @@
 #include "input/domaintype.h"
 #include "dofs/doftype.h"
 #include "dofs/dofiditem.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "fields/field.h"
 #include "xfem/xfemmanager.h"
 

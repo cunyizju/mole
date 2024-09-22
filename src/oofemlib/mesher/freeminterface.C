@@ -39,7 +39,7 @@
 #include "input/element.h"
 #include "input/connectivitytable.h"
 #include "math/mathfem.h"
-#include "remeshingcrit.h"
+#include "mesher/remeshingcrit.h"
 #include "classfactory.h"
 
 #include <list>

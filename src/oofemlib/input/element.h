@@ -37,7 +37,7 @@
 
 #include "femcmpnn.h"
 #include "error/error.h"
-#include "chartype.h"
+#include "input/chartype.h"
 #include "input/domain.h"
 #include "arrays/floatmatrix.h"
 #include "math/integrationdomain.h"

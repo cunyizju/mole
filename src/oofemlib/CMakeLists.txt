@@ -3,23 +3,22 @@ set (core_unsorted
     classfactory.C
     femcmpnn.C  timestep.C metastep.C 
     cltypes.C 
-    assemblercallback.C
-    datastream.C
+
+
     solutionbasedshapefunction.C
     neumannmomentload.C
     prescribedmean.C
     # Semi sorted:
-    remeshingcrit.C
+
     sloangraph.C sloangraphnode.C sloanlevelstruct.C
     eleminterpunknownmapper.C primaryunknownmapper.C 
      randommaterialext.C
-    spatiallocalizer.C dummylocalizer.C octreelocalizer.C
      lobattoir.C
     smoothednodalintvarfield.C
     # Deprecated?
     ldltfact.C
     #
-    symcompcol.C compcol.C
+    symcompcol.C 
     unstructuredgridfield.C
     # 
     loadbalancer.C
@@ -36,6 +35,7 @@ set(input
     input/oofemtxtinputrecord.C
     input/dynamicinputrecord.C
     input/domain.C
+    input/assemblercallback.C
     input/element.C
     input/geotoolbox.C
     input/geometry.C
@@ -43,6 +43,7 @@ set(input
     input/dynamicdatareader.C
     input/oofemtxtdatareader.C
     input/logger.C
+    input/compcol.C
 )
 set(contact
     contact/contactmanager.C
@@ -223,6 +224,7 @@ set (core_export
     export/exportmodulemanager.C
     export/exportregion.C
     export/outputexportmodule.C
+    export/datastream.C
     export/errorcheckingexportmodule.C
     export/vtkexportmodule.C
     export/vtkbaseexportmodule.C
@@ -392,6 +394,10 @@ set (core_mesher
     mesher/freeminterface.C
     mesher/subdivision.C
     mesher/trianglemesherinterface.C
+    mesher/spatiallocalizer.C
+    mesher/dummylocalizer.C
+    mesher/octreelocalizer.C
+    mesher/remeshingcrit.C
     )
 
 set (core

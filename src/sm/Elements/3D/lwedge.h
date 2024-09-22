@@ -41,7 +41,7 @@
 #include "nodalrecovery/zznodalrecoverymodel.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "nodalrecovery/sprnodalrecoverymodel.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 
 #define _IFT_LWedge_Name "lwedge"
 

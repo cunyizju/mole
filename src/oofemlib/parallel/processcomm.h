@@ -37,8 +37,8 @@
 
 #include "oofemcfg.h"
 #include "parallel/combuff.h"
-#include "commbufftype.h"
-#include "communicatormode.h"
+#include "utility/commbufftype.h"
+#include "utility/communicatormode.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"

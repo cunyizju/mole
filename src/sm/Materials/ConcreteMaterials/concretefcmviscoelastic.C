@@ -36,7 +36,7 @@
 #include "math/gausspoint.h"
 #include "math/mathfem.h"
 #include "classfactory.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "../RheoChainMaterials/rheoChM.h"
 
 namespace oofem {

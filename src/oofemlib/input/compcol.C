@@ -67,7 +67,7 @@
 /*          Compressed column sparse matrix (0-based)                    */
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-#include "compcol.h"
+#include "input/compcol.h"
 #include "arrays/floatarray.h"
 #include "engng/engngm.h"
 #include "input/domain.h"

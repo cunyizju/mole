@@ -37,8 +37,8 @@
 
 #include "oofemcfg.h"
 #include "valuemodetype.h"
-#include "contextioresulttype.h"
-#include "contextmode.h"
+#include "utility/contextioresulttype.h"
+#include "utility/contextmode.h"
 #include "utility/enumitem.h"
 #include <string>
 #include <memory>

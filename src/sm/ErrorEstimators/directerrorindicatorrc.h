@@ -36,9 +36,9 @@
 #define directerrorindicatorrc_h
 
 #include "utility/interface.h"
-#include "remeshingcrit.h"
+#include "mesher/remeshingcrit.h"
 #include "arrays/floatarray.h"
-#include "statecountertype.h"
+#include "utility/statecountertype.h"
 
 #include <map>
 

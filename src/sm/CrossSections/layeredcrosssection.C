@@ -41,7 +41,7 @@
 #include "arrays/floatarray.h"
 #include "arrays/floatarrayf.h"
 #include "arrays/floatmatrixf.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "math/gaussintegrationrule.h"
 #include "math/mathfem.h"
 #include "classfactory.h"

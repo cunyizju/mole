@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "octreelocalizer.h"
+#include "mesher/octreelocalizer.h"
 #include "input/element.h"
 #include "input/domain.h"
 #include "math/integrationrule.h"

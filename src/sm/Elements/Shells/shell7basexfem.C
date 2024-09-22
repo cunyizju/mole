@@ -47,7 +47,7 @@
 #include "input/connectivitytable.h"
 #include "math/mathfem.h"
 #include "math/gausspoint.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 
 namespace oofem {
 

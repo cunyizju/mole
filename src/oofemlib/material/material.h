@@ -45,7 +45,7 @@
 #include "internalstatevaluetype.h"
 #include "material/matresponsemode.h"
 #include "utility/dictionary.h"
-#include "chartype.h"
+#include "input/chartype.h"
 
 ///@name Input fields for Material
 //@{

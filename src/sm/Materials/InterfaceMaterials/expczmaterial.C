@@ -37,8 +37,8 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "math/mathfem.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 
 namespace oofem {
 ///@todo This unit has a *unit*! There are no small numbers, and we should change the code to avoid the need for this at all cost. / Mikael

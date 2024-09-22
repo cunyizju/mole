@@ -33,13 +33,13 @@
  */
 
 #include "fields/primaryfield.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "dofman/dofmanager.h"
 #include "dofs/dof.h"
 #include "input/element.h"
 #include "timestep.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 #include "engng/engngm.h"
 #include "unknownnumberingscheme.h"
 #include "initial/initialcondition.h"

@@ -42,8 +42,8 @@
 #include "latticematstatus.h"
 #include "arrays/intarray.h"
 #include "Elements/LatticeElements/latticestructuralelement.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 #include "classfactory.h"
 
 namespace oofem {

@@ -35,8 +35,8 @@
 #include "ltf/constantfunction.h"
 #include "input/dynamicinputrecord.h"
 #include "classfactory.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 
 namespace oofem {
 REGISTER_Function(ConstantFunction);

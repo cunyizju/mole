@@ -36,9 +36,9 @@
 #include "math/gausspoint.h"
 #include "arrays/floatarray.h"
 #include "nonlocal/nonlocalmaterialext.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "classfactory.h"
-#include "datastream.h"
+#include "export/datastream.h"
 
 namespace oofem {
 REGISTER_Material(MazarsNLMaterial);

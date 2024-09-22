@@ -38,8 +38,8 @@
 #include "arrays/floatarray.h"
 #include "math/mathfem.h"
 #include "input/dynamicinputrecord.h"
-#include "contextioerr.h"
-#include "datastream.h"
+#include "utility/contextioerr.h"
+#include "export/datastream.h"
 
 namespace oofem {
 Material :: Material(int n, Domain *d) : FEMComponent(n, d), propertyDictionary(), castingTime(-1.) { }

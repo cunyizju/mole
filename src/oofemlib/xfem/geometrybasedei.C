@@ -35,7 +35,7 @@
 #include "xfem/geometrybasedei.h"
 #include "xfemmanager.h"
 
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "classfactory.h"
 #include "input/element.h"
 #include "dofman/node.h"

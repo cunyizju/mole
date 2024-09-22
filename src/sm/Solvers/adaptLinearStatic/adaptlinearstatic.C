@@ -33,12 +33,12 @@
  */
 
 #include "adaptlinearstatic.h"
-#include "remeshingcrit.h"
+#include "mesher/remeshingcrit.h"
 #include "mesherinterface.h"
 #include "error/errorestimator.h"
 #include "input/domain.h"
 #include "classfactory.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "export/outputmanager.h"
 
 namespace oofem {

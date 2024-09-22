@@ -38,8 +38,8 @@
 #include "math/gausspoint.h"
 #include "math/mathfem.h"
 #include "timestep.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 #include "classfactory.h"
 
 namespace oofem {

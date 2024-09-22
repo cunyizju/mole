@@ -40,7 +40,7 @@
 #include "math/gausspoint.h"
 #include "classfactory.h"
 #include "input/dynamicinputrecord.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 
 namespace oofem {
 REGISTER_Material(IsotropicLinearElasticMaterial);

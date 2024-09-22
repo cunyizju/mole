@@ -36,8 +36,8 @@
 #include "math/gausspoint.h"
 #include "math/mathfem.h"
 #include "classfactory.h"
-#include "contextioerr.h"
-#include "datastream.h"
+#include "utility/contextioerr.h"
+#include "export/datastream.h"
 #include "dofman/node.h"
 
 #include "nonlocal/nonlocalmaterialext.h"

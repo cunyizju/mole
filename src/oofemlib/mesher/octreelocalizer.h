@@ -36,7 +36,7 @@
 #define octreelocalizer_h
 
 #include "oofemcfg.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 

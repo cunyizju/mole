@@ -34,7 +34,7 @@
 
 #include "arrays/intarray.h"
 #include "error/error.h"
-#include "datastream.h"
+#include "export/datastream.h"
 
 #include <cstdarg>
 #include <cstdlib>

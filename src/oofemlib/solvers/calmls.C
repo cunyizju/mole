@@ -36,7 +36,7 @@
 #include "utility/verbose.h"
 #include "timestep.h"
 #include "arrays/floatmatrix.h"
-#include "datastream.h"
+#include "export/datastream.h"
 #include "math/mathfem.h"
 #include "input/element.h"
 #include "classfactory.h"
@@ -44,7 +44,7 @@
 // includes for HPC - not very clean (NumMethod knows what is "node" and "dof")
 #include "dofman/node.h"
 #include "dofs/dof.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "export/exportmodulemanager.h"
 #include "parallel/parallelcontext.h"
 #include "unknownnumberingscheme.h"

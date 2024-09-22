@@ -34,7 +34,7 @@
 
 #include "math/sparsemtrx.h"
 #include "arrays/floatarray.h"
-#include "compcol.h"
+#include "input/compcol.h"
 #include "solvers/linsystsolvertype.h"
 #include "classfactory.h"
 

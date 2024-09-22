@@ -38,7 +38,7 @@
 #include "xfem/xfemmanager.h"
 #include "input/domain.h"
 #include "input/connectivitytable.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "input/element.h"
 #include "math/gausspoint.h"
 

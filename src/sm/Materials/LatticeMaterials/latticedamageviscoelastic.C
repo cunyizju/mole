@@ -37,8 +37,8 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "Elements/LatticeElements/latticestructuralelement.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 #include "classfactory.h"
 #include "math.h"
 

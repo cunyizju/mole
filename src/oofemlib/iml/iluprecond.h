@@ -33,7 +33,7 @@
 
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
-#include "compcol.h"
+#include "input/compcol.h"
 #include "dyncompcol.h"
 #include "precond.h"
 

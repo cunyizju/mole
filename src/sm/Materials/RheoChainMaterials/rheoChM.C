@@ -42,7 +42,7 @@
 #include "math/gausspoint.h"
 #include "engng/engngm.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 
 namespace oofem {
 RheoChainMaterial :: RheoChainMaterial(int n, Domain *d) : StructuralMaterial(n, d)

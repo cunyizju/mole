@@ -39,8 +39,8 @@
  */
 
 #include "femcmpnn.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 #include "input/dynamicinputrecord.h"
 
 #include <cstdarg>

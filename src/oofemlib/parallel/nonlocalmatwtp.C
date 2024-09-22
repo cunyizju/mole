@@ -40,7 +40,7 @@
 #include "math/gausspoint.h"
 #include "material/material.h"
 #include "parallel/communicator.h"
-#include "datastream.h"
+#include "export/datastream.h"
 #include "parallel/domaintransactionmanager.h"
 #include "classfactory.h"
 

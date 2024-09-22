@@ -38,8 +38,8 @@
 #include "oofemcfg.h"
 #include "material/materialmode.h"
 #include "math/integrationdomain.h"
-#include "contextioresulttype.h"
-#include "contextmode.h"
+#include "utility/contextioresulttype.h"
+#include "utility/contextmode.h"
 #include "input/inputrecord.h"
 
 #include <cstdio>

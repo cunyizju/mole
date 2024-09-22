@@ -33,7 +33,7 @@
  */
 
 #include "mapping/mmaclosestiptransfer.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "input/domain.h"
 #include "material/material.h"
 #include "math/gausspoint.h"

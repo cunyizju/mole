@@ -12,7 +12,7 @@
 #include "classfactory.h"
 #include "math/mathfem.h"
 #include "input/dynamicinputrecord.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "arrays/floatmatrix.h"
 #include "math/gausspoint.h"
 #include "sm/Materials/structuralms.h"

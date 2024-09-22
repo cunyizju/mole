@@ -39,7 +39,7 @@
 #include "nodalrecovery/zznodalrecoverymodel.h"
 #include "nodalrecovery/sprnodalrecoverymodel.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "bc/load.h"
 #include "arrays/floatmatrixf.h"
 //#include "eleminterpmapperinterface.h"//

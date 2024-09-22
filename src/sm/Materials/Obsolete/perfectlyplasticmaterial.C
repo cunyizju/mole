@@ -38,8 +38,8 @@
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "math/mathfem.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 
 namespace oofem {
 bool

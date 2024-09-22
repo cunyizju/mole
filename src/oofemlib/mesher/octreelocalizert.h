@@ -41,8 +41,8 @@
 #ifndef octreelocalizert_h
 #define octreelocalizert_h
 
-#include "spatiallocalizer.h"
-#include "octreelocalizer.h"
+#include "mesher/spatiallocalizer.h"
+#include "mesher/octreelocalizer.h"
 #include "dofman/dofmanager.h"
 #include "dofman/node.h"
 #include "input/element.h"

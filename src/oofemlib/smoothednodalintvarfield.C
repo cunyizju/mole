@@ -33,7 +33,7 @@
  */
 
 #include "smoothednodalintvarfield.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "classfactory.h"
 #include "input/element.h"
 #include "fei/feinterpol.h"

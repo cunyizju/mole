@@ -48,14 +48,14 @@ using namespace std;
 #include "solvers/sparsenonlinsystemnm.h"
 #include "solvers/nrsolver.h"
 #include "export/outputmanager.h"
-#include "datastream.h"
+#include "export/datastream.h"
 #include "classfactory.h"
 #include "utility/timer.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "math/sparsemtrx.h"
 #include "error/errorestimator.h"
 #include "unknownnumberingscheme.h"
-#include "assemblercallback.h"
+#include "input/assemblercallback.h"
 
 #ifdef __PARALLEL_MODE
  #include "loadbalancer.h"

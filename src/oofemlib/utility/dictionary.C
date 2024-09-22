@@ -34,9 +34,9 @@
 
 #include "utility/dictionary.h"
 #include "input/logger.h"
-#include "datastream.h"
-#include "contextioerr.h"
-#include "contextmode.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
+#include "utility/contextmode.h"
 
 #include <cstdlib>
 #include <ostream>

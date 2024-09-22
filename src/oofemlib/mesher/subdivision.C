@@ -48,7 +48,7 @@
 #include "cs/crosssection.h"
 #include "ltf/function.h"
 #include "utility/timer.h"
-#include "remeshingcrit.h"
+#include "mesher/remeshingcrit.h"
 #include "input/dynamicinputrecord.h"
 #include "engng/engngm.h"
 
@@ -63,7 +63,7 @@
  #include "parallel/parallel.h"
  #include "parallel/problemcomm.h"
  #include "parallel/communicator.h"
- #include "datastream.h"
+ #include "export/datastream.h"
  #include "parallel/domaintransactionmanager.h"
 #endif
 

@@ -38,8 +38,8 @@
 #define floatmatrixf_h
 
 #include "oofemcfg.h"
-#include "contextioresulttype.h"
-#include "contextmode.h"
+#include "utility/contextioresulttype.h"
+#include "utility/contextmode.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarrayf.h"
 

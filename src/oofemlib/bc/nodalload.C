@@ -34,9 +34,9 @@
 
 #include "bc/nodalload.h"
 #include "classfactory.h"
-#include "datastream.h"
+#include "export/datastream.h"
 #include "input/dynamicinputrecord.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 
 namespace oofem {
 REGISTER_BoundaryCondition(NodalLoad);

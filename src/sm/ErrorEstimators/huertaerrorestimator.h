@@ -40,8 +40,8 @@
 #include "error/errorestimator.h"
 #include "utility/interface.h"
 #include "arrays/floatarray.h"
-#include "statecountertype.h"
-#include "remeshingcrit.h"
+#include "utility/statecountertype.h"
+#include "mesher/remeshingcrit.h"
 
 #include <vector>
 

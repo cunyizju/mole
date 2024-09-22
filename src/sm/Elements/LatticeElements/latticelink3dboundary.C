@@ -46,8 +46,8 @@
 #include "../sm/Elements/LatticeElements/latticestructuralelement.h"
 #include "classfactory.h"
 #include "../sm/Materials/structuralmaterial.h"
-#include "contextioerr.h"
-#include "datastream.h"
+#include "utility/contextioerr.h"
+#include "export/datastream.h"
 #include "cs/crosssection.h"
 #include "dofs/dof.h"
 

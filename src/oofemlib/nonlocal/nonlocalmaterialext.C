@@ -39,7 +39,7 @@
 #include "math/integrationrule.h"
 #include "nonlocal/nonlocalmaterialext.h"
 #include "material/material.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "input/domain.h"
 #include "nonlocal/nonlocalbarrier.h"
 #include "math/mathfem.h"

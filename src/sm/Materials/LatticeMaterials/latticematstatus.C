@@ -34,8 +34,8 @@
 
 #include "latticematstatus.h"
 #include "../structuralmaterial.h"
-#include "contextioerr.h"
-#include "datastream.h"
+#include "utility/contextioerr.h"
+#include "export/datastream.h"
 #include "math/gausspoint.h"
 
 namespace oofem {

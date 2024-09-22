@@ -42,7 +42,7 @@
 #include "sm/CrossSections/layeredcrosssection.h" 
 #include "sm/Elements/Shells/cct3d.h"
 #include "sm/Elements/PlaneStress/trplanrot3d.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "fei/fei2dtrlin.h"
 #include <memory>
 

@@ -44,9 +44,9 @@
 #include "valuemodetype.h"
 #include "dofs/doftype.h"
 #include "dofs/dofiditem.h"
-#include "contextioresulttype.h"
+#include "utility/contextioresulttype.h"
 #include "unknowntype.h"
-#include "chartype.h"
+#include "input/chartype.h"
 
 ///@name Input fields for DofManager
 //@{

@@ -36,10 +36,10 @@
 #include "arrays/intarray.h"
 #include "arrays/floatmatrix.h"
 #include "error/error.h"
-#include "datastream.h"
+#include "export/datastream.h"
 #include "material/materialmode.h"
 #include "sm/Materials/structuralmaterial.h"
-#include "datastream.h"
+#include "export/datastream.h"
 
 namespace oofem {
 StressStrainBaseVector :: StressStrainBaseVector(MaterialMode m) : FloatArray()

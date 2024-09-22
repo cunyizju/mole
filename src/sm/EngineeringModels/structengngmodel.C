@@ -42,7 +42,7 @@
 #include "timestep.h"
 #include "export/outputmanager.h"
 #include "bc/activebc.h"
-#include "assemblercallback.h"
+#include "input/assemblercallback.h"
 #include "unknownnumberingscheme.h"
 
 #include "sm/Materials/structuralmaterial.h"

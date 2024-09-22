@@ -50,7 +50,7 @@
 #include "unknownnumberingscheme.h"
 #include "math/sparsemtrx.h"
 #include "solvers/sparselinsystemnm.h"
-#include "assemblercallback.h"
+#include "input/assemblercallback.h"
 #include "math/mathfem.h"
 
 namespace oofem {

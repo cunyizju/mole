@@ -24,7 +24,7 @@
 #include "utility/util.h"
 #include "input/inputrecord.h"
 #include "engng/engngm.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "input/dynamicinputrecord.h"
 #include "bc/bodyload.h"
 #include "bc/boundarycondition.h"

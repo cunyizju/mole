@@ -36,7 +36,7 @@
 #include "xfem/tipinfo.h"
 #include "input/domain.h"
 #include "xfem/xfemmanager.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "input/element.h"
 
 namespace oofem {

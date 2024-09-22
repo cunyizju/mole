@@ -39,8 +39,8 @@
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "valuemodetype.h"
-#include "contextioresulttype.h"
-#include "contextmode.h"
+#include "utility/contextioresulttype.h"
+#include "utility/contextmode.h"
 
 #include <memory>
 

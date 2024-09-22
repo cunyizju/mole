@@ -34,7 +34,7 @@
 
 #include "dofs/dofmanvalfield.h"
 #include "input/domain.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "input/element.h"
 #include "cs/crosssection.h"
 #include "timestep.h"
@@ -45,7 +45,7 @@
 #include "problemmode.h"
 #include "nodalrecovery/nodalrecoverymodel.h"
 #include "export/vtkbaseexportmodule.h"
-#include "octreelocalizer.h"
+#include "mesher/octreelocalizer.h"
 
 
 namespace oofem {

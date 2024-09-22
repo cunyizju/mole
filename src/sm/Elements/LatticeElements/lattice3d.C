@@ -46,8 +46,8 @@
 #include "arrays/floatarrayf.h"
 #include "math/mathfem.h"
 #include "latticestructuralelement.h"
-#include "contextioerr.h"
-#include "datastream.h"
+#include "utility/contextioerr.h"
+#include "export/datastream.h"
 #include "classfactory.h"
 #include "sm/CrossSections/latticecrosssection.h"
 

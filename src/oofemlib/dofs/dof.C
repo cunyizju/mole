@@ -37,8 +37,8 @@
 #include "timestep.h"
 #include "bc/boundarycondition.h"
 #include "initial/initialcondition.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 #include "unknownnumberingscheme.h"
 
 #include <cstring>

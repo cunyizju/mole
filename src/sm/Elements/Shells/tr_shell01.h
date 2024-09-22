@@ -40,7 +40,7 @@
 #include "sm/ErrorEstimators/zzerrorestimator.h"
 #include "sm/Elements/Shells/cct3d.h"
 #include "sm/Elements/PlaneStress/trplanrot3d.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 
 #include <memory>
 

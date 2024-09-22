@@ -35,7 +35,7 @@
 #ifndef contactmanager_h
 #define contactmanager_h
 
-#include "chartype.h"
+#include "input/chartype.h"
 #include "valuemodetype.h"
 #include "oofemcfg.h"
 #include "input/datareader.h"

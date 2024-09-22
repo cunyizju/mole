@@ -40,7 +40,7 @@
 #include "arrays/floatarray.h"
 #include "utility/interface.h"
 #include "internalstatetype.h"
-#include "statecountertype.h"
+#include "utility/statecountertype.h"
 #include "utility/set.h"
 
 #include <map>

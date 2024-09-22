@@ -43,7 +43,7 @@
 #include "nodalrecovery/zznodalrecoverymodel.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
 #include "nodalrecovery/sprnodalrecoverymodel.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "mapping/mmashapefunctprojection.h"
 
 

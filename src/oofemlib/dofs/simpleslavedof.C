@@ -35,9 +35,9 @@
 #include "dofs/simpleslavedof.h"
 #include "dofman/dofmanager.h"
 #include "input/domain.h"
-#include "datastream.h"
+#include "export/datastream.h"
 #include "entityrenumberingscheme.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 
 namespace oofem {
 SimpleSlaveDof :: SimpleSlaveDof(DofManager *aNode, int master, DofIDItem id) : Dof(aNode, id)

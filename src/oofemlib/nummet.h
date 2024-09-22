@@ -37,8 +37,8 @@
 
 #include "oofemcfg.h"
 #include "input/inputrecord.h"
-#include "contextioresulttype.h"
-#include "contextmode.h"
+#include "utility/contextioresulttype.h"
+#include "utility/contextmode.h"
 
 namespace oofem {
 class EngngModel;

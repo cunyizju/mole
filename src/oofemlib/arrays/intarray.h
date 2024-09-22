@@ -36,8 +36,8 @@
 #define intarray_h
 
 #include "oofemcfg.h"
-#include "contextioresulttype.h"
-#include "contextmode.h"
+#include "utility/contextioresulttype.h"
+#include "utility/contextmode.h"
 #include "error/error.h"
 
 #include <cstdio>

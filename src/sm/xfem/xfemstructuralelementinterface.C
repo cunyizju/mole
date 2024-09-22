@@ -41,7 +41,7 @@
 #include "math/gausspoint.h"
 #include "input/dynamicinputrecord.h"
 #include "fei/feinterpol.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "engng/engngm.h"
 #include "sm/Elements/nlstructuralelement.h"
 #include "math/mathfem.h"

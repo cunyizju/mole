@@ -36,7 +36,7 @@
 #include "bc/activebc.h"
 #include "input/domain.h"
 #include "dofman/dofmanager.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "bc/activebc.h"
 #include "engng/engngm.h"
 

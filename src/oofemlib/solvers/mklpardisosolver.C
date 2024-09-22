@@ -34,7 +34,7 @@
 
 #include "solvers/mklpardisosolver.h"
 
-#include "compcol.h"
+#include "input/compcol.h"
 #include "symcompcol.h"
 #include "engng/engngm.h"
 #include "arrays/floatarray.h"

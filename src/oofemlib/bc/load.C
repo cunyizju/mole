@@ -37,8 +37,8 @@
 #include "timestep.h"
 #include "ltf/function.h"
 #include "input/dynamicinputrecord.h"
-#include "datastream.h"
-#include "contextioerr.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 
 namespace oofem {
 Load :: Load(int i, Domain *aDomain) :

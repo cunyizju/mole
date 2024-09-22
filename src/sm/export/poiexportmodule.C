@@ -40,7 +40,7 @@
 #include "mapping/mmaclosestiptransfer.h"
 #include "mapping/mmaleastsquareprojection.h"
 #include "mapping/mmashapefunctprojection.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "internalstatevaluetype.h"
 #include "input/element.h"
 #include "classfactory.h"

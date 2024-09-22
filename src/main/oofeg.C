@@ -40,7 +40,7 @@
 #include "timestep.h"
 #include "error/error.h"
 #include "oofeg/oofeggraphiccontext.h"
-#include "datastream.h"
+#include "export/datastream.h"
 
 #include "input/connectivitytable.h"
 #include "math/mathfem.h"
@@ -54,10 +54,10 @@
 #include "arrays/intarray.h"
 #include "oofemcfg.h"
 #include "error/errorestimator.h"
-#include "remeshingcrit.h"
+#include "mesher/remeshingcrit.h"
 #include "drawmode.h"
-#include "contextioerr.h"
-#include "oofem_terminate.h"
+#include "utility/contextioerr.h"
+#include "error/oofem_terminate.h"
 #include "classfactory.h"
 
 #include <sstream>

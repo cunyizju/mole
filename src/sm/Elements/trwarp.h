@@ -36,7 +36,7 @@
 #define tr_warp_h
 
 #include "structuralelement.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "nodalrecovery/zznodalrecoverymodel.h"
 #include "fei/fei2dtrlin.h"
 

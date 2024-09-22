@@ -37,7 +37,7 @@
 
 #include "sm/Elements/structural2delement.h"
 #include "sm/ErrorEstimators/directerrorindicatorrc.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "nodalrecovery/zznodalrecoverymodel.h"
 #include "nodalrecovery/sprnodalrecoverymodel.h"
 

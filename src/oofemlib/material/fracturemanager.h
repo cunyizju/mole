@@ -37,8 +37,8 @@
 
 #include "input/datareader.h"
 #include "input/inputrecord.h"
-#include "contextioresulttype.h"
-#include "contextmode.h"
+#include "utility/contextioresulttype.h"
+#include "utility/contextmode.h"
 #include "timestep.h"
 #include "utility/interface.h"
 #include "utility/enumitem.h"

@@ -37,7 +37,7 @@
 #include "classfactory.h"
 #include "xfem/xfemmanager.h"
 #include "input/domain.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "input/element.h"
 #include "math/gausspoint.h"
 #include "math/mathfem.h"

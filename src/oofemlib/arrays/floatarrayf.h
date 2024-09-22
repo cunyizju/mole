@@ -36,9 +36,9 @@
 #define floatarrayf_h
 
 #include "oofemcfg.h"
-#include "contextioresulttype.h"
-#include "contextmode.h"
-#include "datastream.h"
+#include "utility/contextioresulttype.h"
+#include "utility/contextmode.h"
+#include "export/datastream.h"
 #include "error/error.h"
 #include "arrays/floatarray.h"
 

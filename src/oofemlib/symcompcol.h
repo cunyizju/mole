@@ -71,7 +71,7 @@
 #ifndef symcompcol_h
 #define symcompcol_h
 
-#include "compcol.h"
+#include "input/compcol.h"
 
 namespace oofem {
 /**

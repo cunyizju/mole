@@ -41,9 +41,9 @@
 #define timestep_h
 
 #include "oofemcfg.h"
-#include "contextioresulttype.h"
-#include "contextmode.h"
-#include "statecountertype.h"
+#include "utility/contextioresulttype.h"
+#include "utility/contextmode.h"
+#include "utility/statecountertype.h"
 #include "timediscretizationtype.h"
 #include "input/inputrecord.h"
 #include "convergedreason.h"

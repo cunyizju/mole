@@ -34,7 +34,7 @@
 
 
 #include "structuralinterfacematerial.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 
 #include "sm/Materials/structuralmaterial.h"
 #include "structuralinterfacematerialstatus.h"

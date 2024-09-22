@@ -55,9 +55,9 @@ namespace py = pybind11;
 #include "dofman/dofmanager.h"
 #include "input/element.h"
 #include "Elements/structuralelement.h"
-#include "datastream.h"
+#include "export/datastream.h"
 #include "timediscretizationtype.h"
-#include "statecountertype.h"
+#include "utility/statecountertype.h"
 
 #include "bc/generalboundarycondition.h"
 #include "bc/boundarycondition.h"
@@ -83,7 +83,7 @@ namespace py = pybind11;
 
 #include "classfactory.h"
 
-#include "chartype.h"
+#include "input/chartype.h"
 #include "input/elementgeometrytype.h"
 #include "internalstatetype.h"
 #include "material/materialmode.h"

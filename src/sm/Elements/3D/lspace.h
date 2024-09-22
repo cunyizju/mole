@@ -40,7 +40,7 @@
 #include "nodalrecovery/zznodalrecoverymodel.h"
 #include "nodalrecovery/sprnodalrecoverymodel.h"
 #include "nodalrecovery/nodalaveragingrecoverymodel.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 
 #define _IFT_LSpace_Name "lspace"
 #define _IFT_LSpace_reducedShearIntegration "reducedshearint"

@@ -37,7 +37,7 @@
 #include "math/gausspoint.h"
 #include "input/element.h"
 #include "input/domain.h"
-#include "spatiallocalizer.h"
+#include "mesher/spatiallocalizer.h"
 #include "math/integrationrule.h"
 #include "input/connectivitytable.h"
 #include "input/dynamicinputrecord.h"

@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "remeshingcrit.h"
+#include "mesher/remeshingcrit.h"
 #include "error/errorestimator.h"
 
 #ifdef __PARALLEL_MODE

@@ -38,7 +38,7 @@
 #include "dofman/node.h"
 #include "input/element.h"
 #include "engng/engngm.h"
-#include "remeshingcrit.h"
+#include "mesher/remeshingcrit.h"
 #include "input/oofemtxtdatareader.h"
 #include "input/dynamicinputrecord.h"
 

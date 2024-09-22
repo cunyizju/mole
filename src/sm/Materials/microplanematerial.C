@@ -35,7 +35,7 @@
 #include "microplanematerial.h"
 #include "math/gausspoint.h"
 #include "arrays/floatarray.h"
-#include "contextioerr.h"
+#include "utility/contextioerr.h"
 #include "math/mathfem.h"
 #include "input/dynamicinputrecord.h"
 
