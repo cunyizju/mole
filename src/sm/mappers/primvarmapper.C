@@ -35,7 +35,7 @@
 #include "primvarmapper.h"
 #include "input/domain.h"
 #include "dofman/dofmanager.h"
-#include "linsystsolvertype.h"
+#include "solvers/linsystsolvertype.h"
 #include "sm/Elements/structuralelement.h"
 #include "engng/engngm.h"
 #include "math/gausspoint.h"

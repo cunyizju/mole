@@ -36,7 +36,7 @@
 #define linearstability_h
 
 #include "sm/EngineeringModels/structengngmodel.h"
-#include "geneigvalsolvertype.h"
+#include "solvers/geneigvalsolvertype.h"
 #include "math/sparsegeneigenvalsystemnm.h"
 #include "solvers/sparselinsystemnm.h"
 #include "math/sparsemtrx.h"

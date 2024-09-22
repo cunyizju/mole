@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "spoolessolver.h"
+#include "solvers/spoolessolver.h"
 #include "spoolessparsemtrx.h"
 #include "arrays/floatarray.h"
 #include "utility/verbose.h"

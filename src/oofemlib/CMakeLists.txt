@@ -82,7 +82,9 @@ set(utility
 )
 
 if (USE_SPOOLES)
-    list (APPEND core_unsorted spoolessparsemtrx.C spoolessolver.C)
+    list (APPEND core_nm 
+    solvers/spoolessparsemtrx.C
+    solvers/spoolessolver.C)
 endif ()
 
 if (USE_IML)
@@ -98,7 +100,7 @@ endif ()
 
 
 if (USE_SUPERLU_MT)
-  list (APPEND core_unsorted superlusolver.C)
+  list (APPEND core_nm solvers/superlusolver.C)
 endif ()
 
 set(nonlocal

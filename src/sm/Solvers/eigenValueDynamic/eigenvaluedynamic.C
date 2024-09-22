@@ -40,7 +40,7 @@
 #include "utility/verbose.h"
 #include "classfactory.h"
 #include "datastream.h"
-#include "geneigvalsolvertype.h"
+#include "solvers/geneigvalsolvertype.h"
 #include "contextioerr.h"
 #include "classfactory.h"
 #include "dofman/dofmanager.h"

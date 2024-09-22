@@ -39,11 +39,11 @@
 #include "math/sparsemtrxtype.h"
 #include "error/errorestimatortype.h"
 #include "dofs/doftype.h"
-#include "linsystsolvertype.h"
+#include "solvers/linsystsolvertype.h"
 //#include "patch.h" // for PatchType
 #include "nodalrecovery/nodalrecoverymodel.h" // for NodalRecoveryModelType
 #include "math/integrationrule.h" // for IntegrationRuleType
-#include "geneigvalsolvertype.h"
+#include "solvers/geneigvalsolvertype.h"
 #include "material/materialmappingalgorithmtype.h"
 #include "meshpackagetype.h"
 #include "dofs/dofiditem.h"

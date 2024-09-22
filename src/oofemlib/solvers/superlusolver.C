@@ -35,11 +35,11 @@
 #include "math/sparsemtrx.h"
 #include "arrays/floatarray.h"
 #include "compcol.h"
-#include "linsystsolvertype.h"
+#include "solvers/linsystsolvertype.h"
 #include "classfactory.h"
 
 #include "SUPERLU_MT/include/slu_mt_ddefs.h"
-#include "superlusolver.h"
+#include "solvers/superlusolver.h"
 #include <stdlib.h>
 #include <math.h>
 #include "utility/verbose.h"

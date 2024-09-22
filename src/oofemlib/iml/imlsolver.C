@@ -45,7 +45,7 @@
 #include "icprecond.h"
 #include "utility/verbose.h"
 #include "ilucomprowprecond.h"
-#include "linsystsolvertype.h"
+#include "solvers/linsystsolvertype.h"
 #include "classfactory.h"
 
 #ifdef TIME_REPORT

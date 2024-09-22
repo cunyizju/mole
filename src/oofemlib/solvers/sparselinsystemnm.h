@@ -37,7 +37,7 @@
 
 #include "nummet.h"
 #include "convergedreason.h"
-#include "linsystsolvertype.h"
+#include "solvers/linsystsolvertype.h"
 #include "math/sparsemtrxtype.h"
 
 namespace oofem {

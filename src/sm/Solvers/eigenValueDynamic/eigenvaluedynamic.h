@@ -40,7 +40,7 @@
 #include "math/sparsemtrx.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
-#include "geneigvalsolvertype.h"
+#include "solvers/geneigvalsolvertype.h"
 #include "fields/eigenvectorprimaryfield.h"
 
 ///@name Input fields for EigenValueDynamic
