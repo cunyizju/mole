@@ -33,7 +33,7 @@
  */
 
 #include "nodalrecovery/sprnodalrecoverymodel.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 #include "input/element.h"
 #include "dofman/node.h"
 #include "input/connectivitytable.h"

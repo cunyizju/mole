@@ -41,7 +41,7 @@
 #include "engng/engngm.h"
 #include "input/domain.h"
 #include <vector>
-#include "internalstatetype.h"
+#include "input/internalstatetype.h"
 #include "arrays/intarray.h"
 #include "material/materialmappingalgorithm.h"
 #include "mapping/mmashapefunctprojection.h"

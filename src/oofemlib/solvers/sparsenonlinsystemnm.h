@@ -42,7 +42,7 @@
 #define sparsenonlinsystemnm_h
 
 #include "nummet.h"
-#include "convergedreason.h"
+#include "solvers/convergedreason.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 

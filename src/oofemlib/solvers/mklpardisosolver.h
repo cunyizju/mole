@@ -36,7 +36,7 @@
 #define mklpardisosolver_h
 
 #include "solvers/sparselinsystemnm.h"
-#include "convergedreason.h"
+#include "solvers/convergedreason.h"
 
 #define _IFT_MKLPardisoSolver_Name "mklpardiso"
 

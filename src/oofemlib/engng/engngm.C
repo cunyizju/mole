@@ -39,8 +39,8 @@
 #include "nummet.h"
 #include "math/sparsemtrx.h"
 #include "engng/engngm.h"
-#include "timestep.h"
-#include "metastep.h"
+#include "solvers/timestep.h"
+#include "solvers/metastep.h"
 #include "input/element.h"
 #include "utility/set.h"
 #include "bc/load.h"
@@ -52,7 +52,7 @@
 #include "dofman/dofmanager.h"
 #include "dofman/node.h"
 #include "bc/activebc.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 #include "utility/verbose.h"
 #include "export/datastream.h"
 #include "input/oofemtxtdatareader.h"
@@ -74,7 +74,7 @@
 #ifdef __PARALLEL_MODE
  #include "parallel/problemcomm.h"
  #include "parallel/processcomm.h"
- #include "loadbalancer.h"
+ #include "input/loadbalancer.h"
 #endif
 
 #include <cstdio>

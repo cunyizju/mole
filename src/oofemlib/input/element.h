@@ -35,7 +35,7 @@
 #ifndef element_h
 #define element_h
 
-#include "femcmpnn.h"
+#include "input/femcmpnn.h"
 #include "error/error.h"
 #include "input/chartype.h"
 #include "input/domain.h"
@@ -44,8 +44,8 @@
 #include "material/materialmode.h"
 #include "input/elementgeometrytype.h"
 #include "valuemodetype.h"
-#include "internalstatemode.h"
-#include "internalstatetype.h"
+#include "input/internalstatemode.h"
+#include "input/internalstatetype.h"
 #include "input/elementextension.h"
 #include "entityrenumberingscheme.h"
 #include "material/matresponsemode.h"

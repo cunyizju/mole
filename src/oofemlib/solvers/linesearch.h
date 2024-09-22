@@ -37,7 +37,7 @@
 #define linesearch_h
 
 #include "nummet.h"
-#include "convergedreason.h"
+#include "solvers/convergedreason.h"
 #include "arrays/floatarray.h"
 
 ///@name Input fields for LineSearchNM

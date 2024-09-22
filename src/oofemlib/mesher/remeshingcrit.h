@@ -35,7 +35,7 @@
 #ifndef remeshingcrit_h
 #define remeshingcrit_h
 
-#include "femcmpnn.h"
+#include "input/femcmpnn.h"
 #include "utility/interface.h"
 
 namespace oofem {

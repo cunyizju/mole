@@ -36,7 +36,7 @@
 #define sparselinsystemnm_h
 
 #include "nummet.h"
-#include "convergedreason.h"
+#include "solvers/convergedreason.h"
 #include "solvers/linsystsolvertype.h"
 #include "math/sparsemtrxtype.h"
 

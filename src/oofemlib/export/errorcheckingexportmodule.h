@@ -41,7 +41,7 @@
 
 #include "export/exportmodule.h"
 #include "valuemodetype.h"
-#include "internalstatetype.h"
+#include "input/internalstatetype.h"
 
 ///@name Input fields for ErrorCheckingExportModule
 //@{

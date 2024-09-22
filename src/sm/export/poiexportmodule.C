@@ -33,7 +33,7 @@
  */
 
 #include "poiexportmodule.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 #include "input/domain.h"
 #include "engng/engngm.h"
 #include "material/materialmappingalgorithm.h"
@@ -41,7 +41,7 @@
 #include "mapping/mmaleastsquareprojection.h"
 #include "mapping/mmashapefunctprojection.h"
 #include "mesher/spatiallocalizer.h"
-#include "internalstatevaluetype.h"
+#include "input/internalstatevaluetype.h"
 #include "input/element.h"
 #include "classfactory.h"
 

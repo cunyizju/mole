@@ -38,7 +38,7 @@
  * PhD Thesis, EPFL, Lausanne, 1992.
  */
 
-#include "femcmpnn.h"
+#include "input/femcmpnn.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
 #include "input/dynamicinputrecord.h"

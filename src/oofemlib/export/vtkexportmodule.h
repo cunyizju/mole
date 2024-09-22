@@ -38,7 +38,7 @@
 #include "export/exportmodule.h"
 #include "arrays/intarray.h"
 #include "nodalrecovery/nodalrecoverymodel.h"
-#include "internalstatevaluetype.h"
+#include "input/internalstatevaluetype.h"
 #include "unknowntype.h"
 #include "valuemodetype.h"
 

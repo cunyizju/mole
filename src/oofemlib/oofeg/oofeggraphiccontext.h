@@ -40,8 +40,8 @@
 
 #include "oofemcfg.h"
 #include "arrays/intarray.h"
-#include "internalstatemode.h"
-#include "internalstatetype.h"
+#include "input/internalstatemode.h"
+#include "input/internalstatetype.h"
 #include "arrays/floatmatrix.h"
 #include "utility/timer.h"
 #include "export/outputmanager.h"

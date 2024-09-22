@@ -37,7 +37,7 @@
 
 #include "nummet.h"
 #include "arrays/floatarray.h"
-#include "convergedreason.h"
+#include "solvers/convergedreason.h"
 
 namespace oofem {
 class Domain;

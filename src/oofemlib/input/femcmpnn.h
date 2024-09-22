@@ -44,7 +44,7 @@
 #include <string>
 
 #include "oofemcfg.h"
-#include "interfacetype.h"
+#include "input/interfacetype.h"
 #include "utility/contextioresulttype.h"
 #include "utility/contextmode.h"
 

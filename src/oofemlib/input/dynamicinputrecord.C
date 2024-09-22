@@ -33,7 +33,7 @@
  */
 
 #include "input/dynamicinputrecord.h"
-#include "femcmpnn.h"
+#include "input/femcmpnn.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"

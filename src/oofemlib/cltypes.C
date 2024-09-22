@@ -34,8 +34,8 @@
 
 #include "error/error.h"
 #include "input/chartype.h"
-#include "internalstatetype.h"
-#include "internalstatevaluetype.h"
+#include "input/internalstatetype.h"
+#include "input/internalstatevaluetype.h"
 #include "input/elementgeometrytype.h"
 #include "unknowntype.h"
 #include "material/materialmode.h"

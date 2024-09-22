@@ -33,7 +33,7 @@
  */
 
 #include "monitor/monitormanager.h"
-#include "modulemanager.h"
+#include "input/modulemanager.h"
 #include "monitor/monitor.h"
 #include "classfactory.h"
 

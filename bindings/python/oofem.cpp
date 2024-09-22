@@ -46,8 +46,8 @@ namespace py = pybind11;
 #include "arrays/floatmatrixf.h"
 #include "arrays/intarray.h"
 
-#include "femcmpnn.h"
-#include "timestep.h"
+#include "input/femcmpnn.h"
+#include "solvers/timestep.h"
 #include "input/domain.h"
 #include "engng/engngm.h"
 #include "engng/staggeredproblem.h"
@@ -56,7 +56,7 @@ namespace py = pybind11;
 #include "input/element.h"
 #include "Elements/structuralelement.h"
 #include "export/datastream.h"
-#include "timediscretizationtype.h"
+#include "solvers/timediscretizationtype.h"
 #include "utility/statecountertype.h"
 
 #include "bc/generalboundarycondition.h"
@@ -85,7 +85,7 @@ namespace py = pybind11;
 
 #include "input/chartype.h"
 #include "input/elementgeometrytype.h"
-#include "internalstatetype.h"
+#include "input/internalstatetype.h"
 #include "material/materialmode.h"
 
 #include "math/integrationrule.h"

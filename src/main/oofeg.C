@@ -37,7 +37,7 @@
 
 #include "input/oofemtxtdatareader.h"
 #include "engng/engngm.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 #include "error/error.h"
 #include "oofeg/oofeggraphiccontext.h"
 #include "export/datastream.h"
@@ -55,7 +55,7 @@
 #include "oofemcfg.h"
 #include "error/errorestimator.h"
 #include "mesher/remeshingcrit.h"
-#include "drawmode.h"
+#include "oofeg/drawmode.h"
 #include "utility/contextioerr.h"
 #include "error/oofem_terminate.h"
 #include "classfactory.h"

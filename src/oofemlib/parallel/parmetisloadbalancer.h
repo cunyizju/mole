@@ -35,7 +35,7 @@
 #ifndef parmetisloadbalancer_h
 #define parmetisloadbalancer_h
 
-#include "loadbalancer.h"
+#include "input/loadbalancer.h"
 #include "arrays/intarray.h"
 
 #include <parmetis.h>

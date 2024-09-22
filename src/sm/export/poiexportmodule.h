@@ -37,7 +37,7 @@
 
 #include "export/exportmodule.h"
 #include "arrays/intarray.h"
-#include "internalstatetype.h"
+#include "input/internalstatetype.h"
 #include "unknowntype.h"
 
 #include <list>

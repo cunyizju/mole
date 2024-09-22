@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "neumannmomentload.h"
+#include "bc/neumannmomentload.h"
 #include "classfactory.h"
 #include "ltf/function.h"
 #include "input/inputrecord.h"
@@ -41,7 +41,7 @@
 #include "input/element.h"
 #include "fei/feinterpol.h"
 #include "math/gausspoint.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 #include "math/mathfem.h"
 
 

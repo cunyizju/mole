@@ -35,7 +35,7 @@
 #ifndef set_h
 #define set_h
 
-#include "femcmpnn.h"
+#include "input/femcmpnn.h"
 #include "arrays/intarray.h"
 
 #include <list>

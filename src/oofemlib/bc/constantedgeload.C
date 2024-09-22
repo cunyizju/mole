@@ -35,7 +35,7 @@
 #include "bc/constantedgeload.h"
 #include "ltf/function.h"
 #include "arrays/floatarray.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 #include "classfactory.h"
 
 namespace oofem {

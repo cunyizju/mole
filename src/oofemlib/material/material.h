@@ -35,14 +35,14 @@
 #ifndef material_h
 #define material_h
 
-#include "femcmpnn.h"
+#include "input/femcmpnn.h"
 
 #include "material/matconst.h"
 #include "material/matstatus.h"
 #include "material/materialmode.h"
-#include "timestep.h"
-#include "internalstatetype.h"
-#include "internalstatevaluetype.h"
+#include "solvers/timestep.h"
+#include "input/internalstatetype.h"
+#include "input/internalstatevaluetype.h"
 #include "material/matresponsemode.h"
 #include "utility/dictionary.h"
 #include "input/chartype.h"

@@ -40,7 +40,7 @@
 #include "arrays/intarray.h"
 #include "nodalrecovery/nodalrecoverymodel.h"
 #include "utility/interface.h"
-#include "internalstatevaluetype.h"
+#include "input/internalstatevaluetype.h"
 #include "math/integrationrule.h"
 #include "xfem/xfemmanager.h"
 

@@ -33,7 +33,7 @@
  */
 
 #include "initial/initmodulemanager.h"
-#include "modulemanager.h"
+#include "input/modulemanager.h"
 #include "classfactory.h"
 
 namespace oofem {

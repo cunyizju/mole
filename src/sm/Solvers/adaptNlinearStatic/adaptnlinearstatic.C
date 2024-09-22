@@ -36,8 +36,8 @@
 #include "math/mathfem.h"
 #include "utility/verbose.h"
 #include "utility/timer.h"
-#include "metastep.h"
-#include "timestep.h"
+#include "solvers/metastep.h"
+#include "solvers/timestep.h"
 #include "nummet.h"
 #include "input/element.h"
 #include "dofman/node.h"
@@ -57,7 +57,7 @@
 
 #ifdef __PARALLEL_MODE
  #include "parallel/parallelcontext.h"
- #include "loadbalancer.h"
+ #include "input/loadbalancer.h"
 #endif
 
 #ifdef __OOFEG

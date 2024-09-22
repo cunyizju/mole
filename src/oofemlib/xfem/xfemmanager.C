@@ -48,7 +48,7 @@
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
 #include "input/dynamicinputrecord.h"
-#include "internalstatevaluetype.h"
+#include "input/internalstatevaluetype.h"
 #include "XFEMDebugTools.h"
 #include "xfemtolerances.h"
 #include "nucleationcriterion.h"

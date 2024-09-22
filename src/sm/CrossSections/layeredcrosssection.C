@@ -45,7 +45,7 @@
 #include "math/gaussintegrationrule.h"
 #include "math/mathfem.h"
 #include "classfactory.h"
-#include "lobattoir.h"
+#include "math/lobattoir.h"
 #include "input/dynamicinputrecord.h"
 #include "cltypes.h"
 #include "simplecrosssection.h"

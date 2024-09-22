@@ -37,7 +37,7 @@
 
 #include "fields/field.h"
 #include "material/materialmappingalgorithmtype.h"
-#include "internalstatetype.h"
+#include "input/internalstatetype.h"
 #include "material/materialmappingalgorithm.h"
 
 namespace oofem {

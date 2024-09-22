@@ -37,7 +37,7 @@
 #define subspaceit_h
 
 #include "math/sparsegeneigenvalsystemnm.h"
-#include "convergedreason.h"
+#include "solvers/convergedreason.h"
 #include "math/sparsemtrx.h"
 #include "arrays/floatarray.h"
 

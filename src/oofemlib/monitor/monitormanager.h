@@ -35,7 +35,7 @@
 #ifndef monitormanager_h
 #define monitormanager_h
 
-#include "modulemanager.h"
+#include "input/modulemanager.h"
 #include "monitor/monitor.h"
 
 namespace oofem {

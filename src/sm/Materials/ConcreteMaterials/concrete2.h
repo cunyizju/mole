@@ -35,7 +35,7 @@
 #ifndef concrete2_h
 #define concrete2_h
 
-#include "femcmpnn.h"
+#include "input/femcmpnn.h"
 #include "utility/dictionary.h"
 #include "material/material.h"
 #include "sm/Materials/deformationtheorymaterial.h"

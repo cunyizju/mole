@@ -11,7 +11,7 @@ namespace py = pybind11;
 #include "input/logger.h"
 #include "input/domain.h"
 #include "export/outputmanager.h"
-#include "modulemanager.h"
+#include "input/modulemanager.h"
 #include "utility/set.h"
 
 

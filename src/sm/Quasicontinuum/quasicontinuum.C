@@ -43,7 +43,7 @@
 #include "sm/CrossSections/simplecrosssection.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
 #include "sm/Materials/anisolinearelasticmaterial.h"
-#include "interfacetype.h"
+#include "input/interfacetype.h"
 #include "sm/Materials/qcmaterialextensioninterface.h"
 
 

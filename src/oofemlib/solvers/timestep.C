@@ -38,12 +38,12 @@
  * PhD Thesis, EPFL, Lausanne, 1992.
  */
 
-#include "timestep.h"
+#include "solvers/timestep.h"
 #include "engng/engngm.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
 #include "error/error.h"
-#include "convergedreason.h"
+#include "solvers/convergedreason.h"
 
 namespace oofem {
 TimeStep :: TimeStep(int n, EngngModel *e, int mn, double tt, double dt, StateCounterType counter, TimeDiscretizationType td) :

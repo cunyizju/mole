@@ -397,7 +397,7 @@ void oofem_finalize_modules()
 #endif
 }
 
-//#include "loadbalancer.h"
+//#include "input/loadbalancer.h"
 //#include "xfem/iga.h"
 #include "arrays/floatmatrix.h"
 #include "input/domain.h"

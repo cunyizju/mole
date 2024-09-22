@@ -14,6 +14,27 @@
         "huertaerrorestimator.C": "cpp",
         "structuralmaterial.C": "cpp",
         "error.C": "cpp",
-        "dsssolver.C": "cpp"
+        "dsssolver.C": "cpp",
+        "timestep.C": "cpp",
+        "phasefieldelement.C": "cpp",
+        "randommaterialext.C": "cpp",
+        "dofmanvalfield.C": "cpp",
+        "problemsequence.C": "cpp",
+        "metastep.C": "cpp",
+        "staggeredproblem.C": "cpp",
+        "loadbalancer.C": "cpp",
+        "hexgrid.C": "cpp",
+        "mklpardisosolver.C": "cpp",
+        "quasicontinuum.C": "cpp",
+        "poiexportmodule.C": "cpp",
+        "prescribedmean.C": "cpp",
+        "matlabexportmodule.C": "cpp",
+        "neumannmomentload.C": "cpp",
+        "tet21ghostsolid.C": "cpp",
+        "dynamicinputrecord.C": "cpp",
+        "oofeg.C": "cpp",
+        "lobattoir.C": "cpp",
+        "intelline1.C": "cpp",
+        "classfactory.C": "cpp"
     }
 }

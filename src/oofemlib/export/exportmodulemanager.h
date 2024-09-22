@@ -35,7 +35,7 @@
 #ifndef exportmodulemanager_h
 #define exportmodulemanager_h
 
-#include "modulemanager.h"
+#include "input/modulemanager.h"
 #include "export/exportmodule.h"
 
 namespace oofem {

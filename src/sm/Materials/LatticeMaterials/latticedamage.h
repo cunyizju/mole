@@ -37,7 +37,7 @@
 
 #include "latticelinearelastic.h"
 #include "latticematstatus.h"
-#include "randommaterialext.h"
+#include "material/randommaterialext.h"
 
 ///@name Input fields for LatticeDamage
 //@{

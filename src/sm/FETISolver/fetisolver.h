@@ -37,7 +37,7 @@
 
 #include "sm/FETISolver/feticommunicator.h"
 #include "solvers/sparselinsystemnm.h"
-#include "convergedreason.h"
+#include "solvers/convergedreason.h"
 #include "math/sparsemtrx.h"
 #include "arrays/floatarray.h"
 #include "arrays/floatmatrix.h"

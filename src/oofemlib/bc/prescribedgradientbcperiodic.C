@@ -54,7 +54,7 @@
 #include "fei/feinterpol.h"
 #include "unknownnumberingscheme.h"
 #include "ltf/function.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 #include "math/mathfem.h"
 
 namespace oofem {

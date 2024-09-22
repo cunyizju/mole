@@ -38,7 +38,7 @@
 #include "fields/field.h"
 #include "utility/pythonfield.h"
 #include "arrays/floatarray.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 
 namespace py = pybind11;
 

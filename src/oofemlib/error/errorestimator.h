@@ -40,11 +40,11 @@
 #ifndef errorestimator_h
 #define errorestimator_h
 
-#include "femcmpnn.h"
+#include "input/femcmpnn.h"
 #include "utility/interface.h"
 #include "error/errorestimatortype.h"
 #include "arrays/intarray.h"
-#include "internalstatetype.h"
+#include "input/internalstatetype.h"
 #include "mesher/remeshingcrit.h"
 
 #include <memory>

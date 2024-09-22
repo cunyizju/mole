@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "metastep.h"
+#include "solvers/metastep.h"
 
 namespace oofem {
 MetaStep :: MetaStep(int n, EngngModel *e) :

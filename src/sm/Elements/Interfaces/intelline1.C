@@ -37,7 +37,7 @@
 #include "dofman/node.h"
 #include "math/gausspoint.h"
 #include "math/gaussintegrationrule.h"
-#include "lobattoir.h"
+#include "math/lobattoir.h"
 #include "arrays/floatmatrix.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"

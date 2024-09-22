@@ -35,7 +35,7 @@
 #ifndef function_h
 #define function_h
 
-#include "femcmpnn.h"
+#include "input/femcmpnn.h"
 #include "valuemodetype.h"
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"

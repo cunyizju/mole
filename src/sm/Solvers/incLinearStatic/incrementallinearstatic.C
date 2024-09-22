@@ -33,7 +33,7 @@
  */
 
 #include "incrementallinearstatic.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 #include "dofs/dof.h"
 #include "input/domain.h"
 #include "math/sparsemtrx.h"

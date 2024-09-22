@@ -40,7 +40,7 @@
 #include "engng/engngm.h"
 #include "input/connectivitytable.h"
 #include "math/mathfem.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 
 #ifdef __PARALLEL_MODE
  #include "parallel/problemcomm.h"

@@ -36,7 +36,7 @@
 
 #include "solvers/sparselinsystemnm.h"
 #include "solvers/petscsparsemtrx.h"
-#include "convergedreason.h"
+#include "solvers/convergedreason.h"
 
 #define _IFT_PetscSolver_Name "petsc"
 

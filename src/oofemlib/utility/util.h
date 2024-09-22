@@ -36,7 +36,7 @@
 #define util_h
 
 #include "oofemcfg.h"
-#include "problemmode.h"
+#include "input/problemmode.h"
 
 #include <memory>
 #include <cstdio>

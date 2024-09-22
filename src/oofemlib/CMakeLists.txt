@@ -1,19 +1,15 @@
 # Much to organize
 set (core_unsorted
     classfactory.C
-    femcmpnn.C  timestep.C metastep.C 
+    
     cltypes.C 
-
-
     solutionbasedshapefunction.C
-    neumannmomentload.C
-    prescribedmean.C
+    
     # Semi sorted:
-
     sloangraph.C sloangraphnode.C sloanlevelstruct.C
     eleminterpunknownmapper.C primaryunknownmapper.C 
-     randommaterialext.C
-     lobattoir.C
+     
+
     smoothednodalintvarfield.C
     # Deprecated?
     ldltfact.C
@@ -21,7 +17,7 @@ set (core_unsorted
     symcompcol.C 
     unstructuredgridfield.C
     # 
-    loadbalancer.C
+
     )
 
 set(initial
@@ -44,6 +40,8 @@ set(input
     input/oofemtxtdatareader.C
     input/logger.C
     input/compcol.C
+    input/femcmpnn.C  
+    input/loadbalancer.C
 )
 set(contact
     contact/contactmanager.C
@@ -63,6 +61,7 @@ set(math
     math/inverseit.C
     math/subspaceit.C
     math/gjacobi.C
+    math/lobattoir.C
 )
 
 set(error
@@ -137,6 +136,8 @@ set (core_nm
     solvers/calmls.C
     solvers/staggeredsolver.C
     parallel/parallelcontext.C
+    solvers/timestep.C
+    solvers/metastep.C 
     )
 
 ######## External solvers #########
@@ -216,6 +217,7 @@ set (core_material
     material/materialmappingalgorithm.C
     material/fracturemanager.C
     material/homogenize.C
+    material/randommaterialext.C
     )
 
 set (core_export
@@ -367,6 +369,8 @@ set (core_bc
     bc/linearconstraintbc.C
     bc/weakperiodicbc.C
     bc/bctracker.C
+    bc/neumannmomentload.C
+    bc/prescribedmean.C
     )
 
 if (USE_PYTHON_EXTENSION)

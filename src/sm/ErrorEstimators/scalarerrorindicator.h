@@ -36,7 +36,7 @@
 #define scalarerrorindicator_h
 
 #include "error/errorestimator.h"
-#include "internalstatetype.h"
+#include "input/internalstatetype.h"
 
 ///@name Input fields for ScalarErrorIndicator
 //@{

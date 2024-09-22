@@ -39,7 +39,7 @@
 #include "math/sparsemtrxtype.h"
 #include "solvers/sparselinsystemnm.h"
 #include "solvers/sparsenonlinsystemnm.h"
-#include "timediscretizationtype.h"
+#include "solvers/timediscretizationtype.h"
 
 ///@name Input fields for NonLinearDynamic
 //@{

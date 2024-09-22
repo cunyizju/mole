@@ -38,7 +38,7 @@
 #include "arrays/floatmatrix.h"
 #include "valuemodetype.h"
 #include "dofs/dofiditem.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 #include "dofs/dof.h"
 #include "dofs/masterdof.h"
 #include "unknownnumberingscheme.h"

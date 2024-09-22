@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "problemsequence.h"
+#include "input/problemsequence.h"
 #include "input/inputrecord.h"
 #include "classfactory.h"
 #include "utility/util.h"

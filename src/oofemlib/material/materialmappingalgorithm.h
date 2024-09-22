@@ -39,7 +39,7 @@
 #include "utility/interface.h"
 #include "arrays/intarray.h"
 #include "input/inputrecord.h"
-#include "internalstatetype.h"
+#include "input/internalstatetype.h"
 #include "utility/set.h"
 
 namespace oofem {

@@ -53,7 +53,7 @@
 #include "sm/Materials/linearelasticmaterial.h"
 #include "sm/Materials/isodamagemodel.h"
 #include "sm/Materials/structuralms.h"
-#include "randommaterialext.h"
+#include "material/randommaterialext.h"
 #include "material/materialmapperinterface.h"
 
 #ifdef IDM_USE_MMAClosestIPTransfer

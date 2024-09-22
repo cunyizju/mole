@@ -46,11 +46,11 @@
 #include "math/gausspoint.h"
 #include "bc/weakperiodicbc.h"
 #include "solutionbasedshapefunction.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 #include "classfactory.h"
 #include "utility/set.h"
 #include "unknownnumberingscheme.h"
-#include "prescribedmean.h"
+#include "bc/prescribedmean.h"
 #include "fei/feinterpol.h"
     
 #ifdef __FM_MODULE

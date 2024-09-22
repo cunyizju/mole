@@ -41,7 +41,7 @@
 #include "bc/boundaryload.h"
 #include "bc/nodalload.h"
 #include "bc/activebc.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 
 namespace oofem {
 

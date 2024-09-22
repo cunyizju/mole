@@ -35,7 +35,7 @@
 #ifndef materialinterface_h
 #define materialinterface_h
 
-#include "femcmpnn.h"
+#include "input/femcmpnn.h"
 
 namespace oofem {
 /**

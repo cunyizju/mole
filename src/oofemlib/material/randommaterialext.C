@@ -37,7 +37,7 @@
 #include "input/domain.h"
 #include "material/material.h"
 #include "ltf/function.h"
-#include "randommaterialext.h"
+#include "material/randommaterialext.h"
 #include "input/dynamicinputrecord.h"
 
 namespace oofem {

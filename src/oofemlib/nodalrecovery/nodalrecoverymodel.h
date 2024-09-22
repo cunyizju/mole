@@ -39,7 +39,7 @@
 #include "arrays/intarray.h"
 #include "arrays/floatarray.h"
 #include "utility/interface.h"
-#include "internalstatetype.h"
+#include "input/internalstatetype.h"
 #include "utility/statecountertype.h"
 #include "utility/set.h"
 

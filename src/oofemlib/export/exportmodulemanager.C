@@ -33,7 +33,7 @@
  */
 
 #include "export/exportmodulemanager.h"
-#include "modulemanager.h"
+#include "input/modulemanager.h"
 #include "export/exportmodule.h"
 #include "classfactory.h"
 

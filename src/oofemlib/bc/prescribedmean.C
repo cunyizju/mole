@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "prescribedmean.h"
+#include "bc/prescribedmean.h"
 #include "classfactory.h"
 #include "dofs/masterdof.h"
 #include "input/domain.h"

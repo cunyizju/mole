@@ -14,7 +14,7 @@
 #include "tm/BoundaryCondition/transportgradientdirichlet.h"
 #include "tm/BoundaryCondition/transportgradientneumann.h"
 #include "tm/BoundaryCondition/transportgradientperiodic.h"
-#include "modulemanager.h"
+#include "input/modulemanager.h"
 #include "export/exportmodule.h"
 #include "export/vtkxmlexportmodule.h"
 #include "bc/generalboundarycondition.h"

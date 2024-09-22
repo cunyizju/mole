@@ -58,10 +58,10 @@
 #include "nonlocal/nonlocalbarrier.h"
 #include "export/exportmodule.h"
 #include "initial/initmodule.h"
-#include "loadbalancer.h"
+#include "input/loadbalancer.h"
 
 #include "math/gaussintegrationrule.h"
-#include "lobattoir.h"
+#include "math/lobattoir.h"
 
 #include "initial/initialcondition.h"
 

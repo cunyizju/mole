@@ -36,7 +36,7 @@
 #define sparsegeneigenvalsystemnm_h
 
 #include "nummet.h"
-#include "convergedreason.h"
+#include "solvers/convergedreason.h"
 
 namespace oofem {
 class EngngModel;

@@ -36,7 +36,7 @@
 #define XFEMSTRUCTURALELEMENTINTERFACE_H_
 
 #include "xfem/xfemelementinterface.h"
-#include "internalstatetype.h"
+#include "input/internalstatetype.h"
 namespace oofem {
 class Material;
 class IntegrationRule;

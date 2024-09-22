@@ -32,12 +32,12 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "loadbalancer.h"
+#include "input/loadbalancer.h"
 #include "input/domain.h"
 #include "engng/engngm.h"
 #include "utility/timer.h"
 #include "math/mathfem.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 #include "arrays/floatarray.h"
 #include "classfactory.h"
 #include "input/element.h"

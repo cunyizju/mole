@@ -35,12 +35,12 @@
 #ifndef crosssection_h
 #define crosssection_h
 
-#include "femcmpnn.h"
+#include "input/femcmpnn.h"
 #include "material/materialmode.h"
 #include "material/matresponsemode.h"
 #include "material/material.h"
-#include "internalstatetype.h"
-#include "internalstatevaluetype.h"
+#include "input/internalstatetype.h"
+#include "input/internalstatevaluetype.h"
 #include "utility/dictionary.h"
 #include "input/crosssectextension.h"
 #include "math/gausspoint.h"

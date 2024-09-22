@@ -41,7 +41,7 @@
 #include "input/domain.h"
 #include "dofman/node.h"
 #include "input/element.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 #include "classfactory.h"
 #include "dofs/dof.h"
 #include "input/oofemtxtinputrecord.h"

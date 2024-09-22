@@ -35,8 +35,8 @@
 #include "nlinearstatic.h"
 #include "sm/Elements/structuralelement.h"
 #include "nummet.h"
-#include "timestep.h"
-#include "metastep.h"
+#include "solvers/timestep.h"
+#include "solvers/metastep.h"
 #include "error/error.h"
 #include "utility/verbose.h"
 #include "solvers/sparsenonlinsystemnm.h"
@@ -58,7 +58,7 @@
 #ifdef __PARALLEL_MODE
  #include "parallel/problemcomm.h"
  #include "parallel/communicator.h"
- #include "loadbalancer.h"
+ #include "input/loadbalancer.h"
 #endif
 
 namespace oofem {

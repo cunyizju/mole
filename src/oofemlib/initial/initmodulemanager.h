@@ -35,7 +35,7 @@
 #ifndef initmodulemanager_h
 #define initmodulemanager_h
 
-#include "modulemanager.h"
+#include "input/modulemanager.h"
 #include "initial/initmodule.h"
 #include "input/datareader.h"
 

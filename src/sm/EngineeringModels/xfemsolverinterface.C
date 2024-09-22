@@ -38,7 +38,7 @@
 #include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
 #include "sm/xfem/xfemstructuralelementinterface.h"
 #include "sm/mappers/primvarmapper.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 #include "structengngmodel.h"
 #include "staticstructural.h"
 #include "fields/primaryfield.h"

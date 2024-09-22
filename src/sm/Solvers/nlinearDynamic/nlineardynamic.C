@@ -39,8 +39,8 @@ using namespace std;
 #include "sm/Elements/nlstructuralelement.h"
 #include "sm/Elements/structuralelementevaluator.h"
 #include "nummet.h"
-#include "timestep.h"
-#include "metastep.h"
+#include "solvers/timestep.h"
+#include "solvers/metastep.h"
 #include "input/element.h"
 #include "dofs/dof.h"
 #include "error/error.h"
@@ -58,7 +58,7 @@ using namespace std;
 #include "input/assemblercallback.h"
 
 #ifdef __PARALLEL_MODE
- #include "loadbalancer.h"
+ #include "input/loadbalancer.h"
  #include "parallel/problemcomm.h"
  #include "parallel/processcomm.h"
 #endif

@@ -44,9 +44,9 @@
 #include "utility/contextioresulttype.h"
 #include "utility/contextmode.h"
 #include "utility/statecountertype.h"
-#include "timediscretizationtype.h"
+#include "solvers/timediscretizationtype.h"
 #include "input/inputrecord.h"
-#include "convergedreason.h"
+#include "solvers/convergedreason.h"
 
 namespace oofem {
 class EngngModel;

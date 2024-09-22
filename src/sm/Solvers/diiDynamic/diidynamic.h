@@ -38,7 +38,7 @@
 #include "sm/EngineeringModels/structengngmodel.h"
 #include "solvers/sparselinsystemnm.h"
 #include "math/sparsemtrx.h"
-#include "timediscretizationtype.h"
+#include "solvers/timediscretizationtype.h"
 
 ///@name Input fields for DIIDynamic
 //@{

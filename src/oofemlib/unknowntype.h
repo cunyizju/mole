@@ -34,7 +34,7 @@
 
 #ifndef unknowntype_h
 #define unknowntype_h
-//#include "internalstatetype.h"
+//#include "input/internalstatetype.h"
 #include "utility/enumitem.h"
 
 namespace oofem {

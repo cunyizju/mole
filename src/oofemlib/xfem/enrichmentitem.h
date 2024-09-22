@@ -35,7 +35,7 @@
 #ifndef enrichmentitem_h
 #define enrichmentitem_h
 
-#include "femcmpnn.h"
+#include "input/femcmpnn.h"
 #include "dofs/dofiditem.h"
 #include "tipinfo.h"
 #include "arrays/intarray.h"

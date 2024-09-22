@@ -34,7 +34,7 @@
 
 #include "solvers/nrsolver.h"
 #include "utility/verbose.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 #include "math/mathfem.h"
 // includes for ddc - not very clean (NumMethod knows what is "node" and "dof")
 #include "dofman/node.h"

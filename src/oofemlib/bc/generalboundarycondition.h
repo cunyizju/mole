@@ -35,7 +35,7 @@
 #ifndef generalbc_h
 #define generalbc_h
 
-#include "femcmpnn.h"
+#include "input/femcmpnn.h"
 #include "arrays/intarray.h"
 #include "bc/bcvaltype.h"
 #include "bc/bcgeomtype.h"

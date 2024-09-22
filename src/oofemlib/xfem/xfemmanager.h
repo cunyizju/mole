@@ -42,7 +42,7 @@
 #include "utility/contextmode.h"
 #include "enrichmentitem.h"
 #include "utility/enumitem.h"
-#include "internalstatevaluetype.h"
+#include "input/internalstatevaluetype.h"
 
 #include <unordered_map>
 #include <list>

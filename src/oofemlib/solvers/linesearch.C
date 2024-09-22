@@ -33,11 +33,11 @@
  */
 
 #include "solvers/linesearch.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 #include "arrays/floatarray.h"
 #include "arrays/intarray.h"
 #include "math/mathfem.h"
-#include "convergedreason.h"
+#include "solvers/convergedreason.h"
 #include "engng/engngm.h"
 
 namespace oofem {

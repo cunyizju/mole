@@ -37,7 +37,7 @@
 
 #include "latticestructuralmaterial.h"
 #include "cltypes.h"
-#include "randommaterialext.h"
+#include "material/randommaterialext.h"
 #include "strainvector.h"
 #include "stressvector.h"
 #include "latticematstatus.h"

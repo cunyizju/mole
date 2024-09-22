@@ -35,7 +35,7 @@
 #ifndef wallclockloadbalancer_h
 #define wallclockloadbalancer_h
 
-#include "loadbalancer.h"
+#include "input/loadbalancer.h"
 
 #define __LB_DEBUG
 #ifdef __LB_DEBUG

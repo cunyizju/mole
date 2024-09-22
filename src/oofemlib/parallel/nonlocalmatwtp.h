@@ -35,7 +35,7 @@
 #ifndef nonlocalmatwtp_h
 #define nonlocalmatwtp_h
 
-#include "loadbalancer.h"
+#include "input/loadbalancer.h"
 
 #include <map>
 #include <list>

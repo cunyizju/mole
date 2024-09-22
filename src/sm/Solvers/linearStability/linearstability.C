@@ -36,7 +36,7 @@
 //#define LIN_STAB_COMPATIBILITY_MODE
 
 #include "linearstability.h"
-#include "timestep.h"
+#include "solvers/timestep.h"
 #include "input/element.h"
 #include "utility/contextioerr.h"
 #include "arrays/floatmatrix.h"

@@ -42,7 +42,7 @@
 #include "utility/timer.h"
 #include "error/error.h"
 #include "classfactory.h"
-#include "convergedreason.h"
+#include "solvers/convergedreason.h"
 
 #include <mkl.h>
 

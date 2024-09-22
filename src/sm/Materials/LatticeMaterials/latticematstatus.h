@@ -37,7 +37,7 @@
 
 
 #include "../structuralms.h"
-#include "randommaterialext.h"
+#include "material/randommaterialext.h"
 #include "arrays/floatarrayf.h"
 
 namespace oofem {

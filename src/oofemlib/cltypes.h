@@ -35,8 +35,8 @@
 #ifndef cltypes_h
 #define cltypes_h
 
-#include "internalstatetype.h"
-#include "internalstatevaluetype.h"
+#include "input/internalstatetype.h"
+#include "input/internalstatevaluetype.h"
 #include "valuemodetype.h"
 #include "unknowntype.h"
 

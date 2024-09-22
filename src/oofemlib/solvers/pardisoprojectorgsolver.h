@@ -36,7 +36,7 @@
 #define pardisoprojectorgsolver_h
 
 #include "solvers/sparselinsystemnm.h"
-#include "convergedreason.h"
+#include "solvers/convergedreason.h"
 
 /* PARDISO prototype. */
 extern "C" void pardisoinit(void *, int *,   int *, int *, double *, int *);
