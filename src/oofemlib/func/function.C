@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "ltf/function.h"
+#include "func/function.h"
 #include "solvers/timestep.h"
 #include "error/error.h"
 #include "input/domain.h"

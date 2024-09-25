@@ -43,7 +43,7 @@
 #include "xfem/xfemelementinterface.h"
 #include "xfem/integrationrules/discsegintegrationrule.h"
 #include "solvers/timestep.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "solvers/sparselinsystemnm.h"
 #include "input/unknownnumberingscheme.h"
 #include "engng/engngm.h"

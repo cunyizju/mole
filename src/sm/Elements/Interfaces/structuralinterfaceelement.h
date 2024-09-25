@@ -38,7 +38,7 @@
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
 #include "input/element.h"
 #include "math/floatmatrix.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "material/matresponsemode.h"
 #include "input/valuemodetype.h"
 #include "math/integrationdomain.h"

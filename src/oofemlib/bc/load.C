@@ -35,7 +35,7 @@
 #include "bc/load.h"
 #include "utility/verbose.h"
 #include "solvers/timestep.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "input/dynamicinputrecord.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"

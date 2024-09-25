@@ -33,7 +33,7 @@
  */
 
 #include "bc/pointload.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "math/floatarray.h"
 #include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"

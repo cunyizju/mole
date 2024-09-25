@@ -36,8 +36,8 @@ file(GLOB fields_SRCS fields/*.C)
 set(fields ${fields_SRCS})
 
 # loading functions
-file(GLOB ltf_SRCS ltf/*.C)
-set(core_ltf ${ltf_SRCS})
+file(GLOB func_SRCS func/*.C)
+set(func ${func_SRCS})
 
 # cross section
 file(GLOB cs_SRCS cs/*.C)
@@ -174,7 +174,7 @@ set (core
     ${error}
     ${math}
     ${utility}
-    ${core_ltf}
+    ${func}
     ${nodalrecovery}
     ${fields}
     ${export}

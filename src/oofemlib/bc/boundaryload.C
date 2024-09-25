@@ -33,7 +33,7 @@
  */
 
 #include "bc/boundaryload.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "math/floatarray.h"
 #include "solvers/timestep.h"
 #include "input/dynamicinputrecord.h"

@@ -14,7 +14,7 @@
 #include "bc/constantedgeload.h"
 #include "bc/nodalload.h"
 #include "sm/Loads/structtemperatureload.h"
-#include "ltf/peakfunction.h"
+#include "func/peakfunction.h"
 #include "dofman/node.h"
 #include "export/outputmanager.h"
 #include "bc/boundarycondition.h"

@@ -41,7 +41,7 @@
 #include "utility/range.h"
 #include "dofman/node.h"
 #include "input/element.h"
-#include "ltf/scalarfunction.h"
+#include "func/scalarfunction.h"
 
 #include <sstream>
 

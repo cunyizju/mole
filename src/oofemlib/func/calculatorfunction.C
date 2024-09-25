@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "ltf/calculatorfunction.h"
+#include "func/calculatorfunction.h"
 #include "utility/parser.h"
 #include "input/dynamicinputrecord.h"
 #include "engng/classfactory.h"

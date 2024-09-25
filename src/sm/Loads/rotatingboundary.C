@@ -36,7 +36,7 @@
 #include "dofman/dofmanager.h"
 #include "dofman/dof.h"
 #include "math/mathfem.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 

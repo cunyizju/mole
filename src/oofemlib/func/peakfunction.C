@@ -32,50 +32,32 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#ifndef heavisidetimefunction_h
-#define heavisidetimefunction_h
-
-#include "math/floatarray.h"
-#include "ltf/function.h"
-
-///@name Input fields for HeavisideTimeFunction
-//@{
-#define _IFT_HeavisideTimeFunction_Name "heavisideltf"
-#define _IFT_HeavisideTimeFunction_origin "origin"
-#define _IFT_HeavisideTimeFunction_value "value"
-//@}
+#include "func/peakfunction.h"
+#include "math/mathfem.h"
+#include "engng/classfactory.h"
 
 namespace oofem {
-/**
- * This class implements a Heaviside step load time function.
- *
- * The function is defined by the origin of step and value.
- * The result is value*H(t-origin),
- * where
- * @f[
- * H(t) = \begin{cases} 0,& t\leq 0  \\ 1, & t>0 \end{cases}
- * @f]
- */
-class OOFEM_EXPORT HeavisideTimeFunction : public Function
+REGISTER_Function(PeakFunction);
+
+double
+PeakFunction :: evaluateAtTime(double time)
+// Returns the value of the receiver at time 'time'.
 {
-private:
-    double origin, value;
+    double precision = 1e-6;
 
-public:
-    HeavisideTimeFunction(int i, Domain * d) : Function(i, d)
-    {
-        origin = value = 0.;
+    if ( fabs(t - time) < precision ) {
+        return value;
+    } else {
+        return 0.;
     }
-    virtual ~HeavisideTimeFunction() { }
+}
 
-    void initializeFrom(InputRecord &ir) override;
-    void giveInputRecord(DynamicInputRecord &input) override;
-    const char *giveClassName() const override { return "HeavisideTimeFunction"; }
-    const char *giveInputRecordName() const override { return _IFT_HeavisideTimeFunction_Name; }
+void
+PeakFunction :: initializeFrom(InputRecord &ir)
+{
+    Function :: initializeFrom(ir);
 
-    double evaluateAtTime(double) override;
-    double evaluateVelocityAtTime(double t) override { return 0.; }
-    double evaluateAccelerationAtTime(double t) override { return 0.; }
-};
+    IR_GIVE_FIELD(ir, t, _IFT_PeakFunction_t);
+    IR_GIVE_FIELD(ir, value, _IFT_PeakFunction_ft);
+}
 } // end namespace oofem
-#endif // heavisidetimefunction_h

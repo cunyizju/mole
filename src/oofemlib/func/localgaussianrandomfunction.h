@@ -35,7 +35,7 @@
 #ifndef localgaussianrandomfunction_h
 #define localgaussianrandomfunction_h
 
-#include "ltf/function.h"
+#include "func/function.h"
 
 ///@name Input fields for LocalGaussianRandomFunction
 //@{

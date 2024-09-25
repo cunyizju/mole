@@ -37,7 +37,7 @@
 #include "math/gausspoint.h"
 #include "math/floatmatrix.h"
 #include "math/floatarray.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "math/intarray.h"
 #include "math/mathfem.h"
 #include "utility/contextioerr.h"

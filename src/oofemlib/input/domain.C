@@ -41,7 +41,7 @@
 #include "cs/crosssection.h"
 #include "bc/load.h"
 #include "bc/initialcondition.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "utility/set.h"
 #include "engng/engngm.h"
 #include "input/entityrenumberingscheme.h"

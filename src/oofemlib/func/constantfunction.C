@@ -32,46 +32,54 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#ifndef peakfunction_h
-#define peakfunction_h
-
-#include "ltf/function.h"
-
-///@name Input fields for PeakFunction
-//@{
-#define _IFT_PeakFunction_Name "peakfunction"
-#define _IFT_PeakFunction_t "t"
-#define _IFT_PeakFunction_ft "f(t)"
-//@}
+#include "func/constantfunction.h"
+#include "input/dynamicinputrecord.h"
+#include "engng/classfactory.h"
+#include "export/datastream.h"
+#include "utility/contextioerr.h"
 
 namespace oofem {
-/**
- * This class implements a function that is 0 everywhere, except in a single
- * point.
- */
-class OOFEM_EXPORT PeakFunction : public Function
+REGISTER_Function(ConstantFunction);
+
+void
+ConstantFunction :: initializeFrom(InputRecord &ir)
 {
-private:
-    /// Specific time when function is nonzero.
-    double t;
-    /// Value of function at nonzero time.
-    double value;
+    Function :: initializeFrom(ir);
 
-public:
-    PeakFunction(int i, Domain * d) : Function(i, d)
-    {
-        t = 0.0;
-        value = 0.0;
+    IR_GIVE_FIELD(ir, value, _IFT_ConstantFunction_f);
+}
+
+
+void
+ConstantFunction :: giveInputRecord(DynamicInputRecord &input)
+{
+    Function :: giveInputRecord(input);
+    input.setField(this->value, _IFT_ConstantFunction_f);
+}
+
+void
+ConstantFunction :: saveContext(DataStream &stream, ContextMode mode)
+{
+    Function :: saveContext(stream, mode);
+
+    if ( mode & CM_Definition ) {
+        if ( !stream.write(value) ) {
+          THROW_CIOERR(CIO_IOERR);
+        }
     }
-    virtual ~PeakFunction() { }
+}
 
-    void initializeFrom(InputRecord &ir) override;
-    const char *giveClassName() const override { return "PeakFunction"; }
-    const char *giveInputRecordName() const override { return _IFT_PeakFunction_Name; }
 
-    double evaluateAtTime(double) override;
-    double evaluateVelocityAtTime(double t) override { return 0.; }
-    double evaluateAccelerationAtTime(double t) override { return 0.; }
-};
+void
+ConstantFunction :: restoreContext(DataStream &stream, ContextMode mode)
+{
+    Function :: restoreContext(stream, mode);
+
+    if ( mode & CM_Definition ) {
+        if ( !stream.read(value) ) {
+          THROW_CIOERR(CIO_IOERR);
+        }
+    }
+}
+
 } // end namespace oofem
-#endif // peakfunction_h

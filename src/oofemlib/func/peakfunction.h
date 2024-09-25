@@ -32,47 +32,46 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#ifndef piecewiselinfunction_h
-#define piecewiselinfunction_h
+#ifndef peakfunction_h
+#define peakfunction_h
 
-#include "math/floatarray.h"
-#include "ltf/function.h"
+#include "func/function.h"
 
-///@name Input fields for PiecewiseLinFunction
+///@name Input fields for PeakFunction
 //@{
-#define _IFT_PiecewiseLinFunction_Name "piecewiselinfunction"
-#define _IFT_PiecewiseLinFunction_t "t"
-#define _IFT_PiecewiseLinFunction_ft "f(t)"
-#define _IFT_PiecewiseLinFunction_dataFile "datafile"
+#define _IFT_PeakFunction_Name "peakfunction"
+#define _IFT_PeakFunction_t "t"
+#define _IFT_PeakFunction_ft "f(t)"
 //@}
 
 namespace oofem {
 /**
- * This class implements a piecewise linear function.
- * The function is defined by 'numberOfPoints' points. 'dates' and 'values'
- * store respectively the abscissas (t) and the values (f(t)) of the points
+ * This class implements a function that is 0 everywhere, except in a single
+ * point.
  */
-class OOFEM_EXPORT PiecewiseLinFunction : public Function
+class OOFEM_EXPORT PeakFunction : public Function
 {
-protected:
-    FloatArray dates;
-    FloatArray values;
+private:
+    /// Specific time when function is nonzero.
+    double t;
+    /// Value of function at nonzero time.
+    double value;
 
 public:
-    PiecewiseLinFunction(int i, Domain * d);
-    virtual ~PiecewiseLinFunction() { }
+    PeakFunction(int i, Domain * d) : Function(i, d)
+    {
+        t = 0.0;
+        value = 0.0;
+    }
+    virtual ~PeakFunction() { }
 
     void initializeFrom(InputRecord &ir) override;
-    void giveInputRecord(DynamicInputRecord &input) override;
-    const char *giveClassName() const override { return "PiecewiseLinFunction"; }
-    const char *giveInputRecordName() const override { return _IFT_PiecewiseLinFunction_Name; }
+    const char *giveClassName() const override { return "PeakFunction"; }
+    const char *giveInputRecordName() const override { return _IFT_PeakFunction_Name; }
 
-    void saveContext(DataStream &stream, ContextMode mode) override;
-    void restoreContext(DataStream &stream, ContextMode mode) override;
-
-    double evaluateAtTime(double t) override;
-    double evaluateVelocityAtTime(double t) override;
+    double evaluateAtTime(double) override;
+    double evaluateVelocityAtTime(double t) override { return 0.; }
     double evaluateAccelerationAtTime(double t) override { return 0.; }
 };
 } // end namespace oofem
-#endif // piecewiselinfunction_h
+#endif // peakfunction_h

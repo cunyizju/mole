@@ -59,7 +59,7 @@ namespace bp = boost::python;
 #include "math/sparsemtrx.h"
 #include "bc/load.h"
 #include "bc/initialcondition.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "material/material.h"
 #include "cs/crosssection.h"
 #include "dofman/node.h"

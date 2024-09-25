@@ -46,7 +46,7 @@
 #include "engng/classfactory.h"
 #include "export/outputmanager.h"
 #include "cs/crosssection.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "utility/timer.h"
 #include "mesher/remeshingcrit.h"
 #include "input/dynamicinputrecord.h"

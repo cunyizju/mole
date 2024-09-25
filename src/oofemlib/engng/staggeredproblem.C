@@ -35,7 +35,7 @@
 #include "engng/staggeredproblem.h"
 #include "engng/engngm.h"
 #include "solvers/timestep.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "solvers/metastep.h"
 #include "export/exportmodulemanager.h"
 #include "math/mathfem.h"

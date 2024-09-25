@@ -32,32 +32,39 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "ltf/peakfunction.h"
-#include "math/mathfem.h"
+#include "func/heavisidetimefunction.h"
+#include "input/dynamicinputrecord.h"
 #include "engng/classfactory.h"
 
 namespace oofem {
-REGISTER_Function(PeakFunction);
+REGISTER_Function(HeavisideTimeFunction);
 
 double
-PeakFunction :: evaluateAtTime(double time)
-// Returns the value of the receiver at time 'time'.
+HeavisideTimeFunction :: evaluateAtTime(double time)
 {
-    double precision = 1e-6;
-
-    if ( fabs(t - time) < precision ) {
-        return value;
-    } else {
+    double relTime = time - this->origin;
+    if ( relTime <= 0. ) {
         return 0.;
     }
+
+    return value;
 }
 
+
 void
-PeakFunction :: initializeFrom(InputRecord &ir)
+HeavisideTimeFunction :: initializeFrom(InputRecord &ir)
 {
     Function :: initializeFrom(ir);
 
-    IR_GIVE_FIELD(ir, t, _IFT_PeakFunction_t);
-    IR_GIVE_FIELD(ir, value, _IFT_PeakFunction_ft);
+    IR_GIVE_FIELD(ir, origin, _IFT_HeavisideTimeFunction_origin);
+    IR_GIVE_FIELD(ir, value, _IFT_HeavisideTimeFunction_value);
+}
+
+
+void HeavisideTimeFunction :: giveInputRecord(DynamicInputRecord &input)
+{
+    Function :: giveInputRecord(input);
+    input.setField(this->origin, _IFT_HeavisideTimeFunction_origin);
+    input.setField(this->value, _IFT_HeavisideTimeFunction_value);
 }
 } // end namespace oofem

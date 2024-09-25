@@ -32,10 +32,10 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "ltf/scalarfunction.h"
+#include "func/scalarfunction.h"
 #include "math/floatarray.h"
 #include "input/domain.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "utility/parser.h"
 #include "error/error.h"
 #include "math/gausspoint.h"

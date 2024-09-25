@@ -39,7 +39,7 @@
 #include "math/gausspoint.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "engng/classfactory.h"
 
 #include <fstream>

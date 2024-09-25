@@ -36,7 +36,7 @@
 #include "input/inputrecord.h"
 #include "input/domain.h"
 #include "material/material.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "material/randommaterialext.h"
 #include "input/dynamicinputrecord.h"
 

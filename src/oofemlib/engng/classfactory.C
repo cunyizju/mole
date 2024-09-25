@@ -52,7 +52,7 @@
 #include "mesher/mesherinterface.h"
 #include "error/errorestimator.h"
 #include "material/materialmappingalgorithm.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "material/material.h"
 #include "cs/crosssection.h"
 #include "material/nonlocalbarrier.h"

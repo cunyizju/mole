@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "ltf/interpolatingfunction.h"
+#include "func/interpolatingfunction.h"
 #include "math/floatarray.h"
 #include "engng/classfactory.h"
 #include "error/error.h"

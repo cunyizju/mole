@@ -34,7 +34,7 @@
 
 #include "bc/boundarycondition.h"
 #include "solvers/timestep.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "utility/verbose.h"
 #include "input/dynamicinputrecord.h"
 #include "dofman/dof.h"

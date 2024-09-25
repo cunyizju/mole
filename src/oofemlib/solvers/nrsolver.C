@@ -41,7 +41,7 @@
 #include "input/element.h"
 #include "bc/generalboundarycondition.h"
 #include "dofman/dof.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "solvers/linesearch.h"
 #include "engng/classfactory.h"
 #include "export/exportmodulemanager.h"
