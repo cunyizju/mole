@@ -6,25 +6,9 @@ set(engng ${engng_SRCS})
 file(GLOB input_SRCS input/*.C)
 set(input ${input_SRCS})
 
-set (dofman
-    dofman/dof.C
-    dofman/masterdof.C
-    dofman/simpleslavedof.C
-    dofman/slavedof.C
-    dofman/activedof.C
-    dofman/dofmanvalfield.C
-    dofman/dofmanager.C
-    dofman/node.C
-    dofman/slavenode.C
-    dofman/generalslavenode.C
-    dofman/hangingnode.C
-    dofman/qcnode.C
-    dofman/rigidarmnode.C
-    dofman/elementinternaldofman.C
-    dofman/elementside.C
-    dofman/latticedirichletcouplingnode.C
-    dofman/latticeneumanncouplingnode.C
-    )
+# input
+file(GLOB dofman_SRCS dofman/*.C)
+set(dofman ${dofman_SRCS})
 
 set (solvers
     solvers/sparselinsystemnm.C
@@ -144,14 +128,8 @@ if (USE_SPOOLES)
 endif ()
 
 if (USE_IML)
-    list (APPEND solvers
-        iml/dyncomprow.C iml/dyncompcol.C
-        iml/precond.C iml/voidprecond.C iml/icprecond.C
-        iml/iluprecond.C
-        iml/ilucomprowprecond.C
-        iml/diagpre.C
-        iml/imlsolver.C
-        )
+file(GLOB iml_SRCS iml/*.C)
+    list (APPEND solvers ${iml_SRCS})
 endif ()
 
 if (USE_SUPERLU_MT)
