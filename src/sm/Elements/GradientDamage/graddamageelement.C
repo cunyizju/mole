@@ -49,7 +49,7 @@
 #include "input/domain.h"
 #include "input/cltypes.h"
 #include "math/mathfem.h"
-#include "nonlocal/nonlocalbarrier.h"
+#include "material/nonlocalbarrier.h"
 #include "engng/engngm.h"
 #include "input/unknownnumberingscheme.h"
 

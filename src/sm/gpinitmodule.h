@@ -35,7 +35,7 @@
 #ifndef gpinitmodule_h
 #define gpinitmodule_h
 
-#include "initial/initmodule.h"
+#include "bc/initmodule.h"
 
 #define _IFT_GPInitModule_Name "gpinitmodule"
 

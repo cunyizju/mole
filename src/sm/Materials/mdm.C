@@ -39,7 +39,7 @@
 #include "math/mathfem.h"
 #include "sm/Materials/isolinearelasticmaterial.h"
 #include "mapping/mmaclosestiptransfer.h"
-#include "nonlocal/nonlocalmaterialext.h"
+#include "material/nonlocalmaterialext.h"
 #include "utility/contextioerr.h"
 #include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"

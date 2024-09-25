@@ -36,7 +36,7 @@
 #define initmodulemanager_h
 
 #include "input/modulemanager.h"
-#include "initial/initmodule.h"
+#include "bc/initmodule.h"
 #include "input/datareader.h"
 
 namespace oofem {

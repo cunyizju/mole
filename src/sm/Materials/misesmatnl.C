@@ -39,7 +39,7 @@
 #include "math/floatarray.h"
 #include "math/mathfem.h"
 #include "math/sparsemtrx.h"
-#include "nonlocal/nonlocalmaterialext.h"
+#include "material/nonlocalmaterialext.h"
 #include "utility/contextioerr.h"
 #include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"

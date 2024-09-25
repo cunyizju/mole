@@ -39,7 +39,7 @@
 #include "math/floatarray.h"
 #include "math/sparsemtrx.h"
 #include "error/error.h"
-#include "nonlocal/nonlocalmaterialext.h"
+#include "material/nonlocalmaterialext.h"
 #include "utility/contextioerr.h"
 #include "engng/classfactory.h"
 #include "export/datastream.h"

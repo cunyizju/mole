@@ -36,7 +36,7 @@
 #define nonlocalbarrier_h
 
 #include "input/femcmpnn.h"
-#include "nonlocal/nonlocalmaterialext.h"
+#include "material/nonlocalmaterialext.h"
 
 namespace oofem {
 /**

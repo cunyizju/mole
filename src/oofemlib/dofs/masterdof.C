@@ -37,7 +37,7 @@
 #include "input/domain.h"
 #include "solvers/timestep.h"
 #include "bc/boundarycondition.h"
-#include "initial/initialcondition.h"
+#include "bc/initialcondition.h"
 #include "fields/primaryfield.h"
 #include "utility/dictionary.h"
 #include "export/datastream.h"

@@ -42,7 +42,7 @@
 #include "engng/engngm.h"
 #include "utility/set.h"
 #include "bc/boundarycondition.h"
-#include "initial/initialcondition.h"
+#include "bc/initialcondition.h"
 #include "input/element.h"
 #include "bc/activebc.h"
 

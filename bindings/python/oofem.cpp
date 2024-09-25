@@ -61,7 +61,7 @@ namespace py = pybind11;
 
 #include "bc/generalboundarycondition.h"
 #include "bc/boundarycondition.h"
-#include "initial/initialcondition.h"
+#include "bc/initialcondition.h"
 #include "ltf/function.h"
 #include "material/material.h"
 #include "math/integrationpointstatus.h"

@@ -55,15 +55,15 @@
 #include "ltf/function.h"
 #include "material/material.h"
 #include "cs/crosssection.h"
-#include "nonlocal/nonlocalbarrier.h"
+#include "material/nonlocalbarrier.h"
 #include "export/exportmodule.h"
-#include "initial/initmodule.h"
+#include "bc/initmodule.h"
 #include "input/loadbalancer.h"
 
 #include "math/gaussintegrationrule.h"
 #include "math/lobattoir.h"
 
-#include "initial/initialcondition.h"
+#include "bc/initialcondition.h"
 
 // Experimental stuff
 #include "xfem/nucleationcriterion.h"

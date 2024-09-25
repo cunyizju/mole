@@ -32,28 +32,10 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "initial/initmodule.h"
-#include "error/error.h"
+#include "material/nonlocalbarrier.h"
 
 namespace oofem {
-InitModule :: InitModule(int n, EngngModel *e)
-{
-    emodel = e;
-    number = n;
-}
-
-
-InitModule :: ~InitModule()
+NonlocalBarrier :: NonlocalBarrier(int n, Domain *aDomain) :
+    FEMComponent(n, aDomain)
 { }
-
-
-void
-InitModule :: initializeFrom(InputRecord &ir)
-{
-    std :: string initFileName;
-    IR_GIVE_FIELD(ir, initFileName, _IFT_InitModule_initfilename);
-    if ( ( initStream = fopen(initFileName.c_str(), "r") ) == NULL ) {
-        OOFEM_ERROR("failed to open file %s", initFileName.c_str());
-    }
-}
 } // end namespace oofem
