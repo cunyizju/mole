@@ -35,7 +35,7 @@
 #include "prescribeddispslipmultiple.h"
 #include "engng/classfactory.h"
 #include "dofman/node.h"
-#include "dofs/masterdof.h"
+#include "dofman/masterdof.h"
 #include "input/element.h"
 #include "fei/feinterpol.h"
 #include "fei/feinterpol2d.h"

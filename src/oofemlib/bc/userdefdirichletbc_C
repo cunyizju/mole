@@ -43,7 +43,7 @@
 #include "input/dynamicinputrecord.h"
 #include "engng/classfactory.h"
 #include "dofman/dofmanager.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "error/error.h"
 
 namespace oofem {

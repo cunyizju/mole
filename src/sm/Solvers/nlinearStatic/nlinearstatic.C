@@ -51,7 +51,7 @@
 #include "error/errorestimator.h"
 #include "math/mathfem.h"
 #include "dofman/dofmanager.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "input/unknownnumberingscheme.h"
 #include "ltf/function.h"
 

@@ -36,7 +36,7 @@
 #define enrichmentitem_h
 
 #include "input/femcmpnn.h"
-#include "dofs/dofiditem.h"
+#include "dofman/dofiditem.h"
 #include "tipinfo.h"
 #include "math/intarray.h"
 #include "dofman/dofmanager.h"

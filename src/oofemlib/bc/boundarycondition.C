@@ -37,7 +37,7 @@
 #include "ltf/function.h"
 #include "utility/verbose.h"
 #include "input/dynamicinputrecord.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "engng/classfactory.h"
 #include "utility/contextioerr.h"
 #include "error/error.h"

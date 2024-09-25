@@ -38,9 +38,9 @@
 #include "input/sloangraph.h"
 #include "input/domain.h"
 #include "input/element.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "dofman/dofmanager.h"
-#include "dofs/simpleslavedof.h"
+#include "dofman/simpleslavedof.h"
 #include "math/intarray.h"
 #include "bc/generalboundarycondition.h"
 

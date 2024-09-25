@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "dofs/slavedof.h"
+#include "dofman/slavedof.h"
 #include "input/domain.h"
 #include "dofman/dofmanager.h"
 #include "error/error.h"

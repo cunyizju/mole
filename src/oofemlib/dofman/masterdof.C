@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "dofs/masterdof.h"
+#include "dofman/masterdof.h"
 #include "dofman/dofmanager.h"
 #include "input/domain.h"
 #include "solvers/timestep.h"

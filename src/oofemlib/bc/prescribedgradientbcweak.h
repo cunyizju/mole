@@ -38,7 +38,7 @@
 #include "bc/prescribedgradienthomogenization.h"
 #include "bc/activebc.h"
 #include "input/geometry.h"
-#include "dofs/dofiditem.h"
+#include "dofman/dofiditem.h"
 
 #include <unordered_map>
 #include <memory>

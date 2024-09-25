@@ -35,7 +35,7 @@
 #include "fields/primaryfield.h"
 #include "mesher/spatiallocalizer.h"
 #include "dofman/dofmanager.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "input/element.h"
 #include "solvers/timestep.h"
 #include "export/datastream.h"

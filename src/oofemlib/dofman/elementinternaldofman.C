@@ -33,7 +33,7 @@
  */
 
 #include "dofman/elementinternaldofman.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "math/intarray.h"
 #include "utility/verbose.h"
 

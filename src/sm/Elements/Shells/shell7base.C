@@ -45,7 +45,7 @@
 #include "bc/constantsurfaceload.h"
 #include "export/vtkxmlexportmodule.h"
 #include "material/fracturemanager.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "math/floatarrayf.h"
 #include "math/floatmatrixf.h"
 #include "input/connectivitytable.h"

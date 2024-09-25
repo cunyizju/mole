@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "dofs/dofmanvalfield.h"
+#include "dofman/dofmanvalfield.h"
 #include "input/domain.h"
 #include "mesher/spatiallocalizer.h"
 #include "input/element.h"

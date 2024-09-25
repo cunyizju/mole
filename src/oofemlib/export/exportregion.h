@@ -39,7 +39,7 @@
 #include "math/intarray.h"
 #include "input/internalstatevaluetype.h"
 #include "input/internalstatetype.h"
-#include "dofs/unknowntype.h"
+#include "dofman/unknowntype.h"
 #include "input/element.h"
 
 #include <string>

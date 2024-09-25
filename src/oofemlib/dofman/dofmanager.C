@@ -33,8 +33,8 @@
  */
 
 #include "dofman/dofmanager.h"
-#include "dofs/masterdof.h"
-#include "dofs/simpleslavedof.h"
+#include "dofman/masterdof.h"
+#include "dofman/simpleslavedof.h"
 #include "solvers/timestep.h"
 #include "bc/load.h"
 #include "math/floatarray.h"

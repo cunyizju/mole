@@ -39,7 +39,7 @@
 #include "math/intarray.h"
 #include "nodalrecovery/nodalrecoverymodel.h"
 #include "input/internalstatevaluetype.h"
-#include "dofs/unknowntype.h"
+#include "dofman/unknowntype.h"
 #include "input/valuemodetype.h"
 
 ///@name Input fields for VTK export module

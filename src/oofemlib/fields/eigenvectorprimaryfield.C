@@ -36,7 +36,7 @@
 #include "solvers/timestep.h"
 #include "input/domain.h"
 #include "dofman/dofmanager.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "math/floatarray.h"
 #include "math/floatmatrix.h"
 #include "engng/engngm.h"

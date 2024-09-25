@@ -40,7 +40,7 @@
 #include "dofman/node.h"
 #include "input/element.h"
 #include "bc/generalboundarycondition.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "ltf/function.h"
 #include "solvers/linesearch.h"
 #include "engng/classfactory.h"

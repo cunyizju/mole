@@ -38,7 +38,7 @@
 #include "input/nummet.h"
 #include "solvers/timestep.h"
 #include "input/element.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "math/sparsemtrx.h"
 #include "utility/verbose.h"
 #include "sm/Elements/structuralelement.h"

@@ -40,10 +40,10 @@
 
 // unique_ptrs need the base 
 #include "engng/engngm.h"
-#include "dofs/masterdof.h"
-#include "dofs/slavedof.h"
-#include "dofs/simpleslavedof.h"
-#include "dofs/activedof.h"
+#include "dofman/masterdof.h"
+#include "dofman/slavedof.h"
+#include "dofman/simpleslavedof.h"
+#include "dofman/activedof.h"
 
 #include "math/sparsemtrx.h"
 #include "math/sparsegeneigenvalsystemnm.h"

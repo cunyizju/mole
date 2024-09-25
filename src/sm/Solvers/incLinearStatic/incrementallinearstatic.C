@@ -34,7 +34,7 @@
 
 #include "incrementallinearstatic.h"
 #include "solvers/timestep.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "input/domain.h"
 #include "math/sparsemtrx.h"
 #include "utility/dictionary.h"

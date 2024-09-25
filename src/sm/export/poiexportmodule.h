@@ -38,7 +38,7 @@
 #include "export/exportmodule.h"
 #include "math/intarray.h"
 #include "input/internalstatetype.h"
-#include "dofs/unknowntype.h"
+#include "dofman/unknowntype.h"
 
 #include <list>
 #include <memory>

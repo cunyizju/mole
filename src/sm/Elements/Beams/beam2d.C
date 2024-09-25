@@ -50,7 +50,7 @@
 #include "math/mathfem.h"
 #include "engng/classfactory.h"
 #include "dofman/elementinternaldofman.h"
-#include "dofs/masterdof.h"
+#include "dofman/masterdof.h"
 
 
 

@@ -47,7 +47,7 @@
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
 #include "engng/classfactory.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "../sm/Materials/structuralmaterial.h"
 
 

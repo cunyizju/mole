@@ -49,9 +49,9 @@
 #include "input/elementextension.h"
 #include "input/entityrenumberingscheme.h"
 #include "material/matresponsemode.h"
-#include "dofs/unknowntype.h"
+#include "dofman/unknowntype.h"
 #include "math/integrationrule.h"
-#include "dofs/dofiditem.h"
+#include "dofman/dofiditem.h"
 #include "math/floatarray.h"
 
 #include <cstdio>

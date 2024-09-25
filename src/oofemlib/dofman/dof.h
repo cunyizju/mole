@@ -40,10 +40,10 @@
 #include "oofemcfg.h"
 #include "math/floatarray.h"
 #include "math/intarray.h"
-#include "dofs/unknowntype.h"
+#include "dofman/unknowntype.h"
 #include "input/valuemodetype.h"
-#include "dofs/dofiditem.h"
-#include "dofs/doftype.h"
+#include "dofman/dofiditem.h"
+#include "dofman/doftype.h"
 #include "utility/contextioresulttype.h"
 
 namespace oofem {

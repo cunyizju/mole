@@ -7,12 +7,12 @@ file(GLOB input_SRCS input/*.C)
 set(input ${input_SRCS})
 
 set (dofman
-    dofs/dof.C
-    dofs/masterdof.C
-    dofs/simpleslavedof.C
-    dofs/slavedof.C
-    dofs/activedof.C
-    dofs/dofmanvalfield.C
+    dofman/dof.C
+    dofman/masterdof.C
+    dofman/simpleslavedof.C
+    dofman/slavedof.C
+    dofman/activedof.C
+    dofman/dofmanvalfield.C
     dofman/dofmanager.C
     dofman/node.C
     dofman/slavenode.C

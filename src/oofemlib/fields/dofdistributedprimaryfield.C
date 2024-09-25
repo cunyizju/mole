@@ -34,7 +34,7 @@
 
 #include "fields/dofdistributedprimaryfield.h"
 #include "dofman/dofmanager.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "input/domain.h"
 #include "solvers/timestep.h"
 #include "math/floatarray.h"

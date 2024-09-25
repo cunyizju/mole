@@ -49,7 +49,7 @@
 #include "export/vtkxmlexportmodule.h"
 #include "material/fracturemanager.h"
 
-#include "dofs/masterdof.h"
+#include "dofman/masterdof.h"
 
 #include <fstream>
 

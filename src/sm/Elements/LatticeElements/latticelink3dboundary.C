@@ -49,7 +49,7 @@
 #include "utility/contextioerr.h"
 #include "export/datastream.h"
 #include "cs/crosssection.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 
 
 

@@ -33,9 +33,9 @@
  */
 
 #include "prescribeddispslipbcdirichletrc.h"
-#include "dofs/dofiditem.h"
+#include "dofman/dofiditem.h"
 #include "dofman/dofmanager.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "input/valuemodetype.h"
 #include "math/floatarray.h"
 #include "math/floatmatrix.h"

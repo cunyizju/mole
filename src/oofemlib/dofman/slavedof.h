@@ -35,7 +35,7 @@
 #ifndef slavedof_h
 #define slavedof_h
 
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 
 namespace oofem {
 /**

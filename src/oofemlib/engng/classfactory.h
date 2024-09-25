@@ -38,7 +38,7 @@
 #include "oofemcfg.h"
 #include "math/sparsemtrxtype.h"
 #include "error/errorestimatortype.h"
-#include "dofs/doftype.h"
+#include "dofman/doftype.h"
 #include "solvers/linsystsolvertype.h"
 //#include "patch.h" // for PatchType
 #include "nodalrecovery/nodalrecoverymodel.h" // for NodalRecoveryModelType
@@ -46,7 +46,7 @@
 #include "solvers/geneigvalsolvertype.h"
 #include "material/materialmappingalgorithmtype.h"
 #include "mesher/meshpackagetype.h"
-#include "dofs/dofiditem.h"
+#include "dofman/dofiditem.h"
 
 #include <map>
 #include <string>

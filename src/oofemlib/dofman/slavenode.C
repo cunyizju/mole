@@ -33,7 +33,7 @@
  */
 
 #include "dofman/slavenode.h"
-#include "dofs/slavedof.h"
+#include "dofman/slavedof.h"
 #include "math/floatarray.h"
 #include "math/intarray.h"
 #include "input/entityrenumberingscheme.h"

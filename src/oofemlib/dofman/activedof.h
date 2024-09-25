@@ -35,7 +35,7 @@
 #ifndef activedof_h
 #define activedof_h
 
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 
 namespace oofem {
 class ActiveBoundaryCondition;

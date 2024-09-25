@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "dofs/activedof.h"
+#include "dofman/activedof.h"
 #include "bc/activebc.h"
 #include "input/domain.h"
 #include "dofman/dofmanager.h"

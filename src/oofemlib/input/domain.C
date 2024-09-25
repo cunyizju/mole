@@ -74,8 +74,8 @@
 
 #include "bc/boundarycondition.h"
 #include "bc/activebc.h"
-#include "dofs/simpleslavedof.h"
-#include "dofs/masterdof.h"
+#include "dofman/simpleslavedof.h"
+#include "dofman/masterdof.h"
 
 #ifdef __PARALLEL_MODE
  #include "parallel/parallel.h"

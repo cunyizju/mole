@@ -34,7 +34,7 @@
 
 #include "sm/Elements/Interfaces/cohsur3d.h"
 #include "input/element.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "dofman/node.h"
 #include "particle.h"
 #include "math/gaussintegrationrule.h"

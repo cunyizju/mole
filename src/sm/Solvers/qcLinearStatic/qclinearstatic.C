@@ -48,7 +48,7 @@
 
 #include "dofman/qcnode.h"
 #include "input/domain.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "cs/crosssection.h"
 
 #include "sm/Quasicontinuum/quasicontinuum.h"

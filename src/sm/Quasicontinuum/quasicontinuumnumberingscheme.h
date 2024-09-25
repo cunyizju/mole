@@ -36,7 +36,7 @@
 #define quasicontinuumnumberingscheme_h
 
 #include "input/unknownnumberingscheme.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "input/domain.h"
 #include "dofman/dofmanager.h"
 

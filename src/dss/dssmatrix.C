@@ -38,7 +38,7 @@
 #include "input/domain.h"
 #include "input/element.h"
 #include "dofman/dofmanager.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "math/sparsemtrxtype.h"
 #include "engng/classfactory.h"
 #include "bc/activebc.h"
