@@ -1,9 +1,10 @@
-set (engng
-    engng/classfactory.C
-    engng/engngm.C
-    engng/staggeredproblem.C
-    engng/dummyengngm.C
-    )
+# engng
+file(GLOB engng_SRCS engng/*.C)
+set(engng ${engng_SRCS})
+
+# input
+# file(GLOB input_SRCS input/*.C)
+# set(input ${input_SRCS})
 
 set(input
     input/initmodulemanager.C
@@ -120,52 +121,26 @@ set (fields
     fields/uniformgridfield.C
     )
 
-set (core_ltf
-    ltf/function.C
-    ltf/scalarfunction.C
-    ltf/constantfunction.C
-    ltf/heavisidetimefunction.C
-    ltf/peakfunction.C
-    ltf/piecewiselinfunction.C
-    ltf/periodicpiecewiselinfunction.C
-    ltf/calculatorfunction.C
-    ltf/localgaussianrandomfunction.C
-    ltf/interpolatingfunction.C
-    )
+# loading functions
+file(GLOB ltf_SRCS ltf/*.C)
+set(core_ltf ${ltf_SRCS})
 
 set (crosssection
     cs/crosssection.C
     cs/emptycs.C
     cs/dummycrosssection.C
     )
+# loading functions
+file(GLOB export_SRCS export/*.C)
+set(export ${export_SRCS})
 
-set (export
-    export/outputmanager.C
-    export/exportmodule.C
-    export/exportmodulemanager.C
-    export/exportregion.C
-    export/outputexportmodule.C
-    export/datastream.C
-    export/errorcheckingexportmodule.C
-    export/vtkexportmodule.C
-    export/vtkbaseexportmodule.C
-    export/vtkxmlexportmodule.C
-    export/vtkmemoryexportmodule.C
-    export/vtkxmlperiodicexportmodule.C
-#    export/vtkxmllatticeexportmodule.C
-    export/vtkpfemexportmodule.C
-    export/vtkxfemexportmodule.C
-#    export/homexportmodule.C
-    export/matlabexportmodule.C
-    export/gpexportmodule.C
-    export/solutionstatusexportmodule.C
-    export/vtkhdf5exportmodule.C
-    )
+# monitor
+file(GLOB monitor_SRCS monitor/*.C)
+set(monitors ${monitor_SRCS})
 
-set (monitors
-    monitor/monitormanager.C
-    monitor/monitor.C
-    )
+# mesh
+file(GLOB mesh_SRCS mesher/*.C)
+set(mesh ${mesh_SRCS})
 
 set (fei
     fei/feinterpol.C
@@ -204,13 +179,9 @@ set(contact
     contact/contactelement.C
 )
 
-set (mapping
-    mapping/mmaclosestiptransfer.C
-    mapping/mmashapefunctprojection.C
-    mapping/mmaleastsquareprojection.C
-    mapping/mmacontainingelementprojection.C
-    mapping/matstatmapperint.C
-    )
+# mapping
+file(GLOB mapping_SRCS mapping/*.C)
+set(mapping ${mapping_SRCS})
 
 set(math
     math/intarray.C
@@ -249,39 +220,13 @@ set(utility
     utility/parser.C
 )
 
-set (xfem
-    xfem/delaunay.C
-    xfem/xfemelementinterface.C
-    xfem/enrichmentfunction.C
-    xfem/xfemmanager.C
-    xfem/enrichmentitem.C
-    xfem/geometrybasedei.C
-    xfem/hybridei.C
-    xfem/directei.C
-    xfem/listbasedei.C
-    xfem/inclusion.C
-    xfem/patchintegrationrule.C
-    xfem/propagationlaw.C
-    xfem/XFEMDebugTools.C
-    xfem/enrichmentfronts/enrichmentfront.C
-    xfem/enrichmentfronts/enrichmentfrontdonothing.C
-    xfem/enrichmentfronts/enrichmentfrontextend.C
-    xfem/enrichmentfronts/enrichmentfrontreducefront.C
-    xfem/enrichmentfronts/enrichmentfrontlinbranchfuncradius.C
-    xfem/enrichmentfronts/enrichmentfrontlinbranchfunconeel.C
-    xfem/enrichmentfronts/enrichmentfrontcohesivebranchfunconeel.C
-    xfem/enrichmentfronts/enrichmentfrontintersection.C
-    xfem/integrationrules/discsegintegrationrule.C
-    xfem/xfemtolerances.C
-    xfem/nucleationcriterion.C
-    )
+# xfem
+file(GLOB xfem_SRCS xfem/*.C xfem/enrichmentfronts/*.C xfem/integrationrules/*.C)
+set(xfem ${xfem_SRCS})
 
-set (iga
-    iga/iga.C
-    iga/feibspline.C
-    iga/feinurbs.C
-    iga/feitspline.C
-    )
+# iga
+file(GLOB iga_SRCS iga/*.C)
+set(iga ${iga_SRCS})
 
 set (nodalrecovery
     nodalrecovery/nodalrecoverymodel.C
@@ -357,18 +302,6 @@ if (USE_PYTHON_EXTENSION)
     list (APPEND engng utility/pythonexpression.C)
 endif ()
 
-set (mesh
-    mesher/t3dinterface.C
-    mesher/targe2interface.C
-    mesher/freeminterface.C
-    mesher/subdivision.C
-    mesher/trianglemesherinterface.C
-    mesher/spatiallocalizer.C
-    mesher/dummylocalizer.C
-    mesher/octreelocalizer.C
-    mesher/remeshingcrit.C
-    mesher/unstructuredgridfield.C
-    )
 
 set (core
     ${engng}
