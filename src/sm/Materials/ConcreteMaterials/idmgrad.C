@@ -38,7 +38,7 @@
 #include "math/floatarray.h"
 #include "math/mathfem.h"
 #include "math/sparsemtrx.h"
-#include "Materials/isolinearelasticmaterial.h"
+#include "Materials/Elasticity/isolinearelasticmaterial.h"
 #include "error/error.h"
 #include "material/nonlocalmaterialext.h"
 #include "export/datastream.h"

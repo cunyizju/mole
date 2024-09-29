@@ -42,7 +42,7 @@
 #include "utility/contextioerr.h"
 #include "solvers/timestep.h"
 #include "sm/Materials/structuralmaterial.h"
-#include "sm/Materials/isolinearelasticmaterial.h"
+#include "sm/Materials/Elasticity/isolinearelasticmaterial.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "math/mathfem.h"
 #include "engng/classfactory.h"

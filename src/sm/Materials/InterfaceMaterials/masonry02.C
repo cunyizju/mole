@@ -33,7 +33,7 @@
  */
 
 #include "masonry02.h"
-#include "sm/Materials/isolinearelasticmaterial.h"
+#include "sm/Materials/Elasticity/isolinearelasticmaterial.h"
 #include "math/gausspoint.h"
 #include "math/floatmatrix.h"
 #include "math/floatarray.h"

@@ -42,7 +42,7 @@
 
 #include "material/material.h"
 #include "sm/Materials/structuralmaterial.h"
-#include "isolinearelasticmaterial.h"
+#include "Elasticity/isolinearelasticmaterial.h"
 #include "sm/Materials/structuralms.h"
 #include "sm/Materials/ConcreteMaterials/idm1.h"
 

@@ -40,7 +40,7 @@
 #include "math/floatmatrix.h"
 #include "input/cltypes.h"
 #include "sm/Materials/structuralms.h"
-#include "sm/Materials/isolinearelasticmaterial.h"
+#include "sm/Materials/Elasticity/isolinearelasticmaterial.h"
 #include "math/gausspoint.h"
 #include "math/mathfem.h"
 

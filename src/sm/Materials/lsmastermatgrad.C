@@ -33,7 +33,7 @@
  */
 
 #include "lsmastermatgrad.h"
-#include "Materials/isolinearelasticmaterial.h"
+#include "Materials/Elasticity/isolinearelasticmaterial.h"
 #include "math/gausspoint.h"
 #include "math/floatmatrix.h"
 #include "math/floatarray.h"

@@ -1,10 +1,14 @@
+# elasticity
+file(GLOB elas_SRCS Elasticity/*.C)
+set(elasticity ${elas_SRCS})
+
+# plasticity
+file(GLOB plas_SRCS Plasticity/*.C)
+set(plasticity ${plas_SRCS})
+
 set (sm_material
     abaqususermaterial.C
     structuralmaterial.C
-    Elasticity/linearelasticmaterial.C
-    isolinearelasticmaterial.C
-    anisolinearelasticmaterial.C
-    ortholinearelasticmaterial.C
     ConcreteMaterials/concrete2.C 
     ConcreteMaterials/concrete3.C 
     ConcreteMaterials/concretedpm.C 
@@ -27,14 +31,9 @@ set (sm_material
     rcsdnl.C
     m4.C
     microplane_m1.C
-    druckerPragerPlasticitySM.C
-    druckerpragercutmat.C
-    j2mat.C
     mdm.C
     micromaterial.C
-    misesmat.C 
     misesmatgrad.C 
-    misesmatnl.C
     rankinemat.C
     rankinematgrad.C
     rankinematnl.C
@@ -124,6 +123,8 @@ set (sm_obsolete
     )
 
 set (sm_materials
+    ${plasticity}
+    ${elasticity}
     ${sm_material}
     ${sm_interface_materials}
     ${sm_status}

@@ -32,8 +32,8 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "druckerpragercutmat.h"
-#include "sm/Materials/isolinearelasticmaterial.h"
+#include "Plasticity/druckerpragercutmat.h"
+#include "sm/Materials/Elasticity/isolinearelasticmaterial.h"
 #include "math/floatmatrix.h"
 #include "math/floatarray.h"
 #include "math/gausspoint.h"

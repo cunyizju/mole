@@ -39,7 +39,7 @@
 #include "utility/dictionary.h"
 #include "material/material.h"
 #include "sm/Materials/deformationtheorymaterial.h"
-#include "sm/Materials/isolinearelasticmaterial.h"
+#include "sm/Materials/Elasticity/isolinearelasticmaterial.h"
 #include "math/floatarray.h"
 #include "sm/Materials/structuralms.h"
 

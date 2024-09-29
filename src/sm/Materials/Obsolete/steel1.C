@@ -33,7 +33,7 @@
  */
 
 #include "steel1.h"
-#include "sm/Materials/isolinearelasticmaterial.h"
+#include "sm/Materials/Elasticity/isolinearelasticmaterial.h"
 #include "math/mathfem.h"
 #include "engng/classfactory.h"
 

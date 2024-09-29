@@ -33,7 +33,7 @@
  */
 
 #include "sm/Materials/Elasticity/linearelasticmaterial.h"
-#include "sm/Materials/ortholinearelasticmaterial.h"
+#include "sm/Materials/Elasticity/ortholinearelasticmaterial.h"
 #include "sm/Elements/structuralelement.h"
 #include "material/material.h"
 #include "sm/Materials/structuralms.h"

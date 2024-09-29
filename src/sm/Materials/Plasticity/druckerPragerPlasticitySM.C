@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "druckerPragerPlasticitySM.h"
+#include "Plasticity/druckerPragerPlasticitySM.h"
 
 #include "math/floatarray.h"
 #include "math/floatmatrix.h"
@@ -40,7 +40,7 @@
 #include "math/gausspoint.h"
 #include "math/intarray.h"
 #include "sm/Materials/structuralmaterial.h"
-#include "sm/Materials/isolinearelasticmaterial.h"
+#include "sm/Materials/Elasticity/isolinearelasticmaterial.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
 #include "math/mathfem.h"

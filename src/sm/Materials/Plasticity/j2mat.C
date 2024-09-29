@@ -32,8 +32,8 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "j2mat.h"
-#include "isolinearelasticmaterial.h"
+#include "Plasticity/j2mat.h"
+#include "Elasticity/isolinearelasticmaterial.h"
 #include "math/gausspoint.h"
 #include "math/floatmatrix.h"
 #include "math/floatarray.h"

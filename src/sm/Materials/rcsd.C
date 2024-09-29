@@ -37,7 +37,7 @@
 #include "math/floatmatrix.h"
 #include "math/floatarray.h"
 #include "math/mathfem.h"
-#include "sm/Materials/isolinearelasticmaterial.h"
+#include "sm/Materials/Elasticity/isolinearelasticmaterial.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
 #include "engng/classfactory.h"

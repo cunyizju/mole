@@ -39,7 +39,7 @@
 #include "math/mathfem.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
-#include "sm/Materials/isolinearelasticmaterial.h"
+#include "sm/Materials/Elasticity/isolinearelasticmaterial.h"
 #include "engng/classfactory.h"
 
 namespace oofem {

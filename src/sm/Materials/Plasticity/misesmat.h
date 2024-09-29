@@ -37,7 +37,7 @@
 
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
-#include "sm/Materials/isolinearelasticmaterial.h"
+#include "sm/Materials/Elasticity/isolinearelasticmaterial.h"
 #include "utility/dictionary.h"
 #include "math/floatarray.h"
 #include "math/floatmatrix.h"

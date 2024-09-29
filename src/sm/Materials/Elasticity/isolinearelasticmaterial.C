@@ -33,7 +33,7 @@
  */
 
 #include "Elasticity/linearelasticmaterial.h"
-#include "isolinearelasticmaterial.h"
+#include "Elasticity/isolinearelasticmaterial.h"
 #include "sm/CrossSections/simplecrosssection.h"
 #include "sm/Materials/structuralms.h"
 #include "math/floatmatrix.h"

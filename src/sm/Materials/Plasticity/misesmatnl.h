@@ -34,7 +34,7 @@
 
 #ifndef misesmatnl_h
 
-#include "sm/Materials/misesmat.h"
+#include "sm/Materials/Plasticity/misesmat.h"
 #include "sm/Materials/structuralnonlocalmaterialext.h"
 #include "material/nonlocmatstiffinterface.h"
 #include "input/cltypes.h"

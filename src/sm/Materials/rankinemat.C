@@ -33,7 +33,7 @@
  */
 
 #include "rankinemat.h"
-#include "isolinearelasticmaterial.h"
+#include "Elasticity/isolinearelasticmaterial.h"
 #include "math/gausspoint.h"
 #include "math/floatmatrix.h"
 #include "math/floatarray.h"
