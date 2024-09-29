@@ -42,8 +42,6 @@ set (sm_material
     lsmastermatgrad.C
     simplevitrificationmaterial.C
     anisodamagemodel.C
-    winklerpasternak.C
-    winklermodel.C
     structmatsettable.C
     tutorialmaterial.C
     graddamagematerialextensioninterface.C    

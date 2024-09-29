@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "winklerpasternak.h"
+#include "Elasticity/winklerpasternak.h"
 #include "sm/Materials/structuralms.h"
 #include "math/floatmatrix.h"
 #include "math/gausspoint.h"
