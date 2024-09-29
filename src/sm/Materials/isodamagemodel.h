@@ -41,7 +41,7 @@
 #define keep_track_of_dissipated_energy
 
 #include "material/material.h"
-#include "sm/Materials/linearelasticmaterial.h"
+#include "sm/Materials/Elasticity/linearelasticmaterial.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
 

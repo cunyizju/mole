@@ -39,7 +39,7 @@
 #define keep_track_of_strains
 
 #include "sm/Materials/structuralmaterial.h"
-//#include "sm/Materials/linearelasticmaterial.h"
+//#include "sm/Materials/Elasticity/linearelasticmaterial.h"
 #include "math/floatarray.h"
 #include "math/floatmatrix.h"
 

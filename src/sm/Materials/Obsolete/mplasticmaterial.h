@@ -36,7 +36,7 @@
 #define mplasticmaterial_h
 
 #include "sm/Materials/structuralmaterial.h"
-#include "sm/Materials/linearelasticmaterial.h"
+#include "sm/Materials/Elasticity/linearelasticmaterial.h"
 #include "math/intarray.h"
 #include "math/floatarray.h"
 #include "math/floatmatrix.h"

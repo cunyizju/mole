@@ -1,7 +1,7 @@
 set (sm_material
     abaqususermaterial.C
     structuralmaterial.C
-    linearelasticmaterial.C
+    Elasticity/linearelasticmaterial.C
     isolinearelasticmaterial.C
     anisolinearelasticmaterial.C
     ortholinearelasticmaterial.C

@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "linearelasticmaterial.h"
+#include "Elasticity/linearelasticmaterial.h"
 #include "anisolinearelasticmaterial.h"
 #include "structuralms.h"
 #include "math/floatmatrix.h"

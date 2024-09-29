@@ -35,7 +35,7 @@
 #ifndef ortholinearelasticmaterial_h
 #define ortholinearelasticmaterial_h
 
-#include "sm/Materials/linearelasticmaterial.h"
+#include "sm/Materials/Elasticity/linearelasticmaterial.h"
 #include "utility/dictionary.h"
 #include "math/floatarray.h"
 #include "math/floatmatrix.h"

@@ -33,7 +33,7 @@
  */
 
 #include "linkslip.h"
-//#include "linearelasticmaterial.h"
+//#include "Elasticity/linearelasticmaterial.h"
 #include "math/gausspoint.h"
 #include "math/floatmatrix.h"
 #include "math/floatmatrixf.h"
