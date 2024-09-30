@@ -7,7 +7,7 @@ file(GLOB plas_SRCS Plasticity/*.C)
 set(plasticity ${plas_SRCS})
 
 set (sm_material
-    abaqususermaterial.C
+    ABAQUS/abaqususermaterial.C
     structuralmaterial.C
     ConcreteMaterials/concrete2.C 
     ConcreteMaterials/concrete3.C 
