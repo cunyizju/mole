@@ -34,7 +34,7 @@
 
 #include "input/domain.h"
 #include "lattice3dboundarytruss.h"
-#include "../sm/Materials/LatticeMaterials/latticematstatus.h"
+#include "../sm/Materials/Lattice/latticematstatus.h"
 #include "dofman/node.h"
 #include "material/material.h"
 #include "math/gausspoint.h"

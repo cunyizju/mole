@@ -58,19 +58,12 @@ set (sm_material
     HyperelasticMaterials/simopistermaterial.C
     HyperelasticMaterials/ogdencompressiblematerial.C
     HyperelasticMaterials/hyperelasticmaterial1d.C
-    #Lattice models
-    LatticeMaterials/latticematstatus.C
-    LatticeMaterials/latticestructuralmaterial.C	
-    LatticeMaterials/latticelinearelastic.C
-    LatticeMaterials/latticedamage.C
-    LatticeMaterials/latticeviscoelastic.C
-    LatticeMaterials/latticedamageviscoelastic.C
-    LatticeMaterials/latticebondplasticity.C
-    LatticeMaterials/latticeplasticitydamage.C
-    LatticeMaterials/latticeslip.C
-    LatticeMaterials/latticeplasticitydamageviscoelastic.C
     1D/isoasymm1d.C
 )
+
+# Lattice
+file(GLOB lattice_SRCS Lattice/*.C)
+set(lattice ${lattice_SRCS})
 
 if (USE_MFRONT)
     list (APPEND sm_material mfrontusermaterial.C)
@@ -124,6 +117,7 @@ set (sm_materials
     ${plasticity}
     ${elasticity}
     ${sm_material}
+    ${lattice}
     ${sm_interface_materials}
     ${sm_status}
     ${sm_obsolete}

@@ -35,7 +35,7 @@
 #ifndef latticecrosssection_h
 #define latticecrosssection_h
 
-#include "sm/Materials/LatticeMaterials/latticestructuralmaterial.h"
+#include "sm/Materials/Lattice/latticestructuralmaterial.h"
 #include "cs/crosssection.h"
 #include "engng/classfactory.h"
 

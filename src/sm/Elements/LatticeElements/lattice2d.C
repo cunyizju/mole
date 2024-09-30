@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/LatticeElements/lattice2d.h"
-#include "sm/Materials/LatticeMaterials/latticematstatus.h"
+#include "sm/Materials/Lattice/latticematstatus.h"
 #include "sm/Elements/LatticeElements/latticestructuralelement.h"
 #include "sm/CrossSections/latticecrosssection.h"
 #include "input/domain.h"

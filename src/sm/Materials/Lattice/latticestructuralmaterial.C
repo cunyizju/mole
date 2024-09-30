@@ -32,8 +32,8 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "sm/Materials/LatticeMaterials/latticestructuralmaterial.h"
-#include "sm/Materials/LatticeMaterials/latticematstatus.h"
+#include "sm/Materials/Lattice/latticestructuralmaterial.h"
+#include "sm/Materials/Lattice/latticematstatus.h"
 #include "input/domain.h"
 #include "utility/verbose.h"
 #include "sm/Materials/structuralms.h"

@@ -37,7 +37,7 @@
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
 #include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
-#include "sm/Materials/LatticeMaterials/latticematstatus.h"
+#include "sm/Materials/Lattice/latticematstatus.h"
 #include "Loads/structtemperatureload.h"
 #include "sm/Materials/structuralnonlocalmaterialext.h"
 #include "Loads/structeigenstrainload.h"
