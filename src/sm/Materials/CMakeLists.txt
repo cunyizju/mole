@@ -51,15 +51,12 @@ set (sm_material
     fcm.C
     #Mixed pressure material interface
     MixedPressure/mixedpressurematerialextensioninterface.C
-    #Hyperelastic materials
-    HyperelasticMaterials/basehyperelasticmaterial.C    
-    HyperelasticMaterials/mooneyrivlincompressiblematerial.C
-    HyperelasticMaterials/blatzkomaterial.C
-    HyperelasticMaterials/simopistermaterial.C
-    HyperelasticMaterials/ogdencompressiblematerial.C
-    HyperelasticMaterials/hyperelasticmaterial1d.C
     1D/isoasymm1d.C
 )
+
+# hyperelastic
+file(GLOB hyperelastic_SRCS Hyperelastic/*.C)
+set(hyperelastic ${hyperelastic_SRCS})
 
 # Lattice
 file(GLOB lattice_SRCS Lattice/*.C)
@@ -114,8 +111,9 @@ set (sm_obsolete
     )
 
 set (sm_materials
-    ${plasticity}
     ${elasticity}
+    ${hyperelastic}
+    ${plasticity}
     ${sm_material}
     ${lattice}
     ${sm_interface_materials}

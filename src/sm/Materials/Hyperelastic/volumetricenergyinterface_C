@@ -33,7 +33,7 @@
  */
 
 #include "volumetricenergyinterface.h"
-#include "tensor/tensor.h"
+// #include "tensor/tensor.h"
 #include "input/dynamicinputrecord.h"
 
 
