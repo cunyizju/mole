@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "isodamagemodel.h"
+#include "Damage/isodamagemodel.h"
 #include "math/floatmatrix.h"
 #include "math/floatarray.h"
 #include "math/mathfem.h"

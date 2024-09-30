@@ -34,10 +34,10 @@
 
 #ifndef RankineMatGrad_h
 
-#include "rankinemat.h"
+#include "Damage/rankinemat.h"
 #include "structuralnonlocalmaterialext.h"
 #include "material/nonlocmatstiffinterface.h"
-#include "graddamagematerialextensioninterface.h"
+#include "Damage/graddamagematerialextensioninterface.h"
 #include "input/cltypes.h"
 
 ///@name Input fields for RankineMatGrad

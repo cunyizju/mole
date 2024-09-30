@@ -32,71 +32,70 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-//   ************************************************************************************
-//   *** CLASS ROTATING SMEARED CRACK MODEL WITH TRANSITION TO SCALAR DAMAGE ************
-//   ************************************************************************************
+//   ***************************************************************************************************************
+//   *** CLASS ROTATING SMEARED CRACK MODEL WITH TRANSITION TO SCALAR DAMAGE WITH EXPONENTIAL SOFTENING ************
+//   ***************************************************************************************************************
 
-#ifndef rcsd_h
-#define rcsd_h
+#ifndef rcsde_h
+#define rcsde_h
 
-#include "rcm2.h"
+#include "Damage/rcm2.h"
 
-///@name Input fields for RCSDMaterial
+///@name Input fields for RCSDEMaterial
 //@{
-#define _IFT_RCSDMaterial_Name "rcsd"
-#define _IFT_RCSDMaterial_sdtransitioncoeff "sdtransitioncoeff"
+#define _IFT_RCSDEMaterial_Name "rcsde"
+#define _IFT_RCSDEMaterial_sdtransitioncoeff "sdtransitioncoeff"
 //@}
 
 namespace oofem {
 #define rcsd_Omega 300
 #define pscm_SDTransitionCoeff 306
-#define RCSD_DAMAGE_EPS 1.e-4
-
-class GaussPoint;
+#define RCSDE_DAMAGE_EPS 1.e-4
 
 /**
- * This class implements associated Material Status to RCSDMaterial
+ * This class implements associated Material Status to RCSDEMaterial.
  */
-class RCSDMaterialStatus : public RCM2MaterialStatus
+class RCSDEMaterialStatus : public RCM2MaterialStatus
 {
 public:
-    enum rcsdMode { rcMode, sdMode };
+    enum __rcsdModeType { rcMode, sdMode };
 
 protected:
     double maxEquivStrain = 0., tempMaxEquivStrain = 0.;
     double damageCoeff = 1., tempDamageCoeff = 1.;
     FloatMatrix Ds0;
-    double damageStiffCoeff = 0., depsf = 0., depsp = 0.;
-    rcsdMode mode = rcMode, tempMode = rcMode;
+    double transitionEps = 0., epsF2 = 0.;
+    __rcsdModeType rcsdMode = rcMode, tempRcsdMode = rcMode;
 
 public:
-    RCSDMaterialStatus(GaussPoint * g);
+    RCSDEMaterialStatus(GaussPoint * g);
 
     void printOutputAt(FILE *file, TimeStep *tStep) const override;
 
     double giveTempMaxEquivStrain() const { return tempMaxEquivStrain; }
-    void setTempMaxEquivStrain(double val) { tempMaxEquivStrain = val; }
-    double giveDamageStiffCoeff() const { return damageStiffCoeff; }
-    void setDamageStiffCoeff(double val) { damageStiffCoeff = val; }
+    void   setTempMaxEquivStrain(double val) { tempMaxEquivStrain = val; }
+    //  double giveDamageStiffCoeff () {return damageStiffCoeff;}
+    //  void   setDamageStiffCoeff (double val) {damageStiffCoeff = val;}
     double giveTempDamageCoeff() const { return tempDamageCoeff; }
-    void setTempDamageCoeff(double val) { tempDamageCoeff = val; }
+    void   setTempDamageCoeff(double val) { tempDamageCoeff = val; }
     const FloatMatrix *giveDs0Matrix() { return & Ds0; }
-    void setDs0Matrix(FloatMatrix &mtrx) { Ds0 = mtrx; }
-    double giveDamageEpsfCoeff() const { return depsf; }
-    void setDamageEpsfCoeff(double val) { depsf = val; }
-    double giveDamageEpspCoeff() const { return depsp; }
-    void setDamageEpspCoeff(double val) { depsp = val; }
+    void   setDs0Matrix(FloatMatrix &mtrx) { Ds0 = mtrx; }
 
-    rcsdMode giveTempMode() const { return tempMode; }
-    void setTempMode(rcsdMode mode) { tempMode = mode; }
+    double giveTransitionEpsCoeff() const { return transitionEps; }
+    void   setTransitionEpsCoeff(double val) { transitionEps = val; }
+    double giveEpsF2Coeff() const { return epsF2; }
+    void   setEpsF2Coeff(double val) { epsF2 = val; }
+
+    __rcsdModeType giveTempMode() const { return tempRcsdMode; }
+    void setTempMode(__rcsdModeType mode) { tempRcsdMode = mode; }
 
     // query for non-tem variables (usefull for postprocessing)
     double giveMaxEquivStrain() const { return maxEquivStrain; }
     double giveDamageCoeff() const { return damageCoeff; }
 
-    rcsdMode giveMode() const { return mode; }
+    __rcsdModeType giveMode() const { return rcsdMode; }
 
-    const char *giveClassName() const override { return "RCSDMaterialStatus"; }
+    const char *giveClassName() const override { return "RCSDEMaterialStatus"; }
 
     void initTempStatus() override;
     void updateYourself(TimeStep *tStep) override;
@@ -113,46 +112,45 @@ public:
  * mesh topology).
  * Model according to Milan Jirasek RC-SD model.
  */
-class RCSDMaterial : public RCM2Material
+class RCSDEMaterial : public RCM2Material
 {
 protected:
     double SDTransitionCoeff = 0.;
 
 public:
-    RCSDMaterial(int n, Domain * d);
-    virtual ~RCSDMaterial();
+    RCSDEMaterial(int n, Domain * d);
+    virtual ~RCSDEMaterial();
 
-    const char *giveInputRecordName() const override { return _IFT_RCSDMaterial_Name; }
-    const char *giveClassName() const override { return "RCSDMaterial"; }
+    const char *giveInputRecordName() const override { return _IFT_RCSDEMaterial_Name; }
+    const char *giveClassName() const override { return "RCSDEMaterial"; }
 
     void initializeFrom(InputRecord &ir) override;
 
     double give(int aProperty, GaussPoint *gp) const override;
 
-    void giveRealStressVector(FloatArray &answer, GaussPoint *gp,
-                              const FloatArray &, TimeStep *tStep) override;
+    void giveRealStressVector(FloatArray &answer, GaussPoint *gp, const FloatArray &, TimeStep *) override;
 
-    MaterialStatus *CreateStatus(GaussPoint *gp) const override { return new RCSDMaterialStatus(gp); }
+    MaterialStatus *CreateStatus(GaussPoint *gp) const override { return new RCSDEMaterialStatus(gp); }
 
 protected:
-    double computeCurrEquivStrain(GaussPoint *, const FloatArray &, double, TimeStep *);
+    double computeCurrEquivStrain(GaussPoint *, const FloatArray &, double, TimeStep *tStep);
     // two functions used to initialize and updating temporary variables in
     // gp's status. These variables are used to control process, when
-    // we try to find equilibrium state.
+    // we try to find equlibrium state.
 
     void giveEffectiveMaterialStiffnessMatrix(FloatMatrix &answer,
                                               MatResponseMode rMode,
                                               GaussPoint *gp, TimeStep *tStep) override;
 
-    double computeDamageCoeff(double, double, double, double);
+    double computeDamageCoeff(double, double, double);
     double giveCrackingModulus(MatResponseMode rMode, GaussPoint *gp,
                                double crackStrain, int i) override;
     //double giveShearRetentionFactor(GaussPoint* gp, double eps_cr, int i) override;
     double giveNormalCrackingStress(GaussPoint *gp, double eps_cr, int i) override;
     double giveMinCrackStrainsForFullyOpenCrack(GaussPoint *gp, int i) override;
-    //void updateStatusForNewCrack( GaussPoint*, int, double) override;
+    //void updateStatusForNewCrack(GaussPoint *gp, int, double) override;
     double computeStrength(GaussPoint *gp, double) override;
     int checkSizeLimit(GaussPoint *gp, double) override;
 };
 } // end namespace oofem
-#endif // rcsd_h
+#endif // rcsde_h

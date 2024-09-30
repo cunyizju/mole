@@ -38,7 +38,7 @@
 #include "../sm/Materials/structuralms.h"
 #include "../sm/CrossSections/structuralcrosssection.h"
 #include "../sm/Elements/nlstructuralelement.h"
-#include "../sm/Materials/graddamagematerialextensioninterface.h"
+#include "../sm/Materials/Damage/graddamagematerialextensioninterface.h"
 #include "dofman/node.h"
 #include "material/material.h"
 #include "math/gausspoint.h"

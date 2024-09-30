@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "rankinemat.h"
+#include "Damage/rankinemat.h"
 #include "Elasticity/isolinearelasticmaterial.h"
 #include "math/gausspoint.h"
 #include "math/floatmatrix.h"

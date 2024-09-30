@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "rcsd.h"
+#include "Damage/rcsde.h"
 #include "math/gausspoint.h"
 #include "math/floatmatrix.h"
 #include "math/floatarray.h"
@@ -42,27 +42,26 @@
 #include "utility/contextioerr.h"
 #include "engng/classfactory.h"
 
-#include <cstring>
 
 namespace oofem {
-REGISTER_Material(RCSDMaterial);
+REGISTER_Material(RCSDEMaterial);
 
-RCSDMaterial :: RCSDMaterial(int n, Domain *d) : RCM2Material(n, d)
+RCSDEMaterial :: RCSDEMaterial(int n, Domain *d) : RCM2Material(n, d)
 {
     linearElasticMaterial = new IsotropicLinearElasticMaterial(n, d);
 }
 
 
-RCSDMaterial :: ~RCSDMaterial()
+RCSDEMaterial :: ~RCSDEMaterial()
 {
     delete linearElasticMaterial;
 }
 
 
 void
-RCSDMaterial :: giveRealStressVector(FloatArray &answer, GaussPoint *gp,
-                                     const FloatArray &totalStrain,
-                                     TimeStep *tStep)
+RCSDEMaterial :: giveRealStressVector(FloatArray &answer, GaussPoint *gp,
+                                      const FloatArray &totalStrain,
+                                      TimeStep *tStep)
 //
 // returns real stress vector in 3d stress space of receiver according to
 // previous level of stress and current
@@ -75,7 +74,7 @@ RCSDMaterial :: giveRealStressVector(FloatArray &answer, GaussPoint *gp,
     FloatArray reducedStrainVector, strainVector, principalStrain;
     FloatArray reducedSpaceStressVector;
     FloatMatrix tempCrackDirs;
-    RCSDMaterialStatus *status = static_cast< RCSDMaterialStatus * >( this->giveStatus(gp) );
+    RCSDEMaterialStatus *status = static_cast< RCSDEMaterialStatus * >( this->giveStatus(gp) );
 
     this->initTempStatus(gp);
 
@@ -93,7 +92,7 @@ RCSDMaterial :: giveRealStressVector(FloatArray &answer, GaussPoint *gp,
                                  principal_strain);
 
 
-    if ( status->giveTempMode() == RCSDMaterialStatus :: rcMode ) {
+    if ( status->giveTempMode() == RCSDEMaterialStatus :: rcMode ) {
         // rotating crack mode
 
         this->giveRealPrincipalStressVector3d(princStress, gp, principalStrain, tempCrackDirs, tStep);
@@ -110,7 +109,7 @@ RCSDMaterial :: giveRealStressVector(FloatArray &answer, GaussPoint *gp,
         answer = reducedAnswer;
 
         // test if transition to scalar damage mode take place
-        double minSofteningPrincStress = this->Ft, dCoeff, CurrFt, E, ep, ef, damage;
+        double minSofteningPrincStress = this->Ft, E, Le, CurrFt, Ft, Gf, Gf0, Gf1, e0, ef, ef2, damage;
         int ipos = 0;
         for ( int i = 1; i <= 3; i++ ) {
             if ( status->giveTempCrackStatus(i) == pscm_SOFTENING ) {
@@ -126,27 +125,33 @@ RCSDMaterial :: giveRealStressVector(FloatArray &answer, GaussPoint *gp,
         if ( minSofteningPrincStress <= this->SDTransitionCoeff * CurrFt ) {
             // sd transition takes place
 
+            Le = status->giveCharLength(ipos);
             E = linearElasticMaterial->give(Ex, gp);
-            ep = CurrFt / E;
-            ef = this->giveMinCrackStrainsForFullyOpenCrack(gp, ipos);
-            dCoeff = ( E / ( princStress.at(ipos) / principalStrain.at(ipos) ) );
+            Gf = this->give(pscm_Gf, gp) / Le;
+            Ft = this->computeStrength(gp, Le);
+            ef = Gf / Ft;
+            e0 = principalStrain.at(ipos);
+            Gf0 = -CurrFt * ef * ( exp(-status->giveCrackStrain(ipos) / ef) - 1.0 ); // already disipated + 0.5*sigma0*epsilon0
+            Gf1 = Gf - Gf0;
+
+            ef2 = Gf1 / princStress.at(ipos);
+
             this->giveMaterialStiffnessMatrix(Ds0, SecantStiffness, gp, tStep);
             // compute reached equivalent strain
             equivStrain = this->computeCurrEquivStrain(gp, reducedStrainVector, E, tStep);
-            damage = this->computeDamageCoeff(equivStrain, dCoeff, ep, ef);
+            damage = this->computeDamageCoeff(equivStrain, e0, ef2);
 
 
-            status->setDamageEpsfCoeff(ef);
-            status->setDamageEpspCoeff(ep);
-            status->setDamageStiffCoeff(dCoeff);
+            status->setTransitionEpsCoeff(e0);
+            status->setEpsF2Coeff(ef2);
             status->setDs0Matrix(Ds0);
             status->setTempMaxEquivStrain(equivStrain);
             status->setTempDamageCoeff(damage);
-            status->setTempMode(RCSDMaterialStatus :: sdMode);
+            status->setTempMode(RCSDEMaterialStatus :: sdMode);
         }
     } else {
         // scalar damage mode
-        double ep, ef, E, dCoeff;
+        double E, e0, ef2;
         double damage;
         //int ipos;
 
@@ -154,10 +159,10 @@ RCSDMaterial :: giveRealStressVector(FloatArray &answer, GaussPoint *gp,
         equivStrain = this->computeCurrEquivStrain(gp, reducedStrainVector, E, tStep);
         equivStrain = max( equivStrain, status->giveTempMaxEquivStrain() );
         reducedSpaceStressVector.beProductOf(* status->giveDs0Matrix(), reducedStrainVector);
-        dCoeff = status->giveDamageStiffCoeff();
-        ef = status->giveDamageEpsfCoeff();
-        ep = status->giveDamageEpspCoeff();
-        damage = this->computeDamageCoeff(equivStrain, dCoeff, ep, ef);
+        //dCoeff = status->giveDamageStiffCoeff();
+        ef2 = status->giveEpsF2Coeff();
+        e0  = status->giveTransitionEpsCoeff();
+        damage = this->computeDamageCoeff(equivStrain, e0, ef2);
         reducedSpaceStressVector.times(1.0 - damage);
 
         answer = reducedSpaceStressVector;
@@ -173,17 +178,17 @@ RCSDMaterial :: giveRealStressVector(FloatArray &answer, GaussPoint *gp,
 
 
 void
-RCSDMaterial :: giveEffectiveMaterialStiffnessMatrix(FloatMatrix &answer,
-                                                     MatResponseMode rMode, GaussPoint *gp,
-                                                     TimeStep *tStep)
+RCSDEMaterial :: giveEffectiveMaterialStiffnessMatrix(FloatMatrix &answer,
+                                                      MatResponseMode rMode, GaussPoint *gp,
+                                                      TimeStep *tStep)
 //
 // returns effective material stiffness matrix in full form
 // for gp stress strain mode
 //
 {
-    RCSDMaterialStatus *status = static_cast< RCSDMaterialStatus * >( this->giveStatus(gp) );
+    RCSDEMaterialStatus *status = static_cast< RCSDEMaterialStatus * >( this->giveStatus(gp) );
 
-    if ( status->giveTempMode() == RCSDMaterialStatus :: rcMode ) {
+    if ( status->giveTempMode() == RCSDEMaterialStatus :: rcMode ) {
         // rotating crack mode
 
         RCM2Material :: giveEffectiveMaterialStiffnessMatrix(answer, rMode, gp, tStep);
@@ -197,8 +202,8 @@ RCSDMaterial :: giveEffectiveMaterialStiffnessMatrix(FloatMatrix &answer,
 
             reducedAnswer = * status->giveDs0Matrix();
             dCoeff = 1.0 - status->giveDamageCoeff();
-            if ( dCoeff < RCSD_DAMAGE_EPS ) {
-                dCoeff = RCSD_DAMAGE_EPS;
+            if ( dCoeff < RCSDE_DAMAGE_EPS ) {
+                dCoeff = RCSDE_DAMAGE_EPS;
             }
 
             reducedAnswer.times(dCoeff);
@@ -208,16 +213,16 @@ RCSDMaterial :: giveEffectiveMaterialStiffnessMatrix(FloatMatrix &answer,
             this->giveLinearElasticMaterial()->giveStiffnessMatrix(answer, rMode, gp, tStep);
             return;
         } else {
-            OOFEM_ERROR("unsupported mode");
+            OOFEM_ERROR("usupported mode");
         }
     }
 }
 
 
 double
-RCSDMaterial :: computeDamageCoeff(double equivStrain, double dStiffCoeff, double ep, double ef)
+RCSDEMaterial :: computeDamageCoeff(double equivStrain, double e0, double ef2)
 {
-    double damage = 1. - dStiffCoeff * ( 1. - ef / equivStrain ) / ( 1. - ef / ep );
+    double damage = 1. - e0 / equivStrain *exp(-( equivStrain - e0 ) / ef2);
     if ( damage > 1.0 ) {
         return 1.0;
     }
@@ -227,7 +232,7 @@ RCSDMaterial :: computeDamageCoeff(double equivStrain, double dStiffCoeff, doubl
 
 
 double
-RCSDMaterial :: computeCurrEquivStrain(GaussPoint *gp, const FloatArray &reducedTotalStrainVector, double e, TimeStep *tStep)
+RCSDEMaterial :: computeCurrEquivStrain(GaussPoint *gp, const FloatArray &reducedTotalStrainVector, double e, TimeStep *tStep)
 {
     FloatArray effStress, princEffStress, fullEffStress;
     FloatMatrix De;
@@ -247,15 +252,15 @@ RCSDMaterial :: computeCurrEquivStrain(GaussPoint *gp, const FloatArray &reduced
 
 
 void
-RCSDMaterial :: initializeFrom(InputRecord &ir)
+RCSDEMaterial :: initializeFrom(InputRecord &ir)
 {
     RCM2Material :: initializeFrom(ir);
-    IR_GIVE_FIELD(ir, SDTransitionCoeff, _IFT_RCSDMaterial_sdtransitioncoeff);
+    IR_GIVE_FIELD(ir, SDTransitionCoeff, _IFT_RCSDEMaterial_sdtransitioncoeff);
 }
 
 
 double
-RCSDMaterial :: give(int aProperty, GaussPoint *gp) const
+RCSDEMaterial :: give(int aProperty, GaussPoint *gp) const
 // Returns the value of the property aProperty (e.g. the Young's modulus
 // 'E') of the receiver.
 {
@@ -268,7 +273,7 @@ RCSDMaterial :: give(int aProperty, GaussPoint *gp) const
 
 
 int
-RCSDMaterial :: checkSizeLimit(GaussPoint *gp, double charLength)
+RCSDEMaterial :: checkSizeLimit(GaussPoint *gp, double charLength)
 //
 // checks if element size (charLength) is too big
 // so that tension strength must be reduced followed
@@ -287,7 +292,7 @@ RCSDMaterial :: checkSizeLimit(GaussPoint *gp, double charLength)
 
 
 double
-RCSDMaterial :: computeStrength(GaussPoint *gp, double charLength)
+RCSDEMaterial :: computeStrength(GaussPoint *gp, double charLength)
 //
 // computes strength for given gp,
 // which may be reduced according to length of "fracture process zone"
@@ -300,7 +305,7 @@ RCSDMaterial :: computeStrength(GaussPoint *gp, double charLength)
     Gf = this->give(pscm_Gf, gp);
     Ft = this->give(pscm_Ft, gp);
 
-    if ( !this->checkSizeLimit(gp, charLength) ) {
+    if ( this->checkSizeLimit(gp, charLength) ) { } else {
         // we reduce Ft and there is no softening but sudden drop
         Ft = sqrt(2. * Ee * Gf / charLength);
         //
@@ -313,25 +318,28 @@ RCSDMaterial :: computeStrength(GaussPoint *gp, double charLength)
 
 
 double
-RCSDMaterial :: giveMinCrackStrainsForFullyOpenCrack(GaussPoint *gp, int i)
+RCSDEMaterial :: giveMinCrackStrainsForFullyOpenCrack(GaussPoint *gp, int i)
 //
 // computes MinCrackStrainsForFullyOpenCrack for given gp and i-th crack
 //
 {
-    RCM2MaterialStatus *status = static_cast< RCM2MaterialStatus * >( this->giveStatus(gp) );
-    double Le, Gf, Ft;
-
-    Le = status->giveCharLength(i);
-    Gf = this->give(pscm_Gf, gp);
-    Ft = this->computeStrength(gp, Le);
-
-    return 2.0 * Gf / ( Le * Ft );
+    /*
+     * RCM2MaterialStatus *status = (RCM2MaterialStatus*) this -> giveStatus (gp);
+     * double Le, Gf, Ft;
+     *
+     * Le = status -> giveCharLength (i);
+     * Gf = this->give(pscm_Gf);
+     * Ft = this->computeStrength (gp, Le);
+     *
+     * return Gf/(Le*Ft); // Exponential softening
+     */
+    return 1.e6;
 }
 
 
 /*
  * void
- * RCSDMaterial :: updateStatusForNewCrack (GaussPoint* gp, int i, double Le)
+ * RCSDEMaterial :: updateStatusForNewCrack (GaussPoint* gp, int i, double Le)
  * //
  * // updates gp status when new crack-plane i is formed with charLength Le
  * // updates Le and computes and sets minEffStrainForFullyOpenCrack
@@ -353,8 +361,8 @@ RCSDMaterial :: giveMinCrackStrainsForFullyOpenCrack(GaussPoint *gp, int i)
  */
 
 double
-RCSDMaterial :: giveCrackingModulus(MatResponseMode rMode, GaussPoint *gp,
-                                    double crackStrain, int i)
+RCSDEMaterial :: giveCrackingModulus(MatResponseMode rMode, GaussPoint *gp,
+                                     double crackStrain, int i)
 //
 // returns current cracking modulus according to crackStrain for i-th
 // crackplane
@@ -364,8 +372,8 @@ RCSDMaterial :: giveCrackingModulus(MatResponseMode rMode, GaussPoint *gp,
 // rate and the normal stress rate.
 //
 {
-    //double Ee, Gf;
-    double Cf, Ft, Le, minEffStrainForFullyOpenCrack;
+    // double Ee, Gf;
+    double Gf, Cf, Ft, Le, ef;
     RCM2MaterialStatus *status = static_cast< RCM2MaterialStatus * >( this->giveStatus(gp) );
 
     //
@@ -374,41 +382,27 @@ RCSDMaterial :: giveCrackingModulus(MatResponseMode rMode, GaussPoint *gp,
     // of fracture energy Gf, which is a material constant.
     //
     //Ee = this->give(pscm_Ee);
-    //Gf = this->give(pscm_Gf);
-    Ft = this->give(pscm_Ft, gp);
+    Gf = this->give(pscm_Gf, gp);
     Le = status->giveCharLength(i);
-
-    Ft = this->computeStrength(gp, Le); ///@todo This overwrites the previous (untouched) value of Ft above. Is this right?
-    minEffStrainForFullyOpenCrack = this->giveMinCrackStrainsForFullyOpenCrack(gp, i);
+    Ft = this->computeStrength(gp, Le);
+    //minEffStrainForFullyOpenCrack = this->giveMinCrackStrainsForFullyOpenCrack(gp,i);
+    ef = Gf / ( Le * Ft );
 
     if ( rMode == TangentStiffness ) {
         if ( this->checkSizeLimit(gp, Le) ) {
-            if ( ( crackStrain >= minEffStrainForFullyOpenCrack ) ||
-                ( status->giveTempMaxCrackStrain(i) >= minEffStrainForFullyOpenCrack ) ) {
-                // fully open crack - no stiffness
-                Cf = 0.;
-            } else if ( crackStrain >= status->giveTempMaxCrackStrain(i) ) {
+            if ( crackStrain >= status->giveTempMaxCrackStrain(i) ) {
                 // further softening
-                Cf = -Ft / minEffStrainForFullyOpenCrack;
+                Cf = -Ft / ef *exp(-crackStrain / ef);
             } else {
                 // unloading or reloading regime
-                Cf = Ft * ( minEffStrainForFullyOpenCrack - status->giveTempMaxCrackStrain(i) ) /
-                     ( status->giveTempMaxCrackStrain(i) * minEffStrainForFullyOpenCrack );
+                Cf = Ft / status->giveTempMaxCrackStrain(i) * exp(-status->giveTempMaxCrackStrain(i) / ef);
             }
         } else {
             Cf = 0.;
         }
     } else {
         if ( this->checkSizeLimit(gp, Le) ) {
-            if ( ( crackStrain >= minEffStrainForFullyOpenCrack ) ||
-                ( status->giveTempMaxCrackStrain(i) >= minEffStrainForFullyOpenCrack ) ) {
-                // fully open crack - no stiffness
-                Cf = 0.;
-            } else {
-                // unloading or reloading regime
-                Cf = Ft * ( minEffStrainForFullyOpenCrack - status->giveTempMaxCrackStrain(i) ) /
-                     ( status->giveTempMaxCrackStrain(i) * minEffStrainForFullyOpenCrack );
-            }
+            Cf = Ft / status->giveTempMaxCrackStrain(i) * exp(-status->giveTempMaxCrackStrain(i) / ef);
         } else {
             Cf = 0.;
         }
@@ -418,38 +412,29 @@ RCSDMaterial :: giveCrackingModulus(MatResponseMode rMode, GaussPoint *gp,
 }
 
 
-
 double
-RCSDMaterial :: giveNormalCrackingStress(GaussPoint *gp, double crackStrain, int i)
+RCSDEMaterial :: giveNormalCrackingStress(GaussPoint *gp, double crackStrain, int i)
 //
 // returns receivers Normal Stress in crack i  for given cracking strain
 //
 {
-    double Cf, Ft, Le, answer, minEffStrainForFullyOpenCrack;
+    double Gf, Ft, Le, answer, ef;
     RCM2MaterialStatus *status = static_cast< RCM2MaterialStatus * >( this->giveStatus(gp) );
-    minEffStrainForFullyOpenCrack = this->giveMinCrackStrainsForFullyOpenCrack(gp, i);
 
-    Cf = this->giveCrackingModulus(TangentStiffness, gp, crackStrain, i); // < 0
     Le = status->giveCharLength(i);
     Ft = this->computeStrength(gp, Le);
+    Gf = this->give(pscm_Gf, gp);
+    ef = Gf / ( Le * Ft );
 
     if ( this->checkSizeLimit(gp, Le) ) {
-        if ( ( crackStrain >= minEffStrainForFullyOpenCrack ) ||
-            ( status->giveTempMaxCrackStrain(i) >= minEffStrainForFullyOpenCrack ) ) {
-            // fully open crack - no stiffness
-            answer = 0.;
-        } else if ( crackStrain >= status->giveTempMaxCrackStrain(i) ) {
+        if ( crackStrain >= status->giveTempMaxCrackStrain(i) ) {
             // further softening
-            answer = Ft + Cf * crackStrain;
-        } else if ( crackStrain <= 0. ) {
-            // crack closing
-            // no stress due to cracking
-            answer = 0.;
+            answer = Ft * exp(-crackStrain / ef);
         } else {
-            // unloading or reloading regime
-            answer = crackStrain * Ft *
-                     ( minEffStrainForFullyOpenCrack - status->giveTempMaxCrackStrain(i) ) /
-                     ( status->giveTempMaxCrackStrain(i) * minEffStrainForFullyOpenCrack );
+            // crack closing
+            // or unloading or reloading regime
+            answer = Ft * crackStrain / status->giveTempMaxCrackStrain(i) *
+            exp(-status->giveTempMaxCrackStrain(i) / ef);
         }
     } else {
         answer = 0.;
@@ -460,14 +445,13 @@ RCSDMaterial :: giveNormalCrackingStress(GaussPoint *gp, double crackStrain, int
 
 
 
-
-RCSDMaterialStatus :: RCSDMaterialStatus(GaussPoint *g) :
+RCSDEMaterialStatus :: RCSDEMaterialStatus(GaussPoint *g) :
     RCM2MaterialStatus(g)
 {}
 
 
 void
-RCSDMaterialStatus :: printOutputAt(FILE *file, TimeStep *tStep) const
+RCSDEMaterialStatus :: printOutputAt(FILE *file, TimeStep *tStep) const
 {
     char s [ 11 ];
 
@@ -513,7 +497,7 @@ RCSDMaterialStatus :: printOutputAt(FILE *file, TimeStep *tStep) const
 
 
 void
-RCSDMaterialStatus :: initTempStatus()
+RCSDEMaterialStatus :: initTempStatus()
 //
 // initializes temp variables according to variables form previous equlibrium state.
 // builds new crackMap
@@ -523,12 +507,12 @@ RCSDMaterialStatus :: initTempStatus()
 
     tempMaxEquivStrain = maxEquivStrain;
     tempDamageCoeff = damageCoeff;
-    tempMode = mode;
+    tempRcsdMode = rcsdMode;
 }
 
 
 void
-RCSDMaterialStatus :: updateYourself(TimeStep *tStep)
+RCSDEMaterialStatus :: updateYourself(TimeStep *tStep)
 //
 // updates variables (nonTemp variables describing situation at previous equilibrium state)
 // after a new equilibrium state has been reached
@@ -539,12 +523,12 @@ RCSDMaterialStatus :: updateYourself(TimeStep *tStep)
 
     maxEquivStrain = tempMaxEquivStrain;
     damageCoeff = tempDamageCoeff;
-    mode = tempMode;
+    rcsdMode = tempRcsdMode;
 }
 
 
 void
-RCSDMaterialStatus :: saveContext(DataStream &stream, ContextMode mode)
+RCSDEMaterialStatus :: saveContext(DataStream &stream, ContextMode mode)
 {
     RCM2MaterialStatus :: saveContext(stream, mode);
 
@@ -556,7 +540,16 @@ RCSDMaterialStatus :: saveContext(DataStream &stream, ContextMode mode)
         THROW_CIOERR(CIO_IOERR);
     }
 
-    if ( !stream.write(mode) ) {
+    int _mode = rcsdMode;
+    if ( !stream.write(_mode) ) {
+        THROW_CIOERR(CIO_IOERR);
+    }
+
+    if ( !stream.write(transitionEps) ) {
+        THROW_CIOERR(CIO_IOERR);
+    }
+
+    if ( !stream.write(epsF2) ) {
         THROW_CIOERR(CIO_IOERR);
     }
 
@@ -568,11 +561,10 @@ RCSDMaterialStatus :: saveContext(DataStream &stream, ContextMode mode)
 
 
 void
-RCSDMaterialStatus :: restoreContext(DataStream &stream, ContextMode mode)
+RCSDEMaterialStatus :: restoreContext(DataStream &stream, ContextMode mode)
 {
     RCM2MaterialStatus :: restoreContext(stream, mode);
 
-    contextIOResultType iores;
     if ( !stream.read(maxEquivStrain) ) {
         THROW_CIOERR(CIO_IOERR);
     }
@@ -581,10 +573,21 @@ RCSDMaterialStatus :: restoreContext(DataStream &stream, ContextMode mode)
         THROW_CIOERR(CIO_IOERR);
     }
 
-    if ( !stream.read(mode) ) {
+    int _mode;
+    if ( !stream.read(_mode) ) {
         THROW_CIOERR(CIO_IOERR);
     }
 
+    rcsdMode = ( __rcsdModeType ) _mode;
+    if ( !stream.read(transitionEps) ) {
+        THROW_CIOERR(CIO_IOERR);
+    }
+
+    if ( !stream.read(epsF2) ) {
+        THROW_CIOERR(CIO_IOERR);
+    }
+
+    contextIOResultType iores;
     if ( ( iores = Ds0.restoreYourself(stream) ) != CIO_OK ) {
         THROW_CIOERR(iores);
     }

@@ -36,7 +36,7 @@
 // their paper "Nonlocal anisotropic damage model and related computational aspects for quasi-brittle material"
 // published in Engineering Fracture Mechanics 74 (2007) 1539-1560.
 
-#include "anisodamagemodel.h"
+#include "Damage/anisodamagemodel.h"
 #include "sm/Materials/structuralmaterial.h"
 #include "math/floatmatrix.h"
 #include "math/floatarray.h"

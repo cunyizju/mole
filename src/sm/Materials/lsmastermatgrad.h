@@ -42,7 +42,7 @@
 #include "utility/dictionary.h"
 #include "math/floatarray.h"
 #include "math/floatmatrix.h"
-#include "graddamagematerialextensioninterface.h"
+#include "Damage/graddamagematerialextensioninterface.h"
 
 namespace oofem {
 class GaussPoint;

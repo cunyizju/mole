@@ -36,7 +36,7 @@
 #define idmgrad_h
 
 #include "Materials/ConcreteMaterials/idm1.h"
-#include "../sm/Materials/graddamagematerialextensioninterface.h"
+#include "../sm/Materials/Damage/graddamagematerialextensioninterface.h"
 
 #define _IFT_IsotropicGradientDamageMaterial_Name "idmgrad"
 

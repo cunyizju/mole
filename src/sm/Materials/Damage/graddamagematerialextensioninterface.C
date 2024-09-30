@@ -34,7 +34,7 @@
 
 #include "input/domain.h"
 #include "material/nonlocalbarrier.h"
-#include "graddamagematerialextensioninterface.h"
+#include "Damage/graddamagematerialextensioninterface.h"
 #include "input/inputrecord.h"
 #include "math/floatmatrix.h"
 

@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "misesmatgrad.h"
+#include "Damage/misesmatgrad.h"
 #include "stressvector.h"
 #include "math/gausspoint.h"
 #include "math/floatmatrix.h"

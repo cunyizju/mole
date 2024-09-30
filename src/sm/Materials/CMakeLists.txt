@@ -26,29 +26,17 @@ set (sm_material
     ConcreteMaterials/frcfcmnl.C
     structuralfe2material.C
     structuralslipfe2material.C
-    rcsd.C 
-    rcsde.C 
-    rcsdnl.C
     m4.C
     microplane_m1.C
     mdm.C
     micromaterial.C
-    misesmatgrad.C 
-    rankinemat.C
-    rankinematgrad.C
-    rankinematnl.C
     dustmat.C
     lsmastermat.C
     lsmastermatgrad.C
     simplevitrificationmaterial.C
-    anisodamagemodel.C
     structmatsettable.C
     tutorialmaterial.C
-    graddamagematerialextensioninterface.C    
-    rcm2.C
-    isodamagemodel.C
     steelrelaxmat.C
-    fcm.C
     #Mixed pressure material interface
     MixedPressure/mixedpressurematerialextensioninterface.C
     1D/isoasymm1d.C
@@ -57,6 +45,10 @@ set (sm_material
 # hyperelastic
 file(GLOB hyperelastic_SRCS Hyperelastic/*.C)
 set(hyperelastic ${hyperelastic_SRCS})
+
+# Damage
+file(GLOB damage_SRCS Damage/*.C)
+set(damage ${damage_SRCS})
 
 # Lattice
 file(GLOB lattice_SRCS Lattice/*.C)
@@ -114,6 +106,7 @@ set (sm_materials
     ${elasticity}
     ${hyperelastic}
     ${plasticity}
+    ${damage}
     ${sm_material}
     ${lattice}
     ${sm_interface_materials}

@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "rcm2.h"
+#include "Damage/rcm2.h"
 #include "math/gausspoint.h"
 #include "math/floatmatrix.h"
 #include "math/floatarray.h"
