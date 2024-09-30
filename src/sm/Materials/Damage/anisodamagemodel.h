@@ -44,7 +44,7 @@
 #include "sm/Materials/structuralmaterial.h"
 #include "Elasticity/isolinearelasticmaterial.h"
 #include "sm/Materials/structuralms.h"
-#include "sm/Materials/ConcreteMaterials/idm1.h"
+#include "sm/Materials/Concrete/idm1.h"
 
 ///@name Input fields for AnisotropicDamageMaterial
 //@{

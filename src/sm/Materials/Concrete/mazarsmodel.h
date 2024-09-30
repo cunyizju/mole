@@ -36,7 +36,7 @@
 #define mazarsmodel_h
 
 #include "sm/Materials/Elasticity/linearelasticmaterial.h"
-#include "sm/Materials/ConcreteMaterials/idm1.h"
+#include "sm/Materials/Concrete/idm1.h"
 #include "sm/Materials/structuralms.h"
 
 ///@name Input fields for MazarsMaterial

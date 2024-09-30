@@ -9,21 +9,6 @@ set(plasticity ${plas_SRCS})
 set (sm_material
     ABAQUS/abaqususermaterial.C
     structuralmaterial.C
-    ConcreteMaterials/concrete2.C 
-    ConcreteMaterials/concrete3.C 
-    ConcreteMaterials/concretedpm.C 
-    ConcreteMaterials/concretedpm2.C
-    ConcreteMaterials/idm1.C 
-    ConcreteMaterials/idmnl1.C 
-    ConcreteMaterials/idmgrad.C
-    ConcreteMaterials/mazarsmodel.C 
-    ConcreteMaterials/mazarsmodelnl.C
-    ConcreteMaterials/mplasticmaterial2.C
-    ConcreteMaterials/compodamagemat.C
-    ConcreteMaterials/concretefcm.C
-    ConcreteMaterials/concretefcmviscoelastic.C
-    ConcreteMaterials/frcfcm.C
-    ConcreteMaterials/frcfcmnl.C
     structuralfe2material.C
     structuralslipfe2material.C
     m4.C
@@ -49,6 +34,10 @@ set(hyperelastic ${hyperelastic_SRCS})
 # Damage
 file(GLOB damage_SRCS Damage/*.C)
 set(damage ${damage_SRCS})
+
+# Concrete
+file(GLOB concrete_SRCS Concrete/*.C)
+set(concrete ${concrete_SRCS})
 
 # Lattice
 file(GLOB lattice_SRCS Lattice/*.C)
@@ -107,6 +96,7 @@ set (sm_materials
     ${hyperelastic}
     ${plasticity}
     ${damage}
+    ${concrete}
     ${sm_material}
     ${lattice}
     ${sm_interface_materials}

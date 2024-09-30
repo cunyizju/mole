@@ -35,7 +35,7 @@
 #ifndef idmnl1_h
 #define idmnl1_h
 
-#include "sm/Materials/ConcreteMaterials/idm1.h"
+#include "sm/Materials/Concrete/idm1.h"
 #include "sm/Materials/structuralnonlocalmaterialext.h"
 #include "material/nonlocmatstiffinterface.h"
 
