@@ -13,7 +13,6 @@ set (sm_material
     structuralslipfe2material.C
     dustmat.C
     lsmastermat.C
-    lsmastermatgrad.C
     simplevitrificationmaterial.C
     structmatsettable.C
     tutorialmaterial.C
