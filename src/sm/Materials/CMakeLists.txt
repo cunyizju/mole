@@ -11,10 +11,6 @@ set (sm_material
     structuralmaterial.C
     structuralfe2material.C
     structuralslipfe2material.C
-    m4.C
-    microplane_m1.C
-    mdm.C
-    micromaterial.C
     dustmat.C
     lsmastermat.C
     lsmastermatgrad.C
@@ -39,6 +35,10 @@ set(damage ${damage_SRCS})
 file(GLOB concrete_SRCS Concrete/*.C)
 set(concrete ${concrete_SRCS})
 
+# Microplane
+file(GLOB microplane_SRCS Microplane/*.C)
+set(microplane ${microplane_SRCS})
+
 # Lattice
 file(GLOB lattice_SRCS Lattice/*.C)
 set(lattice ${lattice_SRCS})
@@ -55,8 +55,6 @@ set (sm_status
     structuralms.C
     InterfaceMaterials/structuralinterfacematerialstatus.C
     deformationtheorymaterial.C
-    microplanematerial.C 
-    microplanematerial_bazant.C
     )
 
 set (sm_interface_materials
@@ -97,6 +95,7 @@ set (sm_materials
     ${plasticity}
     ${damage}
     ${concrete}
+    ${microplane}
     ${sm_material}
     ${lattice}
     ${sm_interface_materials}
