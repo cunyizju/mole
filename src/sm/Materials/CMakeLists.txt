@@ -62,15 +62,9 @@ set (sm_status
 file(GLOB interface_SRCS Interface/*.C Interface/Deprecated/*.c)
 set(interface ${interface_SRCS})
 
-set (sm_obsolete
-    Obsolete/steel1.C
-    Obsolete/plasticmaterial.C
-    Obsolete/perfectlyplasticmaterial.C
-    Obsolete/j2plasticmaterial.C
-    Obsolete/mplasticmaterial.C
-    Obsolete/j2mplasticmaterial.C
-    Obsolete/rankinepm.C
-    )
+# obsolete
+file(GLOB obsolete_SRCS Obsolete/*.C)
+set(obsolete ${obsolete_SRCS})
 
 set (sm_materials
     ${elasticity}
@@ -85,7 +79,7 @@ set (sm_materials
     ${structural}
     ${interface}
     ${sm_status}
-    ${sm_obsolete}
+    ${obsolete}
     )
 
 add_library(sm_materials
