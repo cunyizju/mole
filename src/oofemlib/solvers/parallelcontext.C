@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "parallel/parallelcontext.h"
+#include "solvers/parallelcontext.h"
 #include "engng/engngm.h"
 #include "math/mathfem.h"
 #include "input/unknownnumberingscheme.h"

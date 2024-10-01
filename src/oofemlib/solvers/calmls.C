@@ -46,7 +46,7 @@
 #include "dofman/dof.h"
 #include "utility/contextioerr.h"
 #include "export/exportmodulemanager.h"
-#include "parallel/parallelcontext.h"
+#include "solvers/parallelcontext.h"
 #include "input/unknownnumberingscheme.h"
 
 namespace oofem {

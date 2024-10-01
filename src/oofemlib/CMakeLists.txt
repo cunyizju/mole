@@ -17,10 +17,10 @@ set (solvers
     solvers/dynamicrelaxationsolver.C
     solvers/linesearch.C
     solvers/calmls.C
+    solvers/parallelcontext.C
     solvers/staggeredsolver.C
-    parallel/parallelcontext.C
     solvers/timestep.C
-    solvers/metastep.C 
+    solvers/metastep.C
     )
 
 # material
@@ -75,6 +75,11 @@ set(math ${math_SRCS})
 file(GLOB error_SRCS error/*.C)
 set(error ${error_SRCS})
 
+# parallel
+file(GLOB parallel_SRCS parallel/*.C)
+list(REMOVE_ITEM parallel_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/parallel/parmetisloadbalancer.C")
+set(core_parallel ${parallel_SRCS})
+
 set(utility
     utility/timer.C
     utility/dictionary.C
@@ -106,7 +111,6 @@ endif ()
 
 if (USE_INTEL_MKL_PARDISO OR USE_ONEAPI)
     message (STATUS "    MKL Solver is enabled for compilation")
-
     list (APPEND solvers 
     solvers/mklpardisosolver.C)
 endif ()
@@ -136,17 +140,6 @@ if (USE_SUPERLU_MT)
   list (APPEND solvers solvers/superlusolver.C)
 endif ()
 
-set (core_parallel
-    parallel/communicator.C
-    parallel/processcomm.C
-    parallel/problemcomm.C
-    parallel/combuff.C
-    parallel/domaintransactionmanager.C
-    parallel/parallelordering.C
-    parallel/dyncombuff.C
-    parallel/wallclockloadbalancermonitor.C
-    parallel/nonlocalmatwtp.C
-    )
 
 if (USE_PARMETIS)
     list (APPEND core_parallel

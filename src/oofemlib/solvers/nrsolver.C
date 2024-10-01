@@ -46,7 +46,7 @@
 #include "engng/classfactory.h"
 #include "export/exportmodulemanager.h"
 #include "engng/engngm.h"
-#include "parallel/parallelcontext.h"
+#include "solvers/parallelcontext.h"
 #include "input/unknownnumberingscheme.h"
 
 #ifdef __PETSC_MODULE

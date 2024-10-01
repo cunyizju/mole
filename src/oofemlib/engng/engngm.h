@@ -54,7 +54,7 @@
 #include "utility/contextfilemode.h"
 #include "utility/contextioresulttype.h"
 #include "solvers/metastep.h"
-#include "parallel/parallelcontext.h"
+#include "solvers/parallelcontext.h"
 #include "export/exportmodulemanager.h"
 #include "input/initmodulemanager.h"
 
