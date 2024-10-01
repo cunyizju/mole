@@ -44,7 +44,7 @@
 #include "sm/Materials/Elasticity/isolinearelasticmaterial.h"
 #include "sm/Materials/Elasticity/anisolinearelasticmaterial.h"
 #include "input/interfacetype.h"
-#include "sm/Materials/qcmaterialextensioninterface.h"
+#include "sm/Materials/Elasticity/qcmaterialextensioninterface.h"
 
 
 namespace oofem {

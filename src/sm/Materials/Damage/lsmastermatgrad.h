@@ -35,7 +35,7 @@
 #ifndef lsmastermatgrad_h
 #define lsmastermatgrad_h
 
-#include "lsmastermat.h"
+#include "Largestrain/lsmastermat.h"
 #include "../sm/Materials/Structural/structuralmaterial.h"
 #include "../sm/Materials/Structural/structuralms.h"
 #include "Materials/Elasticity/linearelasticmaterial.h"

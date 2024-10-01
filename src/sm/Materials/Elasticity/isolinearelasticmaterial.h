@@ -44,7 +44,7 @@
 
 #include "qcmaterialextensioninterface.h"
 
-#include "MixedPressure/mixedpressurematerialextensioninterface.h"
+#include "Misc/mixedpressurematerialextensioninterface.h"
 
 ///@name Input fields for IsotropicLinearElasticMaterial
 //@{

@@ -6,18 +6,15 @@ set(elasticity ${elas_SRCS})
 file(GLOB plas_SRCS Plasticity/*.C)
 set(plasticity ${plas_SRCS})
 
-set (sm_material
-    ABAQUS/abaqususermaterial.C
-    lsmastermat.C
-    simplevitrificationmaterial.C
-    tutorialmaterial.C
-    steelrelaxmat.C
-    #Mixed pressure material interface
-    MixedPressure/mixedpressurematerialextensioninterface.C
-    1D/isoasymm1d.C
-)
+# 1D
+file(GLOB D1_SRCS 1D/*.C)
+set(D1 ${D1_SRCS})
 
-# hyperelastic
+# Large strain
+file(GLOB largestrain_SRCS Largestrain/*.C)
+set(largestrain ${largestrain_SRCS})
+
+# Hyperelastic
 file(GLOB hyperelastic_SRCS Hyperelastic/*.C)
 set(hyperelastic ${hyperelastic_SRCS})
 
@@ -33,7 +30,7 @@ set(concrete ${concrete_SRCS})
 file(GLOB microplane_SRCS Microplane/*.C)
 set(microplane ${microplane_SRCS})
 
-# multiscale
+# Multiscale
 file(GLOB multiscale_SRCS Multiscale/*.C)
 set(multiscale ${multiscale_SRCS})
 
@@ -46,19 +43,20 @@ file(GLOB structural_SRCS Structural/*.C)
 list(REMOVE_ITEM structural_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/Structural/structuralpythonmaterial.C")
 set(structural ${structural_SRCS})
 
+# Miscellaneous
+file(GLOB misc_SRCS Misc/*.C)
+list(REMOVE_ITEM misc_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/Misc/mfrontusermaterial.C")
+set(miscellaneous ${misc_SRCS})
+
 if (USE_MFRONT)
-    list (APPEND sm_material mfrontusermaterial.C)
+    list (APPEND miscellaneous Misc/mfrontusermaterial.C)
 endif ()
     
 if (USE_BOOSTPYTHON_BINDINGS AND USE_PYTHON_EXTENSION)
-    list (APPEND sm_material Structural/structuralpythonmaterial.C)
+    list (APPEND miscellaneous Structural/structuralpythonmaterial.C)
 endif ()
 
-set (sm_status
-    deformationtheorymaterial.C
-    )
-
-# interface
+# Interface
 file(GLOB interface_SRCS Interface/*.C Interface/Deprecated/*.c)
 set(interface ${interface_SRCS})
 
@@ -73,12 +71,14 @@ set (sm_materials
     ${damage}
     ${concrete}
     ${microplane}
-    ${sm_material}
     ${multiscale}
     ${lattice}
     ${structural}
     ${interface}
     ${sm_status}
+    ${miscellaneous}
+    ${largestrain}
+    ${D1}
     ${obsolete}
     )
 

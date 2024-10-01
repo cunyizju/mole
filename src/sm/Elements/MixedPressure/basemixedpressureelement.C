@@ -35,7 +35,7 @@
 
 
 #include "../sm/Elements/MixedPressure/basemixedpressureelement.h"
-#include "../sm/Materials/MixedPressure/mixedpressurematerialextensioninterface.h"
+#include "../sm/Materials/Misc/mixedpressurematerialextensioninterface.h"
 
 
 #include "../sm/CrossSections/structuralcrosssection.h"

@@ -32,7 +32,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "ABAQUS/abaqususermaterial.h"
+#include "abaqususermaterial.h"
 #include "math/gausspoint.h"
 #include "math/floatarrayf.h"
 #include "math/floatmatrixf.h"
