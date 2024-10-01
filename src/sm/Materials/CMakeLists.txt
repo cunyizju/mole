@@ -9,9 +9,7 @@ set(plasticity ${plas_SRCS})
 set (sm_material
     ABAQUS/abaqususermaterial.C
     structuralmaterial.C
-    structuralfe2material.C
     structuralslipfe2material.C
-    dustmat.C
     lsmastermat.C
     simplevitrificationmaterial.C
     structmatsettable.C
@@ -37,6 +35,10 @@ set(concrete ${concrete_SRCS})
 # Microplane
 file(GLOB microplane_SRCS Microplane/*.C)
 set(microplane ${microplane_SRCS})
+
+# multiscale
+file(GLOB multiscale_SRCS Multiscale/*.C)
+set(multiscale ${multiscale_SRCS})
 
 # Lattice
 file(GLOB lattice_SRCS Lattice/*.C)
@@ -96,6 +98,7 @@ set (sm_materials
     ${concrete}
     ${microplane}
     ${sm_material}
+    ${multiscale}
     ${lattice}
     ${sm_interface_materials}
     ${sm_status}

@@ -61,7 +61,7 @@
 #include "xfem/matforceevaluator.h"
 #include "func/function.h"
 #include "sm/Elements/Interfaces/structuralinterfaceelement.h"
-#include "sm/Materials/structuralfe2material.h"
+#include "sm/Materials/Multiscale/structuralfe2material.h"
 
 #include <sstream>
 

@@ -37,7 +37,7 @@
 
 #include "sm/Materials/structuralmaterial.h"
 #include "sm/Materials/structuralms.h"
-#include "sm/Materials/structuralfe2material.h"
+#include "sm/Materials/Multiscale/structuralfe2material.h"
 #include "sm/boundaryConditions/prescribeddispsliphomogenization.h"
 
 #include <memory>

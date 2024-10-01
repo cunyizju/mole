@@ -39,7 +39,7 @@
 #include "input/geometry.h"
 
 #include "engng/engngm.h"
-#include "sm/Materials/structuralfe2material.h"
+#include "sm/Materials/Multiscale/structuralfe2material.h"
 
 namespace oofem {
 REGISTER_EnrichmentItem(Crack)

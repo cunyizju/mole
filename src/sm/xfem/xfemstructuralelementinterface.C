@@ -46,7 +46,7 @@
 #include "sm/Elements/nlstructuralelement.h"
 #include "math/mathfem.h"
 
-#include "sm/Materials/structuralfe2material.h"
+#include "sm/Materials/Multiscale/structuralfe2material.h"
 #include "bc/prescribedgradienthomogenization.h"
 
 #include "xfem/patchintegrationrule.h"
