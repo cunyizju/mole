@@ -6,32 +6,33 @@ set(engng ${engng_SRCS})
 file(GLOB input_SRCS input/*.C)
 set(input ${input_SRCS})
 
-# input
+# dof manager
 file(GLOB dofman_SRCS dofman/*.C)
 set(dofman ${dofman_SRCS})
 
-set (solvers
-    solvers/sparselinsystemnm.C
-    solvers/sparsenonlinsystemnm.C
-    solvers/nrsolver.C
-    solvers/dynamicrelaxationsolver.C
-    solvers/linesearch.C
-    solvers/calmls.C
-    solvers/parallelcontext.C
-    solvers/staggeredsolver.C
-    solvers/timestep.C
-    solvers/metastep.C
-    )
+# solvers
+file(GLOB solvers_SRCS solvers/*.C)
+list(REMOVE_ITEM solvers_SRCS 
+"${CMAKE_CURRENT_SOURCE_DIR}/solvers/petscsolver.C"
+"${CMAKE_CURRENT_SOURCE_DIR}/solvers/petscsparsemtrx.C"
+"${CMAKE_CURRENT_SOURCE_DIR}/solvers/mklpardisosolver.C"
+"${CMAKE_CURRENT_SOURCE_DIR}/solvers/pardisoprojectorgsolver.C"
+"${CMAKE_CURRENT_SOURCE_DIR}/solvers/slepcsolver.C"
+"${CMAKE_CURRENT_SOURCE_DIR}/solvers/spoolessolver.C"
+"${CMAKE_CURRENT_SOURCE_DIR}/solvers/spoolessparsemtrx.C"
+"${CMAKE_CURRENT_SOURCE_DIR}/solvers/superlusolver.C"
+)
+set(solvers ${solvers_SRCS})
 
 # material
 file(GLOB material_SRCS material/*.C)
 set(material ${material_SRCS})
 
-# material
+# bc
 file(GLOB bc_SRCS bc/*.C)
 set(bc ${bc_SRCS})
 
-# loading functions
+# field
 file(GLOB fields_SRCS fields/*.C)
 set(fields ${fields_SRCS})
 
@@ -80,15 +81,21 @@ file(GLOB parallel_SRCS parallel/*.C)
 list(REMOVE_ITEM parallel_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/parallel/parmetisloadbalancer.C")
 set(core_parallel ${parallel_SRCS})
 
-set(utility
-    utility/timer.C
-    utility/dictionary.C
-    utility/heap.C
-    utility/util.C
-    utility/set.C
-    utility/tokenizer.C
-    utility/parser.C
-)
+# utility
+file(GLOB utility_SRCS utility/*.C)
+list(REMOVE_ITEM utility_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/utility/pythonexpression.C")
+list(REMOVE_ITEM utility_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/utility/pythonfield.C")
+set(utility ${utility_SRCS})
+
+# set(utility
+#     utility/timer.C
+#     utility/dictionary.C
+#     utility/heap.C
+#     utility/util.C
+#     utility/set.C
+#     utility/tokenizer.C
+#     utility/parser.C
+# )
 
 # xfem
 file(GLOB xfem_SRCS xfem/*.C xfem/enrichmentfronts/*.C xfem/integrationrules/*.C)
@@ -151,6 +158,9 @@ if (USE_PYTHON_EXTENSION)
     list (APPEND engng utility/pythonexpression.C)
 endif ()
 
+if (USE_PYBIND_BINDINGS)
+    list (APPEND engng utility/pythonfield.C)
+endif ()
 
 set (core
     ${engng}
