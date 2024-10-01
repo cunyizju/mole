@@ -36,7 +36,7 @@
 #include "structuralinterfacematerial.h"
 #include "utility/contextioerr.h"
 
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 #include "structuralinterfacematerialstatus.h"
 #include "math/gausspoint.h"
 

@@ -38,14 +38,14 @@
 /// thermal, shrinkage (drying & autogenous) and creep strains are stored for export
 #define keep_track_of_strains
 
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 //#include "sm/Materials/Elasticity/linearelasticmaterial.h"
 #include "math/floatarray.h"
 #include "math/floatmatrix.h"
 
 #include "material/matconst.h"
 #include "sm/Elements/structuralelement.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 
 ///@name Input fields for RheoChainMaterial
 //@{

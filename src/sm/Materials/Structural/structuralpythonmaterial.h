@@ -38,8 +38,8 @@
 #include<boost/python.hpp>
 namespace bp=boost::python;
 
-#include "sm/Materials/structuralmaterial.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralms.h"
 
 
 ///@name Input fields for StructuralPythonMaterial

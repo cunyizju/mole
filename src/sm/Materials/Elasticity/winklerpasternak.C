@@ -33,7 +33,7 @@
  */
 
 #include "Elasticity/winklerpasternak.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "math/floatmatrix.h"
 #include "math/gausspoint.h"
 #include "engng/classfactory.h"

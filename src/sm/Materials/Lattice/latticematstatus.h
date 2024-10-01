@@ -36,7 +36,7 @@
 #define latticematstatus_h
 
 
-#include "../structuralms.h"
+#include "../Structural/structuralms.h"
 #include "material/randommaterialext.h"
 #include "math/floatarrayf.h"
 

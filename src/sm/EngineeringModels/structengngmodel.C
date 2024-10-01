@@ -45,7 +45,7 @@
 #include "input/assemblercallback.h"
 #include "input/unknownnumberingscheme.h"
 
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 
 namespace oofem {

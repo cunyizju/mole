@@ -35,7 +35,7 @@
 #ifndef latticestructuralmaterial_h
 #define latticestructuralmaterial_h
 
-#include "../structuralmaterial.h"
+#include "../Structural/structuralmaterial.h"
 #include "math/floatarray.h"
 #include "math/floatmatrix.h"
 #include "material/matconst.h"

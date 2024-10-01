@@ -36,8 +36,8 @@
 #define lsmastermatgrad_h
 
 #include "lsmastermat.h"
-#include "../sm/Materials/structuralmaterial.h"
-#include "../sm/Materials/structuralms.h"
+#include "../sm/Materials/Structural/structuralmaterial.h"
+#include "../sm/Materials/Structural/structuralms.h"
 #include "Materials/Elasticity/linearelasticmaterial.h"
 #include "utility/dictionary.h"
 #include "math/floatarray.h"

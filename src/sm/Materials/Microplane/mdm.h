@@ -48,10 +48,10 @@
 #define MDM_MAPPING_DEBUG 1
 
 #include "microplanematerial.h"
-#include "structuralnonlocalmaterialext.h"
+#include "Structural/structuralnonlocalmaterialext.h"
 #include "material/matconst.h"
 #include "sm/Materials/Elasticity/isolinearelasticmaterial.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "material/materialmapperinterface.h"
 #include "mapping/mmaclosestiptransfer.h"
 

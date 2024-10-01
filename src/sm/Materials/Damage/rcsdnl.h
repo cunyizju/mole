@@ -40,8 +40,8 @@
 #define rcsdnl_h
 
 #include "Damage/rcsde.h"
-#include "sm/Materials/structuralnonlocalmaterialext.h"
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralnonlocalmaterialext.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 ///@name Input fields for RCSDNLMaterial
 //@{
 #define _IFT_RCSDNLMaterial_Name "rcsdnl"

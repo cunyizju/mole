@@ -39,7 +39,7 @@
 #include "math/gausspoint.h"
 #include "engng/classfactory.h"
 #include "dofman/node.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "bc/load.h"
 
 namespace oofem {

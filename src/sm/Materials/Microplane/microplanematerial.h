@@ -35,7 +35,7 @@
 #ifndef microplanematerial_h
 #define microplanematerial_h
 
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 #include "material/matconst.h"
 #include "math/floatarrayf.h"
 

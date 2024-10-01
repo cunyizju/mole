@@ -41,7 +41,7 @@
 #ifdef microplane_m1_new_implementation
 // ========================= new implementation =========================
 
- #include "structuralms.h"
+ #include "Structural/structuralms.h"
  #include "microplanematerial.h"
  #include "math/gausspoint.h"
 
@@ -115,8 +115,8 @@ public:
 #else
 // ========================= old implementation =========================
 
- #include "structuralms.h"
- #include "structuralmaterial.h"
+ #include "Structural/structuralms.h"
+ #include "Structural/structuralmaterial.h"
  #include "math/gausspoint.h"
 
 

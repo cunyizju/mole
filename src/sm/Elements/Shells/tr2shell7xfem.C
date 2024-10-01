@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/Shells/tr2shell7xfem.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "sm/xfem/enrichmentitems/crack.h"
 #include "sm/xfem/enrichmentitems/shellcrack.h"
 #include "dofman/node.h"

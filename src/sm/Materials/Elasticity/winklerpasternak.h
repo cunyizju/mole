@@ -35,7 +35,7 @@
 #ifndef winklerpasternak_h
 #define winklerpasternak_h
 
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 #include "math/floatarray.h"
 #include "math/floatmatrix.h"
 #include "material/matconst.h"

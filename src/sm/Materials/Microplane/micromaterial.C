@@ -33,8 +33,8 @@
  */
 
 #include "micromaterial.h"
-#include "sm/Materials/structuralmaterial.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "input/domain.h"
 #include "dofman/dofmanager.h"
 #include "engng/classfactory.h"

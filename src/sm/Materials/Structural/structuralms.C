@@ -32,8 +32,8 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include "sm/Materials/structuralms.h"
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralms.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 #include "utility/contextioerr.h"
 #include "sm/Elements/nlstructuralelement.h"
 #include "math/gausspoint.h"

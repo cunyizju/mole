@@ -52,7 +52,7 @@
 #include "math/mathfem.h"
 #include "solvers/sparselinsystemnm.h"
 #include "input/unknownnumberingscheme.h"
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 #include "sm/EngineeringModels/staticstructural.h"
 
 #include "utility/timer.h"

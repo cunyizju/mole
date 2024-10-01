@@ -42,7 +42,7 @@
 #include "cs/crosssection.h"
 #include "tm/EngineeringModels/transienttransportproblem.h"
 #include "sm/Elements/structuralelement.h"
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 
 namespace oofem {
 REGISTER_ExportModule(HOMExportModule)

@@ -40,8 +40,8 @@
 #include "input/element.h"
 #include "math/gausspoint.h"
 
-#include "sm/Materials/structuralms.h"
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralms.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 
 #include "xfem/enrichmentitems/crack.h"
 #include "xfem/xfemmanager.h"

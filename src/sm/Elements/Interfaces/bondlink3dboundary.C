@@ -34,7 +34,7 @@
 
 #include "input/domain.h"
 #include "../sm/Elements/Interfaces/bondlink3dboundary.h"
-#include "../sm/Materials/structuralms.h"
+#include "../sm/Materials/Structural/structuralms.h"
 #include "dofman/node.h"
 #include "material/material.h"
 #include "math/gausspoint.h"
@@ -47,7 +47,7 @@
 #include "utility/contextioerr.h"
 #include "export/datastream.h"
 #include "engng/classfactory.h"
-#include "../sm/Materials/structuralmaterial.h"
+#include "../sm/Materials/Structural/structuralmaterial.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 
 

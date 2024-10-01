@@ -66,8 +66,8 @@ namespace py = pybind11;
 #include "material/material.h"
 #include "math/integrationpointstatus.h"
 #include "material/matstatus.h"
-#include "Materials/structuralmaterial.h"
-#include "Materials/structuralms.h"
+#include "Materials/Structural/structuralmaterial.h"
+#include "Materials/Structural/structuralms.h"
 
 #include "cs/crosssection.h"
 #include "math/sparsemtrx.h"

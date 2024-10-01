@@ -37,7 +37,7 @@
 #include "sm/Elements/Shells/shell7basexfem.h"
 #include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
 #include "sm/Materials/InterfaceMaterials/structuralinterfacematerial.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 
 #include "xfem/propagationlaw.h"
 #include "xfem/tipinfo.h"

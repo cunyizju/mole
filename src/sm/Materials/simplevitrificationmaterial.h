@@ -35,8 +35,8 @@
 #ifndef simplevitrificationmaterial_h
 #define simplevitrificationmaterial_h
 
-#include "sm/Materials/structuralmaterial.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "math/floatarray.h"
 
 ///@name Input fields for SimpleVitrificationMaterial

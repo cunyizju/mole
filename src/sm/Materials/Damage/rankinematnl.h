@@ -36,7 +36,7 @@
 #define rankinematnl_h
 
 #include "Damage/rankinemat.h"
-#include "structuralnonlocalmaterialext.h"
+#include "Structural/structuralnonlocalmaterialext.h"
 #include "material/nonlocmatstiffinterface.h"
 #include "material/nonlocalmaterialext.h"
 #include "input/cltypes.h"

@@ -35,7 +35,7 @@
 #include "Shell7BasePhFi.h"
 #include "dofman/node.h"
 #include "bc/load.h"
-#include "structuralms.h"
+#include "Structural/structuralms.h"
 #include "math/mathfem.h"
 #include "input/domain.h"
 #include "equationid.h"

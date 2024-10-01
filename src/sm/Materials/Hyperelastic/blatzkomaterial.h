@@ -35,8 +35,8 @@
 #ifndef blatzkomaterial_h
 #define blatzkomaterial_h
 
-#include "../sm/Materials/structuralmaterial.h"
-#include "../sm/Materials/structuralms.h"
+#include "../sm/Materials/Structural/structuralmaterial.h"
+#include "../sm/Materials/Structural/structuralms.h"
 #include "basehyperelasticmaterial.h"
 
 

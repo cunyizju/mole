@@ -35,8 +35,8 @@
 #ifndef steelrelaxmat_h
 #define steelrelaxmat_h
 
-#include "sm/Materials/structuralmaterial.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "utility/dictionary.h"
 #include "math/floatarray.h"
 #include "math/floatmatrix.h"

@@ -41,9 +41,9 @@
 #define keep_track_of_dissipated_energy
 
 #include "material/material.h"
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 #include "Elasticity/isolinearelasticmaterial.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "sm/Materials/Concrete/idm1.h"
 
 ///@name Input fields for AnisotropicDamageMaterial

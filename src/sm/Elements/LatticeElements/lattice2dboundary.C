@@ -48,7 +48,7 @@
 #include "utility/contextioerr.h"
 #include "engng/classfactory.h"
 #include "dofman/dof.h"
-#include "../sm/Materials/structuralmaterial.h"
+#include "../sm/Materials/Structural/structuralmaterial.h"
 
 
 

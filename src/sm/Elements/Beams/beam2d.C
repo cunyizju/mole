@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/Beams/beam2d.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "fei/fei2dlinelin.h"
 #include "fei/fei2dlinehermite.h"
 #include "dofman/node.h"

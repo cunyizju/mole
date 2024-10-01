@@ -33,8 +33,8 @@
  */
 
 #include "sm/Elements/Shells/mitc4.h"
-#include "sm/Materials/structuralms.h"
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralms.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "fei/fei2dquadlin.h"
 #include "dofman/node.h"

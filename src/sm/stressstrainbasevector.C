@@ -38,7 +38,7 @@
 #include "error/error.h"
 #include "export/datastream.h"
 #include "material/materialmode.h"
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 #include "export/datastream.h"
 
 namespace oofem {

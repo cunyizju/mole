@@ -35,7 +35,7 @@
 #include "Elasticity/linearelasticmaterial.h"
 #include "math/gausspoint.h"
 #include "sm/CrossSections/simplecrosssection.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "input/dynamicinputrecord.h"
 #include "math/floatarrayf.h"
 #include "math/floatmatrixf.h"

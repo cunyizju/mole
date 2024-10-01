@@ -37,8 +37,8 @@
 
 #include "material/material.h"
 #include "Elasticity/isolinearelasticmaterial.h"
-#include "structuralmaterial.h"
-#include "structuralms.h"
+#include "Structural/structuralmaterial.h"
+#include "Structural/structuralms.h"
 #include "math/intarray.h"
 
 ///@name Input fields for FCMMaterial

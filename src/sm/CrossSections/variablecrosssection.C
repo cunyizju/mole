@@ -33,8 +33,8 @@
  */
 
 #include "sm/CrossSections/variablecrosssection.h"
-#include "sm/Materials/structuralmaterial.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "math/gausspoint.h"
 #include "math/floatarray.h"
 #include "engng/classfactory.h"

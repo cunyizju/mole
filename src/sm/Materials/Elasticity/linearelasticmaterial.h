@@ -35,7 +35,7 @@
 #ifndef linearelasticmaterial_h
 #define linearelasticmaterial_h
 
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 #include "math/floatmatrixf.h"
 #include "math/floatarrayf.h"
 

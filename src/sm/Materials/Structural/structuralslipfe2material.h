@@ -35,8 +35,8 @@
 #ifndef structuralslipfe2material_h
 #define structuralslipfe2material_h
 
-#include "sm/Materials/structuralmaterial.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "sm/Materials/Multiscale/structuralfe2material.h"
 #include "sm/boundaryConditions/prescribeddispsliphomogenization.h"
 

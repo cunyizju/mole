@@ -37,7 +37,7 @@
 
 #include "sm/CrossSections/simplecrosssection.h"
 #include "sm/CrossSections/layeredcrosssection.h"
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 #include "math/floatarray.h"
 #include "math/floatmatrix.h"
 #include "func/scalarfunction.h"

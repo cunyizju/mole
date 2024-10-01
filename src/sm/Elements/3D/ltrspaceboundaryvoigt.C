@@ -44,7 +44,7 @@
 #include "math/mathfem.h"
 #include "fei/fei3dtetlin.h"
 #include "engng/classfactory.h"
-#include "Materials/structuralms.h"
+#include "Materials/Structural/structuralms.h"
 
 
 namespace oofem {

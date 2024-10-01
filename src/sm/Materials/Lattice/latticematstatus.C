@@ -33,7 +33,7 @@
  */
 
 #include "latticematstatus.h"
-#include "../structuralmaterial.h"
+#include "../Structural/structuralmaterial.h"
 #include "utility/contextioerr.h"
 #include "export/datastream.h"
 #include "math/gausspoint.h"

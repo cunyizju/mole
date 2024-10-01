@@ -35,7 +35,7 @@
 
 
 #include "sm/Elements/graddpelement.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "sm/Elements/nlstructuralelement.h"
 #include "sm/Materials/graddpmaterialextensioninterface.h"

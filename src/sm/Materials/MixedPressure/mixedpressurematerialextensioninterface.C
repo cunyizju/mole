@@ -39,7 +39,7 @@
 #include "math/gausspoint.h"
 #include "math/floatmatrix.h"
 #include "math/floatarray.h"
-#include "../sm/Materials/structuralmaterial.h"
+#include "../sm/Materials/Structural/structuralmaterial.h"
 
 #include <list>
 

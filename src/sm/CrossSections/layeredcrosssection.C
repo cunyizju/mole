@@ -34,8 +34,8 @@
 
 #include "sm/CrossSections/layeredcrosssection.h"
 #include "sm/Elements/structuralelement.h"
-#include "sm/Materials/structuralmaterial.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "math/gausspoint.h"
 #include "material/material.h"
 #include "math/floatarray.h"

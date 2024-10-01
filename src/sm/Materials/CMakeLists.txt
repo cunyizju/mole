@@ -8,11 +8,8 @@ set(plasticity ${plas_SRCS})
 
 set (sm_material
     ABAQUS/abaqususermaterial.C
-    structuralmaterial.C
-    structuralslipfe2material.C
     lsmastermat.C
     simplevitrificationmaterial.C
-    structmatsettable.C
     tutorialmaterial.C
     steelrelaxmat.C
     #Mixed pressure material interface
@@ -44,16 +41,20 @@ set(multiscale ${multiscale_SRCS})
 file(GLOB lattice_SRCS Lattice/*.C)
 set(lattice ${lattice_SRCS})
 
+# Structural
+file(GLOB structural_SRCS Structural/*.C)
+list(REMOVE_ITEM structural_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/Structural/structuralpythonmaterial.C")
+set(structural ${structural_SRCS})
+
 if (USE_MFRONT)
     list (APPEND sm_material mfrontusermaterial.C)
 endif ()
     
 if (USE_BOOSTPYTHON_BINDINGS AND USE_PYTHON_EXTENSION)
-    list (APPEND sm_material structuralpythonmaterial.C)
+    list (APPEND sm_material Structural/structuralpythonmaterial.C)
 endif ()
 
 set (sm_status
-    structuralms.C
     InterfaceMaterials/structuralinterfacematerialstatus.C
     deformationtheorymaterial.C
     )
@@ -100,6 +101,7 @@ set (sm_materials
     ${sm_material}
     ${multiscale}
     ${lattice}
+    ${structural}
     ${sm_interface_materials}
     ${sm_status}
     ${sm_obsolete}

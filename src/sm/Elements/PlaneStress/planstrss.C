@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/PlaneStress/planstrss.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "fei/fei2dquadlin.h"
 #include "dofman/node.h"
 #include "cs/crosssection.h"

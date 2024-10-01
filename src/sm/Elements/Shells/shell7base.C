@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/Shells/shell7base.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "sm/Loads/constantpressureload.h"
 #include "dofman/node.h"
 #include "bc/load.h"

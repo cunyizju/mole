@@ -52,7 +52,7 @@
 #include "material/material.h"
 #include "sm/Materials/Elasticity/linearelasticmaterial.h"
 #include "sm/Materials/Damage/isodamagemodel.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "material/randommaterialext.h"
 #include "material/materialmapperinterface.h"
 

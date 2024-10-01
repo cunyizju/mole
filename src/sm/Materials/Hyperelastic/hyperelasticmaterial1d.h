@@ -35,8 +35,8 @@
 #ifndef hyperelasticmaterial1d_h
 #define hyperelasticmaterial1d_h
 
-#include "sm/Materials/structuralms.h"
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralms.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 
 
 ///@name Input fields for MooneyRivlinMaterial

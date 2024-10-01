@@ -33,7 +33,7 @@
  */
 
 #include "../sm/Elements/GradientDamage/3D/qtrspacegraddamage.h"
-#include "../sm/Materials/structuralms.h"
+#include "../sm/Materials/Structural/structuralms.h"
 #include "../sm/CrossSections/structuralcrosssection.h"
 #include "fei/fei3dtetlin.h"
 #include "dofman/node.h"
