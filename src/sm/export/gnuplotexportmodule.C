@@ -48,7 +48,7 @@
 #include "bc/boundarycondition.h"
 #include "xfem/enrichmentitem.h"
 #include "xfem/xfemmanager.h"
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
+#include "sm/Materials/Interface/structuralinterfacematerialstatus.h"
 #include "xfem/XFEMDebugTools.h"
 #include "bc/prescribedgradient.h"
 #include "bc/prescribedgradientbcneumann.h"

@@ -55,31 +55,12 @@ if (USE_BOOSTPYTHON_BINDINGS AND USE_PYTHON_EXTENSION)
 endif ()
 
 set (sm_status
-    InterfaceMaterials/structuralinterfacematerialstatus.C
     deformationtheorymaterial.C
     )
 
-set (sm_interface_materials
-    InterfaceMaterials/structuralinterfacematerial.C
-    InterfaceMaterials/bondceb.C
-    InterfaceMaterials/cohint.C
-    InterfaceMaterials/intmatelastic.C
-    InterfaceMaterials/intmatbilinczfagerstrom.C
-    InterfaceMaterials/intmatbilinczjansson.C
-    InterfaceMaterials/intmatbilinearcz.C
-    InterfaceMaterials/intmatbilinczelastic.C
-    InterfaceMaterials/intmatbilinczfagerstromrate.C
-    InterfaceMaterials/intmatisodamage.C
-    InterfaceMaterials/intmatisodamagetable.C
-    InterfaceMaterials/intmatcoulombcontact.C
-    InterfaceMaterials/intmatdummycz.C    
-    InterfaceMaterials/Deprecated/isointerfacedamage01.C
-    InterfaceMaterials/Deprecated/isointerfacedamage02.C
-    InterfaceMaterials/Deprecated/simpleinterfacemat.C
-    InterfaceMaterials/masonry02.C
-    InterfaceMaterials/mat_cebfip90.C
-    InterfaceMaterials/linkslip.C
-    )
+# interface
+file(GLOB interface_SRCS Interface/*.C Interface/Deprecated/*.c)
+set(interface ${interface_SRCS})
 
 set (sm_obsolete
     Obsolete/steel1.C
@@ -102,7 +83,7 @@ set (sm_materials
     ${multiscale}
     ${lattice}
     ${structural}
-    ${sm_interface_materials}
+    ${interface}
     ${sm_status}
     ${sm_obsolete}
     )

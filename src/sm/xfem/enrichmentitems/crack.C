@@ -33,7 +33,7 @@
  */
 #include "crack.h"
 #include "engng/classfactory.h"
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
+#include "sm/Materials/Interface/structuralinterfacematerialstatus.h"
 #include "sm/export/gnuplotexportmodule.h"
 #include "math/gausspoint.h"
 #include "input/geometry.h"

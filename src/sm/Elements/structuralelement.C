@@ -36,7 +36,7 @@
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "sm/Materials/Structural/structuralmaterial.h"
 #include "sm/Materials/Structural/structuralms.h"
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
+#include "sm/Materials/Interface/structuralinterfacematerialstatus.h"
 #include "sm/Materials/Lattice/latticematstatus.h"
 #include "Loads/structtemperatureload.h"
 #include "sm/Materials/Structural/structuralnonlocalmaterialext.h"

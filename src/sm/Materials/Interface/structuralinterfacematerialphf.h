@@ -34,7 +34,7 @@
 #ifndef structuralinterfacematerialphf_h
 #define structuralinterfacematerialphf_h
 
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerial.h"
+#include "sm/Materials/Interface/structuralinterfacematerial.h"
 #include "math/floatmatrixf.h"
 
 namespace oofem {

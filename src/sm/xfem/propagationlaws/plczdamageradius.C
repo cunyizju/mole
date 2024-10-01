@@ -35,8 +35,8 @@
 #include "xfem/propagationlaws/plczdamageradius.h"
 #include "xfem/enrichmentitems/delamination.h"
 #include "sm/Elements/Shells/shell7basexfem.h"
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerial.h"
+#include "sm/Materials/Interface/structuralinterfacematerialstatus.h"
+#include "sm/Materials/Interface/structuralinterfacematerial.h"
 #include "sm/Materials/Structural/structuralms.h"
 
 #include "xfem/propagationlaw.h"

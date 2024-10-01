@@ -35,8 +35,8 @@
 #ifndef isointerfacedamage01_h
 #define isointerfacedamage01_h
 
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerial.h"
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
+#include "sm/Materials/Interface/structuralinterfacematerial.h"
+#include "sm/Materials/Interface/structuralinterfacematerialstatus.h"
 
 ///@name Input fields for IsoInterfaceDamageMaterial
 //@{

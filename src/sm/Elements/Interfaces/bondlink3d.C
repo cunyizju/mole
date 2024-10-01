@@ -35,7 +35,7 @@
 #include "input/domain.h"
 #include "../sm/Elements/Interfaces/bondlink3d.h"
 #include "../sm/Materials/Structural/structuralms.h"
-#include "../sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
+#include "../sm/Materials/Interface/structuralinterfacematerialstatus.h"
 #include "dofman/node.h"
 #include "material/material.h"
 #include "math/gausspoint.h"
