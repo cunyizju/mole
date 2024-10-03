@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+    {
+    "name": "(gdb) Launch",
+    "type": "cppdbg",
+    "request": "launch",
+    "program": "/home/bruce/LCY/oofem/debug/oofem",
+    "stopAtEntry": false,
+    "cwd": "/home/licunyi/Simulations/concrete-three-point-bending-oofem/CircleTPB_V2/TPB_LM_Otto/",
+    "args": ["-f", "TPB.in"],
+    "environment": [],
+    "externalConsole": false,
+    "MIMode": "gdb",
+    "setupCommands": [
+    {
+    "description": "Enable pretty-printing for gdb",
+    "text": "-enable-pretty-printing",
+    "ignoreFailures": true
+    },
+    {
+    "description": "Set Disassembly Flavor to Intel",
+    "text": "-gdb-set disassembly-flavor intel",
+    "ignoreFailures": true
+    }
+    ]
+    }
+    ]
+    }

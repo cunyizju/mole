@@ -110,6 +110,11 @@
 #define _IFT_IsotropicDamageMaterial1_w_f "w_f"
 #define _IFT_IsotropicDamageMaterial1_f_k "f_k"
 #define _IFT_IsotropicDamageMaterial1_f_r "f_r"
+// ottosen equivalent strain
+#define _IFT_IsotropicDamageMaterial1_ottoA "ottoA"
+#define _IFT_IsotropicDamageMaterial1_ottoB "ottoB"
+#define _IFT_IsotropicDamageMaterial1_ottoK1 "ottoK1"
+#define _IFT_IsotropicDamageMaterial1_ottoK2 "ottoK2"
 //@}
 
 namespace oofem {
@@ -174,6 +179,9 @@ protected:
     /// Parameters used in Trilinear_Cohesive_Crack softening law
     double w_k = 0., w_r = 0., w_f = 0., f_k = 0., f_r = 0.;
 
+    /// Parameters used Ottosen equivalent strain
+    double ottoA = 20.52, ottoB = 8.77, ottoK1 = 10.12, ottoK2 = 1.;
+
     /** Type characterizing the algorithm used to compute equivalent strain measure.
      *  Note that the assigned numbers to enum values have to correspond to values
      *  used in initializeFrom to resolve EquivStrainType. If not, the consistency
@@ -188,6 +196,7 @@ protected:
         EST_ElasticEnergyPositiveStress=5,
         EST_ElasticEnergyPositiveStrain=6,
         EST_Griffith=7,
+        EST_Ottosen=8,
         EST_Unknown = 100
     };
     /// Parameter specifying the definition of equivalent strain.
@@ -267,6 +276,16 @@ public:
      * @param[out] J2e Output value of strain invariant J2.
      */
     static void computeStrainInvariants(const FloatArray &strainVector, double &I1e, double &J2e);
+
+    /**
+     * Computes invariants I1, J2 and J3 of the strain tensor
+     * from the strain components stored in a vector.
+     * @param strainVector Input strain components.
+     * @param[out] I1e Output value of strain invariant I1.
+     * @param[out] J2e Output value of strain invariant J2.
+     * @param[out] J3e Output value of strain invariant J3.
+     */
+    static void computeStrainInvariantsJ3(const FloatArray &strainVector, double &I1e, double &J2e, double &J3e);
 
     bool isCrackBandApproachUsed() const { return ( this->softType == ST_Exponential_Cohesive_Crack || this->softType == ST_Linear_Cohesive_Crack || this->softType == ST_BiLinear_Cohesive_Crack || this->softType == ST_Trilinear_Cohesive_Crack || this->gf != 0. ); }
     double computeEquivalentStrain(const FloatArray &strain, GaussPoint *gp, TimeStep *tStep) const override;
