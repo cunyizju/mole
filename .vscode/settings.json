@@ -36,6 +36,13 @@
         "lobattoir.C": "cpp",
         "intelline1.C": "cpp",
         "classfactory.C": "cpp",
-        "idm1.C": "cpp"
+        "idm1.C": "cpp",
+        "graddamagematerialextensioninterface.C": "cpp",
+        "main.C": "cpp",
+        "inputrecord.C": "cpp",
+        "oofemtxtinputrecord.C": "cpp",
+        "tokenizer.C": "cpp",
+        "isolinearelasticmaterial.C": "cpp",
+        "floatarray.C": "cpp"
     }
 }
