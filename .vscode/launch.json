@@ -10,7 +10,7 @@
             "cwd": "/home/licunyi/Simulations/concrete-three-point-bending-oofem/CircleTPB_V2/TPB_LM_Otto/",
             "args": [
                 "-f",
-                "TPB.in"
+                "TPB_Mises.in"
             ],
             "environment": [],
             "externalConsole": false,

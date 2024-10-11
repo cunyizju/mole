@@ -526,11 +526,8 @@ IsotropicDamageMaterial1 :: computeEquivalentStrain(const FloatArray &strain, Ga
 
     } else if ( this->equivStrainType == EST_Mises ) {
         double nu = lmat->give(NYxz, NULL);
-        FloatArray principalStrains;
-
-        this->computePrincipalValues(principalStrains, fullStrain, principal_strain);
-        double I1e, J2e;
-        this->computeStrainInvariants(principalStrains, I1e, J2e);
+        double I1e, J2e, J3e;
+        this->computeStrainInvariants(fullStrain, I1e, J2e, J3e);
         double a, b, c;
         a = ( k - 1 ) * I1e / ( 2 * k * ( 1 - 2 * nu ) );
         b = ( k - 1 ) * ( k - 1 ) * I1e * I1e / ( ( 1 - 2 * nu ) * ( 1 - 2 * nu ) );
@@ -538,27 +535,14 @@ IsotropicDamageMaterial1 :: computeEquivalentStrain(const FloatArray &strain, Ga
         return a + 1 / ( 2 * k ) * sqrt(b + c);
 // Ottosen equivStrain
     } else if ( this->equivStrainType == EST_Ottosen ) {
-        double nu = lmat->give(NYxz, NULL);
-        FloatArray principalStrains;
+        double nu   = lmat->give(NYxz, NULL);
+        
+        // should read from input file later
         double ottoA = 14.72, ottoB = 9., ottoK1 = 17.73, ottoK2 = 1.;
 
-        this->computePrincipalValues(principalStrains, fullStrain, principal_strain);
         double I1e, J2e, J3e;
-        // computePrincipalValues overloaded?
-        this->computeStrainInvariants(principalStrains, I1e, J2e);
-        auto principalStrain = computePrincipalValues(from_voigt_strain(fullStrain) );
-        
-        this->computeStrainInvariantPrincipal(principalStrains, 
-        double &I1e_, double &I2e_, double &I3e_, 
-        double &J1e_, double &J2e_, double &J3e_)
-
-        std::cout << "Paras:" << ottoA << ottoB << ottoK1 << ottoK2 << std::endl;
-        std::cout << "J2e before:" << J2e << std::endl;
-        J2e = principalStrain[1];
-        std::cout << "J2e after:"<< J2e << std::endl;
-
-        J3e = principalStrain[2];
-        std::cout << "J3e:" << J3e << std::endl;
+        // calculate strain invariants
+        this->computeStrainInvariants(fullStrain, I1e, J2e, J3e);
 
         double cos3theta = 1.5 * sqrt(3.) * J3e / pow( J2e, 1.5 );
 
@@ -828,45 +812,61 @@ IsotropicDamageMaterial1 :: computeEta(FloatArray &answer, const FloatArray &str
 }
 
 void
-IsotropicDamageMaterial1 :: computeStrainInvariants(const FloatArray &strainVector, double &I1e, double &J2e)
+IsotropicDamageMaterial1 :: computeStrainInvariants(const FloatArray &strainVector, double &I1e, double &J2e, double &J3e)
 {
     I1e = strainVector.at(1) + strainVector.at(2) + strainVector.at(3);
-    double s1 = strainVector.at(1) * strainVector.at(1);
-    double s2 = strainVector.at(2) * strainVector.at(2);
-    double s3 = strainVector.at(3) * strainVector.at(3);
-    J2e = 1. / 2. * ( s1 + s2 + s3 ) - 1. / 6. * ( I1e * I1e );
-}
+    // double s1 = strainVector.at(1) * strainVector.at(1);
+    // double s2 = strainVector.at(2) * strainVector.at(2);
+    // double s3 = strainVector.at(3) * strainVector.at(3);
+    // J2e = 1. / 2. * ( s1 + s2 + s3 ) - 1. / 6. * ( I1e * I1e );
 
-// not needed to write it by myself. oofem already provides this function.
-void
-IsotropicDamageMaterial1 :: computeStrainInvariantPrincipal(const FloatArray &strainVector, 
-    double &I1e, double &I2e, double &I3e, 
-    double &J1e, double &J2e, double &J3e)
-{
-    I1e = strainVector.at(1) + strainVector.at(2) + strainVector.at(3);
-// strain invariant?
-    I2e = strainVector.at(1) * strainVector.at(2) + 
+    J2e = strainVector.at(1) * strainVector.at(2) + 
           strainVector.at(2) * strainVector.at(3) + 
           strainVector.at(3) * strainVector.at(1) - 
+          strainVector.at(6) * strainVector.at(6) - 
           strainVector.at(4) * strainVector.at(4) - 
-          strainVector.at(5) * strainVector.at(5) - 
-          strainVector.at(6) * strainVector.at(6);
-    I3e = strainVector.at(1) * strainVector.at(2) * strainVector.at(3) + 
-          strainVector.at(4) * strainVector.at(5) * strainVector.at(6) * 2.0 - 
-          strainVector.at(1) * strainVector.at(6) * strainVector.at(6) -
-          strainVector.at(2) * strainVector.at(5) * strainVector.at(5) -
-          strainVector.at(3) * strainVector.at(4) * strainVector.at(4);
+          strainVector.at(5) * strainVector.at(5);
 
-    double p     = I1e * I1e + I2e;
-    double q     = ( 2. * I1e * I1e * I1e + 3. * I1e * I2e + 2. * I3e ) / 2.;
-    double theta = acos( q / pow(p, 1.5));
-    double helpVar = 2. * sqrt( I1e * I1e + I2e);
-
-// principal strain
-    J1e = helpVar * cos( theta / 3.) + I1e;
-    J2e = helpVar * cos( theta / 3. + 4. * M_PI / 3.) + I1e;
-    J3e = helpVar * cos( theta / 3. + 2. * M_PI / 3.) + I1e;
+    J3e = (1.0 / 27.0) * (2 * pow(strainVector.at(1), 3) + 9 * strainVector.at(1) * pow(strainVector.at(6), 2) - 3 * pow(strainVector.at(1), 2) * strainVector.at(2) 
+                + 9 * pow(strainVector.at(6), 2) * strainVector.at(2) - 3 * strainVector.at(1) * pow(strainVector.at(2), 2) + 2 * pow(strainVector.at(2), 3)
+                + 9 * strainVector.at(1) * pow(strainVector.at(5), 2) - 18 * pow(strainVector.at(5), 2) * strainVector.at(2) 
+                + 27 * strainVector.at(6) * strainVector.at(4) * strainVector.at(5) + 27 * strainVector.at(5) * strainVector.at(6) * strainVector.at(4) 
+                - 18 * strainVector.at(1) * pow(strainVector.at(4), 2) + 9 * strainVector.at(2) * pow(strainVector.at(4), 2)
+                - 3 * (pow(strainVector.at(1), 2) + 6 * pow(strainVector.at(6), 2) - 4 * strainVector.at(1) * strainVector.at(2) + pow(strainVector.at(2), 2) 
+                - 3 * pow(strainVector.at(5), 2) - 3 * pow(strainVector.at(4), 2)) * strainVector.at(3)
+                - 3 * (strainVector.at(1) + strainVector.at(2)) * pow(strainVector.at(3), 2) + 2 * pow(strainVector.at(3), 3));
 }
+
+// // not needed to write it by myself. oofem already provides this function.
+// void
+// IsotropicDamageMaterial1 :: computeStrainInvariantPrincipal(const FloatArray &strainVector, 
+//     double &I1e, double &I2e, double &I3e, 
+//     double &J1e, double &J2e, double &J3e)
+// {
+//     I1e = strainVector.at(1) + strainVector.at(2) + strainVector.at(3);
+// // strain invariant?
+//     I2e = strainVector.at(1) * strainVector.at(2) + 
+//           strainVector.at(2) * strainVector.at(3) + 
+//           strainVector.at(3) * strainVector.at(1) - 
+//           strainVector.at(4) * strainVector.at(4) - 
+//           strainVector.at(5) * strainVector.at(5) - 
+//           strainVector.at(6) * strainVector.at(6);
+//     I3e = strainVector.at(1) * strainVector.at(2) * strainVector.at(3) + 
+//           strainVector.at(4) * strainVector.at(5) * strainVector.at(6) * 2.0 - 
+//           strainVector.at(1) * strainVector.at(6) * strainVector.at(6) -
+//           strainVector.at(2) * strainVector.at(5) * strainVector.at(5) -
+//           strainVector.at(3) * strainVector.at(4) * strainVector.at(4);
+
+//     double p     = I1e * I1e + I2e;
+//     double q     = ( 2. * I1e * I1e * I1e + 3. * I1e * I2e + 2. * I3e ) / 2.;
+//     double theta = acos( q / pow(p, 1.5));
+//     double helpVar = 2. * sqrt( I1e * I1e + I2e);
+
+// // principal strain
+//     J1e = helpVar * cos( theta / 3.) + I1e;
+//     J2e = helpVar * cos( theta / 3. + 4. * M_PI / 3.) + I1e;
+//     J3e = helpVar * cos( theta / 3. + 2. * M_PI / 3.) + I1e;
+// }
 
 
 double

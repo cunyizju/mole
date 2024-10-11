@@ -275,18 +275,18 @@ public:
      * @param[out] I1e Output value of strain invariant I1.
      * @param[out] J2e Output value of strain invariant J2.
      */
-    static void computeStrainInvariants(const FloatArray &strainVector, double &I1e, double &J2e);
+    static void computeStrainInvariants(const FloatArray &strainVector, double &I1e, double &J2e, double &J3e);
 
-    /**
-     * Computes invariants I1, J2 and J3 of the strain tensor
-     * from the strain components stored in a vector.
-     * @param strainVector Input strain components.
-     * @param[out] I1e, I2e, I3e Output value of strain invariant I1, I2, and I3.
-     * @param[out] J1e, J2e, J3e Output value of strain invariant J2, J2, and J3.
-     */
-    static void computeStrainInvariantPrincipal(const FloatArray &strainVector, 
-    double &I1e, double &I2e, double &I3e, 
-    double &J1e, double &J2e, double &J3e)
+    // /**
+    //  * Computes invariants I1, J2 and J3 of the strain tensor
+    //  * from the strain components stored in a vector.
+    //  * @param strainVector Input strain components.
+    //  * @param[out] I1e, I2e, I3e Output value of strain invariant I1, I2, and I3.
+    //  * @param[out] J1e, J2e, J3e Output value of strain invariant J2, J2, and J3.
+    //  */
+    // static void computeStrainInvariantPrincipal(const FloatArray &strainVector, 
+    // double &I1e, double &I2e, double &I3e, 
+    // double &J1e, double &J2e, double &J3e);
 
     bool isCrackBandApproachUsed() const { return ( this->softType == ST_Exponential_Cohesive_Crack || this->softType == ST_Linear_Cohesive_Crack || this->softType == ST_BiLinear_Cohesive_Crack || this->softType == ST_Trilinear_Cohesive_Crack || this->gf != 0. ); }
     double computeEquivalentStrain(const FloatArray &strain, GaussPoint *gp, TimeStep *tStep) const override;
