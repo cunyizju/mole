@@ -117,6 +117,11 @@ IsotropicDamageMaterial1 :: initializeFrom(InputRecord &ir)
         IR_GIVE_OPTIONAL_FIELD(ir, griff_n, _IFT_IsotropicDamageMaterial1_n);
     } else if ( equivStrainTypeRecord == 8 ) {
         this->equivStrainType = EST_Ottosen;
+        IR_GIVE_FIELD(ir, k, _IFT_IsotropicDamageMaterial1_k);
+        IR_GIVE_FIELD(ir, ottoa, _IFT_IsotropicDamageMaterial1_ottoa);
+        IR_GIVE_FIELD(ir, ottob, _IFT_IsotropicDamageMaterial1_ottob);
+        IR_GIVE_FIELD(ir, otto_k1, _IFT_IsotropicDamageMaterial1_otto_k1);
+        IR_GIVE_FIELD(ir, otto_k2, _IFT_IsotropicDamageMaterial1_otto_k2);
     } else {
         throw ValueInputException(ir, _IFT_IsotropicDamageMaterial1_equivstraintype, "Unknown equivStrainType");
     }
@@ -538,26 +543,29 @@ IsotropicDamageMaterial1 :: computeEquivalentStrain(const FloatArray &strain, Ga
         double nu   = lmat->give(NYxz, NULL);
         
         // should read from input file later
-        double ottoA = 14.72, ottoB = 9., ottoK1 = 17.73, ottoK2 = 1.;
 
         double I1e, J2e, J3e;
         // calculate strain invariants
         this->computeStrainInvariants(fullStrain, I1e, J2e, J3e);
 
-        double cos3theta = 1.5 * sqrt(3.) * J3e / pow( J2e, 1.5 );
+        double epsilon = 1e-6;  // Small threshold to avoid precision issues
+
+        J2e = max(epsilon, fabs(J2e));
+
+        double cos3theta = 1.5 * sqrt(3.) * J3e / pow(J2e, 1.5);
 
         double a, b, c, d, lambda;
 
         if (cos3theta >= 0.) {
-            lambda = ottoK1 * cos( acos( ottoK2 * cos3theta ) / 3. );
+            lambda = otto_k1 * cos( acos( min( max(otto_k2 * cos3theta,-1.), 1.) ) / 3. );
         } else {
-            lambda = ottoK1 * cos(M_PI / 3. - acos( -ottoK2 * cos3theta) / 3. );
+            lambda = otto_k1 * cos(M_PI / 3. - acos( min( max( - otto_k2 * cos3theta,-1.), 1.) ) / 3. );
         }
 
         a = lambda * sqrt( J2e ) / ( 1 + nu);
-        b = ottoB * I1e / ( 1 - 2 * nu);
-        c = lambda * sqrt( J2e ) / ( 1 + nu) + ottoB * I1e / ( 1 - 2 * nu );
-        d = 4 * ottoA * J2e / ( ( 1 + nu ) * ( 1 + nu ) );
+        b = ottob * I1e / ( 1 - 2 * nu);
+        c = lambda * sqrt( J2e ) / ( 1 + nu) + ottob * I1e / ( 1 - 2 * nu );
+        d = 4 * ottoa * J2e / ( ( 1 + nu ) * ( 1 + nu ) );
 
         return ( a + b * sqrt(c * c + d) ) / ( 2 * k );
 
@@ -820,12 +828,9 @@ IsotropicDamageMaterial1 :: computeStrainInvariants(const FloatArray &strainVect
     // double s3 = strainVector.at(3) * strainVector.at(3);
     // J2e = 1. / 2. * ( s1 + s2 + s3 ) - 1. / 6. * ( I1e * I1e );
 
-    J2e = strainVector.at(1) * strainVector.at(2) + 
-          strainVector.at(2) * strainVector.at(3) + 
-          strainVector.at(3) * strainVector.at(1) - 
-          strainVector.at(6) * strainVector.at(6) - 
-          strainVector.at(4) * strainVector.at(4) - 
-          strainVector.at(5) * strainVector.at(5);
+    J2e = (  strainVector.at(1) * strainVector.at(1) + strainVector.at(2) * strainVector.at(2) + strainVector.at(3) * strainVector.at(3) 
+      + 3 * (strainVector.at(4) * strainVector.at(4) + strainVector.at(5) * strainVector.at(5) + strainVector.at(6) * strainVector.at(6))
+           - strainVector.at(3) * strainVector.at(1) - strainVector.at(3) * strainVector.at(2) - strainVector.at(2) * strainVector.at(1)) / 3. ;
 
     J3e = (1.0 / 27.0) * (2 * pow(strainVector.at(1), 3) + 9 * strainVector.at(1) * pow(strainVector.at(6), 2) - 3 * pow(strainVector.at(1), 2) * strainVector.at(2) 
                 + 9 * pow(strainVector.at(6), 2) * strainVector.at(2) - 3 * strainVector.at(1) * pow(strainVector.at(2), 2) + 2 * pow(strainVector.at(2), 3)
@@ -836,38 +841,6 @@ IsotropicDamageMaterial1 :: computeStrainInvariants(const FloatArray &strainVect
                 - 3 * pow(strainVector.at(5), 2) - 3 * pow(strainVector.at(4), 2)) * strainVector.at(3)
                 - 3 * (strainVector.at(1) + strainVector.at(2)) * pow(strainVector.at(3), 2) + 2 * pow(strainVector.at(3), 3));
 }
-
-// // not needed to write it by myself. oofem already provides this function.
-// void
-// IsotropicDamageMaterial1 :: computeStrainInvariantPrincipal(const FloatArray &strainVector, 
-//     double &I1e, double &I2e, double &I3e, 
-//     double &J1e, double &J2e, double &J3e)
-// {
-//     I1e = strainVector.at(1) + strainVector.at(2) + strainVector.at(3);
-// // strain invariant?
-//     I2e = strainVector.at(1) * strainVector.at(2) + 
-//           strainVector.at(2) * strainVector.at(3) + 
-//           strainVector.at(3) * strainVector.at(1) - 
-//           strainVector.at(4) * strainVector.at(4) - 
-//           strainVector.at(5) * strainVector.at(5) - 
-//           strainVector.at(6) * strainVector.at(6);
-//     I3e = strainVector.at(1) * strainVector.at(2) * strainVector.at(3) + 
-//           strainVector.at(4) * strainVector.at(5) * strainVector.at(6) * 2.0 - 
-//           strainVector.at(1) * strainVector.at(6) * strainVector.at(6) -
-//           strainVector.at(2) * strainVector.at(5) * strainVector.at(5) -
-//           strainVector.at(3) * strainVector.at(4) * strainVector.at(4);
-
-//     double p     = I1e * I1e + I2e;
-//     double q     = ( 2. * I1e * I1e * I1e + 3. * I1e * I2e + 2. * I3e ) / 2.;
-//     double theta = acos( q / pow(p, 1.5));
-//     double helpVar = 2. * sqrt( I1e * I1e + I2e);
-
-// // principal strain
-//     J1e = helpVar * cos( theta / 3.) + I1e;
-//     J2e = helpVar * cos( theta / 3. + 4. * M_PI / 3.) + I1e;
-//     J3e = helpVar * cos( theta / 3. + 2. * M_PI / 3.) + I1e;
-// }
-
 
 double
 IsotropicDamageMaterial1 :: computeDamageParam(double kappa, const FloatArray &strain, GaussPoint *gp) const
@@ -890,11 +863,6 @@ IsotropicDamageMaterial1 :: computeDamageParamForCohesiveCrack(double kappa, Gau
     double wf = this->give(wf_ID, gp);     // wf is the crack opening
     double omega = 0.0;
 // Ottosen    
-    // double ottoA  = this->give(ottoA_ID, gp);      
-    // double ottoB  = this->give(ottoB_ID, gp);    
-    // double ottoK1 = this->give(ottoK1_ID, gp);  
-    // double ottoK2 = this->give(ottoK2_ID, gp);
-
     if ( kappa > e0 ) {
         if ( this->gf != 0. ) { //cohesive crack model
             if ( softType == ST_Exponential_Cohesive_Crack ) { // exponential softening
@@ -1421,13 +1389,13 @@ IsotropicDamageMaterial1 :: give(int aProperty, GaussPoint *gp) const
     } else if ( aProperty == gft_ID ) {
         return this->gft;
     // } else if ( aProperty == ottoA_ID ) {
-    //     return this->ottoA;    
+    //     return this->ottoa;    
     // } else if ( aProperty == ottoB_ID ) {
-    //     return this->ottoB;    
+    //     return this->ottob;    
     // } else if ( aProperty == ottoK1_ID ) {
-    //     return this->ottoK1;    
+    //     return this->otto_k2;    
     // } else if ( aProperty == ottoK2_ID ) {
-    //     return this->ottoK2;    
+    //     return this->otto_k2;    
     } else {
         return IsotropicDamageMaterial :: give(aProperty, gp);
     }

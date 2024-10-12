@@ -113,6 +113,12 @@
         "streambuf": "cpp",
         "cinttypes": "cpp",
         "typeinfo": "cpp",
-        "scalarfunction.C": "cpp"
+        "scalarfunction.C": "cpp",
+        "isodamagemodel.C": "cpp",
+        "rcm2.C": "cpp",
+        "simplecrosssection.C": "cpp",
+        "structural2delement.C": "cpp",
+        "nlstructuralelement.C": "cpp",
+        "intmatphasefield_h": "c"
     }
 }

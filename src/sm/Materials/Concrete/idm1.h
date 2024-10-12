@@ -110,11 +110,10 @@
 #define _IFT_IsotropicDamageMaterial1_w_f "w_f"
 #define _IFT_IsotropicDamageMaterial1_f_k "f_k"
 #define _IFT_IsotropicDamageMaterial1_f_r "f_r"
-// ottosen equivalent strain
-#define _IFT_IsotropicDamageMaterial1_ottoA "ottoA"
-#define _IFT_IsotropicDamageMaterial1_ottoB "ottoB"
-#define _IFT_IsotropicDamageMaterial1_ottoK1 "ottoK1"
-#define _IFT_IsotropicDamageMaterial1_ottoK2 "ottoK2"
+#define _IFT_IsotropicDamageMaterial1_ottoa "ottoa"
+#define _IFT_IsotropicDamageMaterial1_ottob "ottob"
+#define _IFT_IsotropicDamageMaterial1_otto_k1 "ottok1"
+#define _IFT_IsotropicDamageMaterial1_otto_k2 "ottok2"
 //@}
 
 namespace oofem {
@@ -180,7 +179,6 @@ protected:
     double w_k = 0., w_r = 0., w_f = 0., f_k = 0., f_r = 0.;
 
     /// Parameters used Ottosen equivalent strain
-    double ottoA = 20.52, ottoB = 8.77, ottoK1 = 10.12, ottoK2 = 1.;
 
     /** Type characterizing the algorithm used to compute equivalent strain measure.
      *  Note that the assigned numbers to enum values have to correspond to values
@@ -204,6 +202,9 @@ protected:
 
     /// Parameter used in Mises definition of equivalent strain.
     double k = 0.;
+
+    /// Parameter used in Ottosen definition of equivalent strain.
+    double ottoa = 0., ottob = 0., otto_k1 = 0., otto_k2 = 0.;
 
     /// Parameter used in Griffith's criterion
     double griff_n = 8.;
@@ -273,7 +274,8 @@ public:
      * from the strain components stored in a vector.
      * @param strainVector Input strain components.
      * @param[out] I1e Output value of strain invariant I1.
-     * @param[out] J2e Output value of strain invariant J2.
+     * @param[out] J2e Output value of deviatoric strain invariant J2.
+     * @param[out] J3e Output value of deviatoric strain invariant J3.
      */
     static void computeStrainInvariants(const FloatArray &strainVector, double &I1e, double &J2e, double &J3e);
 
