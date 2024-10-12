@@ -122,6 +122,11 @@ IsotropicDamageMaterial1 :: initializeFrom(InputRecord &ir)
         IR_GIVE_FIELD(ir, ottob, _IFT_IsotropicDamageMaterial1_ottob);
         IR_GIVE_FIELD(ir, otto_k1, _IFT_IsotropicDamageMaterial1_otto_k1);
         IR_GIVE_FIELD(ir, otto_k2, _IFT_IsotropicDamageMaterial1_otto_k2);
+    } else if ( equivStrainTypeRecord == 9 ) {
+        this->equivStrainType = EST_Menetrey_Willam;
+        IR_GIVE_FIELD(ir, k, _IFT_IsotropicDamageMaterial1_k);
+        IR_GIVE_FIELD(ir, m, _IFT_IsotropicDamageMaterial1_m);
+        IR_GIVE_FIELD(ir, ecc, _IFT_IsotropicDamageMaterial1_ecc);
     } else {
         throw ValueInputException(ir, _IFT_IsotropicDamageMaterial1_equivstraintype, "Unknown equivStrainType");
     }
@@ -541,9 +546,6 @@ IsotropicDamageMaterial1 :: computeEquivalentStrain(const FloatArray &strain, Ga
 // Ottosen equivStrain
     } else if ( this->equivStrainType == EST_Ottosen ) {
         double nu   = lmat->give(NYxz, NULL);
-        
-        // should read from input file later
-
         double I1e, J2e, J3e;
         // calculate strain invariants
         this->computeStrainInvariants(fullStrain, I1e, J2e, J3e);
@@ -568,6 +570,34 @@ IsotropicDamageMaterial1 :: computeEquivalentStrain(const FloatArray &strain, Ga
         d = 4 * ottoa * J2e / ( ( 1 + nu ) * ( 1 + nu ) );
 
         return ( a + b * sqrt(c * c + d) ) / ( 2 * k );
+// Menetrey Willam equivStrain
+    } else if ( this->equivStrainType == EST_Menetrey_Willam ) {
+        double nu   = lmat->give(NYxz, NULL);
+        
+        double I1e, J2e, J3e;
+        // calculate strain invariants
+        this->computeStrainInvariants(fullStrain, I1e, J2e, J3e);
+
+        double epsilon = 1e-6;  // Small threshold to avoid precision issues
+
+        J2e = max(epsilon, fabs(J2e));
+
+        double theta = acos(max( min(1.,  1.5 * sqrt(3.) * J3e / pow(J2e, 1.5)), -1.) ) / 3.;
+
+        double costheta = cos(theta);
+        double a, b, c, rtheta;
+// calculate r
+        a = 4. * (1. - ecc * ecc ) * costheta * costheta + ( 2. * ecc - 1 ) * ( 2. * ecc - 1 );
+        b = 2. *( 1. - ecc * ecc ) * costheta;
+        c = 4. * (1. - ecc * ecc) * costheta * costheta + 5. * ecc * ecc - 4. * ecc;
+        rtheta = a / (b + (2. * ecc - 1.) * c);
+
+        double qe = sqrt(J2e * 3.);
+
+        double d = qe * rtheta / (3. + 3. * nu) + I1e / (3. - 6. * nu);
+        double f = pow(d, 2.) + 4. * qe * qe / (k * k * ( 1. + nu) * (1. + nu) );
+
+        return (d + sqrt(f)) / 2.;
 
     } else if ( this->equivStrainType == EST_Griffith ) {
         double kappa1 = 0.0, kappa2 = 0.0;

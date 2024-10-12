@@ -114,6 +114,8 @@
 #define _IFT_IsotropicDamageMaterial1_ottob "ottob"
 #define _IFT_IsotropicDamageMaterial1_otto_k1 "ottok1"
 #define _IFT_IsotropicDamageMaterial1_otto_k2 "ottok2"
+#define _IFT_IsotropicDamageMaterial1_m "m"
+#define _IFT_IsotropicDamageMaterial1_ecc "ecc"
 //@}
 
 namespace oofem {
@@ -195,6 +197,7 @@ protected:
         EST_ElasticEnergyPositiveStrain=6,
         EST_Griffith=7,
         EST_Ottosen=8,
+        EST_Menetrey_Willam=9,
         EST_Unknown = 100
     };
     /// Parameter specifying the definition of equivalent strain.
@@ -205,6 +208,9 @@ protected:
 
     /// Parameter used in Ottosen definition of equivalent strain.
     double ottoa = 0., ottob = 0., otto_k1 = 0., otto_k2 = 0.;
+
+    /// Parameter used in Menetrey Willam definition of equivalent strain.
+    double m = 0., ecc = 0.;
 
     /// Parameter used in Griffith's criterion
     double griff_n = 8.;
