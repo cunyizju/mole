@@ -550,7 +550,7 @@ IsotropicDamageMaterial1 :: computeEquivalentStrain(const FloatArray &strain, Ga
         // calculate strain invariants
         this->computeStrainInvariants(fullStrain, I1e, J2e, J3e);
 
-        double epsilon = 1e-6;  // Small threshold to avoid precision issues
+        double epsilon = 1e-10;  // Small threshold to avoid precision issues
 
         J2e = max(epsilon, fabs(J2e));
 
@@ -570,6 +570,7 @@ IsotropicDamageMaterial1 :: computeEquivalentStrain(const FloatArray &strain, Ga
         d = 4 * ottoa * J2e / ( ( 1 + nu ) * ( 1 + nu ) );
 
         return ( a + b * sqrt(c * c + d) ) / ( 2 * k );
+
 // Menetrey Willam equivStrain
     } else if ( this->equivStrainType == EST_Menetrey_Willam ) {
         double nu   = lmat->give(NYxz, NULL);
@@ -578,7 +579,7 @@ IsotropicDamageMaterial1 :: computeEquivalentStrain(const FloatArray &strain, Ga
         // calculate strain invariants
         this->computeStrainInvariants(fullStrain, I1e, J2e, J3e);
 
-        double epsilon = 1e-6;  // Small threshold to avoid precision issues
+        double epsilon = 1e-10;  // Small threshold to avoid precision issues
 
         J2e = max(epsilon, fabs(J2e));
 
@@ -587,10 +588,10 @@ IsotropicDamageMaterial1 :: computeEquivalentStrain(const FloatArray &strain, Ga
         double costheta = cos(theta);
         double a, b, c, rtheta;
 // calculate r
-        a = 4. * (1. - ecc * ecc ) * costheta * costheta + ( 2. * ecc - 1 ) * ( 2. * ecc - 1 );
+        a = 4. * (1. - ecc * ecc ) * costheta * costheta + ( 2. * ecc - 1. ) * ( 2. * ecc - 1. );
         b = 2. *( 1. - ecc * ecc ) * costheta;
         c = 4. * (1. - ecc * ecc) * costheta * costheta + 5. * ecc * ecc - 4. * ecc;
-        rtheta = a / (b + (2. * ecc - 1.) * c);
+        rtheta = a / (b + (2. * ecc - 1.) * sqrt(c) );
 
         double qe = sqrt(J2e * 3.);
 
