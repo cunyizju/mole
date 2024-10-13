@@ -171,12 +171,6 @@ if (USE_SM)
         find_library (DL_LIB dl) 
         list (APPEND EXT_LIBS ${DL_LIB})
     endif ()
-    
-#     if (MINGW)
-#         find_library (DL_LIB ltdl HINTS "C:/MinGW/lib/" ) 
-#         list (APPEND EXT_LIBS ${DL_LIB})
-#     endif ()
-    
 endif ()
 
 if (USE_DSS)
@@ -198,18 +192,6 @@ endif ()
 #######################################################################
 ######################## External libraries ###########################
 #######################################################################
-
-#if (USE_BOOST) 
-#    set (CMAKE_LIBRARY_DIR ${BOOST_DIR})
-#    find_package (BOOST REQUIRED)
-#    list (APPEND EXT_LIBS ${BOOST_LIBRARIES})
-#    if (BOOST_DIR)
-#    	include_directories ("${BOOST_DIR}")
-#    	list (APPEND MODULE_LIST "BOOST")
-#     endif ()
-# 
-#    add_definitions (-D__BOOST_MODULE)
-#endif ()
 
 if (USE_LAPACK)
     set (CMAKE_LIBRARY_DIR ${LAPACK_DIR})
@@ -241,8 +223,6 @@ if (USE_SUPERLU_MT)
     if (NOT HAVE_SUPERLU_MT_DDEFS_H)
         message (FATAL_ERROR "Necessary SUPERLU_MT headers not found; refer to CMakeLists.txt for details")
     endif ()
-
-
 endif ()
 
 if (USE_VTK)
