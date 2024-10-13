@@ -119,6 +119,13 @@
         "simplecrosssection.C": "cpp",
         "structural2delement.C": "cpp",
         "nlstructuralelement.C": "cpp",
-        "intmatphasefield_h": "c"
+        "intmatphasefield_h": "c",
+        "adaptnlinearstatic.C": "cpp",
+        "qclinearstatic.C": "cpp",
+        "t3dinterface.C": "cpp",
+        "refinedmesh.C": "cpp",
+        "interfaceelem3dtrlin.C": "cpp",
+        "trplanrot3d.C": "cpp",
+        "cct3d.C": "cpp"
     }
 }

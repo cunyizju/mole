@@ -1,0 +1,93 @@
+cmake_minimum_required(VERSION 3.14)
+project(oofem)
+
+# Set version
+set(oofem_VERSION_MAJOR 2)
+set(oofem_VERSION_MINOR 5)
+set(oofem_VERSION_PATCH 0)
+
+# Set C++ standard
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+# Options for optional components
+option(USE_MPI_PARALLEL "Use MPI parallelization" ON)
+option(USE_PETSC "Use PETSc" ON)
+option(USE_METIS "Use METIS" ON)
+option(USE_INTEL_MKL_PARDISO "Use Intel MKL Pardiso" OFF)
+option(USE_DSS "Use DSS" OFF)
+option(USE_OPENMP "Use OpenMP" ON)
+option(USE_IML "Use IML" OFF)
+
+# External libraries
+if (USE_MPI_PARALLEL)
+    find_package(MPI REQUIRED)
+endif()
+
+if (USE_PETSC)
+    find_package(PETSc REQUIRED)
+endif()
+
+if (USE_METIS)
+    find_package(METIS REQUIRED)
+endif()
+
+if (USE_INTEL_MKL_PARDISO)
+    find_package(MKL REQUIRED)
+endif()
+
+if (USE_DSS)
+    find_package(DSS REQUIRED)
+endif()
+
+if (USE_OPENMP)
+    find_package(OpenMP REQUIRED)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
+endif()
+
+if (USE_IML)
+    find_package(IML REQUIRED)
+endif()
+
+# Source files
+set(SOURCE_FILES
+    ${CMAKE_SOURCE_DIR}/src/oofemcfg.C
+    ${CMAKE_SOURCE_DIR}/src/main/main.C
+    ${CMAKE_SOURCE_DIR}/src/main/benchmark.C
+    ${CMAKE_SOURCE_DIR}/bindings/oofemlib/beam2d_1.C
+    ${CMAKE_SOURCE_DIR}/bindings/oofemlib/hexgrid.C
+    ${CMAKE_SOURCE_DIR}/bindings/oofemlib/dream3d_analysis.C
+)
+
+# Libraries
+add_library(liboofem SHARED ${SOURCE_FILES})
+target_link_libraries(liboofem ${MPI_LIBRARIES} ${PETSC_LIBRARIES} ${METIS_LIBRARIES} ${MKL_LIBRARIES} ${DSS_LIBRARIES} ${IML_LIBRARIES})
+
+# Executables
+add_executable(oofem ${CMAKE_SOURCE_DIR}/src/oofemcfg.C ${CMAKE_SOURCE_DIR}/src/main/main.C)
+target_link_libraries(oofem liboofem)
+
+add_executable(liboofem_benchmark ${CMAKE_SOURCE_DIR}/src/oofemcfg.C ${CMAKE_SOURCE_DIR}/src/main/benchmark.C)
+target_link_libraries(liboofem_benchmark liboofem)
+
+add_executable(beam2d_1 ${CMAKE_SOURCE_DIR}/src/oofemcfg.C ${CMAKE_SOURCE_DIR}/bindings/oofemlib/beam2d_1.C)
+target_link_libraries(beam2d_1 liboofem)
+
+add_executable(hexgrid ${CMAKE_SOURCE_DIR}/src/oofemcfg.C ${CMAKE_SOURCE_DIR}/bindings/oofemlib/hexgrid.C)
+target_link_libraries(hexgrid liboofem)
+
+add_executable(dream3d_analysis ${CMAKE_SOURCE_DIR}/src/oofemcfg.C ${CMAKE_SOURCE_DIR}/bindings/oofemlib/dream3d_analysis.C)
+target_link_libraries(dream3d_analysis liboofem)
+
+# Test setup
+enable_testing()
+
+if (USE_MPI_PARALLEL)
+    file(GLOB parallel_tests RELATIVE "${CMAKE_SOURCE_DIR}/tests/partests" "${CMAKE_SOURCE_DIR}/tests/partests/*/")
+    foreach(test_case ${parallel_tests})
+        add_test(NAME "partest_${test_case}" COMMAND mpirun --oversubscribe -np 4 $<TARGET_FILE:oofem> -p -f ${test_case}.oofem.in)
+    endforeach()
+endif()
+
+# Packaging
+include(CPack)
