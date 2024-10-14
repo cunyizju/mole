@@ -1,133 +1,85 @@
-set (sm_material
-    abaqususermaterial.C
-    structuralmaterial.C
-    linearelasticmaterial.C
-    isolinearelasticmaterial.C
-    anisolinearelasticmaterial.C
-    ortholinearelasticmaterial.C
-    ConcreteMaterials/concrete2.C 
-    ConcreteMaterials/concrete3.C 
-    ConcreteMaterials/concretedpm.C 
-    ConcreteMaterials/concretedpm2.C
-    ConcreteMaterials/idm1.C 
-    ConcreteMaterials/idmnl1.C 
-    ConcreteMaterials/idmgrad.C
-    ConcreteMaterials/mazarsmodel.C 
-    ConcreteMaterials/mazarsmodelnl.C
-    ConcreteMaterials/mplasticmaterial2.C
-    ConcreteMaterials/compodamagemat.C
-    ConcreteMaterials/concretefcm.C
-    ConcreteMaterials/concretefcmviscoelastic.C
-    ConcreteMaterials/frcfcm.C
-    ConcreteMaterials/frcfcmnl.C
-    structuralfe2material.C
-    structuralslipfe2material.C
-    rcsd.C 
-    rcsde.C 
-    rcsdnl.C
-    m4.C
-    microplane_m1.C
-    druckerPragerPlasticitySM.C
-    druckerpragercutmat.C
-    j2mat.C
-    mdm.C
-    micromaterial.C
-    misesmat.C 
-    misesmatgrad.C 
-    misesmatnl.C
-    rankinemat.C
-    rankinematgrad.C
-    rankinematnl.C
-    dustmat.C
-    lsmastermat.C
-    lsmastermatgrad.C
-    simplevitrificationmaterial.C
-    anisodamagemodel.C
-    winklerpasternak.C
-    winklermodel.C
-    structmatsettable.C
-    tutorialmaterial.C
-    graddamagematerialextensioninterface.C    
-    rcm2.C
-    isodamagemodel.C
-    steelrelaxmat.C
-    fcm.C
-    #Mixed pressure material interface
-    MixedPressure/mixedpressurematerialextensioninterface.C
-    #Hyperelastic materials
-    HyperelasticMaterials/basehyperelasticmaterial.C    
-    HyperelasticMaterials/mooneyrivlincompressiblematerial.C
-    HyperelasticMaterials/blatzkomaterial.C
-    HyperelasticMaterials/simopistermaterial.C
-    HyperelasticMaterials/ogdencompressiblematerial.C
-    HyperelasticMaterials/hyperelasticmaterial1d.C
-    #Lattice models
-    LatticeMaterials/latticematstatus.C
-    LatticeMaterials/latticestructuralmaterial.C	
-    LatticeMaterials/latticelinearelastic.C
-    LatticeMaterials/latticedamage.C
-    LatticeMaterials/latticeviscoelastic.C
-    LatticeMaterials/latticedamageviscoelastic.C
-    LatticeMaterials/latticebondplasticity.C
-    LatticeMaterials/latticeplasticitydamage.C
-    LatticeMaterials/latticeslip.C
-    LatticeMaterials/latticeplasticitydamageviscoelastic.C
-    1D/isoasymm1d.C
-)
+# elasticity
+file(GLOB elas_SRCS Elasticity/*.C)
+set(elasticity ${elas_SRCS})
+
+# plasticity
+file(GLOB plas_SRCS Plasticity/*.C)
+set(plasticity ${plas_SRCS})
+
+# 1D
+file(GLOB D1_SRCS 1D/*.C)
+set(D1 ${D1_SRCS})
+
+# Large strain
+file(GLOB largestrain_SRCS Largestrain/*.C)
+set(largestrain ${largestrain_SRCS})
+
+# Hyperelastic
+file(GLOB hyperelastic_SRCS Hyperelastic/*.C)
+set(hyperelastic ${hyperelastic_SRCS})
+
+# Damage
+file(GLOB damage_SRCS Damage/*.C)
+set(damage ${damage_SRCS})
+
+# Concrete
+file(GLOB concrete_SRCS Concrete/*.C)
+set(concrete ${concrete_SRCS})
+
+# Microplane
+file(GLOB microplane_SRCS Microplane/*.C)
+set(microplane ${microplane_SRCS})
+
+# Multiscale
+file(GLOB multiscale_SRCS Multiscale/*.C)
+set(multiscale ${multiscale_SRCS})
+
+# Lattice
+file(GLOB lattice_SRCS Lattice/*.C)
+set(lattice ${lattice_SRCS})
+
+# Structural
+file(GLOB structural_SRCS Structural/*.C)
+list(REMOVE_ITEM structural_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/Structural/structuralpythonmaterial.C")
+set(structural ${structural_SRCS})
+
+# Miscellaneous
+file(GLOB misc_SRCS Misc/*.C)
+list(REMOVE_ITEM misc_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/Misc/mfrontusermaterial.C")
+set(miscellaneous ${misc_SRCS})
 
 if (USE_MFRONT)
-    list (APPEND sm_material mfrontusermaterial.C)
+    list (APPEND miscellaneous Misc/mfrontusermaterial.C)
 endif ()
     
 if (USE_BOOSTPYTHON_BINDINGS AND USE_PYTHON_EXTENSION)
-    list (APPEND sm_material structuralpythonmaterial.C)
+    list (APPEND miscellaneous Structural/structuralpythonmaterial.C)
 endif ()
 
-set (sm_status
-    structuralms.C
-    InterfaceMaterials/structuralinterfacematerialstatus.C
-    deformationtheorymaterial.C
-    microplanematerial.C 
-    microplanematerial_bazant.C
-    )
+# Interface
+file(GLOB interface_SRCS Interface/*.C Interface/Deprecated/*.c)
+set(interface ${interface_SRCS})
 
-set (sm_interface_materials
-    InterfaceMaterials/structuralinterfacematerial.C
-    InterfaceMaterials/bondceb.C
-    InterfaceMaterials/cohint.C
-    InterfaceMaterials/intmatelastic.C
-    InterfaceMaterials/intmatbilinczfagerstrom.C
-    InterfaceMaterials/intmatbilinczjansson.C
-    InterfaceMaterials/intmatbilinearcz.C
-    InterfaceMaterials/intmatbilinczelastic.C
-    InterfaceMaterials/intmatbilinczfagerstromrate.C
-    InterfaceMaterials/intmatisodamage.C
-    InterfaceMaterials/intmatisodamagetable.C
-    InterfaceMaterials/intmatcoulombcontact.C
-    InterfaceMaterials/intmatdummycz.C    
-    InterfaceMaterials/Deprecated/isointerfacedamage01.C
-    InterfaceMaterials/Deprecated/isointerfacedamage02.C
-    InterfaceMaterials/Deprecated/simpleinterfacemat.C
-    InterfaceMaterials/masonry02.C
-    InterfaceMaterials/mat_cebfip90.C
-    InterfaceMaterials/linkslip.C
-    )
-
-set (sm_obsolete
-    Obsolete/steel1.C
-    Obsolete/plasticmaterial.C
-    Obsolete/perfectlyplasticmaterial.C
-    Obsolete/j2plasticmaterial.C
-    Obsolete/mplasticmaterial.C
-    Obsolete/j2mplasticmaterial.C
-    Obsolete/rankinepm.C
-    )
+# obsolete
+file(GLOB obsolete_SRCS Obsolete/*.C)
+set(obsolete ${obsolete_SRCS})
 
 set (sm_materials
-    ${sm_material}
-    ${sm_interface_materials}
+    ${elasticity}
+    ${hyperelastic}
+    ${plasticity}
+    ${damage}
+    ${concrete}
+    ${microplane}
+    ${multiscale}
+    ${lattice}
+    ${structural}
+    ${interface}
     ${sm_status}
-    ${sm_obsolete}
+    ${miscellaneous}
+    ${largestrain}
+    ${D1}
+    ${obsolete}
     )
 
 add_library(sm_materials

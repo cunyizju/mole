@@ -33,7 +33,7 @@
  */
 
 #include "rankinepm.h"
-#include "sm/Materials/isolinearelasticmaterial.h"
+#include "sm/Materials/Elasticity/isolinearelasticmaterial.h"
 #include "math/floatmatrix.h"
 #include "math/floatarray.h"
 #include "engng/classfactory.h"

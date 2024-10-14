@@ -34,7 +34,7 @@
 
 #include "sm/Elements/Interfaces/intelline1phf.h"
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerialphf.h"
+#include "sm/Materials/Interface/structuralinterfacematerialphf.h"
 #include "dofman/node.h"
 #include "math/gausspoint.h"
 #include "math/gaussintegrationrule.h"

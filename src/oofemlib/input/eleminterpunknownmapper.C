@@ -38,7 +38,7 @@
 #include "engng/engngm.h"
 #include "mesher/spatiallocalizer.h"
 #include "dofman/node.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "input/connectivitytable.h"
 #include "input/unknownnumberingscheme.h"
 

@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/Plates/dkt.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "fei/fei2dtrlin.h"
 #include "dofman/node.h"

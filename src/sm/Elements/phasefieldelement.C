@@ -35,7 +35,7 @@
 
 #include "sm/Elements/phasefieldelement.h"
 #include "sm/CrossSections/structuralcrosssection.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "dofman/node.h"
 #include "material/material.h"
 #include "math/gausspoint.h"

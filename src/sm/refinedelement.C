@@ -35,7 +35,7 @@
 #include "refinedelement.h"
 #include "input/element.h"
 #include "dofman/node.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "math/mathfem.h"
 
 #include <cstdarg>

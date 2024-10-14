@@ -34,7 +34,7 @@
 
 #include "input/domain.h"
 #include "lattice3dboundary.h"
-#include "../sm/Materials/LatticeMaterials/latticematstatus.h"
+#include "../sm/Materials/Lattice/latticematstatus.h"
 #include "dofman/node.h"
 #include "material/material.h"
 #include "math/gausspoint.h"
@@ -45,11 +45,11 @@
 #include "math/mathfem.h"
 #include "latticestructuralelement.h"
 #include "engng/classfactory.h"
-#include "../sm/Materials/structuralmaterial.h"
+#include "../sm/Materials/Structural/structuralmaterial.h"
 #include "utility/contextioerr.h"
 #include "export/datastream.h"
 #include "cs/crosssection.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 
 
 

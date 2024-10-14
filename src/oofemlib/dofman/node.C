@@ -39,9 +39,9 @@
  */
 
 #include "dofman/node.h"
-#include "dofs/dof.h"
-#include "dofs/slavedof.h"
-#include "dofs/simpleslavedof.h"
+#include "dofman/dof.h"
+#include "dofman/slavedof.h"
+#include "dofman/simpleslavedof.h"
 #include "bc/nodalload.h"
 #include "solvers/timestep.h"
 #include "math/floatarray.h"

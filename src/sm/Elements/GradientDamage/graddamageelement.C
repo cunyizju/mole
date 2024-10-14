@@ -35,10 +35,10 @@
 
 
 #include "../sm/Elements/GradientDamage/graddamageelement.h"
-#include "../sm/Materials/structuralms.h"
+#include "../sm/Materials/Structural/structuralms.h"
 #include "../sm/CrossSections/structuralcrosssection.h"
 #include "../sm/Elements/nlstructuralelement.h"
-#include "../sm/Materials/graddamagematerialextensioninterface.h"
+#include "../sm/Materials/Damage/graddamagematerialextensioninterface.h"
 #include "dofman/node.h"
 #include "material/material.h"
 #include "math/gausspoint.h"
@@ -49,7 +49,7 @@
 #include "input/domain.h"
 #include "input/cltypes.h"
 #include "math/mathfem.h"
-#include "nonlocal/nonlocalbarrier.h"
+#include "material/nonlocalbarrier.h"
 #include "engng/engngm.h"
 #include "input/unknownnumberingscheme.h"
 

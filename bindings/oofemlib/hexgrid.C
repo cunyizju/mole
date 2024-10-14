@@ -18,7 +18,7 @@
 #include "export/exportmodule.h"
 #include "export/vtkxmlexportmodule.h"
 #include "bc/generalboundarycondition.h"
-#include "ltf/constantfunction.h"
+#include "func/constantfunction.h"
 #include "dofman/node.h"
 #include "export/outputmanager.h"
 #include "bc/boundarycondition.h"

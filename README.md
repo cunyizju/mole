@@ -1,18 +1,18 @@
 <h2 align="center">
-  mole
+  MOLE (<b>M</b>odified <b>O</b>OFEM for Ine<b>l</b>astic Mat<b>e</b>rials)
 </h2>
 
 <p align="right">螣蛇无足而飞，鼫鼠五技而穷。--《荀子·劝学》</p>
 
 
 ### What is mole?
-**mole** is a finite element package, inherented from [OOFEM](https://github.com/oofem/oofem), but with a primary focus on solid mechanics, particularly concrete models.
+**mole** is a finite element package, inherented from [OOFEM](https://github.com/oofem/oofem), but with a primary focus on inelastic solid mechanics.
 
 ### Why Choose Mole?
 
 * Concise and Organized: Mole is streamlined for individual developers, making it easier to use and extend.
-* Tested for Accuracy: All examples have been thoroughly tested to ensure reliable results.
-* High Performance: **Mole** is faster than [OOFEM](https://github.com/oofem/oofem). With [PETSc](https://petsc.org/release/overview/) and [Open MPI](https://github.com/open-mpi/ompi), its computational efficiency is on par with commercial packages.
+* Accuracy: All examples have been thoroughly tested to ensure reliable results.
+* High Performance: **Mole** is faster than [OOFEM](https://github.com/oofem/oofem). With [PETSc](https://petsc.org/release/overview/) and [Open MPI](https://github.com/open-mpi/ompi), its computational efficiency is comparable with commercial packages.
 
 ### Installation (Linux OS Only)
 #### Pre-requisites
@@ -30,9 +30,9 @@ git clone https://github.com/petsc/petsc.git --depth=1
 
 make PETSC_DIR=/home/bruce/Repo2024/petsc PETSC_ARCH=linux-gnu all
 
-make PETSC_DIR=/home/bruce/Repo2024/petsc PETSC_ARCH=linux-gnu check
+make PETSC_DIR=/your/install/path/petsc PETSC_ARCH=linux-gnu check
 ```
-Note: please update /home/bruce/Repo2024/petsc based on your case.
+
 #### Step 3: Config mole
 ```
 cd mole
@@ -62,3 +62,8 @@ cmake --build ./ -jn (n the number of cpu cores)
 ```
 oofem -f input_file_name
 ```
+or
+```
+oofem -f input_file_name > output.log
+```
+if you want to record the log.

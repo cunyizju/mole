@@ -40,8 +40,8 @@
 #include "material/material.h"
 #include "cs/crosssection.h"
 #include "bc/load.h"
-#include "initial/initialcondition.h"
-#include "ltf/function.h"
+#include "bc/initialcondition.h"
+#include "func/function.h"
 #include "utility/set.h"
 #include "engng/engngm.h"
 #include "input/entityrenumberingscheme.h"
@@ -52,7 +52,7 @@
 #include "export/outputmanager.h"
 #include "mesher/octreelocalizer.h"
 #include "nodalrecovery/nodalrecoverymodel.h"
-#include "nonlocal/nonlocalbarrier.h"
+#include "material/nonlocalbarrier.h"
 #include "engng/classfactory.h"
 #include "input/logger.h"
 #include "xfem/xfemmanager.h"
@@ -74,8 +74,8 @@
 
 #include "bc/boundarycondition.h"
 #include "bc/activebc.h"
-#include "dofs/simpleslavedof.h"
-#include "dofs/masterdof.h"
+#include "dofman/simpleslavedof.h"
+#include "dofman/masterdof.h"
 
 #ifdef __PARALLEL_MODE
  #include "parallel/parallel.h"

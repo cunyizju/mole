@@ -35,8 +35,8 @@
 #ifndef isoasymm1d_h
 #define isoasymm1d_h
 
-#include "sm/Materials/structuralmaterial.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "math/floatarray.h"
 #include "math/floatmatrix.h"
 #include "math/floatmatrixf.h"

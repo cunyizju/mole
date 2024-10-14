@@ -33,13 +33,13 @@
  */
 #include "crack.h"
 #include "engng/classfactory.h"
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
+#include "sm/Materials/Interface/structuralinterfacematerialstatus.h"
 #include "sm/export/gnuplotexportmodule.h"
 #include "math/gausspoint.h"
 #include "input/geometry.h"
 
 #include "engng/engngm.h"
-#include "sm/Materials/structuralfe2material.h"
+#include "sm/Materials/Multiscale/structuralfe2material.h"
 
 namespace oofem {
 REGISTER_EnrichmentItem(Crack)

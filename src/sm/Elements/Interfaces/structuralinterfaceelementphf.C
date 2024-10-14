@@ -33,8 +33,8 @@
  */
 
 #include "sm/Elements/Interfaces/structuralinterfaceelementphf.h"
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerialphf.h"
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
+#include "sm/Materials/Interface/structuralinterfacematerialphf.h"
+#include "sm/Materials/Interface/structuralinterfacematerialstatus.h"
 
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
 #include "fei/feinterpol.h"
@@ -46,7 +46,7 @@
 #include "math/floatarray.h"
 #include "math/floatmatrix.h"
 #include "math/mathfem.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 
 
 namespace oofem {

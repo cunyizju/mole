@@ -37,9 +37,9 @@
 #include "solvers/timestep.h"
 #include "input/domain.h"
 #include "math/gausspoint.h"
-#include "sm/Materials/structuralmaterial.h"
-#include "sm/Materials/structuralms.h"
-#include "ltf/function.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralms.h"
+#include "func/function.h"
 #include "engng/classfactory.h"
 
 #include <fstream>

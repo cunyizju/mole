@@ -33,11 +33,11 @@
  */
 
 #include "sm/Elements/3D/macrolspace.h"
-#include "sm/Materials/micromaterial.h"
+#include "sm/Materials/Microplane/micromaterial.h"
 #include "sm/EngineeringModels/structengngmodel.h"
 #include "sm/Elements/3D/lspace.h"
 #include "fei/fei3dhexalin.h"
-#include "ltf/constantfunction.h"
+#include "func/constantfunction.h"
 #include "input/domain.h"
 #include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"

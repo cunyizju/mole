@@ -1,17 +1,23 @@
-### Revision Log
-* Remove PFEM
-* AM can be compiled, yet I have removed it.
-* MPM can be compiled, yet I have removed it.
-* remove FM, TM, visco in SM
+## Modification Log
 
-CDPM 2
-For benchmark problems, using secant stiffness significantly increases the number of iterations.
+Compared with OOFEM, mole is different in the following aspects:
 
-### How to deal with below warnings?
-```
-profiling:/home/licunyi/LCY/oofem/build/src/sm/Materials/CMakeFiles/sm_materials.dir/lsmastermatgrad.C.gcda:Merge mismatch for function 192
-profiling:/home/licunyi/LCY/oofem/build/src/oofemlib/CMakeFiles/core.dir/fei2dquadquad.C.gcda:Merge mismatch for function 144
-profiling:/home/licunyi/LCY/oofem/build/src/oofemlib/CMakeFiles/core.dir/fei1dhermite.C.gcda:Merge mismatch for function 58
-```
+### Removed modules
+* fluid mechanics
+* additive manufacturing
+* multiphysical problems
+* transportation
+* OOFEG
+* T3D
+### Modifications
+* CDPM2: For benchmark problems, using secant stiffness significantly increases the number of  iterations.
+* When the number of iterations goes beyond the input value, the job will be killed automatically.
+* `profileopt=1` is default option to optimize sparse matrix using Sloan algorithm.
+* Frameworks of codes.
 
-* Remove CMakeFiles and rebuild
+### Added features
+* Ottosen and Menetrey-
+Willam equivalent strain (to be done).
+* phase field fracture models (to be done).
+* export history variables given specified nodes or sets (to be done).
+

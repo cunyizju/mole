@@ -43,10 +43,10 @@
 #include "engng/engngm.h"
 // includes for HPC - not very clean (NumMethod knows what is "node" and "dof")
 #include "dofman/node.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "utility/contextioerr.h"
 #include "export/exportmodulemanager.h"
-#include "parallel/parallelcontext.h"
+#include "solvers/parallelcontext.h"
 #include "input/unknownnumberingscheme.h"
 
 namespace oofem {

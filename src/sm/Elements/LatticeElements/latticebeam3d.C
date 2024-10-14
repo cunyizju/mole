@@ -34,8 +34,8 @@
 
 #include "input/domain.h"
 #include "../sm/Elements/LatticeElements/latticebeam3d.h"
-#include "../sm/Materials/LatticeMaterials/latticematstatus.h"
-#include "../sm/Materials/LatticeMaterials/latticelinearelastic.h"
+#include "../sm/Materials/Lattice/latticematstatus.h"
+#include "../sm/Materials/Lattice/latticelinearelastic.h"
 #include "dofman/node.h"
 #include "material/material.h"
 #include "math/gausspoint.h"

@@ -33,8 +33,8 @@
  */
 
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerial.h"
+#include "sm/Materials/Interface/structuralinterfacematerialstatus.h"
+#include "sm/Materials/Interface/structuralinterfacematerial.h"
 #include "math/gausspoint.h"
 #include "input/element.h"
 #include "math/floatarray.h"

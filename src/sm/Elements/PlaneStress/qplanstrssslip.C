@@ -40,9 +40,9 @@
 #include "math/floatarray.h"
 #include "math/intarray.h"
 #include "engng/classfactory.h"
-#include "Materials/structuralmaterial.h"
-#include "Materials/structuralms.h"
-#include "Materials/structuralslipfe2material.h"
+#include "Materials/Structural/structuralmaterial.h"
+#include "Materials/Structural/structuralms.h"
+#include "Materials/Structural/structuralslipfe2material.h"
 #include "CrossSections/structuralcrosssection.h"
 
 

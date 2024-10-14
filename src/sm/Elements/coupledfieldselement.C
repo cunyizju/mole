@@ -35,7 +35,7 @@
 
 #if 1
 #include "sm/Elements/coupledfieldselement.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "sm/Elements/nlstructuralelement.h"
 #include "dofman/node.h"

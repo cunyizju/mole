@@ -34,7 +34,7 @@
 
 #include "sm/Contact/celnode2node.h"
 #include "math/floatmatrix.h"
-#include "dofs/masterdof.h"
+#include "dofman/masterdof.h"
 #include "input/unknownnumberingscheme.h"
 #include "math/gaussintegrationrule.h"
 

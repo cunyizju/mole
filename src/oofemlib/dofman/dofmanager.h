@@ -42,10 +42,10 @@
 #include "math/intarray.h"
 #include "math/floatarray.h"
 #include "input/valuemodetype.h"
-#include "dofs/doftype.h"
-#include "dofs/dofiditem.h"
+#include "dofman/doftype.h"
+#include "dofman/dofiditem.h"
 #include "utility/contextioresulttype.h"
-#include "dofs/unknowntype.h"
+#include "dofman/unknowntype.h"
 #include "input/chartype.h"
 
 ///@name Input fields for DofManager

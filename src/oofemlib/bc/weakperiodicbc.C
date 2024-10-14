@@ -42,7 +42,7 @@
 #include "input/inputrecord.h"
 #include "input/element.h"
 #include "dofman/node.h"
-#include "dofs/masterdof.h"
+#include "dofman/masterdof.h"
 #include "math/sparsemtrx.h"
 #include "math/gausspoint.h"
 #include "math/integrationrule.h"
@@ -51,7 +51,7 @@
 #include "fei/fei2dtrquad.h"
 #include "engng/classfactory.h"
 #include "utility/set.h"
-#include "ltf/function.h"
+#include "func/function.h"
 
 #ifdef _OPENMP
 #include <omp.h>

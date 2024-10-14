@@ -67,7 +67,7 @@
 #include "fei/feinterpol3d.h"
 #include "engng/classfactory.h"
 #include "xfem/xfemmanager.h"
-#include "parallel/parallelcontext.h"
+#include "solvers/parallelcontext.h"
 #include "input/unknownnumberingscheme.h"
 #include "contact/contactmanager.h"
 

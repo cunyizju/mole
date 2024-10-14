@@ -35,7 +35,7 @@
 
 
 #include "sm/Elements/graddpelement.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "sm/Elements/nlstructuralelement.h"
 #include "sm/Materials/graddpmaterialextensioninterface.h"
@@ -49,7 +49,7 @@
 #include "input/domain.h"
 #include "input/cltypes.h"
 #include "math/mathfem.h"
-#include "nonlocal/nonlocalbarrier.h"
+#include "material/nonlocalbarrier.h"
 #include "engng/engngm.h"
 
 #include <cstdio>

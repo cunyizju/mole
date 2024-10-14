@@ -34,7 +34,7 @@
 
 #include "../sm/Elements/LatticeElements/lattice2dboundary.h"
 #include "../sm/Elements/LatticeElements/lattice2d.h"
-#include "../sm/Materials/LatticeMaterials/latticematstatus.h"
+#include "../sm/Materials/Lattice/latticematstatus.h"
 #include "input/domain.h"
 #include "dofman/node.h"
 #include "material/material.h"
@@ -47,8 +47,8 @@
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
 #include "engng/classfactory.h"
-#include "dofs/dof.h"
-#include "../sm/Materials/structuralmaterial.h"
+#include "dofman/dof.h"
+#include "../sm/Materials/Structural/structuralmaterial.h"
 
 
 

@@ -51,7 +51,7 @@ namespace py = pybind11;
 #include "input/domain.h"
 #include "engng/engngm.h"
 #include "engng/staggeredproblem.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "dofman/dofmanager.h"
 #include "input/element.h"
 #include "Elements/structuralelement.h"
@@ -61,13 +61,13 @@ namespace py = pybind11;
 
 #include "bc/generalboundarycondition.h"
 #include "bc/boundarycondition.h"
-#include "initial/initialcondition.h"
-#include "ltf/function.h"
+#include "bc/initialcondition.h"
+#include "func/function.h"
 #include "material/material.h"
 #include "math/integrationpointstatus.h"
 #include "material/matstatus.h"
-#include "Materials/structuralmaterial.h"
-#include "Materials/structuralms.h"
+#include "Materials/Structural/structuralmaterial.h"
+#include "Materials/Structural/structuralms.h"
 
 #include "cs/crosssection.h"
 #include "math/sparsemtrx.h"
@@ -78,7 +78,7 @@ namespace py = pybind11;
 #include "input/datareader.h"
 #include "input/oofemtxtdatareader.h"
 #include "input/valuemodetype.h"
-#include "dofs/dofiditem.h"
+#include "dofman/dofiditem.h"
 #include "utility/timer.h"
 
 #include "engng/classfactory.h"
@@ -102,7 +102,7 @@ namespace py = pybind11;
 
 #include "fields/uniformgridfield.h"
 #include "mesher/unstructuredgridfield.h"
-#include "dofs/dofmanvalfield.h"
+#include "dofman/dofmanvalfield.h"
 #include "utility/pythonfield.h"
 #include <iostream>
 #include "oofemutil.h"

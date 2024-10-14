@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/Shells/shell7base.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "sm/Loads/constantpressureload.h"
 #include "dofman/node.h"
 #include "bc/load.h"
@@ -45,7 +45,7 @@
 #include "bc/constantsurfaceload.h"
 #include "export/vtkxmlexportmodule.h"
 #include "material/fracturemanager.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "math/floatarrayf.h"
 #include "math/floatmatrixf.h"
 #include "input/connectivitytable.h"

@@ -45,8 +45,8 @@
 #include "fei/feinterpol.h"
 #include "xfem/xfemmanager.h"
 
-#include "sm/Materials/structuralms.h"
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralms.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 
 #include "xfem/XFEMDebugTools.h"
 

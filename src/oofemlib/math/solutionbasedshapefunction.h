@@ -36,7 +36,7 @@
 #define SOLUTIONBASEDSHAPEFUNCTION_H_
 
 #include "bc/activebc.h"
-#include "dofs/dofiditem.h"
+#include "dofman/dofiditem.h"
 #include "math/floatarray.h"
 
 #define _IFT_SolutionbasedShapeFunction_Name "solutionbasedshapefunction"

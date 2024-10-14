@@ -39,7 +39,7 @@
 #include "solvers/timestep.h"
 #include "engng/engngm.h"
 #include "dofman/node.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "material/materialinterface.h"
 #include "math/mathfem.h"
 #include "input/cltypes.h"

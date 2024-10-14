@@ -34,11 +34,11 @@
 
 #include "bc/linearconstraintbc.h"
 #include "engng/classfactory.h"
-#include "dofs/masterdof.h"
+#include "dofman/masterdof.h"
 #include "math/floatmatrix.h"
 #include "math/sparsemtrx.h"
 #include "input/unknownnumberingscheme.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "solvers/timestep.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"

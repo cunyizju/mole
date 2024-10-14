@@ -48,7 +48,7 @@
 
 #include "dofman/qcnode.h"
 #include "input/domain.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "cs/crosssection.h"
 
 #include "sm/Quasicontinuum/quasicontinuum.h"
@@ -57,11 +57,6 @@
 #include "input/unknownnumberingscheme.h"
 
 #include "sm/Quasicontinuum/quasicontinuumnumberingscheme.h"
-
- #include "mesher/t3dinterface.h"
-#ifdef __T3D
- #include "t3d.h"
-#endif
 
 #ifdef __PARALLEL_MODE
  #include "parallel/problemcomm.h"
@@ -449,9 +444,6 @@ std :: vector< IntArray >
 QClinearStatic :: generateInterpolationMesh(Domain *d)
 {
     std :: vector< IntArray >newMeshNodes;
-#ifdef __T3D
-    T3DInterface *t3dInterface( this->giveDomain(1) );
-#endif
     std :: vector< FloatArray >nodeCoords;
     std :: vector< IntArray >meshNodes;
     IntArray cellTypes;
@@ -467,24 +459,8 @@ QClinearStatic :: generateInterpolationMesh(Domain *d)
     t3dInFile = t3dFileName.c_str();
     sprintf(options_string, "-i %s -o %s -S -u %f -Q -W", t3dInFile, t3dOutFile, defaultT3DMeshSize);
 
-#ifdef __T3D
-    if ( generateInterpolationElements == 1 ) {
-        /* run T3D to generate mesh */
-        try {
-            t3d_main(NULL, options_string);
-        } catch(int exit_code) {
-            fprintf(stderr, "T3d was prematuraly terminated with error code %d\n\n", exit_code);
-        }
-    }
-#else
-    OOFEM_ERROR("OOFEM is NOT compiled with T3D option but T3D in needed");
-#endif
-
     if ( generateInterpolationElements == 1 || generateInterpolationElements == 2 ) {
         // create interpolation mesh from t3d output file
-#ifdef __T3D
-        t3dInterface.createQCInterpolationMesh(t3dOutFile, nodeCoords, meshNodes, cellTypes);
-#endif
 
         // map mesh to position of particles
         newMeshNodes = this->transformMeshToParticles(this->giveDomain(1), nodeCoords, meshNodes);
@@ -500,9 +476,6 @@ std :: vector< IntArray >
 QClinearStatic :: loadInterpolationMesh(Domain *d)
 {
     std :: vector< IntArray >newMeshNodes;
-    //#ifdef __T3D
-    T3DInterface t3dInterface( this->giveDomain(1) );
-    //#endif
     std :: vector< FloatArray >nodeCoords;
     std :: vector< IntArray >meshNodes;
     IntArray cellTypes;
@@ -510,11 +483,6 @@ QClinearStatic :: loadInterpolationMesh(Domain *d)
     const char *t3dOutFile; //char *t3dOutFile = "interpolationMesh_t3d.out";
 
     t3dOutFile = t3dFileName.c_str();
-
-    // create interpolation mesh from given t3d output file
-    //#ifdef __T3D
-    t3dInterface.createQCInterpolationMesh(t3dOutFile, nodeCoords, meshNodes, cellTypes);
-    //#endif
 
     // map mesh to position of particles
     newMeshNodes = this->transformMeshToParticles(this->giveDomain(1), nodeCoords, meshNodes);

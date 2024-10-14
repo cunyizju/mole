@@ -36,7 +36,7 @@
 #define PrescribedGenStrainShell7_h
 
 #include "bc/boundarycondition.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "bc/bctype.h"
 #include "input/valuemodetype.h"
 #include "math/floatarray.h"

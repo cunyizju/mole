@@ -35,14 +35,14 @@
 #include "fields/primaryfield.h"
 #include "mesher/spatiallocalizer.h"
 #include "dofman/dofmanager.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "input/element.h"
 #include "solvers/timestep.h"
 #include "export/datastream.h"
 #include "utility/contextioerr.h"
 #include "engng/engngm.h"
 #include "input/unknownnumberingscheme.h"
-#include "initial/initialcondition.h"
+#include "bc/initialcondition.h"
 #include "bc/boundarycondition.h"
 
 namespace oofem {

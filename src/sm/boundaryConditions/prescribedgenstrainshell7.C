@@ -33,13 +33,13 @@
  */
 
 #include "prescribedgenstrainshell7.h"
-#include "dofs/dofiditem.h"
+#include "dofman/dofiditem.h"
 #include "dofman/dofmanager.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "input/valuemodetype.h"
 #include "math/floatarray.h"
 #include "math/floatmatrix.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "engng/engngm.h"
 #include "utility/set.h"
 #include "dofman/node.h"

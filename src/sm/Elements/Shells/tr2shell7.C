@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/Shells/tr2shell7.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "dofman/node.h"
 #include "bc/load.h"
 #include "math/mathfem.h"

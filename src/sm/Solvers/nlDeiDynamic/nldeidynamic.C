@@ -36,7 +36,7 @@
 #include "solvers/timestep.h"
 #include "dofman/dofmanager.h"
 #include "input/element.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "utility/verbose.h"
 #include "export/outputmanager.h"
 #include "math/mathfem.h"

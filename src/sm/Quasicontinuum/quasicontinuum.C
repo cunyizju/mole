@@ -41,10 +41,10 @@
 #include "engng/classfactory.h"
 #include "input/dynamicinputrecord.h"
 #include "sm/CrossSections/simplecrosssection.h"
-#include "sm/Materials/isolinearelasticmaterial.h"
-#include "sm/Materials/anisolinearelasticmaterial.h"
+#include "sm/Materials/Elasticity/isolinearelasticmaterial.h"
+#include "sm/Materials/Elasticity/anisolinearelasticmaterial.h"
 #include "input/interfacetype.h"
-#include "sm/Materials/qcmaterialextensioninterface.h"
+#include "sm/Materials/Elasticity/qcmaterialextensioninterface.h"
 
 
 namespace oofem {

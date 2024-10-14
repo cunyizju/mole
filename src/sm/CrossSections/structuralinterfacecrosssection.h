@@ -35,7 +35,7 @@
 #ifndef structuralinterfacecrosssection_h
 #define structuralinterfacecrosssection_h
 
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerial.h"
+#include "sm/Materials/Interface/structuralinterfacematerial.h"
 #include "cs/crosssection.h"
 #include "engng/classfactory.h"
 

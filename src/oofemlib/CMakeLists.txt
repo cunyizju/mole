@@ -1,294 +1,113 @@
-set (engng
-    engng/classfactory.C
-    engng/engngm.C
-    engng/staggeredproblem.C
-    engng/dummyengngm.C
-    )
+# engng
+file(GLOB engng_SRCS engng/*.C)
+set(engng ${engng_SRCS})
 
-set(input
-    input/initmodulemanager.C
-    input/inputrecord.C 
-    input/oofemtxtinputrecord.C
-    input/dynamicinputrecord.C
-    input/domain.C
-    input/assemblercallback.C
-    input/element.C
-    input/geotoolbox.C
-    input/geometry.C
-    input/connectivitytable.C
-    input/dynamicdatareader.C
-    input/oofemtxtdatareader.C
-    input/logger.C
-    input/compcol.C
-    input/femcmpnn.C  
-    input/loadbalancer.C
-    input/cltypes.C 
-    input/smoothednodalintvarfield.C
-    input/sloangraph.C 
-    input/sloangraphnode.C 
-    input/sloanlevelstruct.C
-    input/eleminterpunknownmapper.C
-    input/primaryunknownmapper.C 
+# input
+file(GLOB input_SRCS input/*.C)
+set(input ${input_SRCS})
+
+# dof manager
+file(GLOB dofman_SRCS dofman/*.C)
+set(dofman ${dofman_SRCS})
+
+# solvers
+file(GLOB solvers_SRCS solvers/*.C)
+list(REMOVE_ITEM solvers_SRCS 
+"${CMAKE_CURRENT_SOURCE_DIR}/solvers/petscsolver.C"
+"${CMAKE_CURRENT_SOURCE_DIR}/solvers/petscsparsemtrx.C"
+"${CMAKE_CURRENT_SOURCE_DIR}/solvers/mklpardisosolver.C"
+"${CMAKE_CURRENT_SOURCE_DIR}/solvers/pardisoprojectorgsolver.C"
+"${CMAKE_CURRENT_SOURCE_DIR}/solvers/slepcsolver.C"
+"${CMAKE_CURRENT_SOURCE_DIR}/solvers/spoolessolver.C"
+"${CMAKE_CURRENT_SOURCE_DIR}/solvers/spoolessparsemtrx.C"
+"${CMAKE_CURRENT_SOURCE_DIR}/solvers/superlusolver.C"
 )
+set(solvers ${solvers_SRCS})
 
-set (dofman
-    dofs/dof.C
-    dofs/masterdof.C
-    dofs/simpleslavedof.C
-    dofs/slavedof.C
-    dofs/activedof.C
-    dofs/dofmanvalfield.C
-    dofman/dofmanager.C
-    dofman/node.C
-    dofman/slavenode.C
-    dofman/generalslavenode.C
-    dofman/hangingnode.C
-    dofman/qcnode.C
-    dofman/rigidarmnode.C
-    dofman/elementinternaldofman.C
-    dofman/elementside.C
-    dofman/latticedirichletcouplingnode.C
-    dofman/latticeneumanncouplingnode.C
-    )
+# material
+file(GLOB material_SRCS material/*.C)
+set(material ${material_SRCS})
 
-set (solvers
-    solvers/sparselinsystemnm.C
-    solvers/sparsenonlinsystemnm.C
-    solvers/nrsolver.C
-    solvers/dynamicrelaxationsolver.C
-    solvers/linesearch.C
-    solvers/calmls.C
-    solvers/staggeredsolver.C
-    parallel/parallelcontext.C
-    solvers/timestep.C
-    solvers/metastep.C 
-    )
+# bc
+file(GLOB bc_SRCS bc/*.C)
+set(bc ${bc_SRCS})
 
-set (material
-    material/material.C
-    material/dummymaterial.C
-    material/materialmappingalgorithm.C
-    material/fracturemanager.C
-    material/homogenize.C
-    material/randommaterialext.C
-    nonlocal/nonlocalbarrier.C
-    nonlocal/nonlocalmaterialext.C
-    )
+# field
+file(GLOB fields_SRCS fields/*.C)
+set(fields ${fields_SRCS})
 
+# loading functions
+file(GLOB func_SRCS func/*.C)
+set(func ${func_SRCS})
 
-set (bc
-    bc/generalboundarycondition.C
-    bc/boundarycondition.C
-    bc/prescribedgradienthomogenization.C
-    bc/prescribedgradient.C
-    bc/prescribedgradientbcneumann.C
-    bc/prescribedgradientbcweak.C
-    bc/prescribedgradientbcweakperiodic.C
-    bc/prescribedgradientbcweakdirichlet.C
-    bc/prescribedgradientbcperiodic.C
-    bc/mixedgradientpressurebc.C
-    bc/mixedgradientpressuredirichlet.C
-    bc/mixedgradientpressureneumann.C
-    bc/mixedgradientpressureweakperiodic.C
-    bc/load.C
-    bc/boundaryload.C
-    bc/pointload.C
-    bc/linearedgeload.C
-    bc/constantedgeload.C
-    bc/constantsurfaceload.C
-    bc/nodalload.C
-    bc/deadweight.C
-    bc/reinforcement.C
-    bc/surfacetensionbc.C
-    bc/linearconstraintbc.C
-    bc/weakperiodicbc.C
-    bc/bctracker.C
-    bc/neumannmomentload.C
-    bc/prescribedmean.C
-    initial/initmodule.C
-    initial/initialcondition.C
-    )
+# cross section
+file(GLOB cs_SRCS cs/*.C)
+set(crosssection ${cs_SRCS})
 
-set (fields
-    fields/fieldmanager.C
-    fields/field.C
-    fields/primaryfield.C
-    fields/intvarfield.C
-    fields/maskedprimaryfield.C
-    fields/dofdistributedprimaryfield.C
-    fields/eigenvectorprimaryfield.C
-    fields/uniformgridfield.C
-    )
+# loading functions
+file(GLOB export_SRCS export/*.C)
+set(export ${export_SRCS})
 
-set (core_ltf
-    ltf/function.C
-    ltf/scalarfunction.C
-    ltf/constantfunction.C
-    ltf/heavisidetimefunction.C
-    ltf/peakfunction.C
-    ltf/piecewiselinfunction.C
-    ltf/periodicpiecewiselinfunction.C
-    ltf/calculatorfunction.C
-    ltf/localgaussianrandomfunction.C
-    ltf/interpolatingfunction.C
-    )
+# monitor
+file(GLOB monitor_SRCS monitor/*.C)
+set(monitors ${monitor_SRCS})
 
-set (crosssection
-    cs/crosssection.C
-    cs/emptycs.C
-    cs/dummycrosssection.C
-    )
+# mesh
+file(GLOB mesh_SRCS mesher/*.C)
+set(mesh ${mesh_SRCS})
 
-set (export
-    export/outputmanager.C
-    export/exportmodule.C
-    export/exportmodulemanager.C
-    export/exportregion.C
-    export/outputexportmodule.C
-    export/datastream.C
-    export/errorcheckingexportmodule.C
-    export/vtkexportmodule.C
-    export/vtkbaseexportmodule.C
-    export/vtkxmlexportmodule.C
-    export/vtkmemoryexportmodule.C
-    export/vtkxmlperiodicexportmodule.C
-#    export/vtkxmllatticeexportmodule.C
-    export/vtkpfemexportmodule.C
-    export/vtkxfemexportmodule.C
-#    export/homexportmodule.C
-    export/matlabexportmodule.C
-    export/gpexportmodule.C
-    export/solutionstatusexportmodule.C
-    export/vtkhdf5exportmodule.C
-    )
+# finite element
+file(GLOB fei_SRCS fei/*.C)
+set(fei ${fei_SRCS})
 
-set (monitors
-    monitor/monitormanager.C
-    monitor/monitor.C
-    )
+# contact
+file(GLOB contact_SRCS contact/*.C)
+set(contact ${contact_SRCS})
 
-set (fei
-    fei/feinterpol.C
-    fei/feinterpol1d.C
-    fei/feinterpol2d.C
-    fei/feinterpol3d.C
-    fei/fei1dlin.C
-    fei/fei1dquad.C
-    fei/fei1dhermite.C
-    fei/fei2dtrlin.C
-    fei/fei2dtrquad.C
-    fei/fei2dlinehermite.C
-    fei/fei2dlinelin.C
-    fei/fei2dlinequad.C
-    fei/fei2dquadconst.C
-    fei/fei2dquadlin.C
-    fei/fei2dquadquad.C
-    fei/fei2dquadbiquad.C
-    fei/fei3dlinelin.C
-    fei/fei3dtrlin.C
-    fei/fei3dquadlin.C
-    fei/fei3dtrquad.C
-    fei/fei3dtetlin.C
-    fei/fei3dtetquad.C
-    fei/fei3dhexalin.C
-    fei/fei3dhexaquad.C
-    fei/fei3dhexatriquad.C
-    fei/fei3dwedgelin.C 
-    fei/fei3dwedgequad.C
-    fei/fei3dhexaconst.C
-    )
+# mapping
+file(GLOB mapping_SRCS mapping/*.C)
+set(mapping ${mapping_SRCS})
 
-set(contact
-    contact/contactmanager.C
-    contact/contactdefinition.C
-    contact/contactelement.C
-)
+# math
+file(GLOB math_SRCS math/*.C)
+set(math ${math_SRCS})
 
-set (mapping
-    mapping/mmaclosestiptransfer.C
-    mapping/mmashapefunctprojection.C
-    mapping/mmaleastsquareprojection.C
-    mapping/mmacontainingelementprojection.C
-    mapping/matstatmapperint.C
-    )
+# error
+file(GLOB error_SRCS error/*.C)
+set(error ${error_SRCS})
 
-set(math
-    math/intarray.C
-    math/floatarray.C
-    math/floatmatrix.C
-    math/mathfem.C
-    math/grid.C
-    math/gausspoint.C
-    math/rowcol.C
-    math/skyline.C
-    math/skylineu.C
-    math/integrationrule.C
-    math/gaussintegrationrule.C
-    math/inverseit.C
-    math/subspaceit.C
-    math/gjacobi.C
-    math/lobattoir.C
-    math/symcompcol.C
-    math/ldltfact.C
-    math/solutionbasedshapefunction.C
-)
+# parallel
+file(GLOB parallel_SRCS parallel/*.C)
+list(REMOVE_ITEM parallel_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/parallel/parmetisloadbalancer.C")
+set(core_parallel ${parallel_SRCS})
 
-set(error
-    error/error.C 
-    error/errorestimator.C
-    error/meshqualityerrorestimator.C
-)
+# utility
+file(GLOB utility_SRCS utility/*.C)
+list(REMOVE_ITEM utility_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/utility/pythonexpression.C")
+list(REMOVE_ITEM utility_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/utility/pythonfield.C")
+set(utility ${utility_SRCS})
 
-set(utility
-    utility/timer.C
-    utility/dictionary.C
-    utility/heap.C
-    utility/util.C
-    utility/set.C
-    utility/tokenizer.C
-    utility/parser.C
-)
+# set(utility
+#     utility/timer.C
+#     utility/dictionary.C
+#     utility/heap.C
+#     utility/util.C
+#     utility/set.C
+#     utility/tokenizer.C
+#     utility/parser.C
+# )
 
-set (xfem
-    xfem/delaunay.C
-    xfem/xfemelementinterface.C
-    xfem/enrichmentfunction.C
-    xfem/xfemmanager.C
-    xfem/enrichmentitem.C
-    xfem/geometrybasedei.C
-    xfem/hybridei.C
-    xfem/directei.C
-    xfem/listbasedei.C
-    xfem/inclusion.C
-    xfem/patchintegrationrule.C
-    xfem/propagationlaw.C
-    xfem/XFEMDebugTools.C
-    xfem/enrichmentfronts/enrichmentfront.C
-    xfem/enrichmentfronts/enrichmentfrontdonothing.C
-    xfem/enrichmentfronts/enrichmentfrontextend.C
-    xfem/enrichmentfronts/enrichmentfrontreducefront.C
-    xfem/enrichmentfronts/enrichmentfrontlinbranchfuncradius.C
-    xfem/enrichmentfronts/enrichmentfrontlinbranchfunconeel.C
-    xfem/enrichmentfronts/enrichmentfrontcohesivebranchfunconeel.C
-    xfem/enrichmentfronts/enrichmentfrontintersection.C
-    xfem/integrationrules/discsegintegrationrule.C
-    xfem/xfemtolerances.C
-    xfem/nucleationcriterion.C
-    )
+# xfem
+file(GLOB xfem_SRCS xfem/*.C xfem/enrichmentfronts/*.C xfem/integrationrules/*.C)
+set(xfem ${xfem_SRCS})
 
-set (iga
-    iga/iga.C
-    iga/feibspline.C
-    iga/feinurbs.C
-    iga/feitspline.C
-    )
+# iga
+file(GLOB iga_SRCS iga/*.C)
+set(iga ${iga_SRCS})
 
-set (nodalrecovery
-    nodalrecovery/nodalrecoverymodel.C
-    nodalrecovery/zznodalrecoverymodel.C
-    nodalrecovery/nodalaveragingrecoverymodel.C
-    nodalrecovery/sprnodalrecoverymodel.C
-    )
+# nodalrecovery
+file(GLOB nodalrecovery_SRCS nodalrecovery/*.C)
+set(nodalrecovery ${nodalrecovery_SRCS})
 
 ######## External solvers #########
 if (USE_PETSC)
@@ -299,7 +118,6 @@ endif ()
 
 if (USE_INTEL_MKL_PARDISO OR USE_ONEAPI)
     message (STATUS "    MKL Solver is enabled for compilation")
-
     list (APPEND solvers 
     solvers/mklpardisosolver.C)
 endif ()
@@ -321,31 +139,14 @@ if (USE_SPOOLES)
 endif ()
 
 if (USE_IML)
-    list (APPEND solvers
-        iml/dyncomprow.C iml/dyncompcol.C
-        iml/precond.C iml/voidprecond.C iml/icprecond.C
-        iml/iluprecond.C
-        iml/ilucomprowprecond.C
-        iml/diagpre.C
-        iml/imlsolver.C
-        )
+file(GLOB iml_SRCS iml/*.C)
+    list (APPEND solvers ${iml_SRCS})
 endif ()
 
 if (USE_SUPERLU_MT)
   list (APPEND solvers solvers/superlusolver.C)
 endif ()
 
-set (core_parallel
-    parallel/communicator.C
-    parallel/processcomm.C
-    parallel/problemcomm.C
-    parallel/combuff.C
-    parallel/domaintransactionmanager.C
-    parallel/parallelordering.C
-    parallel/dyncombuff.C
-    parallel/wallclockloadbalancermonitor.C
-    parallel/nonlocalmatwtp.C
-    )
 
 if (USE_PARMETIS)
     list (APPEND core_parallel
@@ -357,18 +158,9 @@ if (USE_PYTHON_EXTENSION)
     list (APPEND engng utility/pythonexpression.C)
 endif ()
 
-set (mesh
-    mesher/t3dinterface.C
-    mesher/targe2interface.C
-    mesher/freeminterface.C
-    mesher/subdivision.C
-    mesher/trianglemesherinterface.C
-    mesher/spatiallocalizer.C
-    mesher/dummylocalizer.C
-    mesher/octreelocalizer.C
-    mesher/remeshingcrit.C
-    mesher/unstructuredgridfield.C
-    )
+if (USE_PYBIND_BINDINGS)
+    list (APPEND engng utility/pythonfield.C)
+endif ()
 
 set (core
     ${engng}
@@ -385,7 +177,7 @@ set (core
     ${error}
     ${math}
     ${utility}
-    ${core_ltf}
+    ${func}
     ${nodalrecovery}
     ${fields}
     ${export}

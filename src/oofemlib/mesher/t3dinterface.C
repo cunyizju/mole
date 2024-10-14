@@ -45,11 +45,11 @@
 #include "cs/crosssection.h"
 #include "engng/classfactory.h"
 
-#include "nonlocal/nonlocalbarrier.h"
-#include "initial/initialcondition.h"
+#include "material/nonlocalbarrier.h"
+#include "bc/initialcondition.h"
 #include "engng/classfactory.h"
 //#include "loadtimefunction.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "export/outputmanager.h"
 
 #include <cmath>

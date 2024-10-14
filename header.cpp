@@ -20,18 +20,18 @@
  */
 
  /*
- *            ###    ###   #####   ##       #######
- *           ##  ### ##  ##   ##  ##       ##
- *          ##   #  ##  ##   ##  ##       #######
- *         ##      ##  ##   ##  ##       ##
- *        ##      ##  ##   ##  ##       ##
- *       ##      ##   #####   #######  #######
+ *            ###    ###   #####   ##      #######
+ *           ##  ### ##  ##   ##  ##      ##
+ *          ##   #  ##  ##   ##  ##      #######
+ *         ##      ##  ##   ##  ##      ##
+ *        ##      ##  ##   ##  ##      ##
+ *       ##      ##   #####   ####### #######
  *
  * Mole is based on OOFEM, which has been developed since 1993 by 
- * Borek Patzak and his colleagues at Czech Technical University.
+ * Prof. Borek Patzak and his colleagues at Czech Technical University.
  *
- * Mole focuses on solid mechanics, especially concrete models.
  * Modified by Cunyi Li
+ * Please read devlog.md to check its new features.
  *
  * GNU LESSER GENERAL PUBLIC LICENSE
  */

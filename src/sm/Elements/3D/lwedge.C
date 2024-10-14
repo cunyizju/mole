@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/3D/lwedge.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "fei/fei3dwedgelin.h"
 #include "dofman/node.h"

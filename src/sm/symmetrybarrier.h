@@ -35,7 +35,7 @@
 #ifndef symmetrybarrier_h
 #define symmetrybarrier_h
 
-#include "nonlocal/nonlocalbarrier.h"
+#include "material/nonlocalbarrier.h"
 #include "math/intarray.h"
 #include "math/floatarray.h"
 #include "math/floatmatrix.h"

@@ -12,7 +12,7 @@
 
 #include "math/floatarrayf.h"
 #include "math/floatmatrixf.h"
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 
 using namespace oofem;
 

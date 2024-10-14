@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/Shells/quad1mindlinshell3d.h"
-#include "sm/Materials/structuralms.h"
+#include "sm/Materials/Structural/structuralms.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "sm/Loads/constantpressureload.h"
 #include "dofman/node.h"

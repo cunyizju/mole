@@ -34,7 +34,7 @@
 
 #include "qtrplanstrssxfem.h"
 
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "export/vtkxmlexportmodule.h"
 #include "xfem/xfemelementinterface.h"

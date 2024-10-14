@@ -37,7 +37,7 @@
 
 #include "sm/Elements/structuralelement.h"
 #include "sm/CrossSections/fiberedcs.h"
-#include "sm/Materials/winklermodel.h"
+#include "sm/Materials/Elasticity/winklermodel.h"
 #include "dofman/dofmanager.h"
 
 namespace oofem {

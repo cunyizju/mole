@@ -46,7 +46,7 @@
 #include "input/oofemtxtdatareader.h"
 #include "mesher/remeshingcrit.h"
 #include "mesher/mesherinterface.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "input/eleminterpunknownmapper.h"
 #include "error/errorestimator.h"
 #include "engng/classfactory.h"
@@ -56,7 +56,7 @@
 #include "input/unknownnumberingscheme.h"
 
 #ifdef __PARALLEL_MODE
- #include "parallel/parallelcontext.h"
+ #include "solvers/parallelcontext.h"
  #include "input/loadbalancer.h"
 #endif
 

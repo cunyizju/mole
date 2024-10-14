@@ -34,7 +34,7 @@
 
 #include "sm/ErrorEstimators/zzerrorestimator.h"
 #include "sm/Elements/structuralelement.h"
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 #include "input/domain.h"
 #include "dofman/dofmanager.h"
 #include "input/element.h"
@@ -51,7 +51,7 @@
 #include "error/errorestimatortype.h"
 #include "engng/classfactory.h"
 #include "engng/engngm.h"
-#include "parallel/parallelcontext.h"
+#include "solvers/parallelcontext.h"
 
 #include <vector>
 

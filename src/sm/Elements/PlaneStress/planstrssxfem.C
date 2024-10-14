@@ -33,7 +33,7 @@
  */
 
 #include "sm/Elements/PlaneStress/planstrssxfem.h"
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 #include "sm/CrossSections/structuralcrosssection.h"
 #include "xfem/xfemelementinterface.h"
 #include "xfem/enrichmentfunction.h"

@@ -33,7 +33,7 @@
  */
 
 #include "parallel/nonlocalmatwtp.h"
-#include "nonlocal/nonlocalmaterialext.h"
+#include "material/nonlocalmaterialext.h"
 #include "input/element.h"
 #include "dofman/dofmanager.h"
 #include "engng/engngm.h"

@@ -36,7 +36,7 @@
 #define structuralcrosssection_h
 
 #include "cs/crosssection.h"
-#include "sm/Materials/structuralmaterial.h"
+#include "sm/Materials/Structural/structuralmaterial.h"
 
 ///@name Input fields for CrossSection
 //@{

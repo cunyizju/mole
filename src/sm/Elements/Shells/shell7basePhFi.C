@@ -35,7 +35,7 @@
 #include "Shell7BasePhFi.h"
 #include "dofman/node.h"
 #include "bc/load.h"
-#include "structuralms.h"
+#include "Structural/structuralms.h"
 #include "math/mathfem.h"
 #include "input/domain.h"
 #include "equationid.h"
@@ -49,7 +49,7 @@
 #include "export/vtkxmlexportmodule.h"
 #include "material/fracturemanager.h"
 
-#include "dofs/masterdof.h"
+#include "dofman/masterdof.h"
 
 #include <fstream>
 

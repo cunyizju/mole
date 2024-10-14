@@ -48,7 +48,7 @@
 #include "bc/boundarycondition.h"
 #include "xfem/enrichmentitem.h"
 #include "xfem/xfemmanager.h"
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
+#include "sm/Materials/Interface/structuralinterfacematerialstatus.h"
 #include "xfem/XFEMDebugTools.h"
 #include "bc/prescribedgradient.h"
 #include "bc/prescribedgradientbcneumann.h"
@@ -59,9 +59,9 @@
 #include "xfem/enrichmentitems/crack.h"
 #include "dofman/dofmanager.h"
 #include "xfem/matforceevaluator.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "sm/Elements/Interfaces/structuralinterfaceelement.h"
-#include "sm/Materials/structuralfe2material.h"
+#include "sm/Materials/Multiscale/structuralfe2material.h"
 
 #include <sstream>
 

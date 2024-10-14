@@ -33,8 +33,8 @@
  */
 
 #include "sm/Elements/Interfaces/structuralinterfaceelement.h"
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerial.h"
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
+#include "sm/Materials/Interface/structuralinterfacematerial.h"
+#include "sm/Materials/Interface/structuralinterfacematerialstatus.h"
 #include "sm/CrossSections/structuralinterfacecrosssection.h"
 #include "fei/feinterpol.h"
 #include "input/domain.h"

@@ -43,7 +43,7 @@
 #include "input/element.h"
 #include "solvers/timestep.h"
 #include "engng/classfactory.h"
-#include "dofs/dof.h"
+#include "dofman/dof.h"
 #include "input/oofemtxtinputrecord.h"
 #include "math/mathfem.h"
 #ifdef __SM_MODULE

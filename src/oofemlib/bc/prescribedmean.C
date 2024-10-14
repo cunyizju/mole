@@ -34,12 +34,12 @@
 
 #include "bc/prescribedmean.h"
 #include "engng/classfactory.h"
-#include "dofs/masterdof.h"
+#include "dofman/masterdof.h"
 #include "input/domain.h"
 #include "fei/feinterpol.h"
 #include "math/gausspoint.h"
 #include "math/sparsemtrx.h"
-#include "ltf/function.h"
+#include "func/function.h"
 #include "math/mathfem.h"
 
 #ifdef _OPENMP

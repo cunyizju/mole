@@ -74,16 +74,13 @@ if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang" OR CMAKE_CXX_COMPILER_ID STREQUAL "GN
 endif()
 set (CMAKE_CXX_FLAGS_PROFILING "${CMAKE_CXX_FLAGS_PROFILING} -O2 -pg")
 
-
-
-
 #######################################################################
 ######################## Custom paths #################################
 #######################################################################
 set (SLEPC_DIR CACHE PATH "Manual SLEPc directory")
 set (TINYXML2_DIR CACHE PATH "Manual TinyXML-2 directory (CEMHYD only)")
-#set (PETSC_DIR CACHE PATH "Manual PETSc directory")
-set (PETSC_ARCH CACHE STRING "Manual PETSc arch name (e.g. linux-gnu-cxx-opt)")
+set (PETSC_DIR CACHE PATH "/home/licunyi/projects/petsc")
+set (PETSC_ARCH CACHE STRING "linux-gnu")
 set (MPI_DIR CACHE PATH "Manual MPI directory")
 set (VTK_DIR CACHE PATH "Manual VTK directory (For binary VTU export)")
 set (LAPACK_DIR CACHE PATH "Manual LAPACK directory")
@@ -118,7 +115,7 @@ option (USE_SPOOLES "Enable SPOOLES-solver" OFF) # or this
 option (USE_INTEL_MKL_PARDISO "Enable MKLPARDISO solver support" OFF)
 option (USE_ONEAPI "Enable OneMKL solver support via OneAPI" OFF)
 option (USE_PARDISO_ORG "Enable PARDISO-project.org solver support" OFF)
-option (USE_PETSC "Enable PETSc support (specify PETSC_DIR and/or PETSC_ARCH if needed)" OFF)
+option (USE_PETSC "Enable PETSc support (specify PETSC_DIR and/or PETSC_ARCH if needed)" ON)
 option (USE_SLEPC "Enable SLEPc support" OFF)
 option (USE_LAPACK "Use LAPACK" OFF)
 option (USE_SUPERLU_MT "Use SUPERLU_MT" OFF)
@@ -129,7 +126,6 @@ option (USE_VTK "Enable VTK (for exporting binary VTU-files)" OFF)
 # Internal modules
 option (USE_SM "Enable structural mechanics module" ON)
 option (USE_CEMHYD "Enable CemHyd support" OFF)
-option (USE_T3D "Enable T3D support" OFF)
 option (USE_BOOSTPYTHON_BINDINGS "Rather obsolete, use USE_PYBIND_BINDINGS. Enable Python bidings using boost (OOFEM callable from Python)." OFF)
 option (USE_PYBIND_BINDINGS "Enable Python Pybind11 bindings (OOFEM callable from Python and vice versa)." OFF)
 option (USE_PYTHON_EXTENSION "Enable Python extension for exposing C++ code to python. Uses Python.h library." OFF)
@@ -158,7 +154,6 @@ endif ()
 # I believe the subdirs should be used when including instead.
 include_directories ("${oofem_SOURCE_DIR}/src")
 include_directories ("${oofem_SOURCE_DIR}/src/oofemlib")
-include_directories ("${oofem_SOURCE_DIR}/src/oofemlib/T3d/src")
 include_directories ("${oofem_BINARY_DIR}")
 
 # Is there really any reason not to compile all of them? Some has cross dependencies.
@@ -176,12 +171,6 @@ if (USE_SM)
         find_library (DL_LIB dl) 
         list (APPEND EXT_LIBS ${DL_LIB})
     endif ()
-    
-#     if (MINGW)
-#         find_library (DL_LIB ltdl HINTS "C:/MinGW/lib/" ) 
-#         list (APPEND EXT_LIBS ${DL_LIB})
-#     endif ()
-    
 endif ()
 
 if (USE_DSS)
@@ -203,18 +192,6 @@ endif ()
 #######################################################################
 ######################## External libraries ###########################
 #######################################################################
-
-#if (USE_BOOST) 
-#    set (CMAKE_LIBRARY_DIR ${BOOST_DIR})
-#    find_package (BOOST REQUIRED)
-#    list (APPEND EXT_LIBS ${BOOST_LIBRARIES})
-#    if (BOOST_DIR)
-#    	include_directories ("${BOOST_DIR}")
-#    	list (APPEND MODULE_LIST "BOOST")
-#     endif ()
-# 
-#    add_definitions (-D__BOOST_MODULE)
-#endif ()
 
 if (USE_LAPACK)
     set (CMAKE_LIBRARY_DIR ${LAPACK_DIR})
@@ -246,8 +223,6 @@ if (USE_SUPERLU_MT)
     if (NOT HAVE_SUPERLU_MT_DDEFS_H)
         message (FATAL_ERROR "Necessary SUPERLU_MT headers not found; refer to CMakeLists.txt for details")
     endif ()
-
-
 endif ()
 
 if (USE_VTK)
@@ -452,17 +427,6 @@ if (USE_MPI)
     endif (MPI_DIR)
     list (APPEND MODULE_LIST "MPI")
     # Compile and link flags?
-endif ()
-
-if (USE_T3D)
-    add_definitions (-D__T3D)
-    include_directories ("${oofem_SOURCE_DIR}/src/oofemlib/T3d/src")
-    check_include_file_cxx ("${oofem_SOURCE_DIR}/src/oofemlib/T3d/src/t3d.h" HAVE_T3D_H)
-    if ((NOT HAVE_T3D_H))
-        message (FATAL_ERROR "Necessary T3D headers not found")
-    endif ()
-    set (MODULE_LIST ${MODULE_LIST} "T3D")
-    add_definitions(-DT3D_OOFEM)
 endif ()
 
 if (USE_TRIANGLE)

@@ -34,8 +34,8 @@
 
 #include "sm/EngineeringModels/xfemsolverinterface.h"
 #include "sm/Elements/structuralelement.h"
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerial.h"
-#include "sm/Materials/InterfaceMaterials/structuralinterfacematerialstatus.h"
+#include "sm/Materials/Interface/structuralinterfacematerial.h"
+#include "sm/Materials/Interface/structuralinterfacematerialstatus.h"
 #include "sm/xfem/xfemstructuralelementinterface.h"
 #include "sm/mappers/primvarmapper.h"
 #include "solvers/timestep.h"
