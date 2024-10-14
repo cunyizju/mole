@@ -65,3 +65,10 @@ tests/sm/t3d.bmf
 # *.png
 # *.eps
 doc/
+diff.csv
+diff.md
+diff.txt
+results.csv
+result.json
+result.txt
+diff-details.md
