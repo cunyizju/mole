@@ -126,6 +126,7 @@
         "refinedmesh.C": "cpp",
         "interfaceelem3dtrlin.C": "cpp",
         "trplanrot3d.C": "cpp",
-        "cct3d.C": "cpp"
+        "cct3d.C": "cpp",
+        "vtkhdf5exportmodule.C": "cpp"
     }
 }
