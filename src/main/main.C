@@ -58,9 +58,9 @@
  #include <petsc.h>
 #endif
 
-#ifdef __SLEPC_MODULE
- #include <slepceps.h>
-#endif
+// #ifdef __SLEPC_MODULE
+//  #include <slepceps.h>
+// #endif
 
 #ifdef _OPENMP
 #include <omp.h>
@@ -259,9 +259,9 @@ int main(int argc, char *argv[])
     PetscInitialize(& modulesArgc, & modulesArgv, PETSC_NULLPTR, PETSC_NULLPTR);
 #endif
 
-#ifdef __SLEPC_MODULE
-    SlepcInitialize(& modulesArgc, & modulesArgv, PETSC_NULLPTR, PETSC_NULLPTR);
-#endif
+// #ifdef __SLEPC_MODULE
+//     SlepcInitialize(& modulesArgc, & modulesArgv, PETSC_NULLPTR, PETSC_NULLPTR);
+// #endif
 
 #ifdef _PYTHON_EXTENSION
     Py_Initialize();
@@ -382,9 +382,9 @@ void oofem_finalize_modules()
     PetscFinalize();
 #endif
 
-#ifdef __SLEPC_MODULE
-    SlepcFinalize();
-#endif
+// #ifdef __SLEPC_MODULE
+//     SlepcFinalize();
+// #endif
 
 #ifdef __USE_MPI
     MPI_Finalize();

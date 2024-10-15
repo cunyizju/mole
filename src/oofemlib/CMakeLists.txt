@@ -17,7 +17,6 @@ list(REMOVE_ITEM solvers_SRCS
 "${CMAKE_CURRENT_SOURCE_DIR}/solvers/petscsparsemtrx.C"
 "${CMAKE_CURRENT_SOURCE_DIR}/solvers/mklpardisosolver.C"
 "${CMAKE_CURRENT_SOURCE_DIR}/solvers/pardisoprojectorgsolver.C"
-"${CMAKE_CURRENT_SOURCE_DIR}/solvers/slepcsolver.C"
 "${CMAKE_CURRENT_SOURCE_DIR}/solvers/spoolessolver.C"
 "${CMAKE_CURRENT_SOURCE_DIR}/solvers/spoolessparsemtrx.C"
 "${CMAKE_CURRENT_SOURCE_DIR}/solvers/superlusolver.C"
@@ -127,10 +126,6 @@ if (USE_PARDISO_ORG)
   solvers/pardisoprojectorgsolver.C)
 endif ()
 
-if (USE_SLEPC)
-    list (APPEND solvers 
-    solvers/slepcsolver.C)
-endif ()
 
 if (USE_SPOOLES)
     list (APPEND solvers 
