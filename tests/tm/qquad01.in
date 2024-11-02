@@ -1,8 +1,7 @@
 qquad01.out
 Test of quadratic quadrilateral QQuad element, 1. step with internal source, exact solution is a quadratic profile in y direction, 2. step with heat flow prescribed on the top boundary
 StationaryProblem nsteps 2 nmodules 1
-errorcheck
-#vtkxml tstep_all domain_all primvars 1 6 vars 2 37 56 stype 2
+vtkxml tstep_all domain_all primvars 1 6 vars 2 37 56 stype 2
 domain HeatTransfer
 OutputManager tstep_all dofman_all element_all
 ndofman 20 nelem 5 ncrosssect 1 nmat 1 nbc 3 nic 0 nltf 3 nset 3
