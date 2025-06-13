@@ -1,0 +1,36 @@
+MW.out
+#
+test for Ottosen and Menetrey-Willam equivalent strain
+#
+NonlinearStatic nsteps 1001 profileopt 1 deltaT 1. controllmode 1 rtolv 1.e-4 stiffMode 2 manrmsteps 1 maxiter 2000 minIter 1 initialGuess 1 nmodules 1
+#
+vtkxml tstep_step 1 domain_all primvars 1 1 vars 2 1 4 cellvars 2 13 27 stype 1
+#
+domain 2dPlaneStress
+#
+OutputManager tstep_step 1 dofman_output {1 2 3 4} element_output {1}
+#
+ndofman 4 nelem 1 ncrosssect 1 nmat 1 nbc 2 nic 0 nltf 2 nset 0
+#
+node 1 coords 2 0. 0. bc 2 1 0
+node 2 coords 2 0. 50. bc 2 1 0
+node 3 coords 2 100. 0. bc 2 2 0
+node 4 coords 2 100. 50. bc 2 2 0
+#
+PlaneStress2d 1 nodes 4 1 2 4 3 mat 1 crossSect 1
+#
+SimpleCS 1 thick 1.
+#
+
+idm1 1 d 0. E 735.5 n 0.2 tAlpha 0. ecc 0.52 e0 1.5e-3 wf 5. k 7.  m 7.  equivstraintype 9
+
+#
+BoundaryCondition 1 loadTimeFunction 1  values 1  0.0  
+BoundaryCondition 2 loadTimeFunction 2  values 1  0.002
+ConstantFunction 1 f(t) 1.0
+PiecewiseLinFunction 2 nPoints 3 t 3 -100.0 0. 1000. f(t) 3 0. 1. 1000.
+
+#%BEGIN_CHECK%
+#NODE number 3 dof 1 unknown d
+#REACTION number 3 dof 1 
+#%END_CHECK%

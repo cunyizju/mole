@@ -2,7 +2,6 @@
   MOLE (<b>M</b>odified <b>O</b>OFEM for Ine<b>l</b>astic Mat<b>e</b>rials)
 </h2>
 
-<p align="right">螣蛇无足而飞，鼫鼠五技而穷。--《荀子·劝学》</p>
 
 
 ### What is mole?
@@ -67,3 +66,50 @@ or
 oofem -f input_file_name > output.log
 ```
 if you want to record the log.
+
+#### Debug with VS CODE in Linux
+
+When configure the project, just set ```CMAKE_BUILD_TYPE``` as ```Debug```, as shown below,
+```
+ BUILD_TESTING                    ON
+ CCACHE_PROGRAM                   CCACHE_PROGRAM-NOTFOUND
+ CMAKE_BUILD_TYPE                 Debug
+ CMAKE_INSTALL_PREFIX             /usr/local
+ DL_LIB                           /usr/lib64/libdl.so
+```
+
+Then please add a file launch.json in folder .vscode to specify the package and input file for debugging,
+```
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/licunyi/LCY/oofem/build/debug/oofem",
+            "stopAtEntry": false,
+            "cwd": "/home/licunyi/LCY/oofem/Debug",
+            "args": [
+                "-f",
+                "MW.in"
+            ],
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
+```

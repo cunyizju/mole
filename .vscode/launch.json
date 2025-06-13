@@ -7,10 +7,10 @@
             "request": "launch",
             "program": "/home/licunyi/LCY/oofem/build/debug/oofem",
             "stopAtEntry": false,
-            "cwd": "/home/licunyi/Simulations/concrete-three-point-bending-oofem/CircleTPB_V2/TPB_LM_MW/",
+            "cwd": "/home/licunyi/LCY/oofem/Debug",
             "args": [
                 "-f",
-                "TPB.in"
+                "MW.in"
             ],
             "environment": [],
             "externalConsole": false,
