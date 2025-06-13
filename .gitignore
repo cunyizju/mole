@@ -45,6 +45,7 @@ __pycache__
 *.backup
 *kdev*
 makefile
+/CMakeFiles/
 elixirtest.c
 configure
 config.log
