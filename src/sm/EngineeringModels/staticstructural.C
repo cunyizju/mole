@@ -341,9 +341,16 @@ void StaticStructural :: solveYourselfAt(TimeStep *tStep)
     }
     if (status != CR_CONVERGED) {
       OOFEM_WARNING("No success in solving problem at step %d", tStep->giveNumber());
+      OOFEM_WARNING("Maximum iterations %d reached! \n please increase maxiter or check the model", maxIter);
+      OOFEM_EXIT(1);
     }
     tStep->numberOfIterations = currentIterations;
     tStep->convergedReason = status;
+
+    // // Bruce: The job will be terminated given maximum iterations is achieved.
+    // if (currentIterations == maxIter){
+    //     OOFEM_ERROR("Maximum iterations %d reached! \n please increase maxiter or check the model", maxIter);
+    //     OOFEM_EXIT(1);}
 }
 
 void StaticStructural :: terminate(TimeStep *tStep)

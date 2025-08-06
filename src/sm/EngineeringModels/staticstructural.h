@@ -17,6 +17,7 @@
 #define _IFT_StaticStructural_solvertype "solvertype"
 #define _IFT_StaticStructural_stiffmode "stiffmode"
 #define _IFT_StaticStructural_nonlocalExtension "nonlocalext"
+#define _IFT_StaticStructural_maxIter "maxIter"
 
 #define _IFT_StaticStructural_recomputeaftercrackpropagation "recomputeaftercrackprop"
 namespace oofem {
@@ -49,6 +50,8 @@ protected:
 
     double loadLevel;
     double deltaT;
+    int maxIter;
+    
     FloatArray prescribedTimes;
 
     InitialGuess initialGuessType;

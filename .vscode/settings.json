@@ -131,6 +131,8 @@
         "slepcsolver.C": "cpp",
         "fei3dwedgequad.C": "cpp",
         "vtkxfemexportmodule.C": "cpp",
-        "rotatingboundary.C": "cpp"
+        "rotatingboundary.C": "cpp",
+        "inputrecord.C": "cpp",
+        "oofemtxtinputrecord.C": "cpp"
     }
 }
