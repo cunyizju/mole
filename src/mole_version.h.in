@@ -1,0 +1,7 @@
+#ifndef MOLE_VERSION_H_
+#define MOLE_VERSION_H_
+#define __MOLE_GIT_HASH "@MOLE_GIT_HASH@"
+#define __MOLE_GIT_REPOURL "@MOLE_GIT_REPOURL@"
+#define __MOLE_GIT_BRANCH "@MOLE_GIT_BRANCH@"
+
+#endif  /* MOLE_VERSION_H_ */

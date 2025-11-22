@@ -12,7 +12,7 @@ if(GIT_EXECUTABLE)
     OUTPUT_STRIP_TRAILING_WHITESPACE
   )
   if(NOT GIT_HASH_ERROR_CODE)
-    set(OOFEM_GIT_HASH ${GIT_HASH})
+    set(MOLE_GIT_HASH ${GIT_HASH})
   endif()
 
   # get repository URL & branch
@@ -24,7 +24,7 @@ if(GIT_EXECUTABLE)
     OUTPUT_STRIP_TRAILING_WHITESPACE
   )
   if(NOT GIT_REPOURL_ERROR_CODE)
-    set(OOFEM_GIT_REPOURL ${GIT_REPOURL})
+    set(MOLE_GIT_REPOURL ${GIT_REPOURL})
   endif()
   
   execute_process(
@@ -35,7 +35,7 @@ if(GIT_EXECUTABLE)
     OUTPUT_STRIP_TRAILING_WHITESPACE
   )
   if(NOT GIT_BRANCH_ERROR_CODE)
-    set(OOFEM_GIT_BRANCH ${GIT_BRANCH})
+    set(MOLE_GIT_BRANCH ${GIT_BRANCH})
   endif()
 
 
@@ -44,18 +44,18 @@ endif()
 # Final fallback: Just use a bogus version string that is semantically older
 # than anything else and spit out a warning to the developer.
 
-if(NOT DEFINED OOFEM_GIT_HASH)
-  set(OOFEM_GIT_HASH unknown)
-  message(WARNING "Failed to determine OOFEM_GIT_HASH from Git log. Using default hash \"${OOFEM_GIT_HASH}\".")
+if(NOT DEFINED MOLE_GIT_HASH)
+  set(MOLE_GIT_HASH unknown)
+  message(WARNING "Failed to determine MOLE_GIT_HASH from Git log. Using default hash \"${MOLE_GIT_HASH}\".")
 endif()
 
-if(NOT DEFINED OOFEM_GIT_REPOURL)
-  set(OOFEM_GIT_REPOURL unknown)
-  message(WARNING "Failed to determine OOFEM_GIT_REPOURL from Git log.")
+if(NOT DEFINED MOLE_GIT_REPOURL)
+  set(MOLE_GIT_REPOURL unknown)
+  message(WARNING "Failed to determine MOLE_GIT_REPOURL from Git log.")
 endif()
 
-if(NOT DEFINED OOFEM_GIT_BRANCH)
-  set(OOFEM_GIT_BRANCH unknown)
-  message(WARNING "Failed to determine OOFEM_GIT_HASH from Git log.")
+if(NOT DEFINED MOLE_GIT_BRANCH)
+  set(MOLE_GIT_BRANCH unknown)
+  message(WARNING "Failed to determine MOLE_GIT_HASH from Git log.")
 endif()
 configure_file(${SRC} ${DST} @ONLY)

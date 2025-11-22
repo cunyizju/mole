@@ -1,6 +1,6 @@
-BACKUP_NAME=oofem.tar.gz
-DOC_RELEASE_FILES="elementlibmanual/elementlibmanual.pdf paper-actap/paper-actap.pdf extractorInput/extractorInput.pdf matlibmanual/matlibmanual.pdf oofemInput/oofemInput.pdf programmer/programmer.pdf theorymanual/theorymanual.pdf"
-DOC_DIRS="doc/elementlibmanual doc/paper-actap doc/extractorInput doc/matlibmanual doc/oofemInput doc/programmer doc/theorymanual"
+BACKUP_NAME=mole.tar.gz
+DOC_RELEASE_FILES="elementlibmanual/elementlibmanual.pdf paper-actap/paper-actap.pdf extractorInput/extractorInput.pdf matlibmanual/matlibmanual.pdf moleInput/moleInput.pdf programmer/programmer.pdf theorymanual/theorymanual.pdf"
+DOC_DIRS="doc/elementlibmanual doc/paper-actap doc/extractorInput doc/matlibmanual doc/moleInput doc/programmer doc/theorymanual"
 
 if [ -z $1 ]
 then
@@ -81,8 +81,8 @@ cd ..
 #remove doc sources
 rm -fr $DOC_DIRS
 #
-# generate refman of OOFEMlib
-# cd oofemlib/doc/refman; pwd; make html; cd ../../..
+# generate refman of MOLElib
+# cd molelib/doc/refman; pwd; make html; cd ../../..
 cd ..
 #
 #

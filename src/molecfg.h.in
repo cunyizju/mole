@@ -10,24 +10,23 @@
 /* Define if isnan is defined */
 #cmakedefine HAVE_ISNAN 1
 
-@OOFEM_EXPORT_HEADER@
+@MOLE_EXPORT_HEADER@
 
-#define __OOFEM_MAJOR_VERSION "@oofem_VERSION_MAJOR@"
-#define __OOFEM_MINOR_VERSION "@oofem_VERSION_MINOR@"
-#define __OOFEM_VERSION "@oofem_VERSION_MAJOR@" "." "@oofem_VERSION_MINOR@"
-#define __OOFEM_COPYRIGHT "@oofem_COPYRIGHT@"
+#define __MOLE_MAJOR_VERSION "@mole_VERSION_MAJOR@"
+#define __MOLE_MINOR_VERSION "@mole_VERSION_MINOR@"
+#define __MOLE_VERSION "@mole_VERSION_MAJOR@" "." "@mole_VERSION_MINOR@"
+#define __MOLE_COPYRIGHT "@mole_COPYRIGHT@"
 #define __HOST_TYPE "@HOST_TYPE@"
 #define __HOST_NAME "@HOST_NAME@"
 #define __MODULE_LIST "@MODULE_LIST@" 
 
 extern const char* PRG_VERSION;
-extern const char* OOFEM_COPYRIGHT;
+extern const char* MOLE_COPYRIGHT;
 extern const char* PRG_HEADER;
 extern const char* PRG_HEADER_SM;
 extern const char* HOST_TYPE;
 extern const char* HOST_NAME;
 extern const char* MODULE_LIST;
-extern const char* OOFEM_GIT_HASH;
-extern const char* OOFEM_GIT_REPOURL;
-extern const char* OOFEM_GIT_BRANCH;
-#
+extern const char* MOLE_GIT_HASH;
+extern const char* MOLE_GIT_REPOURL;
+extern const char* MOLE_GIT_BRANCH;

@@ -14,7 +14,7 @@ endif()
 # =============================================================================
 # PROJECT SETUP
 # =============================================================================
-project (oofem CXX C)
+project (mole CXX C)
 
 # Git submodule helper function
 function(add_git_submodule dir)
@@ -45,14 +45,14 @@ if(CCACHE_PROGRAM)
     set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE "${CCACHE_PROGRAM}")
 endif()
 # Project version and metadata
-set (oofem_VERSION_MAJOR 2)
-set (oofem_VERSION_MINOR 6)
-set (oofem_VERSION_PATCH 0)
-set (oofem_HOMEPAGE "http://www.oofem.org")
+set (mole_VERSION_MAJOR 0)
+set (mole_VERSION_MINOR 0)
+set (mole_VERSION_PATCH 1)
+set (mole_HOMEPAGE "https://github.com/cunyizju/mole")
 set (bp_HOMEPAGE "http://ksm.fsv.cvut.cz/%7Ebp/bp.html")
 string(TIMESTAMP YEAR "%Y")
-set (oofem_COPYRIGHT "Copyright (C) 1994-${YEAR} Borek Patzak")
-set (oofem_EMAIL "oofem@fsv.cvut.cz")
+set (mole_COPYRIGHT "Copyright (C) 1994-${YEAR} Bruce LI (based on OOFEM by Borek Patzak)")
+set (mole_EMAIL "cunyizju@gmail.com")
 
 # Build configuration
 set(CMAKE_VERBOSE_MAKEFILE ON)
@@ -87,8 +87,6 @@ set (CMAKE_CXX_FLAGS_PROFILING "${CMAKE_CXX_FLAGS_PROFILING} -O2 -pg")
 # CUSTOM PATHS (User-configurable directories)
 # =============================================================================
 set (TINYXML2_DIR CACHE PATH "Manual TinyXML-2 directory (CEMHYD only)")
-set (PETSC_DIR CACHE PATH "/home/licunyi/projects/petsc")
-set (PETSC_ARCH CACHE STRING "linux-gnu")
 set (MPI_DIR CACHE PATH "Manual MPI directory")
 set (VTK_DIR CACHE PATH "Manual VTK directory (For binary VTU export)")
 set (LAPACK_DIR CACHE PATH "Manual LAPACK directory")
@@ -117,7 +115,7 @@ option (USE_METIS "Enable metis support" OFF)
 option (USE_PARMETIS "Enable Parmetis support" OFF)
 
 # External solvers
-option (USE_PETSC "Enable PETSc support (specify PETSC_DIR and/or PETSC_ARCH if needed)" ON)
+option (USE_PETSC "Enable PETSc support (specify PETSC_DIR and/or PETSC_ARCH if needed)" OFF)
 option (USE_LAPACK "Use LAPACK" OFF)
 option (USE_SUPERLU_MT "Use SUPERLU_MT" OFF)
 option (USE_INTEL_MKL_PARDISO "Enable MKLPARDISO solver support" OFF)
@@ -167,18 +165,18 @@ endif ()
 # =============================================================================
 
 # Include directories
-include_directories ("${oofem_SOURCE_DIR}/src")
-include_directories ("${oofem_SOURCE_DIR}/src/oofemlib")
-include_directories ("${oofem_BINARY_DIR}")
+include_directories ("${mole_SOURCE_DIR}/src")
+include_directories ("${mole_SOURCE_DIR}/src/oofemlib")
+include_directories ("${mole_BINARY_DIR}")
 
 # Core library
 list (APPEND LIBS $<TARGET_OBJECTS:core>)
 
 # Structural mechanics module
 if (USE_SM)
-    include_directories ("${oofem_SOURCE_DIR}/src/sm")
-    include_directories ("${oofem_SOURCE_DIR}/src/sm/Elements")
-    include_directories ("${oofem_SOURCE_DIR}/src/sm/Materials")
+    include_directories ("${mole_SOURCE_DIR}/src/sm")
+    include_directories ("${mole_SOURCE_DIR}/src/sm/Elements")
+    include_directories ("${mole_SOURCE_DIR}/src/sm/Materials")
     add_definitions (-D__SM_MODULE)
     list (APPEND LIBS $<TARGET_OBJECTS:sm> $<TARGET_OBJECTS:sm_elements> $<TARGET_OBJECTS:sm_materials>)
     list (APPEND MODULE_LIST "sm" "sm_elements" "sm_materials")
@@ -191,7 +189,7 @@ endif ()
 
 # DSS module
 if (USE_DSS)
-    include_directories ("${oofem_SOURCE_DIR}/src/dss")
+    include_directories ("${mole_SOURCE_DIR}/src/dss")
     list (APPEND LIBS $<TARGET_OBJECTS:dss>)
     list (APPEND MODULE_LIST "dss")
 endif ()
@@ -431,8 +429,8 @@ if (USE_TINYXML)
 endif ()
 
 if (USE_IML)
-    include_directories ("${oofem_SOURCE_DIR}")
-    set (CMAKE_REQUIRED_INCLUDES "${oofem_SOURCE_DIR}")
+    include_directories ("${mole_SOURCE_DIR}")
+    set (CMAKE_REQUIRED_INCLUDES "${mole_SOURCE_DIR}")
     check_include_file_cxx ("iml/cg.h" HAVE_IML_CG_H)
     check_include_file_cxx ("iml/gmres.h" HAVE_IML_GMRES_H)
     if ((NOT HAVE_IML_CG_H) OR (NOT HAVE_IML_GMRES_H))
@@ -498,9 +496,9 @@ if (USE_PYBIND_BINDINGS)
     endif ()
     include_directories (${pybind11_INCLUDE_DIR} ${Python_INCLUDE_DIRS})
     list (APPEND EXT_LIBS ${Python_LIBRARIES})
-    pybind11_add_module(oofempy THIN_LTO ${oofem_SOURCE_DIR}/bindings/python/oofem.cpp ${oofem_SOURCE_DIR}/src/oofemcfg.C ${PYBIND11_HEADERS})
-    target_link_libraries(oofempy PRIVATE liboofem)
-    set_target_properties (oofempy PROPERTIES SUFFIX "${PYTHON_MODULE_EXTENSION}")
+    pybind11_add_module(molepy THIN_LTO ${mole_SOURCE_DIR}/bindings/python/oofem.cpp ${mole_SOURCE_DIR}/src/molecfg.C ${PYBIND11_HEADERS})
+    target_link_libraries(molepy PRIVATE libmole)
+    set_target_properties (molepy PROPERTIES SUFFIX "${PYTHON_MODULE_EXTENSION}")
 
     # Check for pytest
     if(NOT PYTEST_FOUND)
@@ -523,7 +521,7 @@ endif()
 # System information
 site_name (HOST_NAME)
 set (HOST_TYPE "${CMAKE_SYSTEM_PROCESSOR}-${CMAKE_SYSTEM_NAME}")
-set (BUILDNAME "OOFEM(${MODULE_LIST})-${HOST_TYPE}-${HOST_NAME}")
+set (BUILDNAME "MOLE(${MODULE_LIST})-${HOST_TYPE}-${HOST_NAME}")
 
 # Check system capabilities
 check_include_file_cxx ("execinfo.h" HAVE_EXECINFO_H)
@@ -532,15 +530,15 @@ check_cxx_symbol_exists ("isnan" "cmath" HAVE_ISNAN)
 
 # Export header configuration
 if (USE_SHARED_LIB)
-    set (OOFEM_EXPORT_HEADER "#include \"oofem_export.h\"")
+    set (MOLE_EXPORT_HEADER "#include \"mole_export.h\"")
 else ()
-    set (OOFEM_EXPORT_HEADER "#define OOFEM_EXPORT\n#define OOFEM_NO_EXPORT")
+    set (MOLE_EXPORT_HEADER "#define MOLE_EXPORT\n#define MOLE_NO_EXPORT")
 endif ()
 
 # Generate configuration header
 configure_file (
-  "${oofem_SOURCE_DIR}/src/oofemcfg.h.in"
-  "${oofem_BINARY_DIR}/oofemcfg.h"
+  "${mole_SOURCE_DIR}/src/molecfg.h.in"
+  "${mole_BINARY_DIR}/molecfg.h"
   )
 
 # =============================================================================
@@ -549,90 +547,90 @@ configure_file (
 
 # Subtargets
 set (LIB_TYPE OBJECT)
-add_subdirectory ("${oofem_SOURCE_DIR}/src/oofemlib")
+add_subdirectory ("${mole_SOURCE_DIR}/src/oofemlib")
 
 if (USE_DSS)
-    add_subdirectory ("${oofem_SOURCE_DIR}/src/dss")
+    add_subdirectory ("${mole_SOURCE_DIR}/src/dss")
 endif ()
 
 if (USE_SM)
-    add_subdirectory ("${oofem_SOURCE_DIR}/src/sm")
-    add_subdirectory ("${oofem_SOURCE_DIR}/src/sm/Elements")
-    add_subdirectory ("${oofem_SOURCE_DIR}/src/sm/Materials")
+    add_subdirectory ("${mole_SOURCE_DIR}/src/sm")
+    add_subdirectory ("${mole_SOURCE_DIR}/src/sm/Elements")
+    add_subdirectory ("${mole_SOURCE_DIR}/src/sm/Materials")
 endif ()
 
 # Python bindings source
-set (oofempy)
+set (molepy)
 if (USE_BOOSTPYTHON_BINDINGS)
-    set (oofempy ${oofem_SOURCE_DIR}/bindings/Deprecated/python/oofemlib.cpp)
+    set (molepy ${mole_SOURCE_DIR}/bindings/Deprecated/python/oofemlib.cpp)
 endif ()
 
 # Main library target
 if (USE_SHARED_LIB)
-    add_library (liboofem SHARED ${oofempy} ${LIBS})
-    target_link_libraries (liboofem ${EXT_LIBS})
-    set_target_properties (liboofem PROPERTIES OUTPUT_NAME oofem)
-    add_dependencies(liboofem version)
+    add_library (libmole SHARED ${molepy} ${LIBS})
+    target_link_libraries (libmole ${EXT_LIBS})
+    set_target_properties (libmole PROPERTIES OUTPUT_NAME mole)
+    add_dependencies(libmole version)
 
-    if (NOT "${LIBOOFEM_EXPORT_CFLAGS}" STREQUAL "")
-        set_target_properties (liboofem PROPERTIES COMPILE_FLAGS ${LIBOOFEM_EXPORT_CFLAGS})
+    if (NOT "${LIBMOLE_EXPORT_CFLAGS}" STREQUAL "")
+        set_target_properties (libmole PROPERTIES COMPILE_FLAGS ${LIBMOLE_EXPORT_CFLAGS})
     endif ()
-    install (TARGETS liboofem DESTINATION lib)
+    install (TARGETS libmole DESTINATION lib)
 
     # Set export definitions for object targets
-    set_target_properties (core PROPERTIES COMPILE_DEFINITIONS "liboofem_EXPORTS")
+    set_target_properties (core PROPERTIES COMPILE_DEFINITIONS "libmole_EXPORTS")
     if (USE_SM)
-        set_target_properties (sm PROPERTIES COMPILE_DEFINITIONS "liboofem_EXPORTS")
-        set_target_properties (sm_elements PROPERTIES COMPILE_DEFINITIONS "liboofem_EXPORTS")
-        set_target_properties (sm_materials PROPERTIES COMPILE_DEFINITIONS "liboofem_EXPORTS")
-        if (NOT "${LIBOOFEM_EXPORT_CFLAGS}" STREQUAL "")
-            set_target_properties (sm PROPERTIES COMPILE_FLAGS ${LIBOOFEM_EXPORT_CFLAGS})
-            set_target_properties (sm_elements PROPERTIES COMPILE_FLAGS ${LIBOOFEM_EXPORT_CFLAGS})
-            set_target_properties (sm_materials PROPERTIES COMPILE_FLAGS ${LIBOOFEM_EXPORT_CFLAGS})
+        set_target_properties (sm PROPERTIES COMPILE_DEFINITIONS "libmole_EXPORTS")
+        set_target_properties (sm_elements PROPERTIES COMPILE_DEFINITIONS "libmole_EXPORTS")
+        set_target_properties (sm_materials PROPERTIES COMPILE_DEFINITIONS "libmole_EXPORTS")
+        if (NOT "${LIBMOLE_EXPORT_CFLAGS}" STREQUAL "")
+            set_target_properties (sm PROPERTIES COMPILE_FLAGS ${LIBMOLE_EXPORT_CFLAGS})
+            set_target_properties (sm_elements PROPERTIES COMPILE_FLAGS ${LIBMOLE_EXPORT_CFLAGS})
+            set_target_properties (sm_materials PROPERTIES COMPILE_FLAGS ${LIBMOLE_EXPORT_CFLAGS})
         endif ()
     endif()
 
-    generate_export_header (liboofem BASE_NAME OOFEM)
+    generate_export_header (libmole BASE_NAME MOLE)
 endif ()
 
 # Main executable target
 if (USE_SHARED_LIB)
-    add_executable (oofem ${oofem_SOURCE_DIR}/src/oofemcfg.C ${oofem_SOURCE_DIR}/src/main/main.C)
-    add_dependencies(oofem version)
-    target_link_libraries (oofem liboofem)
+    add_executable (mole ${mole_SOURCE_DIR}/src/molecfg.C ${mole_SOURCE_DIR}/src/main/main.C)
+    add_dependencies(mole version)
+    target_link_libraries (mole libmole)
 else ()
-    add_executable (oofem ${oofem_SOURCE_DIR}/src/oofemcfg.C ${oofem_SOURCE_DIR}/src/main/main.C ${LIBS})
-    add_dependencies(oofem version)
-    target_link_libraries (oofem ${EXT_LIBS})
+    add_executable (mole ${mole_SOURCE_DIR}/src/molecfg.C ${mole_SOURCE_DIR}/src/main/main.C ${LIBS})
+    add_dependencies(mole version)
+    target_link_libraries (mole ${EXT_LIBS})
 endif ()
 
-install (TARGETS oofem DESTINATION bin)
+install (TARGETS mole DESTINATION bin)
 
 # MFRONT support
 if (USE_MFRONT)
     find_package (MFrontGenericInterface REQUIRED)
-    target_link_libraries(oofem mgis::MFrontGenericInterface)
+    target_link_libraries(mole mgis::MFrontGenericInterface)
 endif ()
 
 # Additional utility targets
-add_executable(liboofem_benchmark ${oofem_SOURCE_DIR}/src/oofemcfg.C ${oofem_SOURCE_DIR}/src/main/benchmark.C)
-add_dependencies(liboofem_benchmark version)
-set_target_properties(liboofem_benchmark PROPERTIES EXCLUDE_FROM_ALL TRUE)
-target_link_libraries (liboofem_benchmark liboofem benchmark)
+add_executable(libmole_benchmark ${mole_SOURCE_DIR}/src/molecfg.C ${mole_SOURCE_DIR}/src/main/benchmark.C)
+add_dependencies(libmole_benchmark version)
+set_target_properties(libmole_benchmark PROPERTIES EXCLUDE_FROM_ALL TRUE)
+target_link_libraries (libmole_benchmark libmole benchmark)
 
 # Example applications
-add_executable(beam2d_1 ${oofem_SOURCE_DIR}/src/oofemcfg.C ${oofem_SOURCE_DIR}/bindings/oofemlib/beam2d_1.C)
+add_executable(beam2d_1 ${mole_SOURCE_DIR}/src/molecfg.C ${mole_SOURCE_DIR}/bindings/oofemlib/beam2d_1.C)
 add_dependencies(beam2d_1 version)
 set_target_properties(beam2d_1 PROPERTIES EXCLUDE_FROM_ALL TRUE)
-target_link_libraries (beam2d_1 liboofem)
+target_link_libraries (beam2d_1 libmole)
 
-add_executable(hexgrid ${oofem_SOURCE_DIR}/src/oofemcfg.C ${oofem_SOURCE_DIR}/bindings/oofemlib/hexgrid.C)
+add_executable(hexgrid ${mole_SOURCE_DIR}/src/molecfg.C ${mole_SOURCE_DIR}/bindings/oofemlib/hexgrid.C)
 set_target_properties(hexgrid PROPERTIES EXCLUDE_FROM_ALL TRUE)
-target_link_libraries (hexgrid liboofem)
+target_link_libraries (hexgrid libmole)
 
-add_executable(dream3d_analysis ${oofem_SOURCE_DIR}/src/oofemcfg.C ${oofem_SOURCE_DIR}/bindings/oofemlib/dream3d_analysis.C)
+add_executable(dream3d_analysis ${mole_SOURCE_DIR}/src/molecfg.C ${mole_SOURCE_DIR}/bindings/oofemlib/dream3d_analysis.C)
 set_target_properties(dream3d_analysis PROPERTIES EXCLUDE_FROM_ALL TRUE)
-target_link_libraries(dream3d_analysis liboofem)
+target_link_libraries(dream3d_analysis libmole)
 
 # Code analysis tools
 add_custom_target(cppcheck)
@@ -660,73 +658,73 @@ add_custom_command(TARGET cppcheck
 # TESTING
 # =============================================================================
 
-set (oofem_TEST_DIR "${oofem_SOURCE_DIR}/tests/")
-set (oofem_cmd  $<TARGET_FILE:oofem>)
-file(TO_CMAKE_PATH "${oofem_TEST_DIR}/valgrind.supp" MEMORYCHECK_SUPPRESSIONS_FILE)
+set (mole_TEST_DIR "${mole_SOURCE_DIR}/tests/")
+set (mole_cmd  $<TARGET_FILE:mole>)
+file(TO_CMAKE_PATH "${mole_TEST_DIR}/valgrind.supp" MEMORYCHECK_SUPPRESSIONS_FILE)
 include (CTest)
 
 # Parallel tests
 if (USE_MPI_PARALLEL)
-    set (par_dir ${oofem_TEST_DIR}/partests)
+    set (par_dir ${mole_TEST_DIR}/partests)
     file (GLOB parallel_tests RELATIVE "${par_dir}" "${par_dir}/*/")
     foreach (case ${parallel_tests})
-        file (GLOB files "${par_dir}/${case}/${case}.oofem.in.*")
+        file (GLOB files "${par_dir}/${case}/${case}.mole.in.*")
         list (LENGTH files num_files)
-        add_test (NAME "partest_${case}" WORKING_DIRECTORY ${par_dir}/${case} COMMAND "mpirun" "--oversubscribe" "-np" ${num_files} ${oofem_cmd} "-p" "-f" ${case}.oofem.in "-ksp_type" "cg")
+        add_test (NAME "partest_${case}" WORKING_DIRECTORY ${par_dir}/${case} COMMAND "mpirun" "--oversubscribe" "-np" ${num_files} ${mole_cmd} "-p" "-f" ${case}.mole.in "-ksp_type" "cg")
     endforeach (case)
     set_tests_properties(partest_brazil_2d_nl7 PROPERTIES TIMEOUT 2500)
 endif ()
 
 # Sequential tests
 if (USE_SM)
-    file (GLOB sm_tests RELATIVE "${oofem_TEST_DIR}/sm" "${oofem_TEST_DIR}/sm/*.in")
+    file (GLOB sm_tests RELATIVE "${mole_TEST_DIR}/sm" "${mole_TEST_DIR}/sm/*.in")
     foreach (case ${sm_tests})
-        add_test (NAME "test_sm_${case}" WORKING_DIRECTORY ${oofem_TEST_DIR}/sm COMMAND ${oofem_cmd} "-f" ${case})
+        add_test (NAME "test_sm_${case}" WORKING_DIRECTORY ${mole_TEST_DIR}/sm COMMAND ${mole_cmd} "-f" ${case})
     endforeach (case)
 
-    file (GLOB sm_tests RELATIVE "${oofem_TEST_DIR}/sm" "${oofem_TEST_DIR}/sm/*.sh")
+    file (GLOB sm_tests RELATIVE "${mole_TEST_DIR}/sm" "${mole_TEST_DIR}/sm/*.sh")
     foreach (case ${sm_tests})
-        add_test (NAME "test_sm_${case}" WORKING_DIRECTORY ${oofem_TEST_DIR}/sm COMMAND bash ${case} ${oofem_cmd})
+        add_test (NAME "test_sm_${case}" WORKING_DIRECTORY ${mole_TEST_DIR}/sm COMMAND bash ${case} ${mole_cmd})
     endforeach (case)
 endif ()
 
 
 # Additional test modules
 if (USE_TM AND USE_SM)
-    file (GLOB tmsm_tests RELATIVE "${oofem_TEST_DIR}/tmsm" "${oofem_TEST_DIR}/tmsm/*.in")
+    file (GLOB tmsm_tests RELATIVE "${mole_TEST_DIR}/tmsm" "${mole_TEST_DIR}/tmsm/*.in")
     foreach (case ${tmsm_tests})
-        add_test (NAME "test_tmsm_${case}" WORKING_DIRECTORY ${oofem_TEST_DIR}/tmsm COMMAND ${oofem_cmd} "-f" ${case})
+        add_test (NAME "test_tmsm_${case}" WORKING_DIRECTORY ${mole_TEST_DIR}/tmsm COMMAND ${mole_cmd} "-f" ${case})
     endforeach (case)
 endif()
 
 if (USE_TM AND USE_CEMHYD)
-    file (GLOB tmcemhyd_tests RELATIVE "${oofem_TEST_DIR}/tmcemhyd" "${oofem_TEST_DIR}/tmcemhyd/*.in")
+    file (GLOB tmcemhyd_tests RELATIVE "${mole_TEST_DIR}/tmcemhyd" "${mole_TEST_DIR}/tmcemhyd/*.in")
     foreach (case ${tmcemhyd_tests})
-        add_test (NAME "test_tm_${case}" WORKING_DIRECTORY ${oofem_TEST_DIR}/tmcemhyd COMMAND ${oofem_cmd} "-f" ${case})
+        add_test (NAME "test_tm_${case}" WORKING_DIRECTORY ${mole_TEST_DIR}/tmcemhyd COMMAND ${mole_cmd} "-f" ${case})
     endforeach (case)
 endif()
 
 if (USE_SM AND USE_MFRONT)
-    file (GLOB smmfront_tests RELATIVE "${oofem_TEST_DIR}/smmfront" "${oofem_TEST_DIR}/smmfront/*.in")
+    file (GLOB smmfront_tests RELATIVE "${mole_TEST_DIR}/smmfront" "${mole_TEST_DIR}/smmfront/*.in")
     foreach (case ${smmfront_tests})
-        add_test (NAME "test_sm_${case}" WORKING_DIRECTORY ${oofem_TEST_DIR}/smmfront COMMAND ${oofem_cmd} "-f" ${case})
+        add_test (NAME "test_sm_${case}" WORKING_DIRECTORY ${mole_TEST_DIR}/smmfront COMMAND ${mole_cmd} "-f" ${case})
     endforeach (case)
 endif()
 
 # Benchmarks
-set (oofem_BENCHMARK_DIR "${oofem_SOURCE_DIR}/tests/benchmark")
+set (mole_BENCHMARK_DIR "${mole_SOURCE_DIR}/tests/benchmark")
 
 if (USE_TM AND USE_SM AND USE_DSS AND USE_IML)
-    file (GLOB tmsmdssiml_benchmark RELATIVE "${oofem_BENCHMARK_DIR}/tmsmdssiml" "${oofem_BENCHMARK_DIR}/tmsmdssiml/*.in")
+    file (GLOB tmsmdssiml_benchmark RELATIVE "${mole_BENCHMARK_DIR}/tmsmdssiml" "${mole_BENCHMARK_DIR}/tmsmdssiml/*.in")
     foreach (case ${tmsmdssiml_benchmark})
-        add_test (NAME "benchmark_tmsm_${case}" WORKING_DIRECTORY ${oofem_BENCHMARK_DIR}/tmsmdssiml COMMAND ${oofem_cmd} "-f" ${case})
+        add_test (NAME "benchmark_tmsm_${case}" WORKING_DIRECTORY ${mole_BENCHMARK_DIR}/tmsmdssiml COMMAND ${mole_cmd} "-f" ${case})
     endforeach (case)
 endif()
 
 if (USE_SM)
-    file (GLOB sm_benchmark RELATIVE "${oofem_BENCHMARK_DIR}/sm" "${oofem_BENCHMARK_DIR}/sm/*.in")
+    file (GLOB sm_benchmark RELATIVE "${mole_BENCHMARK_DIR}/sm" "${mole_BENCHMARK_DIR}/sm/*.in")
     foreach (case ${sm_benchmark})
-        add_test (NAME "benchmark_sm_${case}" WORKING_DIRECTORY ${oofem_BENCHMARK_DIR}/sm COMMAND ${oofem_cmd} "-f" ${case})
+        add_test (NAME "benchmark_sm_${case}" WORKING_DIRECTORY ${mole_BENCHMARK_DIR}/sm COMMAND ${mole_cmd} "-f" ${case})
     endforeach (case)
 endif()
 
@@ -751,7 +749,7 @@ endif ()
 
 # Python bindings tests
 if (USE_PYBIND_BINDINGS)
-    add_test (NAME "test_python_pybind11_bindings" WORKING_DIRECTORY ${oofem_SOURCE_DIR}/bindings/python COMMAND ${Python_EXECUTABLE} "-m" "pytest" ${oofem_SOURCE_DIR}/bindings/python)
+    add_test (NAME "test_python_pybind11_bindings" WORKING_DIRECTORY ${mole_SOURCE_DIR}/bindings/python COMMAND ${Python_EXECUTABLE} "-m" "pytest" ${mole_SOURCE_DIR}/bindings/python)
     set_tests_properties("test_python_pybind11_bindings" PROPERTIES ENVIRONMENT "PYTHONPATH=${CMAKE_BINARY_DIR}")
 endif()
 
@@ -761,19 +759,19 @@ endif()
 # =============================================================================
 
 # Package version
-set (CPACK_PACKAGE_VERSION_MAJOR ${oofem_VERSION_MAJOR})
-set (CPACK_PACKAGE_VERSION_MINOR ${oofem_VERSION_MINOR})
-set (CPACK_PACKAGE_VERSION_PATCH ${oofem_VERSION_PATCH})
+set (CPACK_PACKAGE_VERSION_MAJOR ${mole_VERSION_MAJOR})
+set (CPACK_PACKAGE_VERSION_MINOR ${mole_VERSION_MINOR})
+set (CPACK_PACKAGE_VERSION_PATCH ${mole_VERSION_PATCH})
 set (CPACK_PACKAGE_VERSION "${CPACK_PACKAGE_VERSION_MAJOR}.${CPACK_PACKAGE_VERSION_MINOR}")
 
 # Package settings
-set (CPACK_PACKAGE_NAME "oofem")
-set (CPACK_PACKAGE_VENDOR "OOFEM development team")
-set (CPACK_PACKAGE_DESCRIPTION_SUMMARY "Object Oriented Finite Element")
+set (CPACK_PACKAGE_NAME "mole")
+set (CPACK_PACKAGE_VENDOR "MOLE development team")
+set (CPACK_PACKAGE_DESCRIPTION_SUMMARY "Multi-physics Object-oriented Lattice Element solver")
 set (CPACK_RESOURCE_FILE_README "${CMAKE_SOURCE_DIR}/README")
 set (CPACK_RESOURCE_FILE_LICENSE "${CMAKE_SOURCE_DIR}/COPYING.LGPLv2.1")
 set (CPACK_PACKAGE_INSTALL_DIRECTORY ${CPACK_PACKAGE_NAME})
-set (CPACK_PACKAGE_EXECUTABLES "oofem")
+set (CPACK_PACKAGE_EXECUTABLES "mole")
 set (CPACK_PACKAGE_FILE_NAME ${CPACK_PACKAGE_NAME}_${CPACK_PACKAGE_VERSION}_${CMAKE_SYSTEM_PROCESSOR})
 
 # Package generators
@@ -785,7 +783,7 @@ endif ()
 
 # Source package
 set (CPACK_SOURCE_GENERATOR "ZIP")
-set (CPACK_SOURCE_PACKAGE_FILE_NAME "oofem-${CPACK_PACKAGE_VERSION}")
+set (CPACK_SOURCE_PACKAGE_FILE_NAME "mole-${CPACK_PACKAGE_VERSION}")
 set (CPACK_SOURCE_IGNORE_FILES "~$;/build/;tags;cscope.*;.*\\\\.out$;\\\\.out\\\\.;/\\\\..*;\\\\.kdev4$;do_release;release_filter\\\\.pl")
 
 # Debian package options

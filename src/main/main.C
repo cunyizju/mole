@@ -10,7 +10,8 @@
 #endif
 
 #include "engng/engngm.h"
-#include "oofemcfg.h"
+#include "molecfg.h"
+#include "mole_version.h"
 
 #include "input/oofemtxtdatareader.h"
 #include "export/datastream.h"
@@ -335,13 +336,13 @@ void oofem_print_help()
 
 void oofem_print_version()
 {
-    printf("\n%s (%s, %s)\nGit RepoURL: %s\n    Branch: %s, Hash: %s\n", PRG_VERSION, HOST_TYPE, MODULE_LIST, OOFEM_GIT_REPOURL, OOFEM_GIT_BRANCH, OOFEM_GIT_HASH);
+    printf("\n%s (%s, %s)\nGit RepoURL: %s\n    Branch: %s, Hash: %s\n", PRG_VERSION, HOST_TYPE, MODULE_LIST, MOLE_GIT_REPOURL, MOLE_GIT_BRANCH, MOLE_GIT_HASH);
     oofem_print_epilog();
 }
 
 void oofem_print_epilog()
 {
-    printf("\n%s\n", OOFEM_COPYRIGHT);
+    printf("\n%s\n", MOLE_COPYRIGHT);
     printf("This is free software; see the source for copying conditions.  There is NO\n");
     printf("warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n");
 }

@@ -7,6 +7,7 @@
 #include "solvers/timestep.h"
 #include "engng/classfactory.h"
 #include "input/oofemtxtinputrecord.h"
+#include "molecfg.h"
 
 #include <sstream>      // std::istringstream
 #include <string>       // std::string
@@ -89,7 +90,7 @@ SolutionStatusExportModule::initialize()
   sprintf( filename, "%s.m%d", this->emodel->giveOutputBaseFileName().c_str(), this->number);
   this->outputFile = fopen(filename, "w");
 
-  fprintf(outputFile,"%s (%s, %s), GitHash: %s\n", PRG_VERSION, HOST_TYPE, MODULE_LIST, OOFEM_GIT_HASH);
+  fprintf(outputFile,"%s (%s, %s), GitHash: %s\n", PRG_VERSION, HOST_TYPE, MODULE_LIST, MOLE_GIT_HASH);
   time_t currtime = time(NULL);
   fprintf(outputFile,"%s\n\n", ctime(& currtime));
   this->printRecsHeader();

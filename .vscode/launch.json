@@ -5,9 +5,9 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "/home/licunyi/LCY/oofem/build/debug/oofem",
+            "program": "/home/licunyi/LCY/mole/build/debug/mole",
             "stopAtEntry": false,
-            "cwd": "/home/licunyi/LCY/oofem/Debug",
+            "cwd": "/home/licunyi/LCY/mole/Debug",
             "args": [
                 "-f",
                 "MW.in"

@@ -59,11 +59,11 @@ cmake --build ./ -jn (n the number of cpu cores)
 ```
 #### Run
 ```
-oofem -f input_file_name
+mole -f input_file_name
 ```
 or
 ```
-oofem -f input_file_name > output.log
+mole -f input_file_name > output.log
 ```
 if you want to record the log.
 
@@ -87,9 +87,9 @@ Then please add a file launch.json in folder .vscode to specify the package and 
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "/home/licunyi/LCY/oofem/build/debug/oofem",
+            "program": "/home/licunyi/LCY/mole/build/debug/mole",
             "stopAtEntry": false,
-            "cwd": "/home/licunyi/LCY/oofem/Debug",
+            "cwd": "/home/licunyi/LCY/mole/Debug",
             "args": [
                 "-f",
                 "MW.in"
